@@ -52,6 +52,7 @@
 		407DF0121E8ABE1C004263E6 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
 		407DF0141E8ABF40004263E6 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		407DF0151E8ABF40004263E6 /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		40DBD5FF1E8F1C490027E88A /* MessageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageData.h; sourceTree = "<group>"; };
 		40E3B9AB1E8E9B28001EE4AA /* Console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
 		40E3B9AC1E8E9B28001EE4AA /* Console.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Console.hpp; sourceTree = "<group>"; };
 		40E3B9AE1E8E9B6F001EE4AA /* Drawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
@@ -138,6 +139,7 @@
 				407DEFFC1E897B92004263E6 /* Message.hpp */,
 				407DEFFE1E898962004263E6 /* BusNode.cpp */,
 				407DEFFF1E898962004263E6 /* BusNode.hpp */,
+				40DBD5FF1E8F1C490027E88A /* MessageData.h */,
 			);
 			name = It_messaging;
 			sourceTree = "<group>";

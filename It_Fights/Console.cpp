@@ -68,11 +68,13 @@ void Console::onNotify (Message message){
             this->target_openness = 0.0f;
         }
     }else if(message.getEvent().compare("CONSOLE_SHOW_MSG")==0){    //Add a message to the console in a new line
-        std::string *strMessageContent = (reinterpret_cast<std::string*>(message.getData()));
-        this->messageLines.push_back(ConsoleLine(*strMessageContent));
+        if(message.getData().type!=MessageData::STRING_PTR){
+            std::cout << "ERROR: The data in this message should be a string pointer" << std::endl;
+        }else{
+            this->messageLines.push_back(ConsoleLine(sf::String(*(message.getData().string_ptr))));
+        }
 
-        
-        delete strMessageContent;
+        delete message.getData().string_ptr; //@@OPTIMIZATION: We could try to instantiate this strings on a custom allocator/memory pool to avoid fragmentation
     }
     
 }

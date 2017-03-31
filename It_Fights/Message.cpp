@@ -12,25 +12,25 @@
 Message::Message(const std::string event){
     this->system = MSG_TO_EVERYONE;
     this->stringEvent=event;
-    this->data = nullptr;
+    this->data.type = MessageData::EMPTY;
     this->relevantForConsole = false;
 }
 
 Message::Message(const std::string event, const int system){
     this->system = system;
     this->stringEvent=event;
-    this->data=nullptr;
+    this->data.type = MessageData::EMPTY;
     this->relevantForConsole = false;
 }
 
-Message::Message(const std::string event, const int system, void * data){
+Message::Message(const std::string event, const int system, MessageData data){
     this->system = system;
     this->stringEvent=event;
-    this->data=data;
+    this->data = data;
     this->relevantForConsole = false;
 }
 
-Message::Message(const std::string event, void * data){
+Message::Message(const std::string event, MessageData data){
     this->system = MSG_TO_EVERYONE;
     this->stringEvent=event;
     this->data = data;
@@ -53,7 +53,7 @@ int Message::getReceiverSystem(){
     return this->system;
 }
 
-void * Message::getData(){
+MessageData Message::getData(){
     return this->data;
 }
 

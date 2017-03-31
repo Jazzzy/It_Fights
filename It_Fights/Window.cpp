@@ -107,13 +107,10 @@ void Window::onNotify (Message message){
     if(message.getEvent().compare("MSG_CLOSE_WINDOW")==0){
         this->sf_window.close();
     }else if(message.getEvent().compare("MSG_RESIZED_WINDOW")==0){
-        if(message.getData()==nullptr){
-            std::cout << "ERROR: The data in this message should not be null" << std::endl;
+        if(message.getData().type!=MessageData::PAIR_OF_INTS){
+            std::cout << "ERROR: The data in this message should be a pair of ints" << std::endl;
         }else{
-            std::pair<int,int> *resPair = (reinterpret_cast<std::pair<int,int>*>(message.getData()));
-            this->tryToResize(resPair->first, resPair->second);
-            delete resPair;
-            
+            this->tryToResize(message.getData().intPair.x, message.getData().intPair.y);
         }
         
     }

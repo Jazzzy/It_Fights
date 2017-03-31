@@ -12,25 +12,31 @@
 
 
 #include <string>
+#include <iostream>
+#include "MessageData.h"
+
 
 #define MSG_TO_EVERYONE -1
+
+
+
 
 class Message{
 public:
     Message(const std::string event);
     Message(const std::string event, const int system);
-    Message(const std::string event, const int system, void * data);
-    Message(const std::string event, void * data);
+    Message(const std::string event, const int system, MessageData data);
+    Message(const std::string event, MessageData data);
     bool isRelevant();
     void setRelevantForConsole(bool relevant);
     std::string getEvent();
     int getReceiverSystem();
-    void * getData();
+    MessageData getData();
     
 private:
     bool relevantForConsole;
     std::string stringEvent;
-    void * data;
+    MessageData data{MessageData::EMPTY,nullptr};
     int system;
 };
 

@@ -40,7 +40,9 @@ void Input::readInput(){
                 
             case sf::Event::Resized:
             {
-                Message msg_resized("MSG_RESIZED_WINDOW",Systems::S_Window, new std::pair<int, int>(event.size.width,event.size.height));
+                PairI intPair{.x =  static_cast<int>(event.size.width), .y =  static_cast<int>(event.size.height)};
+                MessageData pairData{MessageData::PAIR_OF_INTS, .intPair = intPair };
+                Message msg_resized("MSG_RESIZED_WINDOW",Systems::S_Window, pairData);
                 msg_resized.setRelevantForConsole(true);
                 send(msg_resized);
             }

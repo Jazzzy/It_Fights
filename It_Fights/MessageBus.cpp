@@ -15,8 +15,10 @@ void MessageBus::notify(){
         Message message = messageQueue.front();
         
         if(message.isRelevant()){
-            std::string *strForConsole= new std::string("Message for System [" + std::to_string(message.getReceiverSystem()) + "] that says [" + message.getEvent() + "]");
-            Message messageForConsole("CONSOLE_SHOW_MSG",Systems::S_Console,strForConsole);
+            std::string * strForConsole = new std::string("Message for System [" + std::to_string(message.getReceiverSystem()) + "] that says [" + message.getEvent() + "]");
+            MessageData messageData = {MessageData::STRING_PTR,strForConsole};
+            
+            Message messageForConsole("CONSOLE_SHOW_MSG", Systems::S_Console, messageData);
             this->consoleReceiver(messageForConsole);
         }
         
