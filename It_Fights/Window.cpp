@@ -20,6 +20,7 @@ Window::Window(MessageBus * messageBus, Console * console, std::string windowNam
     this->console = console;
     
     sf_renderTexture.create(INTERNAL_RESOLUTION_X, INTERNAL_RESOLUTION_Y);
+    sf_renderTexture.setSmooth(true);
     this->currRealResolution = sf::Vector2u(resolution_x,resolution_y);
     
     //this->sf_window.setVerticalSyncEnabled(true);
