@@ -21,7 +21,7 @@ Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageB
     this->current_openness = 0.0f;
     this->target_openness = 0.0f;
     this->max_openness = 0.8f;
-    this->open_speed = 50.0f;
+    this->open_speed = 2.0f;
     
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         std::cerr << "ERROR: Could not load console font" << std::endl;

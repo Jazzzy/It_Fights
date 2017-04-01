@@ -21,6 +21,7 @@ public:
     
     private :
     sf::Clock deltaClock;
+    sf::Time deltaTime;
 };
 
 

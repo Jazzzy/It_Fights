@@ -13,9 +13,9 @@ Clock::Clock(){}
 Clock::~Clock(){}
 
 void Clock::setFrameSeparator(){
-    this->deltaClock.restart();
+    this->deltaTime = this->deltaClock.restart();
 }
 
 float Clock::getDeltaTime(){
-    return this->deltaClock.getElapsedTime().asSeconds();
+    return this->deltaTime.asSeconds();
 }
