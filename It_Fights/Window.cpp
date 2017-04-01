@@ -23,8 +23,8 @@ Window::Window(MessageBus * messageBus, Console * console, std::string windowNam
     sf_renderTexture.setSmooth(true);
     this->currRealResolution = sf::Vector2u(resolution_x,resolution_y);
     
-    //this->sf_window.setVerticalSyncEnabled(true);
-    //this->sf_window.setFramerateLimit(60);
+    this->sf_window.setVerticalSyncEnabled(true);
+    this->sf_window.setFramerateLimit(60);
     
     //    std::cout << "Window System Created, Size: " << this->sf_window.getSize().x << ", " << this->sf_window.getSize().y <<std::endl;
     
@@ -38,6 +38,8 @@ Window::~Window(){
     //    std::cout << "Window System deleting" << std::endl;
 }
 
+#include "ResourcePath.hpp"
+
 void Window::update(){
     
     sf::Color boneColor(227,218,201);
@@ -45,6 +47,9 @@ void Window::update(){
     this->sf_renderTexture.clear(boneColor);
     
     //Draw here everything to the texture
+    
+    game.getGameState()->getScene()->draw(&sf_renderTexture);
+    
     
     /*
         Could be a good idea to have a scene with a list of drawable objects that can be accesed from here, maybe a scene with layers that have objects with shaders, this way we draw the layers in order and can move them independantly just calling each layer "draw" method.
@@ -56,6 +61,7 @@ void Window::update(){
         this->console->draw(&sf_renderTexture);
     }
     
+
     this->sf_renderTexture.display();
     
     this->sf_window.clear(sf::Color::Black);

@@ -17,6 +17,9 @@
 #include "Input.hpp"
 #include "Clock.hpp"
 
+#include "GameState.hpp"
+#include "ResourceManager.hpp"
+
 class Game{
 public:
     Game();
@@ -24,8 +27,11 @@ public:
     void loop();
     Clock * getDeltaClock();
     bool isConsoleOpen();
+    GameState * getGameState();
     
 private:
+    GameState gameState;
+    
     MessageBus messageBus;
     Console consoleSystem;
     Window windowSystem;

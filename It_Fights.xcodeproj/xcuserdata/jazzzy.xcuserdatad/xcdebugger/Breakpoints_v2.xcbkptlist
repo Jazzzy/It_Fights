@@ -71,11 +71,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Window.cpp"
-            timestampString = "512698451.342918"
+            timestampString = "512770665.315618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "Window::onNotify (Message message)"
             landmarkType = "7">
          </BreakpointContent>
@@ -87,11 +87,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Window.cpp"
-            timestampString = "512698451.342918"
+            timestampString = "512770665.315618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "Window::onNotify (Message message)"
             landmarkType = "7">
          </BreakpointContent>
@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Window.cpp"
-            timestampString = "512673788.453171"
+            timestampString = "512770665.315618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "Window::tryToResize(unsigned int x, unsigned int y)"
             landmarkType = "7">
          </BreakpointContent>

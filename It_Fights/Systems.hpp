@@ -14,7 +14,9 @@
 enum Systems {
     S_Window,
     S_Console,
-    S_Input
+    S_Input,
+    S_CurrentScene,
+    S_GameState
 };
 
 

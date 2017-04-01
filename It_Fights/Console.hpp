@@ -15,6 +15,7 @@
 #include <vector>
 #include "ConsoleLine.hpp"
 #include "InputLine.hpp"
+#include "ResourceManager.hpp"
 
 class Console : BusNode, Drawable {
 public:

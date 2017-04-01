@@ -1,0 +1,25 @@
+//
+//  TitleText.hpp
+//  It_Fights
+//
+//  Created by Rubén Osorio López on 1/4/17.
+//  Copyright © 2017 Rubén Osorio López. All rights reserved.
+//
+
+#ifndef TitleText_hpp
+#define TitleText_hpp
+
+#include "GameObject.hpp"
+
+class TitleText : public GameObject {
+public:
+    TitleText();
+    ~TitleText();
+    void update();
+    void draw(sf::RenderTarget *renderTarget);
+private:
+    sf::Font mainFont;
+    
+};
+
+#endif /* TitleText_hpp */

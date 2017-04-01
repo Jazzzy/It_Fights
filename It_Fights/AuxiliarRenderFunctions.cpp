@@ -7,3 +7,14 @@
 //
 
 #include "AuxiliarRenderFunctions.hpp"
+
+PairI getRealPixels(sf::RenderTarget *renderTarget , double x, double y){
+
+    PairI returnPair;
+    sf::Vector2u renderSize = renderTarget->getSize();
+    
+    returnPair.x = (x * renderSize.x);
+    returnPair.y = (y * renderSize.y);
+    
+    return returnPair;
+}

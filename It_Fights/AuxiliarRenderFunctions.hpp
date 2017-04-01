@@ -9,7 +9,9 @@
 #ifndef AuxiliarRenderFunctions_hpp
 #define AuxiliarRenderFunctions_hpp
 
+#include "MessageData.h"
 
+PairI getRealPixels(sf::RenderTarget *renderTarget , double x, double y);
 
 
 #endif /* AuxiliarRenderFunctions_hpp */

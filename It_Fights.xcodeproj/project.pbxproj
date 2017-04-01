@@ -20,6 +20,13 @@
 		407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF00D1E8AB7EF004263E6 /* Clock.cpp */; };
 		407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0111E8ABE1C004263E6 /* Input.cpp */; };
 		407DF0161E8ABF40004263E6 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0141E8ABF40004263E6 /* Event.cpp */; };
+		40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBB1E901DC800DB11BB /* Scene.cpp */; };
+		40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBE1E90202000DB11BB /* GameObject.cpp */; };
+		40C41EC41E90222600DB11BB /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EC21E90222600DB11BB /* MenuScene.cpp */; };
+		40C41EC91E90244900DB11BB /* TitleText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EC71E90244900DB11BB /* TitleText.cpp */; };
+		40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41ECB1E90293600DB11BB /* ResourceManager.cpp */; };
+		40C41ECF1E90298600DB11BB /* carnevalee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C41ECE1E90298600DB11BB /* carnevalee.ttf */; };
+		40C41ED31E90490200DB11BB /* playfair.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C41ED21E90490200DB11BB /* playfair.ttf */; };
 		40DBD6031E8F1F5C0027E88A /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DBD6011E8F1F5C0027E88A /* GameState.cpp */; };
 		40DBD6061E8F20760027E88A /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DBD6041E8F20760027E88A /* Game.cpp */; };
 		40E3B9AD1E8E9B28001EE4AA /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9AB1E8E9B28001EE4AA /* Console.cpp */; };
@@ -54,6 +61,18 @@
 		407DF0121E8ABE1C004263E6 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
 		407DF0141E8ABF40004263E6 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		407DF0151E8ABF40004263E6 /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		40C41EBB1E901DC800DB11BB /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		40C41EBC1E901DC800DB11BB /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		40C41EBE1E90202000DB11BB /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		40C41EBF1E90202000DB11BB /* GameObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameObject.hpp; sourceTree = "<group>"; };
+		40C41EC21E90222600DB11BB /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuScene.cpp; sourceTree = "<group>"; };
+		40C41EC31E90222600DB11BB /* MenuScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MenuScene.hpp; sourceTree = "<group>"; };
+		40C41EC71E90244900DB11BB /* TitleText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleText.cpp; sourceTree = "<group>"; };
+		40C41EC81E90244900DB11BB /* TitleText.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TitleText.hpp; sourceTree = "<group>"; };
+		40C41ECB1E90293600DB11BB /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		40C41ECC1E90293600DB11BB /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
+		40C41ECE1E90298600DB11BB /* carnevalee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = carnevalee.ttf; sourceTree = "<group>"; };
+		40C41ED21E90490200DB11BB /* playfair.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = playfair.ttf; sourceTree = "<group>"; };
 		40DBD5FF1E8F1C490027E88A /* MessageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageData.h; sourceTree = "<group>"; };
 		40DBD6011E8F1F5C0027E88A /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
 		40DBD6021E8F1F5C0027E88A /* GameState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
@@ -101,6 +120,7 @@
 		407DEFE11E897765004263E6 /* It_Fights */ = {
 			isa = PBXGroup;
 			children = (
+				40C41ECA1E90292000DB11BB /* It_resources */,
 				40DBD6001E8F1F200027E88A /* It_GameLogic */,
 				407DF0101E8ABDDB004263E6 /* It_input */,
 				407DF00C1E8AB7DA004263E6 /* It_utils */,
@@ -109,8 +129,6 @@
 				407DF0051E8AAC18004263E6 /* It_console */,
 				407DF0011E898C94004263E6 /* test */,
 				407DEFF71E897849004263E6 /* It_messaging */,
-				407DEFE41E897765004263E6 /* ResourcePath.mm */,
-				407DEFE61E897765004263E6 /* ResourcePath.hpp */,
 				407DEFE71E897765004263E6 /* main.cpp */,
 				407DEFE91E897765004263E6 /* Resources */,
 				407DEFE21E897765004263E6 /* Supporting Files */,
@@ -129,6 +147,8 @@
 		407DEFE91E897765004263E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40C41ED21E90490200DB11BB /* playfair.ttf */,
+				40C41ECE1E90298600DB11BB /* carnevalee.ttf */,
 				407DEFEA1E897765004263E6 /* cute_image.jpg */,
 				407DEFEC1E897765004263E6 /* nice_music.ogg */,
 				407DEFEE1E897765004263E6 /* sansation.ttf */,
@@ -212,13 +232,56 @@
 			name = It_input;
 			sourceTree = "<group>";
 		};
+		40C41EC11E90220D00DB11BB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				40C41EC51E9022A700DB11BB /* Menu */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		40C41EC51E9022A700DB11BB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				40C41EC61E9022AE00DB11BB /* GameObjects */,
+				40C41EC21E90222600DB11BB /* MenuScene.cpp */,
+				40C41EC31E90222600DB11BB /* MenuScene.hpp */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		40C41EC61E9022AE00DB11BB /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				40C41EC71E90244900DB11BB /* TitleText.cpp */,
+				40C41EC81E90244900DB11BB /* TitleText.hpp */,
+			);
+			name = GameObjects;
+			sourceTree = "<group>";
+		};
+		40C41ECA1E90292000DB11BB /* It_resources */ = {
+			isa = PBXGroup;
+			children = (
+				407DEFE41E897765004263E6 /* ResourcePath.mm */,
+				407DEFE61E897765004263E6 /* ResourcePath.hpp */,
+				40C41ECB1E90293600DB11BB /* ResourceManager.cpp */,
+				40C41ECC1E90293600DB11BB /* ResourceManager.hpp */,
+			);
+			name = It_resources;
+			sourceTree = "<group>";
+		};
 		40DBD6001E8F1F200027E88A /* It_GameLogic */ = {
 			isa = PBXGroup;
 			children = (
+				40C41EC11E90220D00DB11BB /* Scenes */,
 				40DBD6011E8F1F5C0027E88A /* GameState.cpp */,
 				40DBD6021E8F1F5C0027E88A /* GameState.hpp */,
 				40DBD6041E8F20760027E88A /* Game.cpp */,
 				40DBD6051E8F20760027E88A /* Game.hpp */,
+				40C41EBB1E901DC800DB11BB /* Scene.cpp */,
+				40C41EBC1E901DC800DB11BB /* Scene.hpp */,
+				40C41EBE1E90202000DB11BB /* GameObject.cpp */,
+				40C41EBF1E90202000DB11BB /* GameObject.hpp */,
 			);
 			name = It_GameLogic;
 			sourceTree = "<group>";
@@ -250,7 +313,7 @@
 		407DEFD61E897764004263E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Rubén Osorio López";
 				TargetAttributes = {
 					407DEFDE1E897764004263E6 = {
@@ -283,6 +346,8 @@
 			files = (
 				407DEFF11E897765004263E6 /* icon.png in Resources */,
 				407DEFEF1E897765004263E6 /* sansation.ttf in Resources */,
+				40C41ED31E90490200DB11BB /* playfair.ttf in Resources */,
+				40C41ECF1E90298600DB11BB /* carnevalee.ttf in Resources */,
 				407DEFED1E897765004263E6 /* nice_music.ogg in Resources */,
 				407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */,
 			);
@@ -314,17 +379,22 @@
 				40E3B9B31E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp in Sources */,
 				40DBD6031E8F1F5C0027E88A /* GameState.cpp in Sources */,
 				407DF0091E8AAC9D004263E6 /* Window.cpp in Sources */,
+				40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */,
 				40DBD6061E8F20760027E88A /* Game.cpp in Sources */,
 				407DEFE81E897765004263E6 /* main.cpp in Sources */,
 				407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */,
 				40E3B9B01E8E9B6F001EE4AA /* Drawable.cpp in Sources */,
+				40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */,
 				407DF0161E8ABF40004263E6 /* Event.cpp in Sources */,
+				40C41EC41E90222600DB11BB /* MenuScene.cpp in Sources */,
 				407DEFFD1E897B92004263E6 /* Message.cpp in Sources */,
 				407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */,
 				40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */,
+				40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */,
 				407DF0001E898962004263E6 /* BusNode.cpp in Sources */,
 				40E3B9AD1E8E9B28001EE4AA /* Console.cpp in Sources */,
 				407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */,
+				40C41EC91E90244900DB11BB /* TitleText.cpp in Sources */,
 				40E3B9B91E8EA6BA001EE4AA /* InputLine.cpp in Sources */,
 				407DEFFA1E8978C2004263E6 /* MessageBus.cpp in Sources */,
 			);
@@ -336,14 +406,31 @@
 		407DEFF21E897765004263E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -353,6 +440,7 @@
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -380,14 +468,30 @@
 		407DEFF31E897765004263E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -426,6 +530,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "It_Fights/It_Fights-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,6 +540,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "It_Fights/It_Fights-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

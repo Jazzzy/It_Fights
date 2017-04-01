@@ -9,11 +9,24 @@
 #ifndef GameState_hpp
 #define GameState_hpp
 
-class GameState{
+#include <Scene.hpp>
+
+class GameState : BusNode{
 public:
-    GameState();
+    GameState(MessageBus * messageBus);
     ~GameState();
+    void update();
+    Scene * getScene();
+    bool isConsoleOpen();
+    bool isGamePaused();
+    bool areWeInMainMenu();
+
+    
 private:
+    void onNotify(Message message);
+    Scene *scene;
+    bool paused;
+    bool mainMenu;
     
 };
 

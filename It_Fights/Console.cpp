@@ -13,8 +13,10 @@
 #include "Clock.hpp"
 #include <cmath>
 #include "Game.hpp"
+#include <sstream>
 
 extern Game game;
+extern ResourceManager resourceManager;
 
 Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageBus) {
     
@@ -23,9 +25,7 @@ Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageB
     this->max_openness = 0.8f;
     this->open_speed = 2.0f;
     
-    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-        std::cerr << "ERROR: Could not load console font" << std::endl;
-    }
+    this->font = resourceManager.getFont("sansation");
     
     this->inputTextColor = sf::Color::Black;
     this->msgTextColor = sf::Color(75,75,75);
@@ -40,6 +40,7 @@ Console::~Console(){
     
 }
 
+
 void Console::update(){
     updateOpenness();
 }
@@ -49,9 +50,26 @@ bool Console::isOpen(){
 }
 
 void Console::evaluateInputLine(){
-    //@@TODO: Evaluate here the input line (primarly sens a message with the string to everyone)
-    Message consoleMessageToEveryone(this->inputLine.getRealString().toAnsiString());
-    send(consoleMessageToEveryone);
+    
+    std::string strLine = this->inputLine.getRealString().toAnsiString();
+    
+    if(strLine.find_first_of("sendTo")==0){
+        
+        std::stringstream ss(strLine);
+        std::string sendTo;
+        int system;
+        std::string messageToSystem;
+        ss >> sendTo >> system >> messageToSystem;
+        Message consoleMessageToSystem(messageToSystem,system);
+        send(consoleMessageToSystem);
+        
+    }else{
+    
+        Message consoleMessageToEveryone(strLine);
+        send(consoleMessageToEveryone);
+    
+    }
+    
     this->inputLine.erase();
 }
 
@@ -147,7 +165,7 @@ void Console::drawMessages(sf::RenderTarget *renderTarget, float origin_X, float
     float realOrigin_X = (origin_X * renderSize.x) + HORIZONTAL_PADDING +OUTLINE_THICKNESS;
     float realOrigin_Y = (origin_Y * renderSize.y) + VERTICAL_PADDING +OUTLINE_THICKNESS;
     
-    float realSize_X = (size_X * renderSize.x) - HORIZONTAL_PADDING - OUTLINE_THICKNESS*2;
+//    float realSize_X = (size_X * renderSize.x) - HORIZONTAL_PADDING - OUTLINE_THICKNESS*2; //@@UNUSED VARIABLE
     float realSize_Y = (size_Y * renderSize.y) - VERTICAL_PADDING - OUTLINE_THICKNESS*2;
     
     //First we print the input line
