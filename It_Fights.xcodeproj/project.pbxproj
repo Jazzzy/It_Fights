@@ -34,6 +34,13 @@
 		40E3B9B31E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9B11E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp */; };
 		40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9B41E8EA3F7001EE4AA /* ConsoleLine.cpp */; };
 		40E3B9B91E8EA6BA001EE4AA /* InputLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9B71E8EA6BA001EE4AA /* InputLine.cpp */; };
+		40FEE04F1E904FC6004DCA95 /* Add.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04A1E904FC6004DCA95 /* Add.frag */; };
+		40FEE0501E904FC6004DCA95 /* Brightness.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04B1E904FC6004DCA95 /* Brightness.frag */; };
+		40FEE0511E904FC6004DCA95 /* DownSample.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04C1E904FC6004DCA95 /* DownSample.frag */; };
+		40FEE0521E904FC6004DCA95 /* Fullpass.vert in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04D1E904FC6004DCA95 /* Fullpass.vert */; };
+		40FEE0531E904FC6004DCA95 /* GuassianBlur.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04E1E904FC6004DCA95 /* GuassianBlur.frag */; };
+		40FEE05D1E905168004DCA95 /* BloomShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40FEE05B1E905168004DCA95 /* BloomShader.cpp */; };
+		40FEE0601E905173004DCA95 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40FEE05E1E905173004DCA95 /* Shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +95,15 @@
 		40E3B9B51E8EA3F7001EE4AA /* ConsoleLine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConsoleLine.hpp; sourceTree = "<group>"; };
 		40E3B9B71E8EA6BA001EE4AA /* InputLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputLine.cpp; sourceTree = "<group>"; };
 		40E3B9B81E8EA6BA001EE4AA /* InputLine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InputLine.hpp; sourceTree = "<group>"; };
+		40FEE04A1E904FC6004DCA95 /* Add.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Add.frag; sourceTree = "<group>"; };
+		40FEE04B1E904FC6004DCA95 /* Brightness.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Brightness.frag; sourceTree = "<group>"; };
+		40FEE04C1E904FC6004DCA95 /* DownSample.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DownSample.frag; sourceTree = "<group>"; };
+		40FEE04D1E904FC6004DCA95 /* Fullpass.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fullpass.vert; sourceTree = "<group>"; };
+		40FEE04E1E904FC6004DCA95 /* GuassianBlur.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = GuassianBlur.frag; sourceTree = "<group>"; };
+		40FEE05B1E905168004DCA95 /* BloomShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloomShader.cpp; sourceTree = "<group>"; };
+		40FEE05C1E905168004DCA95 /* BloomShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BloomShader.hpp; sourceTree = "<group>"; };
+		40FEE05E1E905173004DCA95 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		40FEE05F1E905173004DCA95 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +163,7 @@
 		407DEFE91E897765004263E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40FEE0441E904EBE004DCA95 /* GLSL_Shaders */,
 				40C41ED21E90490200DB11BB /* playfair.ttf */,
 				40C41ECE1E90298600DB11BB /* carnevalee.ttf */,
 				407DEFEA1E897765004263E6 /* cute_image.jpg */,
@@ -194,12 +211,15 @@
 		407DF0061E8AAC88004263E6 /* It_rendering */ = {
 			isa = PBXGroup;
 			children = (
+				40FEE05A1E905150004DCA95 /* shaders */,
 				407DF0071E8AAC9D004263E6 /* Window.cpp */,
 				407DF0081E8AAC9D004263E6 /* Window.hpp */,
 				40E3B9AE1E8E9B6F001EE4AA /* Drawable.cpp */,
 				40E3B9AF1E8E9B6F001EE4AA /* Drawable.hpp */,
 				40E3B9B11E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp */,
 				40E3B9B21E8E9CBE001EE4AA /* AuxiliarRenderFunctions.hpp */,
+				40FEE05E1E905173004DCA95 /* Shader.cpp */,
+				40FEE05F1E905173004DCA95 /* Shader.hpp */,
 			);
 			name = It_rendering;
 			sourceTree = "<group>";
@@ -286,6 +306,27 @@
 			name = It_GameLogic;
 			sourceTree = "<group>";
 		};
+		40FEE0441E904EBE004DCA95 /* GLSL_Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				40FEE04A1E904FC6004DCA95 /* Add.frag */,
+				40FEE04B1E904FC6004DCA95 /* Brightness.frag */,
+				40FEE04C1E904FC6004DCA95 /* DownSample.frag */,
+				40FEE04D1E904FC6004DCA95 /* Fullpass.vert */,
+				40FEE04E1E904FC6004DCA95 /* GuassianBlur.frag */,
+			);
+			name = GLSL_Shaders;
+			sourceTree = "<group>";
+		};
+		40FEE05A1E905150004DCA95 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				40FEE05B1E905168004DCA95 /* BloomShader.cpp */,
+				40FEE05C1E905168004DCA95 /* BloomShader.hpp */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,11 +386,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				407DEFF11E897765004263E6 /* icon.png in Resources */,
+				40FEE0511E904FC6004DCA95 /* DownSample.frag in Resources */,
 				407DEFEF1E897765004263E6 /* sansation.ttf in Resources */,
 				40C41ED31E90490200DB11BB /* playfair.ttf in Resources */,
 				40C41ECF1E90298600DB11BB /* carnevalee.ttf in Resources */,
 				407DEFED1E897765004263E6 /* nice_music.ogg in Resources */,
 				407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */,
+				40FEE0531E904FC6004DCA95 /* GuassianBlur.frag in Resources */,
+				40FEE0501E904FC6004DCA95 /* Brightness.frag in Resources */,
+				40FEE0521E904FC6004DCA95 /* Fullpass.vert in Resources */,
+				40FEE04F1E904FC6004DCA95 /* Add.frag in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +434,8 @@
 				407DF0161E8ABF40004263E6 /* Event.cpp in Sources */,
 				40C41EC41E90222600DB11BB /* MenuScene.cpp in Sources */,
 				407DEFFD1E897B92004263E6 /* Message.cpp in Sources */,
+				40FEE0601E905173004DCA95 /* Shader.cpp in Sources */,
+				40FEE05D1E905168004DCA95 /* BloomShader.cpp in Sources */,
 				407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */,
 				40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */,
 				40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */,

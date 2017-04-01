@@ -72,7 +72,6 @@ void Window::update(){
     
     sf_window.draw(sprite);
     
-    
     this->sf_window.display();
     
     game.getDeltaClock()->setFrameSeparator();

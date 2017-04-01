@@ -18,6 +18,5 @@ MenuScene::MenuScene(MessageBus * messageBus) : Scene(messageBus){
 }
 
 MenuScene::~MenuScene(){
-    std::cout << "DESTROYING SCENE" <<std::endl;
     delete this->titleText;
 }

@@ -24,7 +24,6 @@ TitleText::TitleText(){
 
 
 TitleText::~TitleText(){
-    std::cout << "DESTROYING GAME OBJECT" <<std::endl;
 }
 
 
@@ -62,7 +61,6 @@ void TitleText::draw(sf::RenderTarget *renderTarget){
 
     
     //@@TODO: Maybe some shader stuff here: https://github.com/SFML/SFML-Game-Development-Book/blob/master/09_Audio/Source/BloomEffect.cpp
-    
     
     renderTarget->draw(text_it);
     renderTarget->draw(text_fights);
