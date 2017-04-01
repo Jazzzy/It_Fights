@@ -20,6 +20,8 @@
 		407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF00D1E8AB7EF004263E6 /* Clock.cpp */; };
 		407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0111E8ABE1C004263E6 /* Input.cpp */; };
 		407DF0161E8ABF40004263E6 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0141E8ABF40004263E6 /* Event.cpp */; };
+		40DBD6031E8F1F5C0027E88A /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DBD6011E8F1F5C0027E88A /* GameState.cpp */; };
+		40DBD6061E8F20760027E88A /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DBD6041E8F20760027E88A /* Game.cpp */; };
 		40E3B9AD1E8E9B28001EE4AA /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9AB1E8E9B28001EE4AA /* Console.cpp */; };
 		40E3B9B01E8E9B6F001EE4AA /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9AE1E8E9B6F001EE4AA /* Drawable.cpp */; };
 		40E3B9B31E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9B11E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp */; };
@@ -53,6 +55,10 @@
 		407DF0141E8ABF40004263E6 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		407DF0151E8ABF40004263E6 /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
 		40DBD5FF1E8F1C490027E88A /* MessageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageData.h; sourceTree = "<group>"; };
+		40DBD6011E8F1F5C0027E88A /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		40DBD6021E8F1F5C0027E88A /* GameState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
+		40DBD6041E8F20760027E88A /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		40DBD6051E8F20760027E88A /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		40E3B9AB1E8E9B28001EE4AA /* Console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
 		40E3B9AC1E8E9B28001EE4AA /* Console.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Console.hpp; sourceTree = "<group>"; };
 		40E3B9AE1E8E9B6F001EE4AA /* Drawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 		407DEFE11E897765004263E6 /* It_Fights */ = {
 			isa = PBXGroup;
 			children = (
+				40DBD6001E8F1F200027E88A /* It_GameLogic */,
 				407DF0101E8ABDDB004263E6 /* It_input */,
 				407DF00C1E8AB7DA004263E6 /* It_utils */,
 				407DF00A1E8AAD11004263E6 /* It_systems */,
@@ -205,6 +212,17 @@
 			name = It_input;
 			sourceTree = "<group>";
 		};
+		40DBD6001E8F1F200027E88A /* It_GameLogic */ = {
+			isa = PBXGroup;
+			children = (
+				40DBD6011E8F1F5C0027E88A /* GameState.cpp */,
+				40DBD6021E8F1F5C0027E88A /* GameState.hpp */,
+				40DBD6041E8F20760027E88A /* Game.cpp */,
+				40DBD6051E8F20760027E88A /* Game.hpp */,
+			);
+			name = It_GameLogic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,7 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E3B9B31E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp in Sources */,
+				40DBD6031E8F1F5C0027E88A /* GameState.cpp in Sources */,
 				407DF0091E8AAC9D004263E6 /* Window.cpp in Sources */,
+				40DBD6061E8F20760027E88A /* Game.cpp in Sources */,
 				407DEFE81E897765004263E6 /* main.cpp in Sources */,
 				407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */,
 				40E3B9B01E8E9B6F001EE4AA /* Drawable.cpp in Sources */,

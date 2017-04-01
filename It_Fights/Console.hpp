@@ -53,6 +53,7 @@ private:
     //ConsoleLines
     std::vector<ConsoleLine> messageLines;
     InputLine inputLine;
+    void evaluateInputLine();
     
     
 

@@ -12,8 +12,9 @@
 #include "ResourcePath.hpp"
 #include "Clock.hpp"
 #include <cmath>
+#include "Game.hpp"
 
-extern Clock m_clock;
+extern Game game;
 
 Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageBus) {
     
@@ -23,7 +24,7 @@ Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageB
     this->open_speed = 50.0f;
     
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-        std::cout << "ERROR: Could not load console font" << std::endl;
+        std::cerr << "ERROR: Could not load console font" << std::endl;
     }
     
     this->inputTextColor = sf::Color::Black;
@@ -32,17 +33,6 @@ Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageB
     this->inputBackgroundColor = sf::Color(189,151,120);      //Darker Brown
     
     this->pixelCharacterSize = 40;
-    
-    
-    
-//       TESTING INPUTS
-//    this->inputLine.appendString("Testing string omg is this working??");
-//    
-//    for(int i=0;i<100;i++){
-//        this->messageLines.push_back(ConsoleLine("Testing string aslkdjaksd alsdkjalskd alsdkjaskldj alsdkjaslkd aslkdjalskd"));
-//    }
-    
-    
     
 }
 
@@ -58,8 +48,14 @@ bool Console::isOpen(){
     return (this->current_openness != 0.0f);
 }
 
+void Console::evaluateInputLine(){
+    //@@TODO: Evaluate here the input line (primarly sens a message with the string to everyone)
+    Message consoleMessageToEveryone(this->inputLine.getRealString().toAnsiString());
+    send(consoleMessageToEveryone);
+    this->inputLine.erase();
+}
+
 void Console::onNotify (Message message){
-    std::cout << "Console System received: " << message.getEvent() << std::endl;
     
     if(message.getEvent().compare("MSG_TOGGLE_CONSOLE")==0){
         if(this->target_openness == 0.0f){
@@ -69,12 +65,38 @@ void Console::onNotify (Message message){
         }
     }else if(message.getEvent().compare("CONSOLE_SHOW_MSG")==0){    //Add a message to the console in a new line
         if(message.getData().type!=MessageData::STRING_PTR){
-            std::cout << "ERROR: The data in this message should be a string pointer" << std::endl;
+            std::cerr << "ERROR: The data in this message should be a string pointer" << std::endl;
         }else{
             this->messageLines.push_back(ConsoleLine(sf::String(*(message.getData().string_ptr))));
         }
 
         delete message.getData().string_ptr; //@@OPTIMIZATION: We could try to instantiate this strings on a custom allocator/memory pool to avoid fragmentation
+    }else if(message.getEvent().compare("MSG_CONSOLE_KEYCHAR")==0){
+        if(message.getData().type!=MessageData::CHARACTER){
+            std::cerr << "ERROR: The data in this message should be a character" << std::endl;
+        }else{
+            this->inputLine.appendCharacter(message.getData().character);
+        }
+        
+    }else if(message.getEvent().compare("MSG_CONSOLE_KEY")==0){
+        if(message.getData().type!=MessageData::KEYBOARD_KEY){
+            std::cerr << "ERROR: The data in this message should be keyboard key" << std::endl;
+        }else{
+            switch(message.getData().key){
+                case sf::Keyboard::BackSpace:
+                    this->inputLine.removeLastCharacter();
+                    break;
+                    
+                case sf::Keyboard::Return:
+                    this->evaluateInputLine();
+                    break;
+            
+                default:
+                    break;
+            }
+        
+        }
+        
     }
     
 }
@@ -162,7 +184,7 @@ void Console::drawMessages(sf::RenderTarget *renderTarget, float origin_X, float
 
 void Console::updateOpenness(){
     
-    double deltaOpenness = this->open_speed * m_clock.getDeltaTime();
+    double deltaOpenness = this->open_speed * game.getDeltaClock()->getDeltaTime();
     
     if(this->current_openness < this->target_openness ){
         this->current_openness += deltaOpenness;

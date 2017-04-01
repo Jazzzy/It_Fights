@@ -9,6 +9,7 @@
 #ifndef MessageData_h
 #define MessageData_h
 
+#include <SFML/Graphics.hpp>
 
 struct PairI {
     int x;
@@ -19,11 +20,15 @@ struct MessageData{
     enum{
         EMPTY,
         STRING_PTR,
-        PAIR_OF_INTS
+        PAIR_OF_INTS,
+        KEYBOARD_KEY,
+        CHARACTER
     }type;
     union{
         std::string * string_ptr;
         PairI intPair;
+        sf::Keyboard::Key key;
+        char character;
     };
 };
 

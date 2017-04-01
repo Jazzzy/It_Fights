@@ -10,9 +10,9 @@
 #include "Systems.hpp"
 #include <iostream>
 #include "Clock.hpp"
+#include "Game.hpp"
 
-extern Clock m_clock;
-
+extern Game game;
 
 Window::Window(MessageBus * messageBus, Console * console, std::string windowName , int resolution_x , int resolution_y ) :  BusNode(Systems::S_Window,messageBus), sf_window(sf::VideoMode(resolution_x,resolution_y),windowName) , sf_renderTexture(){
     
@@ -68,8 +68,8 @@ void Window::update(){
     
     
     this->sf_window.display();
-    m_clock.setFrameSeparator();
     
+    game.getDeltaClock()->setFrameSeparator();
     
 }
 
@@ -102,13 +102,11 @@ void Window::tryToResize(unsigned int x, unsigned int y){
 }
 
 void Window::onNotify (Message message){
-    std::cout << "Window System received: " << message.getEvent() << std::endl;
-    
     if(message.getEvent().compare("MSG_CLOSE_WINDOW")==0){
         this->sf_window.close();
     }else if(message.getEvent().compare("MSG_RESIZED_WINDOW")==0){
         if(message.getData().type!=MessageData::PAIR_OF_INTS){
-            std::cout << "ERROR: The data in this message should be a pair of ints" << std::endl;
+            std::cerr << "ERROR: The data in this message should be a pair of ints" << std::endl;
         }else{
             this->tryToResize(message.getData().intPair.x, message.getData().intPair.y);
         }
