@@ -49,6 +49,9 @@ private:
     
     void consoleRectangle(sf::RenderTarget *renderTarget, float origin_X, float origin_Y , float size_X , float size_Y, sf::Color backgroundColor ,sf:: Color outlineColor);
     void drawMessages(sf::RenderTarget *renderTarget, float origin_X, float origin_Y , float size_X , float size_Y, sf::Color textColor, sf::Color softTextColor);
+    void drawFps(sf::RenderTarget *renderTarget, float origin_X, float origin_Y , sf::Color textColor);
+    
+    bool showFps;
     
     
     //ConsoleLines

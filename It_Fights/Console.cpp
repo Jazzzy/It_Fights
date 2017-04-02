@@ -34,6 +34,8 @@ Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageB
     
     this->pixelCharacterSize = 40;
     
+    this->showFps = true;
+    
 }
 
 Console::~Console(){
@@ -114,7 +116,8 @@ void Console::onNotify (Message message){
             }
         
         }
-        
+    }else if(message.getEvent().compare("MSG_TOGGLE_FPS")==0){
+        this->showFps = ! this->showFps;
     }
     
 }
@@ -125,6 +128,11 @@ void Console::draw(sf::RenderTarget *renderTarget){
     consoleRectangle(renderTarget, 0, 0, 1, this->current_openness, this->messageBackgroundColor, this->inputTextColor);
     
     drawMessages(renderTarget, 0, 0, 1, this->current_openness, this->inputTextColor, this->msgTextColor);
+    
+    if(this->showFps){
+        //std::cout << "Drawing fps" <<std::endl;
+        drawFps(renderTarget, 0.91f, 0, this->inputTextColor);
+    }
     
 }
 
@@ -195,8 +203,21 @@ void Console::drawMessages(sf::RenderTarget *renderTarget, float origin_X, float
             renderTarget->draw(text);
         }
     }
+}
+
+void Console::drawFps(sf::RenderTarget *renderTarget, float origin_X, float origin_Y, sf::Color textColor){
     
+    sf::Vector2u renderSize = renderTarget->getSize();
     
+    float realOrigin_X = (origin_X * renderSize.x) + HORIZONTAL_PADDING;
+    float realOrigin_Y = (origin_Y * renderSize.y) + VERTICAL_PADDING;
+    
+    std::string fpsString = "FPS: " + std::to_string(game.getDeltaClock()->getMeanFPS());
+    sf::Text text(fpsString,this->font, this->pixelCharacterSize);
+    text.setFillColor(textColor);
+    text.setPosition(realOrigin_X, realOrigin_Y);
+    
+    renderTarget->draw(text);
 }
 
 
@@ -216,8 +237,6 @@ void Console::updateOpenness(){
             this->current_openness = 0;
             //We could play a sound marking the fac that we have closed the console
         }
-        
     }
-    
 }
 

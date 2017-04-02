@@ -10,6 +10,7 @@
 #define Clock_hpp
 
 #include <SFML/Audio.hpp>
+#include <deque>
 
 class Clock {
 public:
@@ -18,10 +19,17 @@ public:
     
     void setFrameSeparator();
     float getDeltaTime();
+    float getMeanDeltaTime();
+    unsigned int getMeanFPS();
     
-    private :
+private :
     sf::Clock deltaClock;
     sf::Time deltaTime;
+    std::deque<sf::Time> timesQueue;
+    float meanDeltaTime;
+    
+    void updateQueue(sf::Time time);
+    
 };
 
 

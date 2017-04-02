@@ -23,8 +23,8 @@ Window::Window(MessageBus * messageBus, Console * console, std::string windowNam
     sf_renderTexture.setSmooth(true);
     this->currRealResolution = sf::Vector2u(resolution_x,resolution_y);
     
-    this->sf_window.setVerticalSyncEnabled(true);
-    this->sf_window.setFramerateLimit(60);
+    this->sf_window.setVerticalSyncEnabled(true);   //@@TODO: Why does it not work without VSync?
+    this->sf_window.setFramerateLimit(240);
     
     //    std::cout << "Window System Created, Size: " << this->sf_window.getSize().x << ", " << this->sf_window.getSize().y <<std::endl;
     
