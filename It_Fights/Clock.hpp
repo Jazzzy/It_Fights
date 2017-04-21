@@ -11,6 +11,7 @@
 
 #include <SFML/Audio.hpp>
 #include <deque>
+#include <functional>
 
 class Clock {
 public:
@@ -23,10 +24,14 @@ public:
     unsigned int getMeanFPS();
     
 private :
+    void first20Update();
+    void runningUpdate();
+    
     sf::Clock deltaClock;
-    sf::Time deltaTime;
-    std::deque<sf::Time> timesQueue;
+    float deltaTime;
+    std::deque<float> timesQueue;
     float meanDeltaTime;
+    std::function<void()> updateFunction;
     
     void updateQueue(sf::Time time);
     

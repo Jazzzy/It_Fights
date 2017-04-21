@@ -11,23 +11,23 @@
 #include <iostream>
 #include "Clock.hpp"
 #include "Game.hpp"
+#include "ResourcePath.hpp"
+
 
 extern Game game;
 
 Window::Window(MessageBus * messageBus, Console * console, std::string windowName , int resolution_x , int resolution_y ) :  BusNode(Systems::S_Window,messageBus), sf_window(sf::VideoMode(resolution_x,resolution_y),windowName) , sf_renderTexture(){
     
+    this->sf_window.setVerticalSyncEnabled(true);
+    //this->sf_window.setFramerateLimit(300);
     
     this->console = console;
-    
     sf_renderTexture.create(INTERNAL_RESOLUTION_X, INTERNAL_RESOLUTION_Y);
     sf_renderTexture.setSmooth(true);
     this->currRealResolution = sf::Vector2u(resolution_x,resolution_y);
     
-    this->sf_window.setVerticalSyncEnabled(true);   //@@TODO: Why does it not work without VSync?
-    this->sf_window.setFramerateLimit(240);
-    
-    //    std::cout << "Window System Created, Size: " << this->sf_window.getSize().x << ", " << this->sf_window.getSize().y <<std::endl;
-    
+    this->shouldRender = true;
+        
 }
 
 sf::Window * Window::getInternalWindowRef(){
@@ -38,14 +38,21 @@ Window::~Window(){
     //    std::cout << "Window System deleting" << std::endl;
 }
 
-#include "ResourcePath.hpp"
+void Window::toggleShouldRender(){
+    this->shouldRender= !this->shouldRender;
+}
+
 
 void Window::update(){
     
-    sf::Color boneColor(227,218,201);
+    if(!this->shouldRender){
+        game.getDeltaClock()->setFrameSeparator();
+        return;
+    }
     
-    this->sf_renderTexture.clear(boneColor);
-    
+    this->sf_window.clear(sf::Color::Black);
+
+    this->sf_renderTexture.clear(sf::Color(227,218,201)); //Boneish color
     //Draw here everything to the texture
     
     game.getGameState()->getScene()->draw(&sf_renderTexture);
@@ -57,20 +64,14 @@ void Window::update(){
     
     //Apply here every fullscreen shader
     
+    
     if(this->console->isOpen()){
         this->console->draw(&sf_renderTexture);
     }
-    
 
     this->sf_renderTexture.display();
     
-    this->sf_window.clear(sf::Color::Black);
-    
-    const sf::Texture& texture = this->sf_renderTexture.getTexture();
-    
-    sf::Sprite sprite(texture);
-    
-    sf_window.draw(sprite);
+    sf_window.draw(sf::Sprite(this->sf_renderTexture.getTexture()));
     
     this->sf_window.display();
     

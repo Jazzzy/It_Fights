@@ -9,6 +9,13 @@
 #include "MessageBus.hpp"
 #include <iostream>
 #include "Systems.hpp"
+#include <algorithm>
+
+
+MessageBus::MessageBus(){
+    //By default the function for the scene is empty :D
+    receiverMap[Systems::S_CurrentScene] = [=](Message message) -> void {};
+}
 
 void MessageBus::notify(){
     while(!messageQueue.empty()) {
@@ -24,8 +31,9 @@ void MessageBus::notify(){
         
         if(message.getReceiverSystem()==MSG_TO_EVERYONE){
             for (auto iter = receiverVector.begin(); iter != receiverVector.end(); iter++) {
-                (*iter)(message);
+                (*iter).second(message);
             }
+            receiverMap[Systems::S_CurrentScene](message);
         }else{
             (receiverMap[message.getReceiverSystem()])(message);
         }
@@ -40,8 +48,21 @@ void MessageBus::addReceiver(int systemID, std::function<void (Message)> newRece
         this->consoleReceiver = newReceiver;
     }
     
-    receiverMap[systemID]= newReceiver;
-    this->receiverVector.push_back(newReceiver);
+    receiverMap[systemID] = newReceiver;
+    this->receiverVector.push_back(std::make_pair(systemID, newReceiver));
+}
+
+
+void MessageBus::removeReceiver(int systemID){
+    
+    
+    for (auto iter = receiverVector.begin(); iter != receiverVector.end(); ) {
+        if ((*iter).first == systemID)
+            iter = receiverVector.erase(iter);
+        else
+            ++iter;
+    }
+    
 }
 
 void MessageBus::sendMessage(Message message){

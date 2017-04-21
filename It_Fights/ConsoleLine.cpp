@@ -7,10 +7,16 @@
 //
 
 #include "ConsoleLine.hpp"
+#include <algorithm>
+
+#include <iostream>
 
 
 ConsoleLine::ConsoleLine(sf::String content){
     this->stringContent = content;
+    std::string ansiString = content.toAnsiString();
+    
+    this->numberOfLines = 1 +  (unsigned int) std::count(ansiString.begin(), ansiString.end(), '\n');
 }
 
 ConsoleLine::ConsoleLine(){
@@ -31,4 +37,8 @@ void ConsoleLine::appendCharacter(char character){
 
 void ConsoleLine::appendString(sf::String string){
     this->stringContent+= string;
+}
+
+unsigned int ConsoleLine::getLines(){
+    return this->numberOfLines;
 }

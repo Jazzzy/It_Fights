@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4049DF6C1EAA74AA008DB0E5 /* Level_00_field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6A1EAA74AA008DB0E5 /* Level_00_field.cpp */; };
+		4049DF701EAA7583008DB0E5 /* Level_00_GO_Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Field.cpp */; };
 		407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE41E897765004263E6 /* ResourcePath.mm */; };
 		407DEFE81E897765004263E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE71E897765004263E6 /* main.cpp */; };
 		407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 407DEFEA1E897765004263E6 /* cute_image.jpg */; };
@@ -20,6 +22,7 @@
 		407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF00D1E8AB7EF004263E6 /* Clock.cpp */; };
 		407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0111E8ABE1C004263E6 /* Input.cpp */; };
 		407DF0161E8ABF40004263E6 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0141E8ABF40004263E6 /* Event.cpp */; };
+		40A563CD1EA6654A00133110 /* Bloom.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40A563CC1EA6654A00133110 /* Bloom.frag */; };
 		40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBB1E901DC800DB11BB /* Scene.cpp */; };
 		40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBE1E90202000DB11BB /* GameObject.cpp */; };
 		40C41EC41E90222600DB11BB /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EC21E90222600DB11BB /* MenuScene.cpp */; };
@@ -44,6 +47,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4049DF6A1EAA74AA008DB0E5 /* Level_00_field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_field.cpp; sourceTree = "<group>"; };
+		4049DF6B1EAA74AA008DB0E5 /* Level_00_field.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_field.hpp; sourceTree = "<group>"; };
+		4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_GO_Field.cpp; sourceTree = "<group>"; };
+		4049DF6F1EAA7583008DB0E5 /* Level_00_GO_Field.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_GO_Field.hpp; sourceTree = "<group>"; };
 		407DEFDF1E897765004263E6 /* It_Fights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = It_Fights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407DEFE31E897765004263E6 /* It_Fights-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "It_Fights-Info.plist"; sourceTree = "<group>"; };
 		407DEFE41E897765004263E6 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		407DF0121E8ABE1C004263E6 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
 		407DF0141E8ABF40004263E6 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		407DF0151E8ABF40004263E6 /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		40A563CC1EA6654A00133110 /* Bloom.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Bloom.frag; sourceTree = "<group>"; };
 		40C41EBB1E901DC800DB11BB /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		40C41EBC1E901DC800DB11BB /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
 		40C41EBE1E90202000DB11BB /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
@@ -117,6 +125,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4049DF691EAA7475008DB0E5 /* TopDownGamePlay */ = {
+			isa = PBXGroup;
+			children = (
+				4049DF6D1EAA754E008DB0E5 /* GameObjects */,
+				4049DF6A1EAA74AA008DB0E5 /* Level_00_field.cpp */,
+				4049DF6B1EAA74AA008DB0E5 /* Level_00_field.hpp */,
+			);
+			name = TopDownGamePlay;
+			sourceTree = "<group>";
+		};
+		4049DF6D1EAA754E008DB0E5 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Field.cpp */,
+				4049DF6F1EAA7583008DB0E5 /* Level_00_GO_Field.hpp */,
+			);
+			name = GameObjects;
+			sourceTree = "<group>";
+		};
 		407DEFD51E897764004263E6 = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +282,7 @@
 		40C41EC11E90220D00DB11BB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4049DF691EAA7475008DB0E5 /* TopDownGamePlay */,
 				40C41EC51E9022A700DB11BB /* Menu */,
 			);
 			name = Scenes;
@@ -314,6 +342,7 @@
 				40FEE04C1E904FC6004DCA95 /* DownSample.frag */,
 				40FEE04D1E904FC6004DCA95 /* Fullpass.vert */,
 				40FEE04E1E904FC6004DCA95 /* GuassianBlur.frag */,
+				40A563CC1EA6654A00133110 /* Bloom.frag */,
 			);
 			name = GLSL_Shaders;
 			sourceTree = "<group>";
@@ -394,6 +423,7 @@
 				407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */,
 				40FEE0531E904FC6004DCA95 /* GuassianBlur.frag in Resources */,
 				40FEE0501E904FC6004DCA95 /* Brightness.frag in Resources */,
+				40A563CD1EA6654A00133110 /* Bloom.frag in Resources */,
 				40FEE0521E904FC6004DCA95 /* Fullpass.vert in Resources */,
 				40FEE04F1E904FC6004DCA95 /* Add.frag in Resources */,
 			);
@@ -427,7 +457,9 @@
 				407DF0091E8AAC9D004263E6 /* Window.cpp in Sources */,
 				40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */,
 				40DBD6061E8F20760027E88A /* Game.cpp in Sources */,
+				4049DF6C1EAA74AA008DB0E5 /* Level_00_field.cpp in Sources */,
 				407DEFE81E897765004263E6 /* main.cpp in Sources */,
+				4049DF701EAA7583008DB0E5 /* Level_00_GO_Field.cpp in Sources */,
 				407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */,
 				40E3B9B01E8E9B6F001EE4AA /* Drawable.cpp in Sources */,
 				40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */,

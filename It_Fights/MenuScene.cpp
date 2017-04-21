@@ -9,14 +9,13 @@
 #include "MenuScene.hpp"
 
 
-MenuScene::MenuScene(MessageBus * messageBus) : Scene(messageBus){
+MenuScene::MenuScene(MessageBus * messageBus) : Scene(messageBus), titleText(){
 
-    this->titleText =  new TitleText();
-    //Add here all GameObjects necessary to with
-    this->addGameObject(titleText);
+    //Add here all GameObjects necessary with
+    this->addGameObject(&titleText);
     
 }
 
 MenuScene::~MenuScene(){
-    delete this->titleText;
+    
 }

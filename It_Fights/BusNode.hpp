@@ -15,7 +15,7 @@
 class BusNode{
 public:
     BusNode(int systemIdentifier, MessageBus *messageBus);
-    virtual ~BusNode() = default;
+    ~BusNode();
     virtual void update() {};
     
 protected:

@@ -11,7 +11,7 @@
 
 #include "Drawable.hpp"
 
-class GameObject : Drawable {
+class GameObject : public Drawable {
 public:
     virtual ~GameObject() {}
     virtual void update() = 0;

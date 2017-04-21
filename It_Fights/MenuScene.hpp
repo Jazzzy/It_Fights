@@ -17,7 +17,7 @@ public:
     MenuScene(MessageBus * messageBus);
     ~MenuScene();
 private:
-    TitleText *titleText;
+    TitleText titleText;
 };
 
 #endif /* MenuScene_hpp */

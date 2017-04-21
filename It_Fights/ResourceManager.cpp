@@ -12,9 +12,7 @@
 
 ResourceManager::ResourceManager(){
     
-    
     this->loadFonts();
-
 
 }
 
@@ -48,6 +46,6 @@ void ResourceManager::loadFonts(){
 
 
 sf::Font ResourceManager::getFont(std::string name){
-    return this->fontsMap.at(name);
+    return (this->fontsMap.at(name));
 }
 

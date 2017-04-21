@@ -25,6 +25,7 @@ public:
     sf::Window * getInternalWindowRef();
     sf::RenderTarget * getMainRenderTarget();
     bool isOpen();
+    void toggleShouldRender();
     
 private:
     Console *console;
@@ -33,6 +34,7 @@ private:
     sf::RenderTexture sf_renderTexture;
     void tryToResize(unsigned int x, unsigned int y);
     sf::Vector2u currRealResolution;
+    bool shouldRender;
     
 };
 

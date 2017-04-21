@@ -24,6 +24,10 @@ public:
     
 private:
     std::vector<GameObject*> listOfGameObjects;
+    
+protected:
+    sf::View* viewptr;
+    std::function<void()> localUpdateFunction;
 
 };
 

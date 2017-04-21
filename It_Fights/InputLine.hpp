@@ -18,6 +18,8 @@ public:
     sf::String getRealString();
     void removeLastCharacter();
     void erase();
+    void appendCharacter(char character);
+    void appendString(sf::String string);
 };
 
 #endif /* InputLine_hpp */

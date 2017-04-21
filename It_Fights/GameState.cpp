@@ -10,12 +10,14 @@
 #include "Systems.hpp"
 #include "Game.hpp"
 #include "MenuScene.hpp"
+#include "Level_00_field.hpp"
 
 extern Game game;
 
 GameState::GameState(MessageBus * messageBus) : BusNode(Systems::S_GameState, messageBus){
     
-    this->scene = new MenuScene(messageBus);
+    //this->scene = new MenuScene(messageBus);
+    this->scene = new Level_00_field(messageBus);
     this->mainMenu = true;
     this->paused = false;
     

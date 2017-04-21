@@ -91,6 +91,7 @@ void Console::onNotify (Message message){
         }
 
         delete message.getData().string_ptr; //@@OPTIMIZATION: We could try to instantiate this strings on a custom allocator/memory pool to avoid fragmentation
+        
     }else if(message.getEvent().compare("MSG_CONSOLE_KEYCHAR")==0){
         if(message.getData().type!=MessageData::CHARACTER){
             std::cerr << "ERROR: The data in this message should be a character" << std::endl;
@@ -160,7 +161,6 @@ void Console::consoleRectangle(sf::RenderTarget *renderTarget, float origin_X, f
     
     renderTarget->draw(mainRectangle);
     
-    
 }
 
 #define VERTICAL_PADDING 7
@@ -173,10 +173,8 @@ void Console::drawMessages(sf::RenderTarget *renderTarget, float origin_X, float
     float realOrigin_X = (origin_X * renderSize.x) + HORIZONTAL_PADDING +OUTLINE_THICKNESS;
     float realOrigin_Y = (origin_Y * renderSize.y) + VERTICAL_PADDING +OUTLINE_THICKNESS;
     
-//    float realSize_X = (size_X * renderSize.x) - HORIZONTAL_PADDING - OUTLINE_THICKNESS*2; //@@UNUSED VARIABLE
     float realSize_Y = (size_Y * renderSize.y) - VERTICAL_PADDING - OUTLINE_THICKNESS*2;
     
-    //First we print the input line
     
     sf::Text text(this->inputLine.getString(),this->font, this->pixelCharacterSize);
     text.setFillColor(textColor);
@@ -197,7 +195,7 @@ void Console::drawMessages(sf::RenderTarget *renderTarget, float origin_X, float
         text.setFillColor(softTextColor);
         unsigned int linesPrinted;
         for(linesPrinted = 0 ; (iter != this->messageLines.rend()) && (linesPrinted<=totalLinesAvailable) ; ++iter, linesPrinted ++){   //We iterate from the end of the list;
-            currentPosition_Y -= pixelDelta;
+            currentPosition_Y -= pixelDelta * iter->getLines();
             text.setString(iter->getString());
             text.setPosition(realOrigin_X, currentPosition_Y);
             renderTarget->draw(text);

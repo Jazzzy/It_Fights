@@ -14,9 +14,13 @@ extern Game game;
 
 Scene::Scene(MessageBus * messageBus) : BusNode(Systems::S_CurrentScene, messageBus) {
 
+    this->viewptr = NULL;
+    this->localUpdateFunction = [](){};
+    
 }
 
-Scene::~Scene(){}
+Scene::~Scene(){
+}
 
 void Scene::addGameObject(GameObject * gameObject){
     this->listOfGameObjects.push_back(gameObject);
@@ -24,6 +28,7 @@ void Scene::addGameObject(GameObject * gameObject){
 
 void Scene::update(){
     
+    this->localUpdateFunction();
     
     for(auto iter = this->listOfGameObjects.begin(); iter!=this->listOfGameObjects.end(); ++iter ){
         (*iter)->update();
@@ -32,9 +37,20 @@ void Scene::update(){
 }
 
 void Scene::draw(sf::RenderTarget *renderTarget){
+
+    
+    if(this->viewptr!=NULL){
+        renderTarget->setView(*(this->viewptr));
+    }
+    
     
     for(auto iter = this->listOfGameObjects.begin(); iter!=this->listOfGameObjects.end(); ++iter ){
         (*iter)->draw(renderTarget);
+    }
+    
+    
+    if(this->viewptr!=NULL){
+        renderTarget->setView(renderTarget->getDefaultView());
     }
     
 }

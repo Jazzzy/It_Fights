@@ -19,16 +19,18 @@
 class MessageBus{
     
 public:
-    MessageBus(){}
+    MessageBus();
     ~MessageBus(){}
     
     void notify();
     void addReceiver(int systemID, std::function<void (Message)> newReceiver);
+    void removeReceiver(int systemID);
+
     void sendMessage(Message message);
     
 private:
     std::unordered_map<int, std::function<void (Message)>> receiverMap;
-    std::vector<std::function<void (Message)>> receiverVector;
+    std::vector< std::pair<int, std::function<void (Message)>>> receiverVector;
     std::queue<Message> messageQueue;
     std::function<void (Message)> consoleReceiver;
     

@@ -12,6 +12,7 @@
 #include "Drawable.hpp"
 #include <SFML/Graphics.hpp>
 
+
 class ConsoleLine  {
 public:
     ConsoleLine(sf::String content);
@@ -22,10 +23,11 @@ public:
     void appendString(sf::String string);
     
     sf::String getString();
+    unsigned int getLines();
     
 protected:
     sf::String stringContent;
-
+    unsigned int numberOfLines;
 
 };
 
