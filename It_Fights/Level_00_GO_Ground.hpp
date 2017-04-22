@@ -1,26 +1,26 @@
 //
-//  Level_00_GO_Field.hpp
+//  Level_00_GO_Ground.hpp
 //  It_Fights
 //
 //  Created by Rubén Osorio López on 21/4/17.
 //  Copyright © 2017 Rubén Osorio López. All rights reserved.
 //
 
-#ifndef Level_00_GO_Field_hpp
-#define Level_00_GO_Field_hpp
+#ifndef Level_00_GO_Ground_hpp
+#define Level_00_GO_Ground_hpp
 
 #include <stdio.h>
 
 #include "GameObject.hpp"
 
-class Level_00_GO_Field : public GameObject {
+class Level_00_GO_Ground : public GameObject {
 public:
-    Level_00_GO_Field();
-    ~Level_00_GO_Field();
+    Level_00_GO_Ground();
+    ~Level_00_GO_Ground();
     void update();
     void draw(sf::RenderTarget *renderTarget);
 private:
-    
+    sf::RenderTexture groundTexture;
 };
 
-#endif /* Level_00_GO_Field_hpp */
+#endif /* Level_00_GO_Ground_hpp */

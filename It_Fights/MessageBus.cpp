@@ -36,6 +36,7 @@ void MessageBus::notify(){
             receiverMap[Systems::S_CurrentScene](message);
         }else{
             (receiverMap[message.getReceiverSystem()])(message);
+//            std::cout << message.getReceiverSystem() << ": " << message.getEvent() <<std::endl;
         }
         
         messageQueue.pop();

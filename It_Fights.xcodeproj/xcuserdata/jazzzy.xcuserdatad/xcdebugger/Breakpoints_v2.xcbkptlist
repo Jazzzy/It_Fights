@@ -71,11 +71,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Window.cpp"
-            timestampString = "514488113.488897"
+            timestampString = "514563351.11894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "Window::getMainRenderTarget()"
             landmarkType = "7">
          </BreakpointContent>
@@ -87,11 +87,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Window.cpp"
-            timestampString = "514488113.488897"
+            timestampString = "514563351.11894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127">
+            startingLineNumber = "166"
+            endingLineNumber = "166">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -101,11 +101,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Window.cpp"
-            timestampString = "514488113.488897"
+            timestampString = "514563351.11894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "Window::onNotify (Message message)"
             landmarkType = "7">
          </BreakpointContent>
@@ -322,11 +322,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/MessageBus.cpp"
-            timestampString = "514495030.28482"
+            timestampString = "514561853.33096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "MessageBus::removeReceiver(int systemID)"
             landmarkType = "7">
          </BreakpointContent>

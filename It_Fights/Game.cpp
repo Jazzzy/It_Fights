@@ -14,7 +14,6 @@ Game::Game() :
     consoleSystem(&messageBus),
     windowSystem (&messageBus,&consoleSystem,"It_fights",2000,1500),
     inputSystem (&messageBus,&windowSystem){
-                
     }
 
 Game::~Game(){}

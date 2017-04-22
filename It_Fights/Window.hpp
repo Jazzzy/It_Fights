@@ -14,8 +14,6 @@
 #include <string>
 #include "Console.hpp"
 
-#define INTERNAL_RESOLUTION_X 2000
-#define INTERNAL_RESOLUTION_Y 1500
 
 class Window : BusNode {
 public:
@@ -26,15 +24,23 @@ public:
     sf::RenderTarget * getMainRenderTarget();
     bool isOpen();
     void toggleShouldRender();
+    std::pair<unsigned int, unsigned int> getCurrentInternalResolution();
+    void setCurrentInternalResolution(std::pair<unsigned int, unsigned int> newResolution);
     
 private:
     Console *console;
     void onNotify (Message message);
     sf::RenderWindow sf_window;
     sf::RenderTexture sf_renderTexture;
+    sf::RenderTexture sf_renderTexture_HighRes;
+
     void tryToResize(unsigned int x, unsigned int y);
     sf::Vector2u currRealResolution;
     bool shouldRender;
+    
+    std::pair<unsigned int,unsigned int> internalResolution;
+    std::pair<float,float> renderTextureScale;
+
     
 };
 
