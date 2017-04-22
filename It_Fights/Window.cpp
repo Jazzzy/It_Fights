@@ -156,6 +156,10 @@ void Window::onNotify (Message message){
         }else{
             this->setCurrentInternalResolution(std::make_pair(message.getData().intPair.x, message.getData().intPair.y));
         }
+    }else if(message.getEvent().compare("MSG_SMOOTH_FALSE")==0){
+        this->sf_renderTexture.setSmooth(false);
+    }else if(message.getEvent().compare("MSG_SMOOTH_TRUE")==0){
+        this->sf_renderTexture.setSmooth(true);
     }
     
 }

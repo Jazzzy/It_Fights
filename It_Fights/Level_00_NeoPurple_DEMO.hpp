@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <Scene.hpp>
 #include "Level_00_GO_Ground.hpp"
+#include "Level_00_GO_MainCharacter.hpp"
 
 
 #define LVL_00_RESOLUTION_X 400
@@ -25,8 +26,10 @@ private:
     void localUpdateImplemented();
     
     Level_00_GO_Ground level_00_GO_Ground;
-    sf::View view;
+    Level_00_GO_MainCharacter mainCharacter;
     
+    
+    sf::View view;
     bool changedRes;
 
 };

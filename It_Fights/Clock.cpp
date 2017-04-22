@@ -16,7 +16,7 @@ Clock::Clock(){
 
 Clock::~Clock(){}
 
-#define MAX_QUEUE_SIZE 50
+#define MAX_QUEUE_SIZE 60
 
 void Clock::setFrameSeparator(){
     this->deltaTime = this->deltaClock.restart().asSeconds();

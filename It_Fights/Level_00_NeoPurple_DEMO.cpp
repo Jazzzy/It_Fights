@@ -15,7 +15,8 @@
 Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
     Scene(messageBus),
     level_00_GO_Ground(),
-    view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y))
+    view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
+    mainCharacter(this)
 {
     
 
@@ -24,6 +25,7 @@ Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
     //Add here all GameObjects necessary to with "this->addGameObject(GameObject * gameObject)"
     
     this->addGameObject(&level_00_GO_Ground);
+    this->addGameObject(&mainCharacter);
     
     this->localUpdateFunction = [&](){ this->localUpdateImplemented(); };
     
@@ -43,10 +45,13 @@ void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
         PairI intPair{.x =  static_cast<int>(LVL_00_RESOLUTION_X), .y =  static_cast<int>(LVL_00_RESOLUTION_Y)};
         MessageData pairData{MessageData::PAIR_OF_INTS, .intPair = intPair };
         Message msg_internalRes("MSG_RESIZE_INTERNAL_RESOLUTION",Systems::S_Window, pairData);
-        msg_internalRes.setRelevantForConsole(true);
         send(msg_internalRes);
         
         changedRes = true;
+        
+        
+        Message msg_smoothFalse("MSG_SMOOTH_FALSE",Systems::S_Window);
+        send(msg_smoothFalse);
         
         //@@TODO send another message for setting the smooth to false;
     }
