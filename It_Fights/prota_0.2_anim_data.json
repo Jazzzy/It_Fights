@@ -2,8 +2,8 @@
 
 {
 	"filename": "prota_0.2_anim1.png",
-	"frame": {"x":754,"y":22,"w":13,"h":30},
-	"rotated": true,
+	"frame": {"x":73,"y":33,"w":13,"h":30},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":26,"y":16,"w":13,"h":30},
 	"sourceSize": {"w":64,"h":64},
@@ -11,7 +11,7 @@
 },
 {
 	"filename": "prota_0.2_anim2.png",
-	"frame": {"x":654,"y":1,"w":23,"h":28},
+	"frame": {"x":102,"y":317,"w":23,"h":28},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":21,"y":18,"w":23,"h":28},
@@ -20,8 +20,8 @@
 },
 {
 	"filename": "prota_0.2_anim3.png",
-	"frame": {"x":880,"y":1,"w":21,"h":28},
-	"rotated": true,
+	"frame": {"x":1,"y":254,"w":21,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":18,"w":21,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -29,8 +29,8 @@
 },
 {
 	"filename": "prota_0.2_anim4.png",
-	"frame": {"x":386,"y":43,"w":20,"h":29},
-	"rotated": true,
+	"frame": {"x":72,"y":223,"w":20,"h":29},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":20,"h":29},
 	"sourceSize": {"w":64,"h":64},
@@ -38,7 +38,7 @@
 },
 {
 	"filename": "prota_0.2_anim5.png",
-	"frame": {"x":719,"y":37,"w":23,"h":26},
+	"frame": {"x":1,"y":161,"w":23,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":17,"w":23,"h":26},
@@ -47,8 +47,8 @@
 },
 {
 	"filename": "prota_0.2_anim6.png",
-	"frame": {"x":1027,"y":1,"w":22,"h":27},
-	"rotated": true,
+	"frame": {"x":95,"y":161,"w":22,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":22,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -56,8 +56,8 @@
 },
 {
 	"filename": "prota_0.2_anim7.png",
-	"frame": {"x":1085,"y":1,"w":23,"h":27},
-	"rotated": true,
+	"frame": {"x":98,"y":254,"w":23,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":23,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -65,8 +65,8 @@
 },
 {
 	"filename": "prota_0.2_anim8.png",
-	"frame": {"x":263,"y":41,"w":22,"h":28},
-	"rotated": true,
+	"frame": {"x":1,"y":284,"w":22,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":18,"w":22,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -74,8 +74,8 @@
 },
 {
 	"filename": "prota_0.2_anim9.png",
-	"frame": {"x":910,"y":1,"w":21,"h":28},
-	"rotated": true,
+	"frame": {"x":72,"y":161,"w":21,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":18,"w":21,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -83,8 +83,8 @@
 },
 {
 	"filename": "prota_0.2_anim10.png",
-	"frame": {"x":293,"y":43,"w":20,"h":29},
-	"rotated": true,
+	"frame": {"x":26,"y":161,"w":20,"h":29},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":20,"h":29},
 	"sourceSize": {"w":64,"h":64},
@@ -92,8 +92,8 @@
 },
 {
 	"filename": "prota_0.2_anim11.png",
-	"frame": {"x":1114,"y":1,"w":23,"h":26},
-	"rotated": true,
+	"frame": {"x":1,"y":192,"w":23,"h":26},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":17,"w":23,"h":26},
 	"sourceSize": {"w":64,"h":64},
@@ -101,8 +101,8 @@
 },
 {
 	"filename": "prota_0.2_anim12.png",
-	"frame": {"x":940,"y":1,"w":22,"h":27},
-	"rotated": true,
+	"frame": {"x":48,"y":161,"w":22,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":22,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -110,7 +110,7 @@
 },
 {
 	"filename": "prota_0.2_anim13.png",
-	"frame": {"x":679,"y":1,"w":23,"h":27},
+	"frame": {"x":72,"y":284,"w":23,"h":27},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":23,"h":27},
@@ -119,8 +119,8 @@
 },
 {
 	"filename": "prota_0.2_anim14.png",
-	"frame": {"x":786,"y":22,"w":13,"h":30},
-	"rotated": true,
+	"frame": {"x":58,"y":33,"w":13,"h":30},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":16,"w":13,"h":30},
 	"sourceSize": {"w":64,"h":64},
@@ -128,8 +128,8 @@
 },
 {
 	"filename": "prota_0.2_anim15.png",
-	"frame": {"x":471,"y":39,"w":23,"h":28},
-	"rotated": true,
+	"frame": {"x":77,"y":317,"w":23,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":18,"w":23,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -137,8 +137,8 @@
 },
 {
 	"filename": "prota_0.2_anim16.png",
-	"frame": {"x":820,"y":1,"w":21,"h":28},
-	"rotated": true,
+	"frame": {"x":49,"y":223,"w":21,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":21,"y":18,"w":21,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -146,8 +146,8 @@
 },
 {
 	"filename": "prota_0.2_anim17.png",
-	"frame": {"x":324,"y":43,"w":20,"h":29},
-	"rotated": true,
+	"frame": {"x":51,"y":192,"w":20,"h":29},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":20,"h":29},
 	"sourceSize": {"w":64,"h":64},
@@ -155,7 +155,7 @@
 },
 {
 	"filename": "prota_0.2_anim18.png",
-	"frame": {"x":669,"y":37,"w":23,"h":26},
+	"frame": {"x":26,"y":192,"w":23,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":21,"y":17,"w":23,"h":26},
@@ -164,8 +164,8 @@
 },
 {
 	"filename": "prota_0.2_anim19.png",
-	"frame": {"x":969,"y":1,"w":22,"h":27},
-	"rotated": true,
+	"frame": {"x":94,"y":223,"w":22,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":17,"w":22,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -173,7 +173,7 @@
 },
 {
 	"filename": "prota_0.2_anim20.png",
-	"frame": {"x":704,"y":1,"w":23,"h":27},
+	"frame": {"x":24,"y":254,"w":23,"h":27},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":19,"y":17,"w":23,"h":27},
@@ -182,8 +182,8 @@
 },
 {
 	"filename": "prota_0.2_anim21.png",
-	"frame": {"x":233,"y":41,"w":22,"h":28},
-	"rotated": true,
+	"frame": {"x":49,"y":254,"w":22,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":18,"w":22,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -191,8 +191,8 @@
 },
 {
 	"filename": "prota_0.2_anim22.png",
-	"frame": {"x":850,"y":1,"w":21,"h":28},
-	"rotated": true,
+	"frame": {"x":26,"y":223,"w":21,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":21,"y":18,"w":21,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -200,8 +200,8 @@
 },
 {
 	"filename": "prota_0.2_anim23.png",
-	"frame": {"x":355,"y":43,"w":20,"h":29},
-	"rotated": true,
+	"frame": {"x":97,"y":192,"w":20,"h":29},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":20,"h":29},
 	"sourceSize": {"w":64,"h":64},
@@ -209,7 +209,7 @@
 },
 {
 	"filename": "prota_0.2_anim24.png",
-	"frame": {"x":694,"y":37,"w":23,"h":26},
+	"frame": {"x":1,"y":223,"w":23,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":21,"y":17,"w":23,"h":26},
@@ -218,8 +218,8 @@
 },
 {
 	"filename": "prota_0.2_anim25.png",
-	"frame": {"x":998,"y":1,"w":22,"h":27},
-	"rotated": true,
+	"frame": {"x":73,"y":192,"w":22,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":17,"w":22,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -227,7 +227,7 @@
 },
 {
 	"filename": "prota_0.2_anim26.png",
-	"frame": {"x":729,"y":1,"w":23,"h":27},
+	"frame": {"x":1,"y":317,"w":23,"h":27},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":19,"y":17,"w":23,"h":27},
@@ -236,7 +236,7 @@
 },
 {
 	"filename": "prota_0.2_anim27.png",
-	"frame": {"x":653,"y":33,"w":14,"h":30},
+	"frame": {"x":107,"y":33,"w":14,"h":30},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":17,"w":14,"h":30},
@@ -245,8 +245,8 @@
 },
 {
 	"filename": "prota_0.2_anim28.png",
-	"frame": {"x":1056,"y":45,"w":15,"h":27},
-	"rotated": true,
+	"frame": {"x":19,"y":1,"w":15,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":17,"w":15,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -254,8 +254,8 @@
 },
 {
 	"filename": "prota_0.2_anim29.png",
-	"frame": {"x":1005,"y":41,"w":13,"h":30},
-	"rotated": true,
+	"frame": {"x":70,"y":1,"w":13,"h":30},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":26,"y":16,"w":13,"h":30},
 	"sourceSize": {"w":64,"h":64},
@@ -263,7 +263,7 @@
 },
 {
 	"filename": "prota_0.2_anim30.png",
-	"frame": {"x":956,"y":25,"w":14,"h":30},
+	"frame": {"x":1,"y":65,"w":14,"h":30},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":16,"w":14,"h":30},
@@ -272,7 +272,7 @@
 },
 {
 	"filename": "prota_0.2_anim31.png",
-	"frame": {"x":972,"y":25,"w":14,"h":30},
+	"frame": {"x":72,"y":65,"w":14,"h":30},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":16,"w":14,"h":30},
@@ -281,7 +281,7 @@
 },
 {
 	"filename": "prota_0.2_anim32.png",
-	"frame": {"x":988,"y":25,"w":15,"h":29},
+	"frame": {"x":17,"y":65,"w":15,"h":29},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":16,"w":15,"h":29},
@@ -290,8 +290,8 @@
 },
 {
 	"filename": "prota_0.2_anim33.png",
-	"frame": {"x":1085,"y":26,"w":16,"h":27},
-	"rotated": true,
+	"frame": {"x":85,"y":1,"w":16,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":17,"w":16,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -299,7 +299,7 @@
 },
 {
 	"filename": "prota_0.2_anim34.png",
-	"frame": {"x":1142,"y":1,"w":17,"h":27},
+	"frame": {"x":88,"y":33,"w":17,"h":27},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":17,"w":17,"h":27},
@@ -308,7 +308,7 @@
 },
 {
 	"filename": "prota_0.2_anim35.png",
-	"frame": {"x":635,"y":1,"w":17,"h":30},
+	"frame": {"x":22,"y":129,"w":17,"h":30},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":23,"y":16,"w":17,"h":30},
@@ -317,8 +317,8 @@
 },
 {
 	"filename": "prota_0.2_anim36.png",
-	"frame": {"x":130,"y":48,"w":15,"h":30},
-	"rotated": true,
+	"frame": {"x":104,"y":65,"w":15,"h":30},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":16,"w":15,"h":30},
 	"sourceSize": {"w":64,"h":64},
@@ -326,8 +326,8 @@
 },
 {
 	"filename": "prota_0.2_anim37.png",
-	"frame": {"x":162,"y":48,"w":15,"h":30},
-	"rotated": true,
+	"frame": {"x":19,"y":97,"w":15,"h":30},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":16,"w":15,"h":30},
 	"sourceSize": {"w":64,"h":64},
@@ -335,8 +335,8 @@
 },
 {
 	"filename": "prota_0.2_anim38.png",
-	"frame": {"x":99,"y":47,"w":16,"h":29},
-	"rotated": true,
+	"frame": {"x":1,"y":97,"w":16,"h":29},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":16,"w":16,"h":29},
 	"sourceSize": {"w":64,"h":64},
@@ -344,8 +344,8 @@
 },
 {
 	"filename": "prota_0.2_anim39.png",
-	"frame": {"x":1085,"y":44,"w":16,"h":27},
-	"rotated": true,
+	"frame": {"x":103,"y":1,"w":16,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":17,"w":16,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -353,8 +353,8 @@
 },
 {
 	"filename": "prota_0.2_anim40.png",
-	"frame": {"x":1005,"y":25,"w":14,"h":30},
-	"rotated": true,
+	"frame": {"x":88,"y":65,"w":14,"h":30},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":25,"y":16,"w":14,"h":30},
 	"sourceSize": {"w":64,"h":64},
@@ -362,7 +362,7 @@
 },
 {
 	"filename": "prota_0.2_anim41.png",
-	"frame": {"x":768,"y":37,"w":17,"h":26},
+	"frame": {"x":1,"y":33,"w":17,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":23,"y":17,"w":17,"h":26},
@@ -371,7 +371,7 @@
 },
 {
 	"filename": "prota_0.2_anim42.png",
-	"frame": {"x":1037,"y":25,"w":17,"h":27},
+	"frame": {"x":53,"y":65,"w":17,"h":27},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":17,"h":27},
@@ -380,7 +380,7 @@
 },
 {
 	"filename": "prota_0.2_anim43.png",
-	"frame": {"x":886,"y":24,"w":18,"h":28},
+	"frame": {"x":36,"y":97,"w":18,"h":28},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":17,"w":18,"h":28},
@@ -389,8 +389,8 @@
 },
 {
 	"filename": "prota_0.2_anim44.png",
-	"frame": {"x":754,"y":1,"w":19,"h":31},
-	"rotated": true,
+	"frame": {"x":51,"y":284,"w":19,"h":31},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":21,"y":17,"w":19,"h":31},
 	"sourceSize": {"w":64,"h":64},
@@ -398,7 +398,7 @@
 },
 {
 	"filename": "prota_0.2_anim45.png",
-	"frame": {"x":825,"y":24,"w":18,"h":29},
+	"frame": {"x":41,"y":129,"w":18,"h":29},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":18,"w":18,"h":29},
@@ -407,7 +407,7 @@
 },
 {
 	"filename": "prota_0.2_anim46.png",
-	"frame": {"x":787,"y":37,"w":17,"h":26},
+	"frame": {"x":39,"y":33,"w":17,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":23,"y":18,"w":17,"h":26},
@@ -416,8 +416,8 @@
 },
 {
 	"filename": "prota_0.2_anim47.png",
-	"frame": {"x":1114,"y":26,"w":16,"h":26},
-	"rotated": true,
+	"frame": {"x":1,"y":1,"w":16,"h":26},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":17,"w":16,"h":26},
 	"sourceSize": {"w":64,"h":64},
@@ -425,8 +425,8 @@
 },
 {
 	"filename": "prota_0.2_anim48.png",
-	"frame": {"x":1056,"y":26,"w":17,"h":27},
-	"rotated": true,
+	"frame": {"x":34,"y":65,"w":17,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":17,"w":17,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -434,7 +434,7 @@
 },
 {
 	"filename": "prota_0.2_anim49.png",
-	"frame": {"x":906,"y":24,"w":18,"h":28},
+	"frame": {"x":96,"y":97,"w":18,"h":28},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":17,"w":18,"h":28},
@@ -443,8 +443,8 @@
 },
 {
 	"filename": "prota_0.2_anim50.png",
-	"frame": {"x":787,"y":1,"w":19,"h":31},
-	"rotated": true,
+	"frame": {"x":97,"y":284,"w":19,"h":31},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":23,"y":17,"w":19,"h":31},
 	"sourceSize": {"w":64,"h":64},
@@ -452,7 +452,7 @@
 },
 {
 	"filename": "prota_0.2_anim51.png",
-	"frame": {"x":845,"y":24,"w":18,"h":29},
+	"frame": {"x":61,"y":129,"w":18,"h":29},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":18,"w":18,"h":29},
@@ -461,7 +461,7 @@
 },
 {
 	"filename": "prota_0.2_anim52.png",
-	"frame": {"x":806,"y":37,"w":17,"h":26},
+	"frame": {"x":20,"y":33,"w":17,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":18,"w":17,"h":26},
@@ -470,8 +470,8 @@
 },
 {
 	"filename": "prota_0.2_anim53.png",
-	"frame": {"x":926,"y":25,"w":18,"h":28},
-	"rotated": true,
+	"frame": {"x":76,"y":97,"w":18,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":18,"w":18,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -479,8 +479,8 @@
 },
 {
 	"filename": "prota_0.2_anim54.png",
-	"frame": {"x":1114,"y":44,"w":15,"h":27},
-	"rotated": true,
+	"frame": {"x":36,"y":1,"w":15,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":23,"y":19,"w":15,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -488,7 +488,7 @@
 },
 {
 	"filename": "prota_0.2_anim55.png",
-	"frame": {"x":201,"y":1,"w":51,"h":38},
+	"frame": {"x":54,"y":495,"w":51,"h":38},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":13,"y":11,"w":51,"h":38},
@@ -497,7 +497,7 @@
 },
 {
 	"filename": "prota_0.2_anim56.png",
-	"frame": {"x":307,"y":1,"w":47,"h":40},
+	"frame": {"x":50,"y":453,"w":47,"h":40},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":14,"y":9,"w":47,"h":40},
@@ -506,7 +506,7 @@
 },
 {
 	"filename": "prota_0.2_anim57.png",
-	"frame": {"x":446,"y":1,"w":36,"h":36},
+	"frame": {"x":39,"y":415,"w":36,"h":36},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":14,"y":11,"w":36,"h":36},
@@ -515,7 +515,7 @@
 },
 {
 	"filename": "prota_0.2_anim58.png",
-	"frame": {"x":522,"y":36,"w":23,"h":27},
+	"frame": {"x":52,"y":317,"w":23,"h":27},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":19,"y":16,"w":23,"h":27},
@@ -524,7 +524,7 @@
 },
 {
 	"filename": "prota_0.2_anim59.png",
-	"frame": {"x":417,"y":37,"w":24,"h":26},
+	"frame": {"x":26,"y":317,"w":24,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":17,"w":24,"h":26},
@@ -533,8 +533,8 @@
 },
 {
 	"filename": "prota_0.2_anim60.png",
-	"frame": {"x":926,"y":45,"w":18,"h":28},
-	"rotated": true,
+	"frame": {"x":56,"y":97,"w":18,"h":28},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":24,"y":18,"w":18,"h":28},
 	"sourceSize": {"w":64,"h":64},
@@ -542,7 +542,7 @@
 },
 {
 	"filename": "prota_0.2_anim61.png",
-	"frame": {"x":1143,"y":30,"w":15,"h":27},
+	"frame": {"x":53,"y":1,"w":15,"h":27},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":26,"y":19,"w":15,"h":27},
@@ -551,7 +551,7 @@
 },
 {
 	"filename": "prota_0.2_anim62.png",
-	"frame": {"x":254,"y":1,"w":51,"h":38},
+	"frame": {"x":1,"y":495,"w":51,"h":38},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":0,"y":11,"w":51,"h":38},
@@ -560,7 +560,7 @@
 },
 {
 	"filename": "prota_0.2_anim63.png",
-	"frame": {"x":356,"y":1,"w":47,"h":40},
+	"frame": {"x":1,"y":453,"w":47,"h":40},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":3,"y":9,"w":47,"h":40},
@@ -569,7 +569,7 @@
 },
 {
 	"filename": "prota_0.2_anim64.png",
-	"frame": {"x":484,"y":1,"w":36,"h":36},
+	"frame": {"x":1,"y":415,"w":36,"h":36},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":14,"y":11,"w":36,"h":36},
@@ -578,8 +578,8 @@
 },
 {
 	"filename": "prota_0.2_anim65.png",
-	"frame": {"x":1056,"y":1,"w":23,"h":27},
-	"rotated": true,
+	"frame": {"x":73,"y":254,"w":23,"h":27},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":16,"w":23,"h":27},
 	"sourceSize": {"w":64,"h":64},
@@ -587,8 +587,8 @@
 },
 {
 	"filename": "prota_0.2_anim66.png",
-	"frame": {"x":443,"y":39,"w":24,"h":26},
-	"rotated": true,
+	"frame": {"x":25,"y":284,"w":24,"h":26},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":20,"y":17,"w":24,"h":26},
 	"sourceSize": {"w":64,"h":64},
@@ -596,8 +596,8 @@
 },
 {
 	"filename": "prota_0.2_anim67.png",
-	"frame": {"x":201,"y":41,"w":22,"h":30},
-	"rotated": true,
+	"frame": {"x":1,"y":347,"w":22,"h":30},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":18,"y":15,"w":22,"h":30},
 	"sourceSize": {"w":64,"h":64},
@@ -605,7 +605,7 @@
 },
 {
 	"filename": "prota_0.2_anim68.png",
-	"frame": {"x":598,"y":1,"w":35,"h":30},
+	"frame": {"x":1,"y":380,"w":35,"h":30},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":8,"y":15,"w":35,"h":30},
@@ -614,7 +614,7 @@
 },
 {
 	"filename": "prota_0.2_anim69.png",
-	"frame": {"x":48,"y":1,"w":49,"h":50},
+	"frame": {"x":1,"y":582,"w":49,"h":50},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":8,"y":0,"w":49,"h":50},
@@ -623,7 +623,7 @@
 },
 {
 	"filename": "prota_0.2_anim70.png",
-	"frame": {"x":151,"y":1,"w":48,"h":45},
+	"frame": {"x":1,"y":535,"w":48,"h":45},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":16,"y":6,"w":48,"h":45},
@@ -632,7 +632,7 @@
 },
 {
 	"filename": "prota_0.2_anim71.png",
-	"frame": {"x":522,"y":1,"w":35,"h":33},
+	"frame": {"x":77,"y":380,"w":35,"h":33},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":16,"y":18,"w":35,"h":33},
@@ -641,7 +641,7 @@
 },
 {
 	"filename": "prota_0.2_anim72.png",
-	"frame": {"x":594,"y":33,"w":28,"h":30},
+	"frame": {"x":54,"y":347,"w":28,"h":30},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":16,"y":19,"w":28,"h":30},
@@ -650,7 +650,7 @@
 },
 {
 	"filename": "prota_0.2_anim73.png",
-	"frame": {"x":624,"y":33,"w":27,"h":30},
+	"frame": {"x":25,"y":347,"w":27,"h":30},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":15,"y":19,"w":27,"h":30},
@@ -659,7 +659,7 @@
 },
 {
 	"filename": "prota_0.2_anim74.png",
-	"frame": {"x":865,"y":24,"w":19,"h":28},
+	"frame": {"x":1,"y":129,"w":19,"h":28},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":19,"w":19,"h":28},
@@ -668,7 +668,7 @@
 },
 {
 	"filename": "prota_0.2_anim75.png",
-	"frame": {"x":559,"y":1,"w":37,"h":29},
+	"frame": {"x":38,"y":380,"w":37,"h":29},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":22,"y":19,"w":37,"h":29},
@@ -677,7 +677,7 @@
 },
 {
 	"filename": "prota_0.2_anim76.png",
-	"frame": {"x":99,"y":1,"w":50,"h":44},
+	"frame": {"x":51,"y":535,"w":50,"h":44},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":9,"y":19,"w":50,"h":44},
@@ -686,7 +686,7 @@
 },
 {
 	"filename": "prota_0.2_anim77.png",
-	"frame": {"x":1,"y":1,"w":45,"h":61},
+	"frame": {"x":52,"y":582,"w":45,"h":61},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":5,"y":2,"w":45,"h":61},
@@ -695,7 +695,7 @@
 },
 {
 	"filename": "prota_0.2_anim78.png",
-	"frame": {"x":405,"y":1,"w":39,"h":34},
+	"frame": {"x":77,"y":415,"w":39,"h":34},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":10,"y":13,"w":39,"h":34},
@@ -704,7 +704,7 @@
 },
 {
 	"filename": "prota_0.2_anim79.png",
-	"frame": {"x":559,"y":32,"w":33,"h":31},
+	"frame": {"x":84,"y":347,"w":33,"h":31},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":14,"y":15,"w":33,"h":31},
@@ -713,7 +713,7 @@
 },
 {
 	"filename": "prota_0.2_anim80.png",
-	"frame": {"x":744,"y":37,"w":22,"h":26},
+	"frame": {"x":81,"y":129,"w":22,"h":26},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":26,"y":20,"w":22,"h":26},
@@ -725,8 +725,8 @@
 	"version": "1.0",
 	"image": "prota_0.2_anim_spritesheet.png",
 	"format": "RGBA8888",
-	"size": {"w":1160,"h":64},
+	"size": {"w":126,"h":644},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:2903df96304d3ec35be0ceec80340987:6325e9e1a5d66ae334052b10498ea778:58f4181cce02a5f1da6187f295cf4783$"
+	"smartupdate": "$TexturePacker:SmartUpdate:6152588aa799dcb709265f45b92635cd:6325e9e1a5d66ae334052b10498ea778:58f4181cce02a5f1da6187f295cf4783$"
 }
 }
