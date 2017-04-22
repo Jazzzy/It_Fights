@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4049DF6C1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6A1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp */; };
 		4049DF701EAA7583008DB0E5 /* Level_00_GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */; };
+		4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */; };
 		407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE41E897765004263E6 /* ResourcePath.mm */; };
 		407DEFE81E897765004263E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE71E897765004263E6 /* main.cpp */; };
 		407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 407DEFEA1E897765004263E6 /* cute_image.jpg */; };
@@ -51,6 +52,8 @@
 		4049DF6B1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_NeoPurple_DEMO.hpp; sourceTree = "<group>"; };
 		4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_GO_Ground.cpp; sourceTree = "<group>"; };
 		4049DF6F1EAA7583008DB0E5 /* Level_00_GO_Ground.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_GO_Ground.hpp; sourceTree = "<group>"; };
+		4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedSprite.cpp; sourceTree = "<group>"; };
+		4049DF731EABAB0E008DB0E5 /* AnimatedSprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimatedSprite.hpp; sourceTree = "<group>"; };
 		407DEFDF1E897765004263E6 /* It_Fights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = It_Fights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407DEFE31E897765004263E6 /* It_Fights-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "It_Fights-Info.plist"; sourceTree = "<group>"; };
 		407DEFE41E897765004263E6 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -142,6 +145,15 @@
 				4049DF6F1EAA7583008DB0E5 /* Level_00_GO_Ground.hpp */,
 			);
 			name = GameObjects;
+			sourceTree = "<group>";
+		};
+		4049DF711EABAAEC008DB0E5 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */,
+				4049DF731EABAB0E008DB0E5 /* AnimatedSprite.hpp */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 		407DEFD51E897764004263E6 = {
@@ -238,6 +250,7 @@
 		407DF0061E8AAC88004263E6 /* It_rendering */ = {
 			isa = PBXGroup;
 			children = (
+				4049DF711EABAAEC008DB0E5 /* Animations */,
 				40FEE05A1E905150004DCA95 /* shaders */,
 				407DF0071E8AAC9D004263E6 /* Window.cpp */,
 				407DF0081E8AAC9D004263E6 /* Window.hpp */,
@@ -471,6 +484,7 @@
 				407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */,
 				40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */,
 				40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */,
+				4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */,
 				407DF0001E898962004263E6 /* BusNode.cpp in Sources */,
 				40E3B9AD1E8E9B28001EE4AA /* Console.cpp in Sources */,
 				407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */,
