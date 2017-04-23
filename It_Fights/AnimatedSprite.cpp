@@ -38,8 +38,15 @@ AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheet
         currentFrameData.width = frameData["frame"]["w"];
         currentFrameData.heigth = frameData["frame"]["h"];
         
-        currentFrameData.pivot_x = jsonData["meta"]["pivot"]["x"];
-        currentFrameData.pivot_y = jsonData["meta"]["pivot"]["y"];
+        
+        if(jsonData["meta"].find("pivot") == jsonData["meta"].end()){
+            currentFrameData.pivot_x = 0.f;
+            currentFrameData.pivot_y = 0.f;
+        }else{
+            currentFrameData.pivot_x = jsonData["meta"]["pivot"]["x"];
+            currentFrameData.pivot_y = jsonData["meta"]["pivot"]["y"];
+        }
+        
         currentFrameData.durationMillis = frameData["duration"];
         
         this->frameMap[currentFrameData.index]=currentFrameData;

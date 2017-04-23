@@ -50,7 +50,8 @@ void Collisions::registerRectangleCollider(float width,
     RectangleCollider newRectangleCollider{
         .width = width,
         .heigth = heigth,
-        .funcs = funcs
+        .funcs = funcs,
+        .colType = colliderType
     };
 
     this->rectColVector.push_back(newRectangleCollider);

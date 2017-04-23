@@ -21,6 +21,11 @@
  function indicating something just has been hit, for example
  if the collider is a hitbox then we could
  
+ 
+ Maybe in the function for the collision callback for a moving object we should send
+ a vector that applyed to the position would solve the collision :D
+ This could be usefull when colliding circles for them to slide.
+ 
  */
 
 enum ColliderType{
@@ -44,6 +49,7 @@ typedef struct {
     float width;
     float heigth;
     ColliderFuncs funcs;
+    ColliderType colType;
 } RectangleCollider;
 
 
@@ -52,6 +58,7 @@ typedef struct {
     float width;
     float heigth;
     ColliderFuncs funcs;
+    ColliderType colType;
 } CircleCollider;
 
 
