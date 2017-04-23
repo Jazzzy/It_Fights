@@ -92,6 +92,8 @@ void Window::update(){
      */
     
     //Apply here every fullscreen shader
+    game.getGameState()->getScene()->applyFullScreenShaders(&sf_renderTexture,&(sf_renderTexture.getTexture()));
+    
     
     //We draw collisions and colliders
     this->collisionSystem->draw(&sf_renderTexture);

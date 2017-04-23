@@ -19,6 +19,7 @@ public:
     Scene(MessageBus * messageBus);
     ~Scene();
     void draw(sf::RenderTarget *renderTarget);
+    void applyFullScreenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture);
     void update();
     void addGameObject(GameObject *gameObject);
     
@@ -28,6 +29,7 @@ private:
 protected:
     sf::View* viewptr;
     std::function<void()> localUpdateFunction;
+    std::function<void(sf::RenderTarget * renderTarget,const sf::Texture * texture)> fullScreenShadersFunc;
 
 };
 

@@ -24,6 +24,7 @@ public:
     ~Level_00_NeoPurple_DEMO();
 private:
     void localUpdateImplemented();
+    void screenShaders(sf::RenderTarget * renderTarget,const sf::Texture * screenTexture);
     
     Level_00_GO_Ground level_00_GO_Ground;
     Level_00_GO_MainCharacter mainCharacter;

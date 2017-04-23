@@ -16,6 +16,7 @@ Scene::Scene(MessageBus * messageBus) : BusNode(Systems::S_CurrentScene, message
 
     this->viewptr = NULL;
     this->localUpdateFunction = [](){};
+    this->fullScreenShadersFunc = [](sf::RenderTarget * renderTarget, const sf::Texture * texture){};
     
 }
 
@@ -36,6 +37,12 @@ void Scene::update(){
 
 }
 
+
+void Scene::applyFullScreenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture){
+    this->fullScreenShadersFunc(renderTarget,screenTexture);
+}
+
+
 void Scene::draw(sf::RenderTarget *renderTarget){
 
     
@@ -52,5 +59,5 @@ void Scene::draw(sf::RenderTarget *renderTarget){
     if(this->viewptr!=NULL){
         renderTarget->setView(renderTarget->getDefaultView());
     }
-    
+        
 }

@@ -28,6 +28,9 @@ Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
     this->addGameObject(&mainCharacter);
     
     this->localUpdateFunction = [&](){ this->localUpdateImplemented(); };
+    this->fullScreenShadersFunc = [this](sf::RenderTarget * renderTarget,const sf::Texture * screenTexture){
+        this->screenShaders(renderTarget,screenTexture);
+    };
     
     //this->viewptr = &view;
     
@@ -38,6 +41,15 @@ Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
 Level_00_NeoPurple_DEMO::~Level_00_NeoPurple_DEMO(){
     
 }
+
+
+void Level_00_NeoPurple_DEMO::screenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture){
+
+    //@@TODO Apply here shaders for this scene
+    
+}
+
+
 
 void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
     if(!changedRes){
