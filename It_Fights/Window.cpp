@@ -16,7 +16,7 @@
 
 extern Game game;
 
-Window::Window(MessageBus * messageBus, Console * console, std::string windowName , int resolution_x , int resolution_y ) :  BusNode(Systems::S_Window,messageBus), sf_window(sf::VideoMode(resolution_x,resolution_y),windowName) , sf_renderTexture(), sf_renderTexture_HighRes(){
+Window::Window(MessageBus * messageBus, Console * console, Collisions* collisionSystem, std::string windowName , int resolution_x , int resolution_y ) :  BusNode(Systems::S_Window,messageBus), sf_window(sf::VideoMode(resolution_x,resolution_y),windowName) , sf_renderTexture(), sf_renderTexture_HighRes(){
     
     this->sf_window.setVerticalSyncEnabled(true);
     
@@ -26,6 +26,8 @@ Window::Window(MessageBus * messageBus, Console * console, std::string windowNam
     
     
     this->console = console;
+    this->collisionSystem = collisionSystem;
+    
     this->sf_renderTexture.create(this->internalResolution.first, this->internalResolution.second);
     this->sf_renderTexture.setSmooth(true);
     
@@ -90,6 +92,9 @@ void Window::update(){
      */
     
     //Apply here every fullscreen shader
+    
+    //We draw collisions and colliders
+    this->collisionSystem->draw(&sf_renderTexture);
     
     
     if(this->console->isOpen()){

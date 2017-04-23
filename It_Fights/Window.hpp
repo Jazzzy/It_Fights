@@ -13,11 +13,11 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include "Console.hpp"
-
+#include "Collisions.hpp"
 
 class Window : BusNode {
 public:
-    Window(MessageBus * messageBus, Console *console, std::string windowName , int resolution_x , int resolution_y );
+    Window(MessageBus * messageBus, Console *console, Collisions* collisionSystem ,std::string windowName , int resolution_x , int resolution_y );
     ~Window();
     void update();
     sf::Window * getInternalWindowRef();
@@ -29,6 +29,7 @@ public:
     
 private:
     Console *console;
+    Collisions * collisionSystem;
     void onNotify (Message message);
     sf::RenderWindow sf_window;
     sf::RenderTexture sf_renderTexture;

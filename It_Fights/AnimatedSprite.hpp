@@ -17,6 +17,11 @@
 
 using json = nlohmann::json;
 
+
+enum DataMode {
+    Aseprite_Array_Json_Data_WPivot
+};
+
 typedef struct {
     
     unsigned int index;
@@ -27,6 +32,8 @@ typedef struct {
     
     float pivot_x;
     float pivot_y;
+    
+    unsigned int durationMillis;
     
 } FrameData;
 
@@ -44,7 +51,7 @@ using json = nlohmann::json;
 
 class AnimatedSprite : public Drawable{
 public:
-    AnimatedSprite(std::string dataFilename, std::string spriteSheetFilename, std::string animationsFilename);
+    AnimatedSprite(std::string dataFilename, std::string spriteSheetFilename,DataMode dataMode);
     ~AnimatedSprite();
     sf::Sprite getSprite(unsigned int index);
     sf::Sprite getCurrentSprite();

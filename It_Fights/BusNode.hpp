@@ -27,7 +27,7 @@ protected:
     
     virtual void onNotify(Message message)
     {
-        std::cout << "NOT IMPLEMENTED: THe onNotify function for this system is not implemented" << std::endl;
+        std::cout << "NOT IMPLEMENTED: The onNotify function for this system is not implemented" << std::endl;
     }
     
 };

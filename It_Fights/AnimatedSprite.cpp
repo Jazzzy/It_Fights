@@ -14,8 +14,10 @@
 extern Game game;
 
 
-AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheetFilename, std::string animationsFilename){
+AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheetFilename,DataMode dataMode){
 
+    if(dataMode == DataMode::Aseprite_Array_Json_Data_WPivot){
+    
     std::ifstream jsonFile(resourcePath() + dataFilename);
     
     this->timePerFrame = 80.f/1000.f;
@@ -26,7 +28,7 @@ AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheet
     
     json frameArray = jsonData["frames"];
     
-    int frameIndex = 1;
+    int frameIndex = 0;
     for (json::iterator it = frameArray.begin() ; it != frameArray.end(); ++it, frameIndex++) {
         json frameData = *it;
         FrameData currentFrameData;
@@ -36,9 +38,9 @@ AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheet
         currentFrameData.width = frameData["frame"]["w"];
         currentFrameData.heigth = frameData["frame"]["h"];
         
-        currentFrameData.pivot_x = frameData["pivot"]["x"];
-        currentFrameData.pivot_y = frameData["pivot"]["y"];
-        
+        currentFrameData.pivot_x = jsonData["meta"]["pivot"]["x"];
+        currentFrameData.pivot_y = jsonData["meta"]["pivot"]["y"];
+        currentFrameData.durationMillis = frameData["duration"];
         
         this->frameMap[currentFrameData.index]=currentFrameData;
     }
@@ -48,29 +50,31 @@ AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheet
         std::cerr << "ERROR: Could not load Main Character 00 spritesheet" << std::endl;
     }
     
-    std::ifstream jsonAnimationFile(resourcePath() + animationsFilename);
     
-    json animationJsonData;
-    jsonAnimationFile >> animationJsonData;
+    json animationJsonData = jsonData["meta"]["frameTags"];
     
     
     bool first = true;
     
     for (json::iterator it = animationJsonData.begin(); it != animationJsonData.end(); ++it) {
         
+        
+        json currAnimData = *it;
+        
         if(first){
-            this->currentAnimationName = it.key();
+            this->currentAnimationName = currAnimData["name"];
             loop = true;
             first = false;
         }
         
         AnimationData animData;
-        animData.name = it.key();
+        animData.name = currAnimData["name"];
         
-        for(json::iterator fit = it.value().begin(); fit!= it.value().end(); ++fit ){
-            animData.frames.push_back(*fit);
+        
+        for(unsigned int i = currAnimData["from"]; i <= (unsigned int)currAnimData["to"] ;i++){
+            animData.frames.push_back(i);
         }
-        this->animationMap[it.key()]=animData;
+        this->animationMap[animData.name]=animData;
         
     }
     
@@ -79,6 +83,7 @@ AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheet
     this->callbackAnimationEnd = [](){};
     
     this->timeInThisFrame = 0.f;
+    }
     
 }
 
@@ -103,6 +108,7 @@ std::string AnimatedSprite::getCurrentAnimation(){
 
 void AnimatedSprite::startAnimation(std::string name, bool loop,std::function<void()> callback){
 
+    
     if(currentAnimationName.compare(name)==0){
         return; //Trying to set the same animation
     }
@@ -111,10 +117,17 @@ void AnimatedSprite::startAnimation(std::string name, bool loop,std::function<vo
     this->currentAnimationName = name;
     this->currentAnimationData = this->animationMap[this->currentAnimationName];
     this->currentAnimationData.currentFrame = this->currentAnimationData.frames.begin();
+    FrameData * fPtr = &(this->frameMap[*(this->currentAnimationData.currentFrame)]);
+    this->timePerFrame = ((float)fPtr->durationMillis)/1000.f;
+    
+    
+    
     
 }
 
 void AnimatedSprite::goToNextFrame(){
+    
+    
     this->currentAnimationData.currentFrame++;
     if(this->currentAnimationData.currentFrame == this->currentAnimationData.frames.end()){
         if(loop){
@@ -126,7 +139,12 @@ void AnimatedSprite::goToNextFrame(){
     }else{
         
     }
-    }
+
+    FrameData * fPtr = &(this->frameMap[*(this->currentAnimationData.currentFrame)]);
+
+    this->timePerFrame = ((float)fPtr->durationMillis)/1000.f;
+    
+}
 
 void AnimatedSprite::update(){
     

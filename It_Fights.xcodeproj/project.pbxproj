@@ -10,10 +10,7 @@
 		4049DF6C1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6A1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp */; };
 		4049DF701EAA7583008DB0E5 /* Level_00_GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */; };
 		4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */; };
-		4049DF771EABB161008DB0E5 /* prota_0.2_anim_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4049DF751EABB161008DB0E5 /* prota_0.2_anim_data.json */; };
-		4049DF781EABB161008DB0E5 /* prota_0.2_anim_spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4049DF761EABB161008DB0E5 /* prota_0.2_anim_spritesheet.png */; };
 		4049DF7E1EABB2E9008DB0E5 /* Level_00_GO_MainCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF7C1EABB2E9008DB0E5 /* Level_00_GO_MainCharacter.cpp */; };
-		4049DF801EABC06B008DB0E5 /* prota_0.2_animations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4049DF7F1EABC06B008DB0E5 /* prota_0.2_animations.json */; };
 		4049DF831EABD972008DB0E5 /* SomeMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF811EABD972008DB0E5 /* SomeMath.cpp */; };
 		407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE41E897765004263E6 /* ResourcePath.mm */; };
 		407DEFE81E897765004263E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE71E897765004263E6 /* main.cpp */; };
@@ -28,6 +25,9 @@
 		407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF00D1E8AB7EF004263E6 /* Clock.cpp */; };
 		407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0111E8ABE1C004263E6 /* Input.cpp */; };
 		407DF0161E8ABF40004263E6 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DF0141E8ABF40004263E6 /* Event.cpp */; };
+		40817FF21EAD2536003089A4 /* prota_0.2.json in Resources */ = {isa = PBXBuildFile; fileRef = 40817FF01EAD2536003089A4 /* prota_0.2.json */; };
+		40817FF31EAD2536003089A4 /* prota_0.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40817FF11EAD2536003089A4 /* prota_0.2.png */; };
+		40817FF71EAD301E003089A4 /* Collisions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40817FF51EAD301E003089A4 /* Collisions.cpp */; };
 		40A563CD1EA6654A00133110 /* Bloom.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40A563CC1EA6654A00133110 /* Bloom.frag */; };
 		40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBB1E901DC800DB11BB /* Scene.cpp */; };
 		40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBE1E90202000DB11BB /* GameObject.cpp */; };
@@ -59,12 +59,9 @@
 		4049DF6F1EAA7583008DB0E5 /* Level_00_GO_Ground.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_GO_Ground.hpp; sourceTree = "<group>"; };
 		4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedSprite.cpp; sourceTree = "<group>"; };
 		4049DF731EABAB0E008DB0E5 /* AnimatedSprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimatedSprite.hpp; sourceTree = "<group>"; };
-		4049DF751EABB161008DB0E5 /* prota_0.2_anim_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prota_0.2_anim_data.json; sourceTree = "<group>"; };
-		4049DF761EABB161008DB0E5 /* prota_0.2_anim_spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prota_0.2_anim_spritesheet.png; sourceTree = "<group>"; };
 		4049DF7B1EABB265008DB0E5 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
 		4049DF7C1EABB2E9008DB0E5 /* Level_00_GO_MainCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_GO_MainCharacter.cpp; sourceTree = "<group>"; };
 		4049DF7D1EABB2E9008DB0E5 /* Level_00_GO_MainCharacter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_GO_MainCharacter.hpp; sourceTree = "<group>"; };
-		4049DF7F1EABC06B008DB0E5 /* prota_0.2_animations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prota_0.2_animations.json; sourceTree = "<group>"; };
 		4049DF811EABD972008DB0E5 /* SomeMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SomeMath.cpp; sourceTree = "<group>"; };
 		4049DF821EABD972008DB0E5 /* SomeMath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SomeMath.hpp; sourceTree = "<group>"; };
 		407DEFDF1E897765004263E6 /* It_Fights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = It_Fights.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +88,10 @@
 		407DF0121E8ABE1C004263E6 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
 		407DF0141E8ABF40004263E6 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		407DF0151E8ABF40004263E6 /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		40817FF01EAD2536003089A4 /* prota_0.2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prota_0.2.json; sourceTree = "<group>"; };
+		40817FF11EAD2536003089A4 /* prota_0.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prota_0.2.png; sourceTree = "<group>"; };
+		40817FF51EAD301E003089A4 /* Collisions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collisions.cpp; sourceTree = "<group>"; };
+		40817FF61EAD301E003089A4 /* Collisions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Collisions.hpp; sourceTree = "<group>"; };
 		40A563CC1EA6654A00133110 /* Bloom.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Bloom.frag; sourceTree = "<group>"; };
 		40C41EBB1E901DC800DB11BB /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		40C41EBC1E901DC800DB11BB /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
@@ -182,9 +183,8 @@
 		4049DF7A1EABB174008DB0E5 /* MainChar_00 */ = {
 			isa = PBXGroup;
 			children = (
-				4049DF751EABB161008DB0E5 /* prota_0.2_anim_data.json */,
-				4049DF761EABB161008DB0E5 /* prota_0.2_anim_spritesheet.png */,
-				4049DF7F1EABC06B008DB0E5 /* prota_0.2_animations.json */,
+				40817FF01EAD2536003089A4 /* prota_0.2.json */,
+				40817FF11EAD2536003089A4 /* prota_0.2.png */,
 			);
 			name = MainChar_00;
 			sourceTree = "<group>";
@@ -208,6 +208,7 @@
 		407DEFE11E897765004263E6 /* It_Fights */ = {
 			isa = PBXGroup;
 			children = (
+				40817FF41EAD2FA7003089A4 /* It_physics */,
 				40C41ECA1E90292000DB11BB /* It_resources */,
 				40DBD6001E8F1F200027E88A /* It_GameLogic&Content */,
 				407DF0101E8ABDDB004263E6 /* It_input */,
@@ -319,6 +320,15 @@
 				407DF0151E8ABF40004263E6 /* Event.hpp */,
 			);
 			name = It_input;
+			sourceTree = "<group>";
+		};
+		40817FF41EAD2FA7003089A4 /* It_physics */ = {
+			isa = PBXGroup;
+			children = (
+				40817FF51EAD301E003089A4 /* Collisions.cpp */,
+				40817FF61EAD301E003089A4 /* Collisions.hpp */,
+			);
+			name = It_physics;
 			sourceTree = "<group>";
 		};
 		40C41EC11E90220D00DB11BB /* Scenes */ = {
@@ -457,16 +467,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				407DEFF11E897765004263E6 /* icon.png in Resources */,
-				4049DF781EABB161008DB0E5 /* prota_0.2_anim_spritesheet.png in Resources */,
 				40FEE0511E904FC6004DCA95 /* DownSample.frag in Resources */,
-				4049DF801EABC06B008DB0E5 /* prota_0.2_animations.json in Resources */,
 				407DEFEF1E897765004263E6 /* sansation.ttf in Resources */,
 				40C41ED31E90490200DB11BB /* playfair.ttf in Resources */,
-				4049DF771EABB161008DB0E5 /* prota_0.2_anim_data.json in Resources */,
+				40817FF21EAD2536003089A4 /* prota_0.2.json in Resources */,
 				40C41ECF1E90298600DB11BB /* carnevalee.ttf in Resources */,
 				407DEFED1E897765004263E6 /* nice_music.ogg in Resources */,
 				407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */,
 				40FEE0531E904FC6004DCA95 /* GuassianBlur.frag in Resources */,
+				40817FF31EAD2536003089A4 /* prota_0.2.png in Resources */,
 				40FEE0501E904FC6004DCA95 /* Brightness.frag in Resources */,
 				40A563CD1EA6654A00133110 /* Bloom.frag in Resources */,
 				40FEE0521E904FC6004DCA95 /* Fullpass.vert in Resources */,
@@ -522,6 +531,7 @@
 				40E3B9AD1E8E9B28001EE4AA /* Console.cpp in Sources */,
 				407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */,
 				40C41EC91E90244900DB11BB /* TitleText.cpp in Sources */,
+				40817FF71EAD301E003089A4 /* Collisions.cpp in Sources */,
 				40E3B9B91E8EA6BA001EE4AA /* InputLine.cpp in Sources */,
 				407DEFFA1E8978C2004263E6 /* MessageBus.cpp in Sources */,
 				4049DF831EABD972008DB0E5 /* SomeMath.cpp in Sources */,

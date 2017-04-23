@@ -12,8 +12,10 @@ Game::Game() :
     messageBus(),
     gameState(&messageBus),
     consoleSystem(&messageBus),
-    windowSystem (&messageBus,&consoleSystem,"It_fights",2000,1500),
-    inputSystem (&messageBus,&windowSystem){
+    windowSystem (&messageBus,&consoleSystem,&collisionSystem,"It_fights",2000,1500),
+    inputSystem (&messageBus,&windowSystem),
+    collisionSystem(&messageBus){
+        
     }
 
 Game::~Game(){}
@@ -28,6 +30,7 @@ void Game::loop(){
     while(windowSystem.isOpen()){
         inputSystem.update();
         gameState.update();
+        collisionSystem.update();
         consoleSystem.update();
         windowSystem.update();
         messageBus.notify();

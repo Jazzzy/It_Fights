@@ -16,6 +16,7 @@
 #include "Window.hpp"
 #include "Input.hpp"
 #include "Clock.hpp"
+#include "Collisions.hpp"
 
 #include "GameState.hpp"
 #include "ResourceManager.hpp"
@@ -37,6 +38,7 @@ private:
     Window windowSystem;
     Input inputSystem;
     Clock m_clock;
+    Collisions collisionSystem;
 
 
 };

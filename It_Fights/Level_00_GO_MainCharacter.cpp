@@ -19,7 +19,7 @@
 extern Game game;
 
 Level_00_GO_MainCharacter_AnimatedSprite::Level_00_GO_MainCharacter_AnimatedSprite() :
-AnimatedSprite("prota_0.2_anim_data.json", "prota_0.2_anim_spritesheet.png", "prota_0.2_animations.json"){
+AnimatedSprite("prota_0.2.json", "prota_0.2.png", DataMode::Aseprite_Array_Json_Data_WPivot){
 
     this->startAnimation("RUN_UP", true, [](){});
     
