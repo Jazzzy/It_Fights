@@ -30,7 +30,7 @@ protected:
     sf::View* viewptr;
     std::function<void()> localUpdateFunction;
     std::function<void(sf::RenderTarget * renderTarget,const sf::Texture * texture)> fullScreenShadersFunc;
-
+    
 };
 
 

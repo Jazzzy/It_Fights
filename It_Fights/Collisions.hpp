@@ -46,6 +46,7 @@ typedef struct {
 
 
 typedef struct {
+    unsigned int id;
     float width;
     float heigth;
     ColliderFuncs funcs;
@@ -68,21 +69,18 @@ public:
     Collisions(MessageBus * messageBus);
     ~Collisions();
     
-    void registerRectangleCollider(float width,
-                                   float heigth,
-                                   std::function<std::pair<float,float>()>getOriginFunc ,
-                                   std::function<void(ColliderType)>onCollisionCallback,
-                                   ColliderType colliderType);
+    unsigned int registerRectangleCollider(RectangleCollider * rectangleCollider);
     void update();
     void draw(sf::RenderTarget * renderTarget);
     
 private:
     void onNotify (Message message);
+    unsigned int colliderCounter;
     
     
     void check__Rect_Rect__Collisions();
     
-    std::vector<RectangleCollider> rectColVector;
+    std::map<unsigned int, RectangleCollider*> rectColMap;
     
 };
 

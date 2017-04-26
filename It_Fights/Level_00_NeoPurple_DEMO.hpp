@@ -32,7 +32,7 @@ private:
     
     sf::View view;
     bool changedRes;
-
+    
 };
 
 #endif /* Level_00_NeoPurple_DEMO_hpp */

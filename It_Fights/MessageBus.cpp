@@ -36,7 +36,7 @@ void MessageBus::notify(){
             receiverMap[Systems::S_CurrentScene](message);
         }else{
             (receiverMap[message.getReceiverSystem()])(message);
-//            std::cout << message.getReceiverSystem() << ": " << message.getEvent() <<std::endl;
+            //            std::cout << message.getReceiverSystem() << ": " << message.getEvent() <<std::endl;
         }
         
         messageQueue.pop();
@@ -67,7 +67,7 @@ void MessageBus::removeReceiver(int systemID){
 }
 
 void MessageBus::sendMessage(Message message){
-//    std::cout << "Message received in Bus: " << message.getEvent() << std::endl;
+    //    std::cout << "Message received in Bus: " << message.getEvent() << std::endl;
     messageQueue.push(message);
 }
 

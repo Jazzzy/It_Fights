@@ -25,7 +25,7 @@ public:
     void notify();
     void addReceiver(int systemID, std::function<void (Message)> newReceiver);
     void removeReceiver(int systemID);
-
+    
     void sendMessage(Message message);
     
 private:

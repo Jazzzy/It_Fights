@@ -34,14 +34,14 @@ private:
     sf::RenderWindow sf_window;
     sf::RenderTexture sf_renderTexture;
     sf::RenderTexture sf_renderTexture_HighRes;
-
+    
     void tryToResize(unsigned int x, unsigned int y);
     sf::Vector2u currRealResolution;
     bool shouldRender;
     
     std::pair<unsigned int,unsigned int> internalResolution;
     std::pair<float,float> renderTextureScale;
-
+    
     
 };
 

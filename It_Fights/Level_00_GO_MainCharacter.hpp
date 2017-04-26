@@ -47,7 +47,7 @@ private:
     void tryToUpdateAnimation();
     
     
-
+    
 };
 
 #endif /* Level_00_GO_MainCharacter_hpp */

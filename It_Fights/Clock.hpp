@@ -22,7 +22,6 @@ public:
     float getDeltaTime();
     float getMeanDeltaTime();
     unsigned int getMeanFPS();
-    
 private :
     void first20Update();
     void runningUpdate();

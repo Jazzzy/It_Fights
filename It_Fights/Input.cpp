@@ -52,17 +52,17 @@ void Input::readInput(){
                 break;
                 
             case sf::Event::TextEntered:
-                {
-                    if(game.isConsoleOpen()){ //If the console is open then the key should go to it
-                        if (event.text.unicode < 128 && event.text.unicode > 31 && event.text.unicode != '\\' ){
+            {
+                if(game.isConsoleOpen()){ //If the console is open then the key should go to it
+                    if (event.text.unicode < 128 && event.text.unicode > 31 && event.text.unicode != '\\' ){
                         Message msg_keyForConsole("MSG_CONSOLE_KEYCHAR",Systems::S_Console, MessageData{MessageData::CHARACTER, .character = static_cast<char>(event.text.unicode)});
                         send(msg_keyForConsole);
-                        }
-                        break;
-                    }else{
-                        //Other text stuff
                     }
+                    break;
+                }else{
+                    //Other text stuff
                 }
+            }
                 
             case sf::Event::KeyPressed:
             {
@@ -99,5 +99,5 @@ void Input::update(){
 }
 
 void Input::onNotify (Message message){
-//    std::cout << "Input System received: " << message.getEvent() << std::endl;
+    //    std::cout << "Input System received: " << message.getEvent() << std::endl;
 }

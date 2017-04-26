@@ -66,10 +66,10 @@ void Console::evaluateInputLine(){
         send(consoleMessageToSystem);
         
     }else{
-    
+        
         Message consoleMessageToEveryone(strLine);
         send(consoleMessageToEveryone);
-    
+        
     }
     
     this->inputLine.erase();
@@ -89,7 +89,7 @@ void Console::onNotify (Message message){
         }else{
             this->messageLines.push_back(ConsoleLine(sf::String(*(message.getData().string_ptr))));
         }
-
+        
         delete message.getData().string_ptr; //@@OPTIMIZATION: We could try to instantiate this strings on a custom allocator/memory pool to avoid fragmentation
         
     }else if(message.getEvent().compare("MSG_CONSOLE_KEYCHAR")==0){
@@ -111,11 +111,11 @@ void Console::onNotify (Message message){
                 case sf::Keyboard::Return:
                     this->evaluateInputLine();
                     break;
-            
+                    
                 default:
                     break;
             }
-        
+            
         }
     }else if(message.getEvent().compare("MSG_TOGGLE_FPS")==0){
         this->showFps = ! this->showFps;

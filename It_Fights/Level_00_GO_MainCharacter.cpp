@@ -20,7 +20,7 @@ extern Game game;
 
 Level_00_GO_MainCharacter_AnimatedSprite::Level_00_GO_MainCharacter_AnimatedSprite() :
 AnimatedSprite("prota_0.2.json", "prota_0.2.png", DataMode::Aseprite_Array_Json_Data_WPivot){
-
+    
     this->startAnimation("RUN_UP", true, [](){});
     
 }
@@ -42,7 +42,7 @@ AnimatedSprite("prota_0.2.json", "prota_0.2.png", DataMode::Aseprite_Array_Json_
 Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene * scene){
     
     this->scene=scene;
-
+    
     this->position = sf::Vector2f(100,150);
     this->walkingSpeed = 130.0f;
     this->lastHeading = Heading::DOWN;
@@ -54,7 +54,7 @@ Level_00_GO_MainCharacter::~Level_00_GO_MainCharacter(){}
 
 
 Heading Level_00_GO_MainCharacter::calculateHeading(sf::Vector2f velocity){
-
+    
     if(fabs(velocity.x) > fabs(velocity.y)){
         
         if(velocity.x > 0)
@@ -82,7 +82,7 @@ void Level_00_GO_MainCharacter::update(){
     //@@TODO Listen Here for inputs from the user :D
     
     bool connected = sf::Joystick::isConnected(0);
-
+    
     if(!connected){
         Message msgNoController("MSG_NO_CONTROLLER"); //@@TODO deal with this.
         msgNoController.setRelevantForConsole(true);
@@ -115,7 +115,7 @@ void Level_00_GO_MainCharacter::update(){
 }
 
 void Level_00_GO_MainCharacter::tryToUpdateAnimation(){
-
+    
     if(getVectorLength(velocity) > 0.0f){   //We are moving
         switch(lastHeading){
             case (Heading::DOWN):
@@ -136,7 +136,7 @@ void Level_00_GO_MainCharacter::tryToUpdateAnimation(){
         }
         
     }else{                                  //We are standing still
-    
+        
         switch(lastHeading){
             case (Heading::DOWN):
                 this->animatedSprite.startAnimation("IDLE_DOWN", true, [](){});
@@ -160,12 +160,12 @@ void Level_00_GO_MainCharacter::tryToUpdateAnimation(){
 }
 
 void Level_00_GO_MainCharacter::draw(sf::RenderTarget * renderTarget){
-
+    
     
     this->tryToUpdateAnimation();
     
     this->animatedSprite.update();
-
+    
     
     sf::Sprite mainCharSprite = this->animatedSprite.getCurrentSprite();
     
@@ -173,5 +173,5 @@ void Level_00_GO_MainCharacter::draw(sf::RenderTarget * renderTarget){
     mainCharSprite.move(this->position);
     
     renderTarget->draw(mainCharSprite);
-
+    
 }

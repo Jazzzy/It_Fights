@@ -33,7 +33,7 @@ void GameState::update(){
 
 void GameState::onNotify(Message message){
     //@@TODO deal with messages here
-
+    
 }
 
 Scene * GameState::getScene(){

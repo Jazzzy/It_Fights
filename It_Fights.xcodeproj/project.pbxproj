@@ -36,6 +36,7 @@
 		40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41ECB1E90293600DB11BB /* ResourceManager.cpp */; };
 		40C41ECF1E90298600DB11BB /* carnevalee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C41ECE1E90298600DB11BB /* carnevalee.ttf */; };
 		40C41ED31E90490200DB11BB /* playfair.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C41ED21E90490200DB11BB /* playfair.ttf */; };
+		40D7A0F11EB0EE4F000673F2 /* BoxCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D7A0EF1EB0EE4F000673F2 /* BoxCollider.cpp */; };
 		40DBD6031E8F1F5C0027E88A /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DBD6011E8F1F5C0027E88A /* GameState.cpp */; };
 		40DBD6061E8F20760027E88A /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DBD6041E8F20760027E88A /* Game.cpp */; };
 		40E3B9AD1E8E9B28001EE4AA /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9AB1E8E9B28001EE4AA /* Console.cpp */; };
@@ -105,6 +106,8 @@
 		40C41ECC1E90293600DB11BB /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
 		40C41ECE1E90298600DB11BB /* carnevalee.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = carnevalee.ttf; sourceTree = "<group>"; };
 		40C41ED21E90490200DB11BB /* playfair.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = playfair.ttf; sourceTree = "<group>"; };
+		40D7A0EF1EB0EE4F000673F2 /* BoxCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoxCollider.cpp; sourceTree = "<group>"; };
+		40D7A0F01EB0EE4F000673F2 /* BoxCollider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BoxCollider.hpp; sourceTree = "<group>"; };
 		40DBD5FF1E8F1C490027E88A /* MessageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageData.h; sourceTree = "<group>"; };
 		40DBD6011E8F1F5C0027E88A /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
 		40DBD6021E8F1F5C0027E88A /* GameState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
@@ -327,6 +330,8 @@
 			children = (
 				40817FF51EAD301E003089A4 /* Collisions.cpp */,
 				40817FF61EAD301E003089A4 /* Collisions.hpp */,
+				40D7A0EF1EB0EE4F000673F2 /* BoxCollider.cpp */,
+				40D7A0F01EB0EE4F000673F2 /* BoxCollider.hpp */,
 			);
 			name = It_physics;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 				40FEE05D1E905168004DCA95 /* BloomShader.cpp in Sources */,
 				407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */,
 				40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */,
+				40D7A0F11EB0EE4F000673F2 /* BoxCollider.cpp in Sources */,
 				40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */,
 				4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */,
 				407DF0001E898962004263E6 /* BusNode.cpp in Sources */,

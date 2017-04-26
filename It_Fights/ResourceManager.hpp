@@ -22,7 +22,7 @@ public:
 private:
     std::unordered_map<std::string, sf::Font> fontsMap;
     void loadFonts();
-
+    
 };
 
 

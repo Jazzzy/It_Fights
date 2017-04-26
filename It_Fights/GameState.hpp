@@ -20,7 +20,7 @@ public:
     bool isConsoleOpen();
     bool isGamePaused();
     bool areWeInMainMenu();
-
+    
     
 private:
     void onNotify(Message message);

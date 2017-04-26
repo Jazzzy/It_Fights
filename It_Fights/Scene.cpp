@@ -13,7 +13,7 @@
 extern Game game;
 
 Scene::Scene(MessageBus * messageBus) : BusNode(Systems::S_CurrentScene, messageBus) {
-
+    
     this->viewptr = NULL;
     this->localUpdateFunction = [](){};
     this->fullScreenShadersFunc = [](sf::RenderTarget * renderTarget, const sf::Texture * texture){};
@@ -34,7 +34,7 @@ void Scene::update(){
     for(auto iter = this->listOfGameObjects.begin(); iter!=this->listOfGameObjects.end(); ++iter ){
         (*iter)->update();
     }
-
+    
 }
 
 
@@ -44,7 +44,7 @@ void Scene::applyFullScreenShaders(sf::RenderTarget * renderTarget, const sf::Te
 
 
 void Scene::draw(sf::RenderTarget *renderTarget){
-
+    
     
     if(this->viewptr!=NULL){
         renderTarget->setView(*(this->viewptr));
@@ -59,5 +59,5 @@ void Scene::draw(sf::RenderTarget *renderTarget){
     if(this->viewptr!=NULL){
         renderTarget->setView(renderTarget->getDefaultView());
     }
-        
+    
 }

@@ -36,20 +36,20 @@ unsigned int Clock::getMeanFPS(){
 }
 
 void Clock::first20Update(){
-
-        if(this->timesQueue.size()>=MAX_QUEUE_SIZE){
-            this->updateFunction = [&](){this->runningUpdate();};
-            return;
-        }
-
-        this->timesQueue.push_front(this->deltaTime); //Meter aqui o delta time en formato sf::Time
     
-        this->meanDeltaTime = 0.0f;
+    if(this->timesQueue.size()>=MAX_QUEUE_SIZE){
+        this->updateFunction = [&](){this->runningUpdate();};
+        return;
+    }
     
-        for(auto iter = this->timesQueue.begin() ; iter!=timesQueue.end() ; ++iter){
-            this->meanDeltaTime+=(*iter);
-        }
-        this->meanDeltaTime=this->meanDeltaTime/this->timesQueue.size();
+    this->timesQueue.push_front(this->deltaTime); //Meter aqui o delta time en formato sf::Time
+    
+    this->meanDeltaTime = 0.0f;
+    
+    for(auto iter = this->timesQueue.begin() ; iter!=timesQueue.end() ; ++iter){
+        this->meanDeltaTime+=(*iter);
+    }
+    this->meanDeltaTime=this->meanDeltaTime/this->timesQueue.size();
     
 }
 

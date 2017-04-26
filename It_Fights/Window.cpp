@@ -43,7 +43,7 @@ Window::Window(MessageBus * messageBus, Console * console, Collisions* collision
     
     this->renderTextureScale.first=1;
     this->renderTextureScale.second=1;
-        
+    
 }
 
 sf::Window * Window::getInternalWindowRef(){
@@ -79,7 +79,7 @@ void Window::update(){
     }
     
     this->sf_window.clear(sf::Color::Black);
-
+    
     this->sf_renderTexture.clear(sf::Color(227,218,201)); //Boneish color
     //Draw here everything to the texture
     this->sf_renderTexture_HighRes.clear(sf::Color::Transparent);
@@ -88,7 +88,7 @@ void Window::update(){
     
     
     /*
-        Could be a good idea to have a scene with a list of drawable objects that can be accesed from here, maybe a scene with layers that have objects with shaders, this way we draw the layers in order and can move them independantly just calling each layer "draw" method.
+     Could be a good idea to have a scene with a list of drawable objects that can be accesed from here, maybe a scene with layers that have objects with shaders, this way we draw the layers in order and can move them independantly just calling each layer "draw" method.
      */
     
     //Apply here every fullscreen shader
@@ -102,17 +102,17 @@ void Window::update(){
     if(this->console->isOpen()){
         this->console->draw(&sf_renderTexture_HighRes);
     }
-
+    
     this->sf_renderTexture.display();
     this->sf_renderTexture_HighRes.display();
-
+    
     
     sf::Sprite renderTextureSprite(this->sf_renderTexture.getTexture());
     renderTextureSprite.setScale(this->renderTextureScale.first,this->renderTextureScale.second);
     
     sf_window.draw(renderTextureSprite);
     sf_window.draw(sf::Sprite(this->sf_renderTexture_HighRes.getTexture()));
-
+    
     
     this->sf_window.display();
     

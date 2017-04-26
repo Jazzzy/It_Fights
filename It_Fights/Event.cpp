@@ -10,12 +10,12 @@
 
 
 Event::Event(sf::Event event) : internalEvent(event){
-
+    
     
 }
 
 Event::~Event(){
-
+    
 }
 
 sf::Event Event::getEvent(){

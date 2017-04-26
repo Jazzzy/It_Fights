@@ -24,7 +24,7 @@ ConsoleLine::ConsoleLine(){
 }
 
 ConsoleLine::~ConsoleLine(){
-
+    
 }
 
 sf::String ConsoleLine::getString(){

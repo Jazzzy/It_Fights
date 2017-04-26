@@ -9,14 +9,14 @@
 #include "Game.hpp"
 
 Game::Game() :
-    messageBus(),
-    gameState(&messageBus),
-    consoleSystem(&messageBus),
-    windowSystem (&messageBus,&consoleSystem,&collisionSystem,"It_fights",2000,1500),
-    inputSystem (&messageBus,&windowSystem),
-    collisionSystem(&messageBus){
-        
-    }
+messageBus(),
+gameState(&messageBus),
+consoleSystem(&messageBus),
+windowSystem (&messageBus,&consoleSystem,&collisionSystem,"It_fights",2000,1500),
+inputSystem (&messageBus,&windowSystem),
+collisionSystem(&messageBus){
+    
+}
 
 Game::~Game(){}
 
@@ -26,7 +26,6 @@ GameState * Game::getGameState(){
 
 
 void Game::loop(){
-
     while(windowSystem.isOpen()){
         inputSystem.update();
         gameState.update();
@@ -35,7 +34,6 @@ void Game::loop(){
         windowSystem.update();
         messageBus.notify();
     }
-    
 }
 
 Clock * Game::getDeltaClock(){

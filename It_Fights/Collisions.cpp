@@ -11,51 +11,40 @@
 
 
 Collisions::Collisions(MessageBus * messageBus) : BusNode(Systems::S_Collisions,messageBus){
-
+    
+    this->colliderCounter = 0;
+    
 }
 
 
 Collisions::~Collisions(){
-
-
+    
+    
 }
 
 
 void Collisions::update(){
-
+    
 }
 
 void Collisions::draw(sf::RenderTarget *renderTarget){
-
+    
 }
 
 
 void Collisions::onNotify(Message message){
-
-
+    
+    
 }
 
-void Collisions::registerRectangleCollider(float width,
-                                           float heigth,
-                                           std::function<std::pair<float,float>()>getOriginFunc ,
-                                           std::function<void(ColliderType)>onCollisionCallback,
-                                           ColliderType colliderType){
+unsigned int Collisions::registerRectangleCollider(RectangleCollider * rectangleCollider){
     
+    rectangleCollider->id = this->colliderCounter++;
     
-    ColliderFuncs funcs{
-        .getOriginFunc=getOriginFunc,
-        .onCollisionCallback=onCollisionCallback
-    };
+    this->rectColMap[rectangleCollider->id]=(rectangleCollider);
     
-    RectangleCollider newRectangleCollider{
-        .width = width,
-        .heigth = heigth,
-        .funcs = funcs,
-        .colType = colliderType
-    };
-
-    this->rectColVector.push_back(newRectangleCollider);
-
+    return rectangleCollider->id;
+    
 }
 
 

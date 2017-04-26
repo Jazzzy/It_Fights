@@ -13,13 +13,13 @@
 
 
 Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
-    Scene(messageBus),
-    level_00_GO_Ground(),
-    view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
-    mainCharacter(this)
+Scene(messageBus),
+level_00_GO_Ground(),
+view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
+mainCharacter(this)
 {
     
-
+    
     changedRes = false;
     
     //Add here all GameObjects necessary to with "this->addGameObject(GameObject * gameObject)"
@@ -34,8 +34,6 @@ Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
     
     //this->viewptr = &view;
     
-    
-    
 }
 
 Level_00_NeoPurple_DEMO::~Level_00_NeoPurple_DEMO(){
@@ -44,7 +42,7 @@ Level_00_NeoPurple_DEMO::~Level_00_NeoPurple_DEMO(){
 
 
 void Level_00_NeoPurple_DEMO::screenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture){
-
+    
     //@@TODO Apply here shaders for this scene
     
 }

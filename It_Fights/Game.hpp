@@ -29,6 +29,7 @@ public:
     Clock * getDeltaClock();
     bool isConsoleOpen();
     GameState * getGameState();
+    Collisions * getCollisionSystem();
     
 private:
     GameState gameState;
@@ -39,8 +40,8 @@ private:
     Input inputSystem;
     Clock m_clock;
     Collisions collisionSystem;
-
-
+    
+    
 };
 
 #endif /* Game_hpp */

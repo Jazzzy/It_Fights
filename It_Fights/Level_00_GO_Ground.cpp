@@ -49,7 +49,7 @@ Level_00_GO_Ground::Level_00_GO_Ground() : groundTexture(){
     
     groundTexture.display();
     
-
+    
 }
 
 Level_00_GO_Ground::~Level_00_GO_Ground(){
@@ -57,11 +57,11 @@ Level_00_GO_Ground::~Level_00_GO_Ground(){
 }
 
 void Level_00_GO_Ground::update(){
-
+    
 }
 
 void Level_00_GO_Ground::draw(sf::RenderTarget *renderTarget){
-
+    
     renderTarget->draw(sf::Sprite(this->groundTexture.getTexture()));
     
 }

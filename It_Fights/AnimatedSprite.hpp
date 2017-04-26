@@ -38,7 +38,7 @@ typedef struct {
 } FrameData;
 
 typedef struct {
-
+    
     std::string name;
     std::vector<unsigned int>frames;
     std::vector<unsigned int>::iterator currentFrame;

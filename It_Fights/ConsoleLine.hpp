@@ -18,7 +18,7 @@ public:
     ConsoleLine(sf::String content);
     ConsoleLine();
     ~ConsoleLine();
-
+    
     void appendCharacter(char character);
     void appendString(sf::String string);
     
@@ -28,7 +28,7 @@ public:
 protected:
     sf::String stringContent;
     unsigned int numberOfLines;
-
+    
 };
 
 #endif /* ConsoleLine_hpp */

@@ -13,7 +13,7 @@
 ResourceManager::ResourceManager(){
     
     this->loadFonts();
-
+    
 }
 
 
