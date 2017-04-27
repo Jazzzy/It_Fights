@@ -274,11 +274,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Console.cpp"
-            timestampString = "514494234.436612"
+            timestampString = "515015067.417542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "Console::drawMessages(sf::RenderTarget *renderTarget, float origin_X, float origin_Y , float size_X , float size_Y, sf::Color textColor, sf::Color softTextColor)"
             landmarkType = "7">
          </BreakpointContent>
@@ -322,7 +322,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/MessageBus.cpp"
-            timestampString = "514561853.33096"
+            timestampString = "515015282.135627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -338,11 +338,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Level_00_GO_MainCharacter.cpp"
-            timestampString = "514581516.483207"
+            timestampString = "515010993.817845"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "Level_00_GO_MainCharacter::calculateHeading(sf::Vector2f velocity)"
             landmarkType = "7">
          </BreakpointContent>
@@ -354,11 +354,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Collisions.cpp"
-            timestampString = "514668343.016097"
+            timestampString = "515009064.503064"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "Collisions::Collisions(MessageBus * messageBus)"
             landmarkType = "7">
             <Locations>
@@ -408,6 +408,38 @@
             startingLineNumber = "95"
             endingLineNumber = "95"
             landmarkName = "Window::update()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "It_Fights/Collisions.cpp"
+            timestampString = "515014615.306042"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "Collisions::registerRectangleCollider(RectangleCollider * rectangleCollider)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "It_Fights/Collisions.cpp"
+            timestampString = "515014615.306042"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "Collisions::registerRectangleCollider(RectangleCollider * rectangleCollider)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

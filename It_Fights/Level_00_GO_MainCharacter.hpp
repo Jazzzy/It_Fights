@@ -15,6 +15,7 @@
 #include "json.hpp"
 #include <unordered_map>
 #include "Scene.hpp"
+#include "BoxCollider.hpp"
 
 
 
@@ -38,6 +39,7 @@ private:
     Level_00_GO_MainCharacter_AnimatedSprite animatedSprite;
     
     sf::Vector2f position;
+    sf::Vector2f oldPosition;
     sf::Vector2f velocity;
     Scene * scene;
     
@@ -45,6 +47,9 @@ private:
     Heading calculateHeading(sf::Vector2f velocity);
     Heading lastHeading;
     void tryToUpdateAnimation();
+    
+    BoxCollider locationCollider;
+    void manageCollisionWithWall(sf::Vector2f velocity);
     
     
     

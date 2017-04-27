@@ -16,7 +16,7 @@
 #include "MessageData.h"
 
 
-#define MSG_TO_EVERYONE -1
+#define MSG_TO_EVERYONE (-1)
 
 
 

@@ -28,6 +28,7 @@
 		40817FF21EAD2536003089A4 /* prota_0.2.json in Resources */ = {isa = PBXBuildFile; fileRef = 40817FF01EAD2536003089A4 /* prota_0.2.json */; };
 		40817FF31EAD2536003089A4 /* prota_0.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40817FF11EAD2536003089A4 /* prota_0.2.png */; };
 		40817FF71EAD301E003089A4 /* Collisions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40817FF51EAD301E003089A4 /* Collisions.cpp */; };
+		408534231EB264FA001D0131 /* DebugUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 408534211EB264FA001D0131 /* DebugUtilities.cpp */; };
 		40A563CD1EA6654A00133110 /* Bloom.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40A563CC1EA6654A00133110 /* Bloom.frag */; };
 		40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBB1E901DC800DB11BB /* Scene.cpp */; };
 		40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBE1E90202000DB11BB /* GameObject.cpp */; };
@@ -93,6 +94,8 @@
 		40817FF11EAD2536003089A4 /* prota_0.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prota_0.2.png; sourceTree = "<group>"; };
 		40817FF51EAD301E003089A4 /* Collisions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collisions.cpp; sourceTree = "<group>"; };
 		40817FF61EAD301E003089A4 /* Collisions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Collisions.hpp; sourceTree = "<group>"; };
+		408534211EB264FA001D0131 /* DebugUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugUtilities.cpp; sourceTree = "<group>"; };
+		408534221EB264FA001D0131 /* DebugUtilities.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DebugUtilities.hpp; sourceTree = "<group>"; };
 		40A563CC1EA6654A00133110 /* Bloom.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Bloom.frag; sourceTree = "<group>"; };
 		40C41EBB1E901DC800DB11BB /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		40C41EBC1E901DC800DB11BB /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				407DF00E1E8AB7EF004263E6 /* Clock.hpp */,
 				4049DF811EABD972008DB0E5 /* SomeMath.cpp */,
 				4049DF821EABD972008DB0E5 /* SomeMath.hpp */,
+				408534211EB264FA001D0131 /* DebugUtilities.cpp */,
+				408534221EB264FA001D0131 /* DebugUtilities.hpp */,
 			);
 			name = It_utils;
 			sourceTree = "<group>";
@@ -530,6 +535,7 @@
 				40FEE05D1E905168004DCA95 /* BloomShader.cpp in Sources */,
 				407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */,
 				40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */,
+				408534231EB264FA001D0131 /* DebugUtilities.cpp in Sources */,
 				40D7A0F11EB0EE4F000673F2 /* BoxCollider.cpp in Sources */,
 				40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */,
 				4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */,

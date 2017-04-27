@@ -12,6 +12,8 @@
 #include <stdio.h>
 
 #include "GameObject.hpp"
+#include "BloomShader.hpp"
+#include "BoxCollider.hpp"
 
 class Level_00_GO_Ground : public GameObject {
 public:
@@ -21,6 +23,7 @@ public:
     void draw(sf::RenderTarget *renderTarget);
 private:
     sf::RenderTexture groundTexture;
+    BoxCollider outsideCollider;
 };
 
 #endif /* Level_00_GO_Ground_hpp */

@@ -28,6 +28,7 @@
  
  */
 
+
 enum ColliderType{
     WALL,
     INVERTED_BOX,
@@ -40,19 +41,22 @@ enum CollisionBehaviour{
 
 typedef struct {
     std::function<std::pair<float,float>()> getOriginFunc;
-    std::function<void(ColliderType)> onCollisionCallback;
+    std::function<void(ColliderType, std::pair<float, float>)> onCollisionCallback;
 } ColliderFuncs;
 
 
-
 typedef struct {
+    bool active;
     unsigned int id;
     float width;
     float heigth;
     ColliderFuncs funcs;
     ColliderType colType;
+    
+    std::pair<float,float> lastOrigin;
+    bool updated;
+    
 } RectangleCollider;
-
 
 
 typedef struct {
@@ -69,19 +73,78 @@ public:
     Collisions(MessageBus * messageBus);
     ~Collisions();
     
+    //Register and unregister colliders
     unsigned int registerRectangleCollider(RectangleCollider * rectangleCollider);
+    void unregisterRectangleCollider(unsigned int id);
+    
+    //Activate and deactivate colliders
+    void activateCollider (unsigned int id);
+    void deactivateCollider (unsigned int id);
+    
+    
     void update();
     void draw(sf::RenderTarget * renderTarget);
     
 private:
-    void onNotify (Message message);
-    unsigned int colliderCounter;
+    bool shouldDraw;
     
+    
+    RectangleCollider* currentInvertedBox;
+    
+    void onNotify (Message message);
+    
+    
+    unsigned int colliderCounter;
+    std::map<unsigned int, RectangleCollider*> rectColMap;
+
     
     void check__Rect_Rect__Collisions();
+    void check__Box_Rect__Collisions();
     
-    std::map<unsigned int, RectangleCollider*> rectColMap;
+    
+    bool check2Rects(RectangleCollider * col1, RectangleCollider * col2);
+    bool checkBoxRect(RectangleCollider * box, RectangleCollider * col, std::pair<float,float>* vector);
+    
+    void drawRectangleColliders(sf::RenderTarget *renderTarget);
     
 };
 
 #endif /* Collisions_hpp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*eof*/

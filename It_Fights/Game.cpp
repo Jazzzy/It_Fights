@@ -44,3 +44,11 @@ Clock * Game::getDeltaClock(){
 bool Game::isConsoleOpen(){
     return this->consoleSystem.isOpen();
 }
+
+Collisions * Game::getCollisionSystem(){
+
+    return &this->collisionSystem;
+    
+}
+
+

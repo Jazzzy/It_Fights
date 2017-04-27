@@ -16,7 +16,10 @@ public:
     BloomShader();
     ~BloomShader();
     sf::RenderStates getRenderStates();
+    void drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable* drawable);
+
 private:
+    sf::Shader sf_shader;
     sf::RenderTexture mBrightnessTexture;
     
 

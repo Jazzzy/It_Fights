@@ -14,7 +14,7 @@ sf::String InputLine::getString(){
 }
 
 sf::String InputLine::getRealString(){
-    return (this->stringContent[0]);
+    return (this->stringContent);
 }
 
 void InputLine::removeLastCharacter(){

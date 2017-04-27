@@ -12,18 +12,30 @@
 #include "Collisions.hpp"
 #include <functional>
 
+
 class BoxCollider {
 public:
     BoxCollider(float width,
                 float heigth,
                 std::function<std::pair<float,float>()>getOriginFunc ,
-                std::function<void(ColliderType)>onCollisionCallback,
+                std::function<void(ColliderType,std::pair<float, float>)>onCollisionCallback,
                 ColliderType colliderType);
     ~BoxCollider();
+    
+
+    bool isRegistered();
     void registerCollider();
     void unregisterCollider();
+    
+    
+    bool isActive();
+    void setActive();
+    void setUnactive();
+    
 private:
     RectangleCollider collider;
+    bool registered;
+    bool active;
     
     
 };

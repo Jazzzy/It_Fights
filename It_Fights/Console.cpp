@@ -66,7 +66,6 @@ void Console::evaluateInputLine(){
         send(consoleMessageToSystem);
         
     }else{
-        
         Message consoleMessageToEveryone(strLine);
         send(consoleMessageToEveryone);
         

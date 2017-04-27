@@ -45,6 +45,10 @@ void Level_00_NeoPurple_DEMO::screenShaders(sf::RenderTarget * renderTarget, con
     
     //@@TODO Apply here shaders for this scene
     
+//    sf::Sprite textureSprite(*screenTexture);
+//    
+//    this->bloomShader.drawWithShader(renderTarget, &textureSprite);
+    
 }
 
 

@@ -91,7 +91,7 @@ void Window::update(){
      Could be a good idea to have a scene with a list of drawable objects that can be accesed from here, maybe a scene with layers that have objects with shaders, this way we draw the layers in order and can move them independantly just calling each layer "draw" method.
      */
     
-    //Apply here every fullscreen shader
+    //Apply here every fullscreen shader in the internal res
     game.getGameState()->getScene()->applyFullScreenShaders(&sf_renderTexture,&(sf_renderTexture.getTexture()));
     
     

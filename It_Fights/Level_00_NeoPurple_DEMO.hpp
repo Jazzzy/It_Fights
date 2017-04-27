@@ -13,6 +13,7 @@
 #include <Scene.hpp>
 #include "Level_00_GO_Ground.hpp"
 #include "Level_00_GO_MainCharacter.hpp"
+#include "BloomShader.hpp"
 
 
 #define LVL_00_RESOLUTION_X 400
@@ -32,6 +33,10 @@ private:
     
     sf::View view;
     bool changedRes;
+    
+    
+    BloomShader bloomShader;
+
     
 };
 

@@ -1,44 +1,43 @@
+
+// The original texture
 uniform sampler2D texture;
 
+// The width and height of each pixel in texture coordinates
+uniform float pixelWidth;
+uniform float pixelHeight;
 
 void main()
 {
-    // lookup the pixel in the texture
-    vec4 pixel = texture2D(texture, gl_TexCoord[0].xy);
+    // Current texture coordinate
+    vec2 texel = vec2(gl_TexCoord[0]);
+    vec4 pixel = vec4(texture2D(texture, texel));
     
-    // multiply it by the color
-    pixel = gl_Color * pixel;
+    // Larger constant = bigger glow
+    float glow = 4.0 * ((pixelWidth + pixelHeight) / 2.0);
     
-
-    vec4 sum = vec4(0);
-    vec2 texcoord = gl_TexCoord[0].xy;
-
+    // The vector to contain the new, "bloomed" colour values
+    vec4 bloom = vec4(0);
     
-    
-    for( int i= -4 ;i < 4; i++)
+    // Loop over all the pixels on the texture in the area given by the constant in glow
+    int count = 0;
+    for(float x = texel.x - glow; x < texel.x + glow; x += pixelWidth)
     {
-        for ( int j = -3; j < 3; j++)
+        for(float y = texel.y - glow; y < texel.y + glow; y += pixelHeight)
         {
-            sum += texture2D(texture, texcoord + vec2(j, i)*0.004) * 0.25;
+            // Add that pixel's value to the bloom vector
+            bloom += (texture2D(texture, vec2(x, y)) - 0.4) * 30.0;
+            // Add 1 to the number of pixels sampled
+            count++;
         }
     }
-    
+    // Divide by the number of pixels sampled to average out the value
+    // The constant being multiplied with count here will dim the bloom effect a bit, with higher values
+    // Clamp the value between a 0.0 to 1.0 range
+    bloom.x = clamp(bloom.x / float(count * 30), 0.0, 1.0);
+    bloom.y = clamp(bloom.y / float(count * 30), 0.0, 1.0);
+    bloom.z = clamp(bloom.z / float(count * 30), 0.0, 1.0);
 
-    if (texture2D(texture, texcoord).r < 0.3)
-    {
-        gl_FragColor = sum*sum*0.012 + texture2D(texture, texcoord);
-    }
-    else
-    {
-        if (texture2D(texture, texcoord).r < 0.5)
-        {
-            gl_FragColor = sum*sum*0.009 + texture2D(texture, texcoord);
-        }
-        else
-        {
-            gl_FragColor = (sum*sum*0.0075) * pixel;
-        }
-    }
     
-    
+    // Set the current fragment to the original texture pixel, with our bloom value added on
+    gl_FragColor = pixel + bloom;
 }

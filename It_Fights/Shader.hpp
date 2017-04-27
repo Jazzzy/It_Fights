@@ -15,7 +15,7 @@ class Shader {
 public:
     virtual ~Shader(){}
     virtual sf::RenderStates getRenderStates() = 0;
-    virtual sf::Shader & getShader() = 0;
+    virtual void drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable* drawable) = 0;
 };
 
 #endif /* Shader_hpp */

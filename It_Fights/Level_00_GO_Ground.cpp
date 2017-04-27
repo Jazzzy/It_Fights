@@ -8,6 +8,7 @@
 
 #include "Level_00_GO_Ground.hpp"
 #include "Level_00_NeoPurple_DEMO.hpp"
+#include "DebugUtilities.hpp"
 
 #define tileSide 16
 #define tileMapWidth 13
@@ -15,7 +16,19 @@
 #define outLineTHICC 1
 
 
-Level_00_GO_Ground::Level_00_GO_Ground() : groundTexture(){
+Level_00_GO_Ground::Level_00_GO_Ground() :
+groundTexture(),
+outsideCollider( (tileSide * tileMapWidth), (tileSide * tileMapHeight) ,[]() -> std::pair<float,float>{
+    
+    std::pair<float,float> origin;
+    origin.first = (LVL_00_RESOLUTION_X-(tileSide*tileMapWidth))/2.0f;
+    origin.second = (LVL_00_RESOLUTION_Y-(tileSide*tileMapHeight))/2.0f;
+    return origin;
+    
+},
+[](ColliderType colType,std::pair<float, float> vector){},
+ColliderType::INVERTED_BOX)
+{
     
     
     groundTexture.create(LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y);
@@ -58,10 +71,19 @@ Level_00_GO_Ground::~Level_00_GO_Ground(){
 
 void Level_00_GO_Ground::update(){
     
+    //@@TODO change this
+    if(!this->outsideCollider.isRegistered()){
+        this->outsideCollider.registerCollider();
+    }
+    
 }
 
 void Level_00_GO_Ground::draw(sf::RenderTarget *renderTarget){
     
-    renderTarget->draw(sf::Sprite(this->groundTexture.getTexture()));
+//    sf::Sprite groundSprite(this->groundTexture.getTexture());
+//    
+//    this->bloomShader.drawWithShader(renderTarget,&(groundSprite));
+    
+   renderTarget->draw(sf::Sprite(this->groundTexture.getTexture()));
     
 }
