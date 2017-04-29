@@ -1,5 +1,4 @@
-// Author @patriciogv - 2015
-// http://patriciogonzalezvivo.com
+// Modded version from a shader made by @patriciogv
 
 
 uniform vec2 u_resolution;

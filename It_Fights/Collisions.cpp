@@ -57,10 +57,10 @@ void Collisions::drawRectangleColliders(sf::RenderTarget *renderTarget){
         rectangle.setPosition(it1->second->lastOrigin.first, it1->second->lastOrigin.second);
         
         switch (it1->second->colType){
-            
+                
             default:
-            rectangle.setFillColor(sf::Color(0.f,230.f,0.f,100.f));
-            break;
+                rectangle.setFillColor(sf::Color(0.f,230.f,0.f,100.f));
+                break;
         }
         
         renderTarget->draw(rectangle);
@@ -120,6 +120,10 @@ void Collisions::check__Rect_Rect__Collisions(){
         
         col1 = it1->second;
         
+        if(!col1->active){
+            continue;
+        }
+        
         if(!col1->updated){
             col1->lastOrigin = col1->funcs.getOriginFunc();
             col1->updated = true;
@@ -128,18 +132,24 @@ void Collisions::check__Rect_Rect__Collisions(){
         for(auto it2 = (std::next(it1, 1)) ; it2 != this->rectColMap.end(); ++it2){
             col2 = it2->second;
             
+            if(!col2->active){
+                continue;
+            }
+            
             if(!col2->updated){
                 col2->lastOrigin = col2->funcs.getOriginFunc();
                 col2->updated = true;
             }
             
-            bool col = this->check2Rects(col1, col2);
+            std::pair<float, float> vector1 = std::make_pair(0.0f, 0.0f);
+            std::pair<float, float> vector2 = std::make_pair(0.0f, 0.0f);
+
             
-            std::pair<float, float> vector;
+            bool col = this->check2Rects(col1, col2, &vector1, &vector2);
             
             if(col){
-                col1->funcs.onCollisionCallback(col2->colType,vector);
-                col2->funcs.onCollisionCallback(col1->colType,vector);
+                col1->funcs.onCollisionCallback(col2->colType,vector1);
+                col2->funcs.onCollisionCallback(col1->colType,vector2);
             }
             
         }
@@ -147,21 +157,6 @@ void Collisions::check__Rect_Rect__Collisions(){
     }
     
     
-}
-
-bool Collisions::check2Rects(RectangleCollider * col1, RectangleCollider * col2){
-    
-    if(col1->lastOrigin.first < (col2->lastOrigin.first + col2->width)      &&
-       (col1->lastOrigin.first + col1->width) > col2->lastOrigin.first      &&
-       col1->lastOrigin.second < (col2->lastOrigin.second + col2->heigth)   &&
-       (col1->lastOrigin.second + col1->heigth) > col2->lastOrigin.second   ){
-        //Boys!! We have a collision
-        return true;
-        
-        
-    }
-    
-    return false;
 }
 
 void Collisions::check__Box_Rect__Collisions(){
@@ -176,6 +171,10 @@ void Collisions::check__Box_Rect__Collisions(){
     for(auto it1 = this->rectColMap.begin() ; it1 != this->rectColMap.end() ; ++it1){
         
         collider = it1->second;
+        
+        if(!collider->active){
+            continue;
+        }
         
         if(!collider->updated){
             collider->lastOrigin = collider->funcs.getOriginFunc();
@@ -196,6 +195,64 @@ void Collisions::check__Box_Rect__Collisions(){
     
     
 }
+
+
+bool Collisions::check2Rects(RectangleCollider * col1, RectangleCollider * col2, std::pair<float,float>* vector1, std::pair<float,float>* vector2){
+    
+    
+    bool notColliding = false;
+    
+    float distance1x = (col1->lastOrigin.first - (col2->lastOrigin.first + col2->width));   // > 0
+    float distance1y = col1->lastOrigin.second - (col2->lastOrigin.second + col2->heigth);  // > 0
+    float distance0x = (col1->lastOrigin.first + col1->width) - col2->lastOrigin.first;     // < 0
+    float distance0y = (col1->lastOrigin.second + col1->heigth) - col2->lastOrigin.second;  // < 0
+    
+    //@@TODO: Fix this for all axis
+    
+    if(distance1x > 0){
+        notColliding = true;
+    }else{
+        vector1->first += distance1x/2;
+        vector2->first -= distance1x/2;
+    }
+    
+    if(distance1y > 0){
+        notColliding = true;
+    }else{
+        vector1->second += distance1y/2;
+        vector1->second -= distance1y/2;
+    }
+    
+    if(distance0x < 0){
+        notColliding = true;
+    }else{
+        vector1->first += distance0x/2;
+        vector1->first -= distance0x/2;
+    }
+    
+    if(distance0y < 0){
+        notColliding = true;
+    }else{
+        vector1->second += distance0y/2;
+        vector1->second -= distance0y/2;
+    }
+    
+    return !notColliding;
+    
+    //      Old collision checking without vector generation
+    
+    //    if(!(col1->lastOrigin.first > (col2->lastOrigin.first + col2->width)      ||
+    //       (col1->lastOrigin.first + col1->width) < col2->lastOrigin.first      ||
+    //       col1->lastOrigin.second > (col2->lastOrigin.second + col2->heigth)   ||
+    //       (col1->lastOrigin.second + col1->heigth) < col2->lastOrigin.second   ))
+    //    {
+    //
+    //
+    //        printv(true);
+    //        //Boys!! We have a collision
+    //        return true;
+}
+
 
 
 #define box0x (box->lastOrigin.first)

@@ -13,8 +13,6 @@
 
 extern ResourceManager resourceManager;
 
-#include "ResourcePath.hpp"
-
 
 TitleText::TitleText(){
     
@@ -61,16 +59,7 @@ void TitleText::draw(sf::RenderTarget *renderTarget){
     PairI fightsPosition = getRealPixels(renderTarget, 0.03, 0.21);
     text_fights.setPosition(fightsPosition.x, fightsPosition.y);
     
-    //@@TODO @@DEBUG: Maybe some shader stuff here: https://github.com/SFML/SFML-Game-Development-Book/blob/master/09_Audio/Source/BloomEffect.cpp
 
-//    sf::Shader bloomShader;
-//    if(!bloomShader.loadFromFile(resourcePath()+"Fullpass.vert",resourcePath()+"Bloom.frag")){
-//        exit(1);
-//    }
-//    bloomShader.setUniform("texture", sf::Shader::CurrentTexture);
-//    
-//    renderTarget->draw(text_it,&bloomShader);
-    
     renderTarget->draw(text_it);
     renderTarget->draw(text_fights);
     

@@ -6,10 +6,13 @@
 //  Copyright © 2017 Rubén Osorio López. All rights reserved.
 //
 
-#include "MessageBus.hpp"
-#include <iostream>
-#include "Systems.hpp"
+
 #include <algorithm>
+#include <iostream>
+
+
+#include "MessageBus.hpp"
+#include "Systems.hpp"
 #include "DebugUtilities.hpp"
 
 

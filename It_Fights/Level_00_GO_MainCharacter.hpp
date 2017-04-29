@@ -9,50 +9,22 @@
 #ifndef Level_00_GO_MainCharacter_hpp
 #define Level_00_GO_MainCharacter_hpp
 
-#include <stdio.h>
-#include "AnimatedSprite.hpp"
-#include "GameObject.hpp"
-#include "json.hpp"
-#include <unordered_map>
-#include "Scene.hpp"
-#include "BoxCollider.hpp"
+#include "Level_00_GO_BasicCharacter.hpp"
 
 
-
-class Level_00_GO_MainCharacter_AnimatedSprite : public AnimatedSprite {
+/*
+ Class that represents the main character in the duel, this extends from our BasicCharacter class
+ which contains the general character functionality.
+ */
+class Level_00_GO_MainCharacter : public Level_00_GO_BasicCharacter{
 public:
-    Level_00_GO_MainCharacter_AnimatedSprite();
-private:
+    Level_00_GO_MainCharacter(sf::Vector2f position);
     
-};
-
-
-enum Heading { UP,DOWN,RIGHT,LEFT};
-
-class Level_00_GO_MainCharacter : public GameObject{
-public:
-    Level_00_GO_MainCharacter(Scene * scene);
-    ~Level_00_GO_MainCharacter();
+    /*
+     We override the update function to be able to read the player input
+     and apply it to the character controlled.
+     */
     void update();
-    void draw(sf::RenderTarget * renderTarget);
-private:
-    Level_00_GO_MainCharacter_AnimatedSprite animatedSprite;
-    
-    sf::Vector2f position;
-    sf::Vector2f oldPosition;
-    sf::Vector2f velocity;
-    Scene * scene;
-    
-    float walkingSpeed;
-    Heading calculateHeading(sf::Vector2f velocity);
-    Heading lastHeading;
-    void tryToUpdateAnimation();
-    
-    BoxCollider locationCollider;
-    void manageCollisionWithWall(sf::Vector2f velocity);
-    
-    
-    
 };
 
 #endif /* Level_00_GO_MainCharacter_hpp */

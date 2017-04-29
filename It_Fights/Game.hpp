@@ -11,13 +11,16 @@
 #define Game_hpp
 
 
+//Internal sunsystems of the game
 #include "MessageBus.hpp"
 #include "Console.hpp"
 #include "Window.hpp"
 #include "Input.hpp"
-#include "Clock.hpp"
 #include "Collisions.hpp"
 
+
+//Attributes that need to be accessed by a lot of classes in the game
+#include "Clock.hpp"
 #include "GameState.hpp"
 #include "ResourceManager.hpp"
 

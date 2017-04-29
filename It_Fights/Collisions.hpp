@@ -102,7 +102,7 @@ private:
     void check__Box_Rect__Collisions();
     
     
-    bool check2Rects(RectangleCollider * col1, RectangleCollider * col2);
+    bool check2Rects(RectangleCollider * col1, RectangleCollider * col2, std::pair<float,float>* vector1, std::pair<float,float>* vector2);
     bool checkBoxRect(RectangleCollider * box, RectangleCollider * col, std::pair<float,float>* vector);
     
     void drawRectangleColliders(sf::RenderTarget *renderTarget);

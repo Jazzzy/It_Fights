@@ -13,12 +13,12 @@
 
 #include <string>
 #include <iostream>
+
+
 #include "MessageData.h"
 
 
 #define MSG_TO_EVERYONE (-1)
-
-
 
 
 class Message{

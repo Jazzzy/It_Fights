@@ -25,6 +25,7 @@ public:
 private:
     GroundNoiseShader noiseShader;
     sf::RenderTexture noiseTexture;
+    sf::Sprite noiseSprite;
     sf::RenderTexture groundTexture;
     BoxCollider outsideCollider;
     void drawNoise(sf::RenderTarget *renderTarget);

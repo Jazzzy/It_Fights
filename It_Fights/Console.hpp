@@ -9,10 +9,13 @@
 #ifndef Console_hpp
 #define Console_hpp
 
-#include "BusNode.hpp"
-#include "Drawable.hpp"
+
 #include <SFML/Graphics.hpp>
 #include <vector>
+
+
+#include "BusNode.hpp"
+#include "Drawable.hpp"
 #include "ConsoleLine.hpp"
 #include "InputLine.hpp"
 #include "ResourceManager.hpp"

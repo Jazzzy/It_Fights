@@ -9,6 +9,9 @@
 #include "AnimatedSprite.hpp"
 #include "ResourcePath.hpp"
 #include <fstream>
+#include "json.hpp"
+using json = nlohmann::json;
+
 
 #include "Game.hpp"
 extern Game game;

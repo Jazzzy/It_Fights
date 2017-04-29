@@ -28,8 +28,8 @@ outsideCollider( (tileSide * tileMapWidth), (tileSide * tileMapHeight) ,[]() -> 
     return origin;
     
 },
-[](ColliderType colType,std::pair<float, float> vector){},
-ColliderType::INVERTED_BOX)
+                [](ColliderType colType,std::pair<float, float> vector){},
+                ColliderType::INVERTED_BOX)
 {
     
     
@@ -69,6 +69,9 @@ ColliderType::INVERTED_BOX)
     groundTexture.display();
     
     
+    
+    noiseSprite.setTexture(this->noiseTexture.getTexture());
+    noiseSprite.setTextureRect(sf::IntRect(0, 0, LVL_00_RESOLUTION_X, LVL_00_RESOLUTION_Y));
 }
 
 Level_00_GO_Ground::~Level_00_GO_Ground(){
@@ -86,33 +89,18 @@ void Level_00_GO_Ground::update(){
 
 void Level_00_GO_Ground::draw(sf::RenderTarget *renderTarget){
     
-//    sf::Sprite groundSprite(this->groundTexture.getTexture());
-//    
-//    this->bloomShader.drawWithShader(renderTarget,&(groundSprite));
-    
     this->drawNoise(renderTarget);
     
-   renderTarget->draw(sf::Sprite(this->groundTexture.getTexture()));
+    renderTarget->draw(sf::Sprite(this->groundTexture.getTexture()));
     
 }
 
 void Level_00_GO_Ground::drawNoise(sf::RenderTarget *renderTarget){
     
-    
     this->noiseTexture.clear(sf::Color::Black);
-    
-    
-    sf::Sprite empty;
-    empty.setTexture(this->noiseTexture.getTexture());
-    empty.setTextureRect(sf::IntRect(0, 0, LVL_00_RESOLUTION_X, LVL_00_RESOLUTION_Y));
-    
-    this->noiseShader.drawWithShader(&this->noiseTexture, &empty);
-    
-    
+    this->noiseShader.drawWithShader(&this->noiseTexture, &noiseSprite);
     this->noiseTexture.display();
-    
     renderTarget->draw(sf::Sprite(this->noiseTexture.getTexture()));
-    
     
 }
 

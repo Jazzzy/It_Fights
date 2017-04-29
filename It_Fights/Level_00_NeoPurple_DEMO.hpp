@@ -12,8 +12,7 @@
 #include <stdio.h>
 #include <Scene.hpp>
 #include "Level_00_GO_Ground.hpp"
-#include "Level_00_GO_MainCharacter.hpp"
-#include "BloomShader.hpp"
+#include "Level_00_GO_Characters.hpp"
 
 
 #define LVL_00_RESOLUTION_X 400
@@ -28,15 +27,10 @@ private:
     void screenShaders(sf::RenderTarget * renderTarget,const sf::Texture * screenTexture);
     
     Level_00_GO_Ground level_00_GO_Ground;
-    Level_00_GO_MainCharacter mainCharacter;
-    
+    Level_00_GO_Characters level_00_GO_Characters;
     
     sf::View view;
     bool changedRes;
-    
-    
-    BloomShader bloomShader;
-
     
 };
 

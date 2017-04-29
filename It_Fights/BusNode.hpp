@@ -9,8 +9,10 @@
 #ifndef BusNode_hpp
 #define BusNode_hpp
 
-#include "MessageBus.hpp"
 #include <iostream>
+
+
+#include "MessageBus.hpp"
 
 class BusNode{
 public:

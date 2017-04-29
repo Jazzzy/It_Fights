@@ -11,11 +11,7 @@
 
 
 #include "Drawable.hpp"
-#include "json.hpp"
 #include <unordered_map>
-
-
-using json = nlohmann::json;
 
 
 enum DataMode {
@@ -47,7 +43,6 @@ typedef struct {
 
 
 
-using json = nlohmann::json;
 
 class AnimatedSprite : public Drawable{
 public:

@@ -9,9 +9,13 @@
 #ifndef Window_hpp
 #define Window_hpp
 
-#include "BusNode.hpp"
 #include <SFML/Graphics.hpp>
 #include <string>
+
+
+#include "BusNode.hpp"
+
+// Needs a refference to this in order to be able to draw them
 #include "Console.hpp"
 #include "Collisions.hpp"
 
