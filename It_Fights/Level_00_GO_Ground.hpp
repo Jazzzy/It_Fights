@@ -13,6 +13,7 @@
 
 #include "GameObject.hpp"
 #include "BloomShader.hpp"
+#include "GroundNoiseShader.hpp"
 #include "BoxCollider.hpp"
 
 class Level_00_GO_Ground : public GameObject {
@@ -22,8 +23,11 @@ public:
     void update();
     void draw(sf::RenderTarget *renderTarget);
 private:
+    GroundNoiseShader noiseShader;
+    sf::RenderTexture noiseTexture;
     sf::RenderTexture groundTexture;
     BoxCollider outsideCollider;
+    void drawNoise(sf::RenderTarget *renderTarget);
 };
 
 #endif /* Level_00_GO_Ground_hpp */

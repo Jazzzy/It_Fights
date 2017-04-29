@@ -12,6 +12,8 @@
 		4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */; };
 		4049DF7E1EABB2E9008DB0E5 /* Level_00_GO_MainCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF7C1EABB2E9008DB0E5 /* Level_00_GO_MainCharacter.cpp */; };
 		4049DF831EABD972008DB0E5 /* SomeMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF811EABD972008DB0E5 /* SomeMath.cpp */; };
+		4076FB361EB4C442002D4DAB /* lavaNoise.frag in Resources */ = {isa = PBXBuildFile; fileRef = 4076FB351EB4C442002D4DAB /* lavaNoise.frag */; };
+		4076FB391EB4C473002D4DAB /* GroundNoiseShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4076FB371EB4C473002D4DAB /* GroundNoiseShader.cpp */; };
 		407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE41E897765004263E6 /* ResourcePath.mm */; };
 		407DEFE81E897765004263E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407DEFE71E897765004263E6 /* main.cpp */; };
 		407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 407DEFEA1E897765004263E6 /* cute_image.jpg */; };
@@ -66,6 +68,9 @@
 		4049DF7D1EABB2E9008DB0E5 /* Level_00_GO_MainCharacter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_GO_MainCharacter.hpp; sourceTree = "<group>"; };
 		4049DF811EABD972008DB0E5 /* SomeMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SomeMath.cpp; sourceTree = "<group>"; };
 		4049DF821EABD972008DB0E5 /* SomeMath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SomeMath.hpp; sourceTree = "<group>"; };
+		4076FB351EB4C442002D4DAB /* lavaNoise.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lavaNoise.frag; sourceTree = "<group>"; };
+		4076FB371EB4C473002D4DAB /* GroundNoiseShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundNoiseShader.cpp; sourceTree = "<group>"; };
+		4076FB381EB4C473002D4DAB /* GroundNoiseShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GroundNoiseShader.hpp; sourceTree = "<group>"; };
 		407DEFDF1E897765004263E6 /* It_Fights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = It_Fights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407DEFE31E897765004263E6 /* It_Fights-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "It_Fights-Info.plist"; sourceTree = "<group>"; };
 		407DEFE41E897765004263E6 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -405,6 +410,7 @@
 				40FEE04D1E904FC6004DCA95 /* Fullpass.vert */,
 				40FEE04E1E904FC6004DCA95 /* GuassianBlur.frag */,
 				40A563CC1EA6654A00133110 /* Bloom.frag */,
+				4076FB351EB4C442002D4DAB /* lavaNoise.frag */,
 			);
 			name = GLSL_Shaders;
 			sourceTree = "<group>";
@@ -414,6 +420,8 @@
 			children = (
 				40FEE05B1E905168004DCA95 /* BloomShader.cpp */,
 				40FEE05C1E905168004DCA95 /* BloomShader.hpp */,
+				4076FB371EB4C473002D4DAB /* GroundNoiseShader.cpp */,
+				4076FB381EB4C473002D4DAB /* GroundNoiseShader.hpp */,
 			);
 			name = shaders;
 			sourceTree = "<group>";
@@ -481,6 +489,7 @@
 				407DEFEF1E897765004263E6 /* sansation.ttf in Resources */,
 				40C41ED31E90490200DB11BB /* playfair.ttf in Resources */,
 				40817FF21EAD2536003089A4 /* prota_0.2.json in Resources */,
+				4076FB361EB4C442002D4DAB /* lavaNoise.frag in Resources */,
 				40C41ECF1E90298600DB11BB /* carnevalee.ttf in Resources */,
 				407DEFED1E897765004263E6 /* nice_music.ogg in Resources */,
 				407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */,
@@ -526,6 +535,7 @@
 				407DEFE81E897765004263E6 /* main.cpp in Sources */,
 				4049DF701EAA7583008DB0E5 /* Level_00_GO_Ground.cpp in Sources */,
 				407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */,
+				4076FB391EB4C473002D4DAB /* GroundNoiseShader.cpp in Sources */,
 				40E3B9B01E8E9B6F001EE4AA /* Drawable.cpp in Sources */,
 				40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */,
 				407DF0161E8ABF40004263E6 /* Event.cpp in Sources */,

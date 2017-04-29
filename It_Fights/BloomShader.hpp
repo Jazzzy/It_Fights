@@ -9,7 +9,7 @@
 #ifndef BloomShader_hpp
 #define BloomShader_hpp
 
-#include "Shader.cpp"
+#include "Shader.hpp"
 
 class BloomShader : public Shader {
 public:
