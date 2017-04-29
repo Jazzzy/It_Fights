@@ -306,11 +306,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/MessageBus.cpp"
-            timestampString = "515161573.23193"
+            timestampString = "515177204.329073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "MessageBus::removeReceiver(int systemID)"
             landmarkType = "7">
          </BreakpointContent>
