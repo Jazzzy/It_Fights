@@ -14,6 +14,8 @@
 #include <cmath>
 #include "Game.hpp"
 #include <sstream>
+#include "DebugUtilities.hpp"
+
 
 extern Game game;
 extern ResourceManager resourceManager;
@@ -53,20 +55,35 @@ bool Console::isOpen(){
 
 void Console::evaluateInputLine(){
     
-    std::string strLine = this->inputLine.getRealString().toAnsiString();
+    std::string strLine = std::string(this->inputLine.getRealString().toAnsiString());
     
-    if(strLine.find_first_of("sendTo")==0){
+    auto position = strLine.find("sendTo");
+    
+    printv(position);
+    
+    if(position==0 && position != std::string::npos){
         
         std::stringstream ss(strLine);
         std::string sendTo;
         int system;
         std::string messageToSystem;
         ss >> sendTo >> system >> messageToSystem;
+        
+        
         Message consoleMessageToSystem(messageToSystem,system);
+        
+        
+        printv(consoleMessageToSystem.getReceiverSystem());
+
+        
+        
         send(consoleMessageToSystem);
         
     }else{
         Message consoleMessageToEveryone(strLine);
+        
+        printv(consoleMessageToEveryone.getReceiverSystem());
+        
         send(consoleMessageToEveryone);
         
     }

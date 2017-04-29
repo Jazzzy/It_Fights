@@ -10,6 +10,7 @@
 #include <iostream>
 #include "Systems.hpp"
 #include <algorithm>
+#include "DebugUtilities.hpp"
 
 
 MessageBus::MessageBus(){
@@ -35,6 +36,7 @@ void MessageBus::notify(){
             }
             receiverMap[Systems::S_CurrentScene](message);
         }else{
+            //printv(message.getReceiverSystem());
             (receiverMap[message.getReceiverSystem()])(message);
             //            std::cout << message.getReceiverSystem() << ": " << message.getEvent() <<std::endl;
         }
