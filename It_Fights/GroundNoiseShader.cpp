@@ -8,6 +8,7 @@
 
 #include "GroundNoiseShader.hpp"
 #include "Game.hpp"
+#include "Clock.hpp"
 
 extern Game game;
 
@@ -39,7 +40,7 @@ sf::RenderStates GroundNoiseShader::getRenderStates(){
 void GroundNoiseShader::drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable * drawable){
     
     this->sf_shader.setUniform("u_resolution", this->resolution);
-    this->sf_shader.setUniform("u_time", (this->time += game.getDeltaClock()->getDeltaTime()) );
+    this->sf_shader.setUniform("u_time", (this->time += Clock::Instance().getDeltaTime()) );
     
     renderTarget->draw(*drawable,&(this->sf_shader));
     

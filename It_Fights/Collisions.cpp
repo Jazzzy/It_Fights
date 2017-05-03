@@ -43,18 +43,18 @@ void Collisions::draw(sf::RenderTarget *renderTarget){
 void Collisions::drawRectangleColliders(sf::RenderTarget *renderTarget){
     
     sf::RectangleShape rectangle;
-    rectangle.setSize(sf::Vector2f(this->currentInvertedBox->width, this->currentInvertedBox->heigth));
+    rectangle.setSize(sf::Vector2f(this->currentInvertedBox->size.x, this->currentInvertedBox->size.y));
     rectangle.setOutlineThickness(0);
-    rectangle.setPosition(this->currentInvertedBox->lastOrigin.first, this->currentInvertedBox->lastOrigin.second);
+    rectangle.setPosition(this->currentInvertedBox->lastOrigin.x, this->currentInvertedBox->lastOrigin.y);
     rectangle.setFillColor(sf::Color(230.f,0.f,0.f,40.f));
     renderTarget->draw(rectangle);
     
     
     for(auto it1 = this->rectColMap.begin() ; it1 != this->rectColMap.end() ; ++it1){
         sf::RectangleShape rectangle;
-        rectangle.setSize(sf::Vector2f(it1->second->width, it1->second->heigth));
+        rectangle.setSize(sf::Vector2f(it1->second->size.x, it1->second->size.y));
         rectangle.setOutlineThickness(0);
-        rectangle.setPosition(it1->second->lastOrigin.first, it1->second->lastOrigin.second);
+        rectangle.setPosition(it1->second->lastOrigin.x, it1->second->lastOrigin.y);
         
         switch (it1->second->colType){
                 
@@ -141,9 +141,9 @@ void Collisions::check__Rect_Rect__Collisions(){
                 col2->updated = true;
             }
             
-            std::pair<float, float> vector1 = std::make_pair(0.0f, 0.0f);
-            std::pair<float, float> vector2 = std::make_pair(0.0f, 0.0f);
-
+            sf::Vector2f vector1 = sf::Vector2f(0.0f, 0.0f);
+            sf::Vector2f vector2 = sf::Vector2f(0.0f, 0.0f);
+            
             
             bool col = this->check2Rects(col1, col2, &vector1, &vector2);
             
@@ -181,7 +181,7 @@ void Collisions::check__Box_Rect__Collisions(){
             collider->updated = true;
         }
         
-        std::pair<float, float> vector = std::make_pair(0.0f,0.0f);
+        sf::Vector2f vector = sf::Vector2f(0.0f,0.0f);
         bool inside = this->checkBoxRect(this->currentInvertedBox,collider ,&vector);
         
         if(!inside){
@@ -197,47 +197,90 @@ void Collisions::check__Box_Rect__Collisions(){
 }
 
 
-bool Collisions::check2Rects(RectangleCollider * col1, RectangleCollider * col2, std::pair<float,float>* vector1, std::pair<float,float>* vector2){
+bool Collisions::check2Rects(RectangleCollider * col1, RectangleCollider * col2, sf::Vector2f* vector1, sf::Vector2f* vector2){
     
     
-    bool notColliding = false;
     
-    float distance1x = (col1->lastOrigin.first - (col2->lastOrigin.first + col2->width));   // > 0
-    float distance1y = col1->lastOrigin.second - (col2->lastOrigin.second + col2->heigth);  // > 0
-    float distance0x = (col1->lastOrigin.first + col1->width) - col2->lastOrigin.first;     // < 0
-    float distance0y = (col1->lastOrigin.second + col1->heigth) - col2->lastOrigin.second;  // < 0
+    sf::Vector2f halfSize1 = sf::Vector2f((col1->size.x / 2.),(col1->size.y / 2.));
+    sf::Vector2f halfSize2 = sf::Vector2f((col2->size.x / 2.),(col2->size.y / 2.));
     
-    //@@TODO: Fix this for all axis
     
-    if(distance1x > 0){
-        notColliding = true;
+    sf::Vector2f center1 =  sf::Vector2f(col1->lastOrigin.x + halfSize1.x, col1->lastOrigin.y + halfSize1.y);
+    sf::Vector2f center2 =  sf::Vector2f(col2->lastOrigin.x + halfSize2.x, col2->lastOrigin.y + halfSize2.y);
+    
+    sf::Vector2f centerDiff = sf::Vector2f((center1.x - center2.x),(center1.y - center2.y));
+    
+    sf::Vector2f componente;
+    componente.x = halfSize1.x + halfSize2.x - fabs(centerDiff.x);
+    componente.y = halfSize1.y + halfSize2.y - fabs(centerDiff.y);
+    
+    if(componente.x < 0. || componente.y < 0.) return false;
+    
+    
+    if(fabs(centerDiff.x) > fabs(centerDiff.y) ){
+        
+        //Instead of halving each component we could use normalized weights of both colliders
+        if(center1.x < center2.x ){
+            vector1->x = -componente.x/2.;
+            vector2->x = componente.x/2.;
+        }else{
+            vector1->x = componente.x/2.;
+            vector2->x = -componente.x/2.;
+        }
+        
     }else{
-        vector1->first += distance1x/2;
-        vector2->first -= distance1x/2;
+        
+        if(center1.y < center2.y ){
+            vector1->y = -componente.y/2.;
+            vector2->y = componente.y/2.;
+        }else{
+            vector1->y = componente.y/2.;
+            vector2->y = -componente.y/2.;
+        }
+        
     }
     
-    if(distance1y > 0){
-        notColliding = true;
-    }else{
-        vector1->second += distance1y/2;
-        vector1->second -= distance1y/2;
-    }
+    return true;
     
-    if(distance0x < 0){
-        notColliding = true;
-    }else{
-        vector1->first += distance0x/2;
-        vector1->first -= distance0x/2;
-    }
     
-    if(distance0y < 0){
-        notColliding = true;
-    }else{
-        vector1->second += distance0y/2;
-        vector1->second -= distance0y/2;
-    }
-    
-    return !notColliding;
+    //    bool notColliding = false;
+    //
+    //    float distance1x = (col1->lastOrigin.first - (col2->lastOrigin.first + col2->width));   // > 0
+    //    float distance1y = col1->lastOrigin.second - (col2->lastOrigin.second + col2->heigth);  // > 0
+    //    float distance0x = (col1->lastOrigin.first + col1->width) - col2->lastOrigin.first;     // < 0
+    //    float distance0y = (col1->lastOrigin.second + col1->heigth) - col2->lastOrigin.second;  // < 0
+    //
+    //    //@@TODO: Fix this for all axis
+    //
+    //    if(distance1x > 0){
+    //        notColliding = true;
+    //    }else{
+    //        vector1->first += distance1x/2;
+    //        vector2->first -= distance1x/2;
+    //    }
+    //
+    //    if(distance1y > 0){
+    //        notColliding = true;
+    //    }else{
+    //        vector1->second += distance1y/2;
+    //        vector1->second -= distance1y/2;
+    //    }
+    //
+    //    if(distance0x < 0){
+    //        notColliding = true;
+    //    }else{
+    //        vector1->first += distance0x/2;
+    //        vector1->first -= distance0x/2;
+    //    }
+    //
+    //    if(distance0y < 0){
+    //        notColliding = true;
+    //    }else{
+    //        vector1->second += distance0y/2;
+    //        vector1->second -= distance0y/2;
+    //    }
+    //
+    //    return !notColliding;
     
     //      Old collision checking without vector generation
     
@@ -255,17 +298,17 @@ bool Collisions::check2Rects(RectangleCollider * col1, RectangleCollider * col2,
 
 
 
-#define box0x (box->lastOrigin.first)
-#define box0y (box->lastOrigin.second)
-#define box1x ((box->lastOrigin.first) + (box->width))
-#define box1y ((box->lastOrigin.second) + (box->heigth))
+#define box0x (box->lastOrigin.x)
+#define box0y (box->lastOrigin.y)
+#define box1x ((box->lastOrigin.x) + (box->size.x))
+#define box1y ((box->lastOrigin.y) + (box->size.y))
 
-#define col0x (col->lastOrigin.first)
-#define col0y (col->lastOrigin.second)
-#define col1x ((col->lastOrigin.first) + (col->width))
-#define col1y ((col->lastOrigin.second) + (col->heigth))
+#define col0x (col->lastOrigin.x)
+#define col0y (col->lastOrigin.y)
+#define col1x ((col->lastOrigin.x) + (col->size.x))
+#define col1y ((col->lastOrigin.y) + (col->size.y))
 
-bool Collisions::checkBoxRect(RectangleCollider * box, RectangleCollider * col , std::pair<float,float>* vector){
+bool Collisions::checkBoxRect(RectangleCollider * box, RectangleCollider * col , sf::Vector2f* vector){
     
     bool inside = true;
     
@@ -275,22 +318,22 @@ bool Collisions::checkBoxRect(RectangleCollider * box, RectangleCollider * col ,
     float distance0y = box0y - col0y;
     
     if(distance1x < 0){
-        vector->first += distance1x;
+        vector->x += distance1x;
         inside = false;
     }
     
     if(distance1y < 0){
-        vector->second += distance1y;
+        vector->y += distance1y;
         inside = false;
     }
     
     if(distance0x > 0){
-        vector->first += distance0x;
+        vector->x += distance0x;
         inside = false;
     }
     
     if(distance0y > 0){
-        vector->second += distance0y;
+        vector->y += distance0y;
         inside = false;
     }
     

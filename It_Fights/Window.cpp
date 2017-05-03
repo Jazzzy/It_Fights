@@ -74,7 +74,7 @@ void Window::setCurrentInternalResolution(std::pair<unsigned int, unsigned int> 
 void Window::update(){
     
     if(!this->shouldRender){
-        game.getDeltaClock()->setFrameSeparator();
+        Clock::Instance().setFrameSeparator();
         return;
     }
     
@@ -116,7 +116,7 @@ void Window::update(){
     
     this->sf_window.display();
     
-    game.getDeltaClock()->setFrameSeparator();
+    Clock::Instance().setFrameSeparator();
     
 }
 

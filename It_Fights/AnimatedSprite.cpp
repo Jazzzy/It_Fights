@@ -12,7 +12,7 @@
 #include "json.hpp"
 using json = nlohmann::json;
 
-
+#include "Clock.hpp"
 #include "Game.hpp"
 extern Game game;
 
@@ -158,7 +158,7 @@ void AnimatedSprite::goToNextFrame(){
 
 void AnimatedSprite::update(){
     
-    this->timeInThisFrame += game.getDeltaClock()->getDeltaTime();
+    this->timeInThisFrame += Clock::Instance().getDeltaTime();
     
     if(timeInThisFrame >= this->timePerFrame){
         this->goToNextFrame();

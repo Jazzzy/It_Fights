@@ -13,7 +13,7 @@
 
 class TitleText : public GameObject {
 public:
-    TitleText();
+    TitleText(Scene * scene);
     ~TitleText();
     void update();
     void draw(sf::RenderTarget *renderTarget);

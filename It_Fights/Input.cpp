@@ -68,7 +68,6 @@ void Input::readInput(){
             {
                 if (event.key.code == sf::Keyboard::BackSlash) {
                     Message msg_toggleConsole("MSG_TOGGLE_CONSOLE",Systems::S_Console);
-                    msg_toggleConsole.setRelevantForConsole(true);
                     send(msg_toggleConsole);
                 }else{  //The key is not for opening or closing the console so we should deal with it
                     if(game.isConsoleOpen()){ //If the console is open then the key should go to it

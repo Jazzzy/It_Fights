@@ -16,19 +16,20 @@
 #define outLineTHICC 1
 
 
-Level_00_GO_Ground::Level_00_GO_Ground() :
+Level_00_GO_Ground::Level_00_GO_Ground(Scene* scene) :
+GameObject(scene),
 groundTexture(),
 noiseTexture(),
 noiseShader(sf::Vector2f(LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
-outsideCollider( (tileSide * tileMapWidth), (tileSide * tileMapHeight) ,[]() -> std::pair<float,float>{
+outsideCollider( sf::Vector2f((tileSide * tileMapWidth), (tileSide * tileMapHeight)) ,[]() -> sf::Vector2f{
     
-    std::pair<float,float> origin;
-    origin.first = (LVL_00_RESOLUTION_X-(tileSide*tileMapWidth))/2.0f;
-    origin.second = (LVL_00_RESOLUTION_Y-(tileSide*tileMapHeight))/2.0f;
+    sf::Vector2f origin;
+    origin.x = (LVL_00_RESOLUTION_X-(tileSide*tileMapWidth))/2.0f;
+    origin.y = (LVL_00_RESOLUTION_Y-(tileSide*tileMapHeight))/2.0f;
     return origin;
     
 },
-                [](ColliderType colType,std::pair<float, float> vector){},
+                [](ColliderType colType,sf::Vector2f vector){},
                 ColliderType::INVERTED_BOX)
 {
     

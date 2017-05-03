@@ -9,11 +9,10 @@
 #ifndef DebugUtilities_hpp
 #define DebugUtilities_hpp
 
+
 #define TO_STREAM(stream,variable) (stream) << #variable " (" << typeid(variable).name() << ")" << ": "<< (variable) << std::endl;
 #define printv(variable) TO_STREAM(std::cout,(variable))
-
 #define prints(string) std::cout << string << std::endl
-
 
 
 #endif /* DebugUtilities_hpp */

@@ -10,11 +10,25 @@
 #include <cmath>
 #include <iostream>
 
-Clock::Clock(){
-    this->updateFunction = [&](){this->first20Update();};
+
+Clock& Clock::Instance(){
+    if(MInstance == 0) MInstance = new Clock();
+    return *MInstance;
 }
 
-Clock::~Clock(){}
+Clock* Clock::MInstance = 0;
+
+void Clock::CleanUp(){
+    delete MInstance;
+    MInstance = 0;
+}
+
+Clock::Clock(){
+    this->updateFunction = [&](){this->first20Update();};
+    
+    atexit(&CleanUp);
+}
+
 
 #define MAX_QUEUE_SIZE 60
 

@@ -15,14 +15,23 @@
 
 class Clock {
 public:
-    Clock();
-    ~Clock();
+    static Clock& Instance();
     
     void setFrameSeparator();
     float getDeltaTime();
     float getMeanDeltaTime();
     unsigned int getMeanFPS();
 private :
+    static void CleanUp();
+    
+    Clock();
+    ~Clock(){}
+    
+    Clock (Clock const&);
+    Clock& operator=(Clock const&);
+    
+    static Clock* MInstance;
+    
     void first20Update();
     void runningUpdate();
     

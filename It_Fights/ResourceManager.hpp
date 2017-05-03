@@ -15,11 +15,20 @@
 
 class ResourceManager {
 public:
-    ResourceManager();
-    ~ResourceManager();
+    static ResourceManager& Instance();
+    
     sf::Font getFont(std::string name);
     
 private:
+    static void CleanUp();
+    static ResourceManager* MInstance;
+    
+    ResourceManager();
+    ~ResourceManager(){}
+    
+    ResourceManager(ResourceManager const&);
+    ResourceManager& operator=(ResourceManager const&);
+    
     std::unordered_map<std::string, sf::Font> fontsMap;
     void loadFonts();
     

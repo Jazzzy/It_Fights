@@ -11,12 +11,13 @@
 #include <SFML/Graphics.hpp>
 #include "AuxiliarRenderFunctions.hpp"
 
-extern ResourceManager resourceManager;
 
 
-TitleText::TitleText(){
+TitleText::TitleText(Scene * scene):
+GameObject(scene)
+{
     
-    this->mainFont = resourceManager.getFont("playfair");
+    this->mainFont = ResourceManager::Instance().getFont("playfair");
     
 }
 

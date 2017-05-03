@@ -10,10 +10,9 @@
 #include "Game.hpp"
 extern Game game;
 
-BoxCollider::BoxCollider(float width,
-                         float heigth,
-                         std::function<std::pair<float,float>()>getOriginFunc ,
-                         std::function<void(ColliderType,std::pair<float, float>)>onCollisionCallback,
+BoxCollider::BoxCollider(sf::Vector2f size,
+                         std::function<sf::Vector2f()>getOriginFunc ,
+                         std::function<void(ColliderType,sf::Vector2f)>onCollisionCallback,
                          ColliderType colliderType){
     
     ColliderFuncs funcs{
@@ -24,8 +23,7 @@ BoxCollider::BoxCollider(float width,
     this->collider = RectangleCollider{
         .active = false,
         .id = 0,
-        .width = width,
-        .heigth = heigth,
+        .size = size,
         .funcs = funcs,
         .colType = colliderType,
         .updated = false
@@ -39,7 +37,7 @@ BoxCollider::BoxCollider(float width,
 BoxCollider::~BoxCollider(){
     
     if(this->isActive()){
-        this->setUnactive();
+        this->setActive(false);
     }
     
     if(this->isRegistered()){
@@ -48,14 +46,10 @@ BoxCollider::~BoxCollider(){
     
 }
 
-void BoxCollider::setActive(){
-    this->collider.active = true;
+void BoxCollider::setActive(bool active){
+    this->collider.active = active;
 }
 
-
-void BoxCollider::setUnactive(){
-    this->collider.active = false;
-}
 
 bool BoxCollider::isRegistered(){
     return this->registered;

@@ -40,20 +40,18 @@ enum CollisionBehaviour{
 };
 
 typedef struct {
-    std::function<std::pair<float,float>()> getOriginFunc;
-    std::function<void(ColliderType, std::pair<float, float>)> onCollisionCallback;
+    std::function<sf::Vector2f()> getOriginFunc;
+    std::function<void(ColliderType, sf::Vector2f)> onCollisionCallback;
 } ColliderFuncs;
 
 
 typedef struct {
     bool active;
     unsigned int id;
-    float width;
-    float heigth;
     ColliderFuncs funcs;
     ColliderType colType;
-    
-    std::pair<float,float> lastOrigin;
+    sf::Vector2f size;
+    sf::Vector2f lastOrigin;
     bool updated;
     
 } RectangleCollider;
@@ -102,8 +100,8 @@ private:
     void check__Box_Rect__Collisions();
     
     
-    bool check2Rects(RectangleCollider * col1, RectangleCollider * col2, std::pair<float,float>* vector1, std::pair<float,float>* vector2);
-    bool checkBoxRect(RectangleCollider * box, RectangleCollider * col, std::pair<float,float>* vector);
+    bool check2Rects(RectangleCollider * col1, RectangleCollider * col2, sf::Vector2f* vector1, sf::Vector2f* vector2);
+    bool checkBoxRect(RectangleCollider * box, RectangleCollider * col, sf::Vector2f* vector);
     
     void drawRectangleColliders(sf::RenderTarget *renderTarget);
     

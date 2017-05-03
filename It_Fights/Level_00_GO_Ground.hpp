@@ -18,7 +18,7 @@
 
 class Level_00_GO_Ground : public GameObject {
 public:
-    Level_00_GO_Ground();
+    Level_00_GO_Ground(Scene* scene);
     ~Level_00_GO_Ground();
     void update();
     void draw(sf::RenderTarget *renderTarget);

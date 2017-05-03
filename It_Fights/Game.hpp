@@ -20,16 +20,14 @@
 
 
 //Attributes that need to be accessed by a lot of classes in the game
-#include "Clock.hpp"
 #include "GameState.hpp"
-#include "ResourceManager.hpp"
+
 
 class Game{
 public:
     Game();
     ~Game();
     void loop();
-    Clock * getDeltaClock();
     bool isConsoleOpen();
     GameState * getGameState();
     Collisions * getCollisionSystem();
@@ -41,10 +39,8 @@ private:
     Console consoleSystem;
     Window windowSystem;
     Input inputSystem;
-    Clock m_clock;
     Collisions collisionSystem;
-    
-    
+
 };
 
 #endif /* Game_hpp */

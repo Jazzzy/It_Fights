@@ -28,7 +28,7 @@ public:
 
 class Level_00_GO_BasicCharacter : public GameObject{
 public:
-    Level_00_GO_BasicCharacter(sf::Vector2f position);
+    Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position);
     ~Level_00_GO_BasicCharacter();
     void update();
     void draw(sf::RenderTarget * renderTarget);
@@ -46,8 +46,7 @@ protected:
     void tryToUpdateAnimation();
     
     BoxCollider locationCollider;
-    void manageCollisionWithWall(sf::Vector2f velocity);
-    void manageCollisionWithMovingObject(sf::Vector2f velocity);
+    void manageCollisionWithVector(sf::Vector2f velocity);
     
 };
 

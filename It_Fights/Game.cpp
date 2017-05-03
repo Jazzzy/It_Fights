@@ -24,7 +24,6 @@ GameState * Game::getGameState(){
     return &this->gameState;
 }
 
-
 void Game::loop(){
     while(windowSystem.isOpen()){
         inputSystem.update();
@@ -36,19 +35,12 @@ void Game::loop(){
     }
 }
 
-Clock * Game::getDeltaClock(){
-    return &this->m_clock;
-}
-
-
 bool Game::isConsoleOpen(){
     return this->consoleSystem.isOpen();
 }
 
 Collisions * Game::getCollisionSystem(){
-
     return &this->collisionSystem;
-    
 }
 
 

@@ -10,15 +10,27 @@
 #include "ResourcePath.hpp"
 #include <iostream>
 
+ResourceManager* ResourceManager::MInstance = 0;
+
+ResourceManager& ResourceManager::Instance(){
+    if(MInstance == 0)
+        MInstance = new ResourceManager();
+    
+    return *MInstance;
+}
+
+
 ResourceManager::ResourceManager(){
     
     this->loadFonts();
     
+    atexit(&CleanUp);
+    
 }
 
-
-ResourceManager::~ResourceManager(){
-    
+void ResourceManager::CleanUp(){
+    delete MInstance;
+    MInstance = 0;
 }
 
 void ResourceManager::loadFonts(){

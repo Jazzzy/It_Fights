@@ -49,21 +49,22 @@ AnimatedSprite("prota_0.2.json", "prota_0.2.png", DataMode::Aseprite_Array_Json_
 #define LocationColliderOffset_x 4
 #define LocationColliderOffset_y 3
 
-Level_00_GO_BasicCharacter::Level_00_GO_BasicCharacter(sf::Vector2f position):
-locationCollider( LocationColliderSize_x, LocationColliderSize_y ,
+Level_00_GO_BasicCharacter::Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position):
+GameObject(scene),
+locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) ,
                  
                  //Function that returs the position in which the location collider should be positioned
-                 [this]() -> std::pair<float,float>{
-                     return std::make_pair(this->position.x-LocationColliderOffset_x,this->position.y-LocationColliderOffset_y);
+                 [this]() -> sf::Vector2f{
+                     return sf::Vector2f(this->position.x-LocationColliderOffset_x,this->position.y-LocationColliderOffset_y);
                  },
                  
                  //Function that deals with a collisions accordingly
-                 [this](ColliderType colType, std::pair<float, float> vector){
+                 [this](ColliderType colType, sf::Vector2f vector){
                      
                      if(colType == ColliderType::INVERTED_BOX || colType == WALL){
-                         this->manageCollisionWithWall(sf::Vector2f(vector.first, vector.second));
+                         this->manageCollisionWithVector(vector);
                      }else if(colType == ColliderType::MOVING_OBJECT){
-                         this->manageCollisionWithMovingObject(sf::Vector2f(vector.first, vector.second));
+                         this->manageCollisionWithVector(vector);
                      }
                      
                  },
@@ -83,20 +84,13 @@ locationCollider( LocationColliderSize_x, LocationColliderSize_y ,
 Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){}
 
 
-void Level_00_GO_BasicCharacter::manageCollisionWithWall( sf::Vector2f vector ){
+void Level_00_GO_BasicCharacter::manageCollisionWithVector( sf::Vector2f vector ){
     
     this->oldPosition = this->position;
     this->position += vector;
     
 }
 
-void Level_00_GO_BasicCharacter::manageCollisionWithMovingObject(sf::Vector2f velocity){
-    
-    if(this->position == oldPosition){
-        return;
-    }
-    this->position = this->oldPosition;
-}
 
 
 Heading Level_00_GO_BasicCharacter::calculateHeading(sf::Vector2f velocity){
@@ -128,7 +122,7 @@ void Level_00_GO_BasicCharacter::update(){
         this->locationCollider.registerCollider();
     }
     if(!this->locationCollider.isActive()){
-        this->locationCollider.setActive();
+        this->locationCollider.setActive(true);
     }
     
 }

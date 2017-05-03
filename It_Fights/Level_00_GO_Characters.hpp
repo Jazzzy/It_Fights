@@ -22,7 +22,7 @@
  */
 class Level_00_GO_Characters : public GameObject {
 public:
-    Level_00_GO_Characters();
+    Level_00_GO_Characters(Scene* scene);
     
     /*
      Function used to sort out characters

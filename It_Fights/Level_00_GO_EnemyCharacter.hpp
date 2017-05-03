@@ -18,7 +18,7 @@
  */
 class Level_00_GO_EnemyCharacter : public Level_00_GO_BasicCharacter{
 public:
-    Level_00_GO_EnemyCharacter(sf::Vector2f position);
+    Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position);
     
     /*
      We override the update function to be able to read the input

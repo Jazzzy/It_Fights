@@ -18,7 +18,7 @@
  */
 class Level_00_GO_MainCharacter : public Level_00_GO_BasicCharacter{
 public:
-    Level_00_GO_MainCharacter(sf::Vector2f position);
+    Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position);
     
     /*
      We override the update function to be able to read the player input

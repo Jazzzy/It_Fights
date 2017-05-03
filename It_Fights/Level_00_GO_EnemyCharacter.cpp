@@ -9,7 +9,7 @@
 #include "Level_00_GO_EnemyCharacter.hpp"
 
 
-Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(sf::Vector2f position) : Level_00_GO_BasicCharacter(position){
+Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position) : Level_00_GO_BasicCharacter(scene, position){
 
 }
 

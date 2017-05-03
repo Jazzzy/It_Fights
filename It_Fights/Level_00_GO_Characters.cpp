@@ -15,9 +15,10 @@
  It locates both characters on the map
  
  */
-Level_00_GO_Characters::Level_00_GO_Characters():
-mainCharacter(sf::Vector2f(120,150)),
-enemyCharacter(sf::Vector2f(280,150)){}
+Level_00_GO_Characters::Level_00_GO_Characters(Scene* scene):
+GameObject(scene),
+mainCharacter(scene,sf::Vector2f(120,150)),
+enemyCharacter(scene,sf::Vector2f(280,150)){}
 
 
 /*

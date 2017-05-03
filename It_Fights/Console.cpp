@@ -18,7 +18,6 @@
 
 
 extern Game game;
-extern ResourceManager resourceManager;
 
 Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageBus) {
     
@@ -27,7 +26,7 @@ Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageB
     this->max_openness = 0.8f;
     this->open_speed = 2.0f;
     
-    this->font = resourceManager.getFont("sansation");
+    this->font = ResourceManager::Instance().getFont("sansation");
     
     this->inputTextColor = sf::Color::Black;
     this->msgTextColor = sf::Color(75,75,75);
@@ -59,7 +58,7 @@ void Console::evaluateInputLine(){
     
     auto position = strLine.find("sendTo");
     
-    printv(position);
+    //printv(position);
     
     if(position==0 && position != std::string::npos){
         
@@ -73,7 +72,7 @@ void Console::evaluateInputLine(){
         Message consoleMessageToSystem(messageToSystem,system);
         
         
-        printv(consoleMessageToSystem.getReceiverSystem());
+        //printv(consoleMessageToSystem.getReceiverSystem());
 
         
         
@@ -82,7 +81,7 @@ void Console::evaluateInputLine(){
     }else{
         Message consoleMessageToEveryone(strLine);
         
-        printv(consoleMessageToEveryone.getReceiverSystem());
+        //printv(consoleMessageToEveryone.getReceiverSystem());
         
         send(consoleMessageToEveryone);
         
@@ -226,7 +225,7 @@ void Console::drawFps(sf::RenderTarget *renderTarget, float origin_X, float orig
     float realOrigin_X = (origin_X * renderSize.x) + HORIZONTAL_PADDING;
     float realOrigin_Y = (origin_Y * renderSize.y) + VERTICAL_PADDING;
     
-    std::string fpsString = "FPS: " + std::to_string(game.getDeltaClock()->getMeanFPS());
+    std::string fpsString = "FPS: " + std::to_string(Clock::Instance().getMeanFPS());
     sf::Text text(fpsString,this->font, this->pixelCharacterSize);
     text.setFillColor(textColor);
     text.setPosition(realOrigin_X, realOrigin_Y);
@@ -237,7 +236,7 @@ void Console::drawFps(sf::RenderTarget *renderTarget, float origin_X, float orig
 
 void Console::updateOpenness(){
     
-    double deltaOpenness = this->open_speed * game.getDeltaClock()->getDeltaTime();
+    double deltaOpenness = this->open_speed * Clock::Instance().getDeltaTime();
     
     if(this->current_openness < this->target_openness ){
         this->current_openness += deltaOpenness;

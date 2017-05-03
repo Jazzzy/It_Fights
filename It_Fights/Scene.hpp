@@ -14,6 +14,8 @@
 #include <GameObject.hpp>
 #include <vector>
 
+class GameObject;
+
 class Scene : public Drawable, public BusNode {
 public:
     Scene(MessageBus * messageBus);

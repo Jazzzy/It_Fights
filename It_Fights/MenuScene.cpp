@@ -9,7 +9,7 @@
 #include "MenuScene.hpp"
 
 
-MenuScene::MenuScene(MessageBus * messageBus) : Scene(messageBus), titleText(){
+MenuScene::MenuScene(MessageBus * messageBus) : Scene(messageBus), titleText(this){
 
     //Add here all GameObjects necessary with
     this->addGameObject(&titleText);

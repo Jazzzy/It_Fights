@@ -7,3 +7,8 @@
 //
 
 #include "GameObject.hpp"
+
+GameObject::GameObject(Scene * scene){
+    this->scene = scene;
+}
+

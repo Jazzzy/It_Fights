@@ -14,9 +14,9 @@
 
 Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
 Scene(messageBus),
-level_00_GO_Ground(),
+level_00_GO_Ground(this),
 view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
-level_00_GO_Characters()
+level_00_GO_Characters(this)
 {
     
     

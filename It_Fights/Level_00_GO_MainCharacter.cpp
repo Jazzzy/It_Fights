@@ -9,14 +9,14 @@
 #include "Level_00_GO_MainCharacter.hpp"
 #include "SomeMath.hpp"
 #include "Game.hpp"
-extern Game game;
+#include "Clock.hpp"
 
-Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(sf::Vector2f position) : Level_00_GO_BasicCharacter( position){
+Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position) : Level_00_GO_BasicCharacter(scene, position){
     
 }
 
 
-#define VECTOR_LENGTH_LIMIT 0.4f
+#define VECTOR_LENGTH_LIMIT 0.2f
 
 void Level_00_GO_MainCharacter::update(){
     
@@ -43,7 +43,7 @@ void Level_00_GO_MainCharacter::update(){
         movementVector = sf::Vector2f(0,0);
     }
         
-    velocity = (movementVector*this->walkingSpeed*game.getDeltaClock()->getDeltaTime());
+    velocity = (movementVector*this->walkingSpeed * Clock::Instance().getDeltaTime());
     
     this->lastHeading = this->calculateHeading(velocity);
     

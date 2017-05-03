@@ -15,10 +15,9 @@
 
 class BoxCollider {
 public:
-    BoxCollider(float width,
-                float heigth,
-                std::function<std::pair<float,float>()>getOriginFunc ,
-                std::function<void(ColliderType,std::pair<float, float>)>onCollisionCallback,
+    BoxCollider(sf::Vector2f size,
+                std::function<sf::Vector2f()>getOriginFunc ,
+                std::function<void(ColliderType,sf::Vector2f)>onCollisionCallback,
                 ColliderType colliderType);
     ~BoxCollider();
     
@@ -29,8 +28,7 @@ public:
     
     
     bool isActive();
-    void setActive();
-    void setUnactive();
+    void setActive(bool active);
     
 private:
     RectangleCollider collider;
