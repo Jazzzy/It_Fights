@@ -29,8 +29,8 @@ outsideCollider( sf::Vector2f((tileSide * tileMapWidth), (tileSide * tileMapHeig
     return origin;
     
 },
-                [](ColliderType colType,sf::Vector2f vector){},
-                ColliderType::INVERTED_BOX)
+                [](ColliderType colType,sf::Vector2f vector, float value){},
+                ColliderType::INVERTED_BOX, CollisionLayer::NEUTRAL)
 {
     
     

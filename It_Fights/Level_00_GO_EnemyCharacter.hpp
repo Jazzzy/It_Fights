@@ -25,6 +25,8 @@ public:
      from the AI system and apply it to the enemy.
      */
     void update();
+private:
+    BoxCollider hurtbox;
 
 };
 

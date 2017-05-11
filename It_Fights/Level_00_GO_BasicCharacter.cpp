@@ -11,6 +11,7 @@
 #include "ResourcePath.hpp"
 #include "SomeMath.hpp"
 #include "DebugUtilities.hpp"
+#include "Clock.hpp"
 
 #include <SFML/Window/Joystick.hpp>
 
@@ -36,18 +37,14 @@ AnimatedSprite("prota_0.2.json", "prota_0.2.png", DataMode::Aseprite_Array_Json_
 /****************************/
 
 
-
-//@@TODO Implementar os ataques :D
-
-
 //Sizes for the location collider of the character
-#define LocationColliderSize_x 8
-#define LocationColliderSize_y 8
+#define LocationColliderSize_x (8)
+#define LocationColliderSize_y (8)
 
 
 //Offsets for the locaiton collider of the character relative to its position
-#define LocationColliderOffset_x 4
-#define LocationColliderOffset_y 3
+#define LocationColliderOffset_x (4)
+#define LocationColliderOffset_y (3)
 
 Level_00_GO_BasicCharacter::Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position):
 GameObject(scene),
@@ -59,7 +56,7 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
                  },
                  
                  //Function that deals with a collisions accordingly
-                 [this](ColliderType colType, sf::Vector2f vector){
+                 [this](ColliderType colType, sf::Vector2f vector, float value){
                      
                      if(colType == ColliderType::INVERTED_BOX || colType == WALL){
                          this->manageCollisionWithVector(vector);
@@ -70,7 +67,7 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
                  },
                  
                  //Type of the location collider
-                 ColliderType::MOVING_OBJECT)
+                 ColliderType::MOVING_OBJECT, CollisionLayer::NEUTRAL)
 {
     
     
@@ -78,8 +75,16 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     this->oldPosition = this->position;
     this->walkingSpeed = 130.0f;
     this->lastHeading = Heading::DOWN;
+    this->shouldUpdate = true;
     
     
+    this->basicAttackDamage = 10.f;
+    this->attackRadious = 28.f; //Previously 35
+    
+    
+    
+    this->dashMagnitude = 20.;
+    this->dashMillis = .2;
 }
 Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){}
 
@@ -131,6 +136,83 @@ sf::Vector2f Level_00_GO_BasicCharacter::getPosition(){
     return this->position;
 }
 
+void Level_00_GO_BasicCharacter::startDash(sf::Vector2f direction, float magnitude, float millis, bool force){
+    sf::Vector2f finalPosition;
+    
+    this->finalDashPosition.x=this->position.x + (direction.x * magnitude);
+    this->finalDashPosition.y=this->position.y + (direction.y * magnitude);
+    this->startingDashPosition = this->position;
+    
+    this->timeRemainingForDash = millis;
+    this->totalDashTime = millis;
+    
+    this->dashing = true;
+    
+
+}
+
+
+bool Level_00_GO_BasicCharacter::dash(){
+    
+    this->timeRemainingForDash -= Clock::Instance().getDeltaTime();
+    
+    if(timeRemainingForDash <= 0.){
+        this->dashing = false;
+        this->timeRemainingForDash = 0.;
+        this->totalDashTime = 0.;
+        return false;
+    }
+
+    float amount = this->timeRemainingForDash / this->totalDashTime;
+    
+    this->position.x = lerp(this->startingDashPosition.x, this->finalDashPosition.x, amount);
+    this->position.y = lerp(this->startingDashPosition.y, this->finalDashPosition.y, amount);
+
+    
+    return true;
+
+}
+
+
+void Level_00_GO_BasicCharacter::startAttack(){
+    
+    this->shouldUpdate = false;
+    
+    auto finishAnimationFunction = [this](){
+        this->shouldUpdate = true;
+    };
+    
+    sf::Vector2f dashVector;
+    dashVector.x=0;
+    dashVector.y=0;
+    
+    switch(lastHeading){
+        case (Heading::DOWN):
+            this->animatedSprite.startAnimation("ATTACK_DOWN", false, finishAnimationFunction);
+            dashVector.y=1;
+            break;
+        case (Heading::UP):
+            this->animatedSprite.startAnimation("ATTACK_UP", false, finishAnimationFunction);
+            dashVector.y=-1;
+            break;
+        case (Heading::LEFT):
+            this->animatedSprite.startAnimation("ATTACK_LEFT", false, finishAnimationFunction);
+            dashVector.x=-1;
+            break;
+        case (Heading::RIGHT):
+            this->animatedSprite.startAnimation("ATTACK_RIGHT", false, finishAnimationFunction);
+            dashVector.x=1;
+            break;
+        default:
+            this->animatedSprite.startAnimation("IDLE_DOWN", false, finishAnimationFunction);
+            break;
+    }
+    
+    this->startDash(dashVector, dashMagnitude, dashMillis, false);
+    
+    
+}
+
 void Level_00_GO_BasicCharacter::tryToUpdateAnimation(){
     
     if(getVectorLength(velocity) > 0.0f){   //We are moving
@@ -178,8 +260,9 @@ void Level_00_GO_BasicCharacter::tryToUpdateAnimation(){
 
 void Level_00_GO_BasicCharacter::draw(sf::RenderTarget * renderTarget){
     
-    
-    this->tryToUpdateAnimation();
+    if(this->shouldUpdate){
+        this->tryToUpdateAnimation();
+    }
     
     this->animatedSprite.update();
     
@@ -192,3 +275,4 @@ void Level_00_GO_BasicCharacter::draw(sf::RenderTarget * renderTarget){
     renderTarget->draw(mainCharSprite);
     
 }
+

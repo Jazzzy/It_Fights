@@ -29,10 +29,18 @@
  */
 
 
+enum CollisionLayer{
+    FRIENDLY_COLLIDER,
+    ENEMY_COLLIDER,
+    NEUTRAL
+};
+
 enum ColliderType{
     WALL,
     INVERTED_BOX,
-    MOVING_OBJECT
+    MOVING_OBJECT,
+    HURTBOX,
+    HITBOX
 };
 
 enum CollisionBehaviour{
@@ -41,7 +49,7 @@ enum CollisionBehaviour{
 
 typedef struct {
     std::function<sf::Vector2f()> getOriginFunc;
-    std::function<void(ColliderType, sf::Vector2f)> onCollisionCallback;
+    std::function<void(ColliderType, sf::Vector2f, float)> onCollisionCallback;
 } ColliderFuncs;
 
 
@@ -53,16 +61,22 @@ typedef struct {
     sf::Vector2f size;
     sf::Vector2f lastOrigin;
     bool updated;
-    
+    CollisionLayer layer;
 } RectangleCollider;
 
 
 typedef struct {
-    float width;
-    float heigth;
+    float radius;
     ColliderFuncs funcs;
     ColliderType colType;
 } CircleCollider;
+
+
+typedef struct {
+    float r;
+    float x;
+    float y;
+} InstantCircleCollider;
 
 
 
@@ -79,6 +93,11 @@ public:
     void activateCollider (unsigned int id);
     void deactivateCollider (unsigned int id);
     
+
+    //External instant checks
+    void checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLayer layerToCheck, float damage);
+
+    
     
     void update();
     void draw(sf::RenderTarget * renderTarget);
@@ -94,16 +113,20 @@ private:
     
     unsigned int colliderCounter;
     std::map<unsigned int, RectangleCollider*> rectColMap;
+    std::map<unsigned int, RectangleCollider*> rectHurtMap;
 
     
     void check__Rect_Rect__Collisions();
     void check__Box_Rect__Collisions();
+    void updateRectHurtboxes();
     
     
     bool check2Rects(RectangleCollider * col1, RectangleCollider * col2, sf::Vector2f* vector1, sf::Vector2f* vector2);
     bool checkBoxRect(RectangleCollider * box, RectangleCollider * col, sf::Vector2f* vector);
+    bool checkInstantCircleRect(InstantCircleCollider * circle ,RectangleCollider * col, sf::Vector2f* vector );
     
     void drawRectangleColliders(sf::RenderTarget *renderTarget);
+    InstantCircleCollider lastInstantCircleCollider;
     
 };
 

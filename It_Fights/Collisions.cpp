@@ -9,13 +9,15 @@
 #include "Collisions.hpp"
 #include "Systems.hpp"
 #include "DebugUtilities.hpp"
+#include "SomeMath.hpp"
+
 
 
 Collisions::Collisions(MessageBus * messageBus) : BusNode(Systems::S_Collisions,messageBus){
     
     this->colliderCounter = 1;
     
-    this->shouldDraw = false;
+    this->shouldDraw = true;
     
 }
 
@@ -30,6 +32,7 @@ void Collisions::update(){
     
     this->check__Box_Rect__Collisions();
     this->check__Rect_Rect__Collisions();
+    this->updateRectHurtboxes();
     
 }
 
@@ -66,6 +69,31 @@ void Collisions::drawRectangleColliders(sf::RenderTarget *renderTarget){
         renderTarget->draw(rectangle);
     }
     
+    for(auto it1 = this->rectHurtMap.begin() ; it1 != this->rectHurtMap.end() ; ++it1){
+        sf::RectangleShape rectangle;
+        rectangle.setSize(sf::Vector2f(it1->second->size.x, it1->second->size.y));
+        rectangle.setOutlineThickness(0);
+        rectangle.setPosition(it1->second->lastOrigin.x, it1->second->lastOrigin.y);
+        
+        switch (it1->second->colType){
+                
+            default:
+                rectangle.setFillColor(sf::Color(0.f,0.f,230.f,100.f));
+                break;
+        }
+        
+        renderTarget->draw(rectangle);
+    }
+    
+    
+    sf::CircleShape circle;
+    circle.setRadius(this->lastInstantCircleCollider.r);
+    circle.setOutlineThickness(0);
+    circle.setPosition(lastInstantCircleCollider.x, lastInstantCircleCollider.y);
+    circle.setFillColor(sf::Color(0.f,230.f,230.f,100.f));
+    renderTarget->draw(circle);
+
+    
 }
 
 
@@ -74,7 +102,6 @@ void Collisions::onNotify(Message message){
     if(message.getEvent().compare("MSG_TOGGLE_SHOW_COLLISIONS")==0){
         this->shouldDraw = !(this->shouldDraw);
     }
-    
     
 }
 
@@ -86,6 +113,8 @@ unsigned int Collisions::registerRectangleCollider(RectangleCollider * rectangle
     
     if(rectangleCollider->colType == INVERTED_BOX){
         this->currentInvertedBox = rectangleCollider;
+    }else if(rectangleCollider->colType == ColliderType::HURTBOX){
+        this->rectHurtMap.insert(std::make_pair(rectangleCollider->id,rectangleCollider));
     }else{
         this->rectColMap.insert(std::make_pair(rectangleCollider->id,rectangleCollider));
     }
@@ -109,6 +138,25 @@ void Collisions::deactivateCollider(unsigned int id){
     (this->rectColMap[id])->active = false;
 }
 
+
+void Collisions::updateRectHurtboxes(){
+    
+    for(auto it1 = this->rectHurtMap.begin() ; it1 != this->rectHurtMap.end() ; ++it1){
+        
+        RectangleCollider *col1 = it1->second;
+        
+        if(!col1->active){
+            continue;
+        }
+        
+        if(!col1->updated){
+            col1->lastOrigin = col1->funcs.getOriginFunc();
+            col1->updated = false; //For now this is false :D
+        }
+        
+    }
+    
+}
 
 
 /*Also sets the updated to false*/
@@ -148,8 +196,8 @@ void Collisions::check__Rect_Rect__Collisions(){
             bool col = this->check2Rects(col1, col2, &vector1, &vector2);
             
             if(col){
-                col1->funcs.onCollisionCallback(col2->colType,vector1);
-                col2->funcs.onCollisionCallback(col1->colType,vector2);
+                col1->funcs.onCollisionCallback(col2->colType,vector1,0);
+                col2->funcs.onCollisionCallback(col1->colType,vector2,0);
             }
             
         }
@@ -185,7 +233,7 @@ void Collisions::check__Box_Rect__Collisions(){
         bool inside = this->checkBoxRect(this->currentInvertedBox,collider ,&vector);
         
         if(!inside){
-            collider->funcs.onCollisionCallback(INVERTED_BOX,vector);
+            collider->funcs.onCollisionCallback(INVERTED_BOX,vector,0);
         }
         
     }
@@ -241,59 +289,6 @@ bool Collisions::check2Rects(RectangleCollider * col1, RectangleCollider * col2,
     }
     
     return true;
-    
-    
-    //    bool notColliding = false;
-    //
-    //    float distance1x = (col1->lastOrigin.first - (col2->lastOrigin.first + col2->width));   // > 0
-    //    float distance1y = col1->lastOrigin.second - (col2->lastOrigin.second + col2->heigth);  // > 0
-    //    float distance0x = (col1->lastOrigin.first + col1->width) - col2->lastOrigin.first;     // < 0
-    //    float distance0y = (col1->lastOrigin.second + col1->heigth) - col2->lastOrigin.second;  // < 0
-    //
-    //    //@@TODO: Fix this for all axis
-    //
-    //    if(distance1x > 0){
-    //        notColliding = true;
-    //    }else{
-    //        vector1->first += distance1x/2;
-    //        vector2->first -= distance1x/2;
-    //    }
-    //
-    //    if(distance1y > 0){
-    //        notColliding = true;
-    //    }else{
-    //        vector1->second += distance1y/2;
-    //        vector1->second -= distance1y/2;
-    //    }
-    //
-    //    if(distance0x < 0){
-    //        notColliding = true;
-    //    }else{
-    //        vector1->first += distance0x/2;
-    //        vector1->first -= distance0x/2;
-    //    }
-    //
-    //    if(distance0y < 0){
-    //        notColliding = true;
-    //    }else{
-    //        vector1->second += distance0y/2;
-    //        vector1->second -= distance0y/2;
-    //    }
-    //
-    //    return !notColliding;
-    
-    //      Old collision checking without vector generation
-    
-    //    if(!(col1->lastOrigin.first > (col2->lastOrigin.first + col2->width)      ||
-    //       (col1->lastOrigin.first + col1->width) < col2->lastOrigin.first      ||
-    //       col1->lastOrigin.second > (col2->lastOrigin.second + col2->heigth)   ||
-    //       (col1->lastOrigin.second + col1->heigth) < col2->lastOrigin.second   ))
-    //    {
-    //
-    //
-    //        printv(true);
-    //        //Boys!! We have a collision
-    //        return true;
 }
 
 
@@ -339,6 +334,79 @@ bool Collisions::checkBoxRect(RectangleCollider * box, RectangleCollider * col ,
     
     return inside;
 }
+
+void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLayer layerToCheck, float damage){
+    
+    this->lastInstantCircleCollider = *hitbox;
+    
+    for(auto it1 = this->rectHurtMap.begin() ; it1 != this->rectHurtMap.end() ; ++it1){
+        
+        RectangleCollider *col1 = it1->second;
+        
+     
+        
+        if(col1->layer == layerToCheck){
+            
+            
+            sf::Vector2f vector;
+            vector.x=0.f;
+            vector.y=0.f;
+            if(this->checkInstantCircleRect(hitbox, col1, &vector)){
+            
+                col1->funcs.onCollisionCallback(ColliderType::HITBOX,vector,damage);
+            
+            }
+        }
+    }
+}
+
+bool Collisions::checkInstantCircleRect(InstantCircleCollider * circle ,RectangleCollider * col, sf::Vector2f* vector ){
+    
+    //@TODO REVISAR, Calcula mal algunha posicion do rectangulo ou o circulo
+    
+    //    bool intersects(CircleType circle, RectType rect)
+    //    {
+    //        circleDistance.x = abs(circle.x - rect.x);
+    //        circleDistance.y = abs(circle.y - rect.y);
+    //
+    //        if (circleDistance.x > (rect.width/2 + circle.r)) { return false; }
+    //        if (circleDistance.y > (rect.height/2 + circle.r)) { return false; }
+    //
+    //        if (circleDistance.x <= (rect.width/2)) { return true; }
+    //        if (circleDistance.y <= (rect.height/2)) { return true; }
+    //
+    //        cornerDistance_sq = (circleDistance.x - rect.width/2)^2 +
+    //        (circleDistance.y - rect.height/2)^2;
+    //
+    //        return (cornerDistance_sq <= (circle.r^2));
+    //    }
+    
+    
+    vector->x = (col->lastOrigin.x - circle->x);
+    vector->y = (col->lastOrigin.y - circle->y);
+    
+    sf::Vector2f distance;
+    distance.x = fabs(vector->x);
+    distance.y = fabs(vector->y);
+    
+    *vector = getNormalizedVector(*vector);
+    
+    if(distance.x > (col->size.x/2 + circle->r))
+        return false;
+    if(distance.y > (col->size.y/2 + circle->r))
+        return false;
+    
+    if(distance.x <= (col->size.x/2))
+        return true;
+    if(distance.y <= (col->size.y/2))
+        return true;
+    
+    float cornerDistanceSquared = pow((distance.x - col->size.x/2.),2.) + pow((distance.y - col->size.y/2.),2.);
+    
+    return (cornerDistanceSquared <= pow(circle->r,2));
+    
+}
+
 
 
 

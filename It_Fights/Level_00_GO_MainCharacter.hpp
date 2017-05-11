@@ -25,6 +25,10 @@ public:
      and apply it to the character controlled.
      */
     void update();
+private:
+    BoxCollider hurtbox;
+    void startAttack();
+
 };
 
 #endif /* Level_00_GO_MainCharacter_hpp */

@@ -12,8 +12,8 @@ extern Game game;
 
 BoxCollider::BoxCollider(sf::Vector2f size,
                          std::function<sf::Vector2f()>getOriginFunc ,
-                         std::function<void(ColliderType,sf::Vector2f)>onCollisionCallback,
-                         ColliderType colliderType){
+                         std::function<void(ColliderType,sf::Vector2f, float)>onCollisionCallback,
+                         ColliderType colliderType, CollisionLayer layer){
     
     ColliderFuncs funcs{
         .getOriginFunc=getOriginFunc,
@@ -26,7 +26,8 @@ BoxCollider::BoxCollider(sf::Vector2f size,
         .size = size,
         .funcs = funcs,
         .colType = colliderType,
-        .updated = false
+        .updated = false,
+        .layer = layer
     };
     
     this->registered = false;

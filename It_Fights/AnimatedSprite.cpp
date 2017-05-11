@@ -10,6 +10,7 @@
 #include "ResourcePath.hpp"
 #include <fstream>
 #include "json.hpp"
+#include "DebugUtilities.hpp"
 using json = nlohmann::json;
 
 #include "Clock.hpp"
@@ -117,12 +118,13 @@ std::string AnimatedSprite::getCurrentAnimation(){
 
 
 void AnimatedSprite::startAnimation(std::string name, bool loop,std::function<void()> callback){
+ 
     
-    
-    if(currentAnimationName.compare(name)==0){
+    if(currentAnimationName.compare(name)==0 && loop ){
         return; //Trying to set the same animation
     }
     
+    this->loop = loop;
     this->callbackAnimationEnd = callback;
     this->currentAnimationName = name;
     this->currentAnimationData = this->animationMap[this->currentAnimationName];

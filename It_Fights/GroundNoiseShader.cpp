@@ -32,9 +32,7 @@ GroundNoiseShader::~GroundNoiseShader(){
 }
 
 sf::RenderStates GroundNoiseShader::getRenderStates(){
-    
-    //TODO
-    return sf::RenderStates();
+        return sf::RenderStates();
 }
 
 void GroundNoiseShader::drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable * drawable){

@@ -17,8 +17,8 @@ class BoxCollider {
 public:
     BoxCollider(sf::Vector2f size,
                 std::function<sf::Vector2f()>getOriginFunc ,
-                std::function<void(ColliderType,sf::Vector2f)>onCollisionCallback,
-                ColliderType colliderType);
+                std::function<void(ColliderType,sf::Vector2f, float)>onCollisionCallback,
+                ColliderType colliderType, CollisionLayer layer);
     ~BoxCollider();
     
 

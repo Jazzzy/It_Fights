@@ -474,7 +474,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 53.ase",
@@ -483,7 +483,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 54.ase",
@@ -537,7 +537,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 60.ase",
@@ -546,7 +546,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 61.ase",
@@ -600,7 +600,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 67.ase",
@@ -609,7 +609,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 68.ase",
@@ -663,7 +663,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 74.ase",
@@ -672,7 +672,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
+    "duration": 30
    },
    {
     "filename": "prota_0.2 75.ase",

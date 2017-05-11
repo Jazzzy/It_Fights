@@ -14,6 +14,14 @@
 #include "BoxCollider.hpp"
 
 
+//Sizes for the location collider of the character
+#define hurtboxSize_x (10)
+#define hurtboxSize_y (12)
+
+
+//Offsets for the locaiton collider of the character relative to its position
+#define hurtboxOffset_x (5)
+#define hurtboxOffset_y (10)
 
 enum Heading { UP,DOWN,RIGHT,LEFT };
 
@@ -44,9 +52,25 @@ protected:
     Heading calculateHeading(sf::Vector2f velocity);
     Heading lastHeading;
     void tryToUpdateAnimation();
+    bool shouldUpdate;
     
     BoxCollider locationCollider;
     void manageCollisionWithVector(sf::Vector2f velocity);
+    
+    void startDash(sf::Vector2f direction, float magnitude, float millis, bool force);
+    bool dash();
+    sf::Vector2f finalDashPosition;
+    sf::Vector2f startingDashPosition;
+    float timeRemainingForDash;
+    float totalDashTime;
+    bool dashing;
+    float dashMagnitude, dashMillis;
+    
+    
+    float basicAttackDamage;
+    float attackRadious;
+    
+    void startAttack();
     
 };
 

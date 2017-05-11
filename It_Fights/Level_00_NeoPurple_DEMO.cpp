@@ -64,7 +64,6 @@ void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
         Message msg_smoothFalse("MSG_SMOOTH_FALSE",Systems::S_Window);
         send(msg_smoothFalse);
         
-        //@@TODO send another message for setting the smooth to false;
     }
 }
 
