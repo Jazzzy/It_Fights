@@ -37,8 +37,22 @@ sf::RenderStates GroundNoiseShader::getRenderStates(){
 
 void GroundNoiseShader::drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable * drawable){
     
+//    this->sf_shader.setUniform("u_resolution", this->resolution);
+//    this->sf_shader.setUniform("u_time", (this->time += Clock::Instance().getDeltaTime()) );
+//    this->sf_shader.setUniform("u_blend", .1f );
+//    this->sf_shader.setUniform("source", drawable);
+//    
+//    renderTarget->draw(*drawable,&(this->sf_shader));
+    
+    
+}
+
+void GroundNoiseShader::drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable * drawable, sf::Texture source){
+    
     this->sf_shader.setUniform("u_resolution", this->resolution);
     this->sf_shader.setUniform("u_time", (this->time += Clock::Instance().getDeltaTime()) );
+    this->sf_shader.setUniform("u_blend", .8f );
+    this->sf_shader.setUniform("source", source);
     
     renderTarget->draw(*drawable,&(this->sf_shader));
     

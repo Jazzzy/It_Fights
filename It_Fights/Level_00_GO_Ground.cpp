@@ -92,15 +92,26 @@ void Level_00_GO_Ground::draw(sf::RenderTarget *renderTarget){
     
     this->drawNoise(renderTarget);
     
-    renderTarget->draw(sf::Sprite(this->groundTexture.getTexture()));
+    //renderTarget->draw(sf::Sprite(this->groundTexture.getTexture()));
     
 }
 
 void Level_00_GO_Ground::drawNoise(sf::RenderTarget *renderTarget){
     
     this->noiseTexture.clear(sf::Color::Black);
-    this->noiseShader.drawWithShader(&this->noiseTexture, &noiseSprite);
+    
+    
+    
+    //this->noiseShader.drawWithShader(&this->noiseTexture, &noiseSprite);
+    sf::Sprite auxSprite(this->groundTexture.getTexture());
+    this->noiseShader.drawWithShader(&this->noiseTexture, &auxSprite, this->groundTexture.getTexture());
+    
+    
+    
+    
     this->noiseTexture.display();
+    
+    
     renderTarget->draw(sf::Sprite(this->noiseTexture.getTexture()));
     
 }

@@ -38,14 +38,16 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
 
 
 #define VECTOR_LENGTH_LIMIT 0.2f
+#define HITBOX_OFFSET_X (0)
+#define HITBOX_OFFSET_Y (-15)
 
 void Level_00_GO_MainCharacter::startAttack(){
     
     Level_00_GO_BasicCharacter::startAttack();
     
     InstantCircleCollider hitbox{
-        .x = this->position.x - this->attackRadious,
-        .y = this->position.y - this->attackRadious,
+        .x = this->position.x + HITBOX_OFFSET_X,
+        .y = this->position.y + HITBOX_OFFSET_Y,
         .r = this->attackRadious
     };
     

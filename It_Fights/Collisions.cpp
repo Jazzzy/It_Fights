@@ -17,7 +17,7 @@ Collisions::Collisions(MessageBus * messageBus) : BusNode(Systems::S_Collisions,
     
     this->colliderCounter = 1;
     
-    this->shouldDraw = true;
+    this->shouldDraw = false;
     
 }
 
@@ -89,7 +89,7 @@ void Collisions::drawRectangleColliders(sf::RenderTarget *renderTarget){
     sf::CircleShape circle;
     circle.setRadius(this->lastInstantCircleCollider.r);
     circle.setOutlineThickness(0);
-    circle.setPosition(lastInstantCircleCollider.x, lastInstantCircleCollider.y);
+    circle.setPosition(lastInstantCircleCollider.x - this->lastInstantCircleCollider.r, lastInstantCircleCollider.y - this->lastInstantCircleCollider.r);
     circle.setFillColor(sf::Color(0.f,230.f,230.f,100.f));
     renderTarget->draw(circle);
 
@@ -362,7 +362,6 @@ void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLaye
 
 bool Collisions::checkInstantCircleRect(InstantCircleCollider * circle ,RectangleCollider * col, sf::Vector2f* vector ){
     
-    //@TODO REVISAR, Calcula mal algunha posicion do rectangulo ou o circulo
     
     //    bool intersects(CircleType circle, RectType rect)
     //    {
@@ -375,15 +374,18 @@ bool Collisions::checkInstantCircleRect(InstantCircleCollider * circle ,Rectangl
     //        if (circleDistance.x <= (rect.width/2)) { return true; }
     //        if (circleDistance.y <= (rect.height/2)) { return true; }
     //
-    //        cornerDistance_sq = (circleDistance.x - rect.width/2)^2 +
-    //        (circleDistance.y - rect.height/2)^2;
+    //        cornerDistance_sq = (circleDistance.x - rect.width/2)^2 +  (circleDistance.y - rect.height/2)^2;
     //
     //        return (cornerDistance_sq <= (circle.r^2));
     //    }
     
     
-    vector->x = (col->lastOrigin.x - circle->x);
-    vector->y = (col->lastOrigin.y - circle->y);
+//    vector->x = ((col->lastOrigin.x + (col->size.x/2.)) - circle->x);
+//    vector->y = ((col->lastOrigin.y + (col->size.y/2.)) - circle->y);
+
+    vector->x = ((col->lastOrigin.x) - circle->x);
+    vector->y = ((col->lastOrigin.y) - circle->y);
+
     
     sf::Vector2f distance;
     distance.x = fabs(vector->x);
@@ -391,19 +393,20 @@ bool Collisions::checkInstantCircleRect(InstantCircleCollider * circle ,Rectangl
     
     *vector = getNormalizedVector(*vector);
     
-    if(distance.x > (col->size.x/2 + circle->r))
+    if(distance.x > (col->size.x/2. + circle->r))
         return false;
-    if(distance.y > (col->size.y/2 + circle->r))
+    if(distance.y > (col->size.y/2. + circle->r))
         return false;
     
-    if(distance.x <= (col->size.x/2))
+    if(distance.x <= (col->size.x/2.))
         return true;
-    if(distance.y <= (col->size.y/2))
+    if(distance.y <= (col->size.y/2.))
         return true;
+    
     
     float cornerDistanceSquared = pow((distance.x - col->size.x/2.),2.) + pow((distance.y - col->size.y/2.),2.);
     
-    return (cornerDistanceSquared <= pow(circle->r,2));
+    return (cornerDistanceSquared <= pow(circle->r,2.));
     
 }
 

@@ -418,11 +418,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Level_00_GO_MainCharacter.cpp"
-            timestampString = "516219492.368682"
+            timestampString = "516492746.018051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "Level_00_GO_MainCharacter::update()"
             landmarkType = "7">
          </BreakpointContent>

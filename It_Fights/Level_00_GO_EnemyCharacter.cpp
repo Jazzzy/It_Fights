@@ -9,6 +9,9 @@
 #include "Level_00_GO_EnemyCharacter.hpp"
 #include "DebugUtilities.hpp"
 
+//@TODO @DEBUG remove this
+unsigned short hitCounter = 0;
+
 Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position) : Level_00_GO_BasicCharacter(scene, position),
 hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         
@@ -21,7 +24,8 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         [this](ColliderType colType, sf::Vector2f vector, float value){
             
             if(colType == ColliderType::HITBOX){
-                prints("HIT");
+                //@TODO: Implement life bars :D
+                prints("Enemy has been hit x" << ++hitCounter);
                 this->startDash(vector, 50, 0.150, true);
             }
             

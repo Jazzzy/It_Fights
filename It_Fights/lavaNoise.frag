@@ -1,8 +1,9 @@
 // Modded version from a shader made by @patriciogv
 
-
+uniform sampler2D source;
 uniform vec2 u_resolution;
 uniform float u_time;
+uniform float u_blend;
 
 vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
 vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
@@ -70,6 +71,10 @@ void main() {
     
 //    gl_FragColor = vec4(1.0-color,1.0);
     
-    gl_FragColor = purpleColor;
+    vec2 texel = vec2(gl_TexCoord[0]);
+    vec4 pixel = vec4(texture2D(source, texel));
+
+    gl_FragColor =  (pixel) * (purpleColor*(u_blend));
+    
     
 }

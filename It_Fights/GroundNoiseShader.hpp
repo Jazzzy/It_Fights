@@ -17,6 +17,7 @@ public:
     ~GroundNoiseShader();
     sf::RenderStates getRenderStates();
     void drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable* drawable);
+    void drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable* drawable, sf::Texture source);
     
 private:
     sf::Shader sf_shader;
