@@ -16,7 +16,8 @@ Level_00_NeoPurple_DEMO::Level_00_NeoPurple_DEMO(MessageBus * messageBus) :
 Scene(messageBus),
 level_00_GO_Ground(this),
 view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
-level_00_GO_Characters(this)
+level_00_GO_Characters(this),
+level_00_GO_HealthBars(this,&level_00_GO_Characters)
 {
     
     
@@ -26,6 +27,7 @@ level_00_GO_Characters(this)
     
     this->addGameObject(&level_00_GO_Ground);
     this->addGameObject(&level_00_GO_Characters);
+    this->addGameObject(&level_00_GO_HealthBars);
     
     this->localUpdateFunction = [&](){ this->localUpdateImplemented(); };
     this->fullScreenShadersFunc = [this](sf::RenderTarget * renderTarget,const sf::Texture * screenTexture){

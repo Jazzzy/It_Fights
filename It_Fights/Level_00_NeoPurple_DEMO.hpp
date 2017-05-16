@@ -13,6 +13,7 @@
 #include <Scene.hpp>
 #include "Level_00_GO_Ground.hpp"
 #include "Level_00_GO_Characters.hpp"
+#include "Level_00_GO_HealthBars.hpp"
 
 
 #define LVL_00_RESOLUTION_X 400
@@ -28,6 +29,7 @@ private:
     
     Level_00_GO_Ground level_00_GO_Ground;
     Level_00_GO_Characters level_00_GO_Characters;
+    Level_00_GO_HealthBars level_00_GO_HealthBars;
     
     sf::View view;
     bool changedRes;

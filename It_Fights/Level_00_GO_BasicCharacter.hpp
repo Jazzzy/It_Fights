@@ -12,6 +12,7 @@
 #include "AnimatedSprite.hpp"
 #include "GameObject.hpp"
 #include "BoxCollider.hpp"
+#include "GeneralCharacterController.hpp"
 
 
 //Sizes for the location collider of the character
@@ -22,6 +23,10 @@
 //Offsets for the locaiton collider of the character relative to its position
 #define hurtboxOffset_x (5)
 #define hurtboxOffset_y (10)
+
+//Offsets for the hitbox collider relative to its position
+#define HITBOX_OFFSET_X (0)
+#define HITBOX_OFFSET_Y (-15)
 
 enum Heading { UP,DOWN,RIGHT,LEFT };
 
@@ -41,14 +46,24 @@ public:
     void update();
     void draw(sf::RenderTarget * renderTarget);
     sf::Vector2f getPosition();
+    float getHealthNormalized();
 protected:
     Level_00_GO_BasicCharacter_AnimatedSprite animatedSprite;
+    GeneralCharacterController *controller;
+    
+    
+    float walkingSpeed;
+    float health;
+    float maxHealth;
+    void receiveDamage(float damage);
+    void die();
+    
+    std::function<void()> attackFunction;
     
     sf::Vector2f position;
     sf::Vector2f oldPosition;
     sf::Vector2f velocity;
     
-    float walkingSpeed;
     Heading calculateHeading(sf::Vector2f velocity);
     Heading lastHeading;
     void tryToUpdateAnimation();

@@ -8,9 +8,9 @@
 
 #include "Level_00_GO_EnemyCharacter.hpp"
 #include "DebugUtilities.hpp"
+#include "Game.hpp"
+extern Game game;
 
-//@TODO @DEBUG remove this
-unsigned short hitCounter = 0;
 
 Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position) : Level_00_GO_BasicCharacter(scene, position),
 hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
@@ -24,8 +24,7 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         [this](ColliderType colType, sf::Vector2f vector, float value){
             
             if(colType == ColliderType::HITBOX){
-                //@TODO: Implement life bars :D
-                prints("Enemy has been hit x" << ++hitCounter);
+                this->receiveDamage(value);
                 this->startDash(vector, 50, 0.150, true);
             }
             
@@ -33,9 +32,28 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         
         //Type of the location collider
         ColliderType::HURTBOX, CollisionLayer::ENEMY_COLLIDER){
+    
+    this->controller = &myController;
+    this->attackFunction = [this](){
+        this->startAttack();
+    };
+
 
 }
 
+void Level_00_GO_EnemyCharacter::startAttack(){
+
+    Level_00_GO_BasicCharacter::startAttack();
+    
+    InstantCircleCollider hitbox{
+        .x = this->position.x + HITBOX_OFFSET_X,
+        .y = this->position.y + HITBOX_OFFSET_Y,
+        .r = this->attackRadious
+    };
+    
+    game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
+
+}
 
 void Level_00_GO_EnemyCharacter::update(){
     
@@ -48,15 +66,5 @@ void Level_00_GO_EnemyCharacter::update(){
     
     
     Level_00_GO_BasicCharacter::update();
-    
-    
-    if(this->dashing){
-        this->dash();
-        return;
-    }
-    
-    if(!this->shouldUpdate){
-        return;
-    }
     
 }

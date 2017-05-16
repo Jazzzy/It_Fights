@@ -36,6 +36,9 @@ public:
      Custom update function for this game object since it contains other game objects that are not registered on the scene
      */
     void update();
+    Level_00_GO_MainCharacter * getMainCharacter();
+    Level_00_GO_EnemyCharacter * getEnemyCharacter();
+    
 private:
     Level_00_GO_MainCharacter mainCharacter;
     Level_00_GO_EnemyCharacter enemyCharacter;

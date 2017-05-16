@@ -10,6 +10,7 @@
 #define Level_00_GO_EnemyCharacter_hpp
 
 #include "Level_00_GO_BasicCharacter.hpp"
+#include "EnemyCharacterController.hpp"
 
 
 /*
@@ -27,6 +28,8 @@ public:
     void update();
 private:
     BoxCollider hurtbox;
+    void startAttack();
+    EnemyCharacterController myController;
 
 };
 

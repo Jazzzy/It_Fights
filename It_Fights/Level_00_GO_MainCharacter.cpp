@@ -27,6 +27,7 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         [this](ColliderType colType, sf::Vector2f vector, float value){
             
             if(colType == ColliderType::HITBOX){
+                this->receiveDamage(value);
                 this->startDash(vector, 50, 0.150, true);
             }
         },
@@ -34,12 +35,13 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         //Type of the location collider
         ColliderType::HURTBOX, CollisionLayer::FRIENDLY_COLLIDER){
     
+    
+    this->controller = &myController;
+    this->attackFunction = [this](){
+        this->startAttack();
+    };
+    
 }
-
-
-#define VECTOR_LENGTH_LIMIT 0.2f
-#define HITBOX_OFFSET_X (0)
-#define HITBOX_OFFSET_Y (-15)
 
 void Level_00_GO_MainCharacter::startAttack(){
     
@@ -65,50 +67,6 @@ void Level_00_GO_MainCharacter::update(){
         this->hurtbox.setActive(true);
     }
     
-    
     Level_00_GO_BasicCharacter::update();
-    
-    
-    if(this->dashing){
-        this->dash();
-        return;
-    }
-    
-    if(!this->shouldUpdate){
-        return;
-    }
-    
-    bool connected = sf::Joystick::isConnected(0);
-    
-    
-    if(!connected){
-        return;
-    }
-    
-    
-    bool attackButtonPressed = (sf::Joystick::isButtonPressed(0, 0));
-    
-    
-    if(attackButtonPressed)
-        this->startAttack();
-    
-    float axis_x = sf::Joystick::getAxisPosition(0, sf::Joystick::X)/100.f;
-    float axis_y = sf::Joystick::getAxisPosition(0, sf::Joystick::Y)/100.f;
-    
-    sf::Vector2f movementVector(axis_x,axis_y);
-    
-    if(getVectorLength(movementVector)>1.0f){
-        movementVector = getNormalizedVector(movementVector);
-    }else if(getVectorLength(movementVector)>VECTOR_LENGTH_LIMIT){
-    }else{
-        movementVector = sf::Vector2f(0,0);
-    }
-        
-    velocity = (movementVector*this->walkingSpeed * Clock::Instance().getDeltaTime());
-    
-    this->lastHeading = this->calculateHeading(velocity);
-    
-    this->oldPosition = this->position;
-    this->position += velocity;
     
 }

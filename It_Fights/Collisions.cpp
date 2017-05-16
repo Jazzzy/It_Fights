@@ -338,21 +338,17 @@ bool Collisions::checkBoxRect(RectangleCollider * box, RectangleCollider * col ,
 void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLayer layerToCheck, float damage){
     
     this->lastInstantCircleCollider = *hitbox;
-    
+        
     for(auto it1 = this->rectHurtMap.begin() ; it1 != this->rectHurtMap.end() ; ++it1){
         
         RectangleCollider *col1 = it1->second;
         
-     
-        
         if(col1->layer == layerToCheck){
-            
             
             sf::Vector2f vector;
             vector.x=0.f;
             vector.y=0.f;
             if(this->checkInstantCircleRect(hitbox, col1, &vector)){
-            
                 col1->funcs.onCollisionCallback(ColliderType::HITBOX,vector,damage);
             
             }
@@ -362,26 +358,6 @@ void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLaye
 
 bool Collisions::checkInstantCircleRect(InstantCircleCollider * circle ,RectangleCollider * col, sf::Vector2f* vector ){
     
-    
-    //    bool intersects(CircleType circle, RectType rect)
-    //    {
-    //        circleDistance.x = abs(circle.x - rect.x);
-    //        circleDistance.y = abs(circle.y - rect.y);
-    //
-    //        if (circleDistance.x > (rect.width/2 + circle.r)) { return false; }
-    //        if (circleDistance.y > (rect.height/2 + circle.r)) { return false; }
-    //
-    //        if (circleDistance.x <= (rect.width/2)) { return true; }
-    //        if (circleDistance.y <= (rect.height/2)) { return true; }
-    //
-    //        cornerDistance_sq = (circleDistance.x - rect.width/2)^2 +  (circleDistance.y - rect.height/2)^2;
-    //
-    //        return (cornerDistance_sq <= (circle.r^2));
-    //    }
-    
-    
-//    vector->x = ((col->lastOrigin.x + (col->size.x/2.)) - circle->x);
-//    vector->y = ((col->lastOrigin.y + (col->size.y/2.)) - circle->y);
 
     vector->x = ((col->lastOrigin.x) - circle->x);
     vector->y = ((col->lastOrigin.y) - circle->y);

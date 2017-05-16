@@ -55,3 +55,11 @@ void Level_00_GO_Characters::update(){
     this->mainCharacter.update();
     this->enemyCharacter.update();
 }
+
+Level_00_GO_MainCharacter * Level_00_GO_Characters::getMainCharacter(){
+    return &(this->mainCharacter);
+}
+
+Level_00_GO_EnemyCharacter * Level_00_GO_Characters::getEnemyCharacter(){
+    return &(this->enemyCharacter);
+}

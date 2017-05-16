@@ -73,7 +73,9 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     
     this->position = position;
     this->oldPosition = this->position;
-    this->walkingSpeed = 130.0f;
+    this->walkingSpeed = 130.f;
+    this->health = 100.f;
+    this->maxHealth= 100.f;
     this->lastHeading = Heading::DOWN;
     this->shouldUpdate = true;
     
@@ -82,12 +84,24 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     this->attackRadious = 28.f; //Previously 35
     
     
+    this->attackFunction = [](){};
     
     this->dashMagnitude = 20.;
     this->dashMillis = .2;
 }
 Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){}
 
+void Level_00_GO_BasicCharacter::receiveDamage(float damage){
+    this->health-= damage;
+    if(this->health<=0.){
+        this->health = 0.;
+        this->die();
+    }
+}
+
+void Level_00_GO_BasicCharacter::die(){
+    //@TODO
+}
 
 void Level_00_GO_BasicCharacter::manageCollisionWithVector( sf::Vector2f vector ){
     
@@ -96,6 +110,9 @@ void Level_00_GO_BasicCharacter::manageCollisionWithVector( sf::Vector2f vector 
     
 }
 
+float Level_00_GO_BasicCharacter::getHealthNormalized(){
+    return this->health/this->maxHealth;
+}
 
 
 Heading Level_00_GO_BasicCharacter::calculateHeading(sf::Vector2f velocity){
@@ -120,6 +137,7 @@ Heading Level_00_GO_BasicCharacter::calculateHeading(sf::Vector2f velocity){
     
 }
 
+#define VECTOR_LENGTH_LIMIT 0.2f
 
 void Level_00_GO_BasicCharacter::update(){
     
@@ -129,6 +147,43 @@ void Level_00_GO_BasicCharacter::update(){
     if(!this->locationCollider.isActive()){
         this->locationCollider.setActive(true);
     }
+    
+    if(this->dashing){
+        this->dash();
+        return;
+    }
+    
+    if(!this->shouldUpdate){
+        return;
+    }
+    
+    bool connected = this->controller->isConnected();
+    
+    
+    if(!connected){
+        return;
+    }
+    
+    bool attackButtonPressed = this->controller->isAttackButtonPressed();
+    
+    if(attackButtonPressed)
+    this->attackFunction();
+    
+    sf::Vector2f movementVector = this->controller->getJoystickAxisPosition();
+    
+    if(getVectorLength(movementVector)>1.0f){
+        movementVector = getNormalizedVector(movementVector);
+    }else if(getVectorLength(movementVector)>VECTOR_LENGTH_LIMIT){
+    }else{
+        movementVector = sf::Vector2f(0,0);
+    }
+    
+    velocity = (movementVector*this->walkingSpeed * Clock::Instance().getDeltaTime());
+    
+    this->lastHeading = this->calculateHeading(velocity);
+    
+    this->oldPosition = this->position;
+    this->position += velocity;
     
 }
 

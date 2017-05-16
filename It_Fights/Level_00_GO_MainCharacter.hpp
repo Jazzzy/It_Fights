@@ -10,6 +10,7 @@
 #define Level_00_GO_MainCharacter_hpp
 
 #include "Level_00_GO_BasicCharacter.hpp"
+#include "MainCharacterController.hpp"
 
 
 /*
@@ -28,6 +29,9 @@ public:
 private:
     BoxCollider hurtbox;
     void startAttack();
+    
+    
+    MainCharacterController myController;
 
 };
 
