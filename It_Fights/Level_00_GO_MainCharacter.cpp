@@ -43,6 +43,34 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
     
 }
 
+void Level_00_GO_MainCharacter::onStart(){
+
+    Level_00_GO_BasicCharacter::onStart();
+    
+    if(!this->hurtbox.isRegistered()){
+        this->hurtbox.registerCollider();
+    }
+    if(!this->hurtbox.isActive()){
+        this->hurtbox.setActive(true);
+    }
+}
+
+void Level_00_GO_MainCharacter::onEnd(){
+    
+    
+    if(this->hurtbox.isActive()){
+        this->hurtbox.setActive(false);
+    }
+    if(this->hurtbox.isRegistered()){
+        this->hurtbox.unregisterCollider();
+    }
+    
+    Level_00_GO_BasicCharacter::onEnd();
+    
+}
+
+
+
 void Level_00_GO_MainCharacter::startAttack(){
     
     Level_00_GO_BasicCharacter::startAttack();
@@ -59,13 +87,6 @@ void Level_00_GO_MainCharacter::startAttack(){
 
 
 void Level_00_GO_MainCharacter::update(){
-    
-    if(!this->hurtbox.isRegistered()){
-        this->hurtbox.registerCollider();
-    }
-    if(!this->hurtbox.isActive()){
-        this->hurtbox.setActive(true);
-    }
     
     Level_00_GO_BasicCharacter::update();
     

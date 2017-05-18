@@ -96,6 +96,9 @@ void Level_00_GO_Ground::draw(sf::RenderTarget *renderTarget){
     
 }
 
+void Level_00_GO_Ground::onStart(){}
+void Level_00_GO_Ground::onEnd(){}
+
 void Level_00_GO_Ground::drawNoise(sf::RenderTarget *renderTarget){
     
     this->noiseTexture.clear(sf::Color::Black);

@@ -26,6 +26,8 @@ public:
      and apply it to the character controlled.
      */
     void update();
+    void onStart();
+    void onEnd();
 private:
     BoxCollider hurtbox;
     void startAttack();

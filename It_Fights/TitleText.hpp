@@ -17,6 +17,8 @@ public:
     ~TitleText();
     void update();
     void draw(sf::RenderTarget *renderTarget);
+    void onStart(){}
+    void onEnd(){}
 private:
     sf::Font mainFont;
     

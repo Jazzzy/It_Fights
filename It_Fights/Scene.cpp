@@ -9,6 +9,7 @@
 #include "Scene.hpp"
 #include "Systems.hpp"
 #include "Game.hpp"
+#include "DebugUtilities.hpp"
 
 extern Game game;
 
@@ -60,4 +61,17 @@ void Scene::draw(sf::RenderTarget *renderTarget){
         renderTarget->setView(renderTarget->getDefaultView());
     }
     
+}
+
+void Scene::onStart(){
+    for(auto iter = this->listOfGameObjects.begin(); iter!=this->listOfGameObjects.end(); ++iter ){
+        (*iter)->onStart();
+    }
+}
+
+
+void Scene::onEnd(){
+    for(auto iter = this->listOfGameObjects.begin(); iter!=this->listOfGameObjects.end(); ++iter ){
+        (*iter)->onEnd();
+    }
 }

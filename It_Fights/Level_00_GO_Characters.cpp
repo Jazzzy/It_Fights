@@ -21,6 +21,18 @@ mainCharacter(scene,sf::Vector2f(120,150)),
 enemyCharacter(scene,sf::Vector2f(280,150)){}
 
 
+void Level_00_GO_Characters::onStart(){
+    this->getMainCharacter()->onStart();
+    this->getEnemyCharacter()->onStart();
+}
+
+
+void Level_00_GO_Characters::onEnd(){
+    this->getMainCharacter()->onEnd();
+    this->getEnemyCharacter()->onEnd();
+}
+
+
 /*
  This is the scruct used to compare the position of the two characters
  and sort the array
@@ -47,7 +59,7 @@ void Level_00_GO_Characters::draw(sf::RenderTarget * renderTarget){
     for(auto it = characterVector.begin() ; it != characterVector.end() ; ++it ){
         (*it)->draw(renderTarget);
     }
-
+    
 }
 
 //We simply call the update method of both characters

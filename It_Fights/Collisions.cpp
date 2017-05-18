@@ -17,7 +17,7 @@ Collisions::Collisions(MessageBus * messageBus) : BusNode(Systems::S_Collisions,
     
     this->colliderCounter = 1;
     
-    this->shouldDraw = false;
+    this->shouldDraw = true;
     
 }
 

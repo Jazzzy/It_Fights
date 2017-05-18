@@ -24,6 +24,8 @@ public:
     void applyFullScreenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture);
     void update();
     void addGameObject(GameObject *gameObject);
+    void onStart();
+    void onEnd();
     
 private:
     std::vector<GameObject*> listOfGameObjects;

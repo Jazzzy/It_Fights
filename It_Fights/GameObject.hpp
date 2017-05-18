@@ -20,6 +20,8 @@ public:
     virtual ~GameObject() {}
     virtual void update() = 0;
     virtual void draw(sf::RenderTarget *renderTarget) = 0;
+    virtual void onStart() = 0;
+    virtual void onEnd() = 0;
 protected:
     Scene* scene;
 };

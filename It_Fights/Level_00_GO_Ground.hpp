@@ -22,6 +22,8 @@ public:
     ~Level_00_GO_Ground();
     void update();
     void draw(sf::RenderTarget *renderTarget);
+    void onStart();
+    void onEnd();
 private:
     GroundNoiseShader noiseShader;
     sf::RenderTexture noiseTexture;

@@ -16,9 +16,16 @@ windowSystem (&messageBus,&consoleSystem,&collisionSystem,"It_fights",2000,1500)
 inputSystem (&messageBus,&windowSystem),
 collisionSystem(&messageBus){
     
+    
+    this->gameState.getScene()->onStart();
+    
 }
 
-Game::~Game(){}
+Game::~Game(){
+
+    this->gameState.getScene()->onEnd();
+
+}
 
 GameState * Game::getGameState(){
     return &this->gameState;

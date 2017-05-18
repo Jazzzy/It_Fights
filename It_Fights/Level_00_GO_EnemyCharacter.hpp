@@ -26,6 +26,8 @@ public:
      from the AI system and apply it to the enemy.
      */
     void update();
+    void onStart();
+    void onEnd();
 private:
     BoxCollider hurtbox;
     void startAttack();

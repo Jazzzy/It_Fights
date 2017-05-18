@@ -89,7 +89,32 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     this->dashMagnitude = 20.;
     this->dashMillis = .2;
 }
+
 Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){}
+
+void Level_00_GO_BasicCharacter::onStart(){
+        
+    if(!this->locationCollider.isRegistered()){
+        this->locationCollider.registerCollider();
+    }
+    if(!this->locationCollider.isActive()){
+        this->locationCollider.setActive(true);
+    }
+    
+}
+
+void Level_00_GO_BasicCharacter::onEnd(){
+    
+    if(this->locationCollider.isActive()){
+        this->locationCollider.setActive(false);
+    }
+    
+    if(this->locationCollider.isRegistered()){
+        this->locationCollider.unregisterCollider();
+    }
+    
+}
+
 
 void Level_00_GO_BasicCharacter::receiveDamage(float damage){
     this->health-= damage;
@@ -141,12 +166,6 @@ Heading Level_00_GO_BasicCharacter::calculateHeading(sf::Vector2f velocity){
 
 void Level_00_GO_BasicCharacter::update(){
     
-    if(!this->locationCollider.isRegistered()){
-        this->locationCollider.registerCollider();
-    }
-    if(!this->locationCollider.isActive()){
-        this->locationCollider.setActive(true);
-    }
     
     if(this->dashing){
         this->dash();

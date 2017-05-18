@@ -43,10 +43,15 @@ class Level_00_GO_BasicCharacter : public GameObject{
 public:
     Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position);
     ~Level_00_GO_BasicCharacter();
+    
     void update();
     void draw(sf::RenderTarget * renderTarget);
+    void onStart();
+    void onEnd();
+    
     sf::Vector2f getPosition();
     float getHealthNormalized();
+    
 protected:
     Level_00_GO_BasicCharacter_AnimatedSprite animatedSprite;
     GeneralCharacterController *controller;

@@ -18,6 +18,8 @@ public:
     ~Level_00_GO_HealthBars();
     void update();
     void draw(sf::RenderTarget * renderTarget);
+    void onStart(){}
+    void onEnd(){}
 private:
     Level_00_GO_Characters * characters;
     
