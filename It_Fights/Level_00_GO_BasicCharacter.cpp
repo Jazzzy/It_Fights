@@ -71,23 +71,40 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
 {
     
     
-    this->position = position;
-    this->oldPosition = this->position;
+    
     this->walkingSpeed = 130.f;
     this->health = 100.f;
     this->maxHealth= 100.f;
+    
+    
+    this->position = position;
+    this->oldPosition = this->position;
+    this->velocity = sf::Vector2f(0.f,0.f);
+    
     this->lastHeading = Heading::DOWN;
     this->shouldUpdate = true;
     
+    this->finalDashPosition = sf::Vector2f(0.f,0.f);
+    this->startingDashPosition = sf::Vector2f(0.f,0.f);
+    this->timeRemainingForDash = 0.f;
+    this->totalDashTime = 0.f;
+    this->dashing = false;
+    this->dashMagnitude = 20.f;
+    this->dashMillis = .2f;
+    
     
     this->basicAttackDamage = 10.f;
-    this->attackRadious = 28.f; //Previously 35
-    
-    
+    this->attackRadious = 28.f;
     this->attackFunction = [](){};
+    this->attacking = false;
     
-    this->dashMagnitude = 20.;
-    this->dashMillis = .2;
+    
+    this->parrying = false;
+    this->successfulParry = false;
+    
+    
+    this->inCooldown = false;
+    
 }
 
 Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){}
@@ -117,6 +134,12 @@ void Level_00_GO_BasicCharacter::onEnd(){
 
 
 void Level_00_GO_BasicCharacter::receiveDamage(float damage){
+    
+    if(this->parrying){
+        this->successfulParry = true;
+        return;
+    }
+    
     this->health-= damage;
     if(this->health<=0.){
         this->health = 0.;
@@ -166,9 +189,12 @@ Heading Level_00_GO_BasicCharacter::calculateHeading(sf::Vector2f velocity){
 
 void Level_00_GO_BasicCharacter::update(){
     
-    
     if(this->dashing){
         this->dash();
+        return;
+    }
+    
+    if(this->inCooldown){
         return;
     }
     
@@ -176,33 +202,37 @@ void Level_00_GO_BasicCharacter::update(){
         return;
     }
     
-    bool connected = this->controller->isConnected();
-    
-    
-    if(!connected){
+    if(!this->controller->isConnected()){
         return;
     }
     
     bool attackButtonPressed = this->controller->isAttackButtonPressed();
     
     if(attackButtonPressed)
-    this->attackFunction();
+        this->attackFunction();
+    
+    bool parryButtonPressed = this->controller->isParryButtonPressed();
+    
+    if(parryButtonPressed)
+        this->startParry();
     
     sf::Vector2f movementVector = this->controller->getJoystickAxisPosition();
     
     if(getVectorLength(movementVector)>1.0f){
         movementVector = getNormalizedVector(movementVector);
     }else if(getVectorLength(movementVector)>VECTOR_LENGTH_LIMIT){
+        //You'll do nothing :P
     }else{
         movementVector = sf::Vector2f(0,0);
     }
     
-    velocity = (movementVector*this->walkingSpeed * Clock::Instance().getDeltaTime());
+    this->velocity = (movementVector*this->walkingSpeed * Clock::Instance().getDeltaTime());
     
-    this->lastHeading = this->calculateHeading(velocity);
+    this->lastHeading = this->calculateHeading(this->velocity);
     
     this->oldPosition = this->position;
-    this->position += velocity;
+    
+    this->position += this->velocity;
     
 }
 
@@ -211,6 +241,7 @@ sf::Vector2f Level_00_GO_BasicCharacter::getPosition(){
 }
 
 void Level_00_GO_BasicCharacter::startDash(sf::Vector2f direction, float magnitude, float millis, bool force){
+    
     sf::Vector2f finalPosition;
     
     this->finalDashPosition.x=this->position.x + (direction.x * magnitude);
@@ -221,9 +252,10 @@ void Level_00_GO_BasicCharacter::startDash(sf::Vector2f direction, float magnitu
     this->totalDashTime = millis;
     
     this->dashing = true;
-    
 
 }
+
+
 
 
 bool Level_00_GO_BasicCharacter::dash(){
@@ -250,10 +282,16 @@ bool Level_00_GO_BasicCharacter::dash(){
 
 void Level_00_GO_BasicCharacter::startAttack(){
     
+    if(!this->shouldUpdate){
+        return;
+    }
+    
     this->shouldUpdate = false;
+    this->attacking = true;
     
     auto finishAnimationFunction = [this](){
         this->shouldUpdate = true;
+        this->attacking = false;
     };
     
     sf::Vector2f dashVector;
@@ -284,10 +322,85 @@ void Level_00_GO_BasicCharacter::startAttack(){
     
     this->startDash(dashVector, dashMagnitude, dashMillis, false);
     
-    
 }
 
+void Level_00_GO_BasicCharacter::startParry(){
+    
+    if(!this->shouldUpdate){
+        return;
+    }
+    
+    this->shouldUpdate = false;
+    this->parrying = true;
+    this->successfulParry = false;
+    
+    auto finishAnimationFunction = [this](){
+        this->shouldUpdate = true;
+        this->parrying = false;
+        if(!this->successfulParry){
+            this->startCooldown();
+        }
+        this->successfulParry = false;
+    };
+    
+    switch(lastHeading){
+        case (Heading::DOWN):
+            this->animatedSprite.startAnimation("PARRY_DOWN", false, finishAnimationFunction);
+            break;
+        case (Heading::UP):
+            this->animatedSprite.startAnimation("PARRY_UP", false, finishAnimationFunction);
+            break;
+        case (Heading::LEFT):
+            this->animatedSprite.startAnimation("PARRY_LEFT", false, finishAnimationFunction);
+            break;
+        case (Heading::RIGHT):
+            this->animatedSprite.startAnimation("PARRY_RIGHT", false, finishAnimationFunction);
+            break;
+        default:
+            this->animatedSprite.startAnimation("IDLE_DOWN", false, finishAnimationFunction);
+            break;
+    }
+}
+
+void Level_00_GO_BasicCharacter::startCooldown(){
+    
+    if(!this->shouldUpdate){
+        return;
+    }
+    
+    this->shouldUpdate = false;
+    this->inCooldown = true;
+    
+    auto finishAnimationFunction = [this](){
+        this->shouldUpdate = true;
+        this->inCooldown = false;
+    };
+    
+    switch(lastHeading){
+        case (Heading::DOWN):
+            this->animatedSprite.startAnimation("PARRYCOOLDOWN_DOWN", false, finishAnimationFunction);
+            break;
+        case (Heading::UP):
+            this->animatedSprite.startAnimation("PARRYCOOLDOWN_UP", false, finishAnimationFunction);
+            break;
+        case (Heading::LEFT):
+            this->animatedSprite.startAnimation("PARRYCOOLDOWN_LEFT", false, finishAnimationFunction);
+            break;
+        case (Heading::RIGHT):
+            this->animatedSprite.startAnimation("PARRYCOOLDOWN_RIGHT", false, finishAnimationFunction);
+            break;
+        default:
+            this->animatedSprite.startAnimation("IDLE_DOWN", false, finishAnimationFunction);
+            break;
+    }
+}
+
+
 void Level_00_GO_BasicCharacter::tryToUpdateAnimation(){
+    
+    if(this->attacking || this->parrying || this->inCooldown){
+        return;
+    }
     
     if(getVectorLength(velocity) > 0.0f){   //We are moving
         switch(lastHeading){
@@ -340,9 +453,7 @@ void Level_00_GO_BasicCharacter::draw(sf::RenderTarget * renderTarget){
     
     this->animatedSprite.update();
     
-    
     sf::Sprite mainCharSprite = this->animatedSprite.getCurrentSprite();
-    
     
     mainCharSprite.move(this->position);
     

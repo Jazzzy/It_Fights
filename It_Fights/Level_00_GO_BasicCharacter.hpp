@@ -77,7 +77,7 @@ protected:
     BoxCollider locationCollider;
     void manageCollisionWithVector(sf::Vector2f velocity);
     
-    void startDash(sf::Vector2f direction, float magnitude, float millis, bool force);
+    void startDash(sf::Vector2f direction, float magnitude, float seconds, bool force);
     bool dash();
     sf::Vector2f finalDashPosition;
     sf::Vector2f startingDashPosition;
@@ -89,8 +89,17 @@ protected:
     
     float basicAttackDamage;
     float attackRadious;
-    
     void startAttack();
+    bool attacking;
+    
+    
+    void startParry();
+    bool parrying;
+    bool successfulParry;
+    
+    
+    void startCooldown();
+    bool inCooldown;
     
 };
 

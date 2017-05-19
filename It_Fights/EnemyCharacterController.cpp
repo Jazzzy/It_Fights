@@ -27,6 +27,10 @@ bool EnemyCharacterController::isAttackButtonPressed(){
     return false;
 }
 
+bool EnemyCharacterController::isParryButtonPressed(){
+    return false;
+}
+
 
 sf::Vector2f EnemyCharacterController::getJoystickAxisPosition(){
     return sf::Vector2f(((float)rand()-(RAND_MAX/2.f))/(float)RAND_MAX,((float)rand()-(RAND_MAX/2.f))/(float)RAND_MAX);

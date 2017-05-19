@@ -24,8 +24,13 @@ bool MainCharacterController::isConnected(){
 
 
 bool MainCharacterController::isAttackButtonPressed(){
-    return (sf::Joystick::isButtonPressed(0, 0));
+    return sf::Joystick::isButtonPressed(0, 0);
 }
+
+bool MainCharacterController::isParryButtonPressed(){
+    return sf::Joystick::isButtonPressed(0, 1);
+}
+
 
 
 sf::Vector2f MainCharacterController::getJoystickAxisPosition(){

@@ -1,754 +1,834 @@
 { "frames": [
-   {
-    "filename": "prota_0.2 0.ase",
-    "frame": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 1.ase",
-    "frame": { "x": 64, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 2.ase",
-    "frame": { "x": 128, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 3.ase",
-    "frame": { "x": 192, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 4.ase",
-    "frame": { "x": 256, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 5.ase",
-    "frame": { "x": 320, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 6.ase",
-    "frame": { "x": 384, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 7.ase",
-    "frame": { "x": 448, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 8.ase",
-    "frame": { "x": 512, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 9.ase",
-    "frame": { "x": 576, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 10.ase",
-    "frame": { "x": 640, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 11.ase",
-    "frame": { "x": 704, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 12.ase",
-    "frame": { "x": 768, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 13.ase",
-    "frame": { "x": 832, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 14.ase",
-    "frame": { "x": 896, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 15.ase",
-    "frame": { "x": 960, "y": 0, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 16.ase",
-    "frame": { "x": 0, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 17.ase",
-    "frame": { "x": 64, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 18.ase",
-    "frame": { "x": 128, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 19.ase",
-    "frame": { "x": 192, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 20.ase",
-    "frame": { "x": 256, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 21.ase",
-    "frame": { "x": 320, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 22.ase",
-    "frame": { "x": 384, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 23.ase",
-    "frame": { "x": 448, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 24.ase",
-    "frame": { "x": 512, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 25.ase",
-    "frame": { "x": 576, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 26.ase",
-    "frame": { "x": 640, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 27.ase",
-    "frame": { "x": 704, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 28.ase",
-    "frame": { "x": 768, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 29.ase",
-    "frame": { "x": 832, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 30.ase",
-    "frame": { "x": 896, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 31.ase",
-    "frame": { "x": 960, "y": 64, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 32.ase",
-    "frame": { "x": 0, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 33.ase",
-    "frame": { "x": 64, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 34.ase",
-    "frame": { "x": 128, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 35.ase",
-    "frame": { "x": 192, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 36.ase",
-    "frame": { "x": 256, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 37.ase",
-    "frame": { "x": 320, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 38.ase",
-    "frame": { "x": 384, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 39.ase",
-    "frame": { "x": 448, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 40.ase",
-    "frame": { "x": 512, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 41.ase",
-    "frame": { "x": 576, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 42.ase",
-    "frame": { "x": 640, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 43.ase",
-    "frame": { "x": 704, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 44.ase",
-    "frame": { "x": 768, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 45.ase",
-    "frame": { "x": 832, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 46.ase",
-    "frame": { "x": 896, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 47.ase",
-    "frame": { "x": 960, "y": 128, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 48.ase",
-    "frame": { "x": 0, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 49.ase",
-    "frame": { "x": 64, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 50.ase",
-    "frame": { "x": 128, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 51.ase",
-    "frame": { "x": 192, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 52.ase",
-    "frame": { "x": 256, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 53.ase",
-    "frame": { "x": 320, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 54.ase",
-    "frame": { "x": 384, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 55.ase",
-    "frame": { "x": 448, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 56.ase",
-    "frame": { "x": 512, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 57.ase",
-    "frame": { "x": 576, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 58.ase",
-    "frame": { "x": 640, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 59.ase",
-    "frame": { "x": 704, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 60.ase",
-    "frame": { "x": 768, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 61.ase",
-    "frame": { "x": 832, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 62.ase",
-    "frame": { "x": 896, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 63.ase",
-    "frame": { "x": 960, "y": 192, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 64.ase",
-    "frame": { "x": 0, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 65.ase",
-    "frame": { "x": 64, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 66.ase",
-    "frame": { "x": 128, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 67.ase",
-    "frame": { "x": 192, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 68.ase",
-    "frame": { "x": 256, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 69.ase",
-    "frame": { "x": 320, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 70.ase",
-    "frame": { "x": 384, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 71.ase",
-    "frame": { "x": 448, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 72.ase",
-    "frame": { "x": 512, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 73.ase",
-    "frame": { "x": 576, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 74.ase",
-    "frame": { "x": 640, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 30
-   },
-   {
-    "filename": "prota_0.2 75.ase",
-    "frame": { "x": 704, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 76.ase",
-    "frame": { "x": 768, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 77.ase",
-    "frame": { "x": 832, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 78.ase",
-    "frame": { "x": 896, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   },
-   {
-    "filename": "prota_0.2 79.ase",
-    "frame": { "x": 960, "y": 256, "w": 64, "h": 64 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
-    "sourceSize": { "w": 64, "h": 64 },
-    "duration": 80
-   }
- ],
- "meta": {
-  "app": "http://www.aseprite.org/",
-  "version": "1.1.13",
-  "image": "/Users/jazzzy/GitProjects/It_Fights/It_Fights/prota_0.2.png",
-  "format": "RGBA8888",
-  "size": { "w": 1024, "h": 512 },
-  "pivot": {"x":0.5,"y":0.671875},
-  "scale": "1",
-  "frameTags": [
-   { "name": "IDLE_LEFT", "from": 0, "to": 0, "direction": "forward" },
-   { "name": "RUN_LEFT", "from": 1, "to": 12, "direction": "forward" },
-   { "name": "IDLE_RIGHT", "from": 13, "to": 13, "direction": "forward" },
-   { "name": "RUN_RIGHT", "from": 14, "to": 25, "direction": "forward" },
-   { "name": "IDLE_UP", "from": 26, "to": 26, "direction": "forward" },
-   { "name": "RUN_UP", "from": 27, "to": 38, "direction": "forward" },
-   { "name": "IDLE_DOWN", "from": 39, "to": 39, "direction": "forward" },
-   { "name": "RUN_DOWN", "from": 40, "to": 51, "direction": "forward" },
-   { "name": "ATTACK_RIGHT", "from": 52, "to": 58, "direction": "forward" },
-   { "name": "ATTACK_LEFT", "from": 59, "to": 65, "direction": "forward" },
-   { "name": "ATTACK_UP", "from": 66, "to": 72, "direction": "forward" },
-   { "name": "ATTACK_DOWN", "from": 73, "to": 79, "direction": "forward" }
-  ],
-  "layers": [
-   { "name": "bottom", "opacity": 255, "blendMode": "normal" },
-   { "name": "leftArm", "opacity": 255, "blendMode": "normal" },
-   { "name": "head", "opacity": 255, "blendMode": "normal" },
-   { "name": "legs", "opacity": 255, "blendMode": "normal" },
-   { "name": "body", "opacity": 255, "blendMode": "normal" },
-   { "name": "rightArm", "opacity": 255, "blendMode": "normal" }
-  ]
- }
+             {
+             "filename": "prota_0.2 0.ase",
+             "frame": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 1.ase",
+             "frame": { "x": 64, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 2.ase",
+             "frame": { "x": 128, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 3.ase",
+             "frame": { "x": 192, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 4.ase",
+             "frame": { "x": 256, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 5.ase",
+             "frame": { "x": 320, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 6.ase",
+             "frame": { "x": 384, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 7.ase",
+             "frame": { "x": 448, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 8.ase",
+             "frame": { "x": 512, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 9.ase",
+             "frame": { "x": 576, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 10.ase",
+             "frame": { "x": 640, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 11.ase",
+             "frame": { "x": 704, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 12.ase",
+             "frame": { "x": 768, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 13.ase",
+             "frame": { "x": 832, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 14.ase",
+             "frame": { "x": 896, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 15.ase",
+             "frame": { "x": 960, "y": 0, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 16.ase",
+             "frame": { "x": 0, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 17.ase",
+             "frame": { "x": 64, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 18.ase",
+             "frame": { "x": 128, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 19.ase",
+             "frame": { "x": 192, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 20.ase",
+             "frame": { "x": 256, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 21.ase",
+             "frame": { "x": 320, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 22.ase",
+             "frame": { "x": 384, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 23.ase",
+             "frame": { "x": 448, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 24.ase",
+             "frame": { "x": 512, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 25.ase",
+             "frame": { "x": 576, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 26.ase",
+             "frame": { "x": 640, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 27.ase",
+             "frame": { "x": 704, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 28.ase",
+             "frame": { "x": 768, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 29.ase",
+             "frame": { "x": 832, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 30.ase",
+             "frame": { "x": 896, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 31.ase",
+             "frame": { "x": 960, "y": 64, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 32.ase",
+             "frame": { "x": 0, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 33.ase",
+             "frame": { "x": 64, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 34.ase",
+             "frame": { "x": 128, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 35.ase",
+             "frame": { "x": 192, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 36.ase",
+             "frame": { "x": 256, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 37.ase",
+             "frame": { "x": 320, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 38.ase",
+             "frame": { "x": 384, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 39.ase",
+             "frame": { "x": 448, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 40.ase",
+             "frame": { "x": 512, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 41.ase",
+             "frame": { "x": 576, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 42.ase",
+             "frame": { "x": 640, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 43.ase",
+             "frame": { "x": 704, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 44.ase",
+             "frame": { "x": 768, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 45.ase",
+             "frame": { "x": 832, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 46.ase",
+             "frame": { "x": 896, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 47.ase",
+             "frame": { "x": 960, "y": 128, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 48.ase",
+             "frame": { "x": 0, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 49.ase",
+             "frame": { "x": 64, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 50.ase",
+             "frame": { "x": 128, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 51.ase",
+             "frame": { "x": 192, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 52.ase",
+             "frame": { "x": 256, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 53.ase",
+             "frame": { "x": 320, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 54.ase",
+             "frame": { "x": 384, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 55.ase",
+             "frame": { "x": 448, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 56.ase",
+             "frame": { "x": 512, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 57.ase",
+             "frame": { "x": 576, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 58.ase",
+             "frame": { "x": 640, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 59.ase",
+             "frame": { "x": 704, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 60.ase",
+             "frame": { "x": 768, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 61.ase",
+             "frame": { "x": 832, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 62.ase",
+             "frame": { "x": 896, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 63.ase",
+             "frame": { "x": 960, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 64.ase",
+             "frame": { "x": 0, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 65.ase",
+             "frame": { "x": 64, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 66.ase",
+             "frame": { "x": 128, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 67.ase",
+             "frame": { "x": 192, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 68.ase",
+             "frame": { "x": 256, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 69.ase",
+             "frame": { "x": 320, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 70.ase",
+             "frame": { "x": 384, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 71.ase",
+             "frame": { "x": 448, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 72.ase",
+             "frame": { "x": 512, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 73.ase",
+             "frame": { "x": 576, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 74.ase",
+             "frame": { "x": 640, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 30
+             },
+             {
+             "filename": "prota_0.2 75.ase",
+             "frame": { "x": 704, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 76.ase",
+             "frame": { "x": 768, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 77.ase",
+             "frame": { "x": 832, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 78.ase",
+             "frame": { "x": 896, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 79.ase",
+             "frame": { "x": 960, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 80
+             },
+             {
+             "filename": "prota_0.2 80.ase",
+             "frame": { "x": 256, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 500
+             },
+             {
+             "filename": "prota_0.2 81.ase",
+             "frame": { "x": 704, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 500
+             },
+             {
+             "filename": "prota_0.2 82.ase",
+             "frame": { "x": 128, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 500
+             },
+             {
+             "filename": "prota_0.2 83.ase",
+             "frame": { "x": 576, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 500
+             },
+             {
+             "filename": "prota_0.2 84.ase",
+             "frame": { "x": 320, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 700
+             },
+             {
+             "filename": "prota_0.2 85.ase",
+             "frame": { "x": 768, "y": 192, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 700
+             },
+             {
+             "filename": "prota_0.2 86.ase",
+             "frame": { "x": 192, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 700
+             },
+             {
+             "filename": "prota_0.2 87.ase",
+             "frame": { "x": 640, "y": 256, "w": 64, "h": 64 },
+             "rotated": false,
+             "trimmed": false,
+             "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
+             "sourceSize": { "w": 64, "h": 64 },
+             "duration": 700
+             }
+             ],
+    "meta": {
+        "app": "http://www.aseprite.org/",
+        "version": "1.1.13",
+        "image": "/Users/jazzzy/GitProjects/It_Fights/It_Fights/prota_0.2.png",
+        "format": "RGBA8888",
+        "size": { "w": 1024, "h": 512 },
+        "pivot": {"x":0.5,"y":0.671875},
+        "scale": "1",
+        "frameTags": [
+                      { "name": "IDLE_LEFT", "from": 0, "to": 0, "direction": "forward" },
+                      { "name": "RUN_LEFT", "from": 1, "to": 12, "direction": "forward" },
+                      { "name": "IDLE_RIGHT", "from": 13, "to": 13, "direction": "forward" },
+                      { "name": "RUN_RIGHT", "from": 14, "to": 25, "direction": "forward" },
+                      { "name": "IDLE_UP", "from": 26, "to": 26, "direction": "forward" },
+                      { "name": "RUN_UP", "from": 27, "to": 38, "direction": "forward" },
+                      { "name": "IDLE_DOWN", "from": 39, "to": 39, "direction": "forward" },
+                      { "name": "RUN_DOWN", "from": 40, "to": 51, "direction": "forward" },
+                      { "name": "ATTACK_RIGHT", "from": 52, "to": 58, "direction": "forward" },
+                      { "name": "ATTACK_LEFT", "from": 59, "to": 65, "direction": "forward" },
+                      { "name": "ATTACK_UP", "from": 66, "to": 72, "direction": "forward" },
+                      { "name": "ATTACK_DOWN", "from": 73, "to": 79, "direction": "forward" },
+                      { "name": "PARRYCOOLDOWN_RIGHT", "from": 80, "to": 80, "direction": "forward" },
+                      { "name": "PARRYCOOLDOWN_LEFT", "from": 81, "to": 81, "direction": "forward" },
+                      { "name": "PARRYCOOLDOWN_UP", "from": 82, "to": 82, "direction": "forward" },
+                      { "name": "PARRYCOOLDOWN_DOWN", "from": 83, "to": 83, "direction": "forward" },
+                      { "name": "PARRY_RIGHT", "from": 84, "to": 84, "direction": "forward" },
+                      { "name": "PARRY_LEFT", "from": 85, "to": 85, "direction": "forward" },
+                      { "name": "PARRY_UP", "from": 86, "to": 86, "direction": "forward" },
+                      { "name": "PARRY_DOWN", "from": 87, "to": 87, "direction": "forward" }
+                      ],
+        "layers": [
+                   { "name": "bottom", "opacity": 255, "blendMode": "normal" },
+                   { "name": "leftArm", "opacity": 255, "blendMode": "normal" },
+                   { "name": "head", "opacity": 255, "blendMode": "normal" },
+                   { "name": "legs", "opacity": 255, "blendMode": "normal" },
+                   { "name": "body", "opacity": 255, "blendMode": "normal" },
+                   { "name": "rightArm", "opacity": 255, "blendMode": "normal" }
+                   ]
+    }
 }

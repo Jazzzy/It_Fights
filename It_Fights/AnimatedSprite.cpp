@@ -81,10 +81,10 @@ AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheet
             AnimationData animData;
             animData.name = currAnimData["name"];
             
-            
             for(unsigned int i = currAnimData["from"]; i <= (unsigned int)currAnimData["to"] ;i++){
                 animData.frames.push_back(i);
             }
+            
             this->animationMap[animData.name]=animData;
             
         }
@@ -118,7 +118,6 @@ std::string AnimatedSprite::getCurrentAnimation(){
 
 
 void AnimatedSprite::startAnimation(std::string name, bool loop,std::function<void()> callback){
- 
     
     if(currentAnimationName.compare(name)==0 && loop ){
         return; //Trying to set the same animation
@@ -132,21 +131,17 @@ void AnimatedSprite::startAnimation(std::string name, bool loop,std::function<vo
     FrameData * fPtr = &(this->frameMap[*(this->currentAnimationData.currentFrame)]);
     this->timePerFrame = ((float)fPtr->durationMillis)/1000.f;
     
-    
-    
-    
 }
 
 void AnimatedSprite::goToNextFrame(){
-    
     
     this->currentAnimationData.currentFrame++;
     if(this->currentAnimationData.currentFrame == this->currentAnimationData.frames.end()){
         if(loop){
             this->currentAnimationData.currentFrame = this->currentAnimationData.frames.begin();
         }else{
-            this->callbackAnimationEnd();
             this->currentAnimationData.currentFrame--;
+            this->callbackAnimationEnd();
         }
     }else{
         
@@ -175,8 +170,8 @@ void AnimatedSprite::draw(sf::RenderTarget *renderTarget){
     
 }
 
-
 sf::Sprite AnimatedSprite::getCurrentSprite(){
+    
     return getSprite(*(this->currentAnimationData.currentFrame));
 }
 

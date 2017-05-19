@@ -19,6 +19,7 @@ public:
     
     virtual bool isConnected();
     virtual bool isAttackButtonPressed();
+    virtual bool isParryButtonPressed();
     virtual sf::Vector2f getJoystickAxisPosition();
 
 
