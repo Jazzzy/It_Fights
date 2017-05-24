@@ -22,6 +22,14 @@ public:
     virtual bool isParryButtonPressed();
     virtual sf::Vector2f getJoystickAxisPosition();
     
+    void setAttackButton(bool pressed);
+    void setParryButton(bool pressed);
+    void setJoystickPosition(sf::Vector2f vector);
+    
+private:
+    bool attackButtonPressed;
+    bool parryButtonPressed;
+    sf::Vector2f joystickAxis;
     
 };
 

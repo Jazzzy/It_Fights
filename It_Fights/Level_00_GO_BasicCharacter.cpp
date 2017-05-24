@@ -133,11 +133,18 @@ void Level_00_GO_BasicCharacter::onEnd(){
 }
 
 
-void Level_00_GO_BasicCharacter::receiveDamage(float damage){
+bool Level_00_GO_BasicCharacter::receiveDamage(float damage){
     
     if(this->parrying){
         this->successfulParry = true;
-        return;
+        this->shouldUpdate = true;
+        this->parrying= false;
+        
+        this->parryCounter();
+        
+        prints("PARRIED!!");
+        
+        return false;
     }
     
     this->health-= damage;
@@ -145,6 +152,12 @@ void Level_00_GO_BasicCharacter::receiveDamage(float damage){
         this->health = 0.;
         this->die();
     }
+    
+    return true;
+}
+
+void Level_00_GO_BasicCharacter::parryCounter(){
+    //@TODO
 }
 
 void Level_00_GO_BasicCharacter::die(){
@@ -277,6 +290,26 @@ bool Level_00_GO_BasicCharacter::dash(){
     
     return true;
 
+}
+
+sf::Vector2f Level_00_GO_BasicCharacter::getVelocity(){
+    return this->velocity;
+}
+
+Heading Level_00_GO_BasicCharacter::getHeading(){
+    return this->lastHeading;
+}
+
+bool Level_00_GO_BasicCharacter::isAttacking(){
+    return this->attacking;
+}
+
+bool Level_00_GO_BasicCharacter::isParrying(){
+    return this->parrying;
+}
+
+bool Level_00_GO_BasicCharacter::isOnCooldown(){
+    return this->inCooldown;
 }
 
 

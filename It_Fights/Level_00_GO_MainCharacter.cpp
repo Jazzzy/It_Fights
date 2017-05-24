@@ -25,10 +25,10 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         
         //Function that deals with a collisions accordingly
         [this](ColliderType colType, sf::Vector2f vector, float value){
-            
             if(colType == ColliderType::HITBOX){
-                this->receiveDamage(value);
-                this->startDash(vector, 50, 0.150, true);
+                if(this->receiveDamage(value)){
+                    this->startDash(vector, 50, 0.150, true);
+                }
             }
         },
         

@@ -24,14 +24,26 @@ bool EnemyCharacterController::isConnected(){
 
 
 bool EnemyCharacterController::isAttackButtonPressed(){
-    return false;
+    return this->attackButtonPressed;
 }
 
 bool EnemyCharacterController::isParryButtonPressed(){
-    return false;
+    return this->parryButtonPressed;
 }
 
 
 sf::Vector2f EnemyCharacterController::getJoystickAxisPosition(){
-    return sf::Vector2f(((float)rand()-(RAND_MAX/2.f))/(float)RAND_MAX,((float)rand()-(RAND_MAX/2.f))/(float)RAND_MAX);
+    return this->joystickAxis;
+}
+
+void EnemyCharacterController::setAttackButton(bool pressed){
+    this->attackButtonPressed = pressed;
+}
+
+void EnemyCharacterController::setParryButton(bool pressed){
+    this->parryButtonPressed = pressed;
+}
+
+void EnemyCharacterController::setJoystickPosition(sf::Vector2f vector){
+    this->joystickAxis = vector;
 }

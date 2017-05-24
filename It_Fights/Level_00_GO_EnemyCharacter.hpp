@@ -11,7 +11,11 @@
 
 #include "Level_00_GO_BasicCharacter.hpp"
 #include "EnemyCharacterController.hpp"
+#include "Behaviour.hpp"
+#include "AIObserver.hpp"
 
+class AIObserver;
+class Behaviour;
 
 /*
  Class that represents the enemy character in the duel, this extends from our BasicCharacter class
@@ -19,7 +23,7 @@
  */
 class Level_00_GO_EnemyCharacter : public Level_00_GO_BasicCharacter{
 public:
-    Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position);
+    Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer);
     
     /*
      We override the update function to be able to read the input
@@ -28,10 +32,18 @@ public:
     void update();
     void onStart();
     void onEnd();
+    
+    AIObserver* getAIObserver();
+    
 private:
     BoxCollider hurtbox;
     void startAttack();
+    
+    
     EnemyCharacterController myController;
+    
+    Behaviour* behaviour;
+    AIObserver* observer;
 
 };
 

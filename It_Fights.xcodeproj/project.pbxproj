@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402E71311ED5E2C5008149B3 /* RuleBasedBehaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402E712F1ED5E2C5008149B3 /* RuleBasedBehaviour.cpp */; };
+		402E71341ED5E2E5008149B3 /* AIObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402E71321ED5E2E5008149B3 /* AIObserver.cpp */; };
+		402E71371ED5EAB5008149B3 /* Behaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402E71351ED5EAB5008149B3 /* Behaviour.cpp */; };
 		4049DF6C1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6A1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp */; };
 		4049DF701EAA7583008DB0E5 /* Level_00_GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */; };
 		4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */; };
@@ -62,6 +65,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		402E712F1ED5E2C5008149B3 /* RuleBasedBehaviour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuleBasedBehaviour.cpp; sourceTree = "<group>"; };
+		402E71301ED5E2C5008149B3 /* RuleBasedBehaviour.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RuleBasedBehaviour.hpp; sourceTree = "<group>"; };
+		402E71321ED5E2E5008149B3 /* AIObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AIObserver.cpp; sourceTree = "<group>"; };
+		402E71331ED5E2E5008149B3 /* AIObserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AIObserver.hpp; sourceTree = "<group>"; };
+		402E71351ED5EAB5008149B3 /* Behaviour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Behaviour.cpp; sourceTree = "<group>"; };
+		402E71361ED5EAB5008149B3 /* Behaviour.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Behaviour.hpp; sourceTree = "<group>"; };
 		4049DF6A1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_NeoPurple_DEMO.cpp; sourceTree = "<group>"; };
 		4049DF6B1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_NeoPurple_DEMO.hpp; sourceTree = "<group>"; };
 		4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_GO_Ground.cpp; sourceTree = "<group>"; };
@@ -169,6 +178,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402E712E1ED5E1F7008149B3 /* CharacterAI */ = {
+			isa = PBXGroup;
+			children = (
+				402E712F1ED5E2C5008149B3 /* RuleBasedBehaviour.cpp */,
+				402E71301ED5E2C5008149B3 /* RuleBasedBehaviour.hpp */,
+				402E71321ED5E2E5008149B3 /* AIObserver.cpp */,
+				402E71331ED5E2E5008149B3 /* AIObserver.hpp */,
+				402E71351ED5EAB5008149B3 /* Behaviour.cpp */,
+				402E71361ED5EAB5008149B3 /* Behaviour.hpp */,
+			);
+			name = CharacterAI;
+			sourceTree = "<group>";
+		};
 		4049DF691EAA7475008DB0E5 /* TopDownGamePlay */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +204,7 @@
 		4049DF6D1EAA754E008DB0E5 /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
+				402E712E1ED5E1F7008149B3 /* CharacterAI */,
 				406D18C11ECB603B0099A55D /* CharacterController */,
 				4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */,
 				4049DF6F1EAA7583008DB0E5 /* Level_00_GO_Ground.hpp */,
@@ -570,6 +593,7 @@
 				40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */,
 				40DBD6061E8F20760027E88A /* Game.cpp in Sources */,
 				4049DF6C1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp in Sources */,
+				402E71341ED5E2E5008149B3 /* AIObserver.cpp in Sources */,
 				407DEFE81E897765004263E6 /* main.cpp in Sources */,
 				4049DF701EAA7583008DB0E5 /* Level_00_GO_Ground.cpp in Sources */,
 				407DF0131E8ABE1C004263E6 /* Input.cpp in Sources */,
@@ -586,6 +610,7 @@
 				40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */,
 				408534231EB264FA001D0131 /* DebugUtilities.cpp in Sources */,
 				40D7A0F11EB0EE4F000673F2 /* BoxCollider.cpp in Sources */,
+				402E71371ED5EAB5008149B3 /* Behaviour.cpp in Sources */,
 				40C41ECD1E90293600DB11BB /* ResourceManager.cpp in Sources */,
 				4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */,
 				407DF0001E898962004263E6 /* BusNode.cpp in Sources */,
@@ -593,6 +618,7 @@
 				407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */,
 				40C41EC91E90244900DB11BB /* TitleText.cpp in Sources */,
 				406D18C01ECB52100099A55D /* Level_00_GO_HealthBars.cpp in Sources */,
+				402E71311ED5E2C5008149B3 /* RuleBasedBehaviour.cpp in Sources */,
 				40817FF71EAD301E003089A4 /* Collisions.cpp in Sources */,
 				40E3B9B91E8EA6BA001EE4AA /* InputLine.cpp in Sources */,
 				407DEFFA1E8978C2004263E6 /* MessageBus.cpp in Sources */,
@@ -729,6 +755,7 @@
 		407DEFF51E897765004263E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "It_Fights/It_Fights-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
@@ -739,10 +766,10 @@
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
-					"-v",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Debug;
@@ -750,6 +777,7 @@
 		407DEFF61E897765004263E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "It_Fights/It_Fights-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
@@ -760,10 +788,10 @@
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
-					"-v",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Release;

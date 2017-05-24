@@ -50,7 +50,13 @@ public:
     void onEnd();
     
     sf::Vector2f getPosition();
+    sf::Vector2f getVelocity();
     float getHealthNormalized();
+    
+    Heading getHeading();
+    bool isAttacking();
+    bool isParrying();
+    bool isOnCooldown();
     
 protected:
     Level_00_GO_BasicCharacter_AnimatedSprite animatedSprite;
@@ -60,7 +66,7 @@ protected:
     float walkingSpeed;
     float health;
     float maxHealth;
-    void receiveDamage(float damage);
+    bool receiveDamage(float damage);
     void die();
     
     std::function<void()> attackFunction;
@@ -96,6 +102,7 @@ protected:
     void startParry();
     bool parrying;
     bool successfulParry;
+    void parryCounter();
     
     
     void startCooldown();

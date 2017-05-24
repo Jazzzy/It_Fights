@@ -8,6 +8,7 @@
 
 #include "Level_00_GO_Characters.hpp"
 #include <array>
+#include "RuleBasedBehaviour.hpp"
 
 /*
  Constructor for this container Game Object
@@ -16,14 +17,26 @@
  
  */
 Level_00_GO_Characters::Level_00_GO_Characters(Scene* scene):
-GameObject(scene),
-mainCharacter(scene,sf::Vector2f(120,150)),
-enemyCharacter(scene,sf::Vector2f(280,150)){}
+GameObject(scene){
+
+    this->observer = new AIObserver(this);
+    this->mainCharacter = new Level_00_GO_MainCharacter(scene,sf::Vector2f(120,150));
+    this->enemyCharacter = new Level_00_GO_EnemyCharacter(scene,sf::Vector2f(280,150), observer);
+    
+    
+}
+
+Level_00_GO_Characters::~Level_00_GO_Characters(){
+    delete this->observer;
+}
 
 
 void Level_00_GO_Characters::onStart(){
     this->getMainCharacter()->onStart();
     this->getEnemyCharacter()->onStart();
+    
+    //We force an update here to force the early failure in case of error
+    this->observer->getFightState(true);
 }
 
 
@@ -49,7 +62,7 @@ struct {
  */
 void Level_00_GO_Characters::draw(sf::RenderTarget * renderTarget){
     
-    std::array <Level_00_GO_BasicCharacter*,2> characterVector = {&this->mainCharacter, &this->enemyCharacter};
+    std::array <Level_00_GO_BasicCharacter*,2> characterVector = {this->mainCharacter, this->enemyCharacter};
     
     //We sort the characters by position
     std::sort(characterVector.begin(), characterVector.end(), comp);
@@ -64,14 +77,14 @@ void Level_00_GO_Characters::draw(sf::RenderTarget * renderTarget){
 
 //We simply call the update method of both characters
 void Level_00_GO_Characters::update(){
-    this->mainCharacter.update();
-    this->enemyCharacter.update();
+    this->mainCharacter->update();
+    this->enemyCharacter->update();
 }
 
 Level_00_GO_MainCharacter * Level_00_GO_Characters::getMainCharacter(){
-    return &(this->mainCharacter);
+    return (this->mainCharacter);
 }
 
 Level_00_GO_EnemyCharacter * Level_00_GO_Characters::getEnemyCharacter(){
-    return &(this->enemyCharacter);
+    return (this->enemyCharacter);
 }

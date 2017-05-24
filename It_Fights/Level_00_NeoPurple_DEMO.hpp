@@ -9,7 +9,6 @@
 #ifndef Level_00_NeoPurple_DEMO_hpp
 #define Level_00_NeoPurple_DEMO_hpp
 
-#include <stdio.h>
 #include <Scene.hpp>
 #include "Level_00_GO_Ground.hpp"
 #include "Level_00_GO_Characters.hpp"

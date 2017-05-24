@@ -12,17 +12,23 @@
 #include "GameObject.hpp"
 #include "Level_00_GO_MainCharacter.hpp"
 #include "Level_00_GO_EnemyCharacter.hpp"
+#include "AIObserver.hpp"
+
+class AIObserver;
+class Level_00_GO_EnemyCharacter;
 
 /*
  This is a container Game Object used to store the two characters.
  
  This needs to be done because we need custom draw functionality to sort
- both characters depending on their Y position on the screen
+ both characters depending on their Y position on the screen and its a good way
+ of encapsulating both the player and the enemy.
  
  */
 class Level_00_GO_Characters : public GameObject {
 public:
     Level_00_GO_Characters(Scene* scene);
+    ~Level_00_GO_Characters();
     
     /*
      Function used to sort out characters
@@ -44,8 +50,9 @@ public:
     Level_00_GO_EnemyCharacter * getEnemyCharacter();
     
 private:
-    Level_00_GO_MainCharacter mainCharacter;
-    Level_00_GO_EnemyCharacter enemyCharacter;
+    Level_00_GO_MainCharacter *mainCharacter;
+    Level_00_GO_EnemyCharacter *enemyCharacter;
+    AIObserver * observer;
     
 };
 

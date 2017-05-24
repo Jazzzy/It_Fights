@@ -9,10 +9,11 @@
 #include "Level_00_GO_EnemyCharacter.hpp"
 #include "DebugUtilities.hpp"
 #include "Game.hpp"
+#include "RuleBasedBehaviour.hpp"
 extern Game game;
 
 
-Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position) : Level_00_GO_BasicCharacter(scene, position),
+Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer) : Level_00_GO_BasicCharacter(scene, position),
 hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         
         //Function that returs the position in which the location collider should be positioned
@@ -24,8 +25,9 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         [this](ColliderType colType, sf::Vector2f vector, float value){
             
             if(colType == ColliderType::HITBOX){
-                this->receiveDamage(value);
-                this->startDash(vector, 50, 0.150, true);
+                if(this->receiveDamage(value)){
+                    this->startDash(vector, 50, 0.150, true);
+                }
             }
             
         },
@@ -37,9 +39,17 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
     this->attackFunction = [this](){
         this->startAttack();
     };
+    
+    this->observer = observer;
+    this->behaviour = new RuleBasedBehaviour(&(this->myController), (this->observer));
 
 
 }
+
+AIObserver* Level_00_GO_EnemyCharacter::getAIObserver(){
+    return this->observer;
+}
+
 
 void Level_00_GO_EnemyCharacter::onStart(){
     
@@ -83,7 +93,8 @@ void Level_00_GO_EnemyCharacter::startAttack(){
 
 void Level_00_GO_EnemyCharacter::update(){
     
-    
     Level_00_GO_BasicCharacter::update();
+    
+    this->behaviour->update();
     
 }
