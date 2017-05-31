@@ -45,13 +45,14 @@ void Collisions::draw(sf::RenderTarget *renderTarget){
 
 void Collisions::drawRectangleColliders(sf::RenderTarget *renderTarget){
     
-    sf::RectangleShape rectangle;
-    rectangle.setSize(sf::Vector2f(this->currentInvertedBox->size.x, this->currentInvertedBox->size.y));
-    rectangle.setOutlineThickness(0);
-    rectangle.setPosition(this->currentInvertedBox->lastOrigin.x, this->currentInvertedBox->lastOrigin.y);
-    rectangle.setFillColor(sf::Color(230.f,0.f,0.f,40.f));
-    renderTarget->draw(rectangle);
-    
+    if(currentInvertedBox!=nullptr){
+        sf::RectangleShape rectangle;
+        rectangle.setSize(sf::Vector2f(this->currentInvertedBox->size.x, this->currentInvertedBox->size.y));
+        rectangle.setOutlineThickness(0);
+        rectangle.setPosition(this->currentInvertedBox->lastOrigin.x, this->currentInvertedBox->lastOrigin.y);
+        rectangle.setFillColor(sf::Color(230.f,0.f,0.f,40.f));
+        renderTarget->draw(rectangle);
+    }
     
     for(auto it1 = this->rectColMap.begin() ; it1 != this->rectColMap.end() ; ++it1){
         sf::RectangleShape rectangle;
@@ -92,7 +93,7 @@ void Collisions::drawRectangleColliders(sf::RenderTarget *renderTarget){
     circle.setPosition(lastInstantCircleCollider.x - this->lastInstantCircleCollider.r, lastInstantCircleCollider.y - this->lastInstantCircleCollider.r);
     circle.setFillColor(sf::Color(0.f,230.f,230.f,100.f));
     renderTarget->draw(circle);
-
+    
     
 }
 
@@ -101,6 +102,8 @@ void Collisions::onNotify(Message message){
     
     if(message.getEvent().compare("MSG_TOGGLE_SHOW_COLLISIONS")==0){
         this->shouldDraw = !(this->shouldDraw);
+    }else if(message.getEvent().compare("MSG_GO_TO_MENU")==0){
+        this->lastInstantCircleCollider.r = 0.0f;
     }
     
 }
@@ -125,7 +128,15 @@ unsigned int Collisions::registerRectangleCollider(RectangleCollider * rectangle
 
 
 void Collisions::unregisterRectangleCollider(unsigned int id){
+    
+    if(this->currentInvertedBox != nullptr && this->currentInvertedBox->id == id ){
+        this->currentInvertedBox = nullptr;
+    }
+    
+    //@@TODO: Maybe change this, it's kind of hacky :D
     this->rectColMap.erase(id);
+    this->rectHurtMap.erase(id);
+    
 }
 
 
@@ -211,7 +222,7 @@ void Collisions::check__Box_Rect__Collisions(){
     
     RectangleCollider *collider;
     
-    if(!this->currentInvertedBox->updated){
+    if(this->currentInvertedBox != nullptr && !this->currentInvertedBox->updated){
         this->currentInvertedBox->lastOrigin = this->currentInvertedBox->funcs.getOriginFunc();
         this->currentInvertedBox->updated = true;
     }
@@ -238,9 +249,9 @@ void Collisions::check__Box_Rect__Collisions(){
         
     }
     
-    this->currentInvertedBox->updated = false;
-    
-    
+    if(this->currentInvertedBox != nullptr ){
+        this->currentInvertedBox->updated = false;
+    }
     
 }
 
@@ -338,7 +349,7 @@ bool Collisions::checkBoxRect(RectangleCollider * box, RectangleCollider * col ,
 void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLayer layerToCheck, float damage){
     
     this->lastInstantCircleCollider = *hitbox;
-        
+    
     for(auto it1 = this->rectHurtMap.begin() ; it1 != this->rectHurtMap.end() ; ++it1){
         
         RectangleCollider *col1 = it1->second;
@@ -350,7 +361,7 @@ void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLaye
             vector.y=0.f;
             if(this->checkInstantCircleRect(hitbox, col1, &vector)){
                 col1->funcs.onCollisionCallback(ColliderType::HITBOX,vector,damage);
-            
+                
             }
         }
     }
@@ -358,10 +369,10 @@ void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLaye
 
 bool Collisions::checkInstantCircleRect(InstantCircleCollider * circle ,RectangleCollider * col, sf::Vector2f* vector ){
     
-
+    
     vector->x = ((col->lastOrigin.x) - circle->x);
     vector->y = ((col->lastOrigin.y) - circle->y);
-
+    
     
     sf::Vector2f distance;
     distance.x = fabs(vector->x);

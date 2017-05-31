@@ -7,12 +7,16 @@
 //
 
 #include "BusNode.hpp"
+#include "Systems.hpp"
+#include "DebugUtilities.hpp"
 
 BusNode::BusNode(int systemIdentifier, MessageBus *messageBus)
 {
+    
     this->systemIdentifier = systemIdentifier;
     this->messageBus = messageBus;
     this->messageBus->addReceiver(systemIdentifier, this->getNotifyFunc());
+    
 }
 
 BusNode::~BusNode(){

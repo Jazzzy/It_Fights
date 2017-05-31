@@ -12,12 +12,12 @@
 
 
 enum Systems {
-    S_Window,
-    S_Console,
-    S_Input,
-    S_CurrentScene,
-    S_GameState,
-    S_Collisions
+    S_Window,       //0
+    S_Console,      //1
+    S_Input,        //2
+    S_CurrentScene, //3
+    S_GameState,    //4
+    S_Collisions    //5
 };
 
 

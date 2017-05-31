@@ -57,7 +57,7 @@ void Level_00_GO_MainCharacter::onStart(){
 
 void Level_00_GO_MainCharacter::onEnd(){
     
-    
+
     if(this->hurtbox.isActive()){
         this->hurtbox.setActive(false);
     }

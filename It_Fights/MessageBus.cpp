@@ -54,11 +54,11 @@ void MessageBus::addReceiver(int systemID, std::function<void (Message)> newRece
     
     receiverMap[systemID] = newReceiver;
     this->receiverVector.push_back(std::make_pair(systemID, newReceiver));
+
 }
 
 
 void MessageBus::removeReceiver(int systemID){
-    
     
     for (auto iter = receiverVector.begin(); iter != receiverVector.end(); ) {
         if ((*iter).first == systemID)
@@ -70,7 +70,28 @@ void MessageBus::removeReceiver(int systemID){
 }
 
 void MessageBus::sendMessage(Message message){
-    //    std::cout << "Message received in Bus: " << message.getEvent() << std::endl;
     messageQueue.push(message);
 }
+
+void MessageBus::printReceivers(){
+    
+    prints("------------------------------");
+    prints("Printing receivers from the map");
+    for(auto it = receiverMap.begin(); it!= receiverMap.end() ; ++it){
+        printv(it->first);
+    }
+    
+    prints("Printing receivers from the array");
+    for(auto it = receiverVector.begin(); it!= receiverVector.end() ; ++it){
+        printv(it->first);
+    }
+    prints("------------------------------");
+    prints("\n\n");
+
+
+    
+}
+
+
+
 

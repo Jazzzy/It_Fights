@@ -33,13 +33,13 @@ public:
     Collisions * getCollisionSystem();
     
 private:
-    GameState gameState;
+    GameState * gameState;
     
-    MessageBus messageBus;
-    Console consoleSystem;
-    Window windowSystem;
-    Input inputSystem;
-    Collisions collisionSystem;
+    MessageBus * messageBus;
+    Console * consoleSystem;
+    Window * windowSystem;
+    Input * inputSystem;
+    Collisions * collisionSystem;
 
 };
 

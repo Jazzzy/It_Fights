@@ -35,6 +35,7 @@ private:
     std::vector< std::pair<int, std::function<void (Message)>>> receiverVector;
     std::queue<Message> messageQueue;
     std::function<void (Message)> consoleReceiver;
+    void printReceivers();
     
 };
 

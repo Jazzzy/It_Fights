@@ -81,10 +81,7 @@ Level_00_GO_Ground::~Level_00_GO_Ground(){
 
 void Level_00_GO_Ground::update(){
     
-    //@@TODO change this
-    if(!this->outsideCollider.isRegistered()){
-        this->outsideCollider.registerCollider();
-    }
+    
     
 }
 
@@ -96,8 +93,16 @@ void Level_00_GO_Ground::draw(sf::RenderTarget *renderTarget){
     
 }
 
-void Level_00_GO_Ground::onStart(){}
-void Level_00_GO_Ground::onEnd(){}
+void Level_00_GO_Ground::onStart(){
+    if(!this->outsideCollider.isRegistered()){
+        this->outsideCollider.registerCollider();
+    }
+}
+void Level_00_GO_Ground::onEnd(){
+    if(this->outsideCollider.isRegistered()){
+        this->outsideCollider.unregisterCollider();
+    }
+}
 
 void Level_00_GO_Ground::drawNoise(sf::RenderTarget *renderTarget){
     

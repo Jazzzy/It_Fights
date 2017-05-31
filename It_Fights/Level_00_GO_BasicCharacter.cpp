@@ -12,6 +12,7 @@
 #include "SomeMath.hpp"
 #include "DebugUtilities.hpp"
 #include "Clock.hpp"
+#include "Systems.hpp"
 
 #include <SFML/Window/Joystick.hpp>
 
@@ -161,7 +162,11 @@ void Level_00_GO_BasicCharacter::parryCounter(){
 }
 
 void Level_00_GO_BasicCharacter::die(){
-    //@TODO
+    
+    Message message("MSG_GO_TO_MENU");
+    
+    this->scene->send(message);
+    
 }
 
 void Level_00_GO_BasicCharacter::manageCollisionWithVector( sf::Vector2f vector ){

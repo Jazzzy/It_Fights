@@ -18,6 +18,9 @@ public:
     ~MenuScene();
 private:
     TitleText titleText;
+    void localUpdateImplemented();
+    bool changedRes;
+
 };
 
 #endif /* MenuScene_hpp */

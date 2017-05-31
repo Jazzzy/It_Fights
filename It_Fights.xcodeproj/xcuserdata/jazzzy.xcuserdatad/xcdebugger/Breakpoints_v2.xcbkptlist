@@ -305,22 +305,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "It_Fights/MessageBus.cpp"
-            timestampString = "515278706.41918"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "MessageBus::removeReceiver(int systemID)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "It_Fights/Collisions.cpp"
             timestampString = "516215812.321444"
             startingColumnNumber = "9223372036854775807"
@@ -386,11 +370,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Collisions.cpp"
-            timestampString = "516228943.981982"
+            timestampString = "517948020.072271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "Collisions::registerRectangleCollider(RectangleCollider * rectangleCollider)"
             landmarkType = "7">
          </BreakpointContent>
@@ -402,11 +386,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Collisions.cpp"
-            timestampString = "516228943.981982"
+            timestampString = "517948020.072271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "Collisions::registerRectangleCollider(RectangleCollider * rectangleCollider)"
             landmarkType = "7">
          </BreakpointContent>
@@ -472,6 +456,22 @@
             startingLineNumber = "12"
             endingLineNumber = "12"
             landmarkName = "RuleBasedBehaviour::RuleBasedBehaviour(EnemyCharacterController* controller, AIObserver* observer)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "It_Fights/MessageBus.cpp"
+            timestampString = "517947568.218794"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "MessageBus::removeReceiver(int systemID)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

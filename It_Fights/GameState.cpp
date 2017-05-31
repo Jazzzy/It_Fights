@@ -11,6 +11,7 @@
 #include "Game.hpp"
 #include "MenuScene.hpp"
 #include "Level_00_NeoPurple_DEMO.hpp"
+#include "DebugUtilities.hpp"
 
 extern Game game;
 
@@ -32,8 +33,23 @@ void GameState::update(){
 }
 
 void GameState::onNotify(Message message){
-    //@@TODO deal with messages here
     
+    if(message.getEvent().compare("MSG_GO_TO_MENU")==0){
+        if (this->scene  != nullptr){
+            this->scene->onEnd();
+            delete this->scene;
+        }
+        this->scene = new MenuScene(messageBus);
+        this->scene->onStart();
+
+    }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME")==0){
+        if (this->scene  != nullptr){
+            this->scene->onEnd();
+            delete this->scene;
+        }
+        this->scene = new Level_00_NeoPurple_DEMO(messageBus);
+        this->scene->onStart();
+    }
 }
 
 Scene * GameState::getScene(){

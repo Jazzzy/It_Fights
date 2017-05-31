@@ -46,8 +46,8 @@ public:
     
     void update();
     void draw(sf::RenderTarget * renderTarget);
-    void onStart();
-    void onEnd();
+    virtual void onStart();
+    virtual void onEnd();
     
     sf::Vector2f getPosition();
     sf::Vector2f getVelocity();
