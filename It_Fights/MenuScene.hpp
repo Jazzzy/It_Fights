@@ -12,6 +12,7 @@
 #include <Scene.hpp>
 #include "TitleText.hpp"
 
+
 class MenuScene : public Scene {
 public:
     MenuScene(MessageBus * messageBus);
@@ -20,6 +21,8 @@ private:
     TitleText titleText;
     void localUpdateImplemented();
     bool changedRes;
+    void onNotify (Message message);
+
 
 };
 

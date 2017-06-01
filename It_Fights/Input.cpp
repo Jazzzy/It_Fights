@@ -76,6 +76,8 @@ void Input::readInput(){
                     }else{
                         //Deal with other keypresses here
                         //Remember that for smooth movement I should use the sf::keyboard thing
+                        Message msg_keypressed("MSG_KEYPRESS", MessageData{MessageData::KEYBOARD_KEY, .key = event.key.code});
+                        send(msg_keypressed);
                     }
                 }
             }

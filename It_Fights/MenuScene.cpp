@@ -8,6 +8,7 @@
 
 #include "MenuScene.hpp"
 #include "Systems.hpp"
+#include "DebugUtilities.hpp"
 #define RESOLUTION_X 2000
 #define RESOLUTION_Y 1500
 
@@ -40,4 +41,30 @@ void MenuScene::localUpdateImplemented(){
         send(msg_smoothFalse);
         
     }
+}
+
+void MenuScene::onNotify (Message message){
+    
+    
+    if(message.getEvent().compare("MSG_KEYPRESS")==0){
+        if(message.getData().type!=MessageData::KEYBOARD_KEY){
+            std::cerr << "ERROR: The data in this message should be keyboard key" << std::endl;
+        }else{
+            switch(message.getData().key){
+                //@@TODO: Change menu options
+                case sf::Keyboard::Up :
+                    prints("UP!");
+                    break;
+                    
+                case sf::Keyboard::Down:
+                    prints("DOWN!");
+                    break;
+                    
+                default:
+                    break;
+            }
+            
+        }
+    }
+    
 }

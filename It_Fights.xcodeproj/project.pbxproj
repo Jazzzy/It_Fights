@@ -10,6 +10,7 @@
 		402E71311ED5E2C5008149B3 /* RuleBasedBehaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402E712F1ED5E2C5008149B3 /* RuleBasedBehaviour.cpp */; };
 		402E71341ED5E2E5008149B3 /* AIObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402E71321ED5E2E5008149B3 /* AIObserver.cpp */; };
 		402E71371ED5EAB5008149B3 /* Behaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402E71351ED5EAB5008149B3 /* Behaviour.cpp */; };
+		40319DC41EE0688C00FB162F /* MenuOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40319DC21EE0688C00FB162F /* MenuOptions.cpp */; };
 		4049DF6C1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6A1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp */; };
 		4049DF701EAA7583008DB0E5 /* Level_00_GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */; };
 		4049DF741EABAB0E008DB0E5 /* AnimatedSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4049DF721EABAB0E008DB0E5 /* AnimatedSprite.cpp */; };
@@ -71,6 +72,8 @@
 		402E71331ED5E2E5008149B3 /* AIObserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AIObserver.hpp; sourceTree = "<group>"; };
 		402E71351ED5EAB5008149B3 /* Behaviour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Behaviour.cpp; sourceTree = "<group>"; };
 		402E71361ED5EAB5008149B3 /* Behaviour.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Behaviour.hpp; sourceTree = "<group>"; };
+		40319DC21EE0688C00FB162F /* MenuOptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuOptions.cpp; sourceTree = "<group>"; };
+		40319DC31EE0688C00FB162F /* MenuOptions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MenuOptions.hpp; sourceTree = "<group>"; };
 		4049DF6A1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_NeoPurple_DEMO.cpp; sourceTree = "<group>"; };
 		4049DF6B1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Level_00_NeoPurple_DEMO.hpp; sourceTree = "<group>"; };
 		4049DF6E1EAA7583008DB0E5 /* Level_00_GO_Ground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level_00_GO_Ground.cpp; sourceTree = "<group>"; };
@@ -428,6 +431,8 @@
 			children = (
 				40C41EC71E90244900DB11BB /* TitleText.cpp */,
 				40C41EC81E90244900DB11BB /* TitleText.hpp */,
+				40319DC21EE0688C00FB162F /* MenuOptions.cpp */,
+				40319DC31EE0688C00FB162F /* MenuOptions.hpp */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -592,6 +597,7 @@
 				407DF0091E8AAC9D004263E6 /* Window.cpp in Sources */,
 				40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */,
 				40DBD6061E8F20760027E88A /* Game.cpp in Sources */,
+				40319DC41EE0688C00FB162F /* MenuOptions.cpp in Sources */,
 				4049DF6C1EAA74AA008DB0E5 /* Level_00_NeoPurple_DEMO.cpp in Sources */,
 				402E71341ED5E2E5008149B3 /* AIObserver.cpp in Sources */,
 				407DEFE81E897765004263E6 /* main.cpp in Sources */,
