@@ -9,6 +9,7 @@
 #include "Level_00_NeoPurple_DEMO.hpp"
 #include "Window.hpp"
 #include "Systems.hpp"
+#include "DebugUtilities.hpp"
 
 
 
@@ -36,17 +37,13 @@ level_00_GO_HealthBars(this,&level_00_GO_Characters)
 }
 
 Level_00_NeoPurple_DEMO::~Level_00_NeoPurple_DEMO(){
-    
+        
 }
 
 
 void Level_00_NeoPurple_DEMO::screenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture){
     
-    //@@TODO Apply here shaders for this scene
-    
-//    sf::Sprite textureSprite(*screenTexture);
-//    
-//    this->bloomShader.drawWithShader(renderTarget, &textureSprite);
+
     
 }
 

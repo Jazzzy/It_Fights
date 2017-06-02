@@ -14,7 +14,7 @@
 class RuleBasedBehaviour : public Behaviour {
 public:
     RuleBasedBehaviour(EnemyCharacterController* controller, AIObserver* observer);
-    ~RuleBasedBehaviour();
+    virtual ~RuleBasedBehaviour();
     virtual void update();
     
 };

@@ -19,7 +19,7 @@ class GameObject;
 class Scene : public Drawable, public BusNode {
 public:
     Scene(MessageBus * messageBus);
-    ~Scene();
+    virtual ~Scene() = 0;
     void draw(sf::RenderTarget *renderTarget);
     void applyFullScreenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture);
     void update();

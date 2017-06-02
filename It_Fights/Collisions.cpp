@@ -19,6 +19,9 @@ Collisions::Collisions(MessageBus * messageBus) : BusNode(Systems::S_Collisions,
     
     this->shouldDraw = true;
     
+    this->currentInvertedBox = nullptr;
+    this->lastInstantCircleCollider.r = 0.0f;
+    
 }
 
 
@@ -133,9 +136,11 @@ void Collisions::unregisterRectangleCollider(unsigned int id){
         this->currentInvertedBox = nullptr;
     }
     
-    //@@TODO: Maybe change this, it's kind of hacky :D
-    this->rectColMap.erase(id);
-    this->rectHurtMap.erase(id);
+    if(rectColMap.find(id) != rectColMap.end()){
+        this->rectColMap.erase(id);
+    }else if(rectHurtMap.find(id) != rectHurtMap.end()){
+        this->rectHurtMap.erase(id);
+    }
     
 }
 

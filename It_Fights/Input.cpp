@@ -9,6 +9,7 @@
 #include "Input.hpp"
 #include "Systems.hpp"
 #include "Game.hpp"
+#include "DebugUtilities.hpp"
 
 extern Game game;
 

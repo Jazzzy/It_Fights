@@ -28,6 +28,8 @@ GameObject(scene){
 
 Level_00_GO_Characters::~Level_00_GO_Characters(){
     delete this->observer;
+    delete this->mainCharacter;
+    delete this->enemyCharacter;
 }
 
 

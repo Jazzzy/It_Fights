@@ -37,7 +37,7 @@ void MessageBus::notify(){
             for (auto iter = receiverVector.begin(); iter != receiverVector.end(); iter++) {
                 (*iter).second(message);
             }
-            receiverMap[Systems::S_CurrentScene](message);
+            //receiverMap[Systems::S_CurrentScene](message);
         }else{
             (receiverMap[message.getReceiverSystem()])(message);
         }
@@ -54,7 +54,7 @@ void MessageBus::addReceiver(int systemID, std::function<void (Message)> newRece
     
     receiverMap[systemID] = newReceiver;
     this->receiverVector.push_back(std::make_pair(systemID, newReceiver));
-
+    
 }
 
 
@@ -66,6 +66,9 @@ void MessageBus::removeReceiver(int systemID){
         else
             ++iter;
     }
+    
+    this->receiverMap.erase(systemID);
+    
     
 }
 

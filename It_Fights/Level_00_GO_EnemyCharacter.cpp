@@ -41,9 +41,24 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
     };
     
     this->observer = observer;
+    
+    
+    
+    /********************************************************************************************/
+    /*************    HERE WE SELECT WHAT BEHAVIOUR WE USE FOR THE ENEMY ACTIONS    *************/
+    /********************************************************************************************/
+
     this->behaviour = new RuleBasedBehaviour(&(this->myController), (this->observer));
+    
+    /********************************************************************************************/
+    /********************************************************************************************/
 
 
+
+}
+
+Level_00_GO_EnemyCharacter::~Level_00_GO_EnemyCharacter(){
+    delete this->behaviour;
 }
 
 AIObserver* Level_00_GO_EnemyCharacter::getAIObserver(){
@@ -95,6 +110,6 @@ void Level_00_GO_EnemyCharacter::update(){
     
     Level_00_GO_BasicCharacter::update();
     
-    this->behaviour->update();
+    //this->behaviour->update();
     
 }

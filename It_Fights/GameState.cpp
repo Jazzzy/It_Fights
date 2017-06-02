@@ -17,8 +17,8 @@ extern Game game;
 
 GameState::GameState(MessageBus * messageBus) : BusNode(Systems::S_GameState, messageBus){
     
-    //this->scene = new MenuScene(messageBus);
-    this->scene = new Level_00_NeoPurple_DEMO(messageBus);
+    this->scene = new MenuScene(messageBus);
+    //this->scene = new Level_00_NeoPurple_DEMO(messageBus);
     this->mainMenu = true;
     this->paused = false;
     

@@ -9,13 +9,15 @@
 #include "MenuScene.hpp"
 #include "Systems.hpp"
 #include "DebugUtilities.hpp"
-#define RESOLUTION_X 2000
-#define RESOLUTION_Y 1500
+#define RESOLUTION_X (2000)
+#define RESOLUTION_Y (1500)
 
-MenuScene::MenuScene(MessageBus * messageBus) : Scene(messageBus), titleText(this){
+MenuScene::MenuScene(MessageBus * messageBus) : Scene(messageBus), titleText(this), menuOptions(this){
 
     //Add here all GameObjects necessary with
     this->addGameObject(&titleText);
+    this->addGameObject(&menuOptions);
+
     
     this->localUpdateFunction = [&](){ this->localUpdateImplemented(); };
     this->changedRes=false;
@@ -36,9 +38,8 @@ void MenuScene::localUpdateImplemented(){
         
         changedRes = true;
         
-        
-        Message msg_smoothFalse("MSG_SMOOTH_FALSE",Systems::S_Window);
-        send(msg_smoothFalse);
+        Message msg_smoothTrue("MSG_SMOOTH_TRUE",Systems::S_Window);
+        send(msg_smoothTrue);
         
     }
 }
@@ -47,17 +48,21 @@ void MenuScene::onNotify (Message message){
     
     
     if(message.getEvent().compare("MSG_KEYPRESS")==0){
+                
         if(message.getData().type!=MessageData::KEYBOARD_KEY){
             std::cerr << "ERROR: The data in this message should be keyboard key" << std::endl;
         }else{
             switch(message.getData().key){
-                //@@TODO: Change menu options
-                case sf::Keyboard::Up :
-                    prints("UP!");
+                case sf::Keyboard::Up:
+                    menuOptions.moveSelection(Direction::MOVE_UP);
                     break;
                     
                 case sf::Keyboard::Down:
-                    prints("DOWN!");
+                    menuOptions.moveSelection(Direction::MOVE_DOWN);
+                    break;
+                    
+                case sf::Keyboard::Return:
+                    menuOptions.executeSelection();
                     break;
                     
                 default:

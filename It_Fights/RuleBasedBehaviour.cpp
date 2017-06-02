@@ -8,6 +8,7 @@
 
 #include "RuleBasedBehaviour.hpp"
 #include "SomeMath.hpp"
+#include "DebugUtilities.hpp"
 
 RuleBasedBehaviour::RuleBasedBehaviour(EnemyCharacterController* controller, AIObserver* observer) : Behaviour(controller, observer){
 
@@ -15,7 +16,6 @@ RuleBasedBehaviour::RuleBasedBehaviour(EnemyCharacterController* controller, AIO
 
 
 RuleBasedBehaviour::~RuleBasedBehaviour(){
-
 }
 
 #define ATTACK_RANGE (20) //28+-

@@ -44,7 +44,8 @@ private:
     bool shouldRender;
     
     std::pair<unsigned int,unsigned int> internalResolution;
-    std::pair<float,float> renderTextureScale;
+    std::pair<double,double> renderTextureScale;
+    void recalculateScale();
     
     
 };

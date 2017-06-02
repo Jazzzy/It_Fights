@@ -21,7 +21,7 @@
 class Level_00_NeoPurple_DEMO : public Scene {
 public:
     Level_00_NeoPurple_DEMO(MessageBus * messageBus);
-    ~Level_00_NeoPurple_DEMO();
+    virtual ~Level_00_NeoPurple_DEMO();
 private:
     void localUpdateImplemented();
     void screenShaders(sf::RenderTarget * renderTarget,const sf::Texture * screenTexture);

@@ -108,7 +108,9 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     
 }
 
-Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){}
+Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){
+
+}
 
 void Level_00_GO_BasicCharacter::onStart(){
         
@@ -158,7 +160,7 @@ bool Level_00_GO_BasicCharacter::receiveDamage(float damage){
 }
 
 void Level_00_GO_BasicCharacter::parryCounter(){
-    //@TODO
+    //@@TODO
 }
 
 void Level_00_GO_BasicCharacter::die(){

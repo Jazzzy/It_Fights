@@ -11,6 +11,7 @@
 
 #include <Scene.hpp>
 #include "TitleText.hpp"
+#include "MenuOptions.hpp"
 
 
 class MenuScene : public Scene {
@@ -19,6 +20,8 @@ public:
     ~MenuScene();
 private:
     TitleText titleText;
+    MenuOptions menuOptions;
+    
     void localUpdateImplemented();
     bool changedRes;
     void onNotify (Message message);

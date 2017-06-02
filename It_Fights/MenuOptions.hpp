@@ -17,6 +17,11 @@ enum Options {
     LAST
 };
 
+enum Direction {
+    MOVE_UP,
+    MOVE_DOWN
+};
+
 
 class MenuOptions : public GameObject {
 public:
@@ -26,8 +31,12 @@ public:
     void draw(sf::RenderTarget *renderTarget);
     void onStart(){}
     void onEnd(){}
+    void moveSelection(Direction direction);
+    void executeSelection();
 private:
     sf::Font mainFont;
+    Options selectedOption;
+    void changeSelection(short delta);
     
 };
 

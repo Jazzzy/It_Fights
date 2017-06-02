@@ -12,6 +12,7 @@
 #include "Clock.hpp"
 #include "Game.hpp"
 #include "ResourcePath.hpp"
+#include "DebugUtilities.hpp"
 
 
 extern Game game;
@@ -41,8 +42,8 @@ Window::Window(MessageBus * messageBus, Console * console, Collisions* collision
     
     this->shouldRender = true;
     
-    this->renderTextureScale.first=1;
-    this->renderTextureScale.second=1;
+    this->renderTextureScale.first=1.;
+    this->renderTextureScale.second=1.;
     
 }
 
@@ -66,9 +67,32 @@ void Window::setCurrentInternalResolution(std::pair<unsigned int, unsigned int> 
     this->sf_renderTexture.create(newResolution.first,newResolution.second);
     this->internalResolution = newResolution;
     
-    this->renderTextureScale.first = this->currRealResolution.x/newResolution.first;
-    this->renderTextureScale.second = this->currRealResolution.y/newResolution.second;
+    this->recalculateScale();
     
+}
+
+void Window::recalculateScale(){
+    
+    this->renderTextureScale.first = (double)this->currRealResolution.x / (double)this->internalResolution.first;
+    this->renderTextureScale.second = (double)this->currRealResolution.y / (double)this->internalResolution.second;
+    
+    
+    prints("Current Real Resolution: ");
+    printv(this->currRealResolution.x);
+    printv(this->currRealResolution.y);
+    prints("\n");
+    
+    
+    prints("New Internal Resolution: ");
+    printv(this->internalResolution.first);
+    printv(this->internalResolution.second);
+    prints("\n");
+    
+    prints("New render texture scale: ");
+    printv(this->renderTextureScale.first);
+    printv(this->renderTextureScale.second);
+    prints("\n\n");
+
 }
 
 void Window::update(){
@@ -108,7 +132,9 @@ void Window::update(){
     
     
     sf::Sprite renderTextureSprite(this->sf_renderTexture.getTexture());
-    renderTextureSprite.setScale(this->renderTextureScale.first,this->renderTextureScale.second);
+    //@@TODO: Fix the scaling issues.
+    renderTextureSprite.scale(this->renderTextureScale.first,this->renderTextureScale.second);
+    
     
     sf_window.draw(renderTextureSprite);
     sf_window.draw(sf::Sprite(this->sf_renderTexture_HighRes.getTexture()));
@@ -146,6 +172,7 @@ void Window::tryToResize(unsigned int x, unsigned int y){
     this->currRealResolution = sf::Vector2u(x,y);
     this->sf_window.setSize(this->currRealResolution);
     
+    //this->recalculateScale();
 }
 
 void Window::onNotify (Message message){
