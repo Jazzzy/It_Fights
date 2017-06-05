@@ -17,7 +17,7 @@ Collisions::Collisions(MessageBus * messageBus) : BusNode(Systems::S_Collisions,
     
     this->colliderCounter = 1;
     
-    this->shouldDraw = true;
+    this->shouldDraw = false;
     
     this->currentInvertedBox = nullptr;
     this->lastInstantCircleCollider.r = 0.0f;

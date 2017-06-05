@@ -56,7 +56,7 @@ void Level_00_GO_HealthBars::draw(sf::RenderTarget * renderTarget){
     
     sf::RectangleShape mainCharBar;
     
-    mainCharBar.setFillColor(sf::Color::Red);
+    mainCharBar.setFillColor(sf::Color::Green);
     mainCharBar.setPosition(PADDING, PADDING);
     
     mainCharBar.setSize(sf::Vector2f( (this->mainCharShowingHP)  * ((canvasSize.x/2.) - PADDING*2) ,BAR_WIDTH ));

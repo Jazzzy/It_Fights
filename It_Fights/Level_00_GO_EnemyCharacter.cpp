@@ -42,6 +42,10 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
     
     this->observer = observer;
     
+    characterMarker.setOutlineColor(sf::Color::Red);
+
+    
+    
     
     
     /********************************************************************************************/

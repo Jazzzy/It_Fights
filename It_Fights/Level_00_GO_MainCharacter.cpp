@@ -41,6 +41,9 @@ hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
         this->startAttack();
     };
     
+    
+    characterMarker.setOutlineColor(sf::Color::Green);
+    
 }
 
 void Level_00_GO_MainCharacter::onStart(){
@@ -91,3 +94,30 @@ void Level_00_GO_MainCharacter::update(){
     Level_00_GO_BasicCharacter::update();
     
 }
+
+void Level_00_GO_MainCharacter::draw(sf::RenderTarget * renderTarget){
+
+    Level_00_GO_BasicCharacter::draw(renderTarget);
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

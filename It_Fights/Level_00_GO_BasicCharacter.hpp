@@ -45,7 +45,7 @@ public:
     ~Level_00_GO_BasicCharacter();
     
     void update();
-    void draw(sf::RenderTarget * renderTarget);
+    virtual void draw(sf::RenderTarget * renderTarget);
     virtual void onStart();
     virtual void onEnd();
     
@@ -107,6 +107,8 @@ protected:
     
     void startCooldown();
     bool inCooldown;
+    
+    sf::CircleShape characterMarker;
     
 };
 

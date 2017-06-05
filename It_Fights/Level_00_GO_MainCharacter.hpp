@@ -26,6 +26,7 @@ public:
      and apply it to the character controlled.
      */
     void update();
+    void draw(sf::RenderTarget * renderTarget);
     void onStart();
     void onEnd();
 private:
@@ -34,7 +35,7 @@ private:
     
     
     MainCharacterController myController;
-
+    
 };
 
 #endif /* Level_00_GO_MainCharacter_hpp */

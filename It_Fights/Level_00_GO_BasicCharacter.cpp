@@ -106,6 +106,12 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     
     this->inCooldown = false;
     
+    this->characterMarker.setScale(2.f,1.f);
+    this->characterMarker.setOutlineColor(sf::Color::Black);
+    this->characterMarker.setOutlineThickness(1.f);
+    this->characterMarker.setFillColor(sf::Color::Transparent);
+    this->characterMarker.setRadius(3.f);
+    
 }
 
 Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){
@@ -485,6 +491,9 @@ void Level_00_GO_BasicCharacter::tryToUpdateAnimation(){
     
 }
 
+#define MARKER_OFFSET_X (-6)
+#define MARKER_OFFSET_Y (-3)
+
 void Level_00_GO_BasicCharacter::draw(sf::RenderTarget * renderTarget){
     
     if(this->shouldUpdate){
@@ -497,7 +506,14 @@ void Level_00_GO_BasicCharacter::draw(sf::RenderTarget * renderTarget){
     
     mainCharSprite.move(this->position);
     
+    characterMarker.setPosition(this->position.x + MARKER_OFFSET_X, this->position.y + MARKER_OFFSET_Y);
+    
+    
+    renderTarget->draw(characterMarker);
+    
     renderTarget->draw(mainCharSprite);
+    
+    
     
 }
 
