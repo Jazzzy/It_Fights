@@ -1,0 +1,83 @@
+% Como se incluyen figuras eps hay que compilar con: latex traballo , dvipdf traballo
+%
+
+\documentclass[12pt,twoside,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[dvips]{epsfig}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{float}
+\usepackage{latexsym}
+\usepackage{a4}
+\usepackage{listings}
+\usepackage{todonotes}
+% \usepackage{hyperref} % menús no pdf pero non leva ben co package galician
+
+\begin{document}
+\include{secciones/titulo}
+\cleardoublepage
+
+\include{secciones/certificacion} % paxina de certificación (optativa)
+\cleardoublepage
+\include{secciones/agradecimientos} % paxina de agradecementos (optativa) 
+\cleardoublepage
+\include{secciones/resumen} % páxina de resumo (optativa) 
+
+\cleardoublepage
+\pagestyle{plain}
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Agora incluimos os capítulos. Cambiamos a numeración e as cabeceiras
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{headings}
+\include{secciones/introduccion}
+\cleardoublepage
+\include{secciones/capitulos/analisisDeRequisitos}
+\cleardoublepage
+\include{secciones/capitulos/gestionDelProyecto}
+\cleardoublepage
+\include{secciones/capitulos/arquitecturaYHerramientas}
+\cleardoublepage
+\include{secciones/capitulos/disenoEImplementacion}
+\cleardoublepage
+\include{secciones/capitulos/validacionYPruebas}
+\cleardoublepage
+\include{secciones/capitulos/valoracionesFinales}
+\cleardoublepage
+
+% Sección de ejemplos que deberemos quitar:
+\todo{Quitar la sección de ejemplos}
+\include{secciones/ejemplos}
+\cleardoublepage
+% Fin de la sección de ejemplos
+
+
+\include{secciones/conclusiones}
+
+% Aquí empiezan los apéndices
+\appendix
+\cleardoublepage
+\include{secciones/apendicea}
+\cleardoublepage
+\include{secciones/apendiceb}
+\cleardoublepage
+\include{secciones/licencia}
+\cleardoublepage
+\include{secciones/bibliografia}
+
+
+
+% Aquí mostramos la lista de TODOs que tendremos que quitar al terminar el documento
+\cleardoublepage
+\todo{Quitar la lista de TODOs}
+\listoftodos
+\cleardoublepage
+% Fin de la lista de TODOs
+
+\end{document}
