@@ -37,8 +37,9 @@ void Behaviour::threadFunction(){
         
         this->update();
         
+        if(Clock::Instance().getTimeScale() <= 1.f)
+            std::this_thread::sleep_for(std::chrono::milliseconds((TICK_MILLIS)));
         
-        //std::this_thread::sleep_for(std::chrono::milliseconds((TICK_MILLIS)));
     }
     
 }

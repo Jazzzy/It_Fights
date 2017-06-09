@@ -27,6 +27,12 @@ enum CharacterAction {
     COOLING_DOWN
 };
 
+
+/********************/
+/* CONTINUOUS STATE */
+/********************/
+
+
 struct CharacterState {
     float health;
     sf::Vector2f position;
@@ -41,6 +47,23 @@ struct FightState {
     float timeSinceLastCheck;
     float totalFightingTime;
 };
+
+/********************/
+
+
+
+
+/********************/
+/* DISCRETE STATE */
+/********************/
+
+//@@TODO
+
+/********************/
+
+
+
+
 
 class AIObserver {
 public:
