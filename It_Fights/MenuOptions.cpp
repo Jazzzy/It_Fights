@@ -10,18 +10,70 @@
 #include "ResourceManager.hpp"
 #include "DebugUtilities.hpp"
 #include "AuxiliarRenderFunctions.hpp"
+#include "SomeMath.hpp"
+#include "Clock.hpp"
 
 
 
 MenuOptions::MenuOptions(Scene * scene) : GameObject(scene){
 
     this->mainFont = ResourceManager::Instance().getFont("playfair");
-    this->selectedOption = PLAY;
-
+    this->selectedOption = PLAY_HUMAN_VS_HUMAN;
+    
+    
+    for(int i = 0 ; i < Options::LAST ; i++){
+        
+        sf::Text text;
+        
+        text.setFillColor(sf::Color::Black);
+        
+        text.setOutlineColor(sf::Color::Black);
+        
+        text.setString(this->getStringFromOption((Options)i));
+        
+        text.setCharacterSize(100.0f);
+        
+        text.setFont(mainFont);
+        
+        this->optionsVector.push_back(std::make_pair((Options)i,text));
+    }
 }
 
 MenuOptions::~MenuOptions(){
 
+}
+
+std::string MenuOptions::getStringFromOption(Options option){
+
+    switch (option) {
+        case PLAY_AGENT_VS_AGENT:
+            return "Agent VS Agent";
+            break;
+            
+        case PLAY_HUMAN_VS_AGENT:
+            return "Human VS Agent";
+            break;
+            
+        case PLAY_HUMAN_VS_HUMAN:
+            return "Human VS Human";
+            break;
+            
+        case PLAY_AGENT_VS_AGENT_NO_RENDERING:
+            return "Agent VS Agent (No rendering)";
+            break;
+            
+        case CLOSE:
+            return "Close";
+            break;
+            
+        case LAST:
+            return "";
+            break;
+            
+    }
+    
+    return "";
+    
 }
 
 void MenuOptions::moveSelection(Direction direction){
@@ -53,9 +105,30 @@ void MenuOptions::changeSelection(short delta){
 void MenuOptions::executeSelection(){
     
     switch(this->selectedOption){
-        case PLAY:
+        case PLAY_AGENT_VS_AGENT:
         {
-            Message msgMainGame("MSG_GO_TO_MAINGAME");
+            Message msgMainGame("MSG_GO_TO_MAINGAME_AGENT_VS_AGENT");
+            this->scene->send(msgMainGame);
+        }
+            break;
+            
+        case PLAY_HUMAN_VS_AGENT:
+        {
+            Message msgMainGame("MSG_GO_TO_MAINGAME_HUMAN_VS_AGENT");
+            this->scene->send(msgMainGame);
+        }
+            break;
+            
+        case PLAY_HUMAN_VS_HUMAN:
+        {
+            Message msgMainGame("MSG_GO_TO_MAINGAME_HUMAN_VS_HUMAN");
+            this->scene->send(msgMainGame);
+        }
+            break;
+            
+        case PLAY_AGENT_VS_AGENT_NO_RENDERING:
+        {
+            Message msgMainGame("MSG_GO_TO_MAINGAME_AGENT_VS_AGENT_NO_RENDERING");
             this->scene->send(msgMainGame);
         }
             break;
@@ -73,60 +146,65 @@ void MenuOptions::executeSelection(){
     }
 }
 
+#define LERP_SPEED 0.85
+
 void MenuOptions::update(){
 
+    shownOptionPosition.x = selectedOptionPosition.x;
+    shownOptionPosition.y = lerp(shownOptionPosition.y, selectedOptionPosition.y, (float)LERP_SPEED);
+    
+    
+    shownOptionSize.y = selectedOptionSize.y;
+    shownOptionSize.x = lerp(shownOptionSize.x, selectedOptionSize.x, (float)LERP_SPEED);
 
 }
 
+#define SELECTION_BAR_WIDTH (15)
+#define SELECTION_HEIGTH_PADDING (130)
 
 void MenuOptions::draw(sf::RenderTarget *renderTarget){
     
-    sf::Text text_play;
-    sf::Text text_close;
+    sf::Vector2f startRectPosition(0.22, 0.50);
     
-    text_play.setString("PLAY");
-    text_close.setString("CLOSE");
-    
-    text_play.setFillColor(sf::Color::White);
-    text_close.setFillColor(sf::Color::White);
-    
-    text_play.setOutlineColor(sf::Color::Black);
-    text_close.setOutlineColor(sf::Color::Black);
+    sf::Vector2f percentagePosition(0.25, 0.50);
     
     
-    switch(this->selectedOption){
-        case PLAY:
-            text_play.setOutlineThickness(4.0f);
-            text_close.setOutlineThickness(1.0f);
-            break;
-            
-        case CLOSE:
-            text_play.setOutlineThickness(1.0f);
-            text_close.setOutlineThickness(4.0f);
-            break;
-            
-        default:
-            text_play.setOutlineThickness(1.0f);
-            text_close.setOutlineThickness(1.0f);
-            break;
-            
+    for(auto option : this->optionsVector){
+        
+        PairI position = getRealPixels(renderTarget, percentagePosition.x, percentagePosition.y);
+        option.second.setPosition(position.x, position.y);
+        percentagePosition.y += 0.1;
+        
+        if(option.first == this->selectedOption){
+            option.second.setOutlineThickness(4.0f);
+            selectedOptionPosition = sf::Vector2f(option.second.getPosition().x, option.second.getPosition().y + SELECTION_HEIGTH_PADDING);
+            selectedOptionSize = sf::Vector2f(option.second.getLocalBounds().width, SELECTION_BAR_WIDTH);
+        }else{
+            option.second.setOutlineThickness(1.0f);
+        }
+
+        renderTarget->draw(option.second);
     }
     
-    text_play.setCharacterSize(100.0f);
-    text_close.setCharacterSize(100.0f);
+    sf::Vector2f sizePerc(0.01, percentagePosition.y - 0.53);
     
-    text_play.setFont(mainFont);
-    text_close.setFont(mainFont);
-    
-    PairI itPosition = getRealPixels(renderTarget, 0.43, 0.65);
-    text_play.setPosition(itPosition.x, itPosition.y);
-    PairI fightsPosition = getRealPixels(renderTarget, 0.413, 0.75);
-    text_close.setPosition(fightsPosition.x, fightsPosition.y);
-    
-    
-    renderTarget->draw(text_play);
-    renderTarget->draw(text_close);
+    sf::RectangleShape sideRectangle;
+    sideRectangle.setFillColor(sf::Color::Black);
+    PairI startPosition = getRealPixels(renderTarget, startRectPosition.x, startRectPosition.y);
+    sideRectangle.setPosition(startPosition.x, startPosition.y);
+    PairI realSize = getRealPixels(renderTarget, sizePerc.x, sizePerc.y);
+    sf::Vector2f sizeVector(realSize.x, realSize.y);
+    sideRectangle.setSize(sizeVector);
+
+    renderTarget->draw(sideRectangle);
     
 
+    sf::RectangleShape selectionRectangle;
+    selectionRectangle.setFillColor(sf::Color::Black);
+    selectionRectangle.setPosition(shownOptionPosition);
+    selectionRectangle.setSize(shownOptionSize);
+    
+    renderTarget->draw(selectionRectangle);
+    
 
 }

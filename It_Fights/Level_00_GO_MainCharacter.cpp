@@ -15,34 +15,71 @@ extern Game game;
 
 
 
-Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position) : Level_00_GO_BasicCharacter(scene, position),
-hurtbox( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
+Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position, Position playerPosition) : Level_00_GO_BasicCharacter(scene, position){
+    
+    if(playerPosition == PLAYER_1){
+    
+    this->hurtbox = new BoxCollider ( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
+                                            
+                                            //Function that returs the position in which the location collider should be positioned
+                                            [this]() -> sf::Vector2f{
+                                                return sf::Vector2f(this->position.x-hurtboxOffset_x,this->position.y-hurtboxOffset_y);
+                                            },
+                                            
+                                            //Function that deals with a collisions accordingly
+                                            [this](ColliderType colType, sf::Vector2f vector, float value){
+                                                if(colType == ColliderType::HITBOX){
+                                                    if(this->receiveDamage(value,vector)){
+                                                        this->startDash(vector, 50, 0.150, true);
+                                                    }
+                                                }
+                                            },
+                                            
+                                            //Type of the location collider
+                                     ColliderType::HURTBOX, CollisionLayer::FRIENDLY_COLLIDER);
         
-        //Function that returs the position in which the location collider should be positioned
-        [this]() -> sf::Vector2f{
-            return sf::Vector2f(this->position.x-hurtboxOffset_x,this->position.y-hurtboxOffset_y);
-        },
+        characterMarker.setOutlineColor(sf::Color::Green);
+        myController = new MainCharacterController(0);
         
-        //Function that deals with a collisions accordingly
-        [this](ColliderType colType, sf::Vector2f vector, float value){
-            if(colType == ColliderType::HITBOX){
-                if(this->receiveDamage(value)){
-                    this->startDash(vector, 50, 0.150, true);
-                }
-            }
-        },
+        characterPublicName = "HUMAN PLAYER 1";
+
         
-        //Type of the location collider
-        ColliderType::HURTBOX, CollisionLayer::FRIENDLY_COLLIDER){
+    }else{
+        
+        this->hurtbox = new BoxCollider ( sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
+                                         
+                                         //Function that returs the position in which the location collider should be positioned
+                                         [this]() -> sf::Vector2f{
+                                             return sf::Vector2f(this->position.x-hurtboxOffset_x,this->position.y-hurtboxOffset_y);
+                                         },
+                                         
+                                         //Function that deals with a collisions accordingly
+                                         [this](ColliderType colType, sf::Vector2f vector, float value){
+                                             if(colType == ColliderType::HITBOX){
+                                                 if(this->receiveDamage(value,vector)){
+                                                     this->startDash(vector, 50, 0.150, true);
+                                                 }
+                                             }
+                                         },
+                                         
+                                         //Type of the location collider
+                                         ColliderType::HURTBOX, CollisionLayer::ENEMY_COLLIDER);
+        
+        characterMarker.setOutlineColor(sf::Color::Red);
+        myController = new MainCharacterController(1);
+
+        characterPublicName = "HUMAN PLAYER 2";
+
+    
+    }
     
     
-    this->controller = &myController;
-    this->attackFunction = [this](){
-        this->startAttack();
+    this->controller = myController;
+    this->attackFunction = [this](bool area){
+        this->startAttack(area);
     };
     
     
-    characterMarker.setOutlineColor(sf::Color::Green);
     
 }
 
@@ -50,49 +87,63 @@ void Level_00_GO_MainCharacter::onStart(){
 
     Level_00_GO_BasicCharacter::onStart();
     
-    if(!this->hurtbox.isRegistered()){
-        this->hurtbox.registerCollider();
+    if(!this->hurtbox->isRegistered()){
+        this->hurtbox->registerCollider();
     }
-    if(!this->hurtbox.isActive()){
-        this->hurtbox.setActive(true);
+    if(!this->hurtbox->isActive()){
+        this->hurtbox->setActive(true);
     }
 }
 
 void Level_00_GO_MainCharacter::onEnd(){
     
 
-    if(this->hurtbox.isActive()){
-        this->hurtbox.setActive(false);
+    if(this->hurtbox->isActive()){
+        this->hurtbox->setActive(false);
     }
-    if(this->hurtbox.isRegistered()){
-        this->hurtbox.unregisterCollider();
+    if(this->hurtbox->isRegistered()){
+        this->hurtbox->unregisterCollider();
     }
     
     Level_00_GO_BasicCharacter::onEnd();
     
 }
 
+void Level_00_GO_MainCharacter::startAttackCollision(bool area){
 
-
-void Level_00_GO_MainCharacter::startAttack(){
-    
-    Level_00_GO_BasicCharacter::startAttack();
-    
     InstantCircleCollider hitbox{
         .x = this->position.x + HITBOX_OFFSET_X,
         .y = this->position.y + HITBOX_OFFSET_Y,
-        .r = this->attackRadious
+        .r = this->attackRadious,
+        .direction_4 = this->getDirection_4(),
+        .area = area
     };
     
     game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
+        
+}
 
+void Level_00_GO_MainCharacter::startAttack(bool area){
+    
+    Level_00_GO_BasicCharacter::startAttack(this->lastDirection_4);
+    
+    this->startAttackCollision(area);
+
+}
+
+void Level_00_GO_MainCharacter::parryCounter(sf::Vector2f direction){
+
+    Level_00_GO_BasicCharacter::startAttack(this->lastDirection_4);
+    
+    this->startAttackCollision(true);
+    
 }
 
 
 void Level_00_GO_MainCharacter::update(){
     
     Level_00_GO_BasicCharacter::update();
-    
+ 
 }
 
 void Level_00_GO_MainCharacter::draw(sf::RenderTarget * renderTarget){
@@ -100,6 +151,11 @@ void Level_00_GO_MainCharacter::draw(sf::RenderTarget * renderTarget){
     Level_00_GO_BasicCharacter::draw(renderTarget);
     
     
+}
+
+void Level_00_GO_MainCharacter::die(){
+    Level_00_GO_BasicCharacter::die();
+
 }
 
 

@@ -70,6 +70,29 @@ void MenuScene::onNotify (Message message){
             }
             
         }
+    }else if(message.getEvent().compare("MSG_BUTTON_PRESSED")==0){
+        if(message.getData().type!=MessageData::INTEGER){
+            std::cerr << "ERROR: The data in this message should be an integer" << std::endl;
+        }else{
+            switch(message.getData().integer){
+                case 11:        //Up button
+                    menuOptions.moveSelection(Direction::MOVE_UP);
+                    break;
+                    
+                case 12:        //Down button
+                    menuOptions.moveSelection(Direction::MOVE_DOWN);
+                    break;
+                    
+                case 0:         //A button
+                    menuOptions.executeSelection();
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+
+    
     }
     
 }

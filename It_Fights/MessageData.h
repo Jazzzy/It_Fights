@@ -22,13 +22,15 @@ struct MessageData{
         STRING_PTR,
         PAIR_OF_INTS,
         KEYBOARD_KEY,
-        CHARACTER
+        CHARACTER,
+        INTEGER
     }type;
     union{
         std::string * string_ptr;
         PairI intPair;
         sf::Keyboard::Key key;
         char character;
+        int integer;
     };
 };
 

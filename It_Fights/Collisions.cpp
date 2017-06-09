@@ -365,6 +365,7 @@ void Collisions::checkCircleHitbox(InstantCircleCollider * hitbox, CollisionLaye
             vector.x=0.f;
             vector.y=0.f;
             if(this->checkInstantCircleRect(hitbox, col1, &vector)){
+                
                 col1->funcs.onCollisionCallback(ColliderType::HITBOX,vector,damage);
                 
             }
@@ -382,6 +383,10 @@ bool Collisions::checkInstantCircleRect(InstantCircleCollider * circle ,Rectangl
     sf::Vector2f distance;
     distance.x = fabs(vector->x);
     distance.y = fabs(vector->y);
+    
+    if(!isVectorHeaded_halfCircle(circle->direction_4, *vector)){
+        return false;
+    }
     
     *vector = getNormalizedVector(*vector);
     

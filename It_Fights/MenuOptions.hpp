@@ -12,7 +12,10 @@
 #include "GameObject.hpp"
 
 enum Options {
-    PLAY,
+    PLAY_HUMAN_VS_HUMAN,
+    PLAY_HUMAN_VS_AGENT,
+    PLAY_AGENT_VS_AGENT,
+    PLAY_AGENT_VS_AGENT_NO_RENDERING,
     CLOSE,
     LAST
 };
@@ -34,9 +37,18 @@ public:
     void moveSelection(Direction direction);
     void executeSelection();
 private:
+    
+    std::vector<std::pair<Options, sf::Text>> optionsVector;
     sf::Font mainFont;
     Options selectedOption;
     void changeSelection(short delta);
+    std::string getStringFromOption(Options option);
+    
+    sf::Vector2f selectedOptionPosition;
+    sf::Vector2f selectedOptionSize;
+    
+    sf::Vector2f shownOptionPosition;
+    sf::Vector2f shownOptionSize;
     
 };
 

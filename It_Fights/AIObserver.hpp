@@ -13,9 +13,10 @@
 
 class Level_00_GO_Characters;
 
+
 enum Character {
-    PLAYER,
-    ENEMY
+    MYSELF,
+    OTHER
 };
 
 enum CharacterAction {
@@ -34,8 +35,8 @@ struct CharacterState {
 };
 
 struct FightState {
-    CharacterState playerState;
-    CharacterState  enemyState;
+    CharacterState myState;
+    CharacterState  otherState;
     
     float timeSinceLastCheck;
     float totalFightingTime;
@@ -43,13 +44,15 @@ struct FightState {
 
 class AIObserver {
 public:
-    AIObserver(Level_00_GO_Characters* characters);
+    AIObserver(Level_00_GO_Characters* characters, Position position);
     ~AIObserver();
     
     FightState getFightState(bool doCheck);
+    Position getPlayer1_2();
     
 private:
     FightState currentFightState;
+    short playerPosition;
     
     void updateFightState();
     CharacterState getCharacterState(Character character);

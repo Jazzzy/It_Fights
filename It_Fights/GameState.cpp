@@ -18,7 +18,6 @@ extern Game game;
 GameState::GameState(MessageBus * messageBus) : BusNode(Systems::S_GameState, messageBus){
     
     this->scene = new MenuScene(messageBus);
-    //this->scene = new Level_00_NeoPurple_DEMO(messageBus);
     this->mainMenu = true;
     this->paused = false;
     
@@ -42,12 +41,33 @@ void GameState::onNotify(Message message){
         this->scene = new MenuScene(messageBus);
         this->scene->onStart();
 
-    }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME")==0){
+    }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_AGENT_VS_AGENT")==0){
         if (this->scene  != nullptr){
             this->scene->onEnd();
             delete this->scene;
         }
-        this->scene = new Level_00_NeoPurple_DEMO(messageBus);
+        this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::AGENT_VS_AGENT,true);
+        this->scene->onStart();
+    }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_HUMAN_VS_AGENT")==0){
+        if (this->scene  != nullptr){
+            this->scene->onEnd();
+            delete this->scene;
+        }
+        this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::HUMAN_VS_AGENT,true);
+        this->scene->onStart();
+    }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_HUMAN_VS_HUMAN")==0){
+        if (this->scene  != nullptr){
+            this->scene->onEnd();
+            delete this->scene;
+        }
+        this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::HUMAN_VS_HUMAN,true);
+        this->scene->onStart();
+    }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_AGENT_VS_AGENT_NO_RENDERING")==0){
+        if (this->scene  != nullptr){
+            this->scene->onEnd();
+            delete this->scene;
+        }
+        this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::AGENT_VS_AGENT,false);
         this->scene->onStart();
     }
 }

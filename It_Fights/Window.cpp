@@ -56,7 +56,13 @@ Window::~Window(){
 }
 
 void Window::toggleShouldRender(){
+    
     this->shouldRender= !this->shouldRender;
+    this->sf_window.setVerticalSyncEnabled(this->shouldRender);
+    if(!this->shouldRender){
+        this->sf_window.clear(sf::Color::Black);
+        this->sf_window.display();
+    }
 }
 
 std::pair<unsigned int, unsigned int> Window::getCurrentInternalResolution(){
@@ -77,21 +83,21 @@ void Window::recalculateScale(){
     this->renderTextureScale.second = (double)this->currRealResolution.y / (double)this->internalResolution.second;
     
     
-    prints("Current Real Resolution: ");
-    printv(this->currRealResolution.x);
-    printv(this->currRealResolution.y);
-    prints("\n");
-    
-    
-    prints("New Internal Resolution: ");
-    printv(this->internalResolution.first);
-    printv(this->internalResolution.second);
-    prints("\n");
-    
-    prints("New render texture scale: ");
-    printv(this->renderTextureScale.first);
-    printv(this->renderTextureScale.second);
-    prints("\n\n");
+//    prints("Current Real Resolution: ");
+//    printv(this->currRealResolution.x);
+//    printv(this->currRealResolution.y);
+//    prints("\n");
+//    
+//    
+//    prints("New Internal Resolution: ");
+//    printv(this->internalResolution.first);
+//    printv(this->internalResolution.second);
+//    prints("\n");
+//    
+//    prints("New render texture scale: ");
+//    printv(this->renderTextureScale.first);
+//    printv(this->renderTextureScale.second);
+//    prints("\n\n");
 
 }
 
@@ -194,6 +200,8 @@ void Window::onNotify (Message message){
         this->sf_renderTexture.setSmooth(false);
     }else if(message.getEvent().compare("MSG_SMOOTH_TRUE")==0){
         this->sf_renderTexture.setSmooth(true);
+    }else if(message.getEvent().compare("MSG_TOGGLE_RENDER")==0){
+        this->toggleShouldRender();
     }
     
 }

@@ -82,7 +82,7 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     this->oldPosition = this->position;
     this->velocity = sf::Vector2f(0.f,0.f);
     
-    this->lastHeading = Heading::DOWN;
+    this->lastDirection_4 = Direction_4::DOWN;
     this->shouldUpdate = true;
     
     this->finalDashPosition = sf::Vector2f(0.f,0.f);
@@ -96,7 +96,7 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     
     this->basicAttackDamage = 10.f;
     this->attackRadious = 28.f;
-    this->attackFunction = [](){};
+    this->attackFunction = [](bool nothing){};
     this->attacking = false;
     
     
@@ -142,14 +142,14 @@ void Level_00_GO_BasicCharacter::onEnd(){
 }
 
 
-bool Level_00_GO_BasicCharacter::receiveDamage(float damage){
+bool Level_00_GO_BasicCharacter::receiveDamage(float damage, sf::Vector2f direction){
     
     if(this->parrying){
         this->successfulParry = true;
         this->shouldUpdate = true;
         this->parrying= false;
         
-        this->parryCounter();
+        this->parryCounter(-direction);
         
         prints("PARRIED!!");
         
@@ -157,6 +157,9 @@ bool Level_00_GO_BasicCharacter::receiveDamage(float damage){
     }
     
     this->health-= damage;
+    
+    prints(this->getCharacterPublicName() << " received " << damage << " poins of damage");
+    
     if(this->health<=0.){
         this->health = 0.;
         this->die();
@@ -165,11 +168,11 @@ bool Level_00_GO_BasicCharacter::receiveDamage(float damage){
     return true;
 }
 
-void Level_00_GO_BasicCharacter::parryCounter(){
-    //@@TODO
-}
 
 void Level_00_GO_BasicCharacter::die(){
+    
+    prints(this->getCharacterPublicName() << " has died ");
+
     
     Message message("MSG_GO_TO_MENU");
     
@@ -189,24 +192,12 @@ float Level_00_GO_BasicCharacter::getHealthNormalized(){
 }
 
 
-Heading Level_00_GO_BasicCharacter::calculateHeading(sf::Vector2f velocity){
+Direction_4 Level_00_GO_BasicCharacter::calculateDirection_4(sf::Vector2f velocity){
     
-    if(fabs(velocity.x) > fabs(velocity.y)){
-        
-        if(velocity.x > 0)
-            return Heading::RIGHT;
-        else
-            return Heading::LEFT;
-        
-    }else if(fabs(velocity.x) < fabs(velocity.y)){
-        
-        if(velocity.y > 0)
-            return Heading::DOWN;
-        else
-            return Heading::UP;
-        
+    if(getVectorLength(velocity)>0.f){
+        return getDirection_4FromVector(velocity);
     }else{
-        return lastHeading;
+        return lastDirection_4;
     }
     
 }
@@ -214,6 +205,14 @@ Heading Level_00_GO_BasicCharacter::calculateHeading(sf::Vector2f velocity){
 #define VECTOR_LENGTH_LIMIT 0.2f
 
 void Level_00_GO_BasicCharacter::update(){
+    
+    
+    if(this->shouldUpdate){
+        this->tryToUpdateAnimation();
+    }
+    
+    this->animatedSprite.update();
+    
     
     if(this->dashing){
         this->dash();
@@ -235,7 +234,7 @@ void Level_00_GO_BasicCharacter::update(){
     bool attackButtonPressed = this->controller->isAttackButtonPressed();
     
     if(attackButtonPressed)
-        this->attackFunction();
+        this->attackFunction(false);
     
     bool parryButtonPressed = this->controller->isParryButtonPressed();
     
@@ -254,7 +253,7 @@ void Level_00_GO_BasicCharacter::update(){
     
     this->velocity = (movementVector*this->walkingSpeed * Clock::Instance().getDeltaTime());
     
-    this->lastHeading = this->calculateHeading(this->velocity);
+    this->lastDirection_4 = this->calculateDirection_4(this->velocity);
     
     this->oldPosition = this->position;
     
@@ -309,8 +308,8 @@ sf::Vector2f Level_00_GO_BasicCharacter::getVelocity(){
     return this->velocity;
 }
 
-Heading Level_00_GO_BasicCharacter::getHeading(){
-    return this->lastHeading;
+Direction_4 Level_00_GO_BasicCharacter::getDirection_4(){
+    return this->lastDirection_4;
 }
 
 bool Level_00_GO_BasicCharacter::isAttacking(){
@@ -326,7 +325,9 @@ bool Level_00_GO_BasicCharacter::isOnCooldown(){
 }
 
 
-void Level_00_GO_BasicCharacter::startAttack(){
+
+
+void Level_00_GO_BasicCharacter::startAttack(Direction_4 direction){
     
     if(!this->shouldUpdate){
         return;
@@ -344,20 +345,20 @@ void Level_00_GO_BasicCharacter::startAttack(){
     dashVector.x=0;
     dashVector.y=0;
     
-    switch(lastHeading){
-        case (Heading::DOWN):
+    switch(direction){
+        case (Direction_4::DOWN):
             this->animatedSprite.startAnimation("ATTACK_DOWN", false, finishAnimationFunction);
             dashVector.y=1;
             break;
-        case (Heading::UP):
+        case (Direction_4::UP):
             this->animatedSprite.startAnimation("ATTACK_UP", false, finishAnimationFunction);
             dashVector.y=-1;
             break;
-        case (Heading::LEFT):
+        case (Direction_4::LEFT):
             this->animatedSprite.startAnimation("ATTACK_LEFT", false, finishAnimationFunction);
             dashVector.x=-1;
             break;
-        case (Heading::RIGHT):
+        case (Direction_4::RIGHT):
             this->animatedSprite.startAnimation("ATTACK_RIGHT", false, finishAnimationFunction);
             dashVector.x=1;
             break;
@@ -389,17 +390,17 @@ void Level_00_GO_BasicCharacter::startParry(){
         this->successfulParry = false;
     };
     
-    switch(lastHeading){
-        case (Heading::DOWN):
+    switch(lastDirection_4){
+        case (Direction_4::DOWN):
             this->animatedSprite.startAnimation("PARRY_DOWN", false, finishAnimationFunction);
             break;
-        case (Heading::UP):
+        case (Direction_4::UP):
             this->animatedSprite.startAnimation("PARRY_UP", false, finishAnimationFunction);
             break;
-        case (Heading::LEFT):
+        case (Direction_4::LEFT):
             this->animatedSprite.startAnimation("PARRY_LEFT", false, finishAnimationFunction);
             break;
-        case (Heading::RIGHT):
+        case (Direction_4::RIGHT):
             this->animatedSprite.startAnimation("PARRY_RIGHT", false, finishAnimationFunction);
             break;
         default:
@@ -422,17 +423,17 @@ void Level_00_GO_BasicCharacter::startCooldown(){
         this->inCooldown = false;
     };
     
-    switch(lastHeading){
-        case (Heading::DOWN):
+    switch(lastDirection_4){
+        case (Direction_4::DOWN):
             this->animatedSprite.startAnimation("PARRYCOOLDOWN_DOWN", false, finishAnimationFunction);
             break;
-        case (Heading::UP):
+        case (Direction_4::UP):
             this->animatedSprite.startAnimation("PARRYCOOLDOWN_UP", false, finishAnimationFunction);
             break;
-        case (Heading::LEFT):
+        case (Direction_4::LEFT):
             this->animatedSprite.startAnimation("PARRYCOOLDOWN_LEFT", false, finishAnimationFunction);
             break;
-        case (Heading::RIGHT):
+        case (Direction_4::RIGHT):
             this->animatedSprite.startAnimation("PARRYCOOLDOWN_RIGHT", false, finishAnimationFunction);
             break;
         default:
@@ -449,17 +450,17 @@ void Level_00_GO_BasicCharacter::tryToUpdateAnimation(){
     }
     
     if(getVectorLength(velocity) > 0.0f){   //We are moving
-        switch(lastHeading){
-            case (Heading::DOWN):
+        switch(lastDirection_4){
+            case (Direction_4::DOWN):
                 this->animatedSprite.startAnimation("RUN_DOWN", true, [](){});
                 break;
-            case (Heading::UP):
+            case (Direction_4::UP):
                 this->animatedSprite.startAnimation("RUN_UP", true, [](){});
                 break;
-            case (Heading::LEFT):
+            case (Direction_4::LEFT):
                 this->animatedSprite.startAnimation("RUN_LEFT", true, [](){});
                 break;
-            case (Heading::RIGHT):
+            case (Direction_4::RIGHT):
                 this->animatedSprite.startAnimation("RUN_RIGHT", true, [](){});
                 break;
             default:
@@ -469,17 +470,17 @@ void Level_00_GO_BasicCharacter::tryToUpdateAnimation(){
         
     }else{                                  //We are standing still
         
-        switch(lastHeading){
-            case (Heading::DOWN):
+        switch(lastDirection_4){
+            case (Direction_4::DOWN):
                 this->animatedSprite.startAnimation("IDLE_DOWN", true, [](){});
                 break;
-            case (Heading::UP):
+            case (Direction_4::UP):
                 this->animatedSprite.startAnimation("IDLE_UP", true, [](){});
                 break;
-            case (Heading::LEFT):
+            case (Direction_4::LEFT):
                 this->animatedSprite.startAnimation("IDLE_LEFT", true, [](){});
                 break;
-            case (Heading::RIGHT):
+            case (Direction_4::RIGHT):
                 this->animatedSprite.startAnimation("IDLE_RIGHT", true, [](){});
                 break;
             default:
@@ -496,11 +497,6 @@ void Level_00_GO_BasicCharacter::tryToUpdateAnimation(){
 
 void Level_00_GO_BasicCharacter::draw(sf::RenderTarget * renderTarget){
     
-    if(this->shouldUpdate){
-        this->tryToUpdateAnimation();
-    }
-    
-    this->animatedSprite.update();
     
     sf::Sprite mainCharSprite = this->animatedSprite.getCurrentSprite();
     
@@ -508,12 +504,15 @@ void Level_00_GO_BasicCharacter::draw(sf::RenderTarget * renderTarget){
     
     characterMarker.setPosition(this->position.x + MARKER_OFFSET_X, this->position.y + MARKER_OFFSET_Y);
     
-    
     renderTarget->draw(characterMarker);
     
     renderTarget->draw(mainCharSprite);
     
     
     
+}
+
+std::string Level_00_GO_BasicCharacter::getCharacterPublicName(){
+    return characterPublicName;
 }
 

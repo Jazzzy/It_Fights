@@ -11,7 +11,7 @@
 
 #include "Level_00_GO_BasicCharacter.hpp"
 #include "MainCharacterController.hpp"
-
+#include "AIObserver.hpp"
 
 /*
  Class that represents the main character in the duel, this extends from our BasicCharacter class
@@ -19,7 +19,7 @@
  */
 class Level_00_GO_MainCharacter : public Level_00_GO_BasicCharacter{
 public:
-    Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position);
+    Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position, Position playerPosition);
     
     /*
      We override the update function to be able to read the player input
@@ -29,12 +29,18 @@ public:
     void draw(sf::RenderTarget * renderTarget);
     void onStart();
     void onEnd();
+    void startAttackCollision(bool area);
+
 private:
-    BoxCollider hurtbox;
-    void startAttack();
+    
+    BoxCollider * hurtbox;
+    void startAttack(bool area);
+    void parryCounter(sf::Vector2f direction);
+    void die();
+
     
     
-    MainCharacterController myController;
+    MainCharacterController * myController;
     
 };
 

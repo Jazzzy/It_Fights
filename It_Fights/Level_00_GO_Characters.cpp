@@ -16,35 +16,67 @@
  It locates both characters on the map
  
  */
-Level_00_GO_Characters::Level_00_GO_Characters(Scene* scene):
+Level_00_GO_Characters::Level_00_GO_Characters(Scene* scene, CharacterOptions options):
 GameObject(scene){
 
-    this->observer = new AIObserver(this);
-    this->mainCharacter = new Level_00_GO_MainCharacter(scene,sf::Vector2f(120,150));
-    this->enemyCharacter = new Level_00_GO_EnemyCharacter(scene,sf::Vector2f(280,150), observer);
+    this->characterOptions = options;
     
+    this->observer_1 = nullptr;
+    this->observer_2 = nullptr;
+    
+    switch(this->characterOptions){
+    
+        case HUMAN_VS_AGENT:
+            this->observer_2 = new AIObserver(this,Position::PLAYER_2);
+            this->character_1 = new Level_00_GO_MainCharacter(scene,sf::Vector2f(120,150),PLAYER_1);
+            this->character_2 = new Level_00_GO_EnemyCharacter(scene,sf::Vector2f(280,150), observer_2, PLAYER_2);
+            break;
+        case AGENT_VS_AGENT:
+            this->observer_1 = new AIObserver(this,Position::PLAYER_1);
+            this->observer_2 = new AIObserver(this,Position::PLAYER_2);
+            this->character_1 = new Level_00_GO_EnemyCharacter(scene,sf::Vector2f(120,150), observer_1, PLAYER_1);
+            this->character_2 = new Level_00_GO_EnemyCharacter(scene,sf::Vector2f(280,150), observer_2, PLAYER_2);
+            break;
+        case HUMAN_VS_HUMAN:
+            this->character_1 = new Level_00_GO_MainCharacter(scene,sf::Vector2f(120,150),PLAYER_1);
+            this->character_2 = new Level_00_GO_MainCharacter(scene,sf::Vector2f(280,150),PLAYER_2);
+            break;
+    
+    }
     
 }
 
 Level_00_GO_Characters::~Level_00_GO_Characters(){
-    delete this->observer;
-    delete this->mainCharacter;
-    delete this->enemyCharacter;
+    
+    delete this->character_1;
+    delete this->character_2;
+    
+    if(this->observer_1 != nullptr)
+        delete this->observer_1;
+    
+    if(this->observer_2 != nullptr)
+        delete this->observer_2;
+    
 }
 
 
 void Level_00_GO_Characters::onStart(){
-    this->getMainCharacter()->onStart();
-    this->getEnemyCharacter()->onStart();
+    this->getCharacter_1()->onStart();
+    this->getCharacter_2()->onStart();
     
     //We force an update here to force the early failure in case of error
-    this->observer->getFightState(true);
+    if(this->observer_1 != nullptr)
+        this->observer_1->getFightState(true);
+    
+    if(this->observer_2 != nullptr)
+        this->observer_2->getFightState(true);
+
 }
 
 
 void Level_00_GO_Characters::onEnd(){
-    this->getMainCharacter()->onEnd();
-    this->getEnemyCharacter()->onEnd();
+    this->getCharacter_1()->onEnd();
+    this->getCharacter_2()->onEnd();
 }
 
 
@@ -64,7 +96,7 @@ struct {
  */
 void Level_00_GO_Characters::draw(sf::RenderTarget * renderTarget){
     
-    std::array <Level_00_GO_BasicCharacter*,2> characterVector = {this->mainCharacter, this->enemyCharacter};
+    std::array <Level_00_GO_BasicCharacter*,2> characterVector = {this->character_1, this->character_2};
     
     //We sort the characters by position
     std::sort(characterVector.begin(), characterVector.end(), comp);
@@ -79,14 +111,14 @@ void Level_00_GO_Characters::draw(sf::RenderTarget * renderTarget){
 
 //We simply call the update method of both characters
 void Level_00_GO_Characters::update(){
-    this->mainCharacter->update();
-    this->enemyCharacter->update();
+    this->character_1->update();
+    this->character_2->update();
 }
 
-Level_00_GO_MainCharacter * Level_00_GO_Characters::getMainCharacter(){
-    return (this->mainCharacter);
+Level_00_GO_BasicCharacter * Level_00_GO_Characters::getCharacter_1(){
+    return (this->character_1);
 }
 
-Level_00_GO_EnemyCharacter * Level_00_GO_Characters::getEnemyCharacter(){
-    return (this->enemyCharacter);
+Level_00_GO_BasicCharacter * Level_00_GO_Characters::getCharacter_2(){
+    return (this->character_2);
 }

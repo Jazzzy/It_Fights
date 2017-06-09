@@ -14,13 +14,16 @@
 
 class MainCharacterController : public GeneralCharacterController{
 public:
-    MainCharacterController();
+    MainCharacterController(short controllerNumber);
     ~MainCharacterController();
     
     virtual bool isConnected();
     virtual bool isAttackButtonPressed();
     virtual bool isParryButtonPressed();
     virtual sf::Vector2f getJoystickAxisPosition();
+    
+private:
+    short controllerNumber;
 
 
 };

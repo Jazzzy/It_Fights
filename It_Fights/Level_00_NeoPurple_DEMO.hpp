@@ -20,7 +20,7 @@
 
 class Level_00_NeoPurple_DEMO : public Scene {
 public:
-    Level_00_NeoPurple_DEMO(MessageBus * messageBus);
+    Level_00_NeoPurple_DEMO(MessageBus * messageBus, CharacterOptions characterOptions, bool shouldRender);
     virtual ~Level_00_NeoPurple_DEMO();
 private:
     void localUpdateImplemented();
@@ -32,6 +32,8 @@ private:
     
     sf::View view;
     bool changedRes;
+    
+    bool shouldRender;
     
 };
 

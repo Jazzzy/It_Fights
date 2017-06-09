@@ -21,6 +21,9 @@ public:
     float getDeltaTime();
     float getMeanDeltaTime();
     unsigned int getMeanFPS();
+    void setTimeScale(float timeScale);
+    float getTimeScale();
+
 private :
     static void CleanUp();
     
@@ -40,6 +43,9 @@ private :
     std::deque<float> timesQueue;
     float meanDeltaTime;
     std::function<void()> updateFunction;
+    
+    
+    float timeScale;
     
     void updateQueue(sf::Time time);
     

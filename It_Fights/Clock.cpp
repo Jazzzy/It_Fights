@@ -25,6 +25,8 @@ void Clock::CleanUp(){
 
 Clock::Clock(){
     this->updateFunction = [&](){this->first20Update();};
+    this->timeScale = 1.0f;
+    
     
     atexit(&CleanUp);
 }
@@ -37,8 +39,17 @@ void Clock::setFrameSeparator(){
     this->updateFunction();
 }
 
+void Clock::setTimeScale(float timeScale){
+    this->timeScale = timeScale;
+}
+
+float Clock::getTimeScale(){
+    return this->timeScale;
+}
+
+
 float Clock::getDeltaTime(){
-    return this->deltaTime;
+    return this->deltaTime * this->timeScale;
 }
 
 float Clock::getMeanDeltaTime(){

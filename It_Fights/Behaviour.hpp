@@ -24,13 +24,15 @@ public:
     Behaviour(EnemyCharacterController* controller, AIObserver* observer);
     virtual ~Behaviour();
     virtual void update() = 0;
+    void startThread();
+    void stopThread();
 protected:
     EnemyCharacterController* controller;
     AIObserver* observer;
     void threadFunction();
     
     std::thread behaviourThread;
-    bool stopThread;
+    bool shouldStopThread;
     
 };
 

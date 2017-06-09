@@ -23,7 +23,7 @@ class Behaviour;
  */
 class Level_00_GO_EnemyCharacter : public Level_00_GO_BasicCharacter{
 public:
-    Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer);
+    Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition);
     ~Level_00_GO_EnemyCharacter();
     
     /*
@@ -33,13 +33,17 @@ public:
     void update();
     void onStart();
     void onEnd();
+    void startAttackCollision(bool area);
+
     
     AIObserver* getAIObserver();
     
 private:
-    BoxCollider hurtbox;
-    void startAttack();
     
+    BoxCollider * hurtbox;
+    void startAttack(bool area);
+    void parryCounter(sf::Vector2f direction);
+    void die();
     
     EnemyCharacterController myController;
     

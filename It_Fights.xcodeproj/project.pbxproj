@@ -39,6 +39,7 @@
 		40817FF21EAD2536003089A4 /* prota_0.2.json in Resources */ = {isa = PBXBuildFile; fileRef = 40817FF01EAD2536003089A4 /* prota_0.2.json */; };
 		40817FF31EAD2536003089A4 /* prota_0.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40817FF11EAD2536003089A4 /* prota_0.2.png */; };
 		40817FF71EAD301E003089A4 /* Collisions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40817FF51EAD301E003089A4 /* Collisions.cpp */; };
+		408485551EEABE8900058CD6 /* PhysicsTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 408485541EEABE8900058CD6 /* PhysicsTypes.cpp */; };
 		408534231EB264FA001D0131 /* DebugUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 408534211EB264FA001D0131 /* DebugUtilities.cpp */; };
 		40A563CD1EA6654A00133110 /* Bloom.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40A563CC1EA6654A00133110 /* Bloom.frag */; };
 		40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBB1E901DC800DB11BB /* Scene.cpp */; };
@@ -127,6 +128,8 @@
 		40817FF11EAD2536003089A4 /* prota_0.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prota_0.2.png; sourceTree = "<group>"; };
 		40817FF51EAD301E003089A4 /* Collisions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collisions.cpp; sourceTree = "<group>"; };
 		40817FF61EAD301E003089A4 /* Collisions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Collisions.hpp; sourceTree = "<group>"; };
+		408485531EEABD2300058CD6 /* PhysicsTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PhysicsTypes.hpp; sourceTree = "<group>"; };
+		408485541EEABE8900058CD6 /* PhysicsTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsTypes.cpp; sourceTree = "<group>"; };
 		408534211EB264FA001D0131 /* DebugUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugUtilities.cpp; sourceTree = "<group>"; };
 		408534221EB264FA001D0131 /* DebugUtilities.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DebugUtilities.hpp; sourceTree = "<group>"; };
 		40A563CC1EA6654A00133110 /* Bloom.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Bloom.frag; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 				40817FF61EAD301E003089A4 /* Collisions.hpp */,
 				40D7A0EF1EB0EE4F000673F2 /* BoxCollider.cpp */,
 				40D7A0F01EB0EE4F000673F2 /* BoxCollider.hpp */,
+				408485531EEABD2300058CD6 /* PhysicsTypes.hpp */,
+				408485541EEABE8900058CD6 /* PhysicsTypes.cpp */,
 			);
 			name = It_physics;
 			sourceTree = "<group>";
@@ -609,6 +614,7 @@
 				40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */,
 				40C41EC41E90222600DB11BB /* MenuScene.cpp in Sources */,
 				407DEFFD1E897B92004263E6 /* Message.cpp in Sources */,
+				408485551EEABE8900058CD6 /* PhysicsTypes.cpp in Sources */,
 				4076FB3C1EB4DDE6002D4DAB /* Level_00_GO_EnemyCharacter.cpp in Sources */,
 				40FEE0601E905173004DCA95 /* Shader.cpp in Sources */,
 				40FEE05D1E905168004DCA95 /* BloomShader.cpp in Sources */,

@@ -37,12 +37,12 @@ Level_00_GO_HealthBars::~Level_00_GO_HealthBars(){
 
 void Level_00_GO_HealthBars::update(){
     
-    this->mainCharTargetHP = this->characters->getMainCharacter()->getHealthNormalized();
-    this->enemyCharTargetHP = this->characters->getEnemyCharacter()->getHealthNormalized();
+    this->mainCharTargetHP = this->characters->getCharacter_1()->getHealthNormalized();
+    this->enemyCharTargetHP = this->characters->getCharacter_2()->getHealthNormalized();
         
     this->mainCharShowingHP = lerp(this->mainCharShowingHP, this->mainCharTargetHP, this->lerpSpeed);
     this->enemyCharShowingHP = lerp(this->enemyCharShowingHP, this->enemyCharTargetHP, this->lerpSpeed);
-
+    
 }
 
 #define PADDING (10)

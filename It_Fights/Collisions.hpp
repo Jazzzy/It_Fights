@@ -12,6 +12,7 @@
 #include "BusNode.hpp"
 #include <functional>
 #include "Drawable.hpp"
+#include "PhysicsTypes.hpp"
 
 
 
@@ -71,11 +72,12 @@ typedef struct {
     ColliderType colType;
 } CircleCollider;
 
-
 typedef struct {
     float r;
     float x;
     float y;
+    Direction_4 direction_4;
+    bool area;
 } InstantCircleCollider;
 
 

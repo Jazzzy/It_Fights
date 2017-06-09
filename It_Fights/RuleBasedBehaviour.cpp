@@ -22,9 +22,10 @@ RuleBasedBehaviour::~RuleBasedBehaviour(){
 
 void RuleBasedBehaviour::update(){
 
+    
     FightState state = this->observer->getFightState(true);
     
-    sf::Vector2f posDiff =  state.playerState.position - state.enemyState.position;
+    sf::Vector2f posDiff =  state.otherState.position - state.myState.position;
     float diffMagnitude = getVectorLength(posDiff);
     
     

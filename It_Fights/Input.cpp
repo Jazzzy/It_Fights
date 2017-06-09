@@ -84,6 +84,13 @@ void Input::readInput(){
             }
                 break;
                 
+            case sf::Event::JoystickButtonPressed:
+            {
+                Message msg_buttonPressed("MSG_BUTTON_PRESSED", MessageData{MessageData::INTEGER, .integer = (int)event.joystickButton.button});
+                send(msg_buttonPressed);
+            }
+                break;
+                
             default:
                 break;
                 

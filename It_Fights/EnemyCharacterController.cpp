@@ -9,6 +9,9 @@
 #include "EnemyCharacterController.hpp"
 
 EnemyCharacterController::EnemyCharacterController(){
+    this->attackButtonPressed = false;
+    this->parryButtonPressed = false;
+    this->joystickAxis = sf::Vector2f(0.0f,0.0f);
     
 }
 

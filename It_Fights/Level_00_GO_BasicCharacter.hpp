@@ -13,6 +13,13 @@
 #include "GameObject.hpp"
 #include "BoxCollider.hpp"
 #include "GeneralCharacterController.hpp"
+#include "PhysicsTypes.hpp"
+
+
+enum Position {
+    PLAYER_1,
+    PLAYER_2
+};
 
 
 //Sizes for the location collider of the character
@@ -27,8 +34,6 @@
 //Offsets for the hitbox collider relative to its position
 #define HITBOX_OFFSET_X (0)
 #define HITBOX_OFFSET_Y (-15)
-
-enum Heading { UP,DOWN,RIGHT,LEFT };
 
 /*
  Class that extends from the Animated Sprite class and loads the neccesary
@@ -48,12 +53,13 @@ public:
     virtual void draw(sf::RenderTarget * renderTarget);
     virtual void onStart();
     virtual void onEnd();
+    virtual void startAttackCollision(bool area) = 0;
     
     sf::Vector2f getPosition();
     sf::Vector2f getVelocity();
     float getHealthNormalized();
     
-    Heading getHeading();
+    Direction_4 getDirection_4();
     bool isAttacking();
     bool isParrying();
     bool isOnCooldown();
@@ -62,21 +68,23 @@ protected:
     Level_00_GO_BasicCharacter_AnimatedSprite animatedSprite;
     GeneralCharacterController *controller;
     
+    std::string characterPublicName;
+    std::string getCharacterPublicName();
     
     float walkingSpeed;
     float health;
     float maxHealth;
-    bool receiveDamage(float damage);
-    void die();
+    bool receiveDamage(float damage, sf::Vector2f direction);
+    virtual void die();
     
-    std::function<void()> attackFunction;
+    std::function<void(bool)> attackFunction;
     
     sf::Vector2f position;
     sf::Vector2f oldPosition;
     sf::Vector2f velocity;
     
-    Heading calculateHeading(sf::Vector2f velocity);
-    Heading lastHeading;
+    Direction_4 calculateDirection_4(sf::Vector2f velocity);
+    Direction_4 lastDirection_4;
     void tryToUpdateAnimation();
     bool shouldUpdate;
     
@@ -95,14 +103,14 @@ protected:
     
     float basicAttackDamage;
     float attackRadious;
-    void startAttack();
+    void startAttack(Direction_4 direction);
     bool attacking;
     
     
     void startParry();
     bool parrying;
     bool successfulParry;
-    void parryCounter();
+    virtual void parryCounter(sf::Vector2f direction) = 0;
     
     
     void startCooldown();

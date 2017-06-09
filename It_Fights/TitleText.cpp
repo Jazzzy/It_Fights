@@ -40,8 +40,8 @@ void TitleText::draw(sf::RenderTarget *renderTarget){
     text_it.setString("IT");
     text_fights.setString("FIGHTS");
     
-    text_it.setFillColor(sf::Color::White);
-    text_fights.setFillColor(sf::Color::White);
+    text_it.setFillColor(sf::Color::Black);
+    text_fights.setFillColor(sf::Color::Black);
     
     text_it.setOutlineColor(sf::Color::Black);
     text_fights.setOutlineColor(sf::Color::Black);
