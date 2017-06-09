@@ -53,6 +53,29 @@ void ResourceManager::loadFonts(){
     }
     this->fontsMap.insert(std::pair<std::string,sf::Font>("playfair",playfair));
     
+    sf::Font benguiat;
+    if (!benguiat.loadFromFile(resourcePath() + "benguiat.ttf")) {
+        std::cerr << "ERROR: Could not load console font" << std::endl;
+    }
+    this->fontsMap.insert(std::pair<std::string,sf::Font>("benguiat",benguiat));
+    
+    sf::Font rodin_l;
+    if (!rodin_l.loadFromFile(resourcePath() + "rodin_l.otf")) {
+        std::cerr << "ERROR: Could not load console font" << std::endl;
+    }
+    this->fontsMap.insert(std::pair<std::string,sf::Font>("rodin_l",rodin_l));
+    
+    sf::Font rodin_m;
+    if (!rodin_m.loadFromFile(resourcePath() + "rodin_m.otf")) {
+        std::cerr << "ERROR: Could not load console font" << std::endl;
+    }
+    this->fontsMap.insert(std::pair<std::string,sf::Font>("rodin_m",rodin_m));
+    
+    sf::Font rodin_b;
+    if (!rodin_b.loadFromFile(resourcePath() + "rodin_b.otf")) {
+        std::cerr << "ERROR: Could not load console font" << std::endl;
+    }
+    this->fontsMap.insert(std::pair<std::string,sf::Font>("rodin_b",rodin_b));
     
 }
 

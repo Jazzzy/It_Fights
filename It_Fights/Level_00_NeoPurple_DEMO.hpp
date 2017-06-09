@@ -35,6 +35,9 @@ private:
     
     bool shouldRender;
     
+    void onNotify (Message message);
+
+    
 };
 
 #endif /* Level_00_NeoPurple_DEMO_hpp */

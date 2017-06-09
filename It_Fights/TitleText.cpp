@@ -17,7 +17,7 @@ TitleText::TitleText(Scene * scene):
 GameObject(scene)
 {
     
-    this->mainFont = ResourceManager::Instance().getFont("playfair");
+    this->mainFont = ResourceManager::Instance().getFont("benguiat");
     
 }
 
@@ -46,18 +46,18 @@ void TitleText::draw(sf::RenderTarget *renderTarget){
     text_it.setOutlineColor(sf::Color::Black);
     text_fights.setOutlineColor(sf::Color::Black);
     
-    text_it.setOutlineThickness(3.0f);
-    text_fights.setOutlineThickness(3.0f);
+    text_it.setOutlineThickness(0.0f);
+    text_fights.setOutlineThickness(0.0f);
     
-    text_it.setCharacterSize(400.0f);
-    text_fights.setCharacterSize(300.0f);
+    text_it.setCharacterSize(350.0f);
+    text_fights.setCharacterSize(250.0f);
     
     text_it.setFont(mainFont);
     text_fights.setFont(mainFont);
     
-    PairI itPosition = getRealPixels(renderTarget, 0.15, -0.05);
+    PairI itPosition = getRealPixels(renderTarget, 0.15, 0.0);
     text_it.setPosition(itPosition.x, itPosition.y);
-    PairI fightsPosition = getRealPixels(renderTarget, 0.03, 0.21);
+    PairI fightsPosition = getRealPixels(renderTarget, 0.03, 0.26);
     text_fights.setPosition(fightsPosition.x, fightsPosition.y);
     
 

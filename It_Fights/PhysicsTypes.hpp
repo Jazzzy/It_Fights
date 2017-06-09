@@ -30,6 +30,9 @@ enum Direction_8 { UP_8,UP_RIGHT_8,RIGHT_8,RIGHT_DOWN_8,DOWN_8,DOWN_LEFT_8,LEFT_
 
 Direction_4 getDirection_4FromVector(sf::Vector2f vector);
 
+Direction_8 getDirection_8FromVector(sf::Vector2f vector);
+
+
 sf::Vector2f getVectorFromDirection_4(Direction_4 direction_4);
 
 bool isVectorHeaded_halfCircle(Direction_4 direction_4 , sf::Vector2f vector);

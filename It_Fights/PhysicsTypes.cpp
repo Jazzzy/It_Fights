@@ -59,6 +59,35 @@ Direction_4 getDirection_4FromVector(sf::Vector2f vector){
     
 }
 
+Direction_8 getDirection_8FromVector(sf::Vector2f vector){
+
+    vector.y = -vector.y;
+    
+    double angle = getAngleInDegrees360(vector);
+    
+    if(angle <= 22.5f ){
+        return RIGHT_8;
+    }else if(angle <= 67.5){
+        return UP_RIGHT_8;
+    }else if(angle <= 112.5){
+        return UP_8;
+    }else if(angle <= 157.5){
+        return LEFT_UP_8;
+    }else if(angle <= 202.5){
+        return LEFT_8;
+    }else if(angle <= 247.5){
+        return DOWN_LEFT_8;
+    }else if(angle <= 292.5){
+        return DOWN_8;
+    }else if(angle <= 337.5){
+        return RIGHT_DOWN_8;
+    }else{
+        return RIGHT_8;
+    }
+
+}
+
+
 sf::Vector2f getVectorFromDirection_4(Direction_4 direction_4){
     
     switch (direction_4){

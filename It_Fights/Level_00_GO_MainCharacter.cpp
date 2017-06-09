@@ -38,7 +38,8 @@ Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f 
                                             //Type of the location collider
                                      ColliderType::HURTBOX, CollisionLayer::FRIENDLY_COLLIDER);
         
-        characterMarker.setOutlineColor(sf::Color::Green);
+        characterMarker.setOutlineColor(sf::Color(50.0f,255.0f,50.0f,80.0f));
+        characterMarker.setFillColor(sf::Color(50.0f,255.0f,50.0f,80.0f));
         myController = new MainCharacterController(0);
         
         characterPublicName = "HUMAN PLAYER 1";
@@ -65,7 +66,8 @@ Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f 
                                          //Type of the location collider
                                          ColliderType::HURTBOX, CollisionLayer::ENEMY_COLLIDER);
         
-        characterMarker.setOutlineColor(sf::Color::Red);
+        characterMarker.setOutlineColor(sf::Color(255.0f,0.0f,0.0f,80.0f));
+        characterMarker.setFillColor(sf::Color(255.0f,0.0f,0.0f,80.0f));
         myController = new MainCharacterController(1);
 
         characterPublicName = "HUMAN PLAYER 2";

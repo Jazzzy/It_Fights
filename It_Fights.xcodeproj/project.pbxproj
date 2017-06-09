@@ -57,6 +57,18 @@
 		40E3B9B31E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9B11E8E9CBE001EE4AA /* AuxiliarRenderFunctions.cpp */; };
 		40E3B9B61E8EA3F7001EE4AA /* ConsoleLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9B41E8EA3F7001EE4AA /* ConsoleLine.cpp */; };
 		40E3B9B91E8EA6BA001EE4AA /* InputLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B9B71E8EA6BA001EE4AA /* InputLine.cpp */; };
+		40F49D051EEB16D800B83DF1 /* benguiat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D041EEB16D800B83DF1 /* benguiat.ttf */; };
+		40F49D111EEB1B9D00B83DF1 /* CafeCn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D061EEB1B9D00B83DF1 /* CafeCn.ttf */; };
+		40F49D121EEB1B9D00B83DF1 /* CafeKr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D071EEB1B9D00B83DF1 /* CafeKr.ttf */; };
+		40F49D131EEB1B9D00B83DF1 /* CafeStd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D081EEB1B9D00B83DF1 /* CafeStd.ttf */; };
+		40F49D141EEB1B9D00B83DF1 /* CafeTw.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D091EEB1B9D00B83DF1 /* CafeTw.ttf */; };
+		40F49D151EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro B.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D0A1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro B.otf */; };
+		40F49D161EEB1B9D00B83DF1 /* rodin_b.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D0B1EEB1B9D00B83DF1 /* rodin_b.otf */; };
+		40F49D171EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro EB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D0C1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro EB.otf */; };
+		40F49D181EEB1B9D00B83DF1 /* rodin_l.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D0D1EEB1B9D00B83DF1 /* rodin_l.otf */; };
+		40F49D191EEB1B9D00B83DF1 /* rodin_m.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D0E1EEB1B9D00B83DF1 /* rodin_m.otf */; };
+		40F49D1A1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro UB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D0F1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro UB.otf */; };
+		40F49D1B1EEB1B9D00B83DF1 /* playfair.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40F49D101EEB1B9D00B83DF1 /* playfair.otf */; };
 		40FEE04F1E904FC6004DCA95 /* Add.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04A1E904FC6004DCA95 /* Add.frag */; };
 		40FEE0501E904FC6004DCA95 /* Brightness.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04B1E904FC6004DCA95 /* Brightness.frag */; };
 		40FEE0511E904FC6004DCA95 /* DownSample.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40FEE04C1E904FC6004DCA95 /* DownSample.frag */; };
@@ -162,6 +174,18 @@
 		40E3B9B51E8EA3F7001EE4AA /* ConsoleLine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConsoleLine.hpp; sourceTree = "<group>"; };
 		40E3B9B71E8EA6BA001EE4AA /* InputLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputLine.cpp; sourceTree = "<group>"; };
 		40E3B9B81E8EA6BA001EE4AA /* InputLine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InputLine.hpp; sourceTree = "<group>"; };
+		40F49D041EEB16D800B83DF1 /* benguiat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = benguiat.ttf; sourceTree = "<group>"; };
+		40F49D061EEB1B9D00B83DF1 /* CafeCn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CafeCn.ttf; sourceTree = "<group>"; };
+		40F49D071EEB1B9D00B83DF1 /* CafeKr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CafeKr.ttf; sourceTree = "<group>"; };
+		40F49D081EEB1B9D00B83DF1 /* CafeStd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CafeStd.ttf; sourceTree = "<group>"; };
+		40F49D091EEB1B9D00B83DF1 /* CafeTw.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CafeTw.ttf; sourceTree = "<group>"; };
+		40F49D0A1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-RodinBokutoh Pro B.otf"; sourceTree = "<group>"; };
+		40F49D0B1EEB1B9D00B83DF1 /* rodin_b.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rodin_b.otf; sourceTree = "<group>"; };
+		40F49D0C1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro EB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-RodinBokutoh Pro EB.otf"; sourceTree = "<group>"; };
+		40F49D0D1EEB1B9D00B83DF1 /* rodin_l.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rodin_l.otf; sourceTree = "<group>"; };
+		40F49D0E1EEB1B9D00B83DF1 /* rodin_m.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rodin_m.otf; sourceTree = "<group>"; };
+		40F49D0F1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro UB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-RodinBokutoh Pro UB.otf"; sourceTree = "<group>"; };
+		40F49D101EEB1B9D00B83DF1 /* playfair.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = playfair.otf; sourceTree = "<group>"; };
 		40FEE04A1E904FC6004DCA95 /* Add.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Add.frag; sourceTree = "<group>"; };
 		40FEE04B1E904FC6004DCA95 /* Brightness.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Brightness.frag; sourceTree = "<group>"; };
 		40FEE04C1E904FC6004DCA95 /* DownSample.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DownSample.frag; sourceTree = "<group>"; };
@@ -312,13 +336,11 @@
 		407DEFE91E897765004263E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40F49D1C1EEB1BAC00B83DF1 /* Fonts */,
 				4049DF791EABB166008DB0E5 /* SpriteSheets */,
 				40FEE0441E904EBE004DCA95 /* GLSL_Shaders */,
-				40C41ED21E90490200DB11BB /* playfair.ttf */,
-				40C41ECE1E90298600DB11BB /* carnevalee.ttf */,
 				407DEFEA1E897765004263E6 /* cute_image.jpg */,
 				407DEFEC1E897765004263E6 /* nice_music.ogg */,
-				407DEFEE1E897765004263E6 /* sansation.ttf */,
 				407DEFF01E897765004263E6 /* icon.png */,
 			);
 			name = Resources;
@@ -469,6 +491,28 @@
 			name = "It_GameLogic&Content";
 			sourceTree = "<group>";
 		};
+		40F49D1C1EEB1BAC00B83DF1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				40C41ED21E90490200DB11BB /* playfair.ttf */,
+				40C41ECE1E90298600DB11BB /* carnevalee.ttf */,
+				407DEFEE1E897765004263E6 /* sansation.ttf */,
+				40F49D061EEB1B9D00B83DF1 /* CafeCn.ttf */,
+				40F49D071EEB1B9D00B83DF1 /* CafeKr.ttf */,
+				40F49D081EEB1B9D00B83DF1 /* CafeStd.ttf */,
+				40F49D091EEB1B9D00B83DF1 /* CafeTw.ttf */,
+				40F49D0A1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro B.otf */,
+				40F49D0B1EEB1B9D00B83DF1 /* rodin_b.otf */,
+				40F49D0C1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro EB.otf */,
+				40F49D0D1EEB1B9D00B83DF1 /* rodin_l.otf */,
+				40F49D0E1EEB1B9D00B83DF1 /* rodin_m.otf */,
+				40F49D0F1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro UB.otf */,
+				40F49D101EEB1B9D00B83DF1 /* playfair.otf */,
+				40F49D041EEB16D800B83DF1 /* benguiat.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		40FEE0441E904EBE004DCA95 /* GLSL_Shaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,21 +596,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F49D121EEB1B9D00B83DF1 /* CafeKr.ttf in Resources */,
+				40F49D151EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro B.otf in Resources */,
 				407DEFF11E897765004263E6 /* icon.png in Resources */,
 				40FEE0511E904FC6004DCA95 /* DownSample.frag in Resources */,
+				40F49D1B1EEB1B9D00B83DF1 /* playfair.otf in Resources */,
 				407DEFEF1E897765004263E6 /* sansation.ttf in Resources */,
 				40C41ED31E90490200DB11BB /* playfair.ttf in Resources */,
 				40817FF21EAD2536003089A4 /* prota_0.2.json in Resources */,
+				40F49D161EEB1B9D00B83DF1 /* rodin_b.otf in Resources */,
 				4076FB361EB4C442002D4DAB /* lavaNoise.frag in Resources */,
 				40C41ECF1E90298600DB11BB /* carnevalee.ttf in Resources */,
+				40F49D141EEB1B9D00B83DF1 /* CafeTw.ttf in Resources */,
+				40F49D051EEB16D800B83DF1 /* benguiat.ttf in Resources */,
 				407DEFED1E897765004263E6 /* nice_music.ogg in Resources */,
 				407DEFEB1E897765004263E6 /* cute_image.jpg in Resources */,
 				40FEE0531E904FC6004DCA95 /* GuassianBlur.frag in Resources */,
 				40817FF31EAD2536003089A4 /* prota_0.2.png in Resources */,
+				40F49D171EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro EB.otf in Resources */,
 				40FEE0501E904FC6004DCA95 /* Brightness.frag in Resources */,
 				40A563CD1EA6654A00133110 /* Bloom.frag in Resources */,
 				40FEE0521E904FC6004DCA95 /* Fullpass.vert in Resources */,
+				40F49D181EEB1B9D00B83DF1 /* rodin_l.otf in Resources */,
+				40F49D131EEB1B9D00B83DF1 /* CafeStd.ttf in Resources */,
+				40F49D1A1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro UB.otf in Resources */,
 				40FEE04F1E904FC6004DCA95 /* Add.frag in Resources */,
+				40F49D111EEB1B9D00B83DF1 /* CafeCn.ttf in Resources */,
+				40F49D191EEB1B9D00B83DF1 /* rodin_m.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

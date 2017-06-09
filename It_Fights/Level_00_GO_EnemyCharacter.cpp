@@ -38,7 +38,8 @@ Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2
                                         //Type of the location collider
                                         ColliderType::HURTBOX, CollisionLayer::FRIENDLY_COLLIDER);
         
-        characterMarker.setOutlineColor(sf::Color::Green);
+        characterMarker.setOutlineColor(sf::Color(50.0f,255.0f,50.0f,80.0f));
+        characterMarker.setFillColor(sf::Color(50.0f,255.0f,50.0f,80.0f));
         characterPublicName = "AGENT 1";
 
         
@@ -64,7 +65,8 @@ Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2
                                         //Type of the location collider
                                         ColliderType::HURTBOX, CollisionLayer::ENEMY_COLLIDER);
         
-        characterMarker.setOutlineColor(sf::Color::Red);
+        characterMarker.setOutlineColor(sf::Color(255.0f,0.0f,0.0f,80.0f));
+        characterMarker.setFillColor(sf::Color(255.0f,0.0f,0.0f,80.0f));
         characterPublicName = "AGENT 2";
 
     }

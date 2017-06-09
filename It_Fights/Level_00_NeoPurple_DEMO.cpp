@@ -27,7 +27,6 @@ level_00_GO_HealthBars(this,&level_00_GO_Characters)
     changedRes = false;
     
     //We add all GameObjects necessary to with "this->addGameObject(GameObject * gameObject)"
-    
     this->addGameObject(&level_00_GO_Ground);
     this->addGameObject(&level_00_GO_Characters);
     this->addGameObject(&level_00_GO_HealthBars);
@@ -41,7 +40,7 @@ level_00_GO_HealthBars(this,&level_00_GO_Characters)
     if(!this->shouldRender){
         Message msgRender("MSG_TOGGLE_RENDER");
         this->send(msgRender);
-        Clock::Instance().setTimeScale(1200);
+        Clock::Instance().setTimeScale(600); //Simulates physics like it was playing at 30fps more or less
     }
     
 }
@@ -78,6 +77,10 @@ void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
         send(msg_smoothFalse);
         
     }
+}
+
+void Level_00_NeoPurple_DEMO::onNotify(Message message){
+
 }
 
 

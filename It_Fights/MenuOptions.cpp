@@ -17,7 +17,7 @@
 
 MenuOptions::MenuOptions(Scene * scene) : GameObject(scene){
 
-    this->mainFont = ResourceManager::Instance().getFont("playfair");
+    this->mainFont = ResourceManager::Instance().getFont("rodin_b");
     this->selectedOption = PLAY_HUMAN_VS_HUMAN;
     
     
@@ -31,7 +31,7 @@ MenuOptions::MenuOptions(Scene * scene) : GameObject(scene){
         
         text.setString(this->getStringFromOption((Options)i));
         
-        text.setCharacterSize(100.0f);
+        text.setCharacterSize(70.0f);
         
         text.setFont(mainFont);
         
@@ -160,7 +160,7 @@ void MenuOptions::update(){
 }
 
 #define SELECTION_BAR_WIDTH (15)
-#define SELECTION_HEIGTH_PADDING (130)
+#define SELECTION_HEIGTH_PADDING (100)
 
 void MenuOptions::draw(sf::RenderTarget *renderTarget){
     
@@ -176,11 +176,11 @@ void MenuOptions::draw(sf::RenderTarget *renderTarget){
         percentagePosition.y += 0.1;
         
         if(option.first == this->selectedOption){
-            option.second.setOutlineThickness(4.0f);
+            option.second.setOutlineThickness(1.0f);
             selectedOptionPosition = sf::Vector2f(option.second.getPosition().x, option.second.getPosition().y + SELECTION_HEIGTH_PADDING);
             selectedOptionSize = sf::Vector2f(option.second.getLocalBounds().width, SELECTION_BAR_WIDTH);
         }else{
-            option.second.setOutlineThickness(1.0f);
+            option.second.setOutlineThickness(0.0f);
         }
 
         renderTarget->draw(option.second);
