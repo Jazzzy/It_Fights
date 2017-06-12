@@ -24,6 +24,7 @@ MessageBus::MessageBus(){
 void MessageBus::notify(){
     while(!messageQueue.empty()) {
         Message message = messageQueue.front();
+        messageQueue.pop_front();
         
         if(message.isRelevant()){
             std::string * strForConsole = new std::string("Message for System [" + std::to_string(message.getReceiverSystem()) + "] that says [" + message.getEvent() + "]");
@@ -34,15 +35,14 @@ void MessageBus::notify(){
         }
         
         if(message.getReceiverSystem()==MSG_TO_EVERYONE){
-            for (auto iter = receiverVector.begin(); iter != receiverVector.end(); iter++) {
+            for (auto iter = receiverVector.begin(); iter != receiverVector.end(); ++iter) {
                 (*iter).second(message);
             }
-            //receiverMap[Systems::S_CurrentScene](message);
         }else{
             (receiverMap[message.getReceiverSystem()])(message);
         }
         
-        messageQueue.pop();
+        
     }
 }
 
@@ -73,7 +73,7 @@ void MessageBus::removeReceiver(int systemID){
 }
 
 void MessageBus::sendMessage(Message message){
-    messageQueue.push(message);
+    messageQueue.push_back(message);
 }
 
 void MessageBus::printReceivers(){

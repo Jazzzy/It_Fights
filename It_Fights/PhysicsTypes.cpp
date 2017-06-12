@@ -61,6 +61,10 @@ Direction_4 getDirection_4FromVector(sf::Vector2f vector){
 
 Direction_8 getDirection_8FromVector(sf::Vector2f vector){
 
+    if(vector.x == 0.0f && vector.y == 0.0f){
+        return NONE_8;
+    }
+    
     vector.y = -vector.y;
     
     double angle = getAngleInDegrees360(vector);

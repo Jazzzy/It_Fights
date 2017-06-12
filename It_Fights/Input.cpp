@@ -28,7 +28,6 @@ void Input::readInput(){
     Message msg_cleanup("MSG_CLEANUP");
     Message msg_close("MSG_CLOSE_WINDOW",Systems::S_Window);
     
-    
     while (this->m_window->getInternalWindowRef()->pollEvent(event)){
         switch(event.type){
             case sf::Event::Closed:

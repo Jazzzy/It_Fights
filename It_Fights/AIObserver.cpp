@@ -8,6 +8,7 @@
 
 #include "AIObserver.hpp"
 #include "DebugUtilities.hpp"
+#include "SomeMath.hpp"
 
 AIObserver::AIObserver(Level_00_GO_Characters* characters, Position position){
     this->characters = characters;
@@ -71,7 +72,7 @@ CharacterState AIObserver::getCharacterState(Character character){
         state.action = CharacterAction::PARRYING;
     }else if(cptr->isOnCooldown()){
         state.action = CharacterAction::COOLING_DOWN;
-    }else if(state.velocity.x > 0.0f || state.velocity.y > 0.0f){
+    }else if(fabs(state.velocity.x) > 0.0f || fabs(state.velocity.y) > 0.0f){
         state.action = CharacterAction::MOVING;
     }else{
         state.action = CharacterAction::STANDING;
@@ -79,6 +80,154 @@ CharacterState AIObserver::getCharacterState(Character character){
     
     return state;
 }
+
+
+short AIObserver::discretizeHealth(float health , short divisions){
+    health = health * 100;
+    float fdiscreteHealth = health / (float)divisions;
+    return static_cast <short> (ceil(fdiscreteHealth));
+}
+
+
+#define HEALTH_DIVISION (20)
+#define ON_RANGE_DIST (20)
+#define CLOSE_TO_RANGE_DIST (30)
+
+#define WALL_X_INF (110)
+#define WALL_X_SUP (290)
+#define WALL_Y_INF (75)
+#define WALL_Y_SUP (223)
+
+MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuousState){
+
+    MyCharacterState_Discrete discreteState;
+    
+    discreteState.health = discretizeHealth(continuousState.myState.health, HEALTH_DIVISION);
+    discreteState.action = continuousState.myState.action;
+    
+
+    Position_Discrete discretePosition;
+    {
+        sf::Vector2f vectorDistance = continuousState.otherState.position - continuousState.myState.position;
+        
+        float distance = getVectorLength(vectorDistance);
+        if(distance <= ON_RANGE_DIST){
+            discretePosition.distance = Distance_Discrete::IN_RANGE;
+        }else if(distance <= CLOSE_TO_RANGE_DIST){
+            discretePosition.distance = Distance_Discrete::CLOSE_TO_RANGE;
+        }else{
+            discretePosition.distance = Distance_Discrete::OUT_OF_RANGE;
+        }
+        
+        discretePosition.angle = getDirection_8FromVector(getNormalizedVector(vectorDistance));
+    
+//        discretePosition.wallPositions;
+        
+        if(continuousState.myState.position.x <= WALL_X_INF){   //Touching left wall
+            
+            if(continuousState.myState.position.y <= WALL_Y_INF){       //And also the top wall
+            
+                discretePosition.wallPositions = Direction_8::LEFT_UP_8;
+                
+            }else if(continuousState.myState.position.y >= WALL_Y_SUP){ //And also the bottom wall
+            
+                discretePosition.wallPositions = Direction_8::DOWN_LEFT_8;
+                
+            }else{                                                      //And only the left wall
+                
+                discretePosition.wallPositions = Direction_8::LEFT_8;
+            
+            }
+        
+        }else if(continuousState.myState.position.x >= WALL_X_SUP){ //Touching right wall
+            
+            if(continuousState.myState.position.y <= WALL_Y_INF){       //And also the top wall
+                
+                discretePosition.wallPositions = Direction_8::UP_RIGHT_8;
+                
+            }else if(continuousState.myState.position.y >= WALL_Y_SUP){ //And also the bottom wall
+                
+                discretePosition.wallPositions = Direction_8::RIGHT_DOWN_8;
+                
+            }else{                                                      //And only the right wall
+        
+                discretePosition.wallPositions = Direction_8::RIGHT_8;
+                
+            }
+            
+        
+        }else{  //Touching neither the left or right walls
+        
+            if(continuousState.myState.position.y <= WALL_Y_INF){       //Just top wall
+                
+                discretePosition.wallPositions = Direction_8::UP_8;
+                
+            }else if(continuousState.myState.position.y >= WALL_Y_SUP){ //Just the bottom wall
+                
+                discretePosition.wallPositions = Direction_8::DOWN_8;
+                
+            }else{                                                      //Touching no walls
+                
+                discretePosition.wallPositions = Direction_8::NONE_8;
+                
+            }
+        }
+    }
+    
+    discreteState.position = discretePosition;
+    
+    return discreteState;
+}
+
+
+OtherCharacterState_Discrete AIObserver::discretizeOtherCharacter(CharacterState characterState){
+
+    OtherCharacterState_Discrete discreteState;
+    
+    discreteState.health = discretizeHealth(characterState.health, HEALTH_DIVISION);
+    discreteState.action = characterState.action;
+    
+    return discreteState;
+}
+
+
+FightState_Discrete AIObserver::discretizeState(FightState continuousState){
+
+    FightState_Discrete discreteState{
+        .myState = (discretizeMyCharacter(continuousState)),
+        .otherState = (discretizeOtherCharacter(continuousState.otherState)),
+    };
+    
+    return discreteState;
+    
+}
+
+
+std::ostream& operator<<(std::ostream& os, const FightState_Discrete& state){
+    
+    return os << "My Health: " << state.myState.health << std::endl <<
+                    "Distance: " << (short)state.myState.position.distance << std::endl <<
+                    "Angle: " << (short)state.myState.position.angle << std::endl <<
+                    "Walls: " << (short)state.myState.position.wallPositions << std::endl <<
+                    "My Action: " << state.myState.action << std::endl <<
+                    "His health: " << state.otherState.health << std::endl <<
+                    "His Action: " << state.otherState.action << std::endl;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

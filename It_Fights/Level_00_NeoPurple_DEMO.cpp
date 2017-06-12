@@ -80,6 +80,27 @@ void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
 }
 
 void Level_00_NeoPurple_DEMO::onNotify(Message message){
+    
+    if(message.getEvent().compare("MSG_BUTTON_PRESSED")==0){
+        if(message.getData().type!=MessageData::INTEGER){
+            std::cerr << "ERROR: The data in this message should be an integer" << std::endl;
+        }else{
+            switch(message.getData().integer){
+                case 9:        //Back button
+                {
+                    Message messageToMenu("MSG_GO_TO_MENU");
+                    this->send(messageToMenu);
+                    break;
+                }
+                default:
+                    break;
+            }
+        }
+    }else{
+        
+    }
+    
+    
 
 }
 

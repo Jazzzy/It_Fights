@@ -33,7 +33,7 @@ public:
 private:
     std::unordered_map<int, std::function<void (Message)>> receiverMap;
     std::vector< std::pair<int, std::function<void (Message)>>> receiverVector;
-    std::queue<Message> messageQueue;
+    std::deque<Message> messageQueue;
     std::function<void (Message)> consoleReceiver;
     void printReceivers();
     

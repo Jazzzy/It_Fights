@@ -94,7 +94,7 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
     this->dashMillis = .2f;
     
     
-    this->basicAttackDamage = 10.f;
+    this->basicAttackDamage = 22.f;
     this->attackRadious = 28.f;
     this->attackFunction = [](bool nothing){};
     this->attacking = false;
@@ -173,7 +173,6 @@ void Level_00_GO_BasicCharacter::die(){
     
     prints(this->getCharacterPublicName() << " has died ");
 
-    
     Message message("MSG_GO_TO_MENU");
     
     this->scene->send(message);

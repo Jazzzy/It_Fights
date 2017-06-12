@@ -91,8 +91,6 @@ void MenuScene::onNotify (Message message){
             }
             
         }
-
-    
     }
     
 }

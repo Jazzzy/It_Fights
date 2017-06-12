@@ -156,6 +156,7 @@ void Level_00_GO_MainCharacter::draw(sf::RenderTarget * renderTarget){
 }
 
 void Level_00_GO_MainCharacter::die(){
+    
     Level_00_GO_BasicCharacter::die();
 
 }
