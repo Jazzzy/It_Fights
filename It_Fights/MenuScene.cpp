@@ -54,11 +54,11 @@ void MenuScene::onNotify (Message message){
         }else{
             switch(message.getData().key){
                 case sf::Keyboard::Up:
-                    menuOptions.moveSelection(Direction::MOVE_UP);
+                    menuOptions.moveSelection(Direction::MOVE_MENU_UP);
                     break;
                     
                 case sf::Keyboard::Down:
-                    menuOptions.moveSelection(Direction::MOVE_DOWN);
+                    menuOptions.moveSelection(Direction::MOVE_MENU_DOWN);
                     break;
                     
                 case sf::Keyboard::Return:
@@ -76,11 +76,11 @@ void MenuScene::onNotify (Message message){
         }else{
             switch(message.getData().integer){
                 case 11:        //Up button
-                    menuOptions.moveSelection(Direction::MOVE_UP);
+                    menuOptions.moveSelection(Direction::MOVE_MENU_UP);
                     break;
                     
                 case 12:        //Down button
-                    menuOptions.moveSelection(Direction::MOVE_DOWN);
+                    menuOptions.moveSelection(Direction::MOVE_MENU_DOWN);
                     break;
                     
                 case 0:         //A button

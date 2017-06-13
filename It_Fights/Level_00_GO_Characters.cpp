@@ -66,10 +66,10 @@ void Level_00_GO_Characters::onStart(){
     
     //We force an update here to force the early failure in case of error
     if(this->observer_1 != nullptr)
-        this->observer_1->getFightState(true);
+        this->observer_1->update();
     
     if(this->observer_2 != nullptr)
-        this->observer_2->getFightState(true);
+        this->observer_2->update();
 
 }
 

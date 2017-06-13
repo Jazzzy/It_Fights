@@ -21,7 +21,6 @@ view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
 level_00_GO_Characters(this,characterOptions),
 level_00_GO_HealthBars(this,&level_00_GO_Characters)
 {
-    
     this->shouldRender = shouldRender;
     
     changedRes = false;
@@ -40,7 +39,7 @@ level_00_GO_HealthBars(this,&level_00_GO_Characters)
     if(!this->shouldRender){
         Message msgRender("MSG_TOGGLE_RENDER");
         this->send(msgRender);
-        Clock::Instance().setTimeScale(600); //Simulates physics like it was playing at 30fps more or less
+        Clock::Instance().setTimeScale(TIME_SCALE); //Simulates physics like it was playing at 30fps more or less
     }
     
 }

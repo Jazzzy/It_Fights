@@ -21,8 +21,8 @@ enum Options {
 };
 
 enum Direction {
-    MOVE_UP,
-    MOVE_DOWN
+    MOVE_MENU_UP,
+    MOVE_MENU_DOWN
 };
 
 

@@ -20,6 +20,7 @@ GameState::GameState(MessageBus * messageBus) : BusNode(Systems::S_GameState, me
     this->scene = new MenuScene(messageBus);
     this->mainMenu = true;
     this->paused = false;
+    this->simulationsLeft = 0;
     
 }
 
@@ -38,8 +39,16 @@ void GameState::onNotify(Message message){
             this->scene->onEnd();
             delete this->scene;
         }
-        this->scene = new MenuScene(messageBus);
-        this->scene->onStart();
+        
+        if(this->simulationsLeft > 0){
+            this->simulationsLeft--;
+            prints("Simulations left: " << this->simulationsLeft);
+            this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::AGENT_VS_AGENT,false);
+            this->scene->onStart();
+        }else{
+            this->scene = new MenuScene(messageBus);
+            this->scene->onStart();
+        }
 
     }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_AGENT_VS_AGENT")==0){
         if (this->scene  != nullptr){
@@ -67,6 +76,7 @@ void GameState::onNotify(Message message){
             this->scene->onEnd();
             delete this->scene;
         }
+        this->simulationsLeft = NUMBER_OF_SIMULATIONS;
         this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::AGENT_VS_AGENT,false);
         this->scene->onStart();
     }

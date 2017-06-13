@@ -17,6 +17,7 @@
 
 #define LVL_00_RESOLUTION_X 400
 #define LVL_00_RESOLUTION_Y 300
+#define TIME_SCALE 600
 
 class Level_00_NeoPurple_DEMO : public Scene {
 public:
@@ -36,7 +37,6 @@ private:
     bool shouldRender;
     
     void onNotify (Message message);
-
     
 };
 

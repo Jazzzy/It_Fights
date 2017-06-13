@@ -25,6 +25,7 @@ public:
     void setAttackButton(bool pressed);
     void setParryButton(bool pressed);
     void setJoystickPosition(sf::Vector2f vector);
+    void setAll(bool attackButton, bool parryButton, sf::Vector2f vector);
     
 private:
     bool attackButtonPressed;

@@ -26,6 +26,7 @@ void Clock::CleanUp(){
 Clock::Clock(){
     this->updateFunction = [&](){this->first20Update();};
     this->timeScale = 1.0f;
+    this->currentFrameCount = 0;
     
     
     atexit(&CleanUp);
@@ -35,6 +36,7 @@ Clock::Clock(){
 #define MAX_QUEUE_SIZE 60
 
 void Clock::setFrameSeparator(){
+    this->currentFrameCount++;
     this->deltaTime = this->deltaClock.restart().asSeconds();
     this->updateFunction();
 }
@@ -86,4 +88,11 @@ void Clock::runningUpdate(){
     this->timesQueue.pop_back();
     
 }
+
+unsigned long Clock::getCurrentFrameCount(){
+ 
+    return this->currentFrameCount;
+    
+}
+
 

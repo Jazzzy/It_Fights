@@ -15,32 +15,74 @@ AIObserver::AIObserver(Level_00_GO_Characters* characters, Position position){
     this->deltaClock.restart();
     this->observerClock.restart();
     this->playerPosition = position;
+    
+    currentStateIndex = 0;
+    for(int i = 0 ; i<STATE_DELAY_IN_FRAMES ; i++){
+        stateArray[i] = getDefaultDiscreteFightState();
+    }
+    
+    
 }
 
 AIObserver::~AIObserver(){}
 
-FightState AIObserver::getFightState(bool doCheck){
+
+void AIObserver::update(){
     
-    if(doCheck){
-        this->updateFightState();
+    stateArray[currentStateIndex] = getCurrentDiscreteFightState();
+    prints("update " << currentStateIndex);
+    currentStateIndex++;
+    if(currentStateIndex >= STATE_DELAY_IN_FRAMES){
+        currentStateIndex = 0;
     }
-    
-    return this->currentFightState;
 }
+
+FightState_Discrete AIObserver::getDiscreteState(){
+    prints("get " << currentStateIndex);
+    return stateArray[currentStateIndex];
+}
+
 
 Position AIObserver::getPlayer1_2(){
     return (Position)this->playerPosition;
 }
 
-void AIObserver::updateFightState(){
+FightState_Discrete AIObserver::getCurrentDiscreteFightState(){
     
-    this->currentFightState.timeSinceLastCheck = this->deltaClock.restart().asSeconds();
-    this->currentFightState.totalFightingTime = this->observerClock.getElapsedTime().asSeconds();
+    FightState state;
     
-    this->currentFightState.myState = this->getCharacterState(Character::MYSELF);
-    this->currentFightState.otherState = this->getCharacterState(Character::OTHER);
+    state.timeSinceLastCheck = this->deltaClock.restart().asSeconds();
+    state.totalFightingTime = this->observerClock.getElapsedTime().asSeconds();
+    
+    state.myState = this->getCharacterState(Character::MYSELF);
+    state.otherState = this->getCharacterState(Character::OTHER);
+    
+    return discretizeState(state);
     
 }
+
+FightState_Discrete AIObserver::getDefaultDiscreteFightState(){
+
+    FightState state;
+    
+    state.timeSinceLastCheck = this->deltaClock.restart().asSeconds();
+    state.totalFightingTime = this->observerClock.getElapsedTime().asSeconds();
+    state.myState.action = STANDING;
+    state.myState.heading = DOWN;
+    state.myState.health = 1.0f;
+    state.myState.position = sf::Vector2f(0.f,0.f);
+    state.myState.velocity = sf::Vector2f(0.f,0.f);
+    state.otherState.action = STANDING;
+    state.otherState.heading = DOWN;
+    state.otherState.health = 1.0f;
+    state.otherState.position = sf::Vector2f(0.f,0.f);
+    state.otherState.velocity = sf::Vector2f(0.f,0.f);
+    
+    return discretizeState(state);
+
+
+}
+
 
 CharacterState AIObserver::getCharacterState(Character character){
 
@@ -77,6 +119,8 @@ CharacterState AIObserver::getCharacterState(Character character){
     }else{
         state.action = CharacterAction::STANDING;
     }
+    
+    state.heading = cptr->getDirection_4();
     
     return state;
 }
@@ -120,8 +164,6 @@ MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuou
         }
         
         discretePosition.angle = getDirection_8FromVector(getNormalizedVector(vectorDistance));
-    
-//        discretePosition.wallPositions;
         
         if(continuousState.myState.position.x <= WALL_X_INF){   //Touching left wall
             
@@ -172,6 +214,9 @@ MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuou
                 
             }
         }
+    
+        discretePosition.lookingAtOpponent = (continuousState.myState.heading == getDirection_4FromVector(getNormalizedVector(vectorDistance)));
+        
     }
     
     discreteState.position = discretePosition;
@@ -209,6 +254,7 @@ std::ostream& operator<<(std::ostream& os, const FightState_Discrete& state){
                     "Distance: " << (short)state.myState.position.distance << std::endl <<
                     "Angle: " << (short)state.myState.position.angle << std::endl <<
                     "Walls: " << (short)state.myState.position.wallPositions << std::endl <<
+                    "Looking at opponent: " << (short)state.myState.position.lookingAtOpponent << std::endl <<
                     "My Action: " << state.myState.action << std::endl <<
                     "His health: " << state.otherState.health << std::endl <<
                     "His Action: " << state.otherState.action << std::endl;

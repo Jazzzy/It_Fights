@@ -7,6 +7,7 @@
 //
 
 #include "EnemyCharacterController.hpp"
+#include "SomeMath.hpp"
 
 EnemyCharacterController::EnemyCharacterController(){
     this->attackButtonPressed = false;
@@ -48,5 +49,12 @@ void EnemyCharacterController::setParryButton(bool pressed){
 }
 
 void EnemyCharacterController::setJoystickPosition(sf::Vector2f vector){
-    this->joystickAxis = vector;
+    this->joystickAxis = getNormalizedVector(vector);
 }
+
+void EnemyCharacterController::setAll(bool attackButton, bool parryButton, sf::Vector2f vector){
+    this->setAttackButton(attackButton);
+    this->setParryButton(parryButton);
+    this->setJoystickPosition(vector);
+}
+

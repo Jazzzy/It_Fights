@@ -11,6 +11,8 @@
 
 #include <Scene.hpp>
 
+#define NUMBER_OF_SIMULATIONS (100)
+
 class GameState : BusNode{
 public:
     GameState(MessageBus * messageBus);
@@ -27,6 +29,8 @@ private:
     Scene *scene;
     bool paused;
     bool mainMenu;
+    
+    int simulationsLeft;
     
 };
 

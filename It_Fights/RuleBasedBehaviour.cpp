@@ -19,25 +19,8 @@ RuleBasedBehaviour::~RuleBasedBehaviour(){
     
 }
 
-void RuleBasedBehaviour::update(){
-    
-    FightState state = this->observer->getFightState(true);
-    
-    FightState_Discrete discreteState = this->observer->discretizeState(state);
+void RuleBasedBehaviour::update(FightState_Discrete discreteState){
     
     printv(discreteState);
-    
-//    sf::Vector2f posDiff =  state.otherState.position - state.myState.position;
-//    float diffMagnitude = getVectorLength(posDiff);
-//    
-//    
-//    this->controller->setParryButton(false);
-//    
-//    if(diffMagnitude < ATTACK_RANGE){           //If the other guy seems in range we attack
-//        this->controller->setAttackButton(true);
-//    }else{
-//        this->controller->setAttackButton(false);
-//        this->controller->setJoystickPosition(posDiff);
-//    }
     
 }

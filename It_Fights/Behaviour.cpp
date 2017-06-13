@@ -11,9 +11,10 @@
 #include "Clock.hpp"
 
 Behaviour::Behaviour(EnemyCharacterController* controller, AIObserver* observer){
-    this->controller = controller;
+    this->actions = new AIActions(controller);
     this->observer = observer;
     this->shouldStopThread = false;
+    this->currentFrameCount = Clock::Instance().getCurrentFrameCount();
 }
 
 void Behaviour::startThread(){
@@ -28,17 +29,21 @@ void Behaviour::stopThread(){
 
 
 Behaviour::~Behaviour(){
-    
+    delete this->actions;
 }
 
 void Behaviour::threadFunction(){
     
     while(!shouldStopThread){
         
-        this->update();
+        this->observer->update();
+        FightState_Discrete discreteState = this->observer->getDiscreteState();
         
-        if(Clock::Instance().getTimeScale() <= 1.f)
-            std::this_thread::sleep_for(std::chrono::milliseconds((TICK_MILLIS)));
+        this->update(discreteState);
+        
+        while(!shouldStopThread && this->currentFrameCount==Clock::Instance().getCurrentFrameCount()){
+        }
+        this->currentFrameCount=Clock::Instance().getCurrentFrameCount();
         
     }
     

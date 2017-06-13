@@ -23,6 +23,7 @@ public:
     unsigned int getMeanFPS();
     void setTimeScale(float timeScale);
     float getTimeScale();
+    unsigned long getCurrentFrameCount();
 
 private :
     static void CleanUp();
@@ -43,7 +44,7 @@ private :
     std::deque<float> timesQueue;
     float meanDeltaTime;
     std::function<void()> updateFunction;
-    
+    unsigned long currentFrameCount;
     
     float timeScale;
     

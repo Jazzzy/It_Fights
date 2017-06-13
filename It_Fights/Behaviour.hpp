@@ -13,9 +13,10 @@
 
 #include "EnemyCharacterController.hpp"
 #include "AIObserver.hpp"
+#include "AIActions.hpp"
 
 class AIObserver;
-
+struct FightState_Discrete;
 
 #define TICK_MILLIS 20
 
@@ -23,16 +24,17 @@ class Behaviour {
 public:
     Behaviour(EnemyCharacterController* controller, AIObserver* observer);
     virtual ~Behaviour();
-    virtual void update() = 0;
+    virtual void update(FightState_Discrete discreteState) = 0;
     void startThread();
     void stopThread();
 protected:
-    EnemyCharacterController* controller;
+    AIActions* actions;
     AIObserver* observer;
     void threadFunction();
     
     std::thread behaviourThread;
     bool shouldStopThread;
+    unsigned long currentFrameCount;
     
 };
 

@@ -37,6 +37,7 @@ struct CharacterState {
     float health;
     sf::Vector2f position;
     sf::Vector2f velocity;
+    Direction_4 heading;
     CharacterAction action;
 };
 
@@ -63,15 +64,16 @@ enum Distance_Discrete {
     OUT_OF_RANGE
 };
 
-struct Position_Discrete {          //216
+struct Position_Discrete {          //432
     Distance_Discrete distance;     //3
     Direction_8 angle;              //8
     Direction_8 wallPositions;      //9
+    bool lookingAtOpponent;         //2
 };
 
-struct MyCharacterState_Discrete {      //6480
+struct MyCharacterState_Discrete {      //12960
     short health;                       //6
-    Position_Discrete position;         //216
+    Position_Discrete position;         //432
     CharacterAction action;             //5
 };
 
@@ -80,8 +82,8 @@ struct OtherCharacterState_Discrete {   //30
     CharacterAction action;             //5
 };
 
-struct FightState_Discrete {                    //194400
-    MyCharacterState_Discrete myState;          //6480
+struct FightState_Discrete {                    //388800
+    MyCharacterState_Discrete myState;          //12960
     OtherCharacterState_Discrete otherState;    //30
     //How to take time into account?
 };
@@ -91,13 +93,15 @@ struct FightState_Discrete {                    //194400
 
 std::ostream& operator<<(std::ostream& os, const FightState_Discrete& state);
 
+#define STATE_DELAY_IN_FRAMES 13
 
 class AIObserver {
 public:
     AIObserver(Level_00_GO_Characters* characters, Position position);
     ~AIObserver();
     
-    FightState getFightState(bool doCheck);
+    FightState_Discrete getDiscreteState();
+    void update();
     Position getPlayer1_2();
 
     MyCharacterState_Discrete discretizeMyCharacter(FightState continuousState);
@@ -106,10 +110,14 @@ public:
 
     
 private:
-    FightState currentFightState;
+    FightState_Discrete stateArray[STATE_DELAY_IN_FRAMES];
+    int currentStateIndex;
+    
     short playerPosition;
     
-    void updateFightState();
+
+    FightState_Discrete getCurrentDiscreteFightState();
+    FightState_Discrete getDefaultDiscreteFightState();
     CharacterState getCharacterState(Character character);
     sf::Clock observerClock;
     sf::Clock deltaClock;

@@ -15,7 +15,7 @@ class RuleBasedBehaviour : public Behaviour {
 public:
     RuleBasedBehaviour(EnemyCharacterController* controller, AIObserver* observer);
     virtual ~RuleBasedBehaviour();
-    void update();
+    void update(FightState_Discrete discreteState);
     
 };
 

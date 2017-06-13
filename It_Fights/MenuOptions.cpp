@@ -79,10 +79,10 @@ std::string MenuOptions::getStringFromOption(Options option){
 void MenuOptions::moveSelection(Direction direction){
     
     switch (direction){
-        case Direction::MOVE_UP:
+        case Direction::MOVE_MENU_UP:
             this->changeSelection(-1);
             break;
-        case Direction::MOVE_DOWN:
+        case Direction::MOVE_MENU_DOWN:
             this->changeSelection(+1);
             break;
             
