@@ -10,10 +10,15 @@
 #include "SomeMath.hpp"
 #include "Clock.hpp"
 #include "DebugUtilities.hpp"
+#include "ResourceManager.hpp"
 
 
-Level_00_GO_HealthBars::Level_00_GO_HealthBars(Scene* scene, Level_00_GO_Characters * characters):
+Level_00_GO_HealthBars::Level_00_GO_HealthBars(Scene* scene, Level_00_GO_Characters * characters, sf::Clock * fightClock):
 GameObject(scene){
+    
+    this->mainFont = ResourceManager::Instance().getFont("rodin_b");
+
+    this->fightClock = fightClock;
     
     this->characters = characters;
     
@@ -68,10 +73,19 @@ void Level_00_GO_HealthBars::draw(sf::RenderTarget * renderTarget){
     enemyCharBar.setRotation(180.f);
     enemyCharBar.setSize(sf::Vector2f( (this->enemyCharShowingHP)  * ((canvasSize.x/2.) - PADDING*2) ,BAR_WIDTH ));
     
+    sf::Text text;
+    text.setFillColor(sf::Color::White);
+    text.setOutlineColor(sf::Color::White);
+    text.setString(std::to_string(30-(int)(this->fightClock->getElapsedTime().asSeconds()*Clock::Instance().getTimeScale())));
+    text.setCharacterSize(11.0f);
+    text.setFont(mainFont);
     
-    
+    text.setPosition(192, 10);
+
     renderTarget->draw(mainCharBar);
     renderTarget->draw(enemyCharBar);
+    renderTarget->draw(text);
+
 
     
 

@@ -19,7 +19,7 @@ Scene(messageBus),
 level_00_GO_Ground(this),
 view(sf::FloatRect(0,0,LVL_00_RESOLUTION_X,LVL_00_RESOLUTION_Y)),
 level_00_GO_Characters(this,characterOptions),
-level_00_GO_HealthBars(this,&level_00_GO_Characters)
+level_00_GO_HealthBars(this,&level_00_GO_Characters,&this->fightClock)
 {
     this->shouldRender = shouldRender;
     
@@ -41,6 +41,8 @@ level_00_GO_HealthBars(this,&level_00_GO_Characters)
         this->send(msgRender);
         Clock::Instance().setTimeScale(TIME_SCALE); //Simulates physics like it was playing at 30fps more or less
     }
+    
+    this->fightClock.restart();
     
 }
 
@@ -76,6 +78,27 @@ void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
         send(msg_smoothFalse);
         
     }
+    
+    if((this->fightClock.getElapsedTime().asSeconds() * Clock::Instance().getTimeScale()) >= TIME_LIMIT_IN_SECONDS){
+    
+        if(this->level_00_GO_Characters.getCharacter_1()->getHealthNormalized() > this->level_00_GO_Characters.getCharacter_2()->getHealthNormalized()){
+        
+            this->win(PLAYER_1);
+            
+        }else if(this->level_00_GO_Characters.getCharacter_1()->getHealthNormalized() < this->level_00_GO_Characters.getCharacter_2()->getHealthNormalized()){
+        
+            this->win(PLAYER_2);
+            
+        }else{
+            //Draw
+        }
+        
+        Message messageToMenu("MSG_GO_TO_MENU");
+        this->send(messageToMenu);
+
+    }
+    
+
 }
 
 void Level_00_NeoPurple_DEMO::onNotify(Message message){
@@ -102,14 +125,12 @@ void Level_00_NeoPurple_DEMO::onNotify(Message message){
             switch(message.getData().integer){
                 case PLAYER_1:
                     
-                    prints("Player 2 is the winner!");
-                    
+                    this->win(PLAYER_2);
                     break;
                 
                 case PLAYER_2:
                     
-                    prints("Player 1 is the winner!");
-
+                    this->win(PLAYER_1);
                     break;
             
                 default:
@@ -121,5 +142,27 @@ void Level_00_NeoPurple_DEMO::onNotify(Message message){
     }
 
 }
+
+void Level_00_NeoPurple_DEMO::win(Position player){
+
+    switch(player){
+        case PLAYER_1:
+            
+            prints("Player 1 is the winner!");
+            
+            break;
+            
+        case PLAYER_2:
+            
+            prints("Player 2 is the winner!");
+            
+            break;
+            
+        default:
+            break;
+    }
+
+}
+
 
 

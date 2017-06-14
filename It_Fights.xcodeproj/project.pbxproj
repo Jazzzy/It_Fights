@@ -840,6 +840,7 @@
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
+					"-v",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -862,6 +863,7 @@
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
+					"-v",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

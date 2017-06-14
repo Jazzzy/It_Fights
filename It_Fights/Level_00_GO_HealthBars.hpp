@@ -14,7 +14,7 @@
 
 class Level_00_GO_HealthBars : public GameObject {
 public:
-    Level_00_GO_HealthBars(Scene* scene, Level_00_GO_Characters * characters);
+    Level_00_GO_HealthBars(Scene* scene, Level_00_GO_Characters * characters, sf::Clock * fightClock);
     ~Level_00_GO_HealthBars();
     void update();
     void draw(sf::RenderTarget * renderTarget);
@@ -22,6 +22,9 @@ public:
     void onEnd(){}
 private:
     Level_00_GO_Characters * characters;
+    
+    sf::Clock * fightClock;
+    sf::Font mainFont;
     
     float mainCharShowingHP;
     float enemyCharShowingHP;

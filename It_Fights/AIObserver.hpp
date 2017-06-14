@@ -58,22 +58,22 @@ struct FightState {
 /* DISCRETE STATE */
 /********************/
 
-enum Distance_Discrete {
+enum Distance_Discrete {    //3
     IN_RANGE,
     CLOSE_TO_RANGE,
     OUT_OF_RANGE
 };
 
-struct Position_Discrete {          //432
+struct Position_Discrete {          //216
     Distance_Discrete distance;     //3
     Direction_4 angle;              //4
     Direction_8 wallPositions;      //9
     bool lookingAtOpponent;         //2
 };
 
-struct MyCharacterState_Discrete {      //12960
+struct MyCharacterState_Discrete {      //6480
     short health;                       //6
-    Position_Discrete position;         //432
+    Position_Discrete position;         //216
     CharacterAction action;             //5
 };
 
@@ -82,10 +82,10 @@ struct OtherCharacterState_Discrete {   //30
     CharacterAction action;             //5
 };
 
-struct FightState_Discrete {                    //388800
-    MyCharacterState_Discrete myState;          //12960
+struct FightState_Discrete {                    //194400
+    MyCharacterState_Discrete myState;          //6480
     OtherCharacterState_Discrete otherState;    //30
-    //How to take time into account?
+    //Posibility of taking time into account
 };
 
 /********************/
