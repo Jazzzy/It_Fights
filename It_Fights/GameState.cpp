@@ -77,6 +77,7 @@ void GameState::onNotify(Message message){
             delete this->scene;
         }
         this->simulationsLeft = NUMBER_OF_SIMULATIONS;
+        prints("Simulations left: " << this->simulationsLeft);
         this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::AGENT_VS_AGENT,false);
         this->scene->onStart();
     }

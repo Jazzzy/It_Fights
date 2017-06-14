@@ -66,7 +66,7 @@ enum Distance_Discrete {
 
 struct Position_Discrete {          //432
     Distance_Discrete distance;     //3
-    Direction_8 angle;              //8
+    Direction_4 angle;              //4
     Direction_8 wallPositions;      //9
     bool lookingAtOpponent;         //2
 };

@@ -15,7 +15,7 @@ extern Game game;
 
 
 
-Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position, Position playerPosition) : Level_00_GO_BasicCharacter(scene, position){
+Level_00_GO_MainCharacter::Level_00_GO_MainCharacter(Scene* scene, sf::Vector2f position, Position playerPosition) : Level_00_GO_BasicCharacter(scene, position, playerPosition){
     
     if(playerPosition == PLAYER_1){
     
@@ -121,8 +121,11 @@ void Level_00_GO_MainCharacter::startAttackCollision(bool area){
         .area = area
     };
     
-    game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
-        
+    if(this->playerNumber == PLAYER_1){
+        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
+    }else{
+        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
+    }
 }
 
 void Level_00_GO_MainCharacter::startAttack(bool area){

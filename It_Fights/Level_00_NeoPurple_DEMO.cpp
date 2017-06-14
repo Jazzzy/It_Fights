@@ -95,11 +95,30 @@ void Level_00_NeoPurple_DEMO::onNotify(Message message){
                     break;
             }
         }
+    }else if(message.getEvent().compare("MSG_THE_LOOSER_IS")==0){
+        if(message.getData().type!=MessageData::INTEGER){
+            std::cerr << "ERROR: The data in this message should be an integer" << std::endl;
+        }else{
+            switch(message.getData().integer){
+                case PLAYER_1:
+                    
+                    prints("Player 2 is the winner!");
+                    
+                    break;
+                
+                case PLAYER_2:
+                    
+                    prints("Player 1 is the winner!");
+
+                    break;
+            
+                default:
+                    break;
+            }
+        }
     }else{
-        
+    
     }
-    
-    
 
 }
 

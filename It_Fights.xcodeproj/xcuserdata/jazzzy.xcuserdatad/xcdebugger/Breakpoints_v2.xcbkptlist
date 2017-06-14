@@ -514,11 +514,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/AIObserver.cpp"
-            timestampString = "519060214.356273"
+            timestampString = "519139188.26886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "AIObserver::getCharacterState(Character character)"
             landmarkType = "7">
          </BreakpointContent>
@@ -567,6 +567,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
+            landmarkName = "Level_00_NeoPurple_DEMO::onNotify(Message message)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "It_Fights/Level_00_NeoPurple_DEMO.cpp"
+            timestampString = "519140418.702947"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "Level_00_NeoPurple_DEMO::onNotify(Message message)"
             landmarkType = "7">
          </BreakpointContent>

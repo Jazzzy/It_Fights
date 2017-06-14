@@ -47,7 +47,7 @@ AnimatedSprite("prota_0.2.json", "prota_0.2.png", DataMode::Aseprite_Array_Json_
 #define LocationColliderOffset_x (4)
 #define LocationColliderOffset_y (3)
 
-Level_00_GO_BasicCharacter::Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position):
+Level_00_GO_BasicCharacter::Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position, Position playerNumber):
 GameObject(scene),
 locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) ,
                  
@@ -71,7 +71,7 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
                  ColliderType::MOVING_OBJECT, CollisionLayer::NEUTRAL)
 {
     
-    
+    this->playerNumber = playerNumber;
     
     this->walkingSpeed = 130.f;
     this->health = 100.f;
@@ -151,14 +151,14 @@ bool Level_00_GO_BasicCharacter::receiveDamage(float damage, sf::Vector2f direct
         
         this->parryCounter(-direction);
         
-        prints("PARRIED!!");
+        //prints("PARRIED!!");
         
         return false;
     }
     
     this->health-= damage;
     
-    prints(this->getCharacterPublicName() << " received " << damage << " poins of damage");
+    //prints(this->getCharacterPublicName() << " received " << damage << " poins of damage");
     
     if(this->health<=0.){
         this->health = 0.;
@@ -171,11 +171,12 @@ bool Level_00_GO_BasicCharacter::receiveDamage(float damage, sf::Vector2f direct
 
 void Level_00_GO_BasicCharacter::die(){
     
-    prints(this->getCharacterPublicName() << " has died ");
-
-    Message message("MSG_GO_TO_MENU");
+    Message winner("MSG_THE_LOOSER_IS", MessageData{MessageData::INTEGER, .integer = this->playerNumber});
+    this->scene->send(winner);
     
+    Message message("MSG_GO_TO_MENU");
     this->scene->send(message);
+    
     
 }
 

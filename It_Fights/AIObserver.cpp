@@ -30,7 +30,6 @@ AIObserver::~AIObserver(){}
 void AIObserver::update(){
     
     stateArray[currentStateIndex] = getCurrentDiscreteFightState();
-    prints("update " << currentStateIndex);
     currentStateIndex++;
     if(currentStateIndex >= STATE_DELAY_IN_FRAMES){
         currentStateIndex = 0;
@@ -38,7 +37,6 @@ void AIObserver::update(){
 }
 
 FightState_Discrete AIObserver::getDiscreteState(){
-    prints("get " << currentStateIndex);
     return stateArray[currentStateIndex];
 }
 
@@ -163,7 +161,7 @@ MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuou
             discretePosition.distance = Distance_Discrete::OUT_OF_RANGE;
         }
         
-        discretePosition.angle = getDirection_8FromVector(getNormalizedVector(vectorDistance));
+        discretePosition.angle = getDirection_4FromVector(getNormalizedVector(vectorDistance));
         
         if(continuousState.myState.position.x <= WALL_X_INF){   //Touching left wall
             

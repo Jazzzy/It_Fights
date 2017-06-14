@@ -13,7 +13,7 @@
 extern Game game;
 
 
-Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition) : Level_00_GO_BasicCharacter(scene, position){
+Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition) : Level_00_GO_BasicCharacter(scene, position, playerPosition){
     
     if(playerPosition == PLAYER_1){
         
@@ -145,7 +145,11 @@ void Level_00_GO_EnemyCharacter::startAttackCollision(bool area){
         .area = area
     };
     
-    game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
+    if(this->playerNumber == PLAYER_1){
+        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
+    }else{
+        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
+    }
     
 }
 

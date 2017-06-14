@@ -46,7 +46,7 @@ public:
 
 class Level_00_GO_BasicCharacter : public GameObject{
 public:
-    Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position);
+    Level_00_GO_BasicCharacter(Scene* scene, sf::Vector2f position, Position playerNumber);
     ~Level_00_GO_BasicCharacter();
     
     void update();
@@ -65,6 +65,7 @@ public:
     bool isOnCooldown();
     
 protected:
+    Position playerNumber;
     Level_00_GO_BasicCharacter_AnimatedSprite animatedSprite;
     GeneralCharacterController *controller;
     

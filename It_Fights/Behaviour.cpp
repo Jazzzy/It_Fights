@@ -41,6 +41,12 @@ void Behaviour::threadFunction(){
         
         this->update(discreteState);
         
+        /*
+         
+         If we want to update the behaviour once per a group of frames we can just check if the difference is
+         bigger than the length of that frame group in the second part of the while condition.
+         
+         */
         while(!shouldStopThread && this->currentFrameCount==Clock::Instance().getCurrentFrameCount()){
         }
         this->currentFrameCount=Clock::Instance().getCurrentFrameCount();
