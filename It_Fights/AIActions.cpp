@@ -25,6 +25,11 @@ AIActions::~AIActions(){
     
 }
 
+EnemyCharacterController * AIActions::getController(){
+    return this->controller;
+}
+
+
 void AIActions::execute(Action action){
     
     switch(action){

@@ -11,7 +11,7 @@
 
 #include <Scene.hpp>
 
-#define NUMBER_OF_SIMULATIONS (100)
+#define NUMBER_OF_SIMULATIONS (5000)
 
 class GameState : BusNode{
 public:

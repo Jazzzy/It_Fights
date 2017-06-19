@@ -26,7 +26,8 @@ public:
     AIActions(EnemyCharacterController * controller);
     ~AIActions();
     void execute(Action action);
-    
+    EnemyCharacterController * getController();
+
     
 private:
     EnemyCharacterController * controller;

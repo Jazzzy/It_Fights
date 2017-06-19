@@ -19,6 +19,8 @@
 		406D18C01ECB52100099A55D /* Level_00_GO_HealthBars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 406D18BE1ECB52100099A55D /* Level_00_GO_HealthBars.cpp */; };
 		406D18C71ECB60BF0099A55D /* MainCharacterController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 406D18C51ECB60BF0099A55D /* MainCharacterController.cpp */; };
 		406D18CA1ECB64E10099A55D /* EnemyCharacterController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 406D18C81ECB64E10099A55D /* EnemyCharacterController.cpp */; };
+		407176191EF821DD0040E2A6 /* ReinforcementLearningBehaviour_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407176171EF821DD0040E2A6 /* ReinforcementLearningBehaviour_1.cpp */; };
+		4071761D1EF833D80040E2A6 /* StateActionContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4071761B1EF833D80040E2A6 /* StateActionContainer.cpp */; };
 		4076FB361EB4C442002D4DAB /* lavaNoise.frag in Resources */ = {isa = PBXBuildFile; fileRef = 4076FB351EB4C442002D4DAB /* lavaNoise.frag */; };
 		4076FB391EB4C473002D4DAB /* GroundNoiseShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4076FB371EB4C473002D4DAB /* GroundNoiseShader.cpp */; };
 		4076FB3C1EB4DDE6002D4DAB /* Level_00_GO_EnemyCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4076FB3A1EB4DDE6002D4DAB /* Level_00_GO_EnemyCharacter.cpp */; };
@@ -106,6 +108,10 @@
 		406D18C61ECB60BF0099A55D /* MainCharacterController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainCharacterController.hpp; sourceTree = "<group>"; };
 		406D18C81ECB64E10099A55D /* EnemyCharacterController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyCharacterController.cpp; sourceTree = "<group>"; };
 		406D18C91ECB64E10099A55D /* EnemyCharacterController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnemyCharacterController.hpp; sourceTree = "<group>"; };
+		407176171EF821DD0040E2A6 /* ReinforcementLearningBehaviour_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReinforcementLearningBehaviour_1.cpp; sourceTree = "<group>"; };
+		407176181EF821DD0040E2A6 /* ReinforcementLearningBehaviour_1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReinforcementLearningBehaviour_1.hpp; sourceTree = "<group>"; };
+		4071761B1EF833D80040E2A6 /* StateActionContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateActionContainer.cpp; sourceTree = "<group>"; };
+		4071761C1EF833D80040E2A6 /* StateActionContainer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StateActionContainer.hpp; sourceTree = "<group>"; };
 		4076FB351EB4C442002D4DAB /* lavaNoise.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lavaNoise.frag; sourceTree = "<group>"; };
 		4076FB371EB4C473002D4DAB /* GroundNoiseShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundNoiseShader.cpp; sourceTree = "<group>"; };
 		4076FB381EB4C473002D4DAB /* GroundNoiseShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GroundNoiseShader.hpp; sourceTree = "<group>"; };
@@ -214,12 +220,15 @@
 		402E712E1ED5E1F7008149B3 /* CharacterAI */ = {
 			isa = PBXGroup;
 			children = (
-				402E712F1ED5E2C5008149B3 /* RuleBasedBehaviour.cpp */,
-				402E71301ED5E2C5008149B3 /* RuleBasedBehaviour.hpp */,
-				402E71321ED5E2E5008149B3 /* AIObserver.cpp */,
-				402E71331ED5E2E5008149B3 /* AIObserver.hpp */,
+				4071761A1EF8232E0040E2A6 /* ReinforcementLearning */,
 				402E71351ED5EAB5008149B3 /* Behaviour.cpp */,
 				402E71361ED5EAB5008149B3 /* Behaviour.hpp */,
+				402E712F1ED5E2C5008149B3 /* RuleBasedBehaviour.cpp */,
+				402E71301ED5E2C5008149B3 /* RuleBasedBehaviour.hpp */,
+				407176171EF821DD0040E2A6 /* ReinforcementLearningBehaviour_1.cpp */,
+				407176181EF821DD0040E2A6 /* ReinforcementLearningBehaviour_1.hpp */,
+				402E71321ED5E2E5008149B3 /* AIObserver.cpp */,
+				402E71331ED5E2E5008149B3 /* AIObserver.hpp */,
 				40A494DC1EF02CE300213C07 /* AIActions.cpp */,
 				40A494DD1EF02CE300213C07 /* AIActions.hpp */,
 			);
@@ -293,6 +302,15 @@
 				406D18C91ECB64E10099A55D /* EnemyCharacterController.hpp */,
 			);
 			name = CharacterController;
+			sourceTree = "<group>";
+		};
+		4071761A1EF8232E0040E2A6 /* ReinforcementLearning */ = {
+			isa = PBXGroup;
+			children = (
+				4071761B1EF833D80040E2A6 /* StateActionContainer.cpp */,
+				4071761C1EF833D80040E2A6 /* StateActionContainer.hpp */,
+			);
+			name = ReinforcementLearning;
 			sourceTree = "<group>";
 		};
 		407DEFD51E897764004263E6 = {
@@ -661,6 +679,7 @@
 				4076FB431EB4E695002D4DAB /* Level_00_GO_BasicCharacter.cpp in Sources */,
 				40DBD6031E8F1F5C0027E88A /* GameState.cpp in Sources */,
 				407DF0091E8AAC9D004263E6 /* Window.cpp in Sources */,
+				407176191EF821DD0040E2A6 /* ReinforcementLearningBehaviour_1.cpp in Sources */,
 				40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */,
 				40DBD6061E8F20760027E88A /* Game.cpp in Sources */,
 				40319DC41EE0688C00FB162F /* MenuOptions.cpp in Sources */,
@@ -678,6 +697,7 @@
 				407DEFFD1E897B92004263E6 /* Message.cpp in Sources */,
 				408485551EEABE8900058CD6 /* PhysicsTypes.cpp in Sources */,
 				4076FB3C1EB4DDE6002D4DAB /* Level_00_GO_EnemyCharacter.cpp in Sources */,
+				4071761D1EF833D80040E2A6 /* StateActionContainer.cpp in Sources */,
 				40FEE0601E905173004DCA95 /* Shader.cpp in Sources */,
 				40FEE05D1E905168004DCA95 /* BloomShader.cpp in Sources */,
 				407DEFE51E897765004263E6 /* ResourcePath.mm in Sources */,
@@ -831,8 +851,18 @@
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/include/,
+				);
 				INFOPLIST_FILE = "It_Fights/It_Fights-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/lib/,
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -841,6 +871,7 @@
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
 					"-v",
+					"-lboost_serialization",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -854,8 +885,18 @@
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/include/,
+				);
 				INFOPLIST_FILE = "It_Fights/It_Fights-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/lib/,
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -864,6 +905,7 @@
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
 					"-v",
+					"-lboost_serialization",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

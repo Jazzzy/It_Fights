@@ -10,10 +10,12 @@
 #include "DebugUtilities.hpp"
 #include "Game.hpp"
 #include "RuleBasedBehaviour.hpp"
+#include "ReinforcementLearningBehaviour_1.hpp"
+
 extern Game game;
 
 
-Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition) : Level_00_GO_BasicCharacter(scene, position, playerPosition){
+Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition, EnemyType type) : Level_00_GO_BasicCharacter(scene, position, playerPosition){
     
     if(playerPosition == PLAYER_1){
         
@@ -41,7 +43,7 @@ Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2
         characterMarker.setOutlineColor(sf::Color(50.0f,255.0f,50.0f,80.0f));
         characterMarker.setFillColor(sf::Color(50.0f,255.0f,50.0f,80.0f));
         characterPublicName = "AGENT 1";
-
+        
         
     }else{
         this->hurtbox = new BoxCollider(sf::Vector2f (hurtboxSize_x, hurtboxSize_y) ,
@@ -57,7 +59,7 @@ Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2
                                             if(colType == ColliderType::HITBOX){
                                                 if(this->receiveDamage(value,vector)){
                                                     this->startDash(vector, 50, 0.150, true);
-                                                    }
+                                                }
                                             }
                                             
                                         },
@@ -68,7 +70,7 @@ Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2
         characterMarker.setOutlineColor(sf::Color(255.0f,0.0f,0.0f,80.0f));
         characterMarker.setFillColor(sf::Color(255.0f,0.0f,0.0f,80.0f));
         characterPublicName = "AGENT 2";
-
+        
     }
     
     this->controller = &myController;
@@ -87,7 +89,15 @@ Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2
     /*************    HERE WE SELECT WHAT BEHAVIOUR WE USE FOR THE ENEMY ACTIONS    *************/
     /********************************************************************************************/
     
-    this->behaviour = new RuleBasedBehaviour(&(this->myController), (this->observer));
+    switch(type){
+        case RULE_BASED:
+            this->behaviour = new RuleBasedBehaviour(&(this->myController), (this->observer));
+            break;
+        case REINFORCEMENT_1_BASED:
+            this->behaviour = new ReinforcementLearningBehaviour_1(&(this->myController), (this->observer));
+            break;
+    }
+    
     
     /********************************************************************************************/
     /********************************************************************************************/
@@ -136,7 +146,7 @@ void Level_00_GO_EnemyCharacter::onEnd(){
 }
 
 void Level_00_GO_EnemyCharacter::startAttackCollision(bool area){
-
+    
     InstantCircleCollider hitbox{
         .x = this->position.x + HITBOX_OFFSET_X,
         .y = this->position.y + HITBOX_OFFSET_Y,

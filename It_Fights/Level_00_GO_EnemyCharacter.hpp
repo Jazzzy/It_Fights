@@ -17,13 +17,18 @@
 class AIObserver;
 class Behaviour;
 
+enum EnemyType {
+    RULE_BASED,
+    REINFORCEMENT_1_BASED
+};
+
 /*
  Class that represents the enemy character in the duel, this extends from our BasicCharacter class
  which contains the general character functionality
  */
 class Level_00_GO_EnemyCharacter : public Level_00_GO_BasicCharacter{
 public:
-    Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition);
+    Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition, EnemyType type);
     ~Level_00_GO_EnemyCharacter();
     
     /*

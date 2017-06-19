@@ -9,6 +9,7 @@
 #include "AIObserver.hpp"
 #include "DebugUtilities.hpp"
 #include "SomeMath.hpp"
+#include <sstream>
 
 AIObserver::AIObserver(Level_00_GO_Characters* characters, Position position){
     this->characters = characters;
@@ -55,12 +56,16 @@ FightState_Discrete AIObserver::getCurrentDiscreteFightState(){
     state.myState = this->getCharacterState(Character::MYSELF);
     state.otherState = this->getCharacterState(Character::OTHER);
     
-    return discretizeState(state);
+    FightState_Discrete discreteState = discretizeState(state);
+    
+    this->calculateFitness(&discreteState, state);
+    
+    return discreteState;
     
 }
 
 FightState_Discrete AIObserver::getDefaultDiscreteFightState(){
-
+    
     FightState state;
     
     state.timeSinceLastCheck = this->deltaClock.restart().asSeconds();
@@ -77,16 +82,16 @@ FightState_Discrete AIObserver::getDefaultDiscreteFightState(){
     state.otherState.velocity = sf::Vector2f(0.f,0.f);
     
     return discretizeState(state);
-
-
+    
+    
 }
 
 
 CharacterState AIObserver::getCharacterState(Character character){
-
+    
     CharacterState state;
     Level_00_GO_BasicCharacter* cptr = nullptr;
-
+    
     
     if(this->playerPosition == Position::PLAYER_1){
         if(character == Character::MYSELF){
@@ -141,13 +146,13 @@ short AIObserver::discretizeHealth(float health , short divisions){
 #define WALL_Y_SUP (223)
 
 MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuousState){
-
+    
     MyCharacterState_Discrete discreteState;
     
     discreteState.health = discretizeHealth(continuousState.myState.health, HEALTH_DIVISION);
     discreteState.action = continuousState.myState.action;
     
-
+    
     Position_Discrete discretePosition;
     {
         sf::Vector2f vectorDistance = continuousState.otherState.position - continuousState.myState.position;
@@ -166,19 +171,19 @@ MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuou
         if(continuousState.myState.position.x <= WALL_X_INF){   //Touching left wall
             
             if(continuousState.myState.position.y <= WALL_Y_INF){       //And also the top wall
-            
+                
                 discretePosition.wallPositions = Direction_8::LEFT_UP_8;
                 
             }else if(continuousState.myState.position.y >= WALL_Y_SUP){ //And also the bottom wall
-            
+                
                 discretePosition.wallPositions = Direction_8::DOWN_LEFT_8;
                 
             }else{                                                      //And only the left wall
                 
                 discretePosition.wallPositions = Direction_8::LEFT_8;
-            
+                
             }
-        
+            
         }else if(continuousState.myState.position.x >= WALL_X_SUP){ //Touching right wall
             
             if(continuousState.myState.position.y <= WALL_Y_INF){       //And also the top wall
@@ -190,14 +195,14 @@ MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuou
                 discretePosition.wallPositions = Direction_8::RIGHT_DOWN_8;
                 
             }else{                                                      //And only the right wall
-        
+                
                 discretePosition.wallPositions = Direction_8::RIGHT_8;
                 
             }
             
-        
+            
         }else{  //Touching neither the left or right walls
-        
+            
             if(continuousState.myState.position.y <= WALL_Y_INF){       //Just top wall
                 
                 discretePosition.wallPositions = Direction_8::UP_8;
@@ -212,7 +217,7 @@ MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuou
                 
             }
         }
-    
+        
         discretePosition.lookingAtOpponent = (continuousState.myState.heading == getDirection_4FromVector(getNormalizedVector(vectorDistance)));
         
     }
@@ -224,7 +229,7 @@ MyCharacterState_Discrete AIObserver::discretizeMyCharacter(FightState continuou
 
 
 OtherCharacterState_Discrete AIObserver::discretizeOtherCharacter(CharacterState characterState){
-
+    
     OtherCharacterState_Discrete discreteState;
     
     discreteState.health = discretizeHealth(characterState.health, HEALTH_DIVISION);
@@ -235,7 +240,7 @@ OtherCharacterState_Discrete AIObserver::discretizeOtherCharacter(CharacterState
 
 
 FightState_Discrete AIObserver::discretizeState(FightState continuousState){
-
+    
     FightState_Discrete discreteState{
         .myState = (discretizeMyCharacter(continuousState)),
         .otherState = (discretizeOtherCharacter(continuousState.otherState)),
@@ -245,17 +250,89 @@ FightState_Discrete AIObserver::discretizeState(FightState continuousState){
     
 }
 
+#define INIT_FITNESS_VALUE (1000)
+#define MY_HEALTH_MULT (100)
+#define OTHER_HEALTH_MULT (100)
+#define LOOKING_BONUS (20)
+#define WALL_BONUS (30)
+#define MAX_DISTANCE_FITNESS (500)
+#define DISTANCE_MULT (1)
+
+void AIObserver::calculateFitness(FightState_Discrete * discreteState, FightState continuousState){
+    
+    unsigned int fitness = INIT_FITNESS_VALUE;
+    
+    fitness += discreteState->myState.health * MY_HEALTH_MULT;
+    
+    fitness -= discreteState->otherState.health * OTHER_HEALTH_MULT;
+    
+    if(discreteState->myState.position.lookingAtOpponent){
+        fitness += LOOKING_BONUS;
+    }
+    
+    if(discreteState->myState.position.wallPositions == NONE_8){
+        fitness += WALL_BONUS;
+    }
+    
+    sf::Vector2f vectorDistance = continuousState.otherState.position - continuousState.myState.position;
+    
+    int distance = ceil(getVectorLength(vectorDistance));
+    
+    fitness += (MAX_DISTANCE_FITNESS - distance) * DISTANCE_MULT;
+    
+    discreteState->fitness = fitness;
+}
+
+
 
 std::ostream& operator<<(std::ostream& os, const FightState_Discrete& state){
     
-    return os << "My Health: " << state.myState.health << std::endl <<
-                    "Distance: " << (short)state.myState.position.distance << std::endl <<
-                    "Angle: " << (short)state.myState.position.angle << std::endl <<
-                    "Walls: " << (short)state.myState.position.wallPositions << std::endl <<
-                    "Looking at opponent: " << (short)state.myState.position.lookingAtOpponent << std::endl <<
-                    "My Action: " << state.myState.action << std::endl <<
-                    "His health: " << state.otherState.health << std::endl <<
-                    "His Action: " << state.otherState.action << std::endl;
+    return os << std::endl <<
+    "My Health: " << state.myState.health << std::endl <<
+    "Distance: " << (short)state.myState.position.distance << std::endl <<
+    "Angle: " << (short)state.myState.position.angle << std::endl <<
+    "Walls: " << (short)state.myState.position.wallPositions << std::endl <<
+    "Looking at opponent: " << (short)state.myState.position.lookingAtOpponent << std::endl <<
+    "My Action: " << state.myState.action << std::endl <<
+    "His health: " << state.otherState.health << std::endl <<
+    "His Action: " << state.otherState.action << std::endl <<
+    "FITNESS: " << state.fitness << std::endl;
+    
+}
+
+FightState_Discrete from_short_string(std::string short_string){
+    
+    FightState_Discrete state;
+    const char* tempCstring = short_string.c_str();
+    memcpy(&state, tempCstring, sizeof(FightState_Discrete));
+    
+    return state;
+    
+}
+
+std::string FightState_Discrete::to_short_string(){
+    
+    //    FightState_Discrete copy = *this;
+    //    copy.fitness = 0;
+    //    char* tempCstring = (char*) malloc(sizeof(FightState_Discrete)+1);
+    //    memcpy(tempCstring, &copy, sizeof(FightState_Discrete));
+    //    tempCstring[sizeof(FightState_Discrete)] = '\0';
+    //    std::string returnVal(tempCstring, sizeof(FightState_Discrete));
+    //    free(tempCstring);
+    //    return returnVal;
+    
+    std::stringstream ss;
+    ss << this->myState.health << "_" <<
+    (short)this->myState.position.distance << "_" <<
+    (short)this->myState.position.angle << "_" <<
+    (short)this->myState.position.wallPositions << "_" <<
+    (short)this->myState.position.lookingAtOpponent << "_" <<
+    this->myState.action << "_" <<
+    this->otherState.health << "_" <<
+    this->otherState.action;
+    
+    
+    return ss.str();
     
 }
 

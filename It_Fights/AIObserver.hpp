@@ -85,8 +85,14 @@ struct OtherCharacterState_Discrete {   //30
 struct FightState_Discrete {                    //194400
     MyCharacterState_Discrete myState;          //6480
     OtherCharacterState_Discrete otherState;    //30
-    //Posibility of taking time into account
+
+    unsigned int fitness;
+    
+    std::string to_short_string();
 };
+
+FightState_Discrete from_short_string(std::string short_string);
+
 
 /********************/
 
@@ -103,6 +109,7 @@ public:
     FightState_Discrete getDiscreteState();
     void update();
     Position getPlayer1_2();
+    void calculateFitness(FightState_Discrete* discreteState, FightState continuousState);
 
     MyCharacterState_Discrete discretizeMyCharacter(FightState continuousState);
     OtherCharacterState_Discrete discretizeOtherCharacter(CharacterState characterState);
