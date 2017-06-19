@@ -439,7 +439,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition)"
+            landmarkName = "Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition, EnemyType type)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

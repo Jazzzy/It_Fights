@@ -12,6 +12,8 @@
 
 #include "Behaviour.hpp"
 
+#define EPSILON (0.25f)
+
 class ReinforcementLearningBehaviour_1 : public Behaviour {
 public:
     ReinforcementLearningBehaviour_1(EnemyCharacterController* controller, AIObserver* observer);

@@ -18,7 +18,7 @@ ReinforcementLearningBehaviour_1::ReinforcementLearningBehaviour_1(EnemyCharacte
     this->lastAction = DO_NOTHING;
     
     printv(StateActionContainer::Instance().getStateActionMap()->size());
-
+    
 }
 
 
@@ -29,15 +29,13 @@ ReinforcementLearningBehaviour_1::~ReinforcementLearningBehaviour_1(){
 bool first = true;
 
 void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState){
-    
+        
     this->lastDiscreteState = this->currentDiscreteState;
     this->currentDiscreteState = discreteState;
     
-    int deltaFitness = this->currentDiscreteState.fitness - this->lastDiscreteState.fitness;
+    double deltaFitness = static_cast<double>(this->currentDiscreteState.fitness) - static_cast<double>(this->lastDiscreteState.fitness);
     
     std::string lastStateString = lastDiscreteState.to_short_string();
-    
-    prints(lastStateString);
     
     /*
      
@@ -52,64 +50,74 @@ void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState)
         
         ActionSituation oldSituation = sas.actionArray[this->lastAction];
         
+        double auxMaxFitness = (static_cast<double>(oldSituation.maxFitness) > deltaFitness) ? static_cast<double>(oldSituation.maxFitness) : static_cast<double>(deltaFitness);
+        
         ActionSituation newSituation{
-            .meanDeltaFitness = oldSituation.meanDeltaFitness + ((deltaFitness - oldSituation.meanDeltaFitness)/(int)(oldSituation.timesExecuted+1)),
+            .maxFitness = auxMaxFitness,
+            .meanDeltaFitness = (double)oldSituation.meanDeltaFitness + (double)(((double)deltaFitness - oldSituation.meanDeltaFitness)/(double)(oldSituation.timesExecuted+1)),
             .timesExecuted = oldSituation.timesExecuted+1
         };
         
         sas.actionArray[this->lastAction] = newSituation;
         
-        StateActionContainer::Instance().putStateActionSituation(lastStateString, sas);
+        
+        StateActionContainer::Instance().putStateActionSituation(lastDiscreteState.to_short_string(), sas);
         
     }else{
         
         StateActionSituation sas = StateActionSituation::getEmptyValue();
         
         ActionSituation as{
+            .maxFitness = deltaFitness,
             .meanDeltaFitness = deltaFitness,
             .timesExecuted = 1
         };
         
         sas.actionArray[this->lastAction] = as;
         
-        StateActionContainer::Instance().putStateActionSituation(lastStateString, sas);
+        StateActionContainer::Instance().putStateActionSituation(lastDiscreteState.to_short_string(), sas);
     }
     
     
     /*
      
-     Now we pick one action to do
+     Now we pick one action to do with:
+     
+     https://en.wikipedia.org/wiki/Softmax_function#Reinforcement_learning
      
      */
     
-//    if(StateActionContainer::Instance().hasState(this->currentDiscreteState.to_short_string())){
-//        
-//        StateActionSituation sas = StateActionContainer::Instance().getStateActionSituationFor(this->currentDiscreteState.to_short_string());
-//        
-//        this->lastAction = (Action) 0;
-//        
-//        for(int i = 0 ; i < NumberOfActions ; i++){
-//            if(sas.actionArray[this->lastAction].meanDeltaFitness < sas.actionArray[i].meanDeltaFitness){
-//                this->lastAction = (Action) i;
-//            }
-//        }
-//    }else{
-    
+    if(StateActionContainer::Instance().hasState(this->currentDiscreteState.to_short_string())){
+        
+        StateActionSituation sas = StateActionContainer::Instance().getStateActionSituationFor(this->currentDiscreteState.to_short_string());
+        
+        if(((double) rand() / (RAND_MAX)) > EPSILON){
+            
+            this->lastAction = (Action) 0;
+            
+            for(int i = 0 ; i < NumberOfActions ; i++){
+                
+                prints("ACTION [" << i << "]: MAX_FITNESS [" << sas.actionArray[i].maxFitness << "] AVERAGE_FITNESS [" << sas.actionArray[i].meanDeltaFitness << "]");
+                
+                if(sas.actionArray[this->lastAction].meanDeltaFitness < sas.actionArray[i].meanDeltaFitness){
+                    this->lastAction = (Action) i;
+                }
+            }
+            
+        }else{
+            
+            this->lastAction = (Action) getRandomBetween(0, 7);
+            
+        }
+    }else{
+        
         this->lastAction = (Action) getRandomBetween(0, 7);
-    
-//    }
+        
+    }
     
     this->actions->execute(lastAction);
     
 }
-
-
-
-
-
-
-
-
 
 
 

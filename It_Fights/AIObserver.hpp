@@ -91,7 +91,9 @@ struct FightState_Discrete {                    //194400
     std::string to_short_string();
 };
 
-FightState_Discrete from_short_string(std::string short_string);
+bool operator==(const FightState_Discrete& lhs, const FightState_Discrete& rhs);
+
+//FightState_Discrete from_short_string(std::string short_string);
 
 
 /********************/
@@ -99,7 +101,7 @@ FightState_Discrete from_short_string(std::string short_string);
 
 std::ostream& operator<<(std::ostream& os, const FightState_Discrete& state);
 
-#define STATE_DELAY_IN_FRAMES 13
+#define STATE_DELAY_IN_FRAMES 1
 
 class AIObserver {
 public:

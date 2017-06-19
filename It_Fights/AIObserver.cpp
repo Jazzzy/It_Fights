@@ -253,10 +253,10 @@ FightState_Discrete AIObserver::discretizeState(FightState continuousState){
 #define INIT_FITNESS_VALUE (1000)
 #define MY_HEALTH_MULT (100)
 #define OTHER_HEALTH_MULT (100)
-#define LOOKING_BONUS (20)
-#define WALL_BONUS (30)
+#define LOOKING_BONUS (200)
+#define WALL_BONUS (50)
 #define MAX_DISTANCE_FITNESS (500)
-#define DISTANCE_MULT (1)
+#define DISTANCE_MULT (3)
 
 void AIObserver::calculateFitness(FightState_Discrete * discreteState, FightState continuousState){
     
@@ -276,10 +276,10 @@ void AIObserver::calculateFitness(FightState_Discrete * discreteState, FightStat
     
     sf::Vector2f vectorDistance = continuousState.otherState.position - continuousState.myState.position;
     
-    int distance = ceil(getVectorLength(vectorDistance));
+    int distance = ceil(fabs(getVectorLength(vectorDistance)));
     
     fitness += (MAX_DISTANCE_FITNESS - distance) * DISTANCE_MULT;
-    
+        
     discreteState->fitness = fitness;
 }
 
@@ -321,19 +321,31 @@ std::string FightState_Discrete::to_short_string(){
     //    free(tempCstring);
     //    return returnVal;
     
-    std::stringstream ss;
-    ss << this->myState.health << "_" <<
-    (short)this->myState.position.distance << "_" <<
-    (short)this->myState.position.angle << "_" <<
-    (short)this->myState.position.wallPositions << "_" <<
-    (short)this->myState.position.lookingAtOpponent << "_" <<
+    std::ostringstream s;
+    s <<
+    this->myState.health << "_" <<
+    this->myState.position.distance << "_" <<
+    this->myState.position.angle << "_" <<
+    this->myState.position.wallPositions << "_" <<
+    this->myState.position.lookingAtOpponent << "_" <<
     this->myState.action << "_" <<
     this->otherState.health << "_" <<
     this->otherState.action;
     
+    return std::string(s.str());
     
-    return ss.str();
+}
+
+bool operator==(const FightState_Discrete& lhs, const FightState_Discrete& rhs){
+
+    FightState_Discrete auxR = rhs;
+    FightState_Discrete auxL = lhs;
     
+    std::string rStr = auxR.to_short_string();
+    std::string lStr = auxL.to_short_string();
+
+    return(rStr.compare(lStr)==0);
+
 }
 
 

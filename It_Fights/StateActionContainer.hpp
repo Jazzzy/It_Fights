@@ -20,17 +20,18 @@
 struct ActionSituation {
 
     unsigned int timesExecuted;
-    int meanDeltaFitness;
+    double meanDeltaFitness;
+    double maxFitness;
     
     friend class boost::serialization::access;
     // When the class Archive corresponds to an output archive, the
     // & operator is defined similar to <<.  Likewise, when the class Archive
     // is a type of input archive the & operator is defined similar to >>.
     template<class Archive>
-    void serialize(Archive & ar, const unsigned int version)
-    {
+    void serialize(Archive & ar, const unsigned int version){
         ar & timesExecuted;
         ar & meanDeltaFitness;
+        ar & maxFitness;
     }
     
     static ActionSituation getEmptyValue();
@@ -45,8 +46,7 @@ struct StateActionSituation {
     // & operator is defined similar to <<.  Likewise, when the class Archive
     // is a type of input archive the & operator is defined similar to >>.
     template<class Archive>
-    void serialize(Archive & ar, const unsigned int version)
-    {
+    void serialize(Archive & ar, const unsigned int version){
         ar & actionArray;
     }
     
@@ -96,8 +96,7 @@ private :
     // & operator is defined similar to <<.  Likewise, when the class Archive
     // is a type of input archive the & operator is defined similar to >>.
     template<class Archive>
-    void serialize(Archive & ar, const unsigned int version)
-    {
+    void serialize(Archive & ar, const unsigned int version){
         ar & stateActionMap;
     }
     

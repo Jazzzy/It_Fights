@@ -185,6 +185,9 @@ void Level_00_GO_EnemyCharacter::update(){
     
     //this->behaviour->update();
     
+    this->observer->update();
+
+    
 }
 
 void Level_00_GO_EnemyCharacter::die(){

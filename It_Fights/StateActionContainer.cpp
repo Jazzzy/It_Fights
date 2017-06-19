@@ -12,6 +12,7 @@
 #include <cmath>
 #include <iostream>
 #include <fstream>
+#include "DebugUtilities.hpp"
 
 
 StateActionContainer& StateActionContainer::Instance(){
@@ -77,7 +78,7 @@ StateActionSituation StateActionContainer::getStateActionSituationFor(std::strin
 }
 
 void StateActionContainer::putStateActionSituation(std::string state, StateActionSituation situation){
-
+        
     this->stateActionMap[state] = situation;
 
 }
@@ -92,7 +93,8 @@ void StateActionContainer::resetPreviousKnowledge(){
 ActionSituation ActionSituation::getEmptyValue(){
     return ActionSituation{
         .meanDeltaFitness = 0,
-        .timesExecuted = 0
+        .timesExecuted = 0,
+        .maxFitness = 0
     };
 }
 

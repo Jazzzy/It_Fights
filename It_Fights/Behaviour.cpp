@@ -32,23 +32,24 @@ Behaviour::~Behaviour(){
     delete this->actions;
 }
 
+#define WAITING_FRAMES 60
+
 void Behaviour::threadFunction(){
     
     while(!shouldStopThread){
         
-        this->observer->update();
         FightState_Discrete discreteState = this->observer->getDiscreteState();
         
         this->update(discreteState);
         
-        /*
-         
-         If we want to update the behaviour once per a group of frames we can just check if the difference is
-         bigger than the length of that frame group in the second part of the while condition.
-         
-         */
-        while(!shouldStopThread && this->currentFrameCount==Clock::Instance().getCurrentFrameCount()){
+        while(!shouldStopThread && ((Clock::Instance().getCurrentFrameCount() - this->currentFrameCount) < WAITING_FRAMES)){
+            
+            bool stateChanged = (discreteState == this->observer->getDiscreteState());
+            
+            if(stateChanged) break;
+            
         }
+        
         this->currentFrameCount=Clock::Instance().getCurrentFrameCount();
         
     }
