@@ -850,6 +850,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -862,6 +863,10 @@
 					/usr/local/lib/,
 					"$(inherited)",
 					/usr/local/Cellar/boost/1.64.0_1/lib/,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++1z",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -884,6 +889,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -896,6 +902,10 @@
 					/usr/local/lib/,
 					"$(inherited)",
 					/usr/local/Cellar/boost/1.64.0_1/lib/,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++1z",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

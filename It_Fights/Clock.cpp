@@ -9,6 +9,7 @@
 #include "Clock.hpp"
 #include <cmath>
 #include <iostream>
+#include "DebugUtilities.hpp"
 
 
 Clock& Clock::Instance(){
@@ -51,6 +52,10 @@ float Clock::getTimeScale(){
 
 
 float Clock::getDeltaTime(){
+    if(this->timeScale>1.f){
+        return 1.f/60.f;
+    }
+    
     return this->deltaTime * this->timeScale;
 }
 

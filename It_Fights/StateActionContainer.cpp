@@ -24,6 +24,8 @@ StateActionContainer& StateActionContainer::Instance(){
             // read class state from archive
             ia >> *MInstance;
             
+            prints("Currently the map has [" << MInstance->getStateActionMap()->size() << "] states in it");
+            
         }
     }
     
@@ -33,6 +35,8 @@ StateActionContainer& StateActionContainer::Instance(){
 StateActionContainer* StateActionContainer::MInstance = 0;
 
 void StateActionContainer::CleanUp(){
+    prints("Currently the map has [" << MInstance->getStateActionMap()->size() << "] states in it");
+    
     MInstance->saveToFile();
     delete MInstance;
     MInstance = 0;
@@ -94,7 +98,7 @@ ActionSituation ActionSituation::getEmptyValue(){
     return ActionSituation{
         .meanDeltaFitness = 0,
         .timesExecuted = 0,
-        .maxFitness = 0
+        .maxFitness = std::numeric_limits<double>::min()
     };
 }
 

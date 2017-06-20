@@ -15,6 +15,10 @@
 #include <boost/serialization/unordered_map.hpp>
 #include <boost/serialization/string.hpp>
 
+#include <mutex>
+#include <shared_mutex>
+#include <thread>
+
 #define NumberOfActions 7
 
 struct ActionSituation {
@@ -82,6 +86,9 @@ private :
     StateActionContainer& operator=(StateActionContainer const&);
     
     static StateActionContainer* MInstance;
+    
+    //@@TODO: Put mutex;
+    //mutable std::shared_mutex mutex_;
     
     //*************************************//
     //******* REAL PRIVATE MEMBERS ********//

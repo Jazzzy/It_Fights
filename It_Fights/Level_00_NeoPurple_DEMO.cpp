@@ -143,6 +143,11 @@ void Level_00_NeoPurple_DEMO::onNotify(Message message){
 
 }
 
+#include <iostream>
+#include <sstream>
+
+std::pair<short,short> winnersData = std::make_pair(0, 0);
+
 void Level_00_NeoPurple_DEMO::win(Position player){
 
     switch(player){
@@ -150,17 +155,35 @@ void Level_00_NeoPurple_DEMO::win(Position player){
             
             prints("Player 1 is the winner!");
             
+            winnersData.first++;
+            
             break;
             
         case PLAYER_2:
             
             prints("Player 2 is the winner!");
             
+            winnersData.second++;
+            
             break;
             
         default:
             break;
     }
+    
+    std::stringstream ss;
+    
+    ss << "PLAYER 1 [" << winnersData.first << "] - [" << winnersData.second << "] PLAYER 2" ;
+    
+    std::string * strForConsole = new std::string(ss.str());
+    
+    prints(*strForConsole);
+    
+    MessageData messageData = {MessageData::STRING_PTR,strForConsole};
+    
+    Message messageForConsole("CONSOLE_SHOW_MSG", Systems::S_Console, messageData);
+    this->send(messageForConsole);
+    
 
 }
 

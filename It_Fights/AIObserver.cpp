@@ -11,6 +11,8 @@
 #include "SomeMath.hpp"
 #include <sstream>
 
+#define INITIAL_FITNESS (2070)
+
 AIObserver::AIObserver(Level_00_GO_Characters* characters, Position position){
     this->characters = characters;
     this->deltaClock.restart();
@@ -81,7 +83,10 @@ FightState_Discrete AIObserver::getDefaultDiscreteFightState(){
     state.otherState.position = sf::Vector2f(0.f,0.f);
     state.otherState.velocity = sf::Vector2f(0.f,0.f);
     
-    return discretizeState(state);
+    FightState_Discrete discreteState = discretizeState(state);
+    discreteState.fitness = INITIAL_FITNESS;
+    
+    return discreteState;
     
     
 }
@@ -110,6 +115,11 @@ CharacterState AIObserver::getCharacterState(Character character){
     state.health = cptr->getHealthNormalized();
     state.position = cptr->getPosition();
     state.velocity = cptr->getVelocity();
+    
+    if(state.position.x > 1000 || state.position.y > 1000){
+        printv(state.position.x);
+        printv(state.position.y);
+    }
     
     if(cptr->isAttacking()){
         state.action = CharacterAction::ATTACKING;
@@ -274,12 +284,22 @@ void AIObserver::calculateFitness(FightState_Discrete * discreteState, FightStat
         fitness += WALL_BONUS;
     }
     
-    sf::Vector2f vectorDistance = continuousState.otherState.position - continuousState.myState.position;
+    sf::Vector2f vectorDistance(fabs(continuousState.otherState.position.x - continuousState.myState.position.x) , fabs(continuousState.otherState.position.y - continuousState.myState.position.y) );
     
-    int distance = ceil(fabs(getVectorLength(vectorDistance)));
+    int distance = (int)floor(fabs(getVectorLength(vectorDistance)));
     
     fitness += (MAX_DISTANCE_FITNESS - distance) * DISTANCE_MULT;
-        
+    
+//    if(fitness > 10000){
+//        
+//        printv(continuousState.otherState.position.x);
+//        printv(continuousState.otherState.position.y);
+//        printv(continuousState.myState.position.x);
+//        printv(continuousState.myState.position.y);
+//        printv(distance);
+//    
+//    }
+    
     discreteState->fitness = fitness;
 }
 

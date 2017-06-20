@@ -115,11 +115,11 @@ locationCollider( sf::Vector2f (LocationColliderSize_x, LocationColliderSize_y) 
 }
 
 Level_00_GO_BasicCharacter::~Level_00_GO_BasicCharacter(){
-
+    
 }
 
 void Level_00_GO_BasicCharacter::onStart(){
-        
+    
     if(!this->locationCollider.isRegistered()){
         this->locationCollider.registerCollider();
     }
@@ -262,6 +262,7 @@ void Level_00_GO_BasicCharacter::update(){
 }
 
 sf::Vector2f Level_00_GO_BasicCharacter::getPosition(){
+    //@@TODO: Check here for real positions.
     return this->position;
 }
 
@@ -277,7 +278,7 @@ void Level_00_GO_BasicCharacter::startDash(sf::Vector2f direction, float magnitu
     this->totalDashTime = millis;
     
     this->dashing = true;
-
+    
 }
 
 
@@ -293,15 +294,15 @@ bool Level_00_GO_BasicCharacter::dash(){
         this->totalDashTime = 0.;
         return false;
     }
-
+    
     float amount = this->timeRemainingForDash / this->totalDashTime;
     
     this->position.x = lerp(this->startingDashPosition.x, this->finalDashPosition.x, amount);
     this->position.y = lerp(this->startingDashPosition.y, this->finalDashPosition.y, amount);
-
+    
     
     return true;
-
+    
 }
 
 sf::Vector2f Level_00_GO_BasicCharacter::getVelocity(){

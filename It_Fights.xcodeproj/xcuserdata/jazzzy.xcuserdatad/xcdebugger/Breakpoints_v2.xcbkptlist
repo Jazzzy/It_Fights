@@ -514,11 +514,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/AIObserver.cpp"
-            timestampString = "519591126.109651"
+            timestampString = "519639724.14642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "AIObserver::getCharacterState(Character character)"
             landmarkType = "7">
          </BreakpointContent>

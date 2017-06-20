@@ -16,9 +16,7 @@ ReinforcementLearningBehaviour_1::ReinforcementLearningBehaviour_1(EnemyCharacte
     this->currentDiscreteState = observer->getDiscreteState();
     this->lastDiscreteState = this->currentDiscreteState;
     this->lastAction = DO_NOTHING;
-    
-    printv(StateActionContainer::Instance().getStateActionMap()->size());
-    
+        
 }
 
 
@@ -29,12 +27,12 @@ ReinforcementLearningBehaviour_1::~ReinforcementLearningBehaviour_1(){
 bool first = true;
 
 void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState){
-        
+    
     this->lastDiscreteState = this->currentDiscreteState;
     this->currentDiscreteState = discreteState;
     
     double deltaFitness = static_cast<double>(this->currentDiscreteState.fitness) - static_cast<double>(this->lastDiscreteState.fitness);
-    
+  
     std::string lastStateString = lastDiscreteState.to_short_string();
     
     /*
@@ -97,7 +95,7 @@ void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState)
             
             for(int i = 0 ; i < NumberOfActions ; i++){
                 
-                prints("ACTION [" << i << "]: MAX_FITNESS [" << sas.actionArray[i].maxFitness << "] AVERAGE_FITNESS [" << sas.actionArray[i].meanDeltaFitness << "]");
+                //prints("FOR STATE: " << this->currentDiscreteState.to_short_string() << ", ACTION [" << i << "]: MAX_FITNESS [" << sas.actionArray[i].maxFitness << "] AVERAGE_FITNESS [" << sas.actionArray[i].meanDeltaFitness << "]");
                 
                 if(sas.actionArray[this->lastAction].meanDeltaFitness < sas.actionArray[i].meanDeltaFitness){
                     this->lastAction = (Action) i;
@@ -106,12 +104,12 @@ void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState)
             
         }else{
             
-            this->lastAction = (Action) getRandomBetween(0, 7);
+            this->lastAction = (Action) getRandomBetween(0, 5);
             
         }
     }else{
         
-        this->lastAction = (Action) getRandomBetween(0, 7);
+        this->lastAction = (Action) getRandomBetween(0, 5);
         
     }
     

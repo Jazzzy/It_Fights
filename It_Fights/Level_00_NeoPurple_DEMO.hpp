@@ -17,7 +17,7 @@
 
 #define LVL_00_RESOLUTION_X 400
 #define LVL_00_RESOLUTION_Y 300
-#define TIME_SCALE 600
+#define TIME_SCALE 400
 #define TIME_LIMIT_IN_SECONDS 30
 
 class Level_00_NeoPurple_DEMO : public Scene {

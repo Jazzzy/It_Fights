@@ -44,7 +44,7 @@ void Behaviour::threadFunction(){
         
         while(!shouldStopThread && ((Clock::Instance().getCurrentFrameCount() - this->currentFrameCount) < WAITING_FRAMES)){
             
-            bool stateChanged = (discreteState == this->observer->getDiscreteState());
+            bool stateChanged = !(discreteState == this->observer->getDiscreteState());
             
             if(stateChanged) break;
             
