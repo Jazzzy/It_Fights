@@ -864,6 +864,7 @@
 					"$(inherited)",
 					/usr/local/Cellar/boost/1.64.0_1/lib/,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-std=c++1z",
@@ -903,6 +904,7 @@
 					"$(inherited)",
 					/usr/local/Cellar/boost/1.64.0_1/lib/,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-std=c++1z",

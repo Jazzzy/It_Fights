@@ -34,7 +34,14 @@ StateActionContainer& StateActionContainer::Instance(){
 
 StateActionContainer* StateActionContainer::MInstance = 0;
 
+std::shared_mutex M_mutex;
+
+
 void StateActionContainer::CleanUp(){
+    std::unique_lock<std::shared_mutex> lock(M_mutex);
+
+    if(MInstance == 0) return;
+    
     prints("Currently the map has [" << MInstance->getStateActionMap()->size() << "] states in it");
     
     MInstance->saveToFile();
@@ -50,9 +57,9 @@ StateActionContainer::StateActionContainer(){
 }
 
 void StateActionContainer::saveToFile(){
-    
+    std::unique_lock<std::shared_mutex> lock(MInstance->mutex);
+
     std::ofstream ofs("StateAction.data");
-    
     // save data to archive
     {
         boost::archive::text_oarchive oa(ofs);
@@ -70,19 +77,17 @@ std::unordered_map<std::string, StateActionSituation>* StateActionContainer::get
 }
 
 bool StateActionContainer::hasState(std::string state){
-    
+    std::shared_lock<std::shared_mutex> lock(this->mutex);
     return (this->stateActionMap.find(state) != this->stateActionMap.end());
-
 }
 
 StateActionSituation StateActionContainer::getStateActionSituationFor(std::string state){
-
+    std::shared_lock<std::shared_mutex> lock(this->mutex);
     return (this->stateActionMap.at(state));
-    
 }
 
 void StateActionContainer::putStateActionSituation(std::string state, StateActionSituation situation){
-        
+    std::unique_lock<std::shared_mutex> lock(this->mutex);
     this->stateActionMap[state] = situation;
 
 }
@@ -90,6 +95,7 @@ void StateActionContainer::putStateActionSituation(std::string state, StateActio
 
 
 void StateActionContainer::resetPreviousKnowledge(){
+    std::unique_lock<std::shared_mutex> lock(this->mutex);
     this->stateActionMap.clear();
     this->saveToFile();
 }

@@ -88,7 +88,7 @@ private :
     static StateActionContainer* MInstance;
     
     //@@TODO: Put mutex;
-    //mutable std::shared_mutex mutex_;
+    mutable std::shared_mutex mutex;
     
     //*************************************//
     //******* REAL PRIVATE MEMBERS ********//

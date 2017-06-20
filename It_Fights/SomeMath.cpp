@@ -8,7 +8,7 @@
 
 #include "SomeMath.hpp"
 #include <cmath>
-
+#include "DebugUtilities.hpp"
 
 float getVectorLength(sf::Vector2f inVector){
     return sqrt((inVector.x *inVector.x)+ (inVector.y *inVector.y));
@@ -38,7 +38,7 @@ unsigned int getRandomBetween(unsigned int min, unsigned int max){
     {
         r = rand();
     } while (r >= limit);
-    
+        
     return min + (r / buckets);
 }
 

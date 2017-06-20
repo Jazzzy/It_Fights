@@ -9,10 +9,11 @@
 #ifndef ReinforcementLearningBehaviour_1_hpp
 #define ReinforcementLearningBehaviour_1_hpp
 
+#include "StateActionContainer.hpp"
 
 #include "Behaviour.hpp"
 
-#define EPSILON (0.25f)
+#define EPSILON (0.30f)
 
 class ReinforcementLearningBehaviour_1 : public Behaviour {
 public:
@@ -23,6 +24,8 @@ private:
     FightState_Discrete currentDiscreteState;
     FightState_Discrete lastDiscreteState;
     Action lastAction;
+    
+    double getActionSituationWeigth(ActionSituation as);
     
 };
 

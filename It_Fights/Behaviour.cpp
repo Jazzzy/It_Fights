@@ -32,7 +32,7 @@ Behaviour::~Behaviour(){
     delete this->actions;
 }
 
-#define WAITING_FRAMES 60
+#define WAITING_FRAMES 30
 
 void Behaviour::threadFunction(){
     

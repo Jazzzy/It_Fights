@@ -9,7 +9,6 @@
 #include "ReinforcementLearningBehaviour_1.hpp"
 #include "SomeMath.hpp"
 #include "DebugUtilities.hpp"
-#include "StateActionContainer.hpp"
 
 ReinforcementLearningBehaviour_1::ReinforcementLearningBehaviour_1(EnemyCharacterController* controller, AIObserver* observer) : Behaviour(controller, observer){
     
@@ -97,25 +96,34 @@ void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState)
                 
                 //prints("FOR STATE: " << this->currentDiscreteState.to_short_string() << ", ACTION [" << i << "]: MAX_FITNESS [" << sas.actionArray[i].maxFitness << "] AVERAGE_FITNESS [" << sas.actionArray[i].meanDeltaFitness << "]");
                 
-                if(sas.actionArray[this->lastAction].meanDeltaFitness < sas.actionArray[i].meanDeltaFitness){
+                if(this->getActionSituationWeigth(sas.actionArray[this->lastAction]) < this->getActionSituationWeigth(sas.actionArray[i])){
                     this->lastAction = (Action) i;
                 }
             }
             
         }else{
             
-            this->lastAction = (Action) getRandomBetween(0, 5);
+            this->lastAction = (Action) getRandomBetween(0, 6);
             
         }
     }else{
         
-        this->lastAction = (Action) getRandomBetween(0, 5);
+        this->lastAction = (Action) getRandomBetween(0, 6);
         
     }
     
     this->actions->execute(lastAction);
     
 }
+
+
+#define MAX_FITNESS_WEIGTH (0.3f)
+#define AVG_FITNESS_WEIGTH (0.7f)
+
+double ReinforcementLearningBehaviour_1::getActionSituationWeigth(ActionSituation as){
+    return ((double)as.maxFitness * MAX_FITNESS_WEIGTH + (double)as.meanDeltaFitness * AVG_FITNESS_WEIGTH);
+}
+
 
 
 
