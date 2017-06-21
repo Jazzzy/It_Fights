@@ -10,6 +10,9 @@
 #include "SomeMath.hpp"
 #include "DebugUtilities.hpp"
 
+bool simulating = false;
+
+
 ReinforcementLearningBehaviour_1::ReinforcementLearningBehaviour_1(EnemyCharacterController* controller, AIObserver* observer) : Behaviour(controller, observer){
     
     this->currentDiscreteState = observer->getDiscreteState();
@@ -78,9 +81,7 @@ void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState)
     
     /*
      
-     Now we pick one action to do with:
-     
-     https://en.wikipedia.org/wiki/Softmax_function#Reinforcement_learning
+     Now we pick one action to execute
      
      */
     
@@ -88,7 +89,11 @@ void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState)
         
         StateActionSituation sas = StateActionContainer::Instance().getStateActionSituationFor(this->currentDiscreteState.to_short_string());
         
-        if(((double) rand() / (RAND_MAX)) > EPSILON){
+        if((((double) rand() / (RAND_MAX)) < EPSILON) && simulating){
+            
+            this->lastAction = (Action) getRandomBetween(0, 6);
+            
+        }else{
             
             this->lastAction = (Action) 0;
             
@@ -100,11 +105,6 @@ void ReinforcementLearningBehaviour_1::update(FightState_Discrete discreteState)
                     this->lastAction = (Action) i;
                 }
             }
-            
-        }else{
-            
-            this->lastAction = (Action) getRandomBetween(0, 6);
-            
         }
     }else{
         

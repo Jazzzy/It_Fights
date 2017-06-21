@@ -33,7 +33,7 @@ GameObject(scene){
             break;
         case AGENT_VS_AGENT:
             this->observer_1 = new AIObserver(this,Position::PLAYER_1);
-            this->observer_2 = new AIObserver(this,Position::PLAYER_2);
+            this->observer_2 = new AIObserver(this,Position::PLAYER_2);                                         //  RULE_BASED
             this->character_1 = new Level_00_GO_EnemyCharacter(scene,sf::Vector2f(120,150), observer_1, PLAYER_1, RULE_BASED);
             this->character_2 = new Level_00_GO_EnemyCharacter(scene,sf::Vector2f(280,150), observer_2, PLAYER_2, REINFORCEMENT_1_BASED);
             break;

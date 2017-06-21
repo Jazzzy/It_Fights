@@ -32,6 +32,9 @@ void GameState::update(){
     this->scene->update();
 }
 
+extern bool simulating;
+
+
 void GameState::onNotify(Message message){
     
     if(message.getEvent().compare("MSG_GO_TO_MENU")==0){
@@ -55,6 +58,7 @@ void GameState::onNotify(Message message){
             this->scene->onEnd();
             delete this->scene;
         }
+        simulating = false;
         this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::AGENT_VS_AGENT,true);
         this->scene->onStart();
     }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_HUMAN_VS_AGENT")==0){
@@ -62,6 +66,7 @@ void GameState::onNotify(Message message){
             this->scene->onEnd();
             delete this->scene;
         }
+        simulating = false;
         this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::HUMAN_VS_AGENT,true);
         this->scene->onStart();
     }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_HUMAN_VS_HUMAN")==0){
@@ -69,6 +74,7 @@ void GameState::onNotify(Message message){
             this->scene->onEnd();
             delete this->scene;
         }
+        simulating = false;
         this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::HUMAN_VS_HUMAN,true);
         this->scene->onStart();
     }else if(message.getEvent().compare("MSG_GO_TO_MAINGAME_AGENT_VS_AGENT_NO_RENDERING")==0){
@@ -76,6 +82,7 @@ void GameState::onNotify(Message message){
             this->scene->onEnd();
             delete this->scene;
         }
+        simulating = true;
         this->simulationsLeft = NUMBER_OF_SIMULATIONS;
         prints("Simulations left: " << this->simulationsLeft);
         this->scene = new Level_00_NeoPurple_DEMO(messageBus,CharacterOptions::AGENT_VS_AGENT,false);

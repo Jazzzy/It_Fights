@@ -18,7 +18,7 @@
 StateActionContainer& StateActionContainer::Instance(){
     if(MInstance == 0){
         MInstance = new StateActionContainer();
-        std::ifstream ifs("StateAction.data");
+        std::ifstream ifs("Active_StateAction.data");
         if(ifs){
             boost::archive::text_iarchive ia(ifs);
             // read class state from archive
@@ -59,7 +59,7 @@ StateActionContainer::StateActionContainer(){
 void StateActionContainer::saveToFile(){
     std::unique_lock<std::shared_mutex> lock(MInstance->mutex);
 
-    std::ofstream ofs("StateAction.data");
+    std::ofstream ofs("Active_StateAction.data");
     // save data to archive
     {
         boost::archive::text_oarchive oa(ofs);
@@ -91,7 +91,6 @@ void StateActionContainer::putStateActionSituation(std::string state, StateActio
     this->stateActionMap[state] = situation;
 
 }
-
 
 
 void StateActionContainer::resetPreviousKnowledge(){
