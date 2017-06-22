@@ -11,29 +11,25 @@
 
 #include "EnemyCharacterController.hpp"
 
-enum Action{
-    DO_NOTHING,
-    MOVE_UP,
-    MOVE_DOWN,
-    MOVE_LEFT,
-    MOVE_RIGHT,
-    ATTACK,
-    PARRY
+enum Action {
+  DO_NOTHING,
+  MOVE_UP,
+  MOVE_DOWN,
+  MOVE_LEFT,
+  MOVE_RIGHT,
+  ATTACK,
+  PARRY
 };
 
-class AIActions{
-public:
-    AIActions(EnemyCharacterController * controller);
-    ~AIActions();
-    void execute(Action action);
-    EnemyCharacterController * getController();
+class AIActions {
+ public:
+  AIActions(EnemyCharacterController* controller);
+  ~AIActions();
+  void execute(Action action);
+  EnemyCharacterController* getController();
 
-    
-private:
-    EnemyCharacterController * controller;
-
+ private:
+  EnemyCharacterController* controller;
 };
-
-
 
 #endif /* AIActions_hpp */

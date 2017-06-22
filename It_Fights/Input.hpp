@@ -12,17 +12,16 @@
 #include "Window.hpp"
 
 class Input : BusNode {
-public:
-    Input(MessageBus * messageBus, Window *m_window);
-    ~Input();
-    
-    void readInput();
-    void update();
-    
-private:
-    Window *m_window;
-    void onNotify (Message message);
-    
+ public:
+  Input(MessageBus *messageBus, Window *m_window);
+  ~Input();
+
+  void readInput();
+  void update();
+
+ private:
+  Window *m_window;
+  void onNotify(Message message);
 };
 
 #endif /* Input_hpp */

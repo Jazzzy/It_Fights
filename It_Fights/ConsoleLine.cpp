@@ -11,34 +11,26 @@
 
 #include <iostream>
 
+ConsoleLine::ConsoleLine(sf::String content) {
+  this->stringContent = content;
+  std::string ansiString = content.toAnsiString();
 
-ConsoleLine::ConsoleLine(sf::String content){
-    this->stringContent = content;
-    std::string ansiString = content.toAnsiString();
-    
-    this->numberOfLines = 1 +  (unsigned int) std::count(ansiString.begin(), ansiString.end(), '\n');
+  this->numberOfLines =
+      1 + (unsigned int)std::count(ansiString.begin(), ansiString.end(), '\n');
 }
 
-ConsoleLine::ConsoleLine(){
-    
+ConsoleLine::ConsoleLine() {}
+
+ConsoleLine::~ConsoleLine() {}
+
+sf::String ConsoleLine::getString() { return this->stringContent; }
+
+void ConsoleLine::appendCharacter(char character) {
+  this->stringContent += character;
 }
 
-ConsoleLine::~ConsoleLine(){
-    
+void ConsoleLine::appendString(sf::String string) {
+  this->stringContent += string;
 }
 
-sf::String ConsoleLine::getString(){
-    return this->stringContent;
-}
-
-void ConsoleLine::appendCharacter(char character){
-    this->stringContent+= character;
-}
-
-void ConsoleLine::appendString(sf::String string){
-    this->stringContent+= string;
-}
-
-unsigned int ConsoleLine::getLines(){
-    return this->numberOfLines;
-}
+unsigned int ConsoleLine::getLines() { return this->numberOfLines; }

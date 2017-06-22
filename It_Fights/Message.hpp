@@ -9,37 +9,30 @@
 #ifndef Message_hpp
 #define Message_hpp
 
-
-
-#include <string>
 #include <iostream>
-
+#include <string>
 
 #include "MessageData.h"
 
-
 #define MSG_TO_EVERYONE (-1)
 
+class Message {
+ public:
+  Message(const std::string event);
+  Message(const std::string event, const int system);
+  Message(const std::string event, const int system, MessageData data);
+  Message(const std::string event, MessageData data);
+  bool isRelevant();
+  void setRelevantForConsole(bool relevant);
+  std::string getEvent();
+  int getReceiverSystem();
+  MessageData getData();
 
-class Message{
-public:
-    Message(const std::string event);
-    Message(const std::string event, const int system);
-    Message(const std::string event, const int system, MessageData data);
-    Message(const std::string event, MessageData data);
-    bool isRelevant();
-    void setRelevantForConsole(bool relevant);
-    std::string getEvent();
-    int getReceiverSystem();
-    MessageData getData();
-    
-private:
-    bool relevantForConsole;
-    std::string stringEvent;
-    MessageData data{MessageData::EMPTY,nullptr};
-    int system;
+ private:
+  bool relevantForConsole;
+  std::string stringEvent;
+  MessageData data{MessageData::EMPTY, nullptr};
+  int system;
 };
-
-
 
 #endif /* Message_hpp */

@@ -11,15 +11,14 @@
 
 #include "ConsoleLine.hpp"
 
-
 class InputLine : public ConsoleLine {
-public:
-    sf::String getString();
-    sf::String getRealString();
-    void removeLastCharacter();
-    void erase();
-    void appendCharacter(char character);
-    void appendString(sf::String string);
+ public:
+  sf::String getString();
+  sf::String getRealString();
+  void removeLastCharacter();
+  void erase();
+  void appendCharacter(char character);
+  void appendString(sf::String string);
 };
 
 #endif /* InputLine_hpp */

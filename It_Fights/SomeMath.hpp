@@ -11,17 +11,15 @@
 
 #include <SFML/Window.hpp>
 
-
 sf::Vector2f getNormalizedVector(sf::Vector2f inVector);
 
 float getVectorLength(sf::Vector2f inVector);
 
 template <typename T>
 inline T lerp(T v1, T v0, T t) {
-    return fma(t, v1, fma(-t, v0, v0));
+  return fma(t, v1, fma(-t, v0, v0));
 }
 
 unsigned int getRandomBetween(unsigned int min, unsigned int max);
-
 
 #endif /* SomeMath_hpp */

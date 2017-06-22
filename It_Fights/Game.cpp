@@ -8,56 +8,45 @@
 
 #include "Game.hpp"
 
-Game::Game() :
-messageBus(){
-    
-    this->messageBus = new MessageBus();
-    this->soundSystem = new Sound(this->messageBus);
-    this->collisionSystem = new Collisions(this->messageBus);
-    this->gameState = new GameState(this->messageBus);
-    this->consoleSystem = new Console(this->messageBus);
-    this->windowSystem = new Window(this->messageBus,this->consoleSystem,this->collisionSystem,"It_fights",2000,1500);
-    this->inputSystem = new Input(this->messageBus,this->windowSystem);
-    
-    this->gameState->getScene()->onStart();
-    
+Game::Game() : messageBus() {
+  this->messageBus = new MessageBus();
+  this->soundSystem = new Sound(this->messageBus);
+  this->collisionSystem = new Collisions(this->messageBus);
+  this->gameState = new GameState(this->messageBus);
+  this->consoleSystem = new Console(this->messageBus);
+  this->windowSystem =
+      new Window(this->messageBus, this->consoleSystem, this->collisionSystem,
+                 "It_fights", 2000, 1500);
+  this->inputSystem = new Input(this->messageBus, this->windowSystem);
+
+  this->gameState->getScene()->onStart();
 }
 
-Game::~Game(){
+Game::~Game() {
+  this->gameState->getScene()->onEnd();
 
-    this->gameState->getScene()->onEnd();
-    
-    delete this->inputSystem;
-    delete this->windowSystem;
-    delete this->consoleSystem;
-    delete this->gameState;
-    delete this->collisionSystem;
-    delete this->soundSystem;
-    delete this->messageBus;
-
+  delete this->inputSystem;
+  delete this->windowSystem;
+  delete this->consoleSystem;
+  delete this->gameState;
+  delete this->collisionSystem;
+  delete this->soundSystem;
+  delete this->messageBus;
 }
 
-GameState * Game::getGameState(){
-    return this->gameState;
+GameState* Game::getGameState() { return this->gameState; }
+
+void Game::loop() {
+  while (windowSystem->isOpen()) {
+    inputSystem->update();
+    gameState->update();
+    collisionSystem->update();
+    consoleSystem->update();
+    windowSystem->update();
+    messageBus->notify();
+  }
 }
 
-void Game::loop(){
-    while(windowSystem->isOpen()){
-        inputSystem->update();
-        gameState->update();
-        collisionSystem->update();
-        consoleSystem->update();
-        windowSystem->update();
-        messageBus->notify();
-    }
-}
+bool Game::isConsoleOpen() { return this->consoleSystem->isOpen(); }
 
-bool Game::isConsoleOpen(){
-    return this->consoleSystem->isOpen();
-}
-
-Collisions * Game::getCollisionSystem(){
-    return this->collisionSystem;
-}
-
-
+Collisions* Game::getCollisionSystem() { return this->collisionSystem; }

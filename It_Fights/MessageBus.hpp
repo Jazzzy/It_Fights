@@ -10,35 +10,28 @@
 #define MessageBus_hpp
 
 #include <functional>
-#include <unordered_map>
 #include <queue>
-
-
+#include <unordered_map>
 
 #include "Message.hpp"
 
+class MessageBus {
+ public:
+  MessageBus();
+  ~MessageBus() {}
 
-class MessageBus{
-    
-public:
-    MessageBus();
-    ~MessageBus(){}
-    
-    void notify();
-    void addReceiver(int systemID, std::function<void (Message)> newReceiver);
-    void removeReceiver(int systemID);
-    
-    void sendMessage(Message message);
-    
-private:
-    std::unordered_map<int, std::function<void (Message)>> receiverMap;
-    std::vector< std::pair<int, std::function<void (Message)>>> receiverVector;
-    std::deque<Message> messageQueue;
-    std::function<void (Message)> consoleReceiver;
-    void printReceivers();
-    
+  void notify();
+  void addReceiver(int systemID, std::function<void(Message)> newReceiver);
+  void removeReceiver(int systemID);
+
+  void sendMessage(Message message);
+
+ private:
+  std::unordered_map<int, std::function<void(Message)>> receiverMap;
+  std::vector<std::pair<int, std::function<void(Message)>>> receiverVector;
+  std::deque<Message> messageQueue;
+  std::function<void(Message)> consoleReceiver;
+  void printReceivers();
 };
-
-
 
 #endif /* MessageBus_hpp */

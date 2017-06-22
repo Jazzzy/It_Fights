@@ -10,23 +10,21 @@
 #define MenuScene_hpp
 
 #include <Scene.hpp>
-#include "TitleText.hpp"
 #include "MenuOptions.hpp"
-
+#include "TitleText.hpp"
 
 class MenuScene : public Scene {
-public:
-    MenuScene(MessageBus * messageBus);
-    ~MenuScene();
-private:
-    TitleText titleText;
-    MenuOptions menuOptions;
-    
-    void localUpdateImplemented();
-    bool changedRes;
-    void onNotify (Message message);
+ public:
+  MenuScene(MessageBus* messageBus);
+  ~MenuScene();
 
+ private:
+  TitleText titleText;
+  MenuOptions menuOptions;
 
+  void localUpdateImplemented();
+  bool changedRes;
+  void onNotify(Message message);
 };
 
 #endif /* MenuScene_hpp */

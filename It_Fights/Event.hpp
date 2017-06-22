@@ -9,21 +9,20 @@
 #ifndef Event_hpp
 #define Event_hpp
 
-//Original event class defined here: https://github.com/SFML/SFML/blob/master/include/SFML/Window/Event.hpp
+// Original event class defined here:
+// https://github.com/SFML/SFML/blob/master/include/SFML/Window/Event.hpp
 
 #include <SFML/Window.hpp>
 
 class Event {
-    
-public:
-    Event(sf::Event event);
-    ~Event();
-    
-    sf::Event getEvent();
-    
-private:
-    sf::Event internalEvent;
-    
+ public:
+  Event(sf::Event event);
+  ~Event();
+
+  sf::Event getEvent();
+
+ private:
+  sf::Event internalEvent;
 };
 
 #endif /* Event_hpp */

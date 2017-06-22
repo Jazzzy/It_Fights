@@ -13,20 +13,21 @@
 
 #include "Behaviour.hpp"
 
-#define EPSILON (0.30f) //0.30 for learning
+#define EPSILON (0.30f)  // 0.30 for learning
 
 class ReinforcementLearningBehaviour_1 : public Behaviour {
-public:
-    ReinforcementLearningBehaviour_1(EnemyCharacterController* controller, AIObserver* observer);
-    virtual ~ReinforcementLearningBehaviour_1();
-    void update(FightState_Discrete discreteState);
-private:
-    FightState_Discrete currentDiscreteState;
-    FightState_Discrete lastDiscreteState;
-    Action lastAction;
-    
-    double getActionSituationWeigth(ActionSituation as);
-    
+ public:
+  ReinforcementLearningBehaviour_1(EnemyCharacterController* controller,
+                                   AIObserver* observer);
+  virtual ~ReinforcementLearningBehaviour_1();
+  void update(FightState_Discrete discreteState);
+
+ private:
+  FightState_Discrete currentDiscreteState;
+  FightState_Discrete lastDiscreteState;
+  Action lastAction;
+
+  double getActionSituationWeigth(ActionSituation as);
 };
 
 #endif /* ReinforcementLearningBehaviour_1_hpp */

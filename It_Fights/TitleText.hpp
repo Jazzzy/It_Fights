@@ -12,16 +12,16 @@
 #include "GameObject.hpp"
 
 class TitleText : public GameObject {
-public:
-    TitleText(Scene * scene);
-    ~TitleText();
-    void update();
-    void draw(sf::RenderTarget *renderTarget);
-    void onStart(){}
-    void onEnd(){}
-private:
-    sf::Font mainFont;
-    
+ public:
+  TitleText(Scene *scene);
+  ~TitleText();
+  void update();
+  void draw(sf::RenderTarget *renderTarget);
+  void onStart() {}
+  void onEnd() {}
+
+ private:
+  sf::Font mainFont;
 };
 
 #endif /* TitleText_hpp */

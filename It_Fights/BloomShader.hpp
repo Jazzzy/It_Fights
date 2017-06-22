@@ -12,17 +12,15 @@
 #include "Shader.hpp"
 
 class BloomShader : public Shader {
-public:
-    BloomShader();
-    ~BloomShader();
-    sf::RenderStates getRenderStates();
-    void drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable* drawable);
+ public:
+  BloomShader();
+  ~BloomShader();
+  sf::RenderStates getRenderStates();
+  void drawWithShader(sf::RenderTarget* renderTarget, sf::Drawable* drawable);
 
-private:
-    sf::Shader sf_shader;
-    sf::RenderTexture mBrightnessTexture;
-    
-
+ private:
+  sf::Shader sf_shader;
+  sf::RenderTexture mBrightnessTexture;
 };
 
 #endif /* BloomShader_hpp */

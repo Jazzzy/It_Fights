@@ -7,33 +7,22 @@
 //
 
 #include "BusNode.hpp"
-#include "Systems.hpp"
 #include "DebugUtilities.hpp"
+#include "Systems.hpp"
 
-BusNode::BusNode(int systemIdentifier, MessageBus *messageBus)
-{
-    
-    this->systemIdentifier = systemIdentifier;
-    this->messageBus = messageBus;
-    this->messageBus->addReceiver(systemIdentifier, this->getNotifyFunc());
-    
+BusNode::BusNode(int systemIdentifier, MessageBus *messageBus) {
+  this->systemIdentifier = systemIdentifier;
+  this->messageBus = messageBus;
+  this->messageBus->addReceiver(systemIdentifier, this->getNotifyFunc());
 }
 
-BusNode::~BusNode(){
-    this->messageBus->removeReceiver(systemIdentifier);
+BusNode::~BusNode() { this->messageBus->removeReceiver(systemIdentifier); }
+
+std::function<void(Message)> BusNode::getNotifyFunc() {
+  std::function<void(Message)> messageListener = [=](Message message) -> void {
+    this->onNotify(message);
+  };
+  return messageListener;
 }
 
-
-std::function<void (Message)> BusNode::getNotifyFunc()
-{
-    std::function<void (Message)> messageListener = [=](Message message) -> void {
-        this->onNotify(message);
-    };
-    return messageListener;
-}
-
-void BusNode::send(Message message)
-{
-    messageBus->sendMessage(message);
-}
-
+void BusNode::send(Message message) { messageBus->sendMessage(message); }

@@ -9,35 +9,28 @@
 #ifndef BoxCollider_hpp
 #define BoxCollider_hpp
 
-#include "Collisions.hpp"
 #include <functional>
-
+#include "Collisions.hpp"
 
 class BoxCollider {
-public:
-    BoxCollider(sf::Vector2f size,
-                std::function<sf::Vector2f()>getOriginFunc ,
-                std::function<void(ColliderType,sf::Vector2f, float)>onCollisionCallback,
-                ColliderType colliderType,
-                CollisionLayer layer);
-    ~BoxCollider();
-    
+ public:
+  BoxCollider(sf::Vector2f size, std::function<sf::Vector2f()> getOriginFunc,
+              std::function<void(ColliderType, sf::Vector2f, float)>
+                  onCollisionCallback,
+              ColliderType colliderType, CollisionLayer layer);
+  ~BoxCollider();
 
-    bool isRegistered();
-    void registerCollider();
-    void unregisterCollider();
-    
-    
-    bool isActive();
-    void setActive(bool active);
-    
-private:
-    RectangleCollider collider;
-    bool registered;
-    bool active;
-    
-    
+  bool isRegistered();
+  void registerCollider();
+  void unregisterCollider();
+
+  bool isActive();
+  void setActive(bool active);
+
+ private:
+  RectangleCollider collider;
+  bool registered;
+  bool active;
 };
-
 
 #endif /* BoxCollider_hpp */

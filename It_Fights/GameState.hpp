@@ -13,26 +13,23 @@
 
 #define NUMBER_OF_SIMULATIONS (100)
 
-class GameState : BusNode{
-public:
-    GameState(MessageBus * messageBus);
-    ~GameState();
-    void update();
-    Scene * getScene();
-    bool isConsoleOpen();
-    bool isGamePaused();
-    bool areWeInMainMenu();
-    
-    
-private:
-    void onNotify(Message message);
-    Scene *scene;
-    bool paused;
-    bool mainMenu;
-    
-    int simulationsLeft;
-    
-};
+class GameState : BusNode {
+ public:
+  GameState(MessageBus *messageBus);
+  ~GameState();
+  void update();
+  Scene *getScene();
+  bool isConsoleOpen();
+  bool isGamePaused();
+  bool areWeInMainMenu();
 
+ private:
+  void onNotify(Message message);
+  Scene *scene;
+  bool paused;
+  bool mainMenu;
+
+  int simulationsLeft;
+};
 
 #endif /* GameState_hpp */

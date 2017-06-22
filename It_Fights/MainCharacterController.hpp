@@ -11,22 +11,18 @@
 
 #include "GeneralCharacterController.hpp"
 
+class MainCharacterController : public GeneralCharacterController {
+ public:
+  MainCharacterController(short controllerNumber);
+  ~MainCharacterController();
 
-class MainCharacterController : public GeneralCharacterController{
-public:
-    MainCharacterController(short controllerNumber);
-    ~MainCharacterController();
-    
-    virtual bool isConnected();
-    virtual bool isAttackButtonPressed();
-    virtual bool isParryButtonPressed();
-    virtual sf::Vector2f getJoystickAxisPosition();
-    
-private:
-    short controllerNumber;
+  virtual bool isConnected();
+  virtual bool isAttackButtonPressed();
+  virtual bool isParryButtonPressed();
+  virtual sf::Vector2f getJoystickAxisPosition();
 
-
+ private:
+  short controllerNumber;
 };
-
 
 #endif /* MainCharacterController_hpp */

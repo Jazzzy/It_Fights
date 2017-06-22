@@ -9,52 +9,43 @@
 #include "EnemyCharacterController.hpp"
 #include "SomeMath.hpp"
 
-EnemyCharacterController::EnemyCharacterController(){
-    this->attackButtonPressed = false;
-    this->parryButtonPressed = false;
-    this->joystickAxis = sf::Vector2f(0.0f,0.0f);
-    
+EnemyCharacterController::EnemyCharacterController() {
+  this->attackButtonPressed = false;
+  this->parryButtonPressed = false;
+  this->joystickAxis = sf::Vector2f(0.0f, 0.0f);
 }
 
+EnemyCharacterController::~EnemyCharacterController() {}
 
-EnemyCharacterController::~EnemyCharacterController(){
-    
+bool EnemyCharacterController::isConnected() { return true; }
+
+bool EnemyCharacterController::isAttackButtonPressed() {
+  return this->attackButtonPressed;
 }
 
-
-bool EnemyCharacterController::isConnected(){
-    return true;
+bool EnemyCharacterController::isParryButtonPressed() {
+  return this->parryButtonPressed;
 }
 
-
-bool EnemyCharacterController::isAttackButtonPressed(){
-    return this->attackButtonPressed;
+sf::Vector2f EnemyCharacterController::getJoystickAxisPosition() {
+  return this->joystickAxis;
 }
 
-bool EnemyCharacterController::isParryButtonPressed(){
-    return this->parryButtonPressed;
+void EnemyCharacterController::setAttackButton(bool pressed) {
+  this->attackButtonPressed = pressed;
 }
 
-
-sf::Vector2f EnemyCharacterController::getJoystickAxisPosition(){
-    return this->joystickAxis;
+void EnemyCharacterController::setParryButton(bool pressed) {
+  this->parryButtonPressed = pressed;
 }
 
-void EnemyCharacterController::setAttackButton(bool pressed){
-    this->attackButtonPressed = pressed;
+void EnemyCharacterController::setJoystickPosition(sf::Vector2f vector) {
+  this->joystickAxis = getNormalizedVector(vector);
 }
 
-void EnemyCharacterController::setParryButton(bool pressed){
-    this->parryButtonPressed = pressed;
+void EnemyCharacterController::setAll(bool attackButton, bool parryButton,
+                                      sf::Vector2f vector) {
+  this->setAttackButton(attackButton);
+  this->setParryButton(parryButton);
+  this->setJoystickPosition(vector);
 }
-
-void EnemyCharacterController::setJoystickPosition(sf::Vector2f vector){
-    this->joystickAxis = getNormalizedVector(vector);
-}
-
-void EnemyCharacterController::setAll(bool attackButton, bool parryButton, sf::Vector2f vector){
-    this->setAttackButton(attackButton);
-    this->setParryButton(parryButton);
-    this->setJoystickPosition(vector);
-}
-

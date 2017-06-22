@@ -12,19 +12,13 @@
 #include <SFML/Graphics.hpp>
 
 class GeneralCharacterController {
-public:
-    virtual ~GeneralCharacterController() {}
-    
-    
-    virtual bool isConnected() = 0;
-    virtual bool isAttackButtonPressed() = 0;
-    virtual bool isParryButtonPressed() = 0;
-    virtual sf::Vector2f getJoystickAxisPosition() = 0;
-    
-    
+ public:
+  virtual ~GeneralCharacterController() {}
 
+  virtual bool isConnected() = 0;
+  virtual bool isAttackButtonPressed() = 0;
+  virtual bool isParryButtonPressed() = 0;
+  virtual sf::Vector2f getJoystickAxisPosition() = 0;
 };
 
 #endif /* GeneralCharacterController_hpp */
-
-

@@ -8,16 +8,8 @@
 
 #include "Event.hpp"
 
+Event::Event(sf::Event event) : internalEvent(event) {}
 
-Event::Event(sf::Event event) : internalEvent(event){
-    
-    
-}
+Event::~Event() {}
 
-Event::~Event(){
-    
-}
-
-sf::Event Event::getEvent(){
-    return this->internalEvent;
-}
+sf::Event Event::getEvent() { return this->internalEvent; }

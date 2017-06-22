@@ -11,7 +11,6 @@
 
 #include "MessageData.h"
 
-PairI getRealPixels(sf::RenderTarget *renderTarget , double x, double y);
-
+PairI getRealPixels(sf::RenderTarget *renderTarget, double x, double y);
 
 #endif /* AuxiliarRenderFunctions_hpp */

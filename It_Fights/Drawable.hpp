@@ -9,13 +9,10 @@
 #ifndef Drawable_hpp
 #define Drawable_hpp
 
-
 #include <SFML/Graphics.hpp>
 
-class Drawable{
-    virtual void draw(sf::RenderTarget *renderTarget) = 0;
+class Drawable {
+  virtual void draw(sf::RenderTarget *renderTarget) = 0;
 };
-
-
 
 #endif /* Drawable_hpp */
