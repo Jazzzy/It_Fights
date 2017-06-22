@@ -11,7 +11,7 @@
 #include "Game.hpp"
 #include "Clock.hpp"
 #include "DebugUtilities.hpp"
-extern Game game;
+extern Game * game;
 
 
 
@@ -122,9 +122,9 @@ void Level_00_GO_MainCharacter::startAttackCollision(bool area){
     };
     
     if(this->playerNumber == PLAYER_1){
-        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
+        game->getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
     }else{
-        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
+        game->getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
     }
 }
 

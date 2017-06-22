@@ -16,6 +16,7 @@ class Level_00_GO_HealthBars : public GameObject {
 public:
     Level_00_GO_HealthBars(Scene* scene, Level_00_GO_Characters * characters, sf::Clock * fightClock);
     ~Level_00_GO_HealthBars();
+    void stopCounting();
     void update();
     void draw(sf::RenderTarget * renderTarget);
     void onStart(){}
@@ -33,6 +34,9 @@ private:
     float enemyCharTargetHP;
     
     float lerpSpeed;
+    
+    bool counting;
+    int secondsShowing;
     
 };
 

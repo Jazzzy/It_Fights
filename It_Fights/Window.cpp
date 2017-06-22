@@ -16,7 +16,7 @@
 #include "AuxiliarRenderFunctions.hpp"
 
 
-extern Game game;
+extern Game * game;
 
 Window::Window(MessageBus * messageBus, Console * console, Collisions* collisionSystem, std::string windowName , int resolution_x , int resolution_y ) :  BusNode(Systems::S_Window,messageBus), sf_window(sf::VideoMode(resolution_x,resolution_y),windowName) , sf_renderTexture(), sf_renderTexture_HighRes(){
     
@@ -101,7 +101,7 @@ void Window::update(){
     //Draw here everything to the texture
     this->sf_renderTexture_HighRes.clear(sf::Color::Transparent);
     
-    game.getGameState()->getScene()->draw(&sf_renderTexture);
+    game->getGameState()->getScene()->draw(&sf_renderTexture);
     
     
     /*
@@ -109,7 +109,7 @@ void Window::update(){
      */
     
     //Apply here every fullscreen shader in the internal res
-    game.getGameState()->getScene()->applyFullScreenShaders(&sf_renderTexture,&(sf_renderTexture.getTexture()));
+    game->getGameState()->getScene()->applyFullScreenShaders(&sf_renderTexture,&(sf_renderTexture.getTexture()));
     
     
     //We draw collisions and colliders

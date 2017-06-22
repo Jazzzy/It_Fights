@@ -17,6 +17,7 @@
 #include "Window.hpp"
 #include "Input.hpp"
 #include "Collisions.hpp"
+#include "Sound.hpp"
 
 
 //Attributes that need to be accessed by a lot of classes in the game
@@ -40,6 +41,7 @@ private:
     Window * windowSystem;
     Input * inputSystem;
     Collisions * collisionSystem;
+    Sound * soundSystem;
 
 };
 

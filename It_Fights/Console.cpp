@@ -17,7 +17,7 @@
 #include "DebugUtilities.hpp"
 
 
-extern Game game;
+extern Game * game;
 
 Console::Console(MessageBus * messageBus) : BusNode (Systems::S_Console,messageBus) {
     

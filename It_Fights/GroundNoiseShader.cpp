@@ -10,7 +10,7 @@
 #include "Game.hpp"
 #include "Clock.hpp"
 
-extern Game game;
+extern Game * game;
 
 
 #include "ResourcePath.hpp"

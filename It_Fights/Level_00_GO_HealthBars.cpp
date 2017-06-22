@@ -16,8 +16,8 @@
 Level_00_GO_HealthBars::Level_00_GO_HealthBars(Scene* scene, Level_00_GO_Characters * characters, sf::Clock * fightClock):
 GameObject(scene){
     
-    this->mainFont = ResourceManager::Instance().getFont("rodin_b");
-
+    this->mainFont = ResourceManager::Instance().getFont("pressStart");
+    
     this->fightClock = fightClock;
     
     this->characters = characters;
@@ -30,13 +30,22 @@ GameObject(scene){
     
     this->lerpSpeed = .95f;
     
-
+    this->counting = true;
+    
+    this->secondsShowing = 30;
+    
+    
 }
 
 
 Level_00_GO_HealthBars::~Level_00_GO_HealthBars(){
+    
+    
+}
 
-
+void  Level_00_GO_HealthBars::stopCounting(){
+    
+    this->counting = false;
 }
 
 
@@ -44,9 +53,13 @@ void Level_00_GO_HealthBars::update(){
     
     this->mainCharTargetHP = this->characters->getCharacter_1()->getHealthNormalized();
     this->enemyCharTargetHP = this->characters->getCharacter_2()->getHealthNormalized();
-        
+    
     this->mainCharShowingHP = lerp(this->mainCharShowingHP, this->mainCharTargetHP, this->lerpSpeed);
     this->enemyCharShowingHP = lerp(this->enemyCharShowingHP, this->enemyCharTargetHP, this->lerpSpeed);
+    
+    if(counting){
+        this->secondsShowing = 30-(int)(this->fightClock->getElapsedTime().asSeconds()*Clock::Instance().getTimeScale());
+    }
     
 }
 
@@ -76,17 +89,17 @@ void Level_00_GO_HealthBars::draw(sf::RenderTarget * renderTarget){
     sf::Text text;
     text.setFillColor(sf::Color::White);
     text.setOutlineColor(sf::Color::White);
-    text.setString(std::to_string(30-(int)(this->fightClock->getElapsedTime().asSeconds()*Clock::Instance().getTimeScale())));
-    text.setCharacterSize(11.0f);
+    text.setString(std::to_string(this->secondsShowing));
+    text.setCharacterSize(8.0f);
     text.setFont(mainFont);
     
-    text.setPosition(192, 10);
-
+    text.setPosition(193, 13);
+    
     renderTarget->draw(mainCharBar);
     renderTarget->draw(enemyCharBar);
     renderTarget->draw(text);
-
-
     
-
+    
+    
+    
 }

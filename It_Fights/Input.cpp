@@ -11,7 +11,7 @@
 #include "Game.hpp"
 #include "DebugUtilities.hpp"
 
-extern Game game;
+extern Game * game;
 
 Input::Input(MessageBus * messageBus, Window *m_window) : BusNode(Systems::S_Input ,messageBus) {
     this->m_window=m_window;
@@ -53,7 +53,7 @@ void Input::readInput(){
                 
             case sf::Event::TextEntered:
             {
-                if(game.isConsoleOpen()){ //If the console is open then the key should go to it
+                if(game->isConsoleOpen()){ //If the console is open then the key should go to it
                     if (event.text.unicode < 128 && event.text.unicode > 31 && event.text.unicode != '\\' ){
                         Message msg_keyForConsole("MSG_CONSOLE_KEYCHAR",Systems::S_Console, MessageData{MessageData::CHARACTER, .character = static_cast<char>(event.text.unicode)});
                         send(msg_keyForConsole);
@@ -70,7 +70,7 @@ void Input::readInput(){
                     Message msg_toggleConsole("MSG_TOGGLE_CONSOLE",Systems::S_Console);
                     send(msg_toggleConsole);
                 }else{  //The key is not for opening or closing the console so we should deal with it
-                    if(game.isConsoleOpen()){ //If the console is open then the key should go to it
+                    if(game->isConsoleOpen()){ //If the console is open then the key should go to it
                         Message msg_keyForConsole("MSG_CONSOLE_KEY",Systems::S_Console, MessageData{MessageData::KEYBOARD_KEY, .key = event.key.code});
                         send(msg_keyForConsole);
                     }else{

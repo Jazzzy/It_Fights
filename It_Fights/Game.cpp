@@ -12,12 +12,12 @@ Game::Game() :
 messageBus(){
     
     this->messageBus = new MessageBus();
+    this->soundSystem = new Sound(this->messageBus);
     this->collisionSystem = new Collisions(this->messageBus);
     this->gameState = new GameState(this->messageBus);
     this->consoleSystem = new Console(this->messageBus);
     this->windowSystem = new Window(this->messageBus,this->consoleSystem,this->collisionSystem,"It_fights",2000,1500);
     this->inputSystem = new Input(this->messageBus,this->windowSystem);
-    
     
     this->gameState->getScene()->onStart();
     
@@ -32,6 +32,7 @@ Game::~Game(){
     delete this->consoleSystem;
     delete this->gameState;
     delete this->collisionSystem;
+    delete this->soundSystem;
     delete this->messageBus;
 
 }

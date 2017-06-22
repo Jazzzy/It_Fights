@@ -76,7 +76,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "210"
             endingLineNumber = "210"
-            landmarkName = "Window::getMainRenderTarget()"
+            landmarkName = "Window::isOpen()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -91,7 +91,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
-            endingLineNumber = "212">
+            endingLineNumber = "212"
+            landmarkName = "Window::isOpen()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -530,11 +532,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Level_00_NeoPurple_DEMO.cpp"
-            timestampString = "519143179.987411"
+            timestampString = "519839554.358508"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "Level_00_NeoPurple_DEMO::onNotify(Message message)"
             landmarkType = "7">
          </BreakpointContent>
@@ -562,11 +564,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Level_00_NeoPurple_DEMO.cpp"
-            timestampString = "519143179.987411"
+            timestampString = "519839554.358508"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "Level_00_NeoPurple_DEMO::onNotify(Message message)"
             landmarkType = "7">
          </BreakpointContent>
@@ -578,11 +580,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "It_Fights/Level_00_NeoPurple_DEMO.cpp"
-            timestampString = "519143179.987411"
+            timestampString = "519839554.358508"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "Level_00_NeoPurple_DEMO::onNotify(Message message)"
             landmarkType = "7">
          </BreakpointContent>

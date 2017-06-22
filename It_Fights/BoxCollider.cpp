@@ -8,7 +8,7 @@
 
 #include "BoxCollider.hpp"
 #include "Game.hpp"
-extern Game game;
+extern Game * game;
 
 BoxCollider::BoxCollider(sf::Vector2f size,
                          std::function<sf::Vector2f()>getOriginFunc ,
@@ -61,11 +61,11 @@ bool BoxCollider::isActive(){
 }
 
 void BoxCollider::registerCollider(){
-    game.getCollisionSystem()->registerRectangleCollider(&this->collider);
+    game->getCollisionSystem()->registerRectangleCollider(&this->collider);
     this->registered = true;
 }
 
 void BoxCollider::unregisterCollider(){
-    game.getCollisionSystem()->unregisterRectangleCollider(this->collider.id);
+    game->getCollisionSystem()->unregisterRectangleCollider(this->collider.id);
     this->registered = false;
 }

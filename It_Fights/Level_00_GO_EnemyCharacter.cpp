@@ -12,7 +12,7 @@
 #include "RuleBasedBehaviour.hpp"
 #include "ReinforcementLearningBehaviour_1.hpp"
 
-extern Game game;
+extern Game * game;
 
 
 Level_00_GO_EnemyCharacter::Level_00_GO_EnemyCharacter(Scene* scene, sf::Vector2f position, AIObserver* observer, Position playerPosition, EnemyType type) : Level_00_GO_BasicCharacter(scene, position, playerPosition){
@@ -156,9 +156,9 @@ void Level_00_GO_EnemyCharacter::startAttackCollision(bool area){
     };
     
     if(this->playerNumber == PLAYER_1){
-        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
+        game->getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::ENEMY_COLLIDER, this->basicAttackDamage);
     }else{
-        game.getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
+        game->getCollisionSystem()->checkCircleHitbox(&hitbox, CollisionLayer::FRIENDLY_COLLIDER, this->basicAttackDamage);
     }
     
 }

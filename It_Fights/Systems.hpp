@@ -17,7 +17,8 @@ enum Systems {
     S_Input,        //2
     S_CurrentScene, //3
     S_GameState,    //4
-    S_Collisions    //5
+    S_Collisions,   //5
+    S_Sound         //6
 };
 
 

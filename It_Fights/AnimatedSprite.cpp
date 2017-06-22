@@ -15,7 +15,7 @@ using json = nlohmann::json;
 
 #include "Clock.hpp"
 #include "Game.hpp"
-extern Game game;
+extern Game * game;
 
 
 AnimatedSprite::AnimatedSprite(std::string dataFilename, std::string spriteSheetFilename,DataMode dataMode){

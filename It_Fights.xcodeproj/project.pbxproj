@@ -43,6 +43,9 @@
 		40817FF71EAD301E003089A4 /* Collisions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40817FF51EAD301E003089A4 /* Collisions.cpp */; };
 		408485551EEABE8900058CD6 /* PhysicsTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 408485541EEABE8900058CD6 /* PhysicsTypes.cpp */; };
 		408534231EB264FA001D0131 /* DebugUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 408534211EB264FA001D0131 /* DebugUtilities.cpp */; };
+		408A184A1EFC09CE007EB79E /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 408A18491EFC09CE007EB79E /* PressStart2P.ttf */; };
+		408A184E1EFC10BA007EB79E /* Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 408A184C1EFC10BA007EB79E /* Sound.cpp */; };
+		408A18501EFC15C1007EB79E /* whistle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 408A184F1EFC15C1007EB79E /* whistle.wav */; };
 		40A494DE1EF02CE300213C07 /* AIActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40A494DC1EF02CE300213C07 /* AIActions.cpp */; };
 		40A563CD1EA6654A00133110 /* Bloom.frag in Resources */ = {isa = PBXBuildFile; fileRef = 40A563CC1EA6654A00133110 /* Bloom.frag */; };
 		40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBB1E901DC800DB11BB /* Scene.cpp */; };
@@ -151,6 +154,10 @@
 		408485541EEABE8900058CD6 /* PhysicsTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsTypes.cpp; sourceTree = "<group>"; };
 		408534211EB264FA001D0131 /* DebugUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugUtilities.cpp; sourceTree = "<group>"; };
 		408534221EB264FA001D0131 /* DebugUtilities.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DebugUtilities.hpp; sourceTree = "<group>"; };
+		408A18491EFC09CE007EB79E /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
+		408A184C1EFC10BA007EB79E /* Sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sound.cpp; sourceTree = "<group>"; };
+		408A184D1EFC10BA007EB79E /* Sound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sound.hpp; sourceTree = "<group>"; };
+		408A184F1EFC15C1007EB79E /* whistle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whistle.wav; sourceTree = "<group>"; };
 		40A494DC1EF02CE300213C07 /* AIActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AIActions.cpp; sourceTree = "<group>"; };
 		40A494DD1EF02CE300213C07 /* AIActions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AIActions.hpp; sourceTree = "<group>"; };
 		40A563CC1EA6654A00133110 /* Bloom.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Bloom.frag; sourceTree = "<group>"; };
@@ -332,6 +339,7 @@
 		407DEFE11E897765004263E6 /* It_Fights */ = {
 			isa = PBXGroup;
 			children = (
+				408A184B1EFC1093007EB79E /* It_sound */,
 				40817FF41EAD2FA7003089A4 /* It_physics */,
 				40C41ECA1E90292000DB11BB /* It_resources */,
 				40DBD6001E8F1F200027E88A /* It_GameLogic&Content */,
@@ -359,6 +367,7 @@
 		407DEFE91E897765004263E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				408A18511EFC15C8007EB79E /* Sounds */,
 				40F49D1C1EEB1BAC00B83DF1 /* Fonts */,
 				4049DF791EABB166008DB0E5 /* SpriteSheets */,
 				40FEE0441E904EBE004DCA95 /* GLSL_Shaders */,
@@ -457,6 +466,23 @@
 			name = It_physics;
 			sourceTree = "<group>";
 		};
+		408A184B1EFC1093007EB79E /* It_sound */ = {
+			isa = PBXGroup;
+			children = (
+				408A184C1EFC10BA007EB79E /* Sound.cpp */,
+				408A184D1EFC10BA007EB79E /* Sound.hpp */,
+			);
+			name = It_sound;
+			sourceTree = "<group>";
+		};
+		408A18511EFC15C8007EB79E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				408A184F1EFC15C1007EB79E /* whistle.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		40C41EC11E90220D00DB11BB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +543,7 @@
 		40F49D1C1EEB1BAC00B83DF1 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				408A18491EFC09CE007EB79E /* PressStart2P.ttf */,
 				40C41ED21E90490200DB11BB /* playfair.ttf */,
 				40C41ECE1E90298600DB11BB /* carnevalee.ttf */,
 				407DEFEE1E897765004263E6 /* sansation.ttf */,
@@ -620,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F49D121EEB1B9D00B83DF1 /* CafeKr.ttf in Resources */,
+				408A184A1EFC09CE007EB79E /* PressStart2P.ttf in Resources */,
 				40F49D151EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro B.otf in Resources */,
 				407DEFF11E897765004263E6 /* icon.png in Resources */,
 				40FEE0511E904FC6004DCA95 /* DownSample.frag in Resources */,
@@ -641,6 +669,7 @@
 				40A563CD1EA6654A00133110 /* Bloom.frag in Resources */,
 				40FEE0521E904FC6004DCA95 /* Fullpass.vert in Resources */,
 				40F49D181EEB1B9D00B83DF1 /* rodin_l.otf in Resources */,
+				408A18501EFC15C1007EB79E /* whistle.wav in Resources */,
 				40F49D131EEB1B9D00B83DF1 /* CafeStd.ttf in Resources */,
 				40F49D1A1EEB1B9D00B83DF1 /* FOT-RodinBokutoh Pro UB.otf in Resources */,
 				40FEE04F1E904FC6004DCA95 /* Add.frag in Resources */,
@@ -711,6 +740,7 @@
 				40E3B9AD1E8E9B28001EE4AA /* Console.cpp in Sources */,
 				407DF00F1E8AB7EF004263E6 /* Clock.cpp in Sources */,
 				40C41EC91E90244900DB11BB /* TitleText.cpp in Sources */,
+				408A184E1EFC10BA007EB79E /* Sound.cpp in Sources */,
 				406D18C01ECB52100099A55D /* Level_00_GO_HealthBars.cpp in Sources */,
 				402E71311ED5E2C5008149B3 /* RuleBasedBehaviour.cpp in Sources */,
 				40817FF71EAD301E003089A4 /* Collisions.cpp in Sources */,

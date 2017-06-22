@@ -11,7 +11,7 @@
 #include "Game.hpp"
 #include "DebugUtilities.hpp"
 
-extern Game game;
+extern Game * game;
 
 Scene::Scene(MessageBus * messageBus) : BusNode(Systems::S_CurrentScene, messageBus) {
     

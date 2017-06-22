@@ -13,7 +13,7 @@
 #include "Level_00_NeoPurple_DEMO.hpp"
 #include "DebugUtilities.hpp"
 
-extern Game game;
+extern Game * game;
 
 GameState::GameState(MessageBus * messageBus) : BusNode(Systems::S_GameState, messageBus){
     
@@ -95,7 +95,7 @@ Scene * GameState::getScene(){
 }
 
 bool GameState::isConsoleOpen(){
-    return game.isConsoleOpen();
+    return game->isConsoleOpen();
 }
 
 bool GameState::isGamePaused(){

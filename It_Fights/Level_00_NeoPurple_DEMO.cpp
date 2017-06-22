@@ -11,6 +11,7 @@
 #include "Systems.hpp"
 #include "DebugUtilities.hpp"
 #include "Clock.hpp"
+#include "AuxiliarRenderFunctions.hpp"
 
 
 
@@ -42,28 +43,40 @@ level_00_GO_HealthBars(this,&level_00_GO_Characters,&this->fightClock)
         Clock::Instance().setTimeScale(TIME_SCALE); //Simulates physics like it was playing at 30fps more or less
     }
     
+    this->shouldUpdate = true;
+    
+    this->timeWinnerRemaining = 0.f;
+    
+    this->winnerFont = ResourceManager::Instance().getFont("pressStart");
+    
+    this->lastWinnerNumber = 0;
+    
+    this->showingWinner = false;
+    
+    
     this->fightClock.restart();
     
 }
 
 Level_00_NeoPurple_DEMO::~Level_00_NeoPurple_DEMO(){
-        if(!this->shouldRender){
-            Clock::Instance().setTimeScale(1.f);
-            Message msgRender("MSG_TOGGLE_RENDER");
-            this->send(msgRender);
-        }
+    if(!this->shouldRender){
+        Clock::Instance().setTimeScale(1.f);
+        Message msgRender("MSG_TOGGLE_RENDER");
+        this->send(msgRender);
+    }
 }
 
 
 void Level_00_NeoPurple_DEMO::screenShaders(sf::RenderTarget * renderTarget, const sf::Texture * screenTexture){
     
-
+    
     
 }
 
 
 
 void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
+    
     if(!changedRes){
         //We tell the window to render in an specific resolution
         PairI intPair{.x =  static_cast<int>(LVL_00_RESOLUTION_X), .y =  static_cast<int>(LVL_00_RESOLUTION_Y)};
@@ -79,14 +92,14 @@ void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
         
     }
     
-    if((this->fightClock.getElapsedTime().asSeconds() * Clock::Instance().getTimeScale()) >= TIME_LIMIT_IN_SECONDS){
-    
-        if(this->level_00_GO_Characters.getCharacter_1()->getHealthNormalized() > this->level_00_GO_Characters.getCharacter_2()->getHealthNormalized()){
+    if(((this->fightClock.getElapsedTime().asSeconds() * Clock::Instance().getTimeScale()) >= TIME_LIMIT_IN_SECONDS) && !showingWinner ){
         
+        if(this->level_00_GO_Characters.getCharacter_1()->getHealthNormalized() > this->level_00_GO_Characters.getCharacter_2()->getHealthNormalized()){
+            
             this->win(PLAYER_1);
             
         }else if(this->level_00_GO_Characters.getCharacter_1()->getHealthNormalized() < this->level_00_GO_Characters.getCharacter_2()->getHealthNormalized()){
-        
+            
             this->win(PLAYER_2);
             
         }else{
@@ -95,10 +108,10 @@ void Level_00_NeoPurple_DEMO::localUpdateImplemented(){
         
         Message messageToMenu("MSG_GO_TO_MENU");
         this->send(messageToMenu);
-
+        
     }
     
-
+    
 }
 
 void Level_00_NeoPurple_DEMO::onNotify(Message message){
@@ -127,20 +140,20 @@ void Level_00_NeoPurple_DEMO::onNotify(Message message){
                     
                     this->win(PLAYER_2);
                     break;
-                
+                    
                 case PLAYER_2:
                     
                     this->win(PLAYER_1);
                     break;
-            
+                    
                 default:
                     break;
             }
         }
     }else{
-    
+        
     }
-
+    
 }
 
 #include <iostream>
@@ -148,14 +161,27 @@ void Level_00_NeoPurple_DEMO::onNotify(Message message){
 
 std::pair<short,short> winnersData = std::make_pair(0, 0);
 
-void Level_00_NeoPurple_DEMO::win(Position player){
+extern bool simulating;
 
+/*
+ 
+ add
+ 
+ Message message("MSG_GO_TO_MENU");
+ this->scene->send(message);
+ 
+ after message
+ 
+ */
+
+void Level_00_NeoPurple_DEMO::win(Position player){
+    
     std::string winnerString;
     
     switch(player){
         case PLAYER_1:
             
-            winnerString = std::string("Player 1 is the winner!");
+            winnerString = std::string("Player 1 is the winner!  ");
             
             winnersData.first++;
             
@@ -163,7 +189,7 @@ void Level_00_NeoPurple_DEMO::win(Position player){
             
         case PLAYER_2:
             
-            winnerString = std::string("Player 2 is the winner!");
+            winnerString = std::string("Player 2 is the winner!  ");
             
             winnersData.second++;
             
@@ -177,7 +203,7 @@ void Level_00_NeoPurple_DEMO::win(Position player){
     
     
     
-    ss << winnerString << std::endl << "PLAYER 1 [" << winnersData.first << "] - [" << winnersData.second << "] PLAYER 2" ;
+    ss << winnerString << std::endl << "P1 [" << winnersData.first << "] - [" << winnersData.second << "] P2" ;
     
     std::string * strForConsole = new std::string(ss.str());
     
@@ -189,17 +215,90 @@ void Level_00_NeoPurple_DEMO::win(Position player){
     this->send(messageForConsole);
     
     
-    
-    std::string * strForWindow = new std::string(ss.str());
-    
-    MessageData messageDataWindow = {MessageData::STRING_PTR,strForWindow};
-    
-    Message messageForWindow("MSG_TOAST", Systems::S_Window, messageDataWindow);
-    
-    this->send(messageForWindow);
-    
-
+    if(simulating){
+        Message message("MSG_GO_TO_MENU");
+        this->send(message);
+    }else{
+        this->startShowWinner(player+1);
+    }
 }
+
+void Level_00_NeoPurple_DEMO::startShowWinner(short winnerNumber){
+    
+    this->timeWinnerRemaining = TIME_WINNER;
+    this->lastWinnerNumber = winnerNumber;
+    this->shouldUpdate = false;
+    this->showingWinner = true;
+    
+}
+
+void Level_00_NeoPurple_DEMO::updateShowWinner(){
+    
+    if(this->timeWinnerRemaining < 0.f){
+        Message message("MSG_GO_TO_MENU");
+        this->send(message);
+        return;
+    }else if(showingWinner){
+        this->timeWinnerRemaining -= Clock::Instance().getDeltaTime();
+    }
+    
+}
+
+
+void Level_00_NeoPurple_DEMO::draw(sf::RenderTarget * renderTarget){
+    
+    Scene::draw(renderTarget);
+
+    this->drawWinner(renderTarget);
+    
+}
+
+void Level_00_NeoPurple_DEMO::update(){
+    
+    if(this->shouldUpdate){
+        Scene::update();
+    }
+    
+    this->updateShowWinner();
+    
+}
+
+void Level_00_NeoPurple_DEMO::drawWinner(sf::RenderTarget * renderTarget){
+    
+    //@@TODO: Make this more watchable
+    
+    sf::Text playerText;
+    sf::Text winsText;
+    
+    playerText.setPosition(74, 80.f);
+    winsText.setPosition(76, 120.f);
+    winsText.setString("WINS");
+    
+    std::string winString;
+    if(this->lastWinnerNumber == 1){
+        winString = "PLAYER 1";
+        playerText.setFillColor(sf::Color::Green);
+        winsText.setFillColor(sf::Color::Green);
+    }else if(this->lastWinnerNumber == 2){
+        winString = "PLAYER 2";
+        playerText.setFillColor(sf::Color::Red);
+        winsText.setFillColor(sf::Color::Red);
+    }else{
+        return;
+    }
+    
+    playerText.setString(winString);
+    playerText.setCharacterSize(32.f);
+    winsText.setCharacterSize(64.f);
+    playerText.setFont(this->winnerFont);
+    winsText.setFont(this->winnerFont);
+    
+    renderTarget->draw(playerText);
+    renderTarget->draw(winsText);
+    
+    
+}
+
 
 
 

@@ -18,7 +18,7 @@
 
 
 #include "Game.hpp"
-extern Game game;
+extern Game * game;
 
 /*
  Here we load the json and png files with the data for the characters and its animations.
@@ -173,9 +173,6 @@ void Level_00_GO_BasicCharacter::die(){
     
     Message winner("MSG_THE_LOOSER_IS", MessageData{MessageData::INTEGER, .integer = this->playerNumber});
     this->scene->send(winner);
-    
-    Message message("MSG_GO_TO_MENU");
-    this->scene->send(message);
     
     
 }

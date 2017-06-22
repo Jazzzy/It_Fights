@@ -88,6 +88,9 @@ void MenuOptions::moveSelection(Direction direction){
             
     }
     
+    Message messageWhistle("MSG_SOUND_WHISTLE");
+    this->scene->send(messageWhistle);
+    
 }
 
 void MenuOptions::changeSelection(short delta){

@@ -19,6 +19,7 @@
 #define LVL_00_RESOLUTION_Y 300
 #define TIME_SCALE 400
 #define TIME_LIMIT_IN_SECONDS 30
+#define TIME_WINNER (3.f)
 
 class Level_00_NeoPurple_DEMO : public Scene {
 public:
@@ -27,6 +28,8 @@ public:
 private:
     void localUpdateImplemented();
     void screenShaders(sf::RenderTarget * renderTarget,const sf::Texture * screenTexture);
+    void draw(sf::RenderTarget * renderTarget);
+    void update();
     
     Level_00_GO_Ground level_00_GO_Ground;
     Level_00_GO_Characters level_00_GO_Characters;
@@ -37,11 +40,22 @@ private:
     
     bool shouldRender;
     
+    bool shouldUpdate;
+    
     void win(Position player);
     
     void onNotify (Message message);
     
     sf::Clock fightClock;
+    
+    float timeWinnerRemaining;
+    bool showingWinner;
+    short lastWinnerNumber;
+    sf::Font winnerFont;
+    void startShowWinner(short winnerNumber);
+    void updateShowWinner();
+    void drawWinner(sf::RenderTarget * renderTarget);
+
     
 };
 

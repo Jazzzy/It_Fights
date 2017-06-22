@@ -77,6 +77,12 @@ void ResourceManager::loadFonts(){
     }
     this->fontsMap.insert(std::pair<std::string,sf::Font>("rodin_b",rodin_b));
     
+    sf::Font pressStart;
+    if (!pressStart.loadFromFile(resourcePath() + "PressStart2P.ttf")) {
+        std::cerr << "ERROR: Could not load console font" << std::endl;
+    }
+    this->fontsMap.insert(std::pair<std::string,sf::Font>("pressStart",pressStart));
+    
 }
 
 
