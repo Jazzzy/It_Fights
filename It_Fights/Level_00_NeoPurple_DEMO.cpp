@@ -150,10 +150,12 @@ std::pair<short,short> winnersData = std::make_pair(0, 0);
 
 void Level_00_NeoPurple_DEMO::win(Position player){
 
+    std::string winnerString;
+    
     switch(player){
         case PLAYER_1:
             
-            prints("Player 1 is the winner!");
+            winnerString = std::string("Player 1 is the winner!");
             
             winnersData.first++;
             
@@ -161,7 +163,7 @@ void Level_00_NeoPurple_DEMO::win(Position player){
             
         case PLAYER_2:
             
-            prints("Player 2 is the winner!");
+            winnerString = std::string("Player 2 is the winner!");
             
             winnersData.second++;
             
@@ -173,7 +175,9 @@ void Level_00_NeoPurple_DEMO::win(Position player){
     
     std::stringstream ss;
     
-    ss << "PLAYER 1 [" << winnersData.first << "] - [" << winnersData.second << "] PLAYER 2" ;
+    
+    
+    ss << winnerString << std::endl << "PLAYER 1 [" << winnersData.first << "] - [" << winnersData.second << "] PLAYER 2" ;
     
     std::string * strForConsole = new std::string(ss.str());
     
@@ -183,6 +187,16 @@ void Level_00_NeoPurple_DEMO::win(Position player){
     
     Message messageForConsole("CONSOLE_SHOW_MSG", Systems::S_Console, messageData);
     this->send(messageForConsole);
+    
+    
+    
+    std::string * strForWindow = new std::string(ss.str());
+    
+    MessageData messageDataWindow = {MessageData::STRING_PTR,strForWindow};
+    
+    Message messageForWindow("MSG_TOAST", Systems::S_Window, messageDataWindow);
+    
+    this->send(messageForWindow);
     
 
 }

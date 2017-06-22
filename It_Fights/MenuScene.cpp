@@ -83,7 +83,7 @@ void MenuScene::onNotify (Message message){
                     menuOptions.moveSelection(Direction::MOVE_MENU_DOWN);
                     break;
                     
-                case 0:         //A button
+                case 2:         //A button
                     menuOptions.executeSelection();
                     break;
                 default:

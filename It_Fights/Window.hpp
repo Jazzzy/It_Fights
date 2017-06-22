@@ -47,6 +47,12 @@ private:
     std::pair<double,double> renderTextureScale;
     void recalculateScale();
     
+    void newToastMessage(std::string message, float seconds);
+    void drawToast(sf::RenderTarget * renderTarget);
+    float timeRemainingForToast;
+    std::string toastMessage;
+    sf::Font toastFont;
+    
     
 };
 

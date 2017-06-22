@@ -13,6 +13,7 @@
 #include "Game.hpp"
 #include "ResourcePath.hpp"
 #include "DebugUtilities.hpp"
+#include "AuxiliarRenderFunctions.hpp"
 
 
 extern Game game;
@@ -45,6 +46,10 @@ Window::Window(MessageBus * messageBus, Console * console, Collisions* collision
     this->renderTextureScale.first=1.;
     this->renderTextureScale.second=1.;
     
+    
+    this->toastFont = ResourceManager::Instance().getFont("rodin_b");
+
+    
 }
 
 sf::Window * Window::getInternalWindowRef(){
@@ -52,7 +57,6 @@ sf::Window * Window::getInternalWindowRef(){
 }
 
 Window::~Window(){
-    //    std::cout << "Window System deleting" << std::endl;
 }
 
 void Window::toggleShouldRender(){
@@ -81,23 +85,6 @@ void Window::recalculateScale(){
     
     this->renderTextureScale.first = (double)this->currRealResolution.x / (double)this->internalResolution.first;
     this->renderTextureScale.second = (double)this->currRealResolution.y / (double)this->internalResolution.second;
-    
-    
-//    prints("Current Real Resolution: ");
-//    printv(this->currRealResolution.x);
-//    printv(this->currRealResolution.y);
-//    prints("\n");
-//    
-//    
-//    prints("New Internal Resolution: ");
-//    printv(this->internalResolution.first);
-//    printv(this->internalResolution.second);
-//    prints("\n");
-//    
-//    prints("New render texture scale: ");
-//    printv(this->renderTextureScale.first);
-//    printv(this->renderTextureScale.second);
-//    prints("\n\n");
 
 }
 
@@ -132,6 +119,9 @@ void Window::update(){
     if(this->console->isOpen()){
         this->console->draw(&sf_renderTexture_HighRes);
     }
+    
+    
+    this->drawToast(&sf_renderTexture_HighRes);
     
     this->sf_renderTexture.display();
     this->sf_renderTexture_HighRes.display();
@@ -202,6 +192,13 @@ void Window::onNotify (Message message){
         this->sf_renderTexture.setSmooth(true);
     }else if(message.getEvent().compare("MSG_TOGGLE_RENDER")==0){
         this->toggleShouldRender();
+    }else if(message.getEvent().compare("MSG_TOAST")==0){    //Add a message to the console in a new line
+        if(message.getData().type!=MessageData::STRING_PTR){
+            std::cerr << "ERROR: The data in this message should be a string pointer" << std::endl;
+        }else{
+            this->newToastMessage(*(message.getData().string_ptr), 5.f);
+            delete message.getData().string_ptr; //@@OPTIMIZATION: We could try to instantiate this strings on a custom allocator/memory pool to avoid fragmentation
+        }
     }
     
 }
@@ -213,3 +210,56 @@ sf::RenderTarget * Window::getMainRenderTarget(){
 bool Window::isOpen(){
     return this->sf_window.isOpen();
 }
+
+void Window::newToastMessage(std::string message, float seconds){
+    this->toastMessage = message;
+    this->timeRemainingForToast = seconds;
+    
+}
+
+
+void Window::drawToast(sf::RenderTarget * renderTarget){
+    if(this->timeRemainingForToast <= 0.f){
+        return;
+    }
+    
+    this->timeRemainingForToast -= Clock::Instance().getDeltaTime();
+    
+    PairI position = getRealPixels(renderTarget, 0.45, 0.1);
+    
+    sf::Text toastText;
+    toastText.setFillColor(sf::Color::Black);
+    toastText.setPosition(position.x, position.y);
+    toastText.setString(this->toastMessage);
+    toastText.setCharacterSize(70.f);
+    toastText.setFont(this->toastFont);
+    
+    renderTarget->draw(toastText);
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
