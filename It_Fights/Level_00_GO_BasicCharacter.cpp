@@ -137,15 +137,13 @@ bool Level_00_GO_BasicCharacter::receiveDamage(float damage,
 
     this->parryCounter(-direction);
 
-    // prints("PARRIED!!");
-
     return false;
   }
 
   this->health -= damage;
 
-  // prints(this->getCharacterPublicName() << " received " << damage << " poins
-  // of damage");
+  Message messageDamage("MSG_SOUND_DAMAGE");
+  this->scene->send(messageDamage);
 
   if (this->health <= 0.) {
     this->health = 0.;
@@ -334,6 +332,9 @@ void Level_00_GO_BasicCharacter::startAttack(Direction_4 direction) {
   }
 
   this->startDash(dashVector, dashMagnitude, dashMillis, false);
+
+  Message messageSlash("MSG_SOUND_SLASH");
+  this->scene->send(messageSlash);
 }
 
 void Level_00_GO_BasicCharacter::startParry() {

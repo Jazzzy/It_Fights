@@ -30,5 +30,6 @@ sf::Vector2f MainCharacterController::getJoystickAxisPosition() {
   return sf::Vector2f(
       sf::Joystick::getAxisPosition(this->controllerNumber, sf::Joystick::X) /
           100.f,
-      sf::Joystick::getAxisPosition(0, sf::Joystick::Y) / 100.f);
+      sf::Joystick::getAxisPosition(this->controllerNumber, sf::Joystick::Y) /
+          100.f);
 }

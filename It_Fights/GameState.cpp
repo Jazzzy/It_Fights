@@ -43,6 +43,9 @@ void GameState::onNotify(Message message) {
           messageBus, CharacterOptions::AGENT_VS_AGENT, false);
       this->scene->onStart();
     } else {
+      simulating = false;
+      Message messagePop("MSG_SOUND_POP");
+      this->scene->send(messagePop);
       this->scene = new MenuScene(messageBus);
       this->scene->onStart();
     }

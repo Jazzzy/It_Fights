@@ -91,6 +91,9 @@ void MenuOptions::changeSelection(short delta) {
 }
 
 void MenuOptions::executeSelection() {
+  Message messagePop("MSG_SOUND_POP");
+  this->scene->send(messagePop);
+
   switch (this->selectedOption) {
     case PLAY_AGENT_VS_AGENT: {
       Message msgMainGame("MSG_GO_TO_MAINGAME_AGENT_VS_AGENT");

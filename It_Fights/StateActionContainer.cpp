@@ -12,11 +12,14 @@
 #include <fstream>
 #include <iostream>
 #include "DebugUtilities.hpp"
+#include "ResourcePath.hpp"
+
+bool canAccessFiles = true;
 
 StateActionContainer& StateActionContainer::Instance() {
   if (MInstance == 0) {
     MInstance = new StateActionContainer();
-    std::ifstream ifs("Active_StateAction.data");
+    std::ifstream ifs("./Active_StateAction.data");
     if (ifs) {
       boost::archive::text_iarchive ia(ifs);
       // read class state from archive
@@ -24,6 +27,19 @@ StateActionContainer& StateActionContainer::Instance() {
 
       prints("Currently the map has [" << MInstance->getStateActionMap()->size()
                                        << "] states in it");
+      canAccessFiles = true;
+    }else{
+      canAccessFiles = false;
+        
+      std::ifstream ifs(resourcePath() + "Saved_StateAction.data");
+
+      boost::archive::text_iarchive ia(ifs);
+      // read class state from archive
+      ia >> *MInstance;
+        
+      prints("Currently the map has [" << MInstance->getStateActionMap()->size()
+             << "] states in it");
+        
     }
   }
 
@@ -51,8 +67,9 @@ StateActionContainer::StateActionContainer() { atexit(&CleanUp); }
 
 void StateActionContainer::saveToFile() {
   std::unique_lock<std::shared_mutex> lock(MInstance->mutex);
-
-  std::ofstream ofs("Active_StateAction.data");
+  if(!canAccessFiles) return;
+    
+  std::ofstream ofs("./Active_StateAction.data");
   // save data to archive
   {
     boost::archive::text_oarchive oa(ofs);

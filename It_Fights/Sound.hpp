@@ -23,6 +23,8 @@ class Sound : BusNode {
 
   std::unordered_map<std::string, sf::SoundBuffer *> bufferMap;
   std::unordered_map<std::string, sf::Sound *> soundMap;
+
+  void playSound(std::string);
 };
 
 #endif /* sound_hpp */
