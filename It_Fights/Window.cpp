@@ -28,6 +28,9 @@ Window::Window(MessageBus* messageBus, Console* console,
 
   this->internalResolution.first = resolution_x;
   this->internalResolution.second = resolution_y;
+  this->initialResolution.x = resolution_x;
+  this->initialResolution.y = resolution_y;
+          
 
   this->console = console;
   this->collisionSystem = collisionSystem;
@@ -77,10 +80,14 @@ void Window::setCurrentInternalResolution(
 }
 
 void Window::recalculateScale() {
-  this->renderTextureScale.first = (double)this->currRealResolution.x /
+  this->renderTextureScale.first = (double)this->initialResolution.x /
                                    (double)this->internalResolution.first;
-  this->renderTextureScale.second = (double)this->currRealResolution.y /
+  this->renderTextureScale.second = (double)this->initialResolution.y /
                                     (double)this->internalResolution.second;
+    
+  printv(this->sf_renderTexture.getSize().x);
+  printv(this->renderTextureScale.first);
+  printv(this->currRealResolution.x);
 }
 
 void Window::update() {
@@ -158,7 +165,7 @@ void Window::tryToResize(unsigned int x, unsigned int y) {
   this->currRealResolution = sf::Vector2u(x, y);
   this->sf_window.setSize(this->currRealResolution);
 
-  // this->recalculateScale();
+  this->recalculateScale();
 }
 
 void Window::onNotify(Message message) {

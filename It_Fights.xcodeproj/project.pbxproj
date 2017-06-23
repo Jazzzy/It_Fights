@@ -52,6 +52,22 @@
 		40AA92E71EFD29A6007ACB0F /* damage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40AA92E41EFD29A6007ACB0F /* damage.wav */; };
 		40AA92E81EFD29A6007ACB0F /* slash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40AA92E51EFD29A6007ACB0F /* slash.wav */; };
 		40AA92E91EFD29A6007ACB0F /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40AA92E61EFD29A6007ACB0F /* pop.wav */; };
+		40B3913D1EFD604D001E954E /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B3913C1EFD604D001E954E /* libboost_serialization.dylib */; };
+		40B391441EFD60D3001E954E /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390FA1EFD50CD001E954E /* SFML.framework */; };
+		40B391451EFD60D3001E954E /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390FB1EFD50CD001E954E /* FLAC.framework */; };
+		40B391461EFD60D3001E954E /* freetype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390FC1EFD50CD001E954E /* freetype.framework */; };
+		40B391471EFD60D3001E954E /* ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390FD1EFD50CD001E954E /* ogg.framework */; };
+		40B3914A1EFD60D3001E954E /* vorbisenc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B391001EFD50CD001E954E /* vorbisenc.framework */; };
+		40B3914C1EFD60F4001E954E /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390F51EFD50CD001E954E /* sfml-audio.framework */; };
+		40B3914E1EFD60F4001E954E /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390F61EFD50CD001E954E /* sfml-graphics.framework */; };
+		40B391501EFD60F4001E954E /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390F71EFD50CD001E954E /* sfml-network.framework */; };
+		40B391521EFD60F4001E954E /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390F81EFD50CD001E954E /* sfml-system.framework */; };
+		40B391541EFD60F4001E954E /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390F91EFD50CD001E954E /* sfml-window.framework */; };
+		40B3915E1EFD60F4001E954E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390FE1EFD50CD001E954E /* OpenAL.framework */; };
+		40B391601EFD60F4001E954E /* vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B390FF1EFD50CD001E954E /* vorbis.framework */; };
+		40B391641EFD60F4001E954E /* vorbisfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B391011EFD50CD001E954E /* vorbisfile.framework */; };
+		40B391681EFD627C001E954E /* libboost_serialization.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40B3913C1EFD604D001E954E /* libboost_serialization.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		40B3916A1EFD6F05001E954E /* SFML.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40B390FA1EFD50CD001E954E /* SFML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40C41EBD1E901DC800DB11BB /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBB1E901DC800DB11BB /* Scene.cpp */; };
 		40C41EC01E90202000DB11BB /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EBE1E90202000DB11BB /* GameObject.cpp */; };
 		40C41EC41E90222600DB11BB /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C41EC21E90222600DB11BB /* MenuScene.cpp */; };
@@ -87,6 +103,20 @@
 		40FEE05D1E905168004DCA95 /* BloomShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40FEE05B1E905168004DCA95 /* BloomShader.cpp */; };
 		40FEE0601E905173004DCA95 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40FEE05E1E905173004DCA95 /* Shader.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40B391671EFD626C001E954E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40B3916A1EFD6F05001E954E /* SFML.framework in CopyFiles */,
+				40B391681EFD627C001E954E /* libboost_serialization.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		402E712F1ED5E2C5008149B3 /* RuleBasedBehaviour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuleBasedBehaviour.cpp; sourceTree = "<group>"; };
@@ -169,6 +199,20 @@
 		40AA92E41EFD29A6007ACB0F /* damage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = damage.wav; sourceTree = "<group>"; };
 		40AA92E51EFD29A6007ACB0F /* slash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = slash.wav; sourceTree = "<group>"; };
 		40AA92E61EFD29A6007ACB0F /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		40B390F51EFD50CD001E954E /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		40B390F61EFD50CD001E954E /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		40B390F71EFD50CD001E954E /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+		40B390F81EFD50CD001E954E /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../../../Library/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		40B390F91EFD50CD001E954E /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../../../Library/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		40B390FA1EFD50CD001E954E /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = ../../../../Library/Frameworks/SFML.framework; sourceTree = "<group>"; };
+		40B390FB1EFD50CD001E954E /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = ../../../../Library/Frameworks/FLAC.framework; sourceTree = "<group>"; };
+		40B390FC1EFD50CD001E954E /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = ../../../../Library/Frameworks/freetype.framework; sourceTree = "<group>"; };
+		40B390FD1EFD50CD001E954E /* ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ogg.framework; path = ../../../../Library/Frameworks/ogg.framework; sourceTree = "<group>"; };
+		40B390FE1EFD50CD001E954E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = ../../../../Library/Frameworks/OpenAL.framework; sourceTree = "<group>"; };
+		40B390FF1EFD50CD001E954E /* vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbis.framework; path = ../../../../Library/Frameworks/vorbis.framework; sourceTree = "<group>"; };
+		40B391001EFD50CD001E954E /* vorbisenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisenc.framework; path = ../../../../Library/Frameworks/vorbisenc.framework; sourceTree = "<group>"; };
+		40B391011EFD50CD001E954E /* vorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisfile.framework; path = ../../../../Library/Frameworks/vorbisfile.framework; sourceTree = "<group>"; };
+		40B3913C1EFD604D001E954E /* libboost_serialization.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_serialization.dylib; path = ../../../../usr/local/Cellar/boost/1.64.0_1/lib/libboost_serialization.dylib; sourceTree = "<group>"; };
 		40C41EBB1E901DC800DB11BB /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		40C41EBC1E901DC800DB11BB /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
 		40C41EBE1E90202000DB11BB /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
@@ -226,6 +270,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B3913D1EFD604D001E954E /* libboost_serialization.dylib in Frameworks */,
+				40B3914C1EFD60F4001E954E /* sfml-audio.framework in Frameworks */,
+				40B3915E1EFD60F4001E954E /* OpenAL.framework in Frameworks */,
+				40B391451EFD60D3001E954E /* FLAC.framework in Frameworks */,
+				40B391461EFD60D3001E954E /* freetype.framework in Frameworks */,
+				40B391471EFD60D3001E954E /* ogg.framework in Frameworks */,
+				40B391601EFD60F4001E954E /* vorbis.framework in Frameworks */,
+				40B391521EFD60F4001E954E /* sfml-system.framework in Frameworks */,
+				40B391641EFD60F4001E954E /* vorbisfile.framework in Frameworks */,
+				40B391541EFD60F4001E954E /* sfml-window.framework in Frameworks */,
+				40B3914A1EFD60D3001E954E /* vorbisenc.framework in Frameworks */,
+				40B391441EFD60D3001E954E /* SFML.framework in Frameworks */,
+				40B3914E1EFD60F4001E954E /* sfml-graphics.framework in Frameworks */,
+				40B391501EFD60F4001E954E /* sfml-network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +391,7 @@
 			children = (
 				407DEFE11E897765004263E6 /* It_Fights */,
 				407DEFE01E897765004263E6 /* Products */,
+				40B390F21EFD4ABC001E954E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -503,6 +562,27 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		40B390F21EFD4ABC001E954E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40B3913C1EFD604D001E954E /* libboost_serialization.dylib */,
+				40B390F51EFD50CD001E954E /* sfml-audio.framework */,
+				40B390F61EFD50CD001E954E /* sfml-graphics.framework */,
+				40B390F71EFD50CD001E954E /* sfml-network.framework */,
+				40B390F81EFD50CD001E954E /* sfml-system.framework */,
+				40B390F91EFD50CD001E954E /* sfml-window.framework */,
+				40B390FA1EFD50CD001E954E /* SFML.framework */,
+				40B390FB1EFD50CD001E954E /* FLAC.framework */,
+				40B390FC1EFD50CD001E954E /* freetype.framework */,
+				40B390FD1EFD50CD001E954E /* ogg.framework */,
+				40B390FE1EFD50CD001E954E /* OpenAL.framework */,
+				40B390FF1EFD50CD001E954E /* vorbis.framework */,
+				40B391001EFD50CD001E954E /* vorbisenc.framework */,
+				40B391011EFD50CD001E954E /* vorbisfile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		40C41EC11E90220D00DB11BB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,7 +698,9 @@
 				407DEFDA1E897764004263E6 /* Sources */,
 				407DEFDB1E897764004263E6 /* Frameworks */,
 				407DEFDC1E897764004263E6 /* Resources */,
+				40B391671EFD626C001E954E /* CopyFiles */,
 				407DEFDD1E897764004263E6 /* ShellScript */,
+				40B391691EFD62AF001E954E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -717,6 +799,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+		40B391691EFD62AF001E954E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change /usr/local/opt/boost/lib/libboost_serialization.dylib @rpath/libboost_serialization.dylib  \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\n\necho \"DONE CHANGING NAME\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -903,8 +998,14 @@
 		407DEFF51E897765004263E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLY_RULES_IN_COPY_FILES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -916,7 +1017,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					"$(inherited)",
-					/usr/local/Cellar/boost/1.64.0_1/lib/,
+					"@executable_path/../Frameworks/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -924,14 +1025,8 @@
 					"-std=c++1z",
 				);
 				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-					"-v",
-					"-lboost_serialization",
+					"-rpath",
+					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -943,8 +1038,14 @@
 		407DEFF61E897765004263E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLY_RULES_IN_COPY_FILES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -956,7 +1057,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					"$(inherited)",
-					/usr/local/Cellar/boost/1.64.0_1/lib/,
+					"@executable_path/../Frameworks/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -964,14 +1065,8 @@
 					"-std=c++1z",
 				);
 				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-					"-v",
-					"-lboost_serialization",
+					"-rpath",
+					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "NotACompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

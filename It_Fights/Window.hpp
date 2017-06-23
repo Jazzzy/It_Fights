@@ -42,6 +42,7 @@ class Window : BusNode {
 
   void tryToResize(unsigned int x, unsigned int y);
   sf::Vector2u currRealResolution;
+  sf::Vector2u initialResolution;
   bool shouldRender;
 
   std::pair<unsigned int, unsigned int> internalResolution;
