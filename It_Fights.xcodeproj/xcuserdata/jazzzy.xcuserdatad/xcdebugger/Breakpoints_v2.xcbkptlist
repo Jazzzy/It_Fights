@@ -75,7 +75,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "210"
-            endingLineNumber = "210">
+            endingLineNumber = "210"
+            landmarkName = "Window::onNotify(Message message)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,7 +92,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
             endingLineNumber = "212"
-            landmarkName = "Window::newToastMessage(std::string message, float seconds)"
+            landmarkName = "Window::getMainRenderTarget()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

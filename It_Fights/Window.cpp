@@ -84,10 +84,6 @@ void Window::recalculateScale() {
                                    (double)this->internalResolution.first;
   this->renderTextureScale.second = (double)this->initialResolution.y /
                                     (double)this->internalResolution.second;
-    
-  printv(this->sf_renderTexture.getSize().x);
-  printv(this->renderTextureScale.first);
-  printv(this->currRealResolution.x);
 }
 
 void Window::update() {
