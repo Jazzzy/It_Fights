@@ -13,17 +13,50 @@
 \usepackage{a4}
 \usepackage{listings}
 \usepackage{todonotes}
+\usepackage{array}
+\usepackage{booktabs,amssymb,makecell,rotating}
 % \usepackage{hyperref} % menús no pdf pero non leva ben co package galician
 
+
+\makeatletter
+\renewcommand\mcell@classz{\@classx
+	\@tempcnta \count@
+	\prepnext@tok
+	\@addtopreamble{%\mcell@mstyle
+		\ifcase\@chnum
+		\hfil
+		\mcell@agape{\d@llarbegin\insert@column\d@llarend}\hfil \or
+		\hskip1sp
+		\mcell@agape{\d@llarbegin\insert@column\d@llarend}\hfil \or
+		\hfil\hskip1sp
+		\mcell@agape{\d@llarbegin \insert@column\d@llarend}\or
+		\mcell@agape{$\vcenter
+			\@startpbox{\@nextchar}\insert@column\@endpbox$}\or
+		\mcell@agape{\vtop
+			\@startpbox{\@nextchar}\insert@column\@endpbox}\or
+		\mcell@agape{\vbox
+			\@startpbox{\@nextchar}\insert@column\@endpbox}%
+		\fi
+		\global\let\mcell@left\relax\global\let\mcell@right\relax
+	}\prepnext@tok}
+
+\makeatletter
+
+
+
 \begin{document}
+
+\setcounter{secnumdepth}{5}
+
+\setcellgapes{5pt}
+\makegapedcells	
+	
 \include{secciones/titulo}
 \cleardoublepage
 
 \include{secciones/certificacion} % paxina de certificación (optativa)
 \cleardoublepage
 \include{secciones/agradecimientos} % paxina de agradecementos (optativa) 
-\cleardoublepage
-\include{secciones/resumen} % páxina de resumo (optativa) 
 
 \cleardoublepage
 \pagestyle{plain}
