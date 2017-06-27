@@ -113,31 +113,343 @@ Se dedicará este apartado a mostrar las especificaciones formales de los riesgo
 		
 		\hline 
 		\textbf{Nombre} &
-		\\ 
+		Retraso en la planificación\\ 
 		
 		\hline
 		\textbf{Descripción} & 
-		\\
+		Se debe contemplar la posibilidad de que ocurran retrasos en la planificación dada la inexperiencia del desarrollador a la hora de trabajar en un proyecto de esta envergadura y con algunas de las tecnologías a utilizar.\\
 		
 		\hline 
 		\textbf{Probabilidad de ocurrencia} &
-		\\
+		Alta\\
 		
 		\hline 
 		\textbf{Impacto} &
-		\\
+		Muy Alto\\
 		
 		\hline 
-		\textbf{Plan de XXXXXX} &
-		\\
+		\textbf{Plan de Prevención} &
+		\textbf{Mitigar}: Realizar reuniones periódicas con los tutores del proyecto para resolver dudas y ver el avance del mismo.\\
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}:Redefinir el alcance del proyecto volviendo a evaluar los requisitos para priorizar los mas necesarios dejando los no vitales fuera del proyecto.\\
 		
 	
 		\hline
 	\end{tabular}
 \end{center}
 
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Cambio en los requisitos\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Es posible que una vez avanzado el proyecto se considere que algunos de requisitos necesitan ser añadidos, modificados o eliminados, especialmente dado que se dedicará cierta parte del proyecto a investigar la utilidad de técnicas de inteligencia artificial sobre las cuales se desconoce si serán de utilidad.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Alta\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Alto\\
+		
+		\hline 
+		\textbf{Plan de Prevención} &
+		\textbf{Mitigar}: Realizar un diseño de la aplicación de la forma más modular posible para evitar grandes refactorizaciones a la hora de hacer modificaciones importantes.\\
+		
+		\hline 
+		\textbf{Plan de Prevención 2} &
+		\textbf{Mitigar}: Utilizar una metodología de trabajo ágil que sea capaz de aceptar y soportar cambios sustanciales en los requisitos del proyecto.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
 
-\clearpage
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Falta de comprensión de conceptos\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Puede ocurrir que el desarrollador no esté tan familiarizado con los conceptos relacionados con inteligencia artificial como es necesario para la realización del proyecto, dificultando así la implementación correcta de cualquiera de sus técnicas.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Media\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Alto\\
+		
+		\hline 
+		\textbf{Plan de Prevención} &
+		\textbf{Mitigar}: Poner a disposición del desarrollador bibliografía que explique los conceptos que pueden ser necesarios.\\
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}: Dedicar las reuniones necesarias con los tutores a explicar los conceptos al desarrollador hasta que el nivel de comprensión de los mismos sea suficiente.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Baja del desarrollador del proyecto\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Se puede dar el caso de que, por diversas causas como problemas de salud, económicos o de otra índole, el desarrollador del proyecto se vea obligado a dejar de trabajar en él.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Baja\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Muy Alto\\
+		
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}: Aplazar el proyecto hasta que el desarrollador se encuentre en condiciones de volver a trabajar en él.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Baja de los tutores\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Se puede dar el caso de que, por diversas causas como problemas de salud, económicos o de otra índole, uno o ambos tutores del proyecto se vean obligados a dejar de trabajar en él.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Bajo\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Alto\\
+		
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}: En caso de que solo uno de los tutores deje de poder trabajar en el proyecto se continuará con el desarrollo con la ayuda del otro tutor. Si se da el caso de que ambos tienen que dejar de trabajar se deberá buscar un tutor o grupo de tutores como sustitutos.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Fallo en el equipo de trabajo\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Puede ocurrir que el equipo utilizado para el desarrollo quede inutilizado por razones de software o hardware lo que impide continuar con el proyecto en dicho sistema.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Baja\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Alto\\
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}: Se podrá hacer uso de equipos de la universidad para la realización del proyecto, si estos no son compatibles con alguna de las tecnologías usadas se necesitará adquirir un equipo sustituto cuya amortización tendrá que ser considerada dentro de los costes del proyecto.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Perdida del proyecto y su documentación\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Puede ocurrir que un fallo en el equipo de trabajo o en su almacenamiento haga inaccesible o elimine el topo o parte del trabajo realizado para el proyecto y/o para su documentación.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Baja\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Muy Alto\\
+		
+		\hline 
+		\textbf{Plan de Prevención} &
+		\textbf{Evitar}: Utilizar un sistema de control de versiones en la nube que permita guardar no solo todo el código y archivos necesarios para la ejecución del programa sino también todos los documentos que generan la documentación pudiendo recuperarlos desde cualquier otro equipo.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Rendimiento insuficiente del videojuego\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Puede ocurrir que, dada la inexperiencia como programador del desarrollador principal, el videojuego no cumpla los estándares de rendimiento esperados del mismo y no brinde una experiencia jugable.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Baja\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Muy Alto\\
+		
+		\hline 
+		\textbf{Plan de Prevención} &
+		\textbf{Mitigar}: Dedicar un tiempo en la fase de análisis y diseño a familiarizarse con las tecnologías y técnicas utilizadas en la programación de videojuegos cuando el rendimiento es un factor importante.\\
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}: Volver a realizar la etapa de diseño e implementación de forma que se eliminen las partes menos indispensables y más costosas del videojuego en aras de buscar un rendimiento superior.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Imposibilidad de realizar simulaciones aceleradas\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Dado que la realización de simulaciones dentro del entorno de un videojuego en tiempo real no es una práctica común es posible que las tecnologías escogidas no permitan realizar dicho proceso lo suficientemente rápido como para que el agente aprenda en un tiempo razonable.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Moderada\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Muy Alto\\
+		
+		\hline 
+		\textbf{Plan de Prevención} &
+		\textbf{Mitigar}: Realizar un prototipo inicial con la tecnología escogida para la implementación del videojuego lo más temprano posible en el proyecto con el fin de averiguar sus capacidades a la hora de acelerar las simulaciones. En este momento se considerará si es necesario cambiar la tecnología y/o realizar una implementación más eficiente.\\
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}: Cambiar la tecnología y/o realizar cambios en el diseño e implementación buscando un aumento en la eficiencia que posibilite realizar simulaciones a una velocidad suficiente.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Agente sin capacidad de aprendizaje\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		Es posible que dada la inexperiencia del desarrollador en términos de implementación de técnicas de inteligencia artificial el funcionamiento no sea el correcto y el agente no sea capaz de aprender y actuar dentro del entorno del juego.\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		Baja\\
+		
+		\hline 
+		\textbf{Impacto} &
+		Alto\\
+		
+		\hline 
+		\textbf{Plan de Prevención} &
+		\textbf{Mitigar}: Dedicar parte del tiempo en las reuniones con los tutores a comprobar el correcto funcionamiento de las técnicas implementadas.\\
+		
+		\hline 
+		\textbf{Plan de Contingencia} &
+		\textbf{Aceptar}: Cuando los errores en la implementación eviten el correcto funcionamiento del agente se dedicará una reunión específica a depurar dicha implementación y solucionar los errores presentes.\\
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+
 
 \section{Gestión de la configuración}
 

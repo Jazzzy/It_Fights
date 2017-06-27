@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  27 JUN 2017 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1363,128 +1363,213 @@ LaTeX Info: Redefining \% on input line 45.
  [38]
 \c@contador_riesgos=\count141
 
-Overfull \hbox (14.44524pt too wide) in paragraph at lines 108--137
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 108--141
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 140.
-LaTeX Info: Redefining \% on input line 140.
-[39]
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 144--144
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+ [39]
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 144--177
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+ [40]
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 180--213
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 213.
+LaTeX Info: Redefining \% on input line 213.
+ [41]
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 216--246
+ [] 
+ []
+
+
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 249--279
+ [] 
+ []
+
+
+Underfull \vbox (badness 4543) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 279.
+LaTeX Info: Redefining \% on input line 279.
+ [42]
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 282--311
+ [] 
+ []
+
+
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 314--343
+ [] 
+ []
+
+
+Underfull \vbox (badness 8019) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 343.
+LaTeX Info: Redefining \% on input line 343.
+ [43]
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 346--379
+ [] 
+ []
+
+
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 382--415
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 415.
+LaTeX Info: Redefining \% on input line 415.
+[44]
+Underfull \hbox (badness 1377) in paragraph at lines 442--443
+[]|\OT1/cmr/bx/n/12 Mitigar\OT1/cmr/m/n/12 : De-di-car par-te del tiem-po en la
+s
+ []
+
+
+Overfull \hbox (14.44524pt too wide) in paragraph at lines 418--451
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 451.
+LaTeX Info: Redefining \% on input line 451.
+ [45]
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 144--144
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 144--144
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 144--144
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 148--148
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 460--460
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 148--148
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 460--460
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 148--148
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 460--460
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 148--148
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 460--460
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-LaTeX Warning: Marginpar on page 40 moved.
+LaTeX Warning: Marginpar on page 46 moved.
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 153--153
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 153--153
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 153--153
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 153--153
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-LaTeX Warning: Marginpar on page 40 moved.
+LaTeX Warning: Marginpar on page 46 moved.
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 157--157
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 157--157
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 157--157
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 157--157
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-LaTeX Warning: Marginpar on page 40 moved.
+LaTeX Warning: Marginpar on page 46 moved.
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 161--161
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 473--473
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 161--161
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 473--473
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 161--161
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 473--473
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 161--161
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 473--473
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 )
-
-LaTeX Warning: Marginpar on page 40 moved.
-
 LaTeX Info: Redefining \. on input line 78.
 LaTeX Info: Redefining \% on input line 78.
-[40
+ [46]
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+ [47]
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [48
+
 
 ]
 \openout2 = `secciones/capitulos/arquitecturaYHerramientas.aux'.
@@ -1533,17 +1618,15 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 16--16
 
 )
 
-LaTeX Warning: Marginpar on page 41 moved.
+LaTeX Warning: Marginpar on page 49 moved.
 
-[41
-
-
+[49
 
 
 ]
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
- [42
+ [50
 
 
 ]
@@ -1577,13 +1660,13 @@ Overfull \hbox (38.826pt too wide) in paragraph at lines 6--7
 om/questions/4157/what-
  []
 
-) [43
+) [51
 
 
 ]
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
- [44
+ [52
 
 
 ]
@@ -1611,13 +1694,13 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
-) [45
+) [53
 
 
 ]
 LaTeX Info: Redefining \. on input line 85.
 LaTeX Info: Redefining \% on input line 85.
- [46
+ [54
 
 
 ]
@@ -1645,31 +1728,31 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
-) [47
+) [55
 
 
 ]
 LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
- [48
+ [56
 
 
 ]
 
-LaTeX Warning: Marginpar on page 49 moved.
+LaTeX Warning: Marginpar on page 57 moved.
 
-[49]
+[57]
 \openout2 = `secciones/ejemplos.aux'.
 
  (./secciones/ejemplos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [50
+ [58
 
 
 ]
 Cap\'{\i }tulo 9.
-[51]
+[59]
 Package epstopdf Info: Source file: <figuras/figura01.eps>
 (epstopdf)                    date: 2017-06-08 19:32:58
 (epstopdf)                    size: 212824 bytes
@@ -1680,7 +1763,7 @@ Package epstopdf Info: Source file: <figuras/figura01.eps>
 rted-to.pdf figuras/figura01.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
- <figuras/figura01-eps-converted-to.pdf, id=233, 1060.96375pt x 513.92pt>
+ <figuras/figura01-eps-converted-to.pdf, id=258, 1060.96375pt x 513.92pt>
 File: figuras/figura01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/figura01-eps-converted-to.pdf>
@@ -1689,7 +1772,7 @@ ne 30.
 (pdftex.def)             Requested size: 426.79134pt x 206.73277pt.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
- [52 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
+ [60 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
 /latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1723,10 +1806,10 @@ Overfull \hbox (53.36043pt too wide) in paragraph at lines 97--98
 )
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
- [53]
+ [61]
 LaTeX Info: Redefining \. on input line 92.
 LaTeX Info: Redefining \% on input line 92.
- [54
+ [62
 
 
 ]
@@ -1754,13 +1837,13 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
-) [55
+) [63
 
 
 ]
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [56
+ [64
 
 
 ]
@@ -1768,13 +1851,13 @@ LaTeX Info: Redefining \% on input line 100.
 
  (./secciones/apendicea.tex
 Ap\'{e}ndice A.
-) [57
+) [65
 
 
 ]
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
- [58
+ [66
 
 
 ]
@@ -1782,13 +1865,13 @@ LaTeX Info: Redefining \% on input line 102.
 
  (./secciones/apendiceb.tex
 Ap\'{e}ndice B.
-) [59
+) [67
 
 
 ]
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
- [60
+ [68
 
 
 ]
@@ -1796,13 +1879,13 @@ LaTeX Info: Redefining \% on input line 104.
 
  (./secciones/licencia.tex
 Ap\'{e}ndice C.
-) [61
+) [69
 
 
 ]
 LaTeX Info: Redefining \. on input line 106.
 LaTeX Info: Redefining \% on input line 106.
- [62
+ [70
 
 
 ]
@@ -1829,16 +1912,16 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Marginpar on page 63 moved.
+LaTeX Warning: Marginpar on page 71 moved.
 
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-[63
+[71
 
 ]
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [64
+ [72
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -1858,31 +1941,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  da wi-ki-pe-dia
  []
 
-) [65]
+) [73]
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
- [66
+ [74
 
 
 ]
 
-LaTeX Warning: Marginpar on page 67 moved.
+LaTeX Warning: Marginpar on page 75 moved.
 
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
-[67]
+[75]
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
- [68
+ [76
 
 ] (./traballo.tdo)
 \tf@tdo=\write7
 \openout7 = `traballo.tdo'.
 
- [69]
+ [77]
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
- [70
+ [78
 
 ] (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
@@ -1902,7 +1985,7 @@ LaTeX Info: Redefining \% on input line 7.
 Here is how much of TeX's memory you used:
  16145 strings out of 492995
  299803 string characters out of 6136403
- 392167 words of memory out of 5000000
+ 395563 words of memory out of 5000000
  19215 multiletter control sequences out of 15000+600000
  16178 words of font info for 64 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1926,10 +2009,10 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
 sfonts/cm/cmti10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (82 pages, 420457 bytes).
+Output written on traballo.pdf (90 pages, 431353 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
+ 393 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
