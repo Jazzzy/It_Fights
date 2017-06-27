@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 00:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1451,22 +1451,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 451.
 LaTeX Info: Redefining \% on input line 451.
  [45]
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 455--455
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 455--455
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 455--455
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 456--456
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 455--455
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
@@ -1494,45 +1494,22 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 460--460
 LaTeX Warning: Marginpar on page 46 moved.
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 464--464
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 464--464
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 464--464
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 465--465
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-LaTeX Warning: Marginpar on page 46 moved.
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 464--464
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
@@ -1540,6 +1517,29 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
 LaTeX Warning: Marginpar on page 46 moved.
 
 
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 469--469
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+
+LaTeX Warning: Marginpar on page 46 moved.
+
+
 Overfull \hbox (5.63048pt too wide) in paragraph at lines 473--473
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
@@ -1556,16 +1556,38 @@ Overfull \hbox (5.63048pt too wide) in paragraph at lines 473--473
 
 
 Overfull \hbox (5.63048pt too wide) in paragraph at lines 473--473
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+LaTeX Info: Redefining \. on input line 474.
+LaTeX Info: Redefining \% on input line 474.
+[46]
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 477--477
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 477--477
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 477--477
+[][][][]\OT1/cmr/m/n/12 Completar 
+ []
+
+
+Overfull \hbox (5.63048pt too wide) in paragraph at lines 477--477
 [][][][]\OT1/cmr/m/n/12 Completar 
  []
 
 )
+
+LaTeX Warning: Marginpar on page 47 moved.
+
 LaTeX Info: Redefining \. on input line 78.
 LaTeX Info: Redefining \% on input line 78.
- [46]
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
- [47]
+[47]
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
  [48
@@ -1983,10 +2005,10 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
 (./secciones/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 16145 strings out of 492995
- 299803 string characters out of 6136403
- 395563 words of memory out of 5000000
- 19215 multiletter control sequences out of 15000+600000
+ 16153 strings out of 492995
+ 299990 string characters out of 6136403
+ 399054 words of memory out of 5000000
+ 19223 multiletter control sequences out of 15000+600000
  16178 words of font info for 64 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  62i,26n,78p,1229b,1297s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2009,7 +2031,7 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
 sfonts/cm/cmti10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (90 pages, 431353 bytes).
+Output written on traballo.pdf (90 pages, 431757 bytes).
 PDF statistics:
  393 PDF objects out of 1000 (max. 8388607)
  271 compressed objects within 3 object streams

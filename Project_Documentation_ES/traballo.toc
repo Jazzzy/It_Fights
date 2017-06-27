@@ -15,10 +15,11 @@
 \contentsline {chapter}{\numberline {4}Gesti\IeC {\'o}n del proyecto}{37}
 \contentsline {section}{\numberline {4.1}Gesti\IeC {\'o}n de riesgos}{37}
 \contentsline {subsection}{\numberline {4.1.1}Especificaci\IeC {\'o}n de riesgos}{39}
+\contentsline {subsection}{\numberline {4.1.2}Registro de riesgos}{46}
 \contentsline {section}{\numberline {4.2}Gesti\IeC {\'o}n de la configuraci\IeC {\'o}n}{46}
 \contentsline {section}{\numberline {4.3}Metodolog\IeC {\'\i }a de desarrollo}{46}
 \contentsline {section}{\numberline {4.4}Planificaci\IeC {\'o}n temporal}{46}
-\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de costes}{46}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de costes}{47}
 \contentsline {section}{\numberline {4.6}Plan de Gesti\IeC {\'o}n de las Comunicaciones}{47}
 \contentsline {chapter}{\numberline {5}Arquitectura y herramientas}{49}
 \contentsline {section}{\numberline {5.1}Arquitectura del sistema}{49}
