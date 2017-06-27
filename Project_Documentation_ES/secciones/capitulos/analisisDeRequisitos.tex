@@ -1,6 +1,6 @@
 \chapter{Análisis de requisitos}
 
-Referenciando directamente al PMBOK se define la recopilación de requisitos como:
+Referenciando directamente al PMBOK \cite{pmbok} se define la recopilación de requisitos como:
 
 \begin{quote}
 	\textit{
@@ -1294,6 +1294,33 @@ En este apartado se definirán los requisitos no funcionales de este proyecto fo
 		
 		\hline 
 		\textbf{Nombre} &
+		Extensibilidad del motor\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		La aplicación deberá de estar correctamente separada en subsistemas independientes conectados mediante un bus de mensajes que permita agregar nuevos subsistemas sin afectar a los existentes.\\
+		
+		\hline 
+		\textbf{Criticidad} &
+		Importante\\
+		
+		\hline 
+		\textbf{Criterio de validación} & 
+		Se considerará este requisito como cumplido si se sigue el patrón de arquitectura de bus de mensajes y se puede agregar un nuevo subsistema sin hacer ninguna modificación a los existentes.\\
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{ | p{4.7cm} | p{10cm} | } 
+		\hline
+		
+		\textbf{ID} & RNF-\arabic{contador_requisitos_no_funcionales}
+		\refstepcounter{contador_requisitos_no_funcionales} \\
+		
+		\hline 
+		\textbf{Nombre} &
 		Facilidad para depurar\\ 
 		
 		\hline
@@ -1302,11 +1329,11 @@ En este apartado se definirán los requisitos no funcionales de este proyecto fo
 		
 		\hline 
 		\textbf{Criticidad} &
-		\\
+		Deseable\\
 		
 		\hline 
 		\textbf{Criterio de validación} & 
-		\\
+		Se considerará este requisito como cumplido si se pueden insertar mensajes en el bus de mensajes que conecta los subsistemas que componen el programa desde la consola de la aplicación.\\
 		
 		\hline
 	\end{tabular}
@@ -1321,19 +1348,47 @@ En este apartado se definirán los requisitos no funcionales de este proyecto fo
 		
 		\hline 
 		\textbf{Nombre} &
-		\\ 
+		Aplicación autocontenida\\ 
 		
 		\hline
 		\textbf{Descripción} & 
-		\\
+		La aplicación deberá de poder ser distribuida de forma que no se requiera la instalación de frameworks, librerías externas u otro archivos para su ejecución.\\
 		
 		\hline 
 		\textbf{Criticidad} &
-		\\
+		Importante\\
 		
 		\hline 
 		\textbf{Criterio de validación} & 
-		\\
+		Se considerará este requisito como cumplido si se puede ejecutar la aplicación sin realizar ningún cambio sobre una instalación limpia de los sistemas operativos para los que se ha construido. Además todos los archivos que requiera la aplicación deberán estar dentro del ejecutable, siendo su existencia transparente al usuario.\\
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+
+\begin{center}
+	\begin{tabular}{ | p{4.7cm} | p{10cm} | } 
+		\hline
+		
+		\textbf{ID} & RNF-\arabic{contador_requisitos_no_funcionales}
+		\refstepcounter{contador_requisitos_no_funcionales} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Extensibilidad en términos de escenas\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		La aplicación se deberá de componer por escenas de forma que siempre haya solamente una escena activa, pudiendo cambiar entre diferentes escenas con facilidad y agregar nuevas escenas si es necesario.\\
+		
+		\hline 
+		\textbf{Criticidad} &
+		Importante\\
+		
+		\hline 
+		\textbf{Criterio de validación} & 
+		Se considerará este requisito como cumplido si se pueden agregar escenas a la aplicación y cambiar entre ellas sin hacer ninguna modificación sobre el código que existía previamente tanto en términos de escenas como del propio motor.\\
 		
 		\hline
 	\end{tabular}
@@ -1348,19 +1403,19 @@ En este apartado se definirán los requisitos no funcionales de este proyecto fo
 		
 		\hline 
 		\textbf{Nombre} &
-		\\ 
+		Documentación\\ 
 		
 		\hline
 		\textbf{Descripción} & 
-		\\
+		La documentación generada para el proyecto debe priorizar la claridad y simplicidad cuando sea posible. Teniendo en cuenta los conocimientos de los lectores para los que está orientada.\\
 		
 		\hline 
 		\textbf{Criticidad} &
-		\\
+		Importante\\
 		
 		\hline 
 		\textbf{Criterio de validación} & 
-		\\
+		Se considerará este requisito como cumplido si la documentación carece de apartados o secciones que no aportan contenido relevante o son redundantes. Además, un lector externo tiene que ser capaz de comprender los conceptos empleados sin necesidad de una amplia experiencia previa en la materia.\\
 		
 		\hline
 	\end{tabular}
@@ -1375,73 +1430,19 @@ En este apartado se definirán los requisitos no funcionales de este proyecto fo
 		
 		\hline 
 		\textbf{Nombre} &
-		\\ 
+		Usabilidad de la interfaz\\ 
 		
 		\hline
 		\textbf{Descripción} & 
-		\\
+		La interfaz gráfica de la aplicación deberá estar diseñada para que sea fácilmente usable por cualquier tipo de usuario con cierto conocimiento de videojuegos de un estilo similar.Siguiendo las heurísticas definidas por Nielsen \cite{nielsen} siempre que sea posible.\\
 		
 		\hline 
 		\textbf{Criticidad} &
-		\\
+		Importante\\
 		
 		\hline 
 		\textbf{Criterio de validación} & 
-		\\
-		
-		\hline
-	\end{tabular}
-\end{center}
-
-\begin{center}
-	\begin{tabular}{ | p{4.7cm} | p{10cm} | } 
-		\hline
-		
-		\textbf{ID} & RNF-\arabic{contador_requisitos_no_funcionales}
-		\refstepcounter{contador_requisitos_no_funcionales} \\
-		
-		\hline 
-		\textbf{Nombre} &
-		\\ 
-		
-		\hline
-		\textbf{Descripción} & 
-		\\
-		
-		\hline 
-		\textbf{Criticidad} &
-		\\
-		
-		\hline 
-		\textbf{Criterio de validación} & 
-		\\
-		
-		\hline
-	\end{tabular}
-\end{center}
-
-\begin{center}
-	\begin{tabular}{ | p{4.7cm} | p{10cm} | } 
-		\hline
-		
-		\textbf{ID} & RNF-\arabic{contador_requisitos_no_funcionales}
-		\refstepcounter{contador_requisitos_no_funcionales} \\
-		
-		\hline 
-		\textbf{Nombre} &
-		\\ 
-		
-		\hline
-		\textbf{Descripción} & 
-		\\
-		
-		\hline 
-		\textbf{Criticidad} &
-		\\
-		
-		\hline 
-		\textbf{Criterio de validación} & 
-		\\
+		Se considerará este requisito como cumplido si al menos 3 de 5 usuarios sin experiencia lo evalúan como usable al terminar pruebas supervisadas de la aplicación.\\
 		
 		\hline
 	\end{tabular}

@@ -8,7 +8,136 @@ Dedicaremos este capítulo a definir y explicar la gestión de nuestro proyecto 
 
 \section{Gestión de riesgos}
 
-\todo{Completar los riesgos necesarios}
+Citando al PMBOK \cite{pmbok} la definición de riesgo es:
+
+\begin{quote}
+	\textit{
+		“[...]un evento o condición incierta que, de producirse, tiene un efecto positivo o
+		negativo en uno o más de los objetivos del proyecto, tales como el alcance, el cronograma, el costo y la calidad.”
+	}
+\end{quote}
+
+Las causas de un riesgo pueden ser varias y diversas y, si este finalmente se diera, los impactos que puede producir también pueden ser numerosos. Dentro de las causas, su índole puede ser de tipos muy variados, desde un requisito mal especificado a una restricción que no existe pasando por supuestos que no se ajustan a realidad o fallos en procesos externos al proyecto. Si alguna de estas situaciones se produce podría haber un impacto relevante sobre los objetivos definidos previamente para el proyecto como lo serían el alcance, el coste, el cronograma o la calidad.
+
+\bigskip
+
+El impacto suele ser generalmente negativo aunque ocasionalmente puede ser beneficioso para el proyecto. En el proyecto al que se refiere esta memoria realizaremos una gestión de riesgos enfocada a los que tienen una naturaleza negativa y que por lo tanto podrían afectar a los objetivos de forma perjudicial. Una vez dicho esto, hay que considerar las diferentes estrategias que se pueden utilizar para abordar las amenazas o riesgos con impacto negativo en caso de materializarse y serán las siguientes:
+
+\begin{itemize}
+	
+	\item \textbf{Evitar}: Siguiendo esta estrategia de respuesta el equipo del proyecto intentará eliminar la amenaza o proteger al proyecto del posible impacto de forma preventiva. Comúnmente implica modificar la planificación para evitar completamente la amenaza. 
+	
+	\item \textbf{Transferir}: Al transferir un riesgo el equipo traslada el impacto asociado al mismo a un tercero, librándose así de la responsabilidad de dar una respuesta si el riesgo se da. Suele incluir el pago de una prima de riesgo a la entidad que asumirá el impacto del mismo. 
+	
+	\item \textbf{Mitigar}: Mitigar un riesgo implica actuar para reducir o bien la probabilidad de un riesgo o bien el impacto que este tendría en el proyecto, llevando uno de estos aspectos o ambos a un umbral aceptable. Habitualmente es más efectivo realizar acciones preventivas que intentar lidiar con el riesgo una vez que ha ocurrido. 
+	
+	\item \textbf{Aceptar}: Si el equipo decide reconocer el riesgo y no hacer nada al respecto a menos que este se materialice la estrategia que se está utilizando es la de aceptar dicho riesgo. Esta aproximación se suele utilizar si no es posible o rentable utilizar alguna de las otras estrategias. Esto puede implicar no realizar ninguna acción si el riesgo ocurra (estrategia pasiva) o establecer una reserva para contingencias que pueda aportar los recursos, tiempo o dinero necesarios para gestionar el riesgo (estrategia activa).
+	
+\end{itemize}
+
+Dada la índole del proyecto y considerando el hecho de que solo hay un trabajador encargado del mismo se intentará evitar la transferencia de un riesgo al ser esta estrategia propensa a generar costes adicionales. Por razones similares, la aceptación de un riesgo se deberá considerar única y exclusivamente si ninguna de las otras estrategias es aplicable.
+
+Para realizar un buen análisis de riesgos se debe comenzar por una identificación de la mayor cantidad de riesgos posible dentro de unos límites lógicos para luego analizar la importancia de cada uno teniendo en cuenta su probabilidad e impacto. Finalmente se deberán establecer estrategias a seguir en caso de que los riesgos se den, priorizando los más importantes en caso de que no sea posible gestionarlos todos.
+
+\subsection{Especificación de riesgos}
+
+Se dedicará este apartado a mostrar las especificaciones formales de los riesgos que contendrán su descripción, probabilidad, impacto y los planes diseñados para cada uno de ellos. La probabilidad\footnote{indicada como $p$ dentro de la tabla}  e impacto\footnote{indicada como $i$ dentro de la tabla} podrán tomar los valores definidos en el Cuadro \ref{tab:probabilidad_impacto}. El identificador utilizado para los riesgos tendrá la forma RSK\footnote{En referencia a \textit{"risk"}, riesgo en inglés}-\textit{N}
+
+
+\begin{table}
+	\begin{center}
+		\caption{Valores posibles de probabilidad e impacto}
+		\label{tab:probabilidad_impacto}
+	\begin{tabular}{ | c | c | c | } 
+		\hline
+		
+		\textbf{Calificativo} &
+		\textbf{Probabilidad}&
+		\textbf{Impacto}\\
+		
+		\hline
+		Muy Bajo 
+		&
+		$p<0,10$
+		&
+		$i<0,10$
+		\\ 
+		
+		\hline
+		Bajo 
+		&
+		$0,10<=p<0,30$
+		&
+		$0,10<=i<0,20$
+		\\ 
+		
+		\hline
+		Moderado 
+		&
+		$0,30<=p<0,50$
+		&
+		$0,20<=i<0,40$
+		\\ 
+		
+		\hline
+		Alto 
+		&
+		$0,50<=p<0,70$
+		&
+		$0,40<=i<0,80$
+		\\ 
+		
+		\hline
+		Muy Alto 
+		&
+		$0,70<=p$
+		&
+		$0,80<=i$
+		\\ 
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+\end{table}
+
+\newcounter{contador_riesgos}
+\setcounter{contador_riesgos}{1}
+
+\begin{center}
+	\begin{tabular}{ | p{5.6cm} | p{8.5cm} | } 
+		\hline
+		
+		\textbf{ID} & RSK-\arabic{contador_riesgos}
+		\refstepcounter{contador_riesgos} \\
+		
+		\hline 
+		\textbf{Nombre} &
+		\\ 
+		
+		\hline
+		\textbf{Descripción} & 
+		\\
+		
+		\hline 
+		\textbf{Probabilidad de ocurrencia} &
+		\\
+		
+		\hline 
+		\textbf{Impacto} &
+		\\
+		
+		\hline 
+		\textbf{Plan de XXXXXX} &
+		\\
+		
+	
+		\hline
+	\end{tabular}
+\end{center}
+
+
+\clearpage
 
 \section{Gestión de la configuración}
 
