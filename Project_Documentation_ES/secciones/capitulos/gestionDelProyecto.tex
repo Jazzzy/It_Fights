@@ -602,7 +602,49 @@ Dichos estándares de nomenclatura serán utilizados para las versiones generada
 
 \section{Metodología de desarrollo}
 
-\todo{Completar la metodología}
+Como se puede observar fácilmente en el \textit{Chaos Report}\cite{chaos}, un número muy elevado de proyectos son cancelados, abandonados o simplemente terminan habiendo superado los recursos estimados en un principio en términos de coste, tiempo, etc. Una de las razones a las cuales se atribuye este hecho es a una mala o nula elección de la metodología de desarrollo apropiada que se adapte a las necesidades de un proyecto concreto. Si la metodología no está pensada para el tipo de proyecto que se esta gestionando se pueden dar problemas que van desde el descontento del cliente hasta la imposibilidad de terminar el proyecto.
+
+\bigskip
+
+Pese a que en proyectos pequeños pueda parecer que no es importante la elección o simple existencia de una metodología, lo cierto es que siempre se está aplicando una u otra metodología aunque el equipo de trabajo no se lo proponga o no se especifique en la documentación. De modo inconsciente se tiende a tener una idea de la estructura que se usará para el proyecto, comúnmente se siguen aproximaciones similares a la metodología en cascada en estas situaciones.
+
+\bigskip
+
+La elección y uso de una metodología concreta debe sugerir una estructuración, planificación y control de los procesos de desarrollo que nos de una base sobre la cual generar toda la gestión del proyecto. Con esto se busca eliminar problemas como altos costes, retrasos en las entregas o calidad baja del producto y documentación mientras se aumenta la calidad y cantidad de información disponible sobre el estado del proyecto.
+
+\bigskip
+
+En un proyecto de las características que nos atañe si es necesario especificar la metodología que se va a usar ya que tiene la envergadura suficiente para ello. Para explicar la elección de la metodología utilizada no se realizará un análisis de las metodologías disponibles para incluir la razón de no haber elegido cada una de ellas. Se explicará como las características del proyecto han desembocado en la elección final de la metodología utilizada.
+
+\bigskip
+
+El equipo de trabajo estará compuesto por un único desarrollador, lo que elimina la necesidad de repartir tareas o gestionar la comunicación dentro del equipo. Además, dada la duración aproximada de poco más de 400 horas se deberá elegir una metodología que no requiera dedicar la mayor parte de tiempo del proyecto a tareas de gestión. Otra característica importante es que se necesita avanzar rápidamente en las etapas iniciales del proyecto dadas las dudas presentes sobre la tecnología (RSK-9) y para permitir así dejar más tiempo para la implementación del agente, etapa que corre el riesgo de necesitar más tiempo de lo estimado.
+
+\bigskip
+
+Los motivos comentados hacen que las metodologías ágiles parezcan la elección propia para el proyecto, especialmente por que permiten acelerar el desarrollo, son más flexibles a cambios, buscan la simplicidad y sus desventajas en términos de organización no son importantes con un equipo de trabajo y duración como la actual. De entre las metodologías ágiles se ha escogido la conocida como \textbf{Programación Extrema} o XP.
+
+\bigskip
+
+En esta metodología otorga una flexibilidad al desarrollador que la hace superior para este proyecto dado que aporta libertades al desarrollador ante cambios dentro de los diferentes intervalos o \textit{sprints}. En nuestro caso se realizarán reuniones periódicas que separaran los mencionados \textit{sprints} en los cuales se mostrarán pequeñas entregas que incrementen la completitud del proyecto. Dichas entregas constarán de una planificación pequeña de las \textit{historias de usuario} que se deberían tener completadas para la siguiente reunión, un diseño simple que se agregue al proyecto para soportar dichas historias, la codificación asociada al diseño y una serie de pruebas simples que sirvan para determinar si las historias funcionan.
+
+\bigskip
+
+Pese a que así se mencionen etapas que luego se verán en la planificación, se debe comentar que las tareas realizadas en las historias son las presentes en la planificación en el sentido de que dentro de las mismas podremos encontrar pequeños paquetes de trabajo que impliquen planificar, diseñar, implementar y probar. Por lo tanto no se deben de confundir las acciones realizadas en cada \textit{sprint} con las tareas a alto nivel de diseño o pruebas presentes en la planificación.
+
+\bigskip
+
+Algunos de los motivos que han derivado en la elección de esta metodología son los siguientes:
+
+\begin{itemize}
+	\item \textbf{Rápida iteración}: que permite avanzar rápido en el proyecto manteniendo a los tutores informados.
+	\item \textbf{Refactorización de código}: dado que se anima al programador a mejorar código anterior para evitar problemas futuros.
+	\item \textbf{Bienestar del programador}: como el trabajador es el único en el equipo de desarrollo y es posible que tenga trabajo originado por otras fuentes es esencial que la metodología busque que el mismo se encuentre fresco y descansado.
+	\item \textbf{Diseño simple}: ya que se considera que el mejor software es el que cumple con sus requisitos sin quedarse corto o sobrepasarlos realizando trabajo adicional innecesario.
+	\item \textbf{Facilidad de división del proyecto}: haciendo que el trabajador se centre en partes claramente separadas y no tenga que abarcara el proyecto como un todo desde un principio.
+	\item \textbf{Prototipos funcionales tempranos}: Al priorizar las historias de la aplicación se permitirá obtener un prototipo funcional temprano necesario dados algunos de los riesgos del proyecto.
+\end{itemize}
+
 
 \section{Planificación temporal}
 
@@ -996,12 +1038,21 @@ Con respecto al tiempo, se extienden alrededor a una hora aproximadamente, siend
 \begin{table}
 	\begin{adjustwidth}{-3cm}{}
 	{\scriptsize
-		\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+		\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{3.6cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
 			\hline
 			\multicolumn{5}{c}{Identificación} &  \multicolumn{4}{c}{Evaluación} & \multicolumn{2}{c}{Clasificación}\\
 			
 			\hline
-			\textbf{Nombre} & \textbf{Empresa/ Grupo}  & \textbf{Localización} & \textbf{Rol en el proyecto} & \textbf{Información de contacto} & \textbf{Requisitos} & \textbf{Expectativas} & \textbf{Influencia potencial} & \textbf{Fase de mayor interés} & \textbf{Externo/Interno} & \textbf{Apoyo/ Neutral/ Opositor}\\
+			\textbf{Nombre} & \textbf{Empresa/ Grupo}  & \textbf{Localización} & \textbf{Rol en el proyecto} & \textbf{Información de contacto} & \textbf{Requisitos} & \textbf{Expectativas} & \textbf{Influencia potencial} & \textbf{Fase de mayor interés} & \textbf{Externo/ Interno} & \textbf{Apoyo/ Neutral/ Opositor}\\
+			
+			\hline
+			Tutores del proyecto & Tutores & Santiago de Compostela & Tutores & manuel.mucientes@usc.es pablo.rodriguez.mier@usc.es & Tutorización y resolución general de dudas & Cumplir todos los objetivos del proyecto & Alta & Todo el proyecto & Externo & Apoyo \\
+			
+			\hline
+			Desarrollador del proyecto & Equipo del proyecto & Santiago de Compostela & Desarrollador & ruben@osor.io & Compromiso con el proyecto y calidad en la elaboración & Completar el proyecto con éxito en el tiempo estimado & Alta & Todo el proyecto & Interno & Apoyo \\
+			
+			\hline
+			Jugadores potenciales & Usuarios & Indeterminada & Cliente & No aplica & No aplica & Observar el agente y disfrutar del videojuego & Baja & Finalización del proyecto & Externo & Neutral \\
 			
 			\hline
 			
@@ -1012,16 +1063,30 @@ Con respecto al tiempo, se extienden alrededor a una hora aproximadamente, siend
 	\end{adjustwidth}
 \end{table}
 
+\clearpage
+
 \begin{table}
-		\begin{tabular}{|l|l|}
-			\hline
-			\textbf{Elemento} & \textbf{Coste (\euro{})}\\
-			
-			\hline
-			Analista programador C++ & 3952.50 \\
-			
-			\hline
-		\end{tabular}
+	\begin{adjustwidth}{-3.2cm}{}
+		{\scriptsize
+			\begin{tabular}{|p{1.3cm}|p{2.0cm}|p{2.0cm}|p{1.1cm}|p{1.6cm}|p{2.5cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|p{1.2cm}|p{1.5cm}|}
+				
+				\hline
+				\textbf{Grupo} & \textbf{Propósito} & \textbf{Contenido} & \textbf{Nivel de detalle} & \textbf{Importancia} & \textbf{Periodicidad} & \textbf{Emisor} & \textbf{Receptor} & \textbf{Formato} & \textbf{Idioma} & \textbf{Métodos o tecnologías}\\
+				
+				\hline
+				Tutores & Informar sobre el estado del proyecto y presentar dudas asociadas & Información técnica & Alto & Alta & Establecida por las reuniones puntuales en la planificación y puntualmente de forma excepcional & Desarrollador & Uno de los tutores & Comunicación personal y electrónica & Español & Presencial o correo electrónico\\
+				
+				\hline
+				Equipo de proyecto & Solicitar información sobre el proyecto y proporcionar recursos útiles & Solicitudes o aportación de recursos & Alto & Alta & Se realizan de forma puntual & Uno de los tutores & Desarrollador & Comunicación personal y electrónica & Español & Presencial, correo electrónico o mensajería\\
+				
+				\hline
+				Jugadores potenciales & Conocer las preferencias y opiniones de los jugadores & Información sobre su opinión sobre el videojuego & Medio & Media & Se realizan de forma puntual al final del proyecto & Usuario/ Desarrollador & Desarrollador/ Usuario & Comunicación personal y electrónica  & Español/ Inglés & Correo electrónico, mensajería y ocasionalmente presencial \\
+				
+				\hline
+				
+			\end{tabular}
+		}
+	\end{adjustwidth}
 		\caption{Matriz de comunicaciones del proyecto}
 		\label{tab:comunicacion}
 \end{table}

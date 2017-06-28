@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  29 JUN 2017 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2013,29 +2013,15 @@ LaTeX Info: Redefining \% on input line 588.
  [53]
 LaTeX Font Info:    Font shape `OML/bch/b/n' in size <12> not available
 (Font)              Font shape `OML/cmm/b/it' tried instead on input line 590.
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-LaTeX Info: Redefining \. on input line 615.
-LaTeX Info: Redefining \% on input line 615.
-[54]
+LaTeX Info: Redefining \. on input line 618.
+LaTeX Info: Redefining \% on input line 618.
+ [54]
+LaTeX Info: Redefining \. on input line 640.
+LaTeX Info: Redefining \% on input line 640.
+ [55]
+LaTeX Info: Redefining \. on input line 657.
+LaTeX Info: Redefining \% on input line 657.
+ [56]
 Missing character: There is no w in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -2468,136 +2454,433 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 
 
-LaTeX Warning: Float too large for page by 0.0585pt on input line 708.
+LaTeX Warning: Float too large for page by 0.0585pt on input line 750.
 
-LaTeX Info: Redefining \. on input line 711.
-LaTeX Info: Redefining \% on input line 711.
-[55]
-<otros/capturasPlanificacion/general.PNG, id=260, 806.26219pt x 158.84344pt>
+LaTeX Info: Redefining \. on input line 753.
+LaTeX Info: Redefining \% on input line 753.
+[57]
+<otros/capturasPlanificacion/general.PNG, id=266, 806.26219pt x 158.84344pt>
 File: otros/capturasPlanificacion/general.PNG Graphic file (type png)
 
 <use otros/capturasPlanificacion/general.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/general.PNG used on input 
-line 716.
+line 758.
 (pdftex.def)             Requested size: 540.60236pt x 106.50453pt.
 
-<otros/capturasPlanificacion/videojuego.PNG, id=261, 703.87968pt x 469.755pt>
+<otros/capturasPlanificacion/videojuego.PNG, id=267, 703.87968pt x 469.755pt>
 File: otros/capturasPlanificacion/videojuego.PNG Graphic file (type png)
 
 <use otros/capturasPlanificacion/videojuego.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/videojuego.PNG used on inp
-ut line 724.
+ut line 766.
 (pdftex.def)             Requested size: 540.60236pt x 360.78781pt.
-LaTeX Info: Redefining \. on input line 742.
-LaTeX Info: Redefining \% on input line 742.
- [56
+LaTeX Info: Redefining \. on input line 784.
+LaTeX Info: Redefining \% on input line 784.
+ [58
 
 
  <./otros/capturasPlanificacion/general.PNG>]
-LaTeX Info: Redefining \. on input line 742.
-LaTeX Info: Redefining \% on input line 742.
- [57 <./otros/capturasPlanificacion/videojuego.PNG>]
-<otros/capturasPlanificacion/agente.PNG, id=270, 589.4522pt x 307.90031pt>
+LaTeX Info: Redefining \. on input line 784.
+LaTeX Info: Redefining \% on input line 784.
+ [59 <./otros/capturasPlanificacion/videojuego.PNG>]
+<otros/capturasPlanificacion/agente.PNG, id=276, 589.4522pt x 307.90031pt>
 File: otros/capturasPlanificacion/agente.PNG Graphic file (type png)
 
 <use otros/capturasPlanificacion/agente.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/agente.PNG used on input l
-ine 747.
+ine 789.
 (pdftex.def)             Requested size: 540.60236pt x 282.38846pt.
-LaTeX Info: Redefining \. on input line 760.
-LaTeX Info: Redefining \% on input line 760.
- [58 <./otros/capturasPlanificacion/agente.PNG>]
-<otros/capturasPlanificacion/obtencion_de_datos.PNG, id=275, 606.76688pt x 97.8
+LaTeX Info: Redefining \. on input line 802.
+LaTeX Info: Redefining \% on input line 802.
+ [60 <./otros/capturasPlanificacion/agente.PNG>]
+<otros/capturasPlanificacion/obtencion_de_datos.PNG, id=281, 606.76688pt x 97.8
 6563pt>
 File: otros/capturasPlanificacion/obtencion_de_datos.PNG Graphic file (type png
 )
  <use otros/capturasPlanificacion/obtencion_de_datos.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/obtencion_de_datos.PNG use
-d on input line 771.
+d on input line 813.
 (pdftex.def)             Requested size: 540.60236pt x 87.19568pt.
 
-<otros/capturasPlanificacion/documentacion_reuniones_final.PNG, id=276, 861.970
+<otros/capturasPlanificacion/documentacion_reuniones_final.PNG, id=282, 861.970
 3pt x 322.95656pt>
 File: otros/capturasPlanificacion/documentacion_reuniones_final.PNG Graphic fil
 e (type png)
 
 <use otros/capturasPlanificacion/documentacion_reuniones_final.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/documentacion_reuniones_fi
-nal.PNG used on input line 785.
+nal.PNG used on input line 827.
 (pdftex.def)             Requested size: 540.60236pt x 202.55203pt.
-LaTeX Info: Redefining \. on input line 795.
-LaTeX Info: Redefining \% on input line 795.
- [59 <./otros/capturasPlanificacion/obtencion_de_datos.PNG>]
-LaTeX Info: Redefining \. on input line 809.
-LaTeX Info: Redefining \% on input line 809.
- [60 <./otros/capturasPlanificacion/documentacion_reuniones_final.PNG>]
+LaTeX Info: Redefining \. on input line 837.
+LaTeX Info: Redefining \% on input line 837.
+ [61 <./otros/capturasPlanificacion/obtencion_de_datos.PNG>]
 LaTeX Info: Redefining \. on input line 851.
 LaTeX Info: Redefining \% on input line 851.
- [61]
-LaTeX Font Info:    Font shape `U/eurosym/b/n' in size <12> not available
-(Font)              Font shape `U/eurosym/bx/n' tried instead on input line 879
-.
-LaTeX Info: Redefining \. on input line 938.
-LaTeX Info: Redefining \% on input line 938.
- [62]
-LaTeX Info: Redefining \. on input line 938.
-LaTeX Info: Redefining \% on input line 938.
+ [62 <./otros/capturasPlanificacion/documentacion_reuniones_final.PNG>]
+LaTeX Info: Redefining \. on input line 893.
+LaTeX Info: Redefining \% on input line 893.
  [63]
-LaTeX Info: Redefining \. on input line 970.
-LaTeX Info: Redefining \% on input line 970.
- [64
+LaTeX Font Info:    Font shape `U/eurosym/b/n' in size <12> not available
+(Font)              Font shape `U/eurosym/bx/n' tried instead on input line 921
+.
+LaTeX Info: Redefining \. on input line 980.
+LaTeX Info: Redefining \% on input line 980.
+ [64]
+LaTeX Info: Redefining \. on input line 980.
+LaTeX Info: Redefining \% on input line 980.
+ [65]
+LaTeX Info: Redefining \. on input line 1012.
+LaTeX Info: Redefining \% on input line 1012.
+ [66
 
 ]
-LaTeX Info: Redefining \. on input line 990.
-LaTeX Info: Redefining \% on input line 990.
- [65]
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+LaTeX Info: Redefining \. on input line 1032.
+LaTeX Info: Redefining \% on input line 1032.
+ [67]
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
 []|\OT1/bch/b/n/8 Empresa/
  []
 
 
-Overfull \hbox (3.48082pt too wide) in paragraph at lines 1004--1004
+Overfull \hbox (3.48082pt too wide) in paragraph at lines 1046--1046
 []|\OT1/bch/b/n/8 Localizaci[]on| 
  []
 
 
-Underfull \hbox (badness 4886) in paragraph at lines 1004--1004
+Underfull \hbox (badness 4886) in paragraph at lines 1046--1046
 []|\OT1/bch/b/n/8 Rol en el
  []
 
 
-Overfull \hbox (2.89685pt too wide) in paragraph at lines 1004--1004
-[]|\OT1/bch/b/n/8 Informaci[]on
- []
-
-
-Overfull \hbox (3.61682pt too wide) in paragraph at lines 1004--1004
+Overfull \hbox (3.61682pt too wide) in paragraph at lines 1046--1046
 []|\OT1/bch/b/n/8 Expectativas| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
 []|\OT1/bch/b/n/8 Influencia
  []
 
 
-Overfull \hbox (17.69684pt too wide) in paragraph at lines 1004--1004
-[]|\OT1/bch/b/n/8 Externo/Interno| 
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+[]|\OT1/bch/b/n/8 Externo/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1005
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
 []|\OT1/bch/b/n/8 Apoyo/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1005
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
 \OT1/bch/b/n/8 Neu-tra-l/
  []
 
-LaTeX Info: Redefining \. on input line 1030.
-LaTeX Info: Redefining \% on input line 1030.
-[66])
+
+Underfull \hbox (badness 2980) in paragraph at lines 1049--1049
+[]|\OT1/bch/m/n/8 Tutores del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1049
+[]|\OT1/bch/m/n/8 manuel.mucientes@usc.es
+ []
+
+
+Overfull \hbox (0.50484pt too wide) in paragraph at lines 1049--1049
+[]|\OT1/bch/m/n/8 Tutorizaci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1049
+\OT1/bch/m/n/8 ge-ne-ral de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1049
+[]|\OT1/bch/m/n/8 Cumplir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1049
+\OT1/bch/m/n/8 to-dos los
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1049
+\OT1/bch/m/n/8 ob-je-ti-vos
+ []
+
+
+Overfull \hbox (4.92883pt too wide) in paragraph at lines 1052--1052
+[]|\OT1/bch/m/n/8 Desarrollador
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 1052--1052
+[]|\OT1/bch/m/n/8 Equipo del
+ []
+
+
+Overfull \hbox (4.92883pt too wide) in paragraph at lines 1052--1052
+[]|\OT1/bch/m/n/8 Desarrollador| 
+ []
+
+
+Overfull \hbox (1.70485pt too wide) in paragraph at lines 1052--1052
+[]|\OT1/bch/m/n/8 Compromiso
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+\OT1/bch/m/n/8 yec-to y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+\OT1/bch/m/n/8 ca-li-dad en
+ []
+
+
+Underfull \hbox (badness 7415) in paragraph at lines 1052--1052
+\OT1/bch/m/n/8 la ela-bo-ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+[]|\OT1/bch/m/n/8 Completar
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 1052--1052
+\OT1/bch/m/n/8 el pro-yec-to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+\OT1/bch/m/n/8 el tiem-po
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
+[]|\OT1/bch/m/n/8 Jugadores
+ []
+
+
+Overfull \hbox (8.72081pt too wide) in paragraph at lines 1055--1055
+[]|\OT1/bch/m/n/8 Indeterminada| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
+[]|\OT1/bch/m/n/8 Observar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
+[]|\OT1/bch/m/n/8 Finalizaci[]on
+ []
+
+LaTeX Info: Redefining \. on input line 1066.
+LaTeX Info: Redefining \% on input line 1066.
+[68]
+Underfull \hbox (badness 2393) in paragraph at lines 1074--1075
+[]|\OT1/bch/b/n/8 M[]eto-dos o
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 1077--1077
+[]|\OT1/bch/m/n/8 Informar so-bre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1077
+\OT1/bch/m/n/8 el es-ta-do del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1077
+\OT1/bch/m/n/8 sen-tar du-das
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1077
+[]|\OT1/bch/m/n/8 Informaci[]on
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 1077--1077
+[]|\OT1/bch/m/n/8 Establecida por las
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 1077--1077
+\OT1/bch/m/n/8 en la pla-ni-fi-ca-ci[]on
+ []
+
+
+Overfull \hbox (1.36636pt too wide) in paragraph at lines 1077--1077
+[]|\OT1/bch/m/n/8 Comunicaci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1077
+\OT1/bch/m/n/8 per-so-nal y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
+[]|\OT1/bch/m/n/8 Presencial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
+\OT1/bch/m/n/8 o co-rreo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+[]|\OT1/bch/m/n/8 Solicitar in-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+\OT1/bch/m/n/8 ma-ci[]on so-bre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+\OT1/bch/m/n/8 el pro-yec-to y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+\OT1/bch/m/n/8 pro-por-cio-nar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+[]|\OT1/bch/m/n/8 Solicitudes o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+\OT1/bch/m/n/8 apor-ta-ci[]on de
+ []
+
+
+Overfull \hbox (1.36636pt too wide) in paragraph at lines 1080--1080
+[]|\OT1/bch/m/n/8 Comunicaci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1080
+\OT1/bch/m/n/8 per-so-nal y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+[]|\OT1/bch/m/n/8 Presencial,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+\OT1/bch/m/n/8 co-rreo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+\OT1/bch/m/n/8 electr[]oni-co
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+\OT1/bch/m/n/8 o men-sa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+[]|\OT1/bch/m/n/8 Jugadores
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+\OT1/bch/m/n/8 po-ten-cia-
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 1083--1083
+\OT1/bch/m/n/8 bre su opi-ni[]on
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 1083--1083
+\OT1/bch/m/n/8 so-bre el vi-deo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+[]|\OT1/bch/m/n/8 Usuario/
+ []
+
+
+Overfull \hbox (3.08636pt too wide) in paragraph at lines 1083--1083
+[]|\OT1/bch/m/n/8 Desarrollador/
+ []
+
+
+Overfull \hbox (1.36636pt too wide) in paragraph at lines 1083--1083
+[]|\OT1/bch/m/n/8 Comunicaci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+\OT1/bch/m/n/8 per-so-nal y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+[]|\OT1/bch/m/n/8 Espa[]nol/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+[]|\OT1/bch/m/n/8 Correo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+\OT1/bch/m/n/8 electr[]oni-co,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+\OT1/bch/m/n/8 men-sa-jer[]^^Pa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+\OT1/bch/m/n/8 y oca-sio-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+\OT1/bch/m/n/8 nal-men-te
+ []
+
+LaTeX Info: Redefining \. on input line 1095.
+LaTeX Info: Redefining \% on input line 1095.
+[69])
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [70
+
+
+
+
+
+
+]
 \openout2 = `secciones/capitulos/arquitecturaYHerramientas.aux'.
 
  (./secciones/capitulos/arquitecturaYHerramientas.tex
@@ -2644,20 +2927,15 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
 
 )
 
-LaTeX Warning: Marginpar on page 67 moved.
+LaTeX Warning: Marginpar on page 71 moved.
 
-[67
-
-
-
-
-
+[71
 
 
 ]
 LaTeX Info: Redefining \. on input line 98.
 LaTeX Info: Redefining \% on input line 98.
- [68
+ [72
 
 
 ]
@@ -2691,13 +2969,13 @@ Overfull \hbox (45.55461pt too wide) in paragraph at lines 6--7
 om/questions/4157/what-
  []
 
-) [69
+) [73
 
 
 ]
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [70
+ [74
 
 
 ]
@@ -2725,13 +3003,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [71
+) [75
 
 
 ]
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
- [72
+ [76
 
 
 ]
@@ -2759,31 +3037,31 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [73
+) [77
 
 
 ]
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
- [74
+ [78
 
 
 ]
 
-LaTeX Warning: Marginpar on page 75 moved.
+LaTeX Warning: Marginpar on page 79 moved.
 
-[75]
+[79]
 \openout2 = `secciones/ejemplos.aux'.
 
  (./secciones/ejemplos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [76
+ [80
 
 
 ]
 Cap\'{\i }tulo 9.
-[77]
+[81]
 Package epstopdf Info: Source file: <figuras/figura01.eps>
 (epstopdf)                    date: 2017-06-08 19:32:58
 (epstopdf)                    size: 212824 bytes
@@ -2794,7 +3072,7 @@ Package epstopdf Info: Source file: <figuras/figura01.eps>
 rted-to.pdf figuras/figura01.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
- <figuras/figura01-eps-converted-to.pdf, id=346, 1060.96375pt x 513.92pt>
+ <figuras/figura01-eps-converted-to.pdf, id=359, 1060.96375pt x 513.92pt>
 File: figuras/figura01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/figura01-eps-converted-to.pdf>
@@ -2803,7 +3081,7 @@ ne 30.
 (pdftex.def)             Requested size: 426.79134pt x 206.73277pt.
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
- [78 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
+ [82 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
 /latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -2830,10 +3108,10 @@ Overfull \hbox (56.95116pt too wide) in paragraph at lines 97--98
 )
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
- [79]
+ [83]
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
- [80
+ [84
 
 
 ]
@@ -2861,13 +3139,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [81
+) [85
 
 
 ]
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
- [82
+ [86
 
 
 ]
@@ -2875,13 +3153,13 @@ LaTeX Info: Redefining \% on input line 117.
 
  (./secciones/apendicea.tex
 Ap\'{e}ndice A.
-) [83
+) [87
 
 
 ]
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
- [84
+ [88
 
 
 ]
@@ -2889,13 +3167,13 @@ LaTeX Info: Redefining \% on input line 119.
 
  (./secciones/apendiceb.tex
 Ap\'{e}ndice B.
-) [85
+) [89
 
 
 ]
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
- [86
+ [90
 
 
 ]
@@ -2903,13 +3181,13 @@ LaTeX Info: Redefining \% on input line 121.
 
  (./secciones/licencia.tex
 Ap\'{e}ndice C.
-) [87
+) [91
 
 
 ]
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
- [88
+ [92
 
 
 ]
@@ -2936,16 +3214,16 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Marginpar on page 89 moved.
+LaTeX Warning: Marginpar on page 93 moved.
 
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-[89
+[93
 
 ]
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [90
+ [94
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -2965,31 +3243,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  wi-ki-pe-dia
  []
 
-) [91]
+) [95]
 LaTeX Info: Redefining \. on input line 129.
 LaTeX Info: Redefining \% on input line 129.
- [92
+ [96
 
 
 ]
 
-LaTeX Warning: Marginpar on page 93 moved.
+LaTeX Warning: Marginpar on page 97 moved.
 
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
-[93]
+[97]
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
- [94
+ [98
 
 ] (./traballo.tdo)
 \tf@tdo=\write8
 \openout8 = `traballo.tdo'.
 
- [95]
+ [99]
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
- [96
+ [100
 
 ] (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
@@ -3007,10 +3285,10 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
 (./secciones/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 40251 strings out of 492995
- 861494 string characters out of 6136403
- 896233 words of memory out of 5000000
- 43135 multiletter control sequences out of 15000+600000
+ 40243 strings out of 492995
+ 861308 string characters out of 6136403
+ 896085 words of memory out of 5000000
+ 43127 multiletter control sequences out of 15000+600000
  54220 words of font info for 97 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  146i,26n,180p,10403b,5213s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3031,10 +3309,10 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
 sfonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/eurosym/fey
 br10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb><c:
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (108 pages, 534375 bytes).
+Output written on traballo.pdf (112 pages, 543672 bytes).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
+ 488 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
