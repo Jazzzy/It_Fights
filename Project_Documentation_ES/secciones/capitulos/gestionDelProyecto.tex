@@ -645,6 +645,11 @@ En la Figura \ref{edt} se muestran las tareas que se han realizado. Para su obte
 		}
 	}
 [TFG
+	[Finalización
+		[Impresión de la memoria]
+		[Entrega final]
+	]
+	[Reuniones periódicas]
 	[Documentación
 		[Elaboración de memoria]
 		[Comentarios en el código]
@@ -705,10 +710,232 @@ En la Figura \ref{edt} se muestran las tareas que se han realizado. Para su obte
 
 \clearpage
 
+Para facilitar la comprensión de la planificación en su conjunto se muestra en la figura \ref{plan:general} el cronograma con las tareas de primer nivel solamente ya que mostrarlo completo no es posible en este formato de documento. Dedicaremos los siguientes subapartados del documento a explicar con detenimiento los grupos de tareas que en la figura \ref{plan:general} aparecen replegados mostrando su cronograma asociado.
+
+\begin{figure}
+	\centerline{\includegraphics[width=19cm]{otros/capturasPlanificacion/general.PNG}}
+	\caption{Cronograma general del proyecto}
+	\label{plan:general}
+\end{figure}
+
+\subsection{Planificación del videojuego}
+
+\begin{figure}
+	\centerline{\includegraphics[width=19cm]{otros/capturasPlanificacion/videojuego.PNG}}
+	\caption{Cronograma de la parte del videojuego}
+	\label{plan:videojuego}
+\end{figure}
+
+En la figura \ref{plan:videojuego} se puede observar un desglose de las tareas correspondientes a la creación del videojuego en todos los sentidos. Se comienza por una etapa de análisis en la que se intenta diseminar cuales son las \textbf{mecánicas} que se necesitarán implementar para dar una experiencia jugable lo suficientemente buena para luego centrarse en descubrir que \textbf{requisitos} puede que necesite la aplicación para acomodar al agente que luego se añadirá.
+
+\bigskip
+
+Seguido de esto se encuentra el apartado que forzó a rehacer parte de la planificación y que se relaciona estrechamente con el riesgo RSK-9 (Imposibilidad de realizar simulaciones aceleradas). Fue durante la ejecución de la tarea de \textbf{pruebas} en la cual se descubrió que la \textbf{implementación} con la tecnología anterior no podía cumplir los requisitos del proyecto.
+
+\bigskip
+
+La acción correctiva AC-1 para el riesgo RSK-9 hizo que fuera necesario agregar tareas de \textbf{diseño de componentes} y \textbf{diseño de arquitectura del motor} a la ya existente tarea de \textbf{diseño de \textit{assets}}. Una vez terminada esta etapa de diseno se procede a la implementación de acuerdo con lo definido en la etapa anterior, esta etapa contiene la tarea más larga del proyecto al ser necesario \textbf{implementar los componentes} del motor desde cero, además de crear la \textbf{interfaz con el agente} y realizar la \textbf{creación de \textit{assets}} que implicaría dibujar las animaciones, generar los sonidos, etc.
+
+\bigskip
+
+Finalmente se realizan una serie de tareas dedicadas a pruebas en las que se comprueba el correcto funcionamiento de la posible interfaz con el futuro agente y las mecánicas generales del juego cuando aún no se ha añadido dicho agente.
+
+
+\subsection{Planificación del agente}
+
+\begin{figure}
+	\centerline{\includegraphics[width=19cm]{otros/capturasPlanificacion/agente.PNG}}
+	\caption{Cronograma de la parte del agente}
+	\label{plan:agente}
+\end{figure}
+
+Se dedica ahora este apartado a explicar la figura \ref{plan:agente} que contiene la planificación asociada a todas las etapas que contienen las tareas que darán lugar al agente final. Es importante comentar que la duración de esta etapa había sido planificada de forma que era significativamente más larga. Sin embargo, la AC-1 hizo que se alargada más de lo inicialmente esperado la etapa dedicada al videojuego y redujo el tiempo disponible para el agente.
+
+
+\bigskip
+
+Se comienza, como era de esperar, por una etapa de \textbf{análisis} que nos ayudaría a obtener la información necesaria sobre lo que necesitaríamos para realizar una buena implementación, ya sea en forma de requisitos, riesgos que se deben considerar, etc. Primero se analizan las \textbf{necesidades de nuestro agente} dependiendo del juego para juego investigar el \textbf{estado del arte} para ver que información nos puede ser útil.
+
+\bigskip
+
+Dentro de las etapas de \textbf{diseño e implementación} se incorporan tareas dedicadas a definir e implementar tanto una \textbf{interfaz con el videojuego} creado como los \textbf{componentes} necesarios para que el agente funcione. Luego de estas dos etapas se realiza una \textbf{integración con el videojuego}.
+
+\bigskip
+
+Una vez que la aplicación está integrada se necesita hacer una serie de \textbf{pruebas} sobre dicha \textbf{integración} para ver que ambas interfaces cumplen su función. Además de eso, para comprobar el buen funcionamiento del agente se realizan una serie de pruebas \textbf{unitarias} sobre el mismo. Una vez superadas las pruebas se puede proceder a \textbf{entregar} al agente mediante la iteración de simulaciones que permite la aplicación.
+
+
+\subsection{Planificación de la obtención de datos}
+
+\begin{figure}
+	\centerline{\includegraphics[width=19cm]{otros/capturasPlanificacion/obtencion_de_datos.PNG}}
+	\caption{Cronograma de la parte de obtención de datos}
+	\label{plan:datos}
+\end{figure}
+
+
+Esta pequeña sección contiene explica las tareas presentes en la figura \ref{plan:datos}. La primera tarea consiste en \textbf{probar al agente} una vez realizadas las tareas de aprendizaje. Para este fin se usa una implementación basada en reglas creada por el desarrollador y utilizando su conocimiento experto en el videojuego para comprobar como el agente es capaz de comportarse.
+
+Se obtendrán datos sobre como se comporta con distintos niveles de entrenamiento y realizando diferente número de simulaciones, contra el mismo y contra el enemigo basado en reglas. Finalmente, los datos obtenidos se procesarán en la tarea de \textbf{análisis de datos}.
+
+
+\subsection{Planificación de la documentación, reuniones y finalización}
+
+\begin{figure}
+	\centerline{\includegraphics[width=19cm]{otros/capturasPlanificacion/documentacion_reuniones_final.PNG}}
+	\caption{Cronograma de la parte de documentación, reuniones y finalización}
+	\label{plan:fin}
+\end{figure}
+
+Por último, en este apartado se pueden ver las tareas de primer nivel dedicadas a la \textbf{documentación}, las\textbf{reuniones} y la \textbf{finalización} del proyecto.
+
+\bigskip
+
+Sobre la documentación hay que comentar que tanto la tarea de \textbf{comentarios en el código} como la de \textbf{elaboración de la memoria} se ha introducido una duración nula pues se han llevado a cabo con todas las otras tareas del proyecto. Esta es la razón por la cual se ha introducido la tarea de documentación en si misma como una tarea \textit{hamaca} de todo el proyecto\footnote{Una tarea hamaca es aquella cuya duración depende de cuando empiezan y terminan otras tareas del proyecto.}. Si se introdujera una duración específica se estaría duplicando el trabajo en la planificación pues esas horas ya se han tenido en cuenta en las otras tareas del proyecto.
+
+\bigskip
+
+En lo que a las \textbf{reuniones periódicas} se refiere, se ha agregado una tarea recursiva que indica cuando se realizaron las reuniones con los tutores. Su duración, de un modo similar a las tareas de documentación, es nula porque el tiempo empleado se tiene en cuenta en las otras tareas. Si se le fuera a asociar una duración se tendría que hacer en términos de horas pues no se dedicaba todo un día a realizar una reunión. Utilizar horas en lugar de días suele ser un síntoma de haber desgranado las tareas demasiado y se considera mala práctica por cierta parte de la comunidad de gestión de proyectos.
+
+\bigskip
+
+Finalmente se agregan las tareas relacionadas con la \textbf{finalización} del proyecto, marcando un hito para dicha finalización, dedicando un día a \textbf{imprimir y comprobar la memoria} y dejando el último día como hito para realizar la \textbf{entrega final}.
+
+
 
 \section{Análisis de costes}
 
-\todo{Completar la estimación de costes}
+Este apartado estará dedicado a realizar un análisis de los costes asociados al proyecto con el objetivo de generar un presupuesto que nos permita controlar los gastos. Los tipos de costes que se considerarán son los siguientes:
+
+\begin{itemize}
+	\item \textbf{Directos}: Los que de identifican claramente como costes definidos para el proyecto, un buen ejemplo es la compra de software o el pago por horas trabajadas.
+	\item \textbf{Indirectos}: El PMBOK\cite{pmbok} ayuda a identificar los costes indirectos como aquellos que no se pueden asignar de forma directa a un proyecto concreto. Por esta razón se acumulan y distribuyen equitativamente entre diferentes proyectos mediante un procedimiento específico.
+\end{itemize}
+
+Pese a que el proyecto sea realizado en un ámbito académico por solamente un alumno no se debe restar importancia a este apartado ya que una buena gestión de costes es vital para que un proyecto salga adelante. Un buen ejemplo nos lo da el Chaos Report\cite{chaos} que indica que recientemente el 50.7\% de los proyectos de software cuestan una media del 189\% más de lo esperado y que el 31.1\% de todos los proyectos se cancelarán antes de ser completados. Otro dato preocupante es el que indica que solo el 15.5\% de la totalidad de proyectos evaluados está por debajo de un 20\% de coste adicional.
+
+\bigskip
+
+Continuando ahora con el análisis de costes directos se ve que, al haber priorizado la utilización de software libre o versiones de prueba, los elementos a tener en cuenta son muy reducidos.
+
+\bigskip 
+
+El más importante de los mismos es el salario del desarrollador para lo cual se ha investigado el valor medio pagado a un analista programador en Galicia. Dicha información se ha obtenido de un estudio salarial realizado por la consultoría Vitae\cite{vitae}  del cual se obtiene que el valor medio para un analista-programador junior de C++ es de 16000\euro{} brutos anuales. A raíz de datos que se nos han proporcionado durante los estudios en la asignatura de Gestión de Proyectos obtenemos que los impuestos suman los siguientes porcentajes: 
+
+\begin{itemize}
+	\item 5.5\% de Seguridad Social
+	\item 23.6\% de Contingencias Comunes
+	\item 0.2\% de FOGASA
+	\item 0.7\% de Formación Profesional
+\end{itemize}
+
+Lo que corresponde a un incremento total del 30\% sobre el salario bruto que genera en la tabla \ref{tab:salario} con los valores que nos llevan al coste/hora final.
+
+\begin{table}
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			\textbf{Bruto anual} & \textbf{Impuestos} & \textbf{Total anual} & \textbf{Total mensual} & \textbf{Coste/hora} \\
+			
+			\hline
+			16000\euro{}& 4800\euro{} & 20800\euro{} & 1486\euro{} & 9.30\euro{} \\
+			
+			\hline
+		\end{tabular}
+		\caption{Tabla de salario del desarrollador}
+		\label{tab:salario}
+\end{table}
+
+\bigskip
+
+Otro de los costes directos a considerar será el precio de impresión de la memoria y los materiales necesarios para crear el proyecto en formato CD. Teniendo en cuenta una longitud cercana a las 150 páginas y el precio de la grabación del CD se agregarán 100\euro{} en concepto de ambos aspectos.
+
+\bigskip
+
+Considerando ahora los costes indirectos agregaremos el coste de amortización relacionado al equipo de desarrollo utilizado. El MacBook Pro utilizado costó en su día 2923,36\euro{} y se le estimará una vida media de unos 5 años (60 meses). Dado que el proyecto se extendió aproximadamente 3 meses obtenemos los datos de la tabla \ref{tab:mac}.
+
+\begin{table}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Meses de vida} & \textbf{Meses de utilización} & \textbf{Coste total} & \textbf{Coste en el proyecto}\\
+		
+		\hline
+		60{}& 4{} & 2923,36\euro{} & 194.90\euro{} \\
+		
+		\hline
+	\end{tabular}
+	\caption{Tabla de costes de amortización del equipo}
+	\label{tab:mac}
+\end{table}
+
+\bigskip
+
+Finalmente sumaremos un 10\% al sobre el coste del proyecto en concepto de gastos en servicios como electricidad, agua, internet, etc. Teniendo en cuenta el pago final\footnote{Considerando 14 pagas, 20 días laborales al mes con 8 horas de trabajo al día.} al desarrollador con el resto de gastos directos e indirectos se obtienen los datos de la tabla \ref{tab:coste_final}.
+
+
+\begin{table}
+	\begin{center}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Elemento} & \textbf{Coste (\euro{})}\\
+		
+		\hline
+		Analista programador C++ & 3952.50 \\
+		\hline
+		Amortización del equipo & 194.90 \\
+		
+		\hline
+		Xcode 9& 0 \\
+		
+		\hline
+		Unity 5& 0 \\
+		
+		\hline
+		Clang 4& 0 \\
+		
+		\hline
+		Audacity 2.1.3 & 0\\
+		
+		\hline
+		StarUML 2& 0 \\
+		
+		\hline
+		Atom 1.19& 0 \\
+		
+		\hline
+		Microsoft Project 2013& 0 \\
+		
+		\hline
+		TeXstudio& 0\\
+		
+		\hline
+		Impresión memoria + CD & 100 \\
+		
+		\hline
+		GraphicsGale 2.06& 0 \\
+		
+		\hline
+		Dropbox& 0 \\
+		
+		\hline
+		Google Drive& 0 \\
+		
+		\hline
+		Git \& GitHub& 0 \\
+		
+		\hline
+		Costes indirectos& 10\% (424.74) \\
+		
+		\hline
+		\textbf{TOTAL: } & 4672.14 \\
+		
+		\hline
+	\end{tabular}
+	\caption{Tabla de costes finales}
+	\label{tab:coste_final}
+	\end{center}
+\end{table}
+
+\clearpage
 
 \section{Plan de Gestión de las Comunicaciones}
 

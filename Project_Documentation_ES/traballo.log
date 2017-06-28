@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,6 +837,30 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/charter.sty
 Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
 )
+(c:/texlive/2017/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks40
+\AP@partial=\box47
+\AP@footins=\box48
+)
+
+! LaTeX Error: Option clash for package eurosym.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 
+     
+The package eurosym has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [gen]
+Adding the global options:
+  ,gen
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
 (c:/texlive/2017/texmf-dist/tex/latex/forest/forest.sty
 Package: forest 2017/02/02 v2.1.4 Drawing (linguistic) trees
 
@@ -891,26 +915,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 ultipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box47
-\pgfnodeparttwobox=\box48
-\pgfnodepartthreebox=\box49
-\pgfnodepartfourbox=\box50
-\pgfnodeparttwentybox=\box51
-\pgfnodepartnineteenbox=\box52
-\pgfnodeparteighteenbox=\box53
-\pgfnodepartseventeenbox=\box54
-\pgfnodepartsixteenbox=\box55
-\pgfnodepartfifteenbox=\box56
-\pgfnodepartfourteenbox=\box57
-\pgfnodepartthirteenbox=\box58
-\pgfnodeparttwelvebox=\box59
-\pgfnodepartelevenbox=\box60
-\pgfnodeparttenbox=\box61
-\pgfnodepartninebox=\box62
-\pgfnodeparteightbox=\box63
-\pgfnodepartsevenbox=\box64
-\pgfnodepartsixbox=\box65
-\pgfnodepartfivebox=\box66
+\pgfnodepartlowerbox=\box49
+\pgfnodeparttwobox=\box50
+\pgfnodepartthreebox=\box51
+\pgfnodepartfourbox=\box52
+\pgfnodeparttwentybox=\box53
+\pgfnodepartnineteenbox=\box54
+\pgfnodeparteighteenbox=\box55
+\pgfnodepartseventeenbox=\box56
+\pgfnodepartsixteenbox=\box57
+\pgfnodepartfifteenbox=\box58
+\pgfnodepartfourteenbox=\box59
+\pgfnodepartthirteenbox=\box60
+\pgfnodeparttwelvebox=\box61
+\pgfnodepartelevenbox=\box62
+\pgfnodeparttenbox=\box63
+\pgfnodepartninebox=\box64
+\pgfnodeparteightbox=\box65
+\pgfnodepartsevenbox=\box66
+\pgfnodepartsixbox=\box67
+\pgfnodepartfivebox=\box68
 )))
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 braryfit.code.tex
@@ -927,8 +951,8 @@ ode.tex
 )
 (c:/texlive/2017/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks40
-\pgfopts@list@add@b@toks=\toks41
+\pgfopts@list@add@a@toks=\toks41
+\pgfopts@list@add@b@toks=\toks42
 )
 (c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
@@ -943,7 +967,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (c:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks42
+\@envbody=\toks43
 )
 (c:/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -1004,11 +1028,11 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 \l__sort_A_int=\count169
 \l__sort_B_int=\count170
 \l__sort_C_int=\count171
-\c_empty_box=\box67
-\l_tmpa_box=\box68
-\l_tmpb_box=\box69
-\g_tmpa_box=\box70
-\g_tmpb_box=\box71
+\c_empty_box=\box69
+\l_tmpa_box=\box70
+\l_tmpb_box=\box71
+\g_tmpa_box=\box72
+\g_tmpb_box=\box73
 \l__box_top_dim=\dimen183
 \l__box_bottom_dim=\dimen184
 \l__box_left_dim=\dimen185
@@ -1017,8 +1041,8 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 \l__box_bottom_new_dim=\dimen188
 \l__box_left_new_dim=\dimen189
 \l__box_right_new_dim=\dimen190
-\l__box_internal_box=\box72
-\l__coffin_internal_box=\box73
+\l__box_internal_box=\box74
+\l__coffin_internal_box=\box75
 \l__coffin_internal_dim=\dimen191
 \l__coffin_offset_x_dim=\dimen192
 \l__coffin_offset_y_dim=\dimen193
@@ -1026,14 +1050,14 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 \l__coffin_y_dim=\dimen195
 \l__coffin_x_prime_dim=\dimen196
 \l__coffin_y_prime_dim=\dimen197
-\c_empty_coffin=\box74
-\l__coffin_aligned_coffin=\box75
-\l__coffin_aligned_internal_coffin=\box76
-\l_tmpa_coffin=\box77
-\l_tmpb_coffin=\box78
-\l__coffin_display_coffin=\box79
-\l__coffin_display_coord_coffin=\box80
-\l__coffin_display_pole_coffin=\box81
+\c_empty_coffin=\box76
+\l__coffin_aligned_coffin=\box77
+\l__coffin_aligned_internal_coffin=\box78
+\l_tmpa_coffin=\box79
+\l_tmpb_coffin=\box80
+\l__coffin_display_coffin=\box81
+\l__coffin_display_coord_coffin=\box82
+\l__coffin_display_pole_coffin=\box83
 \l__coffin_display_offset_dim=\dimen198
 \l__coffin_display_x_dim=\dimen199
 \l__coffin_display_y_dim=\dimen256
@@ -1048,7 +1072,7 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 (c:/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count172
-\l__driver_tmp_box=\box82
+\l__driver_tmp_box=\box84
 ))
 Package: xparse 2017/05/13 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count173
@@ -1059,10 +1083,10 @@ Package: xparse 2017/05/13 L3 Experimental document command parser
 )
 (c:/texlive/2017/texmf-dist/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
-\ID@toks=\toks43
+\ID@toks=\toks44
 \ID@count=\count178
 )
-\ID@usercommands=\toks44
+\ID@usercommands=\toks45
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1079,7 +1103,7 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@temp@count=\count181
 \forest@n=\count182
 \forest@temp@global@count=\count183
-\forest@temp@toks=\toks45
+\forest@temp@toks=\toks46
 \forest@temparray@M=\count184
 \forest@temparray@N=\count185
 \forest@global@temparray@M=\count186
@@ -1090,8 +1114,8 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@sort@m=\count190
 \forest@sort@k=\count191
 \forest@sort@p=\count192
-\bracket@content=\toks46
-\bracket@afterthought=\toks47
+\bracket@content=\toks47
+\bracket@afterthought=\toks48
 \forest@node@maxid=\count193
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1113,18 +1137,18 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@process@result@M=\count266
 \forest@process@result@N=\count267
 \forest@process@n=\count268
-\forest@nodewalk@branch@toks=\toks48
-\forest@nodewalk@shortsteps@resolution=\toks49
-\forest@do@dynamics=\toks50
-\forest@box=\box83
+\forest@nodewalk@branch@toks=\toks49
+\forest@nodewalk@shortsteps@resolution=\toks50
+\forest@do@dynamics=\toks51
+\forest@box=\box85
 \forest@xg=\dimen266
 \forest@yg=\dimen267
 \forest@xs=\dimen268
 \forest@ys=\dimen269
-\forest@pi@toks=\toks51
-\forest@segment@toks=\toks52
-\forest@PIi@toks=\toks53
-\forest@PIii@toks=\toks54
+\forest@pi@toks=\toks52
+\forest@segment@toks=\toks53
+\forest@PIi@toks=\toks54
+\forest@PIii@toks=\toks55
 \forest@copy@in=\read2
 \forest@copy@out=\write4
 .................................................
@@ -1180,39 +1204,39 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/bibliografia.aux))
 \openout1 = `traballo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Try loading font information for OT1+bch on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Try loading font information for OT1+bch on input line 62.
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 )
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
 
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count271
 \scratchdimen=\dimen274
-\scratchbox=\box84
+\scratchbox=\box86
 \nofMPsegments=\count272
 \nofMParguments=\count273
-\everyMPshowfont=\toks55
+\everyMPshowfont=\toks56
 \MPscratchCnt=\count274
 \MPscratchDim=\dimen275
 \MPnumerator=\count275
 \makeMPintoPDFobject=\count276
-\everyMPtoPDFconversion=\toks56
+\everyMPtoPDFconversion=\toks57
 ) (c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1402,11 +1426,11 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 59--59
  []
 
 )
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
  [3]
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
  [4
 
 
@@ -1419,8 +1443,8 @@ Cap\'{\i }tulo 2.
 
 
 ]
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
  [6
 
 
@@ -1462,263 +1486,243 @@ LaTeX Info: Redefining \% on input line 347.
  [13]
 \c@contador_requisitos_de_informacion=\count279
 
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (25.82617pt too wide) in paragraph at lines 354--398
+Overfull \hbox (25.82617pt too wide) in paragraph at lines 353--397
  [] 
  []
 
 
-Overfull \hbox (25.82617pt too wide) in paragraph at lines 401--439
+Overfull \hbox (25.82617pt too wide) in paragraph at lines 400--438
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 439.
-LaTeX Info: Redefining \% on input line 439.
+LaTeX Info: Redefining \. on input line 438.
+LaTeX Info: Redefining \% on input line 438.
 [14]
 \c@contador_requisitos_funcionales=\count280
 
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 452--510
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 451--509
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 510.
-LaTeX Info: Redefining \% on input line 510.
+LaTeX Info: Redefining \. on input line 509.
+LaTeX Info: Redefining \% on input line 509.
  [15]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 513--561
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 512--560
  [] 
  []
 
 
-Underfull \vbox (badness 3098) has occurred while \output is active []
+Underfull \vbox (badness 2799) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 561.
-LaTeX Info: Redefining \% on input line 561.
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
  [16]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 565--612
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 564--611
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 612.
-LaTeX Info: Redefining \% on input line 612.
+LaTeX Info: Redefining \. on input line 611.
+LaTeX Info: Redefining \% on input line 611.
  [17]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 615--660
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 614--659
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 660.
-LaTeX Info: Redefining \% on input line 660.
+LaTeX Info: Redefining \. on input line 659.
+LaTeX Info: Redefining \% on input line 659.
  [18]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 663--709
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 662--708
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 709.
-LaTeX Info: Redefining \% on input line 709.
+LaTeX Info: Redefining \. on input line 708.
+LaTeX Info: Redefining \% on input line 708.
  [19]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 712--757
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 711--756
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 757.
-LaTeX Info: Redefining \% on input line 757.
+LaTeX Info: Redefining \. on input line 756.
+LaTeX Info: Redefining \% on input line 756.
  [20]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 760--806
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 759--805
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 806.
-LaTeX Info: Redefining \% on input line 806.
+LaTeX Info: Redefining \. on input line 805.
+LaTeX Info: Redefining \% on input line 805.
  [21]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 809--862
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 808--861
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 862.
-LaTeX Info: Redefining \% on input line 862.
+LaTeX Info: Redefining \. on input line 861.
+LaTeX Info: Redefining \% on input line 861.
  [22]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 865--918
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 864--917
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 918.
-LaTeX Info: Redefining \% on input line 918.
+LaTeX Info: Redefining \. on input line 917.
+LaTeX Info: Redefining \% on input line 917.
  [23]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 921--966
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 920--965
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 966.
-LaTeX Info: Redefining \% on input line 966.
+LaTeX Info: Redefining \. on input line 965.
+LaTeX Info: Redefining \% on input line 965.
  [24]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 969--1014
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 968--1013
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1014.
-LaTeX Info: Redefining \% on input line 1014.
+LaTeX Info: Redefining \. on input line 1013.
+LaTeX Info: Redefining \% on input line 1013.
  [25]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1017--1062
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1016--1061
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1062.
-LaTeX Info: Redefining \% on input line 1062.
+LaTeX Info: Redefining \. on input line 1061.
+LaTeX Info: Redefining \% on input line 1061.
  [26]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1065--1112
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1064--1111
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1112.
-LaTeX Info: Redefining \% on input line 1112.
+LaTeX Info: Redefining \. on input line 1111.
+LaTeX Info: Redefining \% on input line 1111.
  [27]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1115--1160
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1114--1159
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1160.
-LaTeX Info: Redefining \% on input line 1160.
+LaTeX Info: Redefining \. on input line 1159.
+LaTeX Info: Redefining \% on input line 1159.
  [28]
-Underfull \hbox (badness 6396) in paragraph at lines 1197--1197
+Underfull \hbox (badness 6396) in paragraph at lines 1196--1196
 []|\OT1/bch/b/n/12 Excepciones se-cuen-cia
  []
 
 
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1163--1218
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1162--1217
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1218.
-LaTeX Info: Redefining \% on input line 1218.
+LaTeX Info: Redefining \. on input line 1217.
+LaTeX Info: Redefining \% on input line 1217.
  [29]
-LaTeX Info: Redefining \. on input line 1220.
-LaTeX Info: Redefining \% on input line 1220.
+LaTeX Info: Redefining \. on input line 1219.
+LaTeX Info: Redefining \% on input line 1219.
 
 [30]
 \c@contador_requisitos_no_funcionales=\count281
 
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1234--1258
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1233--1257
  [] 
  []
 
 
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1262--1286
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1261--1285
  [] 
  []
 
 
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1289--1313
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1288--1312
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 1313.
-LaTeX Info: Redefining \% on input line 1313.
+LaTeX Info: Redefining \. on input line 1312.
+LaTeX Info: Redefining \% on input line 1312.
 [31
 
 ]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1316--1340
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1315--1339
  [] 
  []
 
 
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1343--1367
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1342--1366
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1367.
-LaTeX Info: Redefining \% on input line 1367.
+LaTeX Info: Redefining \. on input line 1366.
+LaTeX Info: Redefining \% on input line 1366.
  [32]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1371--1395
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1370--1394
  [] 
  []
 
 
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1398--1422
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1397--1421
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1422.
-LaTeX Info: Redefining \% on input line 1422.
+LaTeX Info: Redefining \. on input line 1421.
+LaTeX Info: Redefining \% on input line 1421.
  [33]
-Overfull \hbox (31.51663pt too wide) in paragraph at lines 1425--1449
+Overfull \hbox (31.51663pt too wide) in paragraph at lines 1424--1448
  [] 
  []
 
 )
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
  [34]
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
  [35]
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
  [36
 
 
@@ -2352,56 +2356,150 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
-LaTeX Info: Redefining \. on input line 706.
-LaTeX Info: Redefining \% on input line 706.
- [55]
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+
+
+LaTeX Warning: Float too large for page by 397.38226pt on input line 708.
+
+LaTeX Info: Redefining \. on input line 711.
+LaTeX Info: Redefining \% on input line 711.
+[55]
+<otros/capturasPlanificacion/general.PNG, id=260, 806.26219pt x 158.84344pt>
+File: otros/capturasPlanificacion/general.PNG Graphic file (type png)
+
+<use otros/capturasPlanificacion/general.PNG>
+Package pdftex.def Info: otros/capturasPlanificacion/general.PNG used on input 
+line 716.
+(pdftex.def)             Requested size: 540.60236pt x 106.50453pt.
+
+<otros/capturasPlanificacion/videojuego.PNG, id=261, 703.87968pt x 469.755pt>
+File: otros/capturasPlanificacion/videojuego.PNG Graphic file (type png)
+
+<use otros/capturasPlanificacion/videojuego.PNG>
+Package pdftex.def Info: otros/capturasPlanificacion/videojuego.PNG used on inp
+ut line 724.
+(pdftex.def)             Requested size: 540.60236pt x 360.78781pt.
+LaTeX Info: Redefining \. on input line 742.
+LaTeX Info: Redefining \% on input line 742.
+ [56
+
+
+ <./otros/capturasPlanificacion/general.PNG>]
+LaTeX Info: Redefining \. on input line 742.
+LaTeX Info: Redefining \% on input line 742.
+ [57 <./otros/capturasPlanificacion/videojuego.PNG>]
+<otros/capturasPlanificacion/agente.PNG, id=270, 589.4522pt x 307.90031pt>
+File: otros/capturasPlanificacion/agente.PNG Graphic file (type png)
+
+<use otros/capturasPlanificacion/agente.PNG>
+Package pdftex.def Info: otros/capturasPlanificacion/agente.PNG used on input l
+ine 747.
+(pdftex.def)             Requested size: 540.60236pt x 282.38846pt.
+LaTeX Info: Redefining \. on input line 762.
+LaTeX Info: Redefining \% on input line 762.
+ [58 <./otros/capturasPlanificacion/agente.PNG>]
+<otros/capturasPlanificacion/obtencion_de_datos.PNG, id=275, 606.76688pt x 97.8
+6563pt>
+File: otros/capturasPlanificacion/obtencion_de_datos.PNG Graphic file (type png
+)
+ <use otros/capturasPlanificacion/obtencion_de_datos.PNG>
+Package pdftex.def Info: otros/capturasPlanificacion/obtencion_de_datos.PNG use
+d on input line 771.
+(pdftex.def)             Requested size: 540.60236pt x 87.19568pt.
+
+<otros/capturasPlanificacion/documentacion_reuniones_final.PNG, id=276, 861.970
+3pt x 322.95656pt>
+File: otros/capturasPlanificacion/documentacion_reuniones_final.PNG Graphic fil
+e (type png)
+
+<use otros/capturasPlanificacion/documentacion_reuniones_final.PNG>
+Package pdftex.def Info: otros/capturasPlanificacion/documentacion_reuniones_fi
+nal.PNG used on input line 785.
+(pdftex.def)             Requested size: 540.60236pt x 202.55203pt.
+LaTeX Info: Redefining \. on input line 795.
+LaTeX Info: Redefining \% on input line 795.
+ [59 <./otros/capturasPlanificacion/obtencion_de_datos.PNG>]
+LaTeX Info: Redefining \. on input line 812.
+LaTeX Info: Redefining \% on input line 812.
+ [60 <./otros/capturasPlanificacion/documentacion_reuniones_final.PNG>]
+LaTeX Info: Redefining \. on input line 855.
+LaTeX Info: Redefining \% on input line 855.
+ [61]
+Overfull \hbox (1.36087pt too wide) in paragraph at lines 857--866
+[][] 
+ []
+
+LaTeX Font Info:    Font shape `U/eurosym/b/n' in size <12> not available
+(Font)              Font shape `U/eurosym/bx/n' tried instead on input line 879
+.
+LaTeX Info: Redefining \. on input line 938.
+LaTeX Info: Redefining \% on input line 938.
+[62]
+LaTeX Info: Redefining \. on input line 938.
+LaTeX Info: Redefining \% on input line 938.
+ [63]
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 942--942
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 942--942
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 942--942
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 942--942
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
 )
-
-LaTeX Warning: Marginpar on page 56 moved.
-
-LaTeX Info: Redefining \. on input line 91.
-LaTeX Info: Redefining \% on input line 91.
-[56
-
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+ [64
 
 ]
 \openout2 = `secciones/capitulos/arquitecturaYHerramientas.aux'.
@@ -2450,17 +2548,17 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
 
 )
 
-LaTeX Warning: Marginpar on page 57 moved.
+LaTeX Warning: Marginpar on page 65 moved.
 
-[57
+[65
 
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [58
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [66
 
 
 ]
@@ -2494,13 +2592,13 @@ Overfull \hbox (51.86952pt too wide) in paragraph at lines 6--7
 om/questions/4157/what-
  []
 
-) [59
+) [67
 
 
 ]
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
- [60
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+ [68
 
 
 ]
@@ -2528,13 +2626,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [61
+) [69
 
 
 ]
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
- [62
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [70
 
 
 ]
@@ -2562,31 +2660,31 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [63
+) [71
 
 
 ]
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
- [64
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [72
 
 
 ]
 
-LaTeX Warning: Marginpar on page 65 moved.
+LaTeX Warning: Marginpar on page 73 moved.
 
-[65]
+[73]
 \openout2 = `secciones/ejemplos.aux'.
 
  (./secciones/ejemplos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [66
+ [74
 
 
 ]
 Cap\'{\i }tulo 9.
-[67]
+[75]
 Package epstopdf Info: Source file: <figuras/figura01.eps>
 (epstopdf)                    date: 2017-06-08 19:32:58
 (epstopdf)                    size: 212824 bytes
@@ -2597,7 +2695,7 @@ Package epstopdf Info: Source file: <figuras/figura01.eps>
 rted-to.pdf figuras/figura01.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
- <figuras/figura01-eps-converted-to.pdf, id=303, 1060.96375pt x 513.92pt>
+ <figuras/figura01-eps-converted-to.pdf, id=340, 1060.96375pt x 513.92pt>
 File: figuras/figura01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/figura01-eps-converted-to.pdf>
@@ -2606,7 +2704,7 @@ ne 30.
 (pdftex.def)             Requested size: 426.79134pt x 206.73277pt.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
- [68 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
+ [76 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
 /latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -2631,12 +2729,12 @@ Overfull \hbox (63.26607pt too wide) in paragraph at lines 97--98
  []
 
 )
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
- [69]
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
- [70
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+ [77]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [78
 
 
 ]
@@ -2664,13 +2762,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [71
+) [79
 
 
 ]
-LaTeX Info: Redefining \. on input line 113.
-LaTeX Info: Redefining \% on input line 113.
- [72
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+ [80
 
 
 ]
@@ -2678,13 +2776,13 @@ LaTeX Info: Redefining \% on input line 113.
 
  (./secciones/apendicea.tex
 Ap\'{e}ndice A.
-) [73
+) [81
 
 
 ]
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
- [74
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
+ [82
 
 
 ]
@@ -2692,13 +2790,13 @@ LaTeX Info: Redefining \% on input line 115.
 
  (./secciones/apendiceb.tex
 Ap\'{e}ndice B.
-) [75
+) [83
 
 
 ]
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
- [76
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+ [84
 
 
 ]
@@ -2706,13 +2804,13 @@ LaTeX Info: Redefining \% on input line 117.
 
  (./secciones/licencia.tex
 Ap\'{e}ndice C.
-) [77
+) [85
 
 
 ]
-LaTeX Info: Redefining \. on input line 119.
-LaTeX Info: Redefining \% on input line 119.
- [78
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
+ [86
 
 
 ]
@@ -2739,16 +2837,16 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Marginpar on page 79 moved.
+LaTeX Warning: Marginpar on page 87 moved.
 
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-[79
+[87
 
 ]
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [80
+ [88
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -2757,36 +2855,36 @@ re.org/ieee-1471/defining-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 []\OT1/bch/m/n/12 Acceso m[]ulti-ple por di-vi-si[]on de c[]odi-go. Ar-ti-go da
  wi-ki-pe-dia
  []
 
-) [81]
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
- [82
+) [89]
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [90
 
 
 ]
 
-LaTeX Warning: Marginpar on page 83 moved.
+LaTeX Warning: Marginpar on page 91 moved.
 
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
-[83]
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
- [84
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+[91]
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [92
 
 ] (./traballo.tdo)
 \tf@tdo=\write8
 \openout8 = `traballo.tdo'.
 
- [85]
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
- [86
+ [93]
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [94
 
 ] (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
@@ -2802,35 +2900,40 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/capitulos/valoracionesFinales.aux) (./secciones/ejemplos.aux)
 (./secciones/conclusiones.aux) (./secciones/apendicea.aux)
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
-(./secciones/bibliografia.aux)) ) 
+(./secciones/bibliografia.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 39345 strings out of 492995
- 846549 string characters out of 6136403
- 878163 words of memory out of 5000000
- 42252 multiletter control sequences out of 15000+600000
- 52055 words of font info for 93 fonts, out of 8000000 for 9000
+ 39771 strings out of 492995
+ 854734 string characters out of 6136403
+ 881373 words of memory out of 5000000
+ 42666 multiletter control sequences out of 15000+600000
+ 52289 words of font info for 95 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 146i,26n,180p,10403b,4909s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><
-c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb><c:/texlive
-/2017/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf
--dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts
-/type1/bitstrea/charter/bchri8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb>
-Output written on traballo.pdf (98 pages, 393973 bytes).
+ 146i,26n,180p,10403b,5227s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texm
+f-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><c:/texlive/2017/texmf-dist/font
+s/type1/bitstrea/charter/bchbi8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/bi
+tstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/char
+ter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchri8a
+.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texliv
+e/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb><c:/texlive/2017/texmf
+-dist/fonts/type1/public/eurosym/feymr10.pfb><c:/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msam10.pfb>
+Output written on traballo.pdf (106 pages, 527462 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
+ 468 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
