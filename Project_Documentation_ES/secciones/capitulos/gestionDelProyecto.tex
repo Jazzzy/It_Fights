@@ -450,10 +450,69 @@ Se dedicará este apartado a mostrar las especificaciones formales de los riesgo
 	\end{tabular}
 \end{center}
 
-\subsection{Registro de riesgos}
+\subsection{Control de riesgos}
 
-\todo{Completar el riesgo que ha ocurrido y las acciones tomadas, con todos los detalles necesarios incluidos.}
+Controlar los riesgos implica implementar los planes de respuesta incluidos en la sección de especificación así como dar seguimiento a los riesgos identificados, monitorizarlos, identificar riesgos nuevos y en general evaluar el proceso de gestión de riesgos que se está realizando. A términos de este proyecto se considerará principalmente en el proceso de ejecutar las respuestas a los riesgos planificados que se han incluido en el apartado de especificación ya que, dado el tamaño y tiempo que se debe dedicar al proyecto, se podría correr el riesgo de dedicar demasiado tiempo a procesos de gestión de riesgos comparado con el tiempo dedicado al proyecto en si mismo.
 
+\subsubsection{Acciones correctivas aplicadas}
+
+Este apartado incluirá todo tipo de acción que se ha llevado a cabo para gestionar un riesgo que se ha materializado. En este sentido se especificarán las circunstancias en las que se ha dado el riesgo, la probabilidad e impacto una vez gestionado el riesgo y aplicado el plan apropiado, una descripción de las acciones realizadas y el efecto que las mismas han tenido en el proyecto.
+
+
+\newcounter{contador_accion_correctiva}
+\setcounter{contador_accion_correctiva}{1}
+
+\begin{center}
+	\begin{longtable}{ | p{5.6cm} | p{8.5cm} | } 
+		
+		\caption{Acción correctiva sobre la imposibilidad de realizar simulaciones aceleradas}\\
+		
+		\hline
+		\textbf{ID} & AC-\arabic{contador_accion_correctiva}\label{tab:tabla_riesgo_escalado}
+		\refstepcounter{contador_accion_correctiva} \\
+		
+		
+		\hline 
+		\textbf{ID del riesgo} & RSK-9: Imposibilidad de realizar simulaciones aceleradas \\
+		
+		\hline 
+		\textbf{Nombre} &
+		Agente sin capacidad de aprendizaje\\ 
+		
+		\hline
+		\textbf{Descripción} &
+		\pbox{8.4cm}{ 
+			Al llevar a cabo el plan de prevención definido para este riesgo se descubrió que Unity, el motor elegido sobre el cual se desarrollaría la aplicación, no era capaz de escalar el tiempo de forma significativa sin que mecánicas básicas dentro del mismo dejaran de funcionar.\\\\El motor ofrece la funcionalidad de escalar el tiempo mediante el uso de la variable \textit{"Time.timeScale"} pero al intentar multiplicar la velocidad del tiempo interno del juego por valores relativamente pequeños como 20 o 30 las físicas del motor dejaban de funcionar correctamente. Para poner en contexto estos valores, en la implementación final realizada por el desarrollador el tiempo se escala por aproximadamente 600 veces sin que se modifique su funcionamiento en ningún sentido.
+		}
+		\\
+		
+		\hline
+		\textbf{Acción correctiva} &
+		\pbox{8.4cm}{ 
+			La acción correctiva coincide con el plan de contingencia definido en la especificación del riesgo. Esto implicaba considerar una reimplementación de la aplicación ya fuera con la misma u otra tecnología. Dado que el origen del problema parecía estar relacionado con el motor utilizado y no con la implementación en si misma se decidió buscar tecnologías alternativas.\\\\Al considerar otros motores se observó que este tipo de funcionalidades era aún mas inusual de lo que en un principio parecía y había muchas posibilidades de que ninguno fuera capaz de cumplir nuestras necesidades.\\\\Como no se podía correr el riesgo de utilizar tiempo en preparar otro prototipo y que no funcionara otra vez se decidió hacer una implementación del videojuego con C++ y el uso de librerías gráficas de forma que fuera posible desactivar la visualización de los combates y así conseguir que todo el código que se ejecuta en las simulaciones fuera realizado por nosotros, dándonos un nivel de control superior y permitiendo realizar las optimizaciones pertinentes.
+		}
+		\\
+		
+		\hline
+		\textbf{Efecto en el proyecto} &
+		\pbox{8.4cm}{ 
+			El impacto sobre el proyecto ha sido significativo pues la acción correctiva implica reconsiderar el alcance de algunos de los objetivos, principalmente los relacionados con la implementación de diversas técnicas de inteligencia artificial para comprobar su efectividad.\\\\Esto es debido a que el tiempo dedicado a implementar una aplicación de esta índole con un motor ampliamente usado por la comunidad y que aporta muchas facilidades es notablemente menor que el necesario para implementar en un lenguaje de programación como C++ un motor simple desde cero y agregar al mismo las funcionalidades necesarias.\\\\El plan de contingencia aplicado ha implicado no solo reconsiderar los requisitos hasta obtener los que se muestran en este documento, sino modificar la planificación temporal y agregar tareas relacionadas con el aprendizaje, diseño e implementación de la nueva aplicación como se muestra en los apartados correspondientes.
+		}
+		\\
+		
+		\hline 
+		\textbf{Nueva probabilidad de \mbox{ocurrencia}} &
+		Baja\\
+
+		\hline 
+		\textbf{Nuevo impacto} &
+		Alto\\
+		
+		\hline
+		
+
+	\end{longtable}
+\end{center}
 
 \section{Gestión de la configuración}
 
