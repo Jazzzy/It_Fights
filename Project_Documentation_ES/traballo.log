@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 11:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -819,8 +819,352 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rotFPbot=\skip54
 \rot@float@box=\box46
 \rot@mess@toks=\toks39
-) (./traballo.aux
-(./secciones/titulo.aux)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+
+(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
+(c:/texlive/2017/texmf-dist/tex/latex/psnfss/charter.sty
+Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
+)
+(c:/texlive/2017/texmf-dist/tex/latex/forest/forest.sty
+Package: forest 2017/02/02 v2.1.4 Drawing (linguistic) trees
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box47
+\pgfnodeparttwobox=\box48
+\pgfnodepartthreebox=\box49
+\pgfnodepartfourbox=\box50
+\pgfnodeparttwentybox=\box51
+\pgfnodepartnineteenbox=\box52
+\pgfnodeparteighteenbox=\box53
+\pgfnodepartseventeenbox=\box54
+\pgfnodepartsixteenbox=\box55
+\pgfnodepartfifteenbox=\box56
+\pgfnodepartfourteenbox=\box57
+\pgfnodepartthirteenbox=\box58
+\pgfnodeparttwelvebox=\box59
+\pgfnodepartelevenbox=\box60
+\pgfnodeparttenbox=\box61
+\pgfnodepartninebox=\box62
+\pgfnodeparteightbox=\box63
+\pgfnodepartsevenbox=\box64
+\pgfnodepartsixbox=\box65
+\pgfnodepartfivebox=\box66
+)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfit.code.tex
+File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.c
+ode.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+\pgf@intersect@solutions=\count135
+)
+(c:/texlive/2017/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks40
+\pgfopts@list@add@b@toks=\toks41
+)
+(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count136
+)
+(c:/texlive/2017/texmf-dist/tex/latex/elocalloc/elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks42
+)
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2017/05/13 L3 programming layer (loader) 
+
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2017/05/13 L3 programming layer (code)
+\c_max_int=\count137
+\l_tmpa_int=\count138
+\l_tmpb_int=\count139
+\g_tmpa_int=\count140
+\g_tmpb_int=\count141
+\g__prg_map_int=\count142
+\c_log_iow=\count143
+\l_iow_line_count_int=\count144
+\l__iow_line_target_int=\count145
+\l__iow_one_indent_int=\count146
+\l__iow_indent_int=\count147
+\c_zero_dim=\dimen177
+\c_max_dim=\dimen178
+\l_tmpa_dim=\dimen179
+\l_tmpb_dim=\dimen180
+\g_tmpa_dim=\dimen181
+\g_tmpb_dim=\dimen182
+\c_zero_skip=\skip55
+\c_max_skip=\skip56
+\l_tmpa_skip=\skip57
+\l_tmpb_skip=\skip58
+\g_tmpa_skip=\skip59
+\g_tmpb_skip=\skip60
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count148
+\c__fp_leading_shift_int=\count149
+\c__fp_middle_shift_int=\count150
+\c__fp_trailing_shift_int=\count151
+\c__fp_big_leading_shift_int=\count152
+\c__fp_big_middle_shift_int=\count153
+\c__fp_big_trailing_shift_int=\count154
+\c__fp_Bigg_leading_shift_int=\count155
+\c__fp_Bigg_middle_shift_int=\count156
+\c__fp_Bigg_trailing_shift_int=\count157
+\c__fp_rand_size_int=\count158
+\c__fp_rand_four_int=\count159
+\c__fp_rand_eight_int=\count160
+\l__sort_length_int=\count161
+\l__sort_min_int=\count162
+\l__sort_top_int=\count163
+\l__sort_max_int=\count164
+\l__sort_true_max_int=\count165
+\l__sort_block_int=\count166
+\l__sort_begin_int=\count167
+\l__sort_end_int=\count168
+\l__sort_A_int=\count169
+\l__sort_B_int=\count170
+\l__sort_C_int=\count171
+\c_empty_box=\box67
+\l_tmpa_box=\box68
+\l_tmpb_box=\box69
+\g_tmpa_box=\box70
+\g_tmpb_box=\box71
+\l__box_top_dim=\dimen183
+\l__box_bottom_dim=\dimen184
+\l__box_left_dim=\dimen185
+\l__box_right_dim=\dimen186
+\l__box_top_new_dim=\dimen187
+\l__box_bottom_new_dim=\dimen188
+\l__box_left_new_dim=\dimen189
+\l__box_right_new_dim=\dimen190
+\l__box_internal_box=\box72
+\l__coffin_internal_box=\box73
+\l__coffin_internal_dim=\dimen191
+\l__coffin_offset_x_dim=\dimen192
+\l__coffin_offset_y_dim=\dimen193
+\l__coffin_x_dim=\dimen194
+\l__coffin_y_dim=\dimen195
+\l__coffin_x_prime_dim=\dimen196
+\l__coffin_y_prime_dim=\dimen197
+\c_empty_coffin=\box74
+\l__coffin_aligned_coffin=\box75
+\l__coffin_aligned_internal_coffin=\box76
+\l_tmpa_coffin=\box77
+\l_tmpb_coffin=\box78
+\l__coffin_display_coffin=\box79
+\l__coffin_display_coord_coffin=\box80
+\l__coffin_display_pole_coffin=\box81
+\l__coffin_display_offset_dim=\dimen198
+\l__coffin_display_x_dim=\dimen199
+\l__coffin_display_y_dim=\dimen256
+\l__coffin_bounding_shift_dim=\dimen257
+\l__coffin_left_corner_dim=\dimen258
+\l__coffin_right_corner_dim=\dimen259
+\l__coffin_bottom_corner_dim=\dimen260
+\l__coffin_top_corner_dim=\dimen261
+\l__coffin_scaled_total_height_dim=\dimen262
+\l__coffin_scaled_width_dim=\dimen263
+)
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count172
+\l__driver_tmp_box=\box82
+))
+Package: xparse 2017/05/13 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count173
+\g__xparse_grabber_int=\count174
+\l__xparse_m_args_int=\count175
+\l__xparse_mandatory_args_int=\count176
+\l__xparse_v_nesting_int=\count177
+)
+(c:/texlive/2017/texmf-dist/tex/latex/inlinedef/inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks43
+\ID@count=\count178
+)
+\ID@usercommands=\toks44
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \useforestlibrary with sig. 's O{} m' on line 166.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ProvidesForestLibrary with sig. 'm O{}' on line 176.
+.................................................
+\safeloop@depth=\count179
+\safeRKloop@depth=\count180
+\forest@temp@dimen=\dimen264
+\forest@temp@count=\count181
+\forest@n=\count182
+\forest@temp@global@count=\count183
+\forest@temp@toks=\toks45
+\forest@temparray@M=\count184
+\forest@temparray@N=\count185
+\forest@global@temparray@M=\count186
+\forest@global@temparray@N=\count187
+\forest@isnum@count=\count188
+\forest@isdim@nonintpart=\count189
+\forest@isdim@dimen=\dimen265
+\forest@sort@m=\count190
+\forest@sort@k=\count191
+\forest@sort@p=\count192
+\bracket@content=\toks46
+\bracket@afterthought=\toks47
+\forest@node@maxid=\count193
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \forestdebugtypeouttrees with sig. 'o' on line 2303.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \forestdebugtypeouttree with sig. 'd() O{\forest@cn }' on
+. line 2348.
+.................................................
+\forest@process@left@M=\count194
+\forest@process@left@N=\count195
+\forest@process@right@M=\count196
+\forest@process@right@N=\count197
+\forest@process@saved@M=\count198
+\forest@process@saved@N=\count199
+\forest@process@result@M=\count266
+\forest@process@result@N=\count267
+\forest@process@n=\count268
+\forest@nodewalk@branch@toks=\toks48
+\forest@nodewalk@shortsteps@resolution=\toks49
+\forest@do@dynamics=\toks50
+\forest@box=\box83
+\forest@xg=\dimen266
+\forest@yg=\dimen267
+\forest@xs=\dimen268
+\forest@ys=\dimen269
+\forest@pi@toks=\toks51
+\forest@segment@toks=\toks52
+\forest@PIi@toks=\toks53
+\forest@PIii@toks=\toks54
+\forest@copy@in=\read2
+\forest@copy@out=\write4
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'forest' with sig. 'D(){}' on line 8503.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Forest with sig. 's D(){} m' on line 8508.
+.................................................
+\forest@externalize@max@outer@n=\count269
+\forest@externalize@inner@n=\count270
+)
+(c:/texlive/2017/texmf-dist/tex/latex/forest/forest-lib-edges.sty
+Package: forest-lib-edges 2016/12/05 v0.1.1
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.cod
+e.tex
+File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
+\pgfarrowinset=\dimen270
+\pgfarrowlength=\dimen271
+\pgfarrowwidth=\dimen272
+\pgfarrowlinewidth=\dimen273
+)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex
+ v1.01, 2012/04/24
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.te
+x
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+)))) (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
  (./secciones/certificacion.aux)
@@ -836,34 +1180,39 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/bibliografia.aux))
 \openout1 = `traballo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Try loading font information for OT1+bch on input line 60.
+
+(c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1bch.fd
+File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
+)
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
 
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
-\scratchdimen=\dimen177
-\scratchbox=\box47
-\nofMPsegments=\count136
-\nofMParguments=\count137
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count138
-\MPscratchDim=\dimen178
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count271
+\scratchdimen=\dimen274
+\scratchbox=\box84
+\nofMPsegments=\count272
+\nofMParguments=\count273
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count274
+\MPscratchDim=\dimen275
+\MPnumerator=\count275
+\makeMPintoPDFobject=\count276
+\everyMPtoPDFconversion=\toks56
 ) (c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -871,9 +1220,6 @@ Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 (c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -913,7 +1259,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count141
+\c@lstlisting=\count277
 
 ABD: EveryShipout initializing macros
 \openout2 = `secciones/titulo.aux'.
@@ -930,7 +1276,7 @@ rted-to.pdf figuras/logo_usc.eps>
 (epstopdf)             \includegraphics on input line 9.
 Package epstopdf Info: Output file is already uptodate.
 
-<figuras/logo_usc-eps-converted-to.pdf, id=4, 589.20125pt x 382.42876pt>
+<figuras/logo_usc-eps-converted-to.pdf, id=29, 589.20125pt x 382.42876pt>
 File: figuras/logo_usc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/logo_usc-eps-converted-to.pdf>
@@ -1000,16 +1346,16 @@ LaTeX Info: Redefining \% on input line 1.
  [5
 
 ])
-\tf@toc=\write4
-\openout4 = `traballo.toc'.
+\tf@toc=\write5
+\openout5 = `traballo.toc'.
 
  [6]
 (./traballo.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@lof=\write5
-\openout5 = `traballo.lof'.
+\tf@lof=\write6
+\openout6 = `traballo.lof'.
 
  [7
 
@@ -1019,8 +1365,8 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@lot=\write6
-\openout6 = `traballo.lot'.
+\tf@lot=\write7
+\openout7 = `traballo.lot'.
 
  [9] [10
 
@@ -1033,34 +1379,34 @@ Cap\'{\i }tulo 1.
 
 
 ]
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
  [2]
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 59--59
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 59--59
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 59--59
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 59--59
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 59--59
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 59--59
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 59--59
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 59--59
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 )
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
  [3]
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
  [4
 
 
@@ -1073,8 +1419,8 @@ Cap\'{\i }tulo 2.
 
 
 ]
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
  [6
 
 
@@ -1089,7 +1435,7 @@ Cap\'{\i }tulo 3.
 ]
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
- [8] <diagramas/casosDeUsoCropped.png, id=80, 755.82375pt x 679.03688pt>
+ [8] <diagramas/casosDeUsoCropped.png, id=101, 755.82375pt x 679.03688pt>
 File: diagramas/casosDeUsoCropped.png Graphic file (type png)
 
 <use diagramas/casosDeUsoCropped.png>
@@ -1102,7 +1448,7 @@ LaTeX Info: Redefining \% on input line 65.
 LaTeX Info: Redefining \. on input line 65.
 LaTeX Info: Redefining \% on input line 65.
  [10 <./diagramas/casosDeUsoCropped.png>]
-\c@contador_casos_de_uso=\count142
+\c@contador_casos_de_uso=\count278
 LaTeX Info: Redefining \. on input line 162.
 LaTeX Info: Redefining \% on input line 162.
  [11
@@ -1114,25 +1460,25 @@ LaTeX Info: Redefining \% on input line 295.
 LaTeX Info: Redefining \. on input line 347.
 LaTeX Info: Redefining \% on input line 347.
  [13]
-\c@contador_requisitos_de_informacion=\count143
+\c@contador_requisitos_de_informacion=\count279
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 351--351
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 351--351
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
@@ -1148,7 +1494,7 @@ Overfull \hbox (25.82617pt too wide) in paragraph at lines 401--439
 LaTeX Info: Redefining \. on input line 439.
 LaTeX Info: Redefining \% on input line 439.
 [14]
-\c@contador_requisitos_funcionales=\count144
+\c@contador_requisitos_funcionales=\count280
 
 Overfull \hbox (31.51663pt too wide) in paragraph at lines 452--510
  [] 
@@ -1165,7 +1511,7 @@ Overfull \hbox (31.51663pt too wide) in paragraph at lines 513--561
  []
 
 
-Underfull \vbox (badness 3646) has occurred while \output is active []
+Underfull \vbox (badness 3098) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 561.
 LaTeX Info: Redefining \% on input line 561.
@@ -1290,6 +1636,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1160.
 LaTeX Info: Redefining \% on input line 1160.
  [28]
+Underfull \hbox (badness 6396) in paragraph at lines 1197--1197
+[]|\OT1/bch/b/n/12 Excepciones se-cuen-cia
+ []
+
+
 Overfull \hbox (31.51663pt too wide) in paragraph at lines 1163--1218
  [] 
  []
@@ -1304,7 +1655,7 @@ LaTeX Info: Redefining \. on input line 1220.
 LaTeX Info: Redefining \% on input line 1220.
 
 [30]
-\c@contador_requisitos_no_funcionales=\count145
+\c@contador_requisitos_no_funcionales=\count281
 
 Overfull \hbox (31.51663pt too wide) in paragraph at lines 1234--1258
  [] 
@@ -1360,14 +1711,14 @@ Overfull \hbox (31.51663pt too wide) in paragraph at lines 1425--1449
  []
 
 )
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
  [34]
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
  [35]
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
  [36
 
 
@@ -1383,7 +1734,7 @@ Cap\'{\i }tulo 4.
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
  [38]
-\c@contador_riesgos=\count146
+\c@contador_riesgos=\count282
 
 Overfull \hbox (14.44524pt too wide) in paragraph at lines 108--141
  [] 
@@ -1450,16 +1801,24 @@ Overfull \hbox (14.44524pt too wide) in paragraph at lines 346--379
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 379.
+LaTeX Info: Redefining \% on input line 379.
+ [44]
 Overfull \hbox (14.44524pt too wide) in paragraph at lines 382--415
  [] 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 415.
 LaTeX Info: Redefining \% on input line 415.
-[44]
-Underfull \hbox (badness 1377) in paragraph at lines 442--443
-[]|\OT1/cmr/bx/n/12 Mitigar\OT1/cmr/m/n/12 : De-di-car par-te del tiem-po en la
-s
+ [45]
+Underfull \hbox (badness 1635) in paragraph at lines 442--443
+[]|\OT1/bch/b/n/12 Mitigar\OT1/bch/m/n/12 : De-di-car par-te del tiem-po en las
+
  []
 
 
@@ -1472,49 +1831,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 451.
 LaTeX Info: Redefining \% on input line 451.
- [45]
-\c@contador_accion_correctiva=\count147
+ [46]
+\c@contador_accion_correctiva=\count283
 LaTeX Info: Redefining \. on input line 465.
 LaTeX Info: Redefining \% on input line 465.
 
-[46]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 486--486
 
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 486--486
-\OT1/cmr/m/n/12 El mo-tor ofre-ce la fun-cio-na-li-dad de es-ca-
+Underfull \hbox (badness 2285) in paragraph at lines 486--486
+\OT1/bch/m/n/12 por el desa-rro-lla-dor el tiem-po se es-ca-la
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 486--486
-\OT1/cmr/m/n/12 va-lo-res re-la-ti-va-men-te pe-que~nos co-mo 20 o
- []
-
-
-Underfull \hbox (badness 3657) in paragraph at lines 486--486
-\OT1/cmr/m/n/12 es-tos va-lo-res, en la im-ple-men-ta-ci^^Son fi-nal
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 486--486
-\OT1/cmr/m/n/12 es-ca-la por apro-xi-ma-da-men-te 600 ve-ces sin
- []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 493--493
-[]\OT1/cmr/m/n/12 La ac-ci^^Son co-rrec-ti-va coin-ci-de con el plan
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 493--493
-\OT1/cmr/m/n/12 del ries-go. Es-to im-pli-ca-ba con-si-de-rar una
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 493--493
-\OT1/cmr/m/n/12 en si mis-ma se de-ci-di^^So bus-car tec-no-log^^S^^Pas
+Underfull \hbox (badness 2126) in paragraph at lines 486--486
+\OT1/bch/m/n/12 por apro-xi-ma-da-men-te 600 ve-ces sin que
  []
 
 
@@ -1523,8 +1857,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--493
  []
 
 
-Underfull \hbox (badness 6927) in paragraph at lines 493--493
-\OT1/cmr/m/n/12 Al con-si-de-rar otros mo-to-res se ob-serv^^So
+Underfull \hbox (badness 4859) in paragraph at lines 493--493
+\OT1/bch/m/n/12 Al con-si-de-rar otros mo-to-res se ob-serv[]o
  []
 
 
@@ -1533,38 +1867,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--493
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 493--493
-\OT1/cmr/m/n/12 li-zar tiem-po en pre-pa-rar otro pro-to-ti-po y
+Underfull \hbox (badness 3735) in paragraph at lines 493--493
+\OT1/bch/m/n/12 Como no se pod[]^^Pa co-rrer el ries-go de
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 493--493
-\OT1/cmr/m/n/12 los com-ba-tes y as^^S^^P con-se-guir que to-do el
+Underfull \hbox (badness 1622) in paragraph at lines 493--493
+\OT1/bch/m/n/12 que se eje-cu-ta en las si-mu-la-cio-nes fue-ra
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 493--493
-\OT1/cmr/m/n/12 con-trol su-pe-rior y per-mi-tien-do rea-li-zar las
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 500--500
-[]\OT1/cmr/m/n/12 El im-pac-to so-bre el pro-yec-to ha si-do sig-
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 ni-fi-ca-ti-vo pues la ac-ci^^Son co-rrec-ti-va im-pli-ca
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 re-con-si-de-rar el al-can-ce de al-gu-nos de los
- []
-
-
-Underfull \hbox (badness 8019) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 ob-je-ti-vos, prin-ci-pal-men-te los re-la-cio-na-dos
+Underfull \hbox (badness 3386) in paragraph at lines 500--500
+\OT1/bch/m/n/12 ob-je-ti-vos, prin-ci-pal-men-te los re-la-cio-na-dos
  []
 
 
@@ -1573,13 +1887,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--500
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 Esto es de-bi-do a que el tiem-po de-di-ca-do
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 con un mo-tor am-plia-men-te usa-do por la
+Underfull \hbox (badness 1342) in paragraph at lines 500--500
+\OT1/bch/m/n/12 con un mo-tor am-plia-men-te usa-do por la
  []
 
 
@@ -1588,23 +1897,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--500
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 El plan de con-tin-gen-cia apli-ca-do ha im-
- []
-
-
-Underfull \hbox (badness 1910) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 pli-ca-do no so-lo re-con-si-de-rar los re-qui-si-tos
- []
-
-
-Underfull \hbox (badness 2376) in paragraph at lines 500--500
-\OT1/cmr/m/n/12 do-cu-men-to, sino mo-di-fi-car la pla-ni-fi-ca-ci^^Son
+Underfull \hbox (badness 1924) in paragraph at lines 500--500
+\OT1/bch/m/n/12 El plan de con-tin-gen-cia apli-ca-do ha im-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 504--504
-[]|\OT1/cmr/bx/n/12 Nueva pro-ba-bi-li-dad de
+[]|\OT1/bch/b/n/12 Nueva pro-ba-bi-li-dad de
  []
 
 
@@ -1614,181 +1913,554 @@ Overfull \hbox (14.44524pt too wide) in alignment at lines 466--514
 
 LaTeX Info: Redefining \. on input line 514.
 LaTeX Info: Redefining \% on input line 514.
-[47]
+[48]
 LaTeX Info: Redefining \. on input line 514.
 LaTeX Info: Redefining \% on input line 514.
- [48]
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 519--519
-[][][][]\OT1/cmr/m/n/12 Completar 
+ [49]
+LaTeX Info: Redefining \. on input line 517.
+LaTeX Info: Redefining \% on input line 517.
+ [50]
+LaTeX Info: Redefining \. on input line 551.
+LaTeX Info: Redefining \% on input line 551.
+ [51
+
+]
+LaTeX Info: Redefining \. on input line 569.
+LaTeX Info: Redefining \% on input line 569.
+ [52]
+LaTeX Font Info:    Try loading font information for OML+bch on input line 587.
+
+ (c:/texlive/2017/texmf-dist/tex/latex/psnfss/omlbch.fd
+File: omlbch.fd 
+)
+LaTeX Font Info:    Font shape `OML/bch/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 587.
+LaTeX Font Info:    Font shape `OML/bch/b/n' in size <12> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 590.
+LaTeX Info: Redefining \. on input line 591.
+LaTeX Info: Redefining \% on input line 591.
+ [53]
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 519--519
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 519--519
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 519--519
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 605--605
+[][][][]\OT1/bch/m/n/12 Completar 
+ []
+
+LaTeX Info: Redefining \. on input line 615.
+LaTeX Info: Redefining \% on input line 615.
+[54]
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+LaTeX Info: Redefining \. on input line 706.
+LaTeX Info: Redefining \% on input line 706.
+ [55]
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 523--523
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 523--523
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 523--523
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 711--711
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 523--523
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-LaTeX Warning: Marginpar on page 49 moved.
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 528--528
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 528--528
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 528--528
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 528--528
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-LaTeX Info: Redefining \. on input line 529.
-LaTeX Info: Redefining \% on input line 529.
-[49]
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 532--532
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 532--532
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 532--532
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 532--532
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-LaTeX Warning: Marginpar on page 50 moved.
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 536--536
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 536--536
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 536--536
-[][][][]\OT1/cmr/m/n/12 Completar 
- []
-
-
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 536--536
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 715--715
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 )
 
-LaTeX Warning: Marginpar on page 50 moved.
+LaTeX Warning: Marginpar on page 56 moved.
 
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
-[50]
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+[56
+
+
+]
 \openout2 = `secciones/capitulos/arquitecturaYHerramientas.aux'.
 
  (./secciones/capitulos/arquitecturaYHerramientas.tex
 Cap\'{\i }tulo 5.
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 )
 
-LaTeX Warning: Marginpar on page 51 moved.
+LaTeX Warning: Marginpar on page 57 moved.
 
-[51
+[57
 
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
- [52
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [58
 
 
 ]
@@ -1797,38 +2469,38 @@ LaTeX Info: Redefining \% on input line 83.
  (./secciones/capitulos/disenoEImplementacion.tex
 Cap\'{\i }tulo 6.
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (38.826pt too wide) in paragraph at lines 6--7
-[]\OT1/cmr/m/n/12 Notas: Pa-tro-nes po-si-bles: https://gamedev.stackexchange.c
+Overfull \hbox (51.86952pt too wide) in paragraph at lines 6--7
+[]\OT1/bch/m/n/12 Notas: Pa-tro-nes po-si-bles: https://gamedev.stackexchange.c
 om/questions/4157/what-
  []
 
-) [53
+) [59
 
 
 ]
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
- [54
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [60
 
 
 ]
@@ -1837,32 +2509,32 @@ LaTeX Info: Redefining \% on input line 85.
  (./secciones/capitulos/validacionYPruebas.tex
 Cap\'{\i }tulo 7.
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [55
+) [61
 
 
 ]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
- [56
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+ [62
 
 
 ]
@@ -1871,50 +2543,50 @@ LaTeX Info: Redefining \% on input line 87.
  (./secciones/capitulos/valoracionesFinales.tex
 Cap\'{\i }tulo 8.
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [57
+) [63
 
 
 ]
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
- [58
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [64
 
 
 ]
 
-LaTeX Warning: Marginpar on page 59 moved.
+LaTeX Warning: Marginpar on page 65 moved.
 
-[59]
+[65]
 \openout2 = `secciones/ejemplos.aux'.
 
  (./secciones/ejemplos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [60
+ [66
 
 
 ]
 Cap\'{\i }tulo 9.
-[61]
+[67]
 Package epstopdf Info: Source file: <figuras/figura01.eps>
 (epstopdf)                    date: 2017-06-08 19:32:58
 (epstopdf)                    size: 212824 bytes
@@ -1925,7 +2597,7 @@ Package epstopdf Info: Source file: <figuras/figura01.eps>
 rted-to.pdf figuras/figura01.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
- <figuras/figura01-eps-converted-to.pdf, id=265, 1060.96375pt x 513.92pt>
+ <figuras/figura01-eps-converted-to.pdf, id=303, 1060.96375pt x 513.92pt>
 File: figuras/figura01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/figura01-eps-converted-to.pdf>
@@ -1934,44 +2606,37 @@ ne 30.
 (pdftex.def)             Requested size: 426.79134pt x 206.73277pt.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
- [62 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
+ [68 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
 /latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 81.
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 83.
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+(c:/texlive/2017/texmf-dist/tex/latex/psnfss/omsbch.fd
+File: omsbch.fd 
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 81.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
-
-(c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+LaTeX Font Info:    Font shape `OMS/bch/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
 
 (c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Overfull \hbox (53.36043pt too wide) in paragraph at lines 97--98
+Overfull \hbox (63.26607pt too wide) in paragraph at lines 97--98
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 )
-LaTeX Info: Redefining \. on input line 93.
-LaTeX Info: Redefining \% on input line 93.
- [63]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [64
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+ [69]
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [70
 
 
 ]
@@ -1980,32 +2645,32 @@ LaTeX Info: Redefining \% on input line 94.
  (./secciones/conclusiones.tex
 Cap\'{\i }tulo 10.
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [65
+) [71
 
 
 ]
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
- [66
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
+ [72
 
 
 ]
@@ -2013,13 +2678,13 @@ LaTeX Info: Redefining \% on input line 102.
 
  (./secciones/apendicea.tex
 Ap\'{e}ndice A.
-) [67
+) [73
 
 
 ]
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
- [68
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+ [74
 
 
 ]
@@ -2027,13 +2692,13 @@ LaTeX Info: Redefining \% on input line 104.
 
  (./secciones/apendiceb.tex
 Ap\'{e}ndice B.
-) [69
+) [75
 
 
 ]
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
- [70
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
+ [76
 
 
 ]
@@ -2041,93 +2706,87 @@ LaTeX Info: Redefining \% on input line 106.
 
  (./secciones/licencia.tex
 Ap\'{e}ndice C.
-) [71
+) [77
 
 
 ]
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
- [72
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+ [78
 
 
 ]
 \openout2 = `secciones/bibliografia.aux'.
 
  (./secciones/bibliografia.tex
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 4--4
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 4--4
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 4--4
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-Overfull \hbox (5.63048pt too wide) in paragraph at lines 4--4
-[][][][]\OT1/cmr/m/n/12 Completar 
+Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
+[][][][]\OT1/bch/m/n/12 Completar 
  []
 
 
-LaTeX Warning: Marginpar on page 73 moved.
+LaTeX Warning: Marginpar on page 79 moved.
 
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-[73
+[79
 
 ]
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [74
+ [80
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
-\OT1/cmr/m/n/12 lo re-fe-ren-cia-do (\OT1/cmr/m/it/12 http://www.iso-architectu
+\OT1/bch/m/n/12 lo re-fe-ren-cia-do (\OT1/bch/m/it/12 http://www.iso-architectu
 re.org/ieee-1471/defining-
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 22--23
-[]\OT1/cmr/m/n/12 Nvidia CU-DA pro-gram-ming gui-de. Ver-si^^Son 2.0, 2010. Dis
--po~nible en
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\OT1/bch/m/n/12 Acceso m[]ulti-ple por di-vi-si[]on de c[]odi-go. Ar-ti-go da
+ wi-ki-pe-dia
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[]\OT1/cmr/m/n/12 Acceso m^^Sulti-ple por di-vi-si^^Son de c^^Sodi-go. Ar-ti-go
- da wi-ki-pe-dia
- []
-
-) [75]
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
- [76
+) [81]
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+ [82
 
 
 ]
 
-LaTeX Warning: Marginpar on page 77 moved.
+LaTeX Warning: Marginpar on page 83 moved.
 
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
-[77]
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
- [78
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+[83]
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+ [84
 
 ] (./traballo.tdo)
-\tf@tdo=\write7
-\openout7 = `traballo.tdo'.
+\tf@tdo=\write8
+\openout8 = `traballo.tdo'.
 
- [79]
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
- [80
+ [85]
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+ [86
 
 ] (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
@@ -2145,36 +2804,33 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
 (./secciones/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 16259 strings out of 492995
- 301233 string characters out of 6136403
- 401135 words of memory out of 5000000
- 19322 multiletter control sequences out of 15000+600000
- 16178 words of font info for 64 fonts, out of 8000000 for 9000
+ 39194 strings out of 492995
+ 844286 string characters out of 6136403
+ 878236 words of memory out of 5000000
+ 42100 multiletter control sequences out of 15000+600000
+ 53786 words of font info for 95 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 62i,26n,78p,1229b,1297s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxt
-i10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2017/texmf-dist/fo
+ 146i,26n,180p,10403b,4909s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb><c:/texlive
+/2017/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf
+-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts
+/type1/bitstrea/charter/bchri8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
-fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (92 pages, 436570 bytes).
+sfonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb>
+Output written on traballo.pdf (98 pages, 393986 bytes).
 PDF statistics:
- 400 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
+ 424 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 

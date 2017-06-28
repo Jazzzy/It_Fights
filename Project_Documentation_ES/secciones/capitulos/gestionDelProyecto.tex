@@ -41,7 +41,7 @@ Para realizar un buen análisis de riesgos se debe comenzar por una identificaci
 
 \subsection{Especificación de riesgos}
 
-Se dedicará este apartado a mostrar las especificaciones formales de los riesgos que contendrán su descripción, probabilidad, impacto y los planes diseñados para cada uno de ellos. La probabilidad\footnote{indicada como $p$ dentro de la tabla}  e impacto\footnote{indicada como $i$ dentro de la tabla} podrán tomar los valores definidos en el Cuadro \ref{tab:probabilidad_impacto}. El identificador utilizado para los riesgos tendrá la forma RSK\footnote{En referencia a \textit{"risk"}, riesgo en inglés}-\textit{N}
+Se dedicará este apartado a mostrar las especificaciones formales de los riesgos que contendrán su descripción, probabilidad, impacto y los planes diseñados para cada uno de ellos. La probabilidad\footnote{indicada como $p$ dentro de la tabla}  e impacto\footnote{indicada como $i$ dentro de la tabla} podrán tomar los valores definidos en el Cuadro \ref{tab:probabilidad_impacto}. El identificador utilizado para los riesgos tendrá la forma RSK\footnote{En referencia a \textit{risk}, riesgo en inglés}-\textit{N}
 
 
 \begin{table}
@@ -482,7 +482,7 @@ Este apartado incluirá todo tipo de acción que se ha llevado a cabo para gesti
 		\hline
 		\textbf{Descripción} &
 		\pbox{8.4cm}{ 
-			Al llevar a cabo el plan de prevención definido para este riesgo se descubrió que Unity, el motor elegido sobre el cual se desarrollaría la aplicación, no era capaz de escalar el tiempo de forma significativa sin que mecánicas básicas dentro del mismo dejaran de funcionar.\\\\El motor ofrece la funcionalidad de escalar el tiempo mediante el uso de la variable \textit{"Time.timeScale"} pero al intentar multiplicar la velocidad del tiempo interno del juego por valores relativamente pequeños como 20 o 30 las físicas del motor dejaban de funcionar correctamente. Para poner en contexto estos valores, en la implementación final realizada por el desarrollador el tiempo se escala por aproximadamente 600 veces sin que se modifique su funcionamiento en ningún sentido.
+			Al llevar a cabo el plan de prevención definido para este riesgo se descubrió que Unity, el motor elegido sobre el cual se desarrollaría la aplicación, no era capaz de escalar el tiempo de forma significativa sin que mecánicas básicas dentro del mismo dejaran de funcionar.\\\\El motor ofrece la funcionalidad de escalar el tiempo mediante el uso de la variable \textit{Time.timeScale} pero al intentar multiplicar la velocidad del tiempo interno del juego por valores relativamente pequeños como 20 o 30 las físicas del motor dejaban de funcionar correctamente. Para poner en contexto estos valores, en la implementación final realizada por el desarrollador el tiempo se escala por aproximadamente 600 veces sin que se modifique su funcionamiento en ningún sentido.
 		}
 		\\
 		
@@ -514,18 +514,197 @@ Este apartado incluirá todo tipo de acción que se ha llevado a cabo para gesti
 	\end{longtable}
 \end{center}
 
+\clearpage
+
 \section{Gestión de la configuración}
 
-\todo{Completar la gestión de la configuración}
+INTECO\cite{inteco} define la gestión de configuración como el proceso:
+
+\begin{quote}
+	\textit{
+[...]cuyo propósito es establecer y mantener la integridad de los productos de trabajo.
+}
+\end{quote}
+
+Además, gracias a su guía orientada a la gestión de la configuración, se pueden obtener una serie de procesos orientados a lograr proteger esa integridad de los productos de trabajo de este proyecto. Dichos procesos se resumen en los siguientes:
+
+\begin{enumerate}
+	\item Identificación de los elementos a controlar, que nos servirá como entrada para los procesos siguientes.
+	\item Definición de procedimientos para controlar los elementos, proceso que se centra en gestionar los cambios sobre la configuración de los diferentes productos.
+	\item Registro del estado de los elementos, para ser capaz de almacenar el estado actual y pasado de todos los productos.
+	\item Auditorías de configuración que comprueben si los elementos de configuración cumplen los requisitos necesarios.
+\end{enumerate}
+
+\bigskip
+
+En el contexto de un proyecto, la gestión de configuración es muy importante dado que asegura la integridad de los productos desarrollados reduciendo riesgos relacionados con su modificación indeseada, pérdida o entregas erróneas. De esta forma también se eliminan los posibles sobre-esfuerzos generados por errores en la configuración, se controlan los cambios que ha sufrido el proyecto y se realiza una correcta administración de las versiones sobre las cuales se está trabajando.
+
+\bigskip
+
+En el particular caso de este proyecto solo hay un desarrollador activo por lo que todos los procesos que buscan controlar las modificaciones que los trabajadores realizan al proyecto son significativamente simplificados. Por lo tanto, la prioridad de este proceso en nuestro caso será gestionar correctamente las versiones de los productos generados por el proyecto.
+
+\bigskip
+
+Los problemas generados a raíz de no realizar una correcta gestión de configuración, especialmente centrándonos en la gestión de versiones, pueden llegar a ser muy importantes además de variados. Se puede dar el caso de que se entregue una versión incorrecta del producto, esto puede ser una versión con errores, con cambios no probados o versiones irreproducibles. Además de esto se pueden dar situaciones en las que no se disponga de un inventario completo de los elementos del sistema, que no se puedan recuperar versiones anteriores y, lo que sería más importante aún, que se tenga que realizar el mismo trabajo en múltiples ocasiones por pérdida del mismo. 
+
+
+\subsection{Herramientas}
+
+Dedicaremos este apartado a identificar y describir el uso de las herramientas que se han utilizado dentro del proceso de gestión de la configuración.
+
+\begin{itemize}
+	\item \textbf{Google Drive}\footnote{https://www.google.com/intl/es\_ALL/drive/}: Servicio de almacenamiento en la nube que a su ver permite la creación y modificación en tiempo real de archivos de texto, tablas, etc.
+	\item \textbf{Dropbox}\footnote{https://www.dropbox.com/}: Servicio de almacenamiento en la nube capaz de alojar ficheros en la red para que los mismos se sincronicen localmente en todos los equipos con una determinada cuenta.
+	\item \textbf{Git y GitHub}\footnote{https://github.com/}: Son, respectivamentem el sistema de control de versiones y servicio de repositorios en la red que permiten controlar cambios, gestionar ramas y acceder al proyecto desde cualquier lugar.
+	\item \textbf{LaTeX}\footnote{https://www.latex-project.org/}: Sistema de creación y composición de documentos de alta calidad diseñado para la producción de documentación técnica. Estándar de facto para comunicaciones y publicaciones de carácter científico.
+\end{itemize}
+
+\subsection{Descripción del soporte de las herramientas al proceso}
+
+Comenzando por los dos servicios de almacenamiento en la nube que se han utilizado es posible que surja la duda de porqué utilizar dos herramientas cuya finalidad parece la misma. Pese a que pueda parecer que este es el caso, el uso que se les ha dado a ambos servicios es significativamente distinto.
+
+\bigskip
+
+Google Drive ha sido utilizado para gestionar los documentos para los cuales era importante que tanto el desarrollador como los tutores pudieran tener acceso inmediato, realizar modificaciones en tiempo real y discutir sobre las mismas. Este servicio proporciona un completo sistema de comentarios sobre su procesador de texto en línea de forma que los tutores pueden realizar indicaciones sobre partes de texto que necesitan ser revisadas que el desarrollador podrá ver en tiempo real, contestar a los mismos y realizar el cambio. Un buen ejemplo sería el documento de solicitud de aprobación del trabajo ya que el tiempo por iteración del mismo se vio significativamente reducido gracias a este sistema.
+
+\bigskip
+
+Por otra parte, Dropbox ha sido utilizado por la facilidad de sincronización que proporciona. Esto es importante si se necesita trabajar en algún equipo diferente de manera puntual, sea este propiedad o no del desarrollador. En el caso de que se generara algún archivo en un equipo diferente del dedicado al desarrollo es muy sencillo subirlo a Dropbox ya que estará inmediatamente disponible en el equipo principal. Un buen ejemplo sería la creación de alguno de los archivos que contienen las animaciones del videojuego ya que muy ocasionalmente se realizaban en un equipo distinto. Otro buen uso es el de subir una versión de la aplicación compilada y distribuir un enlace a la misma para que los usuarios elegidos puedan probarla rápidamente.
+
+\bigskip
+
+Hablando ahora de Git y GitHub se podría considerar que la combinación de ambas han constituido la herramienta principal en lo que a gestión de configuración se refiere, especialmente en términos de la gestión de versiones. Mediante su uso se autogeneran versiones con cada \textit{commit} realizado de forma que cada cambio representa automáticamente una nueva versión a la que se puede acceder si es necesario. Además, dado que permite seleccionar el tipo de archivos se deben controlar y cuales no posibilita omitir los archivos pesados como la aplicación compilada y centrarse en el código, documentación y otros archivos que son necesarios para obtener el proyecto. Como nota adicional, también permite agregar lanzamientos o \textit{releases} de forma que se pueden subir ejecutables para tener disponible muy fácilmente versiones probadas y funcionales.
+
+\bigskip
+
+Finalmente, LaTeX ha sido la herramienta elegida para la documentación por su posición como estándar de facto, para facilitar que el desarrollador se familiarice con el uso de la misma y por el gran numero de funcionalidades y flexibilidad que proporciona.
+
+\subsection{Nomenclatura}
+
+En aras de conseguir un fácil reconocimiento de las diferentes versiones de la documentación se definirá un esquema de nomenclatura que seguirán los documentos del proyecto. Las características importantes sobre un documento serán su nombre, fecha de creación, versión y tipo por lo que nuestro esquema será el siguiente.
+
+\begin{center}
+	\textless nombre\_del\_documento\textgreater \_\textless ddmmaa\textgreater \_v\textless versión\textgreater .\textless extensión\textgreater 
+\end{center}
+
+Donde \textbf{\textless nombre\_del\_documento\textgreater } identifica unívocamente el documento, \textbf{\textless ddmmaa\textgreater } se corresponde con la fecha de generación del documento con el formato día, mes, año. \textbf{\textless versión\textgreater } se corresponde con la versión actual del documento y \textbf{\textless extensión\textgreater } indica el formato del mismo.
+
+\bigskip
+
+A modo de ejemplo, si se quiere nombrar esta misma memoria, generada el día 26 de junio de 2017, con la versión 1.1 y con la extensión que indica que se trata de un archivo PDF el nombre a utilizar sería:
+
+\begin{center}
+	MemoriaTrabajoFinDeGrado\_260617\_v1.1.pdf
+\end{center}
+
+
+Dichos estándares de nomenclatura serán utilizados para las versiones generadas de la documentación y no para otros archivos de código o usados para generar productos del proyecto que ya están gestionados mediante el control de versiones de GitHub.
 
 \section{Metodología de desarrollo}
 
 \todo{Completar la metodología}
 
-
 \section{Planificación temporal}
 
-\todo{Completar la planificación temporal}
+Este apartado contendrá a grandes rasgos la planificación temporal del proyecto desarrollado. Para poner en contexto dicha planificación es necesario primero analizar el producto que se desea dados los objetivos y requisitos para identificar que tareas son necesarias llevar a cabo para completar obtener el producto deseado. Para este fin utilizaremos una herramienta comúnmente utilizada en gestión de proyectos como lo es la \textit{Estructura de Descomposición del Trabajo} o EDT. Esta representación sirve para descomponer jerárquicamente el trabajo que requiere el proyecto.
+
+\bigskip
+
+En la Figura \ref{edt} se muestran las tareas que se han realizado. Para su obtención se ha seguido una estrategia de arriba hacia abajo o \textit{top-down} en la cual se han identificado primero los paquetes de trabajo generales para luego ir disgregándolos en pequeñas tareas.
+
+\clearpage
+
+% EDT
+
+\begin{figure}
+\caption{Estructura de Descomposición del Trabajo o EDT}
+\bigskip
+\label{edt}
+{\small
+\begin{forest}
+		for tree={
+		draw,
+		style = {above,sloped,font=\tiny},
+		grow=east,
+		growth parent anchor=east,
+		parent anchor=east,
+		child anchor=west,
+		edge path={\noexpand\path[\forestoption{edge},->, >={latex}]
+			(!u.parent anchor) -- +(6pt,0pt) |- (.child anchor)
+			\forestoption{edge label};}
+		where level=0{%
+			draw,
+			style = {above,sloped,font=\small},
+			grow=south,
+			growth parent anchor=south,
+			parent anchor=south,
+			child anchor=north,
+			edge path={\noexpand\path[\forestoption{edge},->, >={latex}]
+				(!u.parent anchor) -- +(6pt,0pt) |- (.child anchor)
+				\forestoption{edge label};}
+		}
+	}
+[TFG
+	[Documentación
+		[Elaboración de memoria]
+		[Comentarios en el código]
+	]
+	[Obtención de datos
+		[Agente contra otras implementaciones]
+		[Análisis de los datos]
+	]	
+	[Agente
+		[Análisis
+			[Estado del arte]
+			[Necesidades del agente]
+		]
+		[Diseño
+			[Componentes del agente]
+			[Interfaz con el videojuego]
+		]
+		[Implementación
+			[Componentes del agente]
+			[Interfaz con el videojuego]
+		]
+		[Integración con el videojuego]
+		[Pruebas
+			[Unitarias sobre el agente]
+			[Sobre la integración con el videojuego]
+		]
+		[Entrenamiento del agente]
+	]	
+	[Videojuego
+		[Análisis
+			[Mecánicas necesarias]
+			[Requisitos del agente]
+		]
+		[Prototipo inicial
+			[Implementación rápida para pruebas]
+			[Realización de pruebas]
+		]
+		[Diseño
+			[Diseño de \textit{assets\footnote{Archivos ajenos al código necesarios para el juego como gráficos, sonidos, etc.}}]
+			[Arquitectura del motor]
+			[Componentes]
+		]
+		[Implementación
+			[Creación de assets]
+			[Componentes]
+			[Interfaz con el agente]
+		]
+		[Pruebas
+			[Mecánicas sin agentes]
+			[Interfaz con el agente]
+		]
+	]
+]
+\end{forest}
+}
+\end{figure}
+
+
+\clearpage
+
 
 \section{Análisis de costes}
 
