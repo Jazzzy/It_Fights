@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  28 JUN 2017 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2396,13 +2396,9 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
-
-
-LaTeX Warning: Float too large for page by 397.38226pt on input line 708.
-
 LaTeX Info: Redefining \. on input line 711.
 LaTeX Info: Redefining \% on input line 711.
-[55]
+ [55]
 <otros/capturasPlanificacion/general.PNG, id=260, 806.26219pt x 158.84344pt>
 File: otros/capturasPlanificacion/general.PNG Graphic file (type png)
 
@@ -2900,37 +2896,33 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/capitulos/valoracionesFinales.aux) (./secciones/ejemplos.aux)
 (./secciones/conclusiones.aux) (./secciones/apendicea.aux)
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
-(./secciones/bibliografia.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./secciones/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 39771 strings out of 492995
- 854734 string characters out of 6136403
- 881373 words of memory out of 5000000
- 42666 multiletter control sequences out of 15000+600000
+ 39748 strings out of 492995
+ 854254 string characters out of 6136403
+ 881187 words of memory out of 5000000
+ 42643 multiletter control sequences out of 15000+600000
  52289 words of font info for 95 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 146i,26n,180p,10403b,5227s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texm
-f-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><c:/texlive/2017/texmf-dist/font
-s/type1/bitstrea/charter/bchbi8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/bi
-tstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/char
-ter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchri8a
-.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texliv
-e/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb><c:/texlive/2017/texmf
--dist/fonts/type1/public/eurosym/feymr10.pfb><c:/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (106 pages, 527462 bytes).
+ 146i,26n,180p,10403b,5213s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb><c:/texlive
+/2017/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf
+-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts
+/type1/bitstrea/charter/bchri8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/eurosym/fey
+br10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb><c:
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on traballo.pdf (106 pages, 527357 bytes).
 PDF statistics:
  468 PDF objects out of 1000 (max. 8388607)
  306 compressed objects within 4 object streams
