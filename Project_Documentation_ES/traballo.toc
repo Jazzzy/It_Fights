@@ -9,9 +9,9 @@
 \contentsline {subsection}{\numberline {3.1.2}Casos de uso}{8}
 \contentsline {subsection}{\numberline {3.1.3}Especificaci\IeC {\'o}n de requisitos}{13}
 \contentsline {subsubsection}{\numberline {3.1.3.1}Requisitos de informaci\IeC {\'o}n}{14}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Requisitos de funcionales}{15}
-\contentsline {subsubsection}{\numberline {3.1.3.3}Requisitos no funcionales}{31}
-\contentsline {subsubsection}{\numberline {3.1.3.4}Matriz de trazabilidad}{34}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Requisitos de funcionales}{16}
+\contentsline {subsubsection}{\numberline {3.1.3.3}Requisitos no funcionales}{32}
+\contentsline {subsubsection}{\numberline {3.1.3.4}Matriz de trazabilidad}{35}
 \contentsline {chapter}{\numberline {4}Gesti\IeC {\'o}n del proyecto}{37}
 \contentsline {section}{\numberline {4.1}Gesti\IeC {\'o}n de riesgos}{37}
 \contentsline {subsection}{\numberline {4.1.1}Especificaci\IeC {\'o}n de riesgos}{39}
@@ -27,26 +27,29 @@
 \contentsline {subsection}{\numberline {4.4.2}Planificaci\IeC {\'o}n del agente}{58}
 \contentsline {subsection}{\numberline {4.4.3}Planificaci\IeC {\'o}n de la obtenci\IeC {\'o}n de datos}{59}
 \contentsline {subsection}{\numberline {4.4.4}Planificaci\IeC {\'o}n de la documentaci\IeC {\'o}n, reuniones y finalizaci\IeC {\'o}n}{59}
-\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de costes}{60}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de costes}{61}
 \contentsline {section}{\numberline {4.6}Plan de Gesti\IeC {\'o}n de las Comunicaciones}{64}
-\contentsline {chapter}{\numberline {5}Arquitectura y herramientas}{65}
-\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{65}
-\contentsline {section}{\numberline {5.2}Herramientas utilizadas}{65}
-\contentsline {chapter}{\numberline {6}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{67}
-\contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{69}
-\contentsline {chapter}{\numberline {8}Valoraciones finales}{71}
-\contentsline {chapter}{\numberline {9}Exemplos}{75}
-\contentsline {section}{\numberline {9.1}Un exemplo de secci\IeC {\'o}n}{75}
-\contentsline {subsection}{\numberline {9.1.1}Un exemplo de subsecci\IeC {\'o}n}{75}
-\contentsline {subsection}{\numberline {9.1.2}Otro exemplo de subsecci\IeC {\'o}n}{75}
-\contentsline {subsubsection}{\numberline {9.1.2.1}Un exemplo de subsubsecci\IeC {\'o}n}{75}
-\contentsline {subsubsection}{\numberline {9.1.2.2}Un exemplo de subsubsecci\IeC {\'o}n}{75}
-\contentsline {subsubsection}{\numberline {9.1.2.3}Un exemplo de subsubsecci\IeC {\'o}n}{75}
-\contentsline {section}{\numberline {9.2}Exemplos de figuras e cadros}{76}
-\contentsline {section}{\numberline {9.3}Exemplos de referencias \IeC {\'a} bibliograf\IeC {\'\i }a}{76}
-\contentsline {section}{\numberline {9.4}Exemplos de enumeraci\IeC {\'o}ns}{76}
-\contentsline {chapter}{\numberline {10}Conclusiones y posibles ampliaciones}{79}
-\contentsline {chapter}{\numberline {A}Manuais t\IeC {\'e}cnicos}{81}
-\contentsline {chapter}{\numberline {B}Manuais de usuario}{83}
-\contentsline {chapter}{\numberline {C}Licencia}{85}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{87}
+\contentsline {subsection}{\numberline {4.6.1}Gesti\IeC {\'o}n de interesados}{64}
+\contentsline {subsection}{\numberline {4.6.2}Planificaci\IeC {\'o}n de la informaci\IeC {\'o}n y comunicaciones}{64}
+\contentsline {subsection}{\numberline {4.6.3}Reuniones}{65}
+\contentsline {chapter}{\numberline {5}Arquitectura y herramientas}{67}
+\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{67}
+\contentsline {section}{\numberline {5.2}Herramientas utilizadas}{67}
+\contentsline {chapter}{\numberline {6}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{69}
+\contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{71}
+\contentsline {chapter}{\numberline {8}Valoraciones finales}{73}
+\contentsline {chapter}{\numberline {9}Exemplos}{77}
+\contentsline {section}{\numberline {9.1}Un exemplo de secci\IeC {\'o}n}{77}
+\contentsline {subsection}{\numberline {9.1.1}Un exemplo de subsecci\IeC {\'o}n}{77}
+\contentsline {subsection}{\numberline {9.1.2}Otro exemplo de subsecci\IeC {\'o}n}{77}
+\contentsline {subsubsection}{\numberline {9.1.2.1}Un exemplo de subsubsecci\IeC {\'o}n}{77}
+\contentsline {subsubsection}{\numberline {9.1.2.2}Un exemplo de subsubsecci\IeC {\'o}n}{77}
+\contentsline {subsubsection}{\numberline {9.1.2.3}Un exemplo de subsubsecci\IeC {\'o}n}{78}
+\contentsline {section}{\numberline {9.2}Exemplos de figuras e cadros}{78}
+\contentsline {section}{\numberline {9.3}Exemplos de referencias \IeC {\'a} bibliograf\IeC {\'\i }a}{78}
+\contentsline {section}{\numberline {9.4}Exemplos de enumeraci\IeC {\'o}ns}{79}
+\contentsline {chapter}{\numberline {10}Conclusiones y posibles ampliaciones}{81}
+\contentsline {chapter}{\numberline {A}Manuais t\IeC {\'e}cnicos}{83}
+\contentsline {chapter}{\numberline {B}Manuais de usuario}{85}
+\contentsline {chapter}{\numberline {C}Licencia}{87}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{89}

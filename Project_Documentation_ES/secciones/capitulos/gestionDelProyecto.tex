@@ -869,7 +869,7 @@ Considerando ahora los costes indirectos agregaremos el coste de amortización r
 
 \bigskip
 
-Finalmente sumaremos un 10\% al sobre el coste del proyecto en concepto de gastos en servicios como electricidad, agua, internet, etc. Teniendo en cuenta el pago final\footnote{Considerando 14 pagas, 20 días laborales al mes con 8 horas de trabajo al día.} al desarrollador con el resto de gastos directos e indirectos se obtienen los datos de la tabla \ref{tab:coste_final}.
+Finalmente sumaremos un 10\% al sobre el coste del proyecto en concepto de gastos en servicios como electricidad, agua, internet, etc. Teniendo en cuenta el pago final\footnote{Considerando 14 pagas, 20 días laborales al mes con 8 horas de trabajo al día.} al desarrollador con el resto de gastos directos e indirectos se obtienen los datos de la tabla \ref{tab:coste_final} que nos muestra unos costes finales de 4672.14\euro{}.
 
 
 \begin{table}
@@ -926,7 +926,7 @@ Finalmente sumaremos un 10\% al sobre el coste del proyecto en concepto de gasto
 		Costes indirectos& 10\% (424.74) \\
 		
 		\hline
-		\textbf{TOTAL: } & 4672.14 \\
+		\textbf{TOTAL: } & \textbf{4672.14} \\
 		
 		\hline
 	\end{tabular}
@@ -939,4 +939,93 @@ Finalmente sumaremos un 10\% al sobre el coste del proyecto en concepto de gasto
 
 \section{Plan de Gestión de las Comunicaciones}
 
-\todo{Completar el plan de Gestión de las Comunicaciones}
+Este apartado se dedicará a definir los protocolos dedicados al intercambio de información entre el equipo de desarrollo, en este caso el único trabajador con el rol de desarrollador, y los interesados en el proyecto que estarán compuestos por los tutores y posibles usuarios. Además se agregará la información correspondiente a cada uno de los interesados necesaria para comunicarse con ellos.
+
+\subsection{Gestión de interesados}
+
+El PMBOK\cite{pmbok} realiza la siguiente definición de interesados en el contexto de un proyecto:
+
+\begin{quote}
+\textit{
+	Un interesado es un individuo, grupo u organización que puede afectar, verse afectado, o percibirse a sí mismo como afectado por una decisión, actividad o resultado de un proyecto. Los interesados pueden participar activamente en el proyecto o tener intereses a los que puede afectar positiva o negativamente la ejecución o la terminación del proyecto. 
+}
+\end{quote}
+
+Para continuar con la gestión de las comunicaciones es esencial identificar primero a los interesados en el proyecto. Generalmente es un proceso complejo ya que su continuidad y solamente el número de posibles interesados en un proyecto de software pueden hacerlo realmente difícil. En el caso que nos atañe el número de interesados se reduce significativamente comparado con un proyecto software en un contexto de empresa. Esto se debe a que se está realizando un proyecto dentro de un entorno de formación e investigación, lo que elimina muchos de los posibles interesados que surgirían de entre los muchos posibles usuarios, clientes, proveedores, etc.
+
+\bigskip
+
+La tabla \ref{tab:interesados} contendrá la información relacionada con los interesados identificados que pueda ser necesaria realizar una comunicación.
+
+\subsection{Planificación de la información y comunicaciones}
+
+Esta sección se enfoca a lograr que los implicados en el proyecto dispongan en todo momento de la información que puedan necesitar. En busca de esto deberemos definir con precisión qué información puede ser necesaria, para quién, cuando se debe proporcionar, etc.
+
+\bigskip
+
+El PMBOK\cite{pmbok} define tres tipos de comunicación posibles:
+
+\begin{itemize}
+	\item \textbf{Comunicación interactiva}: En la que las partes intercambian información de forma multidireccional. Es la manera más eficaz de asegurar comprensión común e incluye reuniones presenciales, llamadas, mensajería instantánea o videoconferencias.
+	\item \textbf{Comunicación de tipo \textit{push} (empujar)}: En la que se envía la información a los receptores que puedan necesitarla sin tener porque garantizar su recepción y comprensión. Incluye cartas, informes, correos electrónicos, comunicados, etc. 
+	\item \textbf{Comunicación de tipo \textit{pull} (tirar)}: En la que los receptores de la información son los encargados de acceder a la información que requieran según su criterio. Esto incluye sitios intranet, bases de datos de lecciones aprendidas o repositorios de conocimiento.
+\end{itemize}
+
+\bigskip
+
+En el presente caso la comunicación ha sido principalmente interactiva dadas las reuniones presenciales y otro tipo de colaboraciones directas que hayan podido ocurrir. Aunque también han ocurrido instancias de comunicación push en la que el trabajador simplemente comunica cierta información a los tutores de forma unidireccional. Las características de la comunicación se encuentran en la tabla \ref{tab:comunicacion}.
+
+\subsection{Reuniones}
+
+Dados los múltiples problemas que suele ocasionar la realización de reuniones con nula planificación se dedica este apartado a definir a groso modo las características que las mismas deberían tener.
+
+\bigskip
+
+Se necesitan cuidar detalles como clarificar el objetivo de la reunión o definir la duración de la misma. Además, el lugar en el que se llevan a cabo también es importante pues se deben evitar distracciones y facilitar la comunicación de los asistentes. En este sentido se han utilizado las salas del CiTIUS\footnote{Centro Singular de Investigación en Tecnologías de la Información de la Universidad de Santiago de Compostela (www.citius.usc.es/)} dado que los tutores ambos tienen un puesto en el centro y uno de ellos cuenta con un despacho que cumple las características necesarias.
+
+\bigskip 
+
+Con respecto al tiempo, se extienden alrededor a una hora aproximadamente, siendo las mismas más cortas si se han tratado todos los temas necesarios y pudiendo ser más largas de forma extraordinaria si no se han podido tocar todos los puntos requeridos.
+
+\clearpage
+
+
+\begin{landscape}
+
+
+\begin{table}
+	\begin{adjustwidth}{-3cm}{}
+	{\scriptsize
+		\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+			\hline
+			\multicolumn{5}{c}{Identificación} &  \multicolumn{4}{c}{Evaluación} & \multicolumn{2}{c}{Clasificación}\\
+			
+			\hline
+			\textbf{Nombre} & \textbf{Empresa/ Grupo}  & \textbf{Localización} & \textbf{Rol en el proyecto} & \textbf{Información de contacto} & \textbf{Requisitos} & \textbf{Expectativas} & \textbf{Influencia potencial} & \textbf{Fase de mayor interés} & \textbf{Externo/Interno} & \textbf{Apoyo/ Neutral/ Opositor}\\
+			
+			\hline
+			
+		\end{tabular}
+	}
+		\caption{Matriz de interesados del proyecto}
+		\label{tab:interesados}
+	\end{adjustwidth}
+\end{table}
+
+\begin{table}
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Elemento} & \textbf{Coste (\euro{})}\\
+			
+			\hline
+			Analista programador C++ & 3952.50 \\
+			
+			\hline
+		\end{tabular}
+		\caption{Matriz de comunicaciones del proyecto}
+		\label{tab:comunicacion}
+\end{table}
+
+
+\end{landscape}
+
