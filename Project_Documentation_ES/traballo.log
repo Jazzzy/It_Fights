@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.6)  29 JUN 2017 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  29 JUN 2017 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./traballo.tex
+**traballo.tex
 (./traballo.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
-(c:/texlive/2017/texmf-dist/tex/latex/base/book.cls
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(c:/texlive/2017/texmf-dist/tex/latex/base/bk12.clo
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,19 +24,19 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(c:/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -277,7 +277,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -318,7 +318,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -342,13 +342,13 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2017/05/19 3.10 The Babel package
 
-(c:/texlive/2017/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
-(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2017/05/19 3.10 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
@@ -360,31 +360,31 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -392,15 +392,15 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen106
 \epsfysize=\dimen107
 )
-(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -408,11 +408,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/eurosym/eurosym.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box26
 )
-(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count91
 \float@exts=\toks19
@@ -420,7 +420,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks20
 \@floatcapt=\box28
 )
-(c:/texlive/2017/texmf-dist/tex/latex/base/latexsym.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
@@ -428,7 +428,7 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 ) (./a4.sty
 Package: a4 2004/04/15 v1.2g A4 based page layout
 )
-(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count92
 \lst@gtempboxa=\box29
 \lst@token=\toks21
@@ -442,39 +442,39 @@ Package: a4 2004/04/15 v1.2g A4 based page layout
 \lst@lineno=\count97
 \lst@maxwidth=\dimen111
 
-(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count98
 \lst@skipnumbers=\count99
 \lst@framebox=\box30
 )
-(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(c:/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks22
 \XKV@tempa@toks=\toks23
 )
 \XKV@depth=\count100
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -488,36 +488,36 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
 \pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen112
 \pgfutil@tempdimb=\dimen113
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
-) (c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box31
-
-(c:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks25
 \pgfkeys@temptoks=\toks26
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
 \pgfkeys@tmptoks=\toks27
 ))
 \pgf@x=\dimen114
@@ -537,31 +537,36 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \t@pgf@toka=\toks28
 \t@pgf@tokb=\toks29
 \t@pgf@tokc=\toks30
- (c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count105
 \pgfsyssoftpath@bigbuffer@items=\count106
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen122
 \pgfmath@count=\count107
 \pgfmath@box=\box32
@@ -569,27 +574,29 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@stack@operand=\toks32
 \pgfmath@stack@operation=\toks33
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
 .code.tex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-)
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count108
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen123
 \pgf@picmaxx=\dimen124
@@ -606,108 +613,121 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen135
 \pgf@zy=\dimen136
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
-e.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen137
 \pgf@path@lasty=\dimen138
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
-x
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen139
 \pgf@shorten@start@additional=\dimen140
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box33
 \pgf@hbox=\box34
 \pgf@layerbox@main=\box35
 \pgf@picture@serial@count=\count109
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
-.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen141
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
-ode.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen142
 \pgf@pt@y=\dimen143
 \pgf@pt@temp=\dimen144
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
-de.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen145
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen146
 \pgf@sys@shading@range@num=\count110
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box36
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
-.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box37
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
-y
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen147
 \pgf@nodesepend=\dimen148
 )
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
-y
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(c:/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen149
 \pgffor@skip=\dimen150
 \pgffor@stack=\toks34
 \pgffor@toks=\toks35
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
-de.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count111
 \pgfplotmarksize=\dimen151
@@ -727,7 +747,8 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count114
 \tikz@fig@count=\count115
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count116
 \pgfmatrixcurrentcolumn=\count117
@@ -735,14 +756,15 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count119
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarytopaths.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarypositioning.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (c:/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count120
 \calc@Bcount=\count121
@@ -756,7 +778,8 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip45
 )
 \c@@todonotes@numberoftodonotes=\count123
-) (c:/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen160
 \extrarowheight=\dimen161
@@ -764,11 +787,11 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \extratabsurround=\skip46
 \backup@length=\skip47
 )
-(c:/texlive/2017/texmf-dist/tex/latex/pbox/pbox.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pbox/pbox.sty
 Package: pbox 2011/12/07 v1.2 Dynamic parboxes
 \pb@xlen=\skip48
 )
-(c:/texlive/2017/texmf-dist/tex/latex/tools/longtable.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip49
 \LTright=\skip50
@@ -786,7 +809,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count128
 \LT@p@ftn=\toks37
 )
-(c:/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen163
 \lightrulewidth=\dimen164
@@ -806,13 +829,13 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count132
 \@thisrulewidth=\dimen175
 )
-(c:/texlive/2017/texmf-dist/tex/latex/makecell/makecell.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen176
 \c@nlinenum=\count133
 \TeXr@lab=\toks38
 )
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count134
 \rotFPtop=\skip53
@@ -820,33 +843,33 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rot@float@box=\box46
 \rot@mess@toks=\toks39
 )
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
-(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/psnfss/charter.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/charter.sty
 Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
 )
-(c:/texlive/2017/texmf-dist/tex/latex/tools/afterpage.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks40
 \AP@partial=\box47
 \AP@footins=\box48
 )
-(c:/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -863,81 +886,63 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen184
 \Gm@dimlist=\toks41
 )
-(c:/texlive/2017/texmf-dist/tex/latex/changepage/changepage.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count138
 \cp@tempcnt=\count139
 )
-
-! LaTeX Error: Option clash for package eurosym.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 
-     
-The package eurosym has already been loaded with options:
-  []
-There has now been an attempt to load it with options
-  [gen]
-Adding the global options:
-  ,gen
-to your \documentclass declaration may fix this.
-Try typing  <return>  to proceed.
-
-(c:/texlive/2017/texmf-dist/tex/latex/forest/forest.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/forest/forest.sty
 Package: forest 2017/02/02 v2.1.4 Drawing (linguistic) trees
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.geometric.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 )
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
-eometric.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.misc.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
-isc.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.symbols.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
-ymbols.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.arrows.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
-rrows.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.callouts.code.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
-allouts.code.tex))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.multipart.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.callouts.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.callouts.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 )
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
-ultipart.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
 \pgfnodepartlowerbox=\box49
@@ -961,44 +966,44 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 \pgfnodepartsixbox=\box67
 \pgfnodepartfivebox=\box68
 )))
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryfit.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarycalc.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.c
-ode.tex
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryinterse
+ctions.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
 \pgf@intersect@solutions=\count140
-)
-(c:/texlive/2017/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@a@toks=\toks42
 \pgfopts@list@add@b@toks=\toks43
 )
-(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count141
 )
-(c:/texlive/2017/texmf-dist/tex/latex/elocalloc/elocalloc.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/elocalloc/elocalloc.sty
 Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(c:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks44
 )
-(c:/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2017/05/13 L3 programming layer (loader) 
 
-(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2017/05/13 L3 programming layer (code)
 \c_max_int=\count142
 \l_tmpa_int=\count143
@@ -1094,7 +1099,7 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 \l__coffin_scaled_total_height_dim=\dimen270
 \l__coffin_scaled_width_dim=\dimen271
 )
-(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count177
 \l__driver_tmp_box=\box84
@@ -1106,7 +1111,7 @@ Package: xparse 2017/05/13 L3 Experimental document command parser
 \l__xparse_mandatory_args_int=\count181
 \l__xparse_v_nesting_int=\count182
 )
-(c:/texlive/2017/texmf-dist/tex/latex/inlinedef/inlinedef.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \ID@toks=\toks45
 \ID@count=\count183
@@ -1189,36 +1194,37 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@externalize@max@outer@n=\count274
 \forest@externalize@inner@n=\count275
 )
-(c:/texlive/2017/texmf-dist/tex/latex/forest/forest-lib-edges.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/forest/forest-lib-edges.sty
 Package: forest-lib-edges 2016/12/05 v0.1.1
 )
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.cod
-e.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowinset=\dimen278
 \pgfarrowlength=\dimen279
 \pgfarrowwidth=\dimen280
 \pgfarrowlinewidth=\dimen281
 )
-(c:/texlive/2017/texmf-dist/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex
- v1.01, 2012/04/24
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshadows.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf-blur/tikzlibraryshadows.blur.
+code.tex  v1.01, 2012/04/24
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryfadings.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
 File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
 
-(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.te
-x
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
 File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
 )))) (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- (./secciones/certificacion.aux)
-(./secciones/agradecimientos.aux) (./secciones/prefacio.aux)
-(./secciones/introduccion.aux) (./secciones/capitulos/analisisDeRequisitos.aux)
+
+(./secciones/certificacion.aux) (./secciones/agradecimientos.aux)
+(./secciones/prefacio.aux) (./secciones/introduccion.aux)
+(./secciones/capitulos/analisisDeRequisitos.aux)
 (./secciones/capitulos/gestionDelProyecto.aux)
 (./secciones/capitulos/arquitecturaYHerramientas.aux)
 (./secciones/capitulos/disenoEImplementacion.aux)
@@ -1243,13 +1249,13 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Try loading font information for OT1+bch on input line 64.
 
-(c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1bch.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 )
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
 
-(c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count276
 \scratchdimen=\dimen282
@@ -1262,11 +1268,11 @@ LaTeX Info: Redefining \% on input line 64.
 \MPnumerator=\count280
 \makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks58
-) (c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -1275,22 +1281,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -1304,7 +1310,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1349,10 +1355,10 @@ ABD: EveryShipout initializing macros
 
 (./secciones/titulo.tex
 Package epstopdf Info: Source file: <figuras/logo_usc.eps>
-(epstopdf)                    date: 2017-06-08 19:32:58
-(epstopdf)                    size: 93355 bytes
+(epstopdf)                    date: 2010-11-26 16:38:18
+(epstopdf)                    size: 91607 bytes
 (epstopdf)             Output file: <figuras/logo_usc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-08 19:32:58
+(epstopdf)                    date: 2017-06-07 18:32:16
 (epstopdf)                    size: 22200 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/logo_usc-eps-conve
 rted-to.pdf figuras/logo_usc.eps>
@@ -1369,9 +1375,8 @@ ne 9.
  [1
 
 
-{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuras/logo_
-usc-eps-converted-to.pdf>])
-[2
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
+as/logo_usc-eps-converted-to.pdf>]) [2
 
 
 
@@ -1380,17 +1385,18 @@ usc-eps-converted-to.pdf>])
 
  (./secciones/certificacion.tex
 Package epstopdf Info: Source file: <figuras/logo_usc.eps>
-(epstopdf)                    date: 2017-06-08 19:32:58
-(epstopdf)                    size: 93355 bytes
+(epstopdf)                    date: 2010-11-26 16:38:18
+(epstopdf)                    size: 91607 bytes
 (epstopdf)             Output file: <figuras/logo_usc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-08 19:32:58
+(epstopdf)                    date: 2017-06-07 18:32:16
 (epstopdf)                    size: 22200 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/logo_usc-eps-conve
 rted-to.pdf figuras/logo_usc.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 File: figuras/logo_usc-eps-converted-to.pdf Graphic file (type pdf)
- <use figuras/logo_usc-eps-converted-to.pdf>
+
+<use figuras/logo_usc-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/logo_usc-eps-converted-to.pdf used on input li
 ne 3.
 (pdftex.def)             Requested size: 113.81102pt x 73.87013pt.
@@ -1401,17 +1407,17 @@ Overfull \hbox (5.0818pt too wide) in paragraph at lines 6--7
  []
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 18.
-(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
-(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )) [1
 
@@ -2003,7 +2009,8 @@ LaTeX Info: Redefining \% on input line 569.
  [52]
 LaTeX Font Info:    Try loading font information for OML+bch on input line 587.
 
- (c:/texlive/2017/texmf-dist/tex/latex/psnfss/omlbch.fd
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlbch.fd
 File: omlbch.fd 
 )
 LaTeX Font Info:    Font shape `OML/bch/m/n' in size <12> not available
@@ -2018,7 +2025,8 @@ LaTeX Info: Redefining \% on input line 618.
  [54]
 LaTeX Info: Redefining \. on input line 640.
 LaTeX Info: Redefining \% on input line 640.
- [55]
+
+[55]
 LaTeX Info: Redefining \. on input line 657.
 LaTeX Info: Redefining \% on input line 657.
  [56]
@@ -2885,57 +2893,144 @@ LaTeX Info: Redefining \% on input line 96.
 
  (./secciones/capitulos/arquitecturaYHerramientas.tex
 Cap\'{\i }tulo 5.
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 12--12
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 16--16
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-)
-
-LaTeX Warning: Marginpar on page 71 moved.
-
 [71
 
 
-]
+] <otros/UML/png/arquitectura_mala.png, id=322, 1098.1025pt x 676.5275pt>
+File: otros/UML/png/arquitectura_mala.png Graphic file (type png)
+
+<use otros/UML/png/arquitectura_mala.png>
+Package pdftex.def Info: otros/UML/png/arquitectura_mala.png used on input line
+ 25.
+(pdftex.def)             Requested size: 426.79134pt x 262.93623pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 25--26
+[][] 
+ []
+
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+[72 <./otros/UML/png/arquitectura_mala.png>]
+<otros/UML/png/arquitectura_general.png, id=327, 1080.035pt x 724.7075pt>
+File: otros/UML/png/arquitectura_general.png Graphic file (type png)
+
+<use otros/UML/png/arquitectura_general.png>
+Package pdftex.def Info: otros/UML/png/arquitectura_general.png used on input l
+ine 37.
+(pdftex.def)             Requested size: 426.79134pt x 286.37244pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 37--38
+[][] 
+ []
+
+<otros/UML/png/actual_arquitecture.png, id=328, 1114.1625pt x 734.745pt>
+File: otros/UML/png/actual_arquitecture.png Graphic file (type png)
+
+<use otros/UML/png/actual_arquitecture.png>
+Package pdftex.def Info: otros/UML/png/actual_arquitecture.png used on input li
+ne 49.
+(pdftex.def)             Requested size: 426.79134pt x 281.44826pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 49--50
+[][] 
+ []
+
+<otros/UML/png/final_arq.png, id=329, 1007.765pt x 574.145pt>
+File: otros/UML/png/final_arq.png Graphic file (type png)
+
+<use otros/UML/png/final_arq.png>
+Package pdftex.def Info: otros/UML/png/final_arq.png used on input line 61.
+(pdftex.def)             Requested size: 426.79134pt x 243.15422pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 61--62
+[][] 
+ []
+
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+[73 <./otros/UML/png/arquitectura_general.png>]
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+ [74 <./otros/UML/png/actual_arquitecture.png> <./otros/UML/png/final_arq.png>]
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
+ [75]
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
+ [76]
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+ [77]
+<otros/UML/png/strategy.png, id=349, 1194.4625pt x 487.8225pt>
+File: otros/UML/png/strategy.png Graphic file (type png)
+
+<use otros/UML/png/strategy.png>
+Package pdftex.def Info: otros/UML/png/strategy.png used on input line 145.
+(pdftex.def)             Requested size: 426.79134pt x 174.3059pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 145--146
+[][] 
+ []
+
+<otros/UML/png/singleton.png, id=350, 435.6275pt x 311.1625pt>
+File: otros/UML/png/singleton.png Graphic file (type png)
+
+<use otros/UML/png/singleton.png>
+Package pdftex.def Info: otros/UML/png/singleton.png used on input line 162.
+(pdftex.def)             Requested size: 142.26378pt x 101.61565pt.
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [78 <./otros/UML/png/strategy.png>]
+<otros/UML/png/decorator.png, id=355, 1118.1775pt x 790.955pt>
+File: otros/UML/png/decorator.png Graphic file (type png)
+
+<use otros/UML/png/decorator.png>
+Package pdftex.def Info: otros/UML/png/decorator.png used on input line 179.
+(pdftex.def)             Requested size: 341.43306pt x 241.51248pt.
+
+Overfull \hbox (3.54456pt too wide) in paragraph at lines 192--193
+[]\OT1/bch/b/it/12 ConcreteDecorator\OT1/bch/m/n/12 : Ex-tien-den el com-po-nen
+-te a[]nadien-do fun-cio-na-li-dad y/o
+ []
+
+<otros/UML/png/pubsub.png, id=356, 1872.9975pt x 463.7325pt>
+File: otros/UML/png/pubsub.png Graphic file (type png)
+
+<use otros/UML/png/pubsub.png>
+Package pdftex.def Info: otros/UML/png/pubsub.png used on input line 202.
+(pdftex.def)             Requested size: 341.43306pt x 84.52963pt.
+LaTeX Info: Redefining \. on input line 210.
+LaTeX Info: Redefining \% on input line 210.
+ [79 <./otros/UML/png/singleton.png>]
+LaTeX Info: Redefining \. on input line 210.
+LaTeX Info: Redefining \% on input line 210.
+ [80 <./otros/UML/png/decorator.png> <./otros/UML/png/pubsub.png>]
+Overfull \hbox (4.93816pt too wide) in paragraph at lines 224--224
+[][][][]\OT1/bch/m/n/12 completar 
+ []
+
+
+Overfull \hbox (4.93816pt too wide) in paragraph at lines 224--224
+[][][][]\OT1/bch/m/n/12 completar 
+ []
+
+
+Overfull \hbox (4.93816pt too wide) in paragraph at lines 224--224
+[][][][]\OT1/bch/m/n/12 completar 
+ []
+
+
+Overfull \hbox (4.93816pt too wide) in paragraph at lines 224--224
+[][][][]\OT1/bch/m/n/12 completar 
+ []
+
+)
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+ [81]
 LaTeX Info: Redefining \. on input line 98.
 LaTeX Info: Redefining \% on input line 98.
- [72
+ [82
 
 
 ]
@@ -2969,13 +3064,13 @@ Overfull \hbox (45.55461pt too wide) in paragraph at lines 6--7
 om/questions/4157/what-
  []
 
-) [73
+) [83
 
 
 ]
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [74
+ [84
 
 
 ]
@@ -3003,13 +3098,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [75
+) [85
 
 
 ]
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
- [76
+ [86
 
 
 ]
@@ -3037,42 +3132,42 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [77
+) [87
 
 
 ]
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
- [78
+ [88
 
 
 ]
 
-LaTeX Warning: Marginpar on page 79 moved.
+LaTeX Warning: Marginpar on page 89 moved.
 
-[79]
+[89]
 \openout2 = `secciones/ejemplos.aux'.
 
  (./secciones/ejemplos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [80
+ [90
 
 
 ]
 Cap\'{\i }tulo 9.
-[81]
+[91]
 Package epstopdf Info: Source file: <figuras/figura01.eps>
-(epstopdf)                    date: 2017-06-08 19:32:58
-(epstopdf)                    size: 212824 bytes
+(epstopdf)                    date: 2010-11-26 18:35:19
+(epstopdf)                    size: 209408 bytes
 (epstopdf)             Output file: <figuras/figura01-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-08 19:32:58
+(epstopdf)                    date: 2017-06-07 18:32:17
 (epstopdf)                    size: 26808 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/figura01-eps-conve
 rted-to.pdf figuras/figura01.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
- <figuras/figura01-eps-converted-to.pdf, id=359, 1060.96375pt x 513.92pt>
+ <figuras/figura01-eps-converted-to.pdf, id=408, 1060.96375pt x 513.92pt>
 File: figuras/figura01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/figura01-eps-converted-to.pdf>
@@ -3081,16 +3176,15 @@ ne 30.
 (pdftex.def)             Requested size: 426.79134pt x 206.73277pt.
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
- [82 <./figuras/figura01-eps-converted-to.pdf>] (c:/texlive/2017/texmf-dist/tex
-/latex/listings/lstlang1.sty
+ [92 <./figuras/figura01-eps-converted-to.pdf>] (/usr/local/texlive/2017/texmf-
+dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 LaTeX Font Info:    Try loading font information for OMS+bch on input line 83.
 
-(c:/texlive/2017/texmf-dist/tex/latex/psnfss/omsbch.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsbch.fd
 File: omsbch.fd 
 )
 LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <12> not available
@@ -3098,7 +3192,7 @@ LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <12> not available
 LaTeX Font Info:    Font shape `OMS/bch/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
 
-(c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Overfull \hbox (56.95116pt too wide) in paragraph at lines 97--98
@@ -3108,10 +3202,10 @@ Overfull \hbox (56.95116pt too wide) in paragraph at lines 97--98
 )
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
- [83]
+ [93]
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
- [84
+ [94
 
 
 ]
@@ -3139,13 +3233,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [85
+) [95
 
 
 ]
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
- [86
+ [96
 
 
 ]
@@ -3153,13 +3247,13 @@ LaTeX Info: Redefining \% on input line 117.
 
  (./secciones/apendicea.tex
 Ap\'{e}ndice A.
-) [87
+) [97
 
 
 ]
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
- [88
+ [98
 
 
 ]
@@ -3167,13 +3261,13 @@ LaTeX Info: Redefining \% on input line 119.
 
  (./secciones/apendiceb.tex
 Ap\'{e}ndice B.
-) [89
+) [99
 
 
 ]
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
- [90
+ [100
 
 
 ]
@@ -3181,13 +3275,13 @@ LaTeX Info: Redefining \% on input line 121.
 
  (./secciones/licencia.tex
 Ap\'{e}ndice C.
-) [91
+) [101
 
 
 ]
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
- [92
+ [102
 
 
 ]
@@ -3214,16 +3308,16 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Marginpar on page 93 moved.
+LaTeX Warning: Marginpar on page 103 moved.
 
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-[93
+[103
 
 ]
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [94
+ [104
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -3232,42 +3326,57 @@ re.org/ieee-1471/defining-
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 28--29
+Underfull \hbox (badness 1147) in paragraph at lines 30--31
 []\OT1/bch/m/n/12 Nvidia CU-DA pro-gram-ming gui-de. Ver-si[]on 2.0, 2010. Dis-
 po[]nible en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 []\OT1/bch/m/n/12 Acceso m[]ulti-ple por di-vi-si[]on de c[]odi-go. Ar-ti-go da
  wi-ki-pe-dia
  []
 
-) [95]
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
- [96
+) [105]
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
+ [106]
+
+LaTeX Warning: Marginpar on page 107 moved.
+
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+[107
 
 
 ]
-
-LaTeX Warning: Marginpar on page 97 moved.
-
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
-[97]
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [98
+ [108
 
-] (./traballo.tdo)
+] (./traballo.tdo
+Overfull \hbox (1.41595pt too wide) detected at line 10
+ []\OT1/bch/m/n/12 101
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 11
+ []\OT1/bch/m/n/12 103
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 12
+ []\OT1/bch/m/n/12 107
+ []
+
+)
 \tf@tdo=\write8
 \openout8 = `traballo.tdo'.
 
- [99]
+ [109]
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
- [100
+ [110
 
 ] (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
@@ -3285,34 +3394,36 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
 (./secciones/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 40243 strings out of 492995
- 861308 string characters out of 6136403
- 896085 words of memory out of 5000000
- 43127 multiletter control sequences out of 15000+600000
+ 40285 strings out of 492995
+ 865612 string characters out of 6132704
+ 895037 words of memory out of 5000000
+ 43160 multiletter control sequences out of 15000+600000
  54220 words of font info for 97 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 146i,26n,180p,10403b,5213s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><
-c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb><c:/texlive
-/2017/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf
--dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts
-/type1/bitstrea/charter/bchri8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/eurosym/fey
-br10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb><c:
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (112 pages, 543672 bytes).
+ 146i,26n,180p,10401b,5213s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/bitstrea/char
+ter/bchb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter
+/bchbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/b
+chr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchr
+8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchri8a
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on traballo.pdf (122 pages, 751950 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
+ 536 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

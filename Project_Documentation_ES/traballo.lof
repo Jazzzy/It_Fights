@@ -11,11 +11,19 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Cronograma de la parte de obtenci\IeC {\'o}n de datos}}{61}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Cronograma de la parte de documentaci\IeC {\'o}n, reuniones y finalizaci\IeC {\'o}n}}{62}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Arquitectura con subsistemas interconectados directamente}}{72}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura con subsistemas interconectados mediante bus de mensajes}}{73}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Arquitectura con Bus Node}}{74}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Arquitectura final}}{74}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Patr\IeC {\'o}n \textit {Strategy}}}{78}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Patr\IeC {\'o}n \textit {Singleton}}}{79}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Patr\IeC {\'o}n \textit {Decorator}}}{80}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Patr\IeC {\'o}n Publica-Subscribe o \textit {PubSub}}}{80}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Esta \IeC {\'e} a figura de tal e cal.}}{82}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Esta \IeC {\'e} a figura de tal e cal.}}{92}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
