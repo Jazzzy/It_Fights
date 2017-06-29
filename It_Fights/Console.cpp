@@ -15,6 +15,7 @@
 #include "Game.hpp"
 #include "ResourcePath.hpp"
 #include "Systems.hpp"
+#include "StateActionContainer.hpp"
 
 extern Game *game;
 
@@ -29,12 +30,16 @@ Console::Console(MessageBus *messageBus)
 
   this->inputTextColor = sf::Color::Black;
   this->msgTextColor = sf::Color(75, 75, 75);
-  this->messageBackgroundColor = sf::Color(227, 194, 124, 180);  // Light Brown
+  this->messageBackgroundColor = sf::Color(227, 194, 124, 210);  // Light Brown
   this->inputBackgroundColor = sf::Color(189, 151, 120);         // Darker Brown
 
   this->pixelCharacterSize = 40;
 
   this->showFps = true;
+        
+  std::ostringstream os;
+  os << "The agent currently has " << StateActionContainer::Instance().getStateActionMap()->size() << " states on its mind";
+  this->messageLines.push_back(ConsoleLine(os.str()));
 }
 
 Console::~Console() {}
