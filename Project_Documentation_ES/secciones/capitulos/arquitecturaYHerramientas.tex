@@ -221,4 +221,64 @@ Tenemos que comentar que en la aplicación, como se ve en el apartado de diseño
 
 \section{Herramientas de desarrollo}
 
-\todo{completar herramientas de desarrollo}
+La elección de las herramientas de desarrollo utilizadas en este proyecto ha estado significativamente influenciada por el conocimiento previo que se tenía de las mismas. Esta práctica es habitual en todos los proyectos pero se vuelve más necesaria aún cuando el tiempo disponible para realizar el proyecto está limitado.
+
+\bigskip
+
+En este sentido, prácticamente siempre que se pudo elegir una herramienta conocida para realizar alguna tarea se ha escogido. Dicho esto, el entorno de desarrollo a rasgos muy generales que se ha utilizado está compuesto por las siguientes herramientas:
+
+\bigskip
+
+\begin{itemize}
+	\item \textbf{Sistema operativo}: macOS Sierra 10.12.5
+	\item \textbf{Compilador}: clang 802.0.42 (basado en Apple LLVM 8.1.0)
+\end{itemize}
+
+\bigskip
+
+El entorno es relativamente  corto y fácil de describir dada la ausencia de bases de datos o frameworks que corran por encima del lenguaje utilizado. Pese a que en la lista anterior solo se mencionen el sistema y compilador utilizados, se entrará en detalle sobre las herramientas específicas dedicadas a la elaboración de la documentación, el desarrollo del código, las tecnologías elegidas y las librerías utilizadas.
+
+\subsection{Realización de la documentación}
+
+Para generar la documentación del proyecto y, por lo tanto, esta misma memoria se han utilizado las siguientes herramientas:
+
+\begin{itemize}
+	\item \textbf{TeXstudio\footnote{http://www.texstudio.org/}}: La elección de este editor para archivos .tex se ha escogido dado su amplio uso en la comunidad, la cantidad y calidad de la documentación del mismo y el hecho de que es soportado en todos los sistemas operativos importantes, lo que reduce el riesgo de tener que utilizar otra herramienta si ocurren problemas con el equipo de desarrollo.
+	\item \textbf{Microsoft Project 2013}: Gracias a las versiones de prueba que ofrece Microsoft para este software se ha podido utilizar esta herramienta. Teniendo la opción de elegir entre las diferentes opciones orientadas a la gestión de proyectos la mejor sin duda es Project. Aporta muchas más facilidades y posibilidades que los competidores y es el estándar de facto. Además, si las versiones de prueba dejan de estar disponibles, muchas de las otras herramientas soportan la importación de proyectos de Microsoft Project, posibilitando así continuar con el proyecto.
+	\item \textbf{StarUML 2.8}: Usado tanto para elaborar los diagramas como para exportarlos a imágenes integrables en la documentación. Como 
+\end{itemize}
+
+
+\subsection{Desarrollo}
+
+Las herramientas que han sido necesarian para llevar a cabo la implementación de la aplicación han sido las siguientes:
+
+\begin{itemize}
+	\item Motor \textbf{Unity 5}: Se escogió como herramienta principal para desarrollar la aplicación hasta que se descubrieron las limitaciones mencionadas en la acción correctiva AC-1. La elección inicial estaba fundamentada en las facilidades que otorga para implementar aplicaciones de este tipo y la consecuente velocidad a la hora de obtener versiones funcionales rápidamente.
+	\item IDE \textbf{MonoDevelop}: Necesario para trabajar con el código en C\# que utiliza Unity en macOS. Pese a que sea un IDE simplemente se utilizaba para la edición de código dadas las facilidades a la hora de detectar errores en el mismo.
+	\item IDE \textbf{Xcode 8.3.3}: Al estar estrechamente integrado con el sistema de Apple nos permite realizar todo el desarrollo en un mismo entorno. Automáticamente busca y utiliza las herramientas por defecto a la hora de detectar errores en el código, compilar, depurar y empaquetar la aplicación. Además integra un potente \textit{profiler} que ayuda a detectar los cuellos de botella de la aplicación, algo muy importante en situaciones como esta en la que el rendimiento es importante.
+	\item Compilador \textbf{clang-802.0.42 basado en Apple LLVM 8.1.0}: La elección de este compilador era clara, además de soportar las especificaciones de C++ necesarias (completamente hasta C++14) también puede compilar código escrito en Objective C, ya que se ha requerido para una pequeña parte relacionada con el empaquetado de la aplicación. Este compilador es automáticamente utilizado por Xcode por lo que a ojos del usuario es completamente transparente.
+\end{itemize}
+
+\subsection{Tecnologías}
+
+Las tecnologías que se incluyen en este apartado están compuestas por los diferentes lenguajes de programación escogidos para cada una de las partes, así como de cualquier otro tipo de lenguaje que se haya tenido que utilizar.
+
+\begin{itemize}
+	\item \textbf{C\#}: Elegido porque es el lenguaje que utiliza Unity para correr los diferentes archivos o \textit{scripts} que definen el comportamiento de los objetos del juego.
+	\item \textbf{C++}: Dada la relativa experiencia que el desarrollador tenía en este lenguaje se consideró el mismo una buena opción para el proyecto. Más incluso cuando se consideró que el rendimiento era importante dado que la ausencia de un \textit{runtime} encargado de correr nuestro código, realizar recolección de basuras, etc podía ser catastrófico a la hora de conseguir la velocidad de simulación deseada. Además, en términos de lenguajes compilados a bajo nivel C++ es el que más se ajustaba al paradigma orientado a objetos.
+	\item \textbf{Objective-C}: Extensión de C orientada a objetos similar a C++ pero utilizado principalmente en sistemas Apple. Nos ha permitido encapsular todos los archivos y recursos de la aplicación en un mismo ejecutable, haciendo el producto final extremadamente portable en todos los sistemas macOS. 
+	\item \textbf{JSON}: Formato de texto orientado a la transmisión y representación de datos de forma ligera. Se ha utilizado para escribir los datos referentes a las animaciones para así saber que imagen se debe mostrar, en que orden y durante cuanto tiempo. 
+\end{itemize}
+
+\subsection{Librerías}
+
+Finalmente, las librerías utilizadas simplemente se referirán a las que son llamadas desde el código C++ pues los otros lenguajes no requerían extensión alguna para realizar las funcionalidades que se implementaron con ellos.
+
+\begin{itemize}
+	\item \textbf{Biblioteca estándar de C++}: Básica a la hora de trabajar con C++ ya que soporta los contenedores genéricos y funcionalidades asociadas más utilizados en el lenguaje a la vez que completa las características del mismo al soportar funcionalidades en entrada y salida a archivos o salida estándar. 
+	\item \textbf{SFML}: Librería a bajo nivel que sirve como interfaz sobre OpenGL. Gestiona la creación de ventanas en el sistema operativo que se requiera y ofrece funcionalidades útiles a la hora de mostrar por pantalla, reproducir sonidos, etc.
+	\item \textbf{json.h}: Librería en formato de cabecera única que sirve para facilitar la lectura y escritura de archivos json. Disponible en GitHub\footnote{https://github.com/sheredom/json.h} en la cuenta de su creador, \textit{sheredom}, el cual la proporciona sin requerir ningún tipo de licencia.
+	\item \textbf{Boost}: Conjunto de bibliotecas de software libre enfocadas a extender al lenguaje C++ con funcionalidades comúnmente necesitadas como realización de operaciones algebraicas complejas, procesamiento de imágenes, expresiones regulares o nuevos tipos de datos.
+\end{itemize}
+
