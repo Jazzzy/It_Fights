@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  29 JUN 2017 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  30 JUN 2017 01:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2998,7 +2998,7 @@ File: otros/UML/png/pubsub.png Graphic file (type png)
 
 <use otros/UML/png/pubsub.png>
 Package pdftex.def Info: otros/UML/png/pubsub.png used on input line 202.
-(pdftex.def)             Requested size: 341.43306pt x 84.52963pt.
+(pdftex.def)             Requested size: 512.1496pt x 126.80153pt.
 LaTeX Info: Redefining \. on input line 210.
 LaTeX Info: Redefining \% on input line 210.
  [79 <./otros/UML/png/singleton.png>]
@@ -3361,7 +3361,7 @@ LaTeX Info: Redefining \% on input line 7.
 Here is how much of TeX's memory you used:
  40269 strings out of 492995
  865226 string characters out of 6132704
- 894746 words of memory out of 5000000
+ 894745 words of memory out of 5000000
  43144 multiletter control sequences out of 15000+600000
  54220 words of font info for 97 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -3385,7 +3385,7 @@ cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (124 pages, 760431 bytes).
+Output written on traballo.pdf (124 pages, 760440 bytes).
 PDF statistics:
  542 PDF objects out of 1000 (max. 8388607)
  346 compressed objects within 4 object streams
