@@ -48,6 +48,7 @@
 \contentsline {subsection}{\numberline {5.3.3}Tecnolog\IeC {\'\i }as}{83}
 \contentsline {subsection}{\numberline {5.3.4}Librer\IeC {\'\i }as}{84}
 \contentsline {chapter}{\numberline {6}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{85}
+\contentsline {section}{\numberline {6.1}Diagramas de clases}{85}
 \contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{87}
 \contentsline {chapter}{\numberline {8}Valoraciones finales}{89}
 \contentsline {chapter}{\numberline {9}Exemplos}{93}

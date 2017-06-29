@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  29 JUN 2017 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  29 JUN 2017 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3022,32 +3022,6 @@ LaTeX Info: Redefining \% on input line 97.
 
 (./secciones/capitulos/disenoEImplementacion.tex
 Cap\'{\i }tulo 6.
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
-[][][][]\OT1/bch/m/n/12 Completar 
- []
-
-
-Overfull \hbox (45.55461pt too wide) in paragraph at lines 6--7
-[]\OT1/bch/m/n/12 Notas: Pa-tro-nes po-si-bles: https://gamedev.stackexchange.c
-om/questions/4157/what-
- []
-
 ) [85
 
 
@@ -3341,22 +3315,22 @@ LaTeX Info: Redefining \% on input line 132.
  [110
 
 ] (./traballo.tdo
-Overfull \hbox (1.41595pt too wide) detected at line 8
+Overfull \hbox (1.41595pt too wide) detected at line 7
  []\OT1/bch/m/n/12 101
  []
 
 
-Overfull \hbox (1.41595pt too wide) detected at line 9
+Overfull \hbox (1.41595pt too wide) detected at line 8
  []\OT1/bch/m/n/12 103
  []
 
 
-Overfull \hbox (1.41595pt too wide) detected at line 10
+Overfull \hbox (1.41595pt too wide) detected at line 9
  []\OT1/bch/m/n/12 105
  []
 
 
-Overfull \hbox (1.41595pt too wide) detected at line 11
+Overfull \hbox (1.41595pt too wide) detected at line 10
  []\OT1/bch/m/n/12 109
  []
 
@@ -3385,10 +3359,10 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
 (./secciones/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 40277 strings out of 492995
- 865419 string characters out of 6132704
- 895892 words of memory out of 5000000
- 43152 multiletter control sequences out of 15000+600000
+ 40269 strings out of 492995
+ 865226 string characters out of 6132704
+ 894746 words of memory out of 5000000
+ 43144 multiletter control sequences out of 15000+600000
  54220 words of font info for 97 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  146i,26n,180p,10401b,5213s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3411,7 +3385,7 @@ cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (124 pages, 759983 bytes).
+Output written on traballo.pdf (124 pages, 760431 bytes).
 PDF statistics:
  542 PDF objects out of 1000 (max. 8388607)
  346 compressed objects within 4 object streams

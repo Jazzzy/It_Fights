@@ -17,6 +17,9 @@ class ResourceManager {
  public:
   static ResourceManager& Instance();
 
+    /**
+     Returns the font with the given name
+     */
   sf::Font getFont(std::string name);
 
  private:
@@ -29,7 +32,14 @@ class ResourceManager {
   ResourceManager(ResourceManager const&);
   ResourceManager& operator=(ResourceManager const&);
 
+    /**
+     Stores all the fonts with their name as the key
+     */
   std::unordered_map<std::string, sf::Font> fontsMap;
+    
+    /**
+     Loads all the necesary fonts
+     */
   void loadFonts();
 };
 

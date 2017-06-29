@@ -33,11 +33,18 @@ enum ColliderType { WALL, INVERTED_BOX, MOVING_OBJECT, HURTBOX, HITBOX };
 
 enum CollisionBehaviour { Not_Move };
 
+/**
+ Defines the functions for the callbacks on collision 
+ and to get the current position of the collider
+ */
 typedef struct {
   std::function<sf::Vector2f()> getOriginFunc;
   std::function<void(ColliderType, sf::Vector2f, float)> onCollisionCallback;
 } ColliderFuncs;
 
+/**
+ Defines a rectangle collider for the system
+ */
 typedef struct {
   bool active;
   unsigned int id;
@@ -49,12 +56,19 @@ typedef struct {
   CollisionLayer layer;
 } RectangleCollider;
 
+/**
+ Defines a circle collider for the system
+ */
 typedef struct {
   float radius;
   ColliderFuncs funcs;
   ColliderType colType;
 } CircleCollider;
 
+/**
+ Defines a circle collider used only once to check
+ for collisions
+ */
 typedef struct {
   float r;
   float x;
@@ -63,6 +77,9 @@ typedef struct {
   bool area;
 } InstantCircleCollider;
 
+/**
+ Main class of the physics and collision system
+ */
 class Collisions : BusNode, Drawable {
  public:
   Collisions(MessageBus* messageBus);
@@ -81,6 +98,9 @@ class Collisions : BusNode, Drawable {
                          CollisionLayer layerToCheck, float damage);
 
   void update();
+/**
+ Draws the colliders in the render target if necessary
+ */
   void draw(sf::RenderTarget* renderTarget);
 
  private:
