@@ -346,8 +346,8 @@
 											"width": 178.50244140625,
 											"height": 13,
 											"autoResize": false,
-											"underline": false,
-											"text": "-resourcePath(): String",
+											"underline": true,
+											"text": "+resourcePath(): String",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -605,8 +605,8 @@
 								"$ref": "AAAAAAFc9N/kZzhgJQw="
 							},
 							"name": "resourcePath",
-							"visibility": "private",
-							"isStatic": false,
+							"visibility": "public",
+							"isStatic": true,
 							"isLeaf": false,
 							"parameters": [
 								{
@@ -1361,7 +1361,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "-playSound()",
+											"text": "-playSound(sound: Sound)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -3279,6 +3279,26 @@
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFc/mrFVwNw++E=",
+									"_parent": {
+										"$ref": "AAAAAAFc9P0UaUGVqno="
+									},
+									"name": "sound",
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": {
+										"$ref": "AAAAAAFc9PwTj0FOkJE="
+									},
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "in"
+								}
+							],
 							"concurrency": "sequential",
 							"isQuery": false,
 							"isAbstract": false
