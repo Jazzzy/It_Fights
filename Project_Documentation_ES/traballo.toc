@@ -78,13 +78,13 @@
 \contentsline {section}{\numberline {A.2}Instrucciones de instalaci\IeC {\'o}n}{127}{section.Alph1.2}
 \contentsline {section}{\numberline {A.3}Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{128}{section.Alph1.3}
 \contentsline {chapter}{\numberline {B}Manual de usuario}{129}{appendix.Alph2}
-\contentsline {subsection}{\numberline {B.0.1}Instalaci\IeC {\'o}n/Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{129}{subsection.Alph2.0.1}
-\contentsline {subsection}{\numberline {B.0.2}Controles de la aplicaci\IeC {\'o}n}{129}{subsection.Alph2.0.2}
-\contentsline {subsubsection}{\numberline {B.0.2.1}Controles del men\IeC {\'u}}{129}{subsubsection.Alph2.0.2.1}
-\contentsline {subsubsection}{\numberline {B.0.2.2}Controles de combate}{130}{subsubsection.Alph2.0.2.2}
-\contentsline {subsubsection}{\numberline {B.0.2.3}Controles avanzados}{131}{subsubsection.Alph2.0.2.3}
-\contentsline {subsection}{\numberline {B.0.3}Uso de las diferentes escenas}{131}{subsection.Alph2.0.3}
-\contentsline {subsubsection}{\numberline {B.0.3.1}Uso del men\IeC {\'u}}{131}{subsubsection.Alph2.0.3.1}
-\contentsline {subsubsection}{\numberline {B.0.3.2}Combate}{133}{subsubsection.Alph2.0.3.2}
-\contentsline {subsubsection}{\numberline {B.0.3.3}Consola}{135}{subsubsection.Alph2.0.3.3}
+\contentsline {section}{\numberline {B.1}Instalaci\IeC {\'o}n/Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{129}{section.Alph2.1}
+\contentsline {section}{\numberline {B.2}Controles de la aplicaci\IeC {\'o}n}{129}{section.Alph2.2}
+\contentsline {subsection}{\numberline {B.2.1}Controles del men\IeC {\'u}}{130}{subsection.Alph2.2.1}
+\contentsline {subsection}{\numberline {B.2.2}Controles de combate}{130}{subsection.Alph2.2.2}
+\contentsline {subsection}{\numberline {B.2.3}Controles avanzados}{131}{subsection.Alph2.2.3}
+\contentsline {section}{\numberline {B.3}Uso de las diferentes escenas}{131}{section.Alph2.3}
+\contentsline {subsection}{\numberline {B.3.1}Uso del men\IeC {\'u}}{131}{subsection.Alph2.3.1}
+\contentsline {subsection}{\numberline {B.3.2}Combate}{133}{subsection.Alph2.3.2}
+\contentsline {subsection}{\numberline {B.3.3}Consola}{135}{subsection.Alph2.3.3}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{139}{figure.Alph2.7}
