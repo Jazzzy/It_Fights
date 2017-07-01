@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  30 JUN 2017 01:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  1 JUL 2017 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1439,30 +1439,79 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [5
 
-])
+]
+Overfull \hbox (1.41595pt too wide) detected at line 56
+ []\OT1/bch/m/n/12 109
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 57
+ []\OT1/bch/m/n/12 109
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 58
+ []\OT1/bch/m/n/12 109
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 62
+ []\OT1/bch/m/n/12 110
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 63
+ []\OT1/bch/m/n/12 110
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 64
+ []\OT1/bch/m/n/12 111
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `traballo.toc'.
 
- [6]
-(./traballo.lof
+ [6] (./traballo.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+ [7
+
+]
+Overfull \hbox (1.41595pt too wide) detected at line 39
+ []\OT1/bch/m/n/12 100
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 40
+ []\OT1/bch/m/n/12 101
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 44
+ []\OT1/bch/m/n/12 110
+ []
+
 )
 \tf@lof=\write6
 \openout6 = `traballo.lof'.
 
- [7
-
-] [8
-
-] (./traballo.lot
+ [8] (./traballo.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+
+Overfull \hbox (1.41595pt too wide) detected at line 19
+ []\OT1/bch/m/n/12 110
+ []
+
 )
 \tf@lot=\write7
 \openout7 = `traballo.lot'.
 
- [9] [10
+ [9
+
+] [10
 
 ]
 \openout2 = `secciones/prefacio.aux'.
@@ -3022,21 +3071,292 @@ LaTeX Info: Redefining \% on input line 97.
 
 (./secciones/capitulos/disenoEImplementacion.tex
 Cap\'{\i }tulo 6.
-) [85
+
+<otros/UML/png/alld/png/console__diagramaDeClases_console_3.png, id=380, 1501.6
+1pt x 1069.9975pt>
+File: otros/UML/png/alld/png/console__diagramaDeClases_console_3.png Graphic fi
+le (type png)
+
+<use otros/UML/png/alld/png/console__diagramaDeClases_console_3.png>
+Package pdftex.def Info: otros/UML/png/alld/png/console__diagramaDeClases_conso
+le_3.png used on input line 13.
+(pdftex.def)             Requested size: 426.79134pt x 304.11978pt.
+
+<otros/UML/png/alld/png/input__diagramaDeClases_input_8.png, id=381, 845.1575pt
+ x 654.445pt>
+File: otros/UML/png/alld/png/input__diagramaDeClases_input_8.png Graphic file (
+type png)
+ <use otros/UML/png/alld/png/input__diagramaDeClases_input_8.png>
+Package pdftex.def Info: otros/UML/png/alld/png/input__diagramaDeClases_input_8
+.png used on input line 19.
+(pdftex.def)             Requested size: 341.43306pt x 264.3897pt.
+
+<otros/UML/png/alld/png/messaging__diagramaDeClases_messaging_11.png, id=382, 1
+445.4pt x 684.5575pt>
+File: otros/UML/png/alld/png/messaging__diagramaDeClases_messaging_11.png Graph
+ic file (type png)
+
+<use otros/UML/png/alld/png/messaging__diagramaDeClases_messaging_11.png>
+Package pdftex.def Info: otros/UML/png/alld/png/messaging__diagramaDeClases_mes
+saging_11.png used on input line 25.
+(pdftex.def)             Requested size: 426.79134pt x 202.13072pt.
+
+<otros/UML/png/alld/png/physics__diagramaDeClases_physics_2.png, id=383, 2477.2
+55pt x 1310.8975pt>
+File: otros/UML/png/alld/png/physics__diagramaDeClases_physics_2.png Graphic fi
+le (type png)
+
+<use otros/UML/png/alld/png/physics__diagramaDeClases_physics_2.png>
+Package pdftex.def Info: otros/UML/png/alld/png/physics__diagramaDeClases_physi
+cs_2.png used on input line 31.
+(pdftex.def)             Requested size: 512.1496pt x 271.01604pt.
+
+<otros/UML/png/alld/png/rendering__diagramaDeClases_rendering_9.png, id=384, 14
+23.3175pt x 1734.48pt>
+File: otros/UML/png/alld/png/rendering__diagramaDeClases_rendering_9.png Graphi
+c file (type png)
+
+<use otros/UML/png/alld/png/rendering__diagramaDeClases_rendering_9.png>
+Package pdftex.def Info: otros/UML/png/alld/png/rendering__diagramaDeClases_ren
+dering_9.png used on input line 37.
+(pdftex.def)             Requested size: 426.79134pt x 520.08336pt.
+
+<otros/UML/png/alld/png/sound__diagramaDeClases_sound_1.png, id=385, 1278.7775p
+t x 636.3775pt>
+File: otros/UML/png/alld/png/sound__diagramaDeClases_sound_1.png Graphic file (
+type png)
+
+<use otros/UML/png/alld/png/sound__diagramaDeClases_sound_1.png>
+Package pdftex.def Info: otros/UML/png/alld/png/sound__diagramaDeClases_sound_1
+.png used on input line 44.
+(pdftex.def)             Requested size: 426.79134pt x 212.39397pt.
+
+<otros/UML/png/alld/png/resources__diagramaDeClases_resources_0.png, id=386, 70
+4.6325pt x 331.2375pt>
+File: otros/UML/png/alld/png/resources__diagramaDeClases_resources_0.png Graphi
+c file (type png)
+
+<use otros/UML/png/alld/png/resources__diagramaDeClases_resources_0.png>
+Package pdftex.def Info: otros/UML/png/alld/png/resources__diagramaDeClases_res
+ources_0.png used on input line 50.
+(pdftex.def)             Requested size: 227.62204pt x 106.9989pt.
+
+<otros/UML/png/alld/png/utils__diagramaDeClases_utils_10.png, id=387, 457.71pt 
+x 511.9125pt>
+File: otros/UML/png/alld/png/utils__diagramaDeClases_utils_10.png Graphic file 
+(type png)
+
+<use otros/UML/png/alld/png/utils__diagramaDeClases_utils_10.png>
+Package pdftex.def Info: otros/UML/png/alld/png/utils__diagramaDeClases_utils_1
+0.png used on input line 56.
+(pdftex.def)             Requested size: 142.26378pt x 159.10522pt.
+
+<otros/UML/png/alld/png/gamelogic__diagramaDeClases_gamelogic_7.png, id=388, 24
+95.3225pt x 2920.9125pt>
+File: otros/UML/png/alld/png/gamelogic__diagramaDeClases_gamelogic_7.png Graphi
+c file (type png)
+
+<use otros/UML/png/alld/png/gamelogic__diagramaDeClases_gamelogic_7.png>
+Package pdftex.def Info: otros/UML/png/alld/png/gamelogic__diagramaDeClases_gam
+elogic_7.png used on input line 62.
+(pdftex.def)             Requested size: 512.1496pt x 599.45949pt.
+
+
+LaTeX Warning: Float too large for page by 35.05128pt on input line 65.
+
+
+<otros/UML/png/alld/png/gamelogic__menu__diagramaDeClases_scene_menu_6.png, id=
+389, 1708.3825pt x 1106.1325pt>
+File: otros/UML/png/alld/png/gamelogic__menu__diagramaDeClases_scene_menu_6.png
+ Graphic file (type png)
+
+<use otros/UML/png/alld/png/gamelogic__menu__diagramaDeClases_scene_menu_6.png>
+Package pdftex.def Info: otros/UML/png/alld/png/gamelogic__menu__diagramaDeClas
+es_scene_menu_6.png used on input line 68.
+(pdftex.def)             Requested size: 426.79134pt x 276.32991pt.
+
+<otros/UML/png/alld/png/gamelogic__gameplay__diagramaDeClases_scene_gameplay_4.
+png, id=390, 2497.33pt x 3149.7675pt>
+File: otros/UML/png/alld/png/gamelogic__gameplay__diagramaDeClases_scene_gamepl
+ay_4.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/gamelogic__gameplay__diagramaDeClases_scene_gamepla
+y_4.png>
+Package pdftex.def Info: otros/UML/png/alld/png/gamelogic__gameplay__diagramaDe
+Clases_scene_gameplay_4.png used on input line 76.
+(pdftex.def)             Requested size: 569.05511pt x 717.70268pt.
+
+
+LaTeX Warning: Float too large for page by 166.17447pt on input line 79.
+
+[85
 
 
 
 
 ]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [86 <./otros/UML/png/alld/png/console__diagramaDeClases_console_3.png>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+
+[87 <./otros/UML/png/alld/png/input__diagramaDeClases_input_8.png> <./otros/UML
+/png/alld/png/messaging__diagramaDeClases_messaging_11.png>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [88 <./otros/UML/png/alld/png/physics__diagramaDeClases_physics_2.png>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [89 <./otros/UML/png/alld/png/rendering__diagramaDeClases_rendering_9.png>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [90 <./otros/UML/png/alld/png/sound__diagramaDeClases_sound_1.png> <./otros/UM
+L/png/alld/png/resources__diagramaDeClases_resources_0.png> <./otros/UML/png/al
+ld/png/utils__diagramaDeClases_utils_10.png>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [91 <./otros/UML/png/alld/png/gamelogic__diagramaDeClases_gamelogic_7.png>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [92 <./otros/UML/png/alld/png/gamelogic__menu__diagramaDeClases_scene_menu_6.p
+ng>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [93 <./otros/UML/png/alld/png/gamelogic__gameplay__diagramaDeClases_scene_game
+play_4.png>]
+<otros/UML/png/alld/png/gamelogic__gameplay__characterAI__diagramaDeClases_IA_5
+.png, id=431, 3721.905pt x 1622.06pt>
+File: otros/UML/png/alld/png/gamelogic__gameplay__characterAI__diagramaDeClases
+_IA_5.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/gamelogic__gameplay__characterAI__diagramaDeClases_
+IA_5.png>
+Package pdftex.def Info: otros/UML/png/alld/png/gamelogic__gameplay__characterA
+I__diagramaDeClases_IA_5.png used on input line 85.
+(pdftex.def)             Requested size: 682.86613pt x 297.60135pt.
+
+Overfull \hbox (5.97768pt too wide) in paragraph at lines 85--86
+[][] 
+ []
+
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+[94 <./otros/UML/png/alld/png/gamelogic__gameplay__characterAI__diagramaDeClase
+s_IA_5.png>]
+<otros/UML/png/alld/png/CasosDeUso__General__Collaboration1__Interaction1__diag
+ramaDeSecuencia_General_15.png, id=436, 3061.4375pt x 2332.715pt>
+File: otros/UML/png/alld/png/CasosDeUso__General__Collaboration1__Interaction1_
+_diagramaDeSecuencia_General_15.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/CasosDeUso__General__Collaboration1__Interaction1__
+diagramaDeSecuencia_General_15.png>
+Package pdftex.def Info: otros/UML/png/alld/png/CasosDeUso__General__Collaborat
+ion1__Interaction1__diagramaDeSecuencia_General_15.png used on input line 97.
+(pdftex.def)             Requested size: 540.60236pt x 411.89746pt.
+
+<otros/UML/png/alld/png/CasosDeUso__General__Collaboration2__Interaction1__diag
+ramaDeSecuencia_Scene_16.png, id=437, 1834.855pt x 1754.555pt>
+File: otros/UML/png/alld/png/CasosDeUso__General__Collaboration2__Interaction1_
+_diagramaDeSecuencia_Scene_16.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/CasosDeUso__General__Collaboration2__Interaction1__
+diagramaDeSecuencia_Scene_16.png>
+Package pdftex.def Info: otros/UML/png/alld/png/CasosDeUso__General__Collaborat
+ion2__Interaction1__diagramaDeSecuencia_Scene_16.png used on input line 103.
+(pdftex.def)             Requested size: 426.79134pt x 408.09045pt.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+ [95
+
+
+
+
+]
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+ [96 <./otros/UML/png/alld/png/CasosDeUso__General__Collaboration1__Interaction
+1__diagramaDeSecuencia_General_15.png>]
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+
+[97 <./otros/UML/png/alld/png/CasosDeUso__General__Collaboration2__Interaction1
+__diagramaDeSecuencia_Scene_16.png>]
+<otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration4__Interaction1__d
+iagramaDeSecuencia_consola_20.png, id=450, 3350.5175pt x 1953.2975pt>
+File: otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration4__Interactio
+n1__diagramaDeSecuencia_consola_20.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration4__Interaction
+1__diagramaDeSecuencia_consola_20.png>
+Package pdftex.def Info: otros/UML/png/alld/png/CasosDeUso__Especifico__Collabo
+ration4__Interaction1__diagramaDeSecuencia_consola_20.png used on input line 11
+0.
+(pdftex.def)             Requested size: 569.05511pt x 331.72833pt.
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [98 <./otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration4__Interact
+ion1__diagramaDeSecuencia_consola_20.png>]
+<otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration1__Interaction1__d
+iagramaDeSecuencia_Menu_17.png, id=455, 2894.815pt x 1080.035pt>
+File: otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration1__Interactio
+n1__diagramaDeSecuencia_Menu_17.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration1__Interaction
+1__diagramaDeSecuencia_Menu_17.png>
+Package pdftex.def Info: otros/UML/png/alld/png/CasosDeUso__Especifico__Collabo
+ration1__Interaction1__diagramaDeSecuencia_Menu_17.png used on input line 118.
+(pdftex.def)             Requested size: 569.05511pt x 212.31166pt.
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+ [99 <./otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration1__Interact
+ion1__diagramaDeSecuencia_Menu_17.png>]
+<otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration2__Interaction1__d
+iagramaDeSecuencia_Gameplay_18.png, id=460, 3376.615pt x 2059.695pt>
+File: otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration2__Interactio
+n1__diagramaDeSecuencia_Gameplay_18.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration2__Interaction
+1__diagramaDeSecuencia_Gameplay_18.png>
+Package pdftex.def Info: otros/UML/png/alld/png/CasosDeUso__Especifico__Collabo
+ration2__Interaction1__diagramaDeSecuencia_Gameplay_18.png used on input line 1
+25.
+(pdftex.def)             Requested size: 540.60236pt x 329.7465pt.
+
+<otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration3__Interaction1__d
+iagramaDeSecuencia_IA_19.png, id=461, 3296.315pt x 2515.3975pt>
+File: otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration3__Interactio
+n1__diagramaDeSecuencia_IA_19.png Graphic file (type png)
+
+<use otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration3__Interaction
+1__diagramaDeSecuencia_IA_19.png>
+Package pdftex.def Info: otros/UML/png/alld/png/CasosDeUso__Especifico__Collabo
+ration3__Interaction1__diagramaDeSecuencia_IA_19.png used on input line 131.
+(pdftex.def)             Requested size: 540.60236pt x 412.52786pt.
+)
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [100 <./otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration2__Interac
+tion1__diagramaDeSecuencia_Gameplay_18.png>]
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+
+[101 <./otros/UML/png/alld/png/CasosDeUso__Especifico__Collaboration3__Interact
+ion1__diagramaDeSecuencia_IA_19.png>]
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [86
+ [102
+
+
+
+
 
 
 ]
 \openout2 = `secciones/capitulos/validacionYPruebas.aux'.
 
- (./secciones/capitulos/validacionYPruebas.tex
+
+(./secciones/capitulos/validacionYPruebas.tex
 Cap\'{\i }tulo 7.
 
 Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
@@ -3058,13 +3378,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [87
+) [103
 
 
 ]
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
- [88
+ [104
 
 
 ]
@@ -3092,31 +3412,31 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [89
+) [105
 
 
 ]
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
- [90
+ [106
 
 
 ]
 
-LaTeX Warning: Marginpar on page 91 moved.
+LaTeX Warning: Marginpar on page 107 moved.
 
-[91]
+[107]
 \openout2 = `secciones/ejemplos.aux'.
 
  (./secciones/ejemplos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [92
+ [108
 
 
 ]
 Cap\'{\i }tulo 9.
-[93]
+[109]
 Package epstopdf Info: Source file: <figuras/figura01.eps>
 (epstopdf)                    date: 2010-11-26 18:35:19
 (epstopdf)                    size: 209408 bytes
@@ -3127,7 +3447,7 @@ Package epstopdf Info: Source file: <figuras/figura01.eps>
 rted-to.pdf figuras/figura01.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
- <figuras/figura01-eps-converted-to.pdf, id=414, 1060.96375pt x 513.92pt>
+ <figuras/figura01-eps-converted-to.pdf, id=501, 1060.96375pt x 513.92pt>
 File: figuras/figura01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/figura01-eps-converted-to.pdf>
@@ -3136,10 +3456,11 @@ ne 30.
 (pdftex.def)             Requested size: 426.79134pt x 206.73277pt.
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
- [94 <./figuras/figura01-eps-converted-to.pdf>] (/usr/local/texlive/2017/texmf-
-dist/tex/latex/listings/lstlang1.sty
+ [110 <./figuras/figura01-eps-converted-to.pdf>]
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 LaTeX Font Info:    Try loading font information for OMS+bch on input line 83.
@@ -3162,10 +3483,10 @@ Overfull \hbox (56.95116pt too wide) in paragraph at lines 97--98
 )
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
- [95]
+ [111]
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
- [96
+ [112
 
 
 ]
@@ -3193,13 +3514,13 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 3--3
 [][][][]\OT1/bch/m/n/12 Completar 
  []
 
-) [97
+) [113
 
 
 ]
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
- [98
+ [114
 
 
 ]
@@ -3207,13 +3528,13 @@ LaTeX Info: Redefining \% on input line 117.
 
  (./secciones/apendicea.tex
 Ap\'{e}ndice A.
-) [99
+) [115
 
 
 ]
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
- [100
+ [116
 
 
 ]
@@ -3221,13 +3542,13 @@ LaTeX Info: Redefining \% on input line 119.
 
  (./secciones/apendiceb.tex
 Ap\'{e}ndice B.
-) [101
+) [117
 
 
 ]
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
- [102
+ [118
 
 
 ]
@@ -3235,13 +3556,13 @@ LaTeX Info: Redefining \% on input line 121.
 
  (./secciones/licencia.tex
 Ap\'{e}ndice C.
-) [103
+) [119
 
 
 ]
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
- [104
+ [120
 
 
 ]
@@ -3268,16 +3589,16 @@ Overfull \hbox (7.17017pt too wide) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Marginpar on page 105 moved.
+LaTeX Warning: Marginpar on page 121 moved.
 
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-[105
+[121
 
 ]
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [106
+ [122
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -3297,51 +3618,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
  wi-ki-pe-dia
  []
 
-) [107]
+) [123]
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
- [108]
+ [124]
 
-LaTeX Warning: Marginpar on page 109 moved.
+LaTeX Warning: Marginpar on page 125 moved.
 
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
-[109
+[125
 
 
 ]
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
- [110
+ [126
 
 ] (./traballo.tdo
-Overfull \hbox (1.41595pt too wide) detected at line 7
- []\OT1/bch/m/n/12 101
- []
-
-
-Overfull \hbox (1.41595pt too wide) detected at line 8
+Overfull \hbox (1.41595pt too wide) detected at line 2
  []\OT1/bch/m/n/12 103
  []
 
 
-Overfull \hbox (1.41595pt too wide) detected at line 9
+Overfull \hbox (1.41595pt too wide) detected at line 3
  []\OT1/bch/m/n/12 105
  []
 
 
+Overfull \hbox (1.41595pt too wide) detected at line 4
+ []\OT1/bch/m/n/12 107
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 5
+ []\OT1/bch/m/n/12 113
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 6
+ []\OT1/bch/m/n/12 115
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 7
+ []\OT1/bch/m/n/12 117
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 8
+ []\OT1/bch/m/n/12 119
+ []
+
+
+Overfull \hbox (1.41595pt too wide) detected at line 9
+ []\OT1/bch/m/n/12 121
+ []
+
+
 Overfull \hbox (1.41595pt too wide) detected at line 10
- []\OT1/bch/m/n/12 109
+ []\OT1/bch/m/n/12 125
  []
 
 )
 \tf@tdo=\write8
 \openout8 = `traballo.tdo'.
 
- [111]
+ [127]
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
- [112
+ [128
 
 ] (./traballo.aux (./secciones/titulo.aux)
 LaTeX Info: Redefining \. on input line 7.
@@ -3359,10 +3705,10 @@ LaTeX Info: Redefining \% on input line 7.
 (./secciones/apendiceb.aux) (./secciones/licencia.aux)
 (./secciones/bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 40269 strings out of 492995
- 865226 string characters out of 6132704
- 894745 words of memory out of 5000000
- 43144 multiletter control sequences out of 15000+600000
+ 40378 strings out of 492995
+ 872687 string characters out of 6132704
+ 895964 words of memory out of 5000000
+ 43234 multiletter control sequences out of 15000+600000
  54220 words of font info for 97 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  146i,26n,180p,10401b,5213s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3385,10 +3731,10 @@ cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (124 pages, 760440 bytes).
+Output written on traballo.pdf (140 pages, 3506019 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
+ 629 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

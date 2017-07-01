@@ -49,20 +49,21 @@
 \contentsline {subsection}{\numberline {5.3.4}Librer\IeC {\'\i }as}{84}
 \contentsline {chapter}{\numberline {6}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{85}
 \contentsline {section}{\numberline {6.1}Diagramas de clases}{85}
-\contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{87}
-\contentsline {chapter}{\numberline {8}Valoraciones finales}{89}
-\contentsline {chapter}{\numberline {9}Exemplos}{93}
-\contentsline {section}{\numberline {9.1}Un exemplo de secci\IeC {\'o}n}{93}
-\contentsline {subsection}{\numberline {9.1.1}Un exemplo de subsecci\IeC {\'o}n}{93}
-\contentsline {subsection}{\numberline {9.1.2}Otro exemplo de subsecci\IeC {\'o}n}{93}
-\contentsline {subsubsection}{\numberline {9.1.2.1}Un exemplo de subsubsecci\IeC {\'o}n}{93}
-\contentsline {subsubsection}{\numberline {9.1.2.2}Un exemplo de subsubsecci\IeC {\'o}n}{93}
-\contentsline {subsubsection}{\numberline {9.1.2.3}Un exemplo de subsubsecci\IeC {\'o}n}{94}
-\contentsline {section}{\numberline {9.2}Exemplos de figuras e cadros}{94}
-\contentsline {section}{\numberline {9.3}Exemplos de referencias \IeC {\'a} bibliograf\IeC {\'\i }a}{94}
-\contentsline {section}{\numberline {9.4}Exemplos de enumeraci\IeC {\'o}ns}{95}
-\contentsline {chapter}{\numberline {10}Conclusiones y posibles ampliaciones}{97}
-\contentsline {chapter}{\numberline {A}Manuais t\IeC {\'e}cnicos}{99}
-\contentsline {chapter}{\numberline {B}Manuais de usuario}{101}
-\contentsline {chapter}{\numberline {C}Licencia}{103}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{105}
+\contentsline {section}{\numberline {6.2}Diagramas de secuencia}{95}
+\contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{103}
+\contentsline {chapter}{\numberline {8}Valoraciones finales}{105}
+\contentsline {chapter}{\numberline {9}Exemplos}{109}
+\contentsline {section}{\numberline {9.1}Un exemplo de secci\IeC {\'o}n}{109}
+\contentsline {subsection}{\numberline {9.1.1}Un exemplo de subsecci\IeC {\'o}n}{109}
+\contentsline {subsection}{\numberline {9.1.2}Otro exemplo de subsecci\IeC {\'o}n}{109}
+\contentsline {subsubsection}{\numberline {9.1.2.1}Un exemplo de subsubsecci\IeC {\'o}n}{109}
+\contentsline {subsubsection}{\numberline {9.1.2.2}Un exemplo de subsubsecci\IeC {\'o}n}{109}
+\contentsline {subsubsection}{\numberline {9.1.2.3}Un exemplo de subsubsecci\IeC {\'o}n}{110}
+\contentsline {section}{\numberline {9.2}Exemplos de figuras e cadros}{110}
+\contentsline {section}{\numberline {9.3}Exemplos de referencias \IeC {\'a} bibliograf\IeC {\'\i }a}{110}
+\contentsline {section}{\numberline {9.4}Exemplos de enumeraci\IeC {\'o}ns}{111}
+\contentsline {chapter}{\numberline {10}Conclusiones y posibles ampliaciones}{113}
+\contentsline {chapter}{\numberline {A}Manuais t\IeC {\'e}cnicos}{115}
+\contentsline {chapter}{\numberline {B}Manuais de usuario}{117}
+\contentsline {chapter}{\numberline {C}Licencia}{119}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{121}
