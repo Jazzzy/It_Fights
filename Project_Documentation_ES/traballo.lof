@@ -20,28 +20,28 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Patr\IeC {\'o}n \textit {Decorator}}}{80}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Patr\IeC {\'o}n Publica-Subscribe o \textit {PubSub}}}{80}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de clases del subsistema de consola}}{86}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de clases del subsistema de entrada}}{87}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de clases del bus de mensajes}}{87}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de clases del subsistema de f\IeC {\'\i }sicas}}{88}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Diagrama de clases del subsistema de renderizado}}{89}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Diagrama de clases del subsistema de sonido}}{90}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Diagrama de clases del paquete de recursos}}{90}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Diagrama de clases del paquete de \IeC {\'u}tiles}}{90}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Diagrama de clases de la l\IeC {\'o}gica del juego}}{91}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Diagrama de clases de la escena del men\IeC {\'u}}}{92}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Diagrama de clases de la escena de juego}}{93}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Diagrama de clases del comportamiento del agente}}{94}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Diagrama de secuencia general de la aplicaci\IeC {\'o}n}}{96}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Diagrama de secuencia gen\IeC {\'e}rico de una escena}}{97}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Diagrama de secuencia de la consola}}{98}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Diagrama de secuencia de la escena del men\IeC {\'u}}}{99}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Diagrama de secuencia de la escena del \textit {gameplay}}}{100}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Diagrama de secuencia del agente}}{101}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de clases del bus de mensajes}}{86}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de clases de la l\IeC {\'o}gica del juego}}{88}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de clases del subsistema de consola}}{89}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de clases del subsistema de entrada}}{90}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diagrama de clases del subsistema de f\IeC {\'\i }sicas}}{91}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Diagrama de clases del subsistema de renderizado}}{92}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Diagrama de clases del subsistema de sonido}}{93}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Diagrama de clases del paquete de recursos}}{93}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Diagrama de clases del paquete de \IeC {\'u}tiles}}{93}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Diagrama de clases de la escena del men\IeC {\'u}}}{94}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Diagrama de clases de la escena de juego}}{95}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Diagrama de clases del comportamiento del agente}}{96}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Diagrama de secuencia general de la aplicaci\IeC {\'o}n}}{98}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Diagrama de secuencia gen\IeC {\'e}rico de una escena}}{99}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Diagrama de secuencia de la consola}}{100}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Diagrama de secuencia de la escena del men\IeC {\'u}}}{101}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Diagrama de secuencia de la escena del \textit {gameplay}}}{102}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Diagrama de secuencia del agente}}{103}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Esta \IeC {\'e} a figura de tal e cal.}}{110}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Esta \IeC {\'e} a figura de tal e cal.}}{112}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
