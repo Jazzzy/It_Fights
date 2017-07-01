@@ -1,5 +1,46 @@
-\chapter{Manuais técnicos}
+\chapter{Manual técnico}
 
-\todo{Realizar manual técnico}
 
-Manuais técnicos: en función do tipo de Traballo e metodoloxía empregada, o contido poderase dividir en varios documentos. En todo caso, neles incluirase toda a información precisa para aquelas persoas que se vaian a encargar do desenvolvemento e/ou modificación do Sistema (por exemplo código fonte, recursos necesarios, operacións necesarias para modificacións e probas, posibles problemas, etc.). O código fonte poderase entregar en soporte informático en formatos PDF ou postscript.
+Este manual técnico está dedicado a que cualquier tipo de usuario pueda poner en funcionamiento la aplicación desarrollada en este trabajo, tanto el videojuego en si mismo como el agente que contiene. 
+
+\section{Requisitos de instalación}
+
+En términos de requisitos necesarios del sistema solo existe uno referente al sistema operativo. Se garantiza el funcionamiento de la aplicación en versiones de \textbf{macOS superiores a 10.12}. Para probar esto se han utilizado varios equipos con esta versión del sistema distintos del equipo de desarrollo.
+
+\bigskip
+
+Además es deseable contar con un chip de gráficos, ya sea integrado en el procesador o externo dado que para cualquier videojuego con requisitos de rendimiento se benefician mucho de los mismos. En concreto esta aplicación no necesita demasiados recursos en este sentido pues la escena principal de \textit{gameplay} se dibuja internamente a una resolución muy reducida de 400x300.
+
+\section{Instrucciones de instalación}
+
+Dado que la aplicación es auto-contenida\footnote{La aplicación no solo contiene el programa compilado sino todos los frameworks, librerías dinámicas, imágenes, sonidos y otros archivos necesarios para su funcionamiento en su interior} simplemente se tiene que contar con el archivo ejecutable \textit{\textbf{It\_Fights.app}}. No existen pasos requeridos para su instalación concretos, simplemente se requiere, como es lógico, que el usuario que vaya a ejecutar la aplicación tenga permisos de lectura y ejecución sobre dicho ejecutable.
+
+\section{Ejecución de la aplicación}
+\label{sec:ejecucion}
+La aplicación puede ser muy fácilmente ejecutada desde el sistema de archivos de macOS, simplemente se deberá hacer clic en el archivo \textbf{\textit{It\_Fights.app}} y se abrirá la ventana con la aplicación.
+
+\bigskip
+
+Si se desea tener acceso al ejecutable interno o ejecutarlo desde la consola del sistema para ver la salida de los combates simulados en ella se podrá hacer siguiendo los siguientes pasos:
+
+\begin{enumerate}
+	\item Abrir la terminal.
+	\item Ir a la ruta en la que se encuentre la aplicación \textbf{\textit{It\_Fights.app}}.
+	\item Entrar en ella como si fuera un directorio con:
+		\begin{lstlisting}
+	cd It_Fights.app/Contents/
+		\end{lstlisting}
+	\item Se puede ver la estructura interna que contiene los frameworks, información del ejecutable, librerías y otros archivos con:
+		\begin{lstlisting}
+	ls
+		\end{lstlisting}
+	\item El ejecutable interno estará en la carpeta \textbf{\textit{MacOS}} a la que se entra con:
+		\begin{lstlisting}
+	cd MacOS
+		\end{lstlisting}
+	\item Finalmente podremos ejecutar el programa con el comando:
+		\begin{lstlisting}
+	./It_Fights  
+		\end{lstlisting}
+\end{enumerate}
+

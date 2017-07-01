@@ -36,7 +36,7 @@ void GameState::onNotify(Message message) {
       delete this->scene;
     }
 
-    if (this->simulationsLeft > 0) {
+    if (this->simulationsLeft > 1) {
       this->simulationsLeft--;
       prints("Simulations left: " << this->simulationsLeft);
       this->scene = new Level_00_NeoPurple_DEMO(

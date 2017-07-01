@@ -62,19 +62,29 @@
 \contentsline {subsection}{\numberline {6.3.2}Interfaz del combate}{114}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Interfaz de la consola}{115}{subsection.6.3.3}
 \contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{117}{chapter.7}
-\contentsline {chapter}{\numberline {8}Valoraciones finales}{119}{chapter.8}
-\contentsline {chapter}{\numberline {9}Exemplos}{123}{chapter.9}
-\contentsline {section}{\numberline {9.1}Un exemplo de secci\IeC {\'o}n}{123}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Un exemplo de subsecci\IeC {\'o}n}{123}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}Otro exemplo de subsecci\IeC {\'o}n}{123}{subsection.9.1.2}
-\contentsline {subsubsection}{\numberline {9.1.2.1}Un exemplo de subsubsecci\IeC {\'o}n}{123}{subsubsection.9.1.2.1}
-\contentsline {subsubsection}{\numberline {9.1.2.2}Un exemplo de subsubsecci\IeC {\'o}n}{123}{subsubsection.9.1.2.2}
-\contentsline {subsubsection}{\numberline {9.1.2.3}Un exemplo de subsubsecci\IeC {\'o}n}{124}{subsubsection.9.1.2.3}
-\contentsline {section}{\numberline {9.2}Exemplos de figuras e cadros}{124}{section.9.2}
-\contentsline {section}{\numberline {9.3}Exemplos de referencias \IeC {\'a} bibliograf\IeC {\'\i }a}{124}{section.9.3}
-\contentsline {section}{\numberline {9.4}Exemplos de enumeraci\IeC {\'o}ns}{125}{section.9.4}
-\contentsline {chapter}{\numberline {10}Conclusiones y posibles ampliaciones}{127}{chapter.10}
-\contentsline {chapter}{\numberline {A}Manuais t\IeC {\'e}cnicos}{129}{appendix.Alph1}
-\contentsline {chapter}{\numberline {B}Manuais de usuario}{131}{appendix.Alph2}
-\contentsline {chapter}{\numberline {C}Licencia}{133}{appendix.Alph3}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{135}{section*.28}
+\contentsline {chapter}{\numberline {8}Exemplos}{121}{chapter.8}
+\contentsline {section}{\numberline {8.1}Un exemplo de secci\IeC {\'o}n}{121}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Un exemplo de subsecci\IeC {\'o}n}{121}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Otro exemplo de subsecci\IeC {\'o}n}{121}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.1}Un exemplo de subsubsecci\IeC {\'o}n}{121}{subsubsection.8.1.2.1}
+\contentsline {subsubsection}{\numberline {8.1.2.2}Un exemplo de subsubsecci\IeC {\'o}n}{121}{subsubsection.8.1.2.2}
+\contentsline {subsubsection}{\numberline {8.1.2.3}Un exemplo de subsubsecci\IeC {\'o}n}{122}{subsubsection.8.1.2.3}
+\contentsline {section}{\numberline {8.2}Exemplos de figuras e cadros}{122}{section.8.2}
+\contentsline {section}{\numberline {8.3}Exemplos de referencias \IeC {\'a} bibliograf\IeC {\'\i }a}{122}{section.8.3}
+\contentsline {section}{\numberline {8.4}Exemplos de enumeraci\IeC {\'o}ns}{123}{section.8.4}
+\contentsline {chapter}{\numberline {9}Conclusiones y posibles ampliaciones}{125}{chapter.9}
+\contentsline {chapter}{\numberline {A}Manual t\IeC {\'e}cnico}{127}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Requisitos de instalaci\IeC {\'o}n}{127}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Instrucciones de instalaci\IeC {\'o}n}{127}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{128}{section.Alph1.3}
+\contentsline {chapter}{\numberline {B}Manual de usuario}{129}{appendix.Alph2}
+\contentsline {subsection}{\numberline {B.0.1}Instalaci\IeC {\'o}n/Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{129}{subsection.Alph2.0.1}
+\contentsline {subsection}{\numberline {B.0.2}Controles de la aplicaci\IeC {\'o}n}{129}{subsection.Alph2.0.2}
+\contentsline {subsubsection}{\numberline {B.0.2.1}Controles del men\IeC {\'u}}{129}{subsubsection.Alph2.0.2.1}
+\contentsline {subsubsection}{\numberline {B.0.2.2}Controles de combate}{130}{subsubsection.Alph2.0.2.2}
+\contentsline {subsubsection}{\numberline {B.0.2.3}Controles avanzados}{131}{subsubsection.Alph2.0.2.3}
+\contentsline {subsection}{\numberline {B.0.3}Uso de las diferentes escenas}{131}{subsection.Alph2.0.3}
+\contentsline {subsubsection}{\numberline {B.0.3.1}Uso del men\IeC {\'u}}{131}{subsubsection.Alph2.0.3.1}
+\contentsline {subsubsection}{\numberline {B.0.3.2}Combate}{133}{subsubsection.Alph2.0.3.2}
+\contentsline {subsubsection}{\numberline {B.0.3.3}Consola}{135}{subsubsection.Alph2.0.3.3}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{139}{figure.Alph2.7}
