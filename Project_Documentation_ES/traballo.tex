@@ -1,7 +1,8 @@
-% Como se incluyen figuras eps hay que compilar con: latex traballo , dvipdf traballo
-%
 
+%Document type:
 \documentclass[12pt,twoside,a4paper]{book}
+
+%------Packages included------%
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
@@ -23,16 +24,13 @@
 \usepackage{geometry}
 \usepackage{changepage}
 \usepackage{eurosym}
-
-
 \usepackage[edges]{forest}
 \usetikzlibrary{arrows.meta,shadows.blur}
-
-
 \usepackage{hyperref}
+%--------------------------------%
 
 
-
+%---------Config----------%
 \makeatletter
 \renewcommand\mcell@classz{\@classx
 	\@tempcnta \count@
@@ -55,22 +53,24 @@
 		\global\let\mcell@left\relax\global\let\mcell@right\relax
 	}\prepnext@tok}
 \makeatletter
-
+%--------------------------%
 
 
 \begin{document}
 
+%-------Configuration parameters for the document-------%
 \setcounter{secnumdepth}{5}
-
 \setcellgapes{5pt}
 \makegapedcells	
+%-----------------------------------------------------------%
 	
+
 \include{secciones/titulo}
 \cleardoublepage
 
-\include{secciones/certificacion} % paxina de certificación (optativa)
+\include{secciones/certificacion}
 \cleardoublepage
-\include{secciones/agradecimientos} % paxina de agradecementos (optativa) 
+\include{secciones/agradecimientos}
 
 \cleardoublepage
 \pagestyle{plain}
@@ -78,7 +78,7 @@
 \listoffigures
 \listoftables
 
-% Agora incluimos os capítulos. Cambiamos a numeración e as cabeceiras
+
 \cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -98,16 +98,16 @@
 \include{secciones/capitulos/validacionYPruebas}
 \cleardoublepage
 
-% Sección de ejemplos que deberemos quitar:
-\todo{Quitar la sección de ejemplos}
-\include{secciones/ejemplos}
-\cleardoublepage
-% Fin de la sección de ejemplos
+%-------Sección de ejemplos-------%
+%\todo{Quitar la sección de ejemplos}
+%\include{secciones/ejemplos}
+%\cleardoublepage
+%-----------------------------------%
 
 
 \include{secciones/conclusiones}
 
-% Aquí empiezan los apéndices
+%-------Apéndices-------%
 \appendix
 \cleardoublepage
 \include{secciones/apendicea}
@@ -115,14 +115,14 @@
 \include{secciones/apendiceb}
 \cleardoublepage
 \include{secciones/bibliografia}
+%-------------------------%
 
 
-
-% Aquí mostramos la lista de TODOs que tendremos que quitar al terminar el documento
+%---------TODO LIST---------%
 \cleardoublepage
 \todo{Quitar esta lista de TODOs}
 \listoftodos
 \cleardoublepage
-% Fin de la lista de TODOs
+%-----------------------------%
 
 \end{document}

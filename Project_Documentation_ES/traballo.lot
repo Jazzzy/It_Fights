@@ -14,8 +14,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Esta \IeC {\'e} a t\IeC {\'a}boa de tal e cal.}}{122}{table.8.1}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Rendimiento del agente entrenado contra personaje basado en reglas}}{131}{table.7.1}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Estados visitados por el agente entrenado contra personaje basado en reglas}}{131}{table.7.2}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Rendimiento del agente entrenado contra otra instancia de si mismo}}{132}{table.7.3}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Estados visitados por el agente entrenado contra otra instancia de si mismo}}{132}{table.7.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

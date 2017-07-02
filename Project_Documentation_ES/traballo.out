@@ -52,26 +52,27 @@
 \BOOKMARK [2][-]{subsection.6.3.2}{Interfaz del combate}{section.6.3}% 52
 \BOOKMARK [2][-]{subsection.6.3.3}{Interfaz de la consola}{section.6.3}% 53
 \BOOKMARK [0][-]{chapter.7}{Validaci\363n y pruebas}{}% 54
-\BOOKMARK [0][-]{chapter.8}{Exemplos}{}% 55
-\BOOKMARK [1][-]{section.8.1}{Un exemplo de secci\363n}{chapter.8}% 56
-\BOOKMARK [2][-]{subsection.8.1.1}{Un exemplo de subsecci\363n}{section.8.1}% 57
-\BOOKMARK [2][-]{subsection.8.1.2}{Otro exemplo de subsecci\363n}{section.8.1}% 58
-\BOOKMARK [1][-]{section.8.2}{Exemplos de figuras e cadros}{chapter.8}% 59
-\BOOKMARK [1][-]{section.8.3}{Exemplos de referencias \341 bibliograf\355a}{chapter.8}% 60
-\BOOKMARK [1][-]{section.8.4}{Exemplos de enumeraci\363ns}{chapter.8}% 61
-\BOOKMARK [0][-]{chapter.9}{Conclusiones y posibles ampliaciones}{}% 62
-\BOOKMARK [0][-]{appendix.Alph1}{Manual t\351cnico}{}% 63
-\BOOKMARK [1][-]{section.Alph1.1}{Requisitos de instalaci\363n}{appendix.Alph1}% 64
-\BOOKMARK [1][-]{section.Alph1.2}{Instrucciones de instalaci\363n}{appendix.Alph1}% 65
-\BOOKMARK [1][-]{section.Alph1.3}{Ejecuci\363n de la aplicaci\363n}{appendix.Alph1}% 66
-\BOOKMARK [0][-]{appendix.Alph2}{Manual de usuario}{}% 67
-\BOOKMARK [1][-]{section.Alph2.1}{Instalaci\363n/Ejecuci\363n de la aplicaci\363n}{appendix.Alph2}% 68
-\BOOKMARK [1][-]{section.Alph2.2}{Controles de la aplicaci\363n}{appendix.Alph2}% 69
-\BOOKMARK [2][-]{subsection.Alph2.2.1}{Controles del men\372}{section.Alph2.2}% 70
-\BOOKMARK [2][-]{subsection.Alph2.2.2}{Controles de combate}{section.Alph2.2}% 71
-\BOOKMARK [2][-]{subsection.Alph2.2.3}{Controles avanzados}{section.Alph2.2}% 72
-\BOOKMARK [1][-]{section.Alph2.3}{Uso de las diferentes escenas}{appendix.Alph2}% 73
-\BOOKMARK [2][-]{subsection.Alph2.3.1}{Uso del men\372}{section.Alph2.3}% 74
-\BOOKMARK [2][-]{subsection.Alph2.3.2}{Combate}{section.Alph2.3}% 75
-\BOOKMARK [2][-]{subsection.Alph2.3.3}{Consola}{section.Alph2.3}% 76
-\BOOKMARK [0][-]{figure.Alph2.7}{Bibliograf\355a}{}% 77
+\BOOKMARK [1][-]{section.7.1}{Pruebas unitarias}{chapter.7}% 55
+\BOOKMARK [2][-]{subsection.7.1.1}{Requisitos funcionales}{section.7.1}% 56
+\BOOKMARK [2][-]{subsection.7.1.2}{Requisitos no funcionales}{section.7.1}% 57
+\BOOKMARK [1][-]{section.7.2}{Pruebas de integraci\363n}{chapter.7}% 58
+\BOOKMARK [1][-]{section.7.3}{Validaci\363n del agente}{chapter.7}% 59
+\BOOKMARK [2][-]{subsection.7.3.1}{Entrenado contra personaje basado en reglas}{section.7.3}% 60
+\BOOKMARK [2][-]{subsection.7.3.2}{Entrenado contra \351l mismo}{section.7.3}% 61
+\BOOKMARK [1][-]{section.7.4}{Comparaci\363n y elecci\363n del agente final}{chapter.7}% 62
+\BOOKMARK [0][-]{chapter.8}{Conclusiones y posibles ampliaciones}{}% 63
+\BOOKMARK [0][-]{appendix.Alph1}{Manual t\351cnico}{}% 64
+\BOOKMARK [1][-]{section.Alph1.1}{Requisitos de instalaci\363n}{appendix.Alph1}% 65
+\BOOKMARK [1][-]{section.Alph1.2}{Instrucciones de instalaci\363n}{appendix.Alph1}% 66
+\BOOKMARK [1][-]{section.Alph1.3}{Ejecuci\363n de la aplicaci\363n}{appendix.Alph1}% 67
+\BOOKMARK [0][-]{appendix.Alph2}{Manual de usuario}{}% 68
+\BOOKMARK [1][-]{section.Alph2.1}{Instalaci\363n/Ejecuci\363n de la aplicaci\363n}{appendix.Alph2}% 69
+\BOOKMARK [1][-]{section.Alph2.2}{Controles de la aplicaci\363n}{appendix.Alph2}% 70
+\BOOKMARK [2][-]{subsection.Alph2.2.1}{Controles del men\372}{section.Alph2.2}% 71
+\BOOKMARK [2][-]{subsection.Alph2.2.2}{Controles de combate}{section.Alph2.2}% 72
+\BOOKMARK [2][-]{subsection.Alph2.2.3}{Controles avanzados}{section.Alph2.2}% 73
+\BOOKMARK [1][-]{section.Alph2.3}{Uso de las diferentes escenas}{appendix.Alph2}% 74
+\BOOKMARK [2][-]{subsection.Alph2.3.1}{Uso del men\372}{section.Alph2.3}% 75
+\BOOKMARK [2][-]{subsection.Alph2.3.2}{Combate}{section.Alph2.3}% 76
+\BOOKMARK [2][-]{subsection.Alph2.3.3}{Consola}{section.Alph2.3}% 77
+\BOOKMARK [0][-]{figure.Alph2.7}{Bibliograf\355a}{}% 78
