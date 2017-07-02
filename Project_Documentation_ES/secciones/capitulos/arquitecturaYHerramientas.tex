@@ -13,7 +13,7 @@ La arquitectura del sistema completo estará estrechamente relacionada con el pl
 
 \bigskip
 
-Haciendo uso de conocimientos previos de alguno de los recursos citados en la bibliografía como el conocido \textit{Game Engine Arquitecture}\cite{game_engine} se ha definido una estructura basada en subsistemas unidos mediante un bus de mensajes. Esta elección surge a raíz de la necesidad de separar claramente las implementaciones de todos los subsistemas y a la vez permitir que todos puedan comunicarse entre ellos. En aplicaciones de esta índole es muy común que todos los subsistemas tengan que poder referenciar a los otros. Se pueden dar multitud de situaciones en las que esto se requiera, un ejemplo podría ser que el subsistema de físicas detecte una colisión y se requiera reproducir un sonido cuando esto ocurra y mostrar una animación. Otros ejemplos podrían implicar al subsistema de inputs del jugador comunicándose con la lógica del juego, que a su vez actualizará lo que se ve por pantalla hablando con el subsistema de rendering y hará reproducir un sonido para indicar que la acción se ha realizado.
+Haciendo uso de conocimientos previos de alguno de los recursos citados en la bibliografía como el conocido \textit{Game Engine Arquitecture}\cite{game_engine} se ha definido una estructura basada en subsistemas unidos mediante un bus de mensajes. Esta elección surge a raíz de la necesidad de separar claramente las implementaciones de todos los subsistemas y a la vez permitir que todos puedan comunicarse entre ellos. En aplicaciones de esta índole es muy común que todos los subsistemas tengan que poder referenciar a los otros. Se pueden dar multitud de situaciones en las que esto se requiera, un ejemplo podría ser que el subsistema de físicas detecte una colisión y se requiera reproducir un sonido cuando esto ocurra y mostrar una animación. Otros ejemplos podrían implicar al subsistema de \textit{inputs} del jugador comunicándose con la lógica del juego, que a su vez actualizará lo que se ve por pantalla hablando con el subsistema de \textit{rendering} y hará reproducir un sonido para indicar que la acción se ha realizado.
 
 \bigskip
 
@@ -99,7 +99,7 @@ Pese a que el lenguaje completo en su versión 2.5 ofrezca 14 tipos de diagramas
 
 \subsection{Herramientas software}
 
-Relacionado con el diseño solo se ha utilizado una aplicación concreta siendo la misma el \textit{StarUML 2.8}\footnote{http://staruml.io/}. La elección surgió a raíz de históricamente que ha sido la seleccionada para modelar durante la carrera y no se han experimentado deficiencias en términos de funcionalidades que implicaran tener que buscar un sustituto.
+Relacionado con el diseño solo se ha utilizado una aplicación concreta siendo la misma el \textit{StarUML 2.8}\footnote{\url{http://staruml.io/}}. La elección surgió a raíz de históricamente que ha sido la seleccionada para modelar durante la carrera y no se han experimentado deficiencias en términos de funcionalidades que implicaran tener que buscar un sustituto.
 
 \subsection{Patrones de diseño}
 
@@ -243,7 +243,7 @@ El entorno es relativamente  corto y fácil de describir dada la ausencia de bas
 Para generar la documentación del proyecto y, por lo tanto, esta misma memoria se han utilizado las siguientes herramientas:
 
 \begin{itemize}
-	\item \textbf{TeXstudio\footnote{http://www.texstudio.org/}}: La elección de este editor para archivos .tex se ha escogido dado su amplio uso en la comunidad, la cantidad y calidad de la documentación del mismo y el hecho de que es soportado en todos los sistemas operativos importantes, lo que reduce el riesgo de tener que utilizar otra herramienta si ocurren problemas con el equipo de desarrollo.
+	\item \textbf{TeXstudio\footnote{\url{http://www.texstudio.org/}}}: La elección de este editor para archivos .tex se ha escogido dado su amplio uso en la comunidad, la cantidad y calidad de la documentación del mismo y el hecho de que es soportado en todos los sistemas operativos importantes, lo que reduce el riesgo de tener que utilizar otra herramienta si ocurren problemas con el equipo de desarrollo.
 	\item \textbf{Microsoft Project 2013}: Gracias a las versiones de prueba que ofrece Microsoft para este software se ha podido utilizar esta herramienta. Teniendo la opción de elegir entre las diferentes opciones orientadas a la gestión de proyectos la mejor sin duda es Project. Aporta muchas más facilidades y posibilidades que los competidores y es el estándar de facto. Además, si las versiones de prueba dejan de estar disponibles, muchas de las otras herramientas soportan la importación de proyectos de Microsoft Project, posibilitando así continuar con el proyecto.
 	\item \textbf{StarUML 2.8}: Usado tanto para elaborar los diagramas como para exportarlos a imágenes integrables en la documentación. Como 
 \end{itemize}
@@ -278,7 +278,7 @@ Finalmente, las librerías utilizadas simplemente se referirán a las que son ll
 \begin{itemize}
 	\item \textbf{Biblioteca estándar de C++}: Básica a la hora de trabajar con C++ ya que soporta los contenedores genéricos y funcionalidades asociadas más utilizados en el lenguaje a la vez que completa las características del mismo al soportar funcionalidades en entrada y salida a archivos o salida estándar. 
 	\item \textbf{SFML}: Librería a bajo nivel que sirve como interfaz sobre OpenGL. Gestiona la creación de ventanas en el sistema operativo que se requiera y ofrece funcionalidades útiles a la hora de mostrar por pantalla, reproducir sonidos, etc.
-	\item \textbf{json.h}: Librería en formato de cabecera única que sirve para facilitar la lectura y escritura de archivos json. Disponible en GitHub\footnote{https://github.com/sheredom/json.h} en la cuenta de su creador, \textit{sheredom}, el cual la proporciona sin requerir ningún tipo de licencia.
+	\item \textbf{json.h}: Librería en formato de cabecera única que sirve para facilitar la lectura y escritura de archivos json. Disponible en GitHub\footnote{\url{https://github.com/sheredom/json.h}} en la cuenta de su creador, \textit{sheredom}, el cual la proporciona sin requerir ningún tipo de licencia.
 	\item \textbf{Boost}: Conjunto de bibliotecas de software libre enfocadas a extender al lenguaje C++ con funcionalidades comúnmente necesitadas como realización de operaciones algebraicas complejas, procesamiento de imágenes, expresiones regulares o nuevos tipos de datos.
 \end{itemize}
 

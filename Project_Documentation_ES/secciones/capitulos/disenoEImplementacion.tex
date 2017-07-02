@@ -1,5 +1,5 @@
 \chapter{Diseño e implementación}
-
+\label{cap:diseno}
 En este capítulo se documenta el diseño e implementación que se ha realizado para dar lugar a la aplicación final. Como bien se explica en el capítulo dedicado a la arquitectura, se ha seguido una división por subsistemas por lo que la mejor aproximación para separar ahora los múltiples diagramas de clases es hacerlo por paquetes, asociados cada uno de ellos a un subsistema. Además se generarán una serie de paquetes que contienen una serie de funcionalidades adicionales utilizadas por los otros.
 
 \bigskip
@@ -346,7 +346,7 @@ En el diagrama de secuencia de la escena del menú de la figura \ref{sec:menu} s
 
 \bigskip
 
-El flujo comienza por utilizar el sistema de input para mandar mensajes referentes a cambiar la opción seleccionada. Una vez que se está en la opción deseada se envía el mensaje de ejecutar dicha opción. En este momento se envía un mensaje que llega al \textit{gameState} indicándole la nueva escena a la que habrá que cambiar, en este momento el \textit{gameState} destruye la escena del menú y genera la nueva escena según la opción seleccionada.
+El flujo comienza por utilizar el sistema de \textit{input} para mandar mensajes referentes a cambiar la opción seleccionada. Una vez que se está en la opción deseada se envía el mensaje de ejecutar dicha opción. En este momento se envía un mensaje que llega al \textit{gameState} indicándole la nueva escena a la que habrá que cambiar, en este momento el \textit{gameState} destruye la escena del menú y genera la nueva escena según la opción seleccionada.
 
 \begin{landscape}
 \begin{figure}
@@ -388,7 +388,7 @@ Finalmente, la figura \ref{sec:agent} contiene el diagrama de secuencia asociado
 	\item La escena actualiza al agente y este hace lo mismo con su \textit{Observer}.
 	\item El comportamiento (\textit{Behaviour}) se actualiza y discretiza el estado continuo mediante el uso del \textit{Observer}.
 	\item Se actualiza el conocimiento del agente enviando los datos al \textit{StateActionContainer} y se obtiene del mismo el conocimiento previo sobre el estado actual.
-	\item Se calcula la acción a llevar a cabo y se ejecuta con la ayuda de \textit{Actions}. Este objeto modificará el \textit{controller} con los parametros adecuados.
+	\item Se calcula la acción a llevar a cabo y se ejecuta con la ayuda de \textit{Actions}. Este objeto modificará el \textit{controller} con los parámetros adecuados.
 	\item El personaje leerá los datos del \textit{controller} y ejecutará una de las acciones según el estado de este mando virtual.
 \end{enumerate}
 
@@ -462,7 +462,7 @@ Finalmente, la figura \ref{inter:console} muestra como se vería la consola sobr
 
 \bigskip
 
-Al fondo de la consola se puede observar una línea con el símbolo $>$ que identifica a la línea de entrada para el usuario. SI la consola está abierta y se escribe en el teclado los caracteres se agregarán a esta línea, siendo limpiada al pulsar \textit{intro}. Las líneas en un negro ligeramente más suave situadas por encima representan los mensajes relevantes que la consola está mostrando al usuario. Finalmente, en la esquina superior izquierda se puede ver un contador de fotogramas por segundo o \textit{FPS} como siglas en inglés de \textit{Frames Per Second}.
+Al fondo de la consola se puede observar una línea con el símbolo $>$ que identifica a la línea de entrada para el usuario. SI la consola está abierta y se escribe en el teclado los caracteres se agregarán a esta línea, siendo limpiada al pulsar \textit{intro}. Las líneas en un negro ligeramente más suave situadas por encima representan los mensajes relevantes que la consola está mostrando al usuario. Finalmente, en la esquina superior izquierda se puede ver un contador de fotogramas por segundo o \textit{FPS}.
 
 \begin{figure}
 	\centerline{\includegraphics[width=12cm]{otros/graphicalInterface/console.png}}

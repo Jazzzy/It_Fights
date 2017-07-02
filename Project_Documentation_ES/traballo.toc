@@ -3,86 +3,98 @@
 \contentsline {section}{\numberline {1.1}Objetivos}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Organizaci\IeC {\'o}n del documento}{3}{section.1.2}
 \contentsline {chapter}{\numberline {2}Introducci\IeC {\'o}n}{5}{chapter.2}
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis de requisitos}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Identificaci\IeC {\'o}n de los requisitos del sistema}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Actores}{8}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Casos de uso}{8}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Especificaci\IeC {\'o}n de requisitos}{13}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Requisitos de informaci\IeC {\'o}n}{14}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Requisitos funcionales}{16}{subsubsection.3.1.3.2}
-\contentsline {subsubsection}{\numberline {3.1.3.3}Requisitos no funcionales}{32}{subsubsection.3.1.3.3}
-\contentsline {subsubsection}{\numberline {3.1.3.4}Matriz de trazabilidad}{35}{subsubsection.3.1.3.4}
-\contentsline {chapter}{\numberline {4}Gesti\IeC {\'o}n del proyecto}{37}{chapter.4}
-\contentsline {section}{\numberline {4.1}Gesti\IeC {\'o}n de riesgos}{37}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Especificaci\IeC {\'o}n de riesgos}{39}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Control de riesgos}{47}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Acciones correctivas aplicadas}{47}{subsubsection.4.1.2.1}
-\contentsline {section}{\numberline {4.2}Gesti\IeC {\'o}n de la configuraci\IeC {\'o}n}{51}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Herramientas}{52}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Descripci\IeC {\'o}n del soporte de las herramientas al proceso}{52}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Nomenclatura}{53}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Metodolog\IeC {\'\i }a de desarrollo}{54}{section.4.3}
-\contentsline {section}{\numberline {4.4}Planificaci\IeC {\'o}n temporal}{56}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Planificaci\IeC {\'o}n del videojuego}{58}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Planificaci\IeC {\'o}n del agente}{60}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Planificaci\IeC {\'o}n de la obtenci\IeC {\'o}n de datos}{61}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Planificaci\IeC {\'o}n de la documentaci\IeC {\'o}n, reuniones y finalizaci\IeC {\'o}n}{61}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de costes}{63}{section.4.5}
-\contentsline {section}{\numberline {4.6}Plan de Gesti\IeC {\'o}n de las Comunicaciones}{66}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Gesti\IeC {\'o}n de interesados}{66}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Planificaci\IeC {\'o}n de la informaci\IeC {\'o}n y comunicaciones}{66}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Reuniones}{67}{subsection.4.6.3}
-\contentsline {chapter}{\numberline {5}Arquitectura y herramientas}{71}{chapter.5}
-\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{71}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Subsistemas propios del motor}{75}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Herramientas de dise\IeC {\~n}o}{76}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Herramientas software}{76}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Patrones de dise\IeC {\~n}o}{76}{subsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.1}Patr\IeC {\'o}n \textit {Strategy}}{77}{subsubsection.5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}Patr\IeC {\'o}n \textit {Singleton}}{78}{subsubsection.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.3}Patr\IeC {\'o}n \textit {Decorator}}{79}{subsubsection.5.2.2.3}
-\contentsline {subsubsection}{\numberline {5.2.2.4}Patr\IeC {\'o}n Publica-Subscribe o \textit {PubSub}}{79}{subsubsection.5.2.2.4}
-\contentsline {section}{\numberline {5.3}Herramientas de desarrollo}{81}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Realizaci\IeC {\'o}n de la documentaci\IeC {\'o}n}{82}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Desarrollo}{82}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Tecnolog\IeC {\'\i }as}{83}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Librer\IeC {\'\i }as}{84}{subsection.5.3.4}
-\contentsline {chapter}{\numberline {6}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{85}{chapter.6}
-\contentsline {section}{\numberline {6.1}Diagramas de clases}{86}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Bus de mensajes}{86}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Aplicaci\IeC {\'o}n general}{87}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Subsistemas}{87}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Otros \IeC {\'u}tiles}{94}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Escenas}{97}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Diagramas de secuencia}{103}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Aplicaci\IeC {\'o}n general}{103}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Escenas y agente}{108}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Dise\IeC {\~n}o de la interfaz gr\IeC {\'a}fica}{113}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Interfaz del men\IeC {\'u}}{113}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Interfaz del combate}{114}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Interfaz de la consola}{115}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{117}{chapter.7}
-\contentsline {section}{\numberline {7.1}Pruebas unitarias}{118}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Requisitos funcionales}{118}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Requisitos no funcionales}{125}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Pruebas de integraci\IeC {\'o}n}{128}{section.7.2}
-\contentsline {section}{\numberline {7.3}Validaci\IeC {\'o}n del agente}{130}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Entrenado contra personaje basado en reglas}{131}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Entrenado contra \IeC {\'e}l mismo}{132}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Comparaci\IeC {\'o}n y elecci\IeC {\'o}n del agente final}{132}{section.7.4}
-\contentsline {chapter}{\numberline {8}Conclusiones y posibles ampliaciones}{135}{chapter.8}
-\contentsline {chapter}{\numberline {A}Manual t\IeC {\'e}cnico}{137}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Requisitos de instalaci\IeC {\'o}n}{137}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Instrucciones de instalaci\IeC {\'o}n}{137}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{138}{section.Alph1.3}
-\contentsline {chapter}{\numberline {B}Manual de usuario}{139}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Instalaci\IeC {\'o}n/Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{139}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Controles de la aplicaci\IeC {\'o}n}{139}{section.Alph2.2}
-\contentsline {subsection}{\numberline {B.2.1}Controles del men\IeC {\'u}}{140}{subsection.Alph2.2.1}
-\contentsline {subsection}{\numberline {B.2.2}Controles de combate}{140}{subsection.Alph2.2.2}
-\contentsline {subsection}{\numberline {B.2.3}Controles avanzados}{141}{subsection.Alph2.2.3}
-\contentsline {section}{\numberline {B.3}Uso de las diferentes escenas}{141}{section.Alph2.3}
-\contentsline {subsection}{\numberline {B.3.1}Uso del men\IeC {\'u}}{141}{subsection.Alph2.3.1}
-\contentsline {subsection}{\numberline {B.3.2}Combate}{143}{subsection.Alph2.3.2}
-\contentsline {subsection}{\numberline {B.3.3}Consola}{145}{subsection.Alph2.3.3}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{149}{figure.Alph2.7}
+\contentsline {section}{\numberline {2.1}Videojuego y Agente}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Definici\IeC {\'o}n del videojuego}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Algoritmo}{9}{subsection.2.1.2}
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis de requisitos}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Identificaci\IeC {\'o}n de los requisitos del sistema}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Actores}{14}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Casos de uso}{14}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Especificaci\IeC {\'o}n de requisitos}{19}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Requisitos de informaci\IeC {\'o}n}{20}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Requisitos funcionales}{22}{subsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.3}Requisitos no funcionales}{38}{subsubsection.3.1.3.3}
+\contentsline {subsubsection}{\numberline {3.1.3.4}Matriz de trazabilidad}{41}{subsubsection.3.1.3.4}
+\contentsline {chapter}{\numberline {4}Gesti\IeC {\'o}n del proyecto}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Gesti\IeC {\'o}n de riesgos}{43}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Especificaci\IeC {\'o}n de riesgos}{45}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Control de riesgos}{53}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Acciones correctivas aplicadas}{53}{subsubsection.4.1.2.1}
+\contentsline {section}{\numberline {4.2}Gesti\IeC {\'o}n de la configuraci\IeC {\'o}n}{57}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Herramientas}{58}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Descripci\IeC {\'o}n del soporte de las herramientas al proceso}{58}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Nomenclatura}{59}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Metodolog\IeC {\'\i }a de desarrollo}{60}{section.4.3}
+\contentsline {section}{\numberline {4.4}Planificaci\IeC {\'o}n temporal}{62}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Planificaci\IeC {\'o}n del videojuego}{64}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Planificaci\IeC {\'o}n del agente}{66}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Planificaci\IeC {\'o}n de la obtenci\IeC {\'o}n de datos}{67}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Planificaci\IeC {\'o}n de la documentaci\IeC {\'o}n, reuniones y finalizaci\IeC {\'o}n}{67}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de costes}{69}{section.4.5}
+\contentsline {section}{\numberline {4.6}Plan de Gesti\IeC {\'o}n de las Comunicaciones}{72}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Gesti\IeC {\'o}n de interesados}{72}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Planificaci\IeC {\'o}n de la informaci\IeC {\'o}n y comunicaciones}{72}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Reuniones}{73}{subsection.4.6.3}
+\contentsline {chapter}{\numberline {5}Arquitectura y herramientas}{77}{chapter.5}
+\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{77}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Subsistemas propios del motor}{81}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Herramientas de dise\IeC {\~n}o}{82}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Herramientas software}{82}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Patrones de dise\IeC {\~n}o}{82}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Patr\IeC {\'o}n \textit {Strategy}}{83}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Patr\IeC {\'o}n \textit {Singleton}}{84}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Patr\IeC {\'o}n \textit {Decorator}}{85}{subsubsection.5.2.2.3}
+\contentsline {subsubsection}{\numberline {5.2.2.4}Patr\IeC {\'o}n Publica-Subscribe o \textit {PubSub}}{85}{subsubsection.5.2.2.4}
+\contentsline {section}{\numberline {5.3}Herramientas de desarrollo}{87}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Realizaci\IeC {\'o}n de la documentaci\IeC {\'o}n}{88}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Desarrollo}{88}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Tecnolog\IeC {\'\i }as}{89}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Librer\IeC {\'\i }as}{90}{subsection.5.3.4}
+\contentsline {chapter}{\numberline {6}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{91}{chapter.6}
+\contentsline {section}{\numberline {6.1}Diagramas de clases}{92}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Bus de mensajes}{92}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Aplicaci\IeC {\'o}n general}{93}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Subsistemas}{93}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Otros \IeC {\'u}tiles}{100}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Escenas}{103}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Diagramas de secuencia}{109}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Aplicaci\IeC {\'o}n general}{109}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Escenas y agente}{114}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Dise\IeC {\~n}o de la interfaz gr\IeC {\'a}fica}{119}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Interfaz del men\IeC {\'u}}{119}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Interfaz del combate}{120}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Interfaz de la consola}{121}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}Validaci\IeC {\'o}n y pruebas}{123}{chapter.7}
+\contentsline {section}{\numberline {7.1}Pruebas unitarias}{124}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Requisitos funcionales}{124}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Requisitos no funcionales}{131}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Pruebas de integraci\IeC {\'o}n}{134}{section.7.2}
+\contentsline {section}{\numberline {7.3}Validaci\IeC {\'o}n del agente}{136}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Entrenado contra personaje basado en reglas}{137}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Entrenado contra \IeC {\'e}l mismo}{138}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Comparaci\IeC {\'o}n y elecci\IeC {\'o}n del agente final}{138}{section.7.4}
+\contentsline {chapter}{\numberline {8}Conclusiones y posibles ampliaciones}{141}{chapter.8}
+\contentsline {section}{\numberline {8.1}Reflexiones y lecciones aprendidas}{141}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Gesti\IeC {\'o}n del proyecto}{141}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Importancia del dise\IeC {\~n}o}{142}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Posibilidades de la inteligencia artificial}{142}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}Posibles ampliaciones}{143}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Mejoras de compatibilidad}{143}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Ampliar proceso de pruebas}{143}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Implementaci\IeC {\'o}n de otras t\IeC {\'e}cnicas para el agente}{144}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Nuevas mec\IeC {\'a}nicas para el videojuego}{144}{subsection.8.2.4}
+\contentsline {chapter}{\numberline {A}Manual t\IeC {\'e}cnico}{147}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Requisitos de instalaci\IeC {\'o}n}{147}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Instrucciones de instalaci\IeC {\'o}n}{147}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{148}{section.Alph1.3}
+\contentsline {chapter}{\numberline {B}Manual de usuario}{149}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Instalaci\IeC {\'o}n/Ejecuci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{149}{section.Alph2.1}
+\contentsline {section}{\numberline {B.2}Controles de la aplicaci\IeC {\'o}n}{149}{section.Alph2.2}
+\contentsline {subsection}{\numberline {B.2.1}Controles del men\IeC {\'u}}{150}{subsection.Alph2.2.1}
+\contentsline {subsection}{\numberline {B.2.2}Controles de combate}{150}{subsection.Alph2.2.2}
+\contentsline {subsection}{\numberline {B.2.3}Controles avanzados}{151}{subsection.Alph2.2.3}
+\contentsline {section}{\numberline {B.3}Uso de las diferentes escenas}{151}{section.Alph2.3}
+\contentsline {subsection}{\numberline {B.3.1}Uso del men\IeC {\'u}}{151}{subsection.Alph2.3.1}
+\contentsline {subsection}{\numberline {B.3.2}Combate}{153}{subsection.Alph2.3.2}
+\contentsline {subsection}{\numberline {B.3.3}Consola}{155}{subsection.Alph2.3.3}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{159}{figure.Alph2.7}

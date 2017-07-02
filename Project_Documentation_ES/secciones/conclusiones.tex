@@ -1,13 +1,100 @@
 \chapter{Conclusiones y posibles ampliaciones}
 
-\todo{ Completar conclusiones y posibles ampliaciones}
+\label{cap:conclusiones}
 
-%----------Ampliaciones----------%
- 
-%	- Discretización de estados con redes neuronales (mirar correo de pablo pra o nombre).
-%	- Q Learning completo.
-%	- Aumento de las posibles acciones y estados con más mecánicas.
-%	- Realización de numerosas pruebas contra jugadores humanos.
-%	- Implementación para otros sistemas operativos.
+Una vez terminada la ejecución del proyecto se documentan en este apartado las conclusiones obtenidas gracias a su realización. Globalmente se considera que se ha llegado a buen puerto teniendo en cuenta el tiempo disponible y los problemas con los que se ha tenido que lidiar. A rasgos generales se ha conseguido un producto en el que un agente muy simple es capaz de aprender explorando un espacio de estados y competir contra otras implementaciones y jugadores humanos.
 
-%----------------------------------%
+\bigskip
+
+Además se ha creado una aplicación relativamente compleja desde cero, el proceso de implementación ha sido sencillo y sin baches y el resultado final es satisfactorio dado su buen funcionamiento y rendimiento.
+
+\bigskip
+
+Hay una serie de aspectos sobre los que se tiene que hacer hincapié ya que han tenido un peso muy importante en la realización de este proyecto que se tratan en los siguientes apartados.
+
+\section{Reflexiones y lecciones aprendidas}
+
+\subsection{Gestión del proyecto}
+
+Mencionada durante varias partes de esta documentación nos encontramos con la AC-1 (en la sección \ref{AC}). El riesgo que se ha dado puso haber supuesto perfectamente el fracaso del proyecto no solo retrasándolo sino haciendo imposible su completitud.
+
+\bigskip
+
+Con mucha frecuencia los desarrolladores en un determinado proyecto consideran a la gestión de proyectos como un impedimento o una serie de procesos tediosos que incomodan la realización fluida del mismo. Este trabajo sirve como prueba de lo contrario y es que si no se hubiera hecho el esfuerzo de intentar pensar en los riesgos al principio se hubiera sufrido mucho más adelante. El impacto del riesgo hubiera sido inabarcable en este momento.
+
+\bigskip
+
+También se debe mencionar que la gestión de un proyecto debe adecuarse siempre a su tamaño, de nada sirve en un trabajo de fin de grado ejecutar todos y cada uno de los procesos del PMBOK\cite{pmbok}. Hacer esto sí generará situaciones en las que se dificulta el avance. Sin embargo, siempre se debe dedicar una etapa al principio del proyecto a pensar el grado de gestión que el mismo puede necesitar.
+
+\bigskip
+
+El grado de gestión que se ha considerado necesario para un trabajo de fin de grado es el que se ha aplicado en este mismo documento. De una forma u otra todos los proyectos por simples que sean conllevan una gestión, aunque la misma solo exista en la cabeza del que lo realiza.
+
+\subsection{Importancia del diseño}
+
+Dado que el tiempo es restringido en este tipo de trabajos, se ha demostrado la importancia de considerar una arquitectura definida. Especialmente en aplicaciones relativamente grandes, el tener una arquitectura a alto nivel probada y que se sabe que funciona permite centrarse en cada uno de sus componentes con mucha comodidad.
+
+\bigskip
+
+Una vez se tuvo la arquitectura, los patrones de diseño fueron claves para la correcta implementación de muchos de los componentes. A la hora de conectar los subsistemas, crear las escenas o cambiar el comportamiento del enemigo todos los procesos se volvieron mucho más sencillos.
+
+\bigskip
+
+Se tendrá en cuenta en futuros proyectos que el tiempo utilizado en diseño muy rara vez es contraproducente, utilizar soluciones generales conocidas es importante y que se debe priorizar pensar mucho y programar menos.
+
+\subsection{Posibilidades de la inteligencia artificial}
+
+En el aspecto quizás más técnico se ha aprendido que sin tener demasiados conocimientos sobre inteligencia artificial se ha llegado a un resultado inesperadamente bueno. Durante alguna etapa del proyecto se consideró con uno de los tutores que si el agente se acercaba a empatar contra el enemigo basado en reglas se podría considerar un rendimiento aceptable. Al final del proyecto el agente gana aproximadamente un 80\% de las veces.
+
+\bigskip
+
+Estos datos no son gracias a la calidad o complejidad de las técnicas implementadas. Sirven para demostrar que la posible utilización de técnicas mas completas pueden dar lugar a mejoras todavía mayores.
+
+\bigskip
+
+En relación a la problemática que se presenta en la introducción se ha visto como trabajar en un campo ayuda a avanzar en el otro. El alumno ha aprendido tanto sobre aspectos de desarrollo de IA para videojuegos como sobre técnicas útiles y complejas dentro del mundo de la investigación. El ejemplo demuestra que un campo puede hacer crecer al otro y se considera que la colaboración entre los dos mundos se debería de mejorar.
+
+
+\section{Posibles ampliaciones}
+
+Finalmente, este apartado estará dedicado a mencionar las ampliaciones que se podrían llevar a cabo sobre el presente proyecto, aportando una calidad al producto final significativamente superior a la presente. Sin embargo, algunas de ellas implicarían un esfuerzo temporal importante mientras que otras sería relativamente sencillo agregarlas.
+
+\subsection{Mejoras de compatibilidad}
+
+En la actualidad, la aplicación es compatible con el sistema operativo \textbf{macOS}. Sin embargo el mismo no es el comúnmente utilizado para distribuir videojuegos o aplicaciones gráficas. Una posible ampliación en este sentido sería portar el mismo al sistema \textbf{Windows} en uso en el momento de la implementación, aumentando así significativamente el número de potenciales usuarios.
+
+\bigskip
+
+El cambio de plataforma no debería de ser complejo, simplemente se necesita encontrar una solución diferente para acceder a los recursos, frameworks y librerías por parte de la aplicación. En esta versión están autocontenidas pero mediante un proceso de instalación más complejo se debería de conseguir portabilidad fácilmente.
+
+\subsection{Ampliar proceso de pruebas}
+
+Sería interesante realizar pruebas con diferentes agentes entrenados de diferentes formas con grupos de jugadores reales con niveles de experiencia dispares. Para la realización de un proceso de pruebas con muchos jugadores sería una buena idea distribuir diferentes versiones de la aplicación con un cuestionario enfocado a averiguar como de creíble o \textit{humano} es el comportamiento de cada agente así como la dificultad del mismo.
+
+\bigskip
+
+En este sentido la dificultad está en distribuir la aplicación y los formularios. Para hacerlo correctamente se debería considerar primero el apartado anterior referente a la compatibilidad y luego intentar distribuirlo en línea junto con un sistema que permita crear y gestionar los formularios fácilmente.
+
+\subsection{Implementación de otras técnicas para el agente}
+
+En este sentido es en el que se pueden hacer más mejoras teniendo en cuenta que la base para realizar pruebas está implementada.
+
+\bigskip
+
+Sería interesante convertir el algoritmo actual en una implementación completa de \textbf{\textit{Q-Learning}} pues ambos métodos tienen un funcionamiento similar y no se necesitaría modificar demasiado el código actual.
+
+\bigskip
+
+Un apartado considerado muy interesante es la discretización de estados continuos mediante la utilización de redes neuronales conocidas como \textit{\textbf{mapas auto-organizados}} o \textbf{\textit{SOP}}\footnote{siglas en inglés de Self-Organizing Map}. Esto permitiría que incluso el algoritmo actual mejorara su rendimiento pues en la discretización manual se generan estados posibles que nunca se visitan.
+
+\bigskip
+
+Utilizando este tipo de discretización se permitiría que estados diferentes fueran considerados iguales para el agente si realmente no se necesita diferenciar entre ellos.
+
+\subsection{Nuevas mecánicas para el videojuego}
+
+Si se decide incrementar las capacidades del agente sería buena idea agregar también opciones para que los personajes y su comportamiento puedan ser mas complejos. Esto pasaría seguramente por implementar nuevas mecánicas como diferentes tipos de ataque (quizás a distancia), un sistema de armas y municiones, formas de recuperar vida, añadir una barra de energía que se vacíe al realizar acciones, etc. Las opciones son muy variadas.
+
+\bigskip
+
+La implementación de estas mecánicas debería de ser sencilla especialmente considerando la estructura de la aplicación con escenas y \textit{gameobjects}. Al comprender el funcionamiento de los mismos gracias al apartado de diseño (capítulo \ref{cap:diseno}) solo habría que pensar la mecánica deseada y agregarla a la escena de combate con los \textit{gameobjects} que fueran necesarios.
