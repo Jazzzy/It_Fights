@@ -925,11 +925,23 @@ En lo que corresponde a la tabla \ref{rend:el:victorias}, vemos que el agente no
 
 \section{Comparación y elección del agente final}
 
-En comparación, el que llamaremos \textbf{agente 1} explicado en la sección \ref{agente1} es significativamente mejor que el \textbf{agente 2} referenciado en la sección \ref{agente2} al competir contra un personaje basado en reglas. Una de las razones más importantes que lleva a esto es que el agente 2, al realizar cada uno de los grupos de 100 combates para obtener las estadísticas, está peleando por primera vez contra el personaje pasado en reglas, por lo que no está tan especializado en las situaciones que se dan.
+\begin{figure}
+	\centerline{\includegraphics[width=15cm]{otros/otrasCapturas/grafico_victorias.png}}
+	\caption{Porcentaje de victorias durante el entrenamiento}
+	\label{graf:victorias}
+\end{figure}
+
+\begin{figure}
+	\centerline{\includegraphics[width=15cm]{otros/otrasCapturas/grafico_estados.png}}
+	\caption{Estados visitados durante el entrenamiento}
+	\label{graf:estados}
+\end{figure}
+
+En comparación, el que llamaremos \textbf{agente 1} explicado en la sección \ref{agente1} es significativamente mejor que el \textbf{agente 2} referenciado en la sección \ref{agente2} al competir contra un personaje basado en reglas como se puede observar en la gráfica contenida en la figura \ref{graf:victorias}. Una de las razones más importantes que lleva a esto es que el agente 2, al realizar cada uno de los grupos de 100 combates para obtener las estadísticas, está peleando por primera vez contra el personaje pasado en reglas, por lo que no está tan especializado en las situaciones que se dan.
 
 \bigskip
 
-Por otra parte, hay que tener en cuenta que el agente 2 es significativamente superior en lo que a exploración del espacio de estados se refiere. Esto genera un comportamiento mucho más completo contra jugadores humanos ya que las situaciones que los mismos crean pueden llegar a ser extremadamente raras para el agente 1. Ah haber visitado más estados se responde de forma más efectiva a oponentes con patrones poco frecuentes.
+Por otra parte, como se puede ver en el gráfico de la figura \ref{graf:estados}, hay que tener en cuenta que el agente 2 es significativamente superior en lo que a exploración del espacio de estados se refiere. Esto genera un comportamiento mucho más completo contra jugadores humanos ya que las situaciones que los mismos crean pueden llegar a ser extremadamente raras para el agente 1. Ah haber visitado más estados se responde de forma más efectiva a oponentes con patrones poco frecuentes.
 
 \bigskip
 
@@ -942,5 +954,25 @@ Lo que nos lleva a la \textbf{elección} del agente que se presentará en la ver
 \bigskip
 
 Esto favorece que la versión final presentada contenga un agente que sabe tanto responder a estados poco comunes como elegir la mejor acción en situaciones frecuentes.
+
+\section{Observaciones}
+
+Al analizar el comportamiento del agente elegido se han observado comportamientos relativamente complejos que no se esperaban en un principio. Algunos de los que comentaremos a continuación se pueden ver en un vídeo subido a \textit{YouTube}\footnote{disponible en: \url{https://youtu.be/NdtrxdUIRWw}}.
+
+\bigskip
+
+El agente suele emplear una estrategia agresiva para comenzar el combate con ventaja. Se observa como es capaz de anticiparse a cuando el enemigo estará a rango atacando primero y posicionándose en una buena situación.
+
+\bigskip
+
+Se considera muy interesante que cuando el enemigo escapa para evitar perder la partida, el agente no solo lo persigue sino que acorta el camino para llegar a él, realizando lo que parece una previsión de sus movimientos. Esto le sirve para atacar a donde el enemigo estará eventualmente y derrotarlo.
+
+\bigskip
+
+Finalmente, como se puede ver al final del vídeo referenciado, cuando el enemigo decide defenderse y el agente lo tiene a rango, espera pacientemente a que el enemigo no pueda ejecutar la acción defensiva y le asesta un ataque propio. El cual no es evitable por parte del otro personaje.
+
+\bigskip
+
+En general se considera que sus capacidades son destacables dada la simplicidad de las técnicas utilizadas. Incluso al desarrollador principal, muy familiarizado con su comportamiento y con el juego, es capaz de ganarle con una frecuencia aproximada del 40\%\footnote{datos obtenidos de la ejecución de 30 combates aproximadamente}.
 
 

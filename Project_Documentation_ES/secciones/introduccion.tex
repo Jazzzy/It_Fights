@@ -85,104 +85,40 @@ La interacción entre movimiento, defensa y ataque crea situaciones en las que n
 
 Al no favorecer ningún estilo de juego concreto se abren posibilidades sobre que comportamiento es el idóneo para un posible agente complejo. En el siguiente apartado se comenta el algoritmo utilizado para aprender y jugar al videojuego.
 
-\subsection{Algoritmo}
+\section{Prototipo de Unity}
 
-El algoritmo implementado recuerda ligeramente a una versión muy simplificada de \textit{Q-Learning}\footnote{explicación simple de \textit{Q-Learning} en: \url{http://mnemstudio.org/path-finding-q-learning-tutorial.htm}}. Dada la acción correctiva mostrada en el apartado \ref{AC} se ha optado por una aproximación específica para el problema actual en lugar de realizar implementaciones desde cero de técnicas de aprendizaje por refuerzo. Las mismas requerirían una cantidad de tiempo y recursos del que no se disponía en el proyecto, sin embargo, en el apartado de conclusiones y posibles ampliaciones (\ref{cap:conclusiones}) se especifican las técnicas que sería posible agregar sin demasiado esfuerzo adicional.
-
-\bigskip
-
-El primer paso para hacer funcionar el algoritmo es considerar como discretizar los estados. Existen técnicas relativamente complejas dedicadas a ello como los \textit{mapas auto-organizados}\footnote{tipo de red neuronal artificial entrenado para representar de forma discreta un espacio de entrada de estados continuos}. Se ha optado por una discretización manual en la cual los estados continuos del combate generan una estructura que tiene en cuenta los siguientes datos:
-
-\begin{itemize}
-	\item \textbf{Vida de los personajes}: En 5 posibles valores, desde 0 (vacía) hasta 5 (completa).
-	\item \textbf{Acción que se está realizando}: Que puede ser moverse, atacar, defender, estar quieto o estar descansando de una defensa.
-	\item \textbf{Dirección relativa de los personajes}: Se calcula la dirección del enemigo de forma discreta (hacia arriba, abajo, izquierda o derecha).
-	\item \textbf{Distancia entre los personajes}: Que se subdivide en tres estados dependiendo del rango de ataque: fuera de rango, cerca de rango o dentro de rango.
-	\item \textbf{Posición de los muros}: Se guarda si hay algún muro al lado del personaje que impida su movimiento.
-	\item \textbf{Si se está mirando al enemigo}: Indica si se está mirando en la dirección del enemigo para poder atacarlo.
-\end{itemize}
-
-Una vez discretizados los estados se puede proceder a definir como el agente los irá explorando, así como la manera de asociar una recompensa a la mejor acción para cada estado. Para ello se necesita una función de utilidad o \textit{fitness} que se define teniendo en cuenta:
-
-\begin{itemize}
-	\item \textbf{Distancia al enemigo}: Se recompensa al personaje cuando se acerca al enemigo para favorecer un comportamiento agresivo.
-	\item \textbf{Vida propia del enemigo}: Se recompensa al personaje cuanta más vida tenga y cuanta menos tenga el enemigo.
-	\item \textbf{Posición de los muros}: Se recompensa al personaje si no está al lado de ningún muro que impida el movimiento en esa dirección.
-	\item \textbf{Si se está mirando al enemigo}: Se recompensa al personaje si está mirando al enemigo ya que esto posibilita realizar un eventual ataque exitoso.
-\end{itemize}
+Dado que el prototipo inicial realizado en Unity ha tenido un impacto significativo en el proyecto, tal y como se muestra en la sección \ref{AC}, se dedica este subapartado a mostrar los problemas que ha generado el elegir esta tecnología como primera opción.
 
 \bigskip
 
-Por otra parte, las acciones discretas que puede realizar el jugador son sencillas: Atacar, defenderse, moverse en cuatro direcciones (arriba, abajo, izquierda o derecha) o quedarse quieto.
+En las figuras \ref{unity:combate} y \ref{unity:limite} podemos observar dos capturas del prototipo. En ambos casos se observan las vallas pensadas para limitar el área de combate. Las mismas cuentan con atributos que hacen que generen colisiones, es decir, que los personajes no puedan atravesarlas en ningún caso.
 
 \bigskip
 
-Ahora que se cuenta con una función de utilidad, estados discretos y acciones discretas se procede a definir como el agente aprende y escoge entre las diferentes opciones en el \textbf{algoritmo} \ref{algoritmo}.
+Sin embargo, al escalar el tiempo por valores relativamente pequeños, este tipo de funcionalidades dejan de funcionar ya que el motor tarda demasiado en componer cada uno de los fotogramas, haciendo que en muchas ocasiones en un fotograma se calcule que el personaje está en un lado de la valla y en el siguiente esté en el otro sin haber entrado en contacto con la misma.
 
 \bigskip
 
-
-En el mismo se muestra como en cada iteración del bucle que ejecuta el agente primero se guardará la información referente al estado anterior, la acción elegida y la mejora en \textit{fitness} asociada. Después de esto se escogerá o bien una acción aleatoria si no se conoce el estado o una de entre las que mejor \textit{fitness} tendrán con una probabilidad.
+Este tipo de fallos son inaceptables ya que rompen el funcionamiento de las mecánicas de juego al realizar las simulaciones, haciendo que un posible agente no pudiera aprender de forma eficaz y eficiente.
 
 \bigskip
 
+Algo parecido sucede con los ataques. Al intentar acelerar el tiempo y realizar un ataque ocurre con cierta frecuencia que el motor se salta los fotogramas en los que realmente se está comprobando si se hace daño al enemigo, inutilizando esta mecánica también.
 
-\textbf{$\epsilon$} representa una cantidad entre 0 y 1 que indica que porcentaje de las veces que se elige sobre un estado conocido se decide explorar un estado aleatorio en lugar de  elegir uno de los visitados. Se han utilizado valores cercanos a $0.30$ durante el entrenamiento y se han disminuido a valores ligeramente menores a $0.1$ al finalizar el mismo con la intención de comprobar sus habilidades.
+\bigskip
+
+En aras de permitir una visualización más comprensible de los problemas se pone a disposición un vídeo en \textit{YouTube}\footnote{disponible en: \url{https://youtu.be/PY4H8dk8zcU}} en el que se muestra concretamente el problema de la valla. Es cierto que en este caso sí se está mostrando la aplicación y no se está eliminando la visualización para aumentar el rendimiento, sin embargo se ha comprobado que los problemas son los mismos incluso sin visualización. Además el tiempo solo está escalado 20 veces, lo que se esperaría que fuera soportable para el motor pero no es así. Como comparación, en el producto final se escala unas 600 veces sin problema alguno.
+
+\begin{figure}
+	\centerline{\includegraphics[width=15cm]{otros/otrasCapturas/valla1.png}}
+	\caption{Captura del prototipo en la zona de combate}
+	\label{unity:combate}
+\end{figure}
+
+\begin{figure}
+	\centerline{\includegraphics[width=15cm]{otros/otrasCapturas/valla2.png}}
+	\caption{Captura del prototipo en el límite del mapa}
+	\label{unity:limite}
+\end{figure}
 
 
-\begin{algorithm}
-	
-	\SetKwData{Action}{action}
-	\SetKwData{LastAction}{selectedAction}
-	\SetKwData{LastState}{lastState}
-	\SetKwData{CurrentState}{currentState}
-	\SetKwData{DeltaFitness}{deltaFitness}
-	\SetKwData{StateActionData}{stateActionData}
-	\SetKwData{RandomAction}{randomAction}
-	\SetKwData{AllActions}{allPosibleActions}
-	
-	\SetKwFunction{GetRandomAction}{getRandomAction}
-	\SetKwFunction{GetCurrentState}{getCurrentState}
-	\SetKwFunction{RandomBet}{randomBetween}
-	\SetKwFunction{CalculateFitness}{calculateFitness}
-	\SetKwFunction{UpdateWith}{updateWith}
-	\SetKwFunction{Insert}{insert}
-	\SetKwFunction{Pick}{bestWeightedAction}
-
-	\While{agent is running}{
-		\LastState$\leftarrow$ \CurrentState\;
-		\CurrentState$\leftarrow$ \GetCurrentState{}\;
-
-		\DeltaFitness$\leftarrow$ \CalculateFitness{\CurrentState}$-$\CalculateFitness{\LastState}\;
-	
-		%Actualizamos el conocimiento del agente
-		\uIf{\LastState$\in$ \StateActionData}{
-			\StateActionData$.$\UpdateWith{\LastState,\LastAction,\DeltaFitness}\;
-		}
-		\Else{
-			\StateActionData$.$\Insert{\LastState,\LastAction,\DeltaFitness}\;
-		}
-	
-	
-		%Seleccionamos la acción a escoger
-		\uIf{\CurrentState$\in$ \StateActionData}{
-			
-			\uIf{\RandomBet{$0$,$1$}$<\epsilon$}{
-				\LastAction$\leftarrow$ \RandomAction $\in$ \AllActions\;
-			}
-			\Else{
-				\LastAction$\leftarrow$ \Action $\in$ \AllActions  $|$ \Pick{\StateActionData,\CurrentState} $=$ \Action  \;
-			}
-			
-		}
-		\Else{
-			\LastAction$\leftarrow$ \RandomAction $\in$ \AllActions\;
-		}
-	
-	
-	}
-	\caption{Algoritmo general del agente}
-	\label{algoritmo}
-\end{algorithm}
-
- 
