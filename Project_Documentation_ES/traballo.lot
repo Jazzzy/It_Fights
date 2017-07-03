@@ -2,23 +2,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Valores utilizados en la funci\IeC {\'o}n de \textit {fitness}}}{15}{table.3.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Matriz de trazabilidad de requisitos contra casos de uso}}{46}{table.4.1}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Matriz de trazabilidad de requisitos contra casos de uso}}{48}{table.4.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Valores posibles de probabilidad e impacto}}{49}{table.5.1}
-\contentsline {table}{\numberline {5.2}{Acci\IeC {\'o}n correctiva sobre la imposibilidad de realizar simulaciones aceleradas}}{58}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla de salario del desarrollador}}{74}{table.5.3}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Tabla de costes de amortizaci\IeC {\'o}n del equipo}}{74}{table.5.4}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Tabla de costes finales}}{75}{table.5.5}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Matriz de interesados del proyecto}}{78}{table.5.6}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Matriz de comunicaciones del proyecto}}{79}{table.5.7}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Valores posibles de probabilidad e impacto}}{51}{table.5.1}
+\contentsline {table}{\numberline {5.2}{Acci\IeC {\'o}n correctiva sobre la imposibilidad de realizar simulaciones aceleradas}}{60}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla de salario del desarrollador}}{76}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Tabla de costes de amortizaci\IeC {\'o}n del equipo}}{76}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Tabla de costes finales}}{77}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Matriz de interesados del proyecto}}{80}{table.5.6}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Matriz de comunicaciones del proyecto}}{81}{table.5.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Rendimiento del agente entrenado contra personaje basado en reglas}}{141}{table.8.1}
-\contentsline {table}{\numberline {8.2}{\ignorespaces Estados visitados por el agente entrenado contra personaje basado en reglas}}{141}{table.8.2}
-\contentsline {table}{\numberline {8.3}{\ignorespaces Rendimiento del agente entrenado contra otra instancia de si mismo}}{142}{table.8.3}
-\contentsline {table}{\numberline {8.4}{\ignorespaces Estados visitados por el agente entrenado contra otra instancia de si mismo}}{142}{table.8.4}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Rendimiento del agente entrenado contra personaje basado en reglas}}{143}{table.8.1}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Estados visitados por el agente entrenado contra personaje basado en reglas}}{143}{table.8.2}
+\contentsline {table}{\numberline {8.3}{\ignorespaces Rendimiento del agente entrenado contra otra instancia de si mismo}}{144}{table.8.3}
+\contentsline {table}{\numberline {8.4}{\ignorespaces Estados visitados por el agente entrenado contra otra instancia de si mismo}}{144}{table.8.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

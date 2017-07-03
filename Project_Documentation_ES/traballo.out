@@ -6,87 +6,89 @@
 \BOOKMARK [2][-]{subsection.2.1.1}{Definici\363n del videojuego}{section.2.1}% 6
 \BOOKMARK [1][-]{section.2.2}{Prototipo de Unity}{chapter.2}% 7
 \BOOKMARK [0][-]{chapter.3}{Algoritmo}{}% 8
-\BOOKMARK [0][-]{chapter.4}{An\341lisis de requisitos}{}% 9
-\BOOKMARK [1][-]{section.4.1}{Identificaci\363n de los requisitos del sistema}{chapter.4}% 10
-\BOOKMARK [2][-]{subsection.4.1.1}{Actores}{section.4.1}% 11
-\BOOKMARK [2][-]{subsection.4.1.2}{Casos de uso}{section.4.1}% 12
-\BOOKMARK [2][-]{subsection.4.1.3}{Especificaci\363n de requisitos}{section.4.1}% 13
-\BOOKMARK [0][-]{chapter.5}{Gesti\363n del proyecto}{}% 14
-\BOOKMARK [1][-]{section.5.1}{Gesti\363n de riesgos}{chapter.5}% 15
-\BOOKMARK [2][-]{subsection.5.1.1}{Especificaci\363n de riesgos}{section.5.1}% 16
-\BOOKMARK [2][-]{subsection.5.1.2}{Control de riesgos}{section.5.1}% 17
-\BOOKMARK [1][-]{section.5.2}{Gesti\363n de la configuraci\363n}{chapter.5}% 18
-\BOOKMARK [2][-]{subsection.5.2.1}{Herramientas}{section.5.2}% 19
-\BOOKMARK [2][-]{subsection.5.2.2}{Descripci\363n del soporte de las herramientas al proceso}{section.5.2}% 20
-\BOOKMARK [2][-]{subsection.5.2.3}{Nomenclatura}{section.5.2}% 21
-\BOOKMARK [1][-]{section.5.3}{Metodolog\355a de desarrollo}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.4}{Planificaci\363n temporal}{chapter.5}% 23
-\BOOKMARK [2][-]{subsection.5.4.1}{Planificaci\363n del videojuego}{section.5.4}% 24
-\BOOKMARK [2][-]{subsection.5.4.2}{Planificaci\363n del agente}{section.5.4}% 25
-\BOOKMARK [2][-]{subsection.5.4.3}{Planificaci\363n de la obtenci\363n de datos}{section.5.4}% 26
-\BOOKMARK [2][-]{subsection.5.4.4}{Planificaci\363n de la documentaci\363n, reuniones y finalizaci\363n}{section.5.4}% 27
-\BOOKMARK [1][-]{section.5.5}{An\341lisis de costes}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.6}{Plan de Gesti\363n de las Comunicaciones}{chapter.5}% 29
-\BOOKMARK [2][-]{subsection.5.6.1}{Gesti\363n de interesados}{section.5.6}% 30
-\BOOKMARK [2][-]{subsection.5.6.2}{Planificaci\363n de la informaci\363n y comunicaciones}{section.5.6}% 31
-\BOOKMARK [2][-]{subsection.5.6.3}{Reuniones}{section.5.6}% 32
-\BOOKMARK [0][-]{chapter.6}{Arquitectura y herramientas}{}% 33
-\BOOKMARK [1][-]{section.6.1}{Arquitectura del sistema}{chapter.6}% 34
-\BOOKMARK [2][-]{subsection.6.1.1}{Subsistemas propios del motor}{section.6.1}% 35
-\BOOKMARK [1][-]{section.6.2}{Herramientas de dise\361o}{chapter.6}% 36
-\BOOKMARK [2][-]{subsection.6.2.1}{Herramientas software}{section.6.2}% 37
-\BOOKMARK [2][-]{subsection.6.2.2}{Patrones de dise\361o}{section.6.2}% 38
-\BOOKMARK [1][-]{section.6.3}{Herramientas de desarrollo}{chapter.6}% 39
-\BOOKMARK [2][-]{subsection.6.3.1}{Realizaci\363n de la documentaci\363n}{section.6.3}% 40
-\BOOKMARK [2][-]{subsection.6.3.2}{Desarrollo}{section.6.3}% 41
-\BOOKMARK [2][-]{subsection.6.3.3}{Tecnolog\355as}{section.6.3}% 42
-\BOOKMARK [2][-]{subsection.6.3.4}{Librer\355as}{section.6.3}% 43
-\BOOKMARK [0][-]{chapter.7}{Dise\361o e implementaci\363n}{}% 44
-\BOOKMARK [1][-]{section.7.1}{Diagramas de clases}{chapter.7}% 45
-\BOOKMARK [2][-]{subsection.7.1.1}{Bus de mensajes}{section.7.1}% 46
-\BOOKMARK [2][-]{subsection.7.1.2}{Aplicaci\363n general}{section.7.1}% 47
-\BOOKMARK [2][-]{subsection.7.1.3}{Subsistemas}{section.7.1}% 48
-\BOOKMARK [2][-]{subsection.7.1.4}{Otros \372tiles}{section.7.1}% 49
-\BOOKMARK [2][-]{subsection.7.1.5}{Escenas}{section.7.1}% 50
-\BOOKMARK [1][-]{section.7.2}{Diagramas de secuencia}{chapter.7}% 51
-\BOOKMARK [2][-]{subsection.7.2.1}{Aplicaci\363n general}{section.7.2}% 52
-\BOOKMARK [2][-]{subsection.7.2.2}{Escenas y agente}{section.7.2}% 53
-\BOOKMARK [1][-]{section.7.3}{Dise\361o de la interfaz gr\341fica}{chapter.7}% 54
-\BOOKMARK [2][-]{subsection.7.3.1}{Interfaz del men\372}{section.7.3}% 55
-\BOOKMARK [2][-]{subsection.7.3.2}{Interfaz del combate}{section.7.3}% 56
-\BOOKMARK [2][-]{subsection.7.3.3}{Interfaz de la consola}{section.7.3}% 57
-\BOOKMARK [0][-]{chapter.8}{Validaci\363n y pruebas}{}% 58
-\BOOKMARK [1][-]{section.8.1}{Pruebas unitarias}{chapter.8}% 59
-\BOOKMARK [2][-]{subsection.8.1.1}{Requisitos funcionales}{section.8.1}% 60
-\BOOKMARK [2][-]{subsection.8.1.2}{Requisitos no funcionales}{section.8.1}% 61
-\BOOKMARK [1][-]{section.8.2}{Pruebas de integraci\363n}{chapter.8}% 62
-\BOOKMARK [1][-]{section.8.3}{Validaci\363n del agente}{chapter.8}% 63
-\BOOKMARK [2][-]{subsection.8.3.1}{Entrenado contra personaje basado en reglas}{section.8.3}% 64
-\BOOKMARK [2][-]{subsection.8.3.2}{Entrenado contra \351l mismo}{section.8.3}% 65
-\BOOKMARK [1][-]{section.8.4}{Comparaci\363n y elecci\363n del agente final}{chapter.8}% 66
-\BOOKMARK [1][-]{section.8.5}{Observaciones}{chapter.8}% 67
-\BOOKMARK [0][-]{chapter.9}{Conclusiones y posibles ampliaciones}{}% 68
-\BOOKMARK [1][-]{section.9.1}{Reflexiones y lecciones aprendidas}{chapter.9}% 69
-\BOOKMARK [2][-]{subsection.9.1.1}{Gesti\363n del proyecto}{section.9.1}% 70
-\BOOKMARK [2][-]{subsection.9.1.2}{Importancia del dise\361o}{section.9.1}% 71
-\BOOKMARK [2][-]{subsection.9.1.3}{Posibilidades de la inteligencia artificial}{section.9.1}% 72
-\BOOKMARK [1][-]{section.9.2}{Posibles ampliaciones}{chapter.9}% 73
-\BOOKMARK [2][-]{subsection.9.2.1}{Mejoras de compatibilidad}{section.9.2}% 74
-\BOOKMARK [2][-]{subsection.9.2.2}{Ampliar proceso de pruebas}{section.9.2}% 75
-\BOOKMARK [2][-]{subsection.9.2.3}{Implementaci\363n de otras t\351cnicas para el agente}{section.9.2}% 76
-\BOOKMARK [2][-]{subsection.9.2.4}{Nuevas mec\341nicas para el videojuego}{section.9.2}% 77
-\BOOKMARK [0][-]{appendix.Alph1}{Manual t\351cnico}{}% 78
-\BOOKMARK [1][-]{section.Alph1.1}{Requisitos de instalaci\363n}{appendix.Alph1}% 79
-\BOOKMARK [1][-]{section.Alph1.2}{Instrucciones de instalaci\363n}{appendix.Alph1}% 80
-\BOOKMARK [1][-]{section.Alph1.3}{Ejecuci\363n de la aplicaci\363n}{appendix.Alph1}% 81
-\BOOKMARK [0][-]{appendix.Alph2}{Manual de usuario}{}% 82
-\BOOKMARK [1][-]{section.Alph2.1}{Instalaci\363n/Ejecuci\363n de la aplicaci\363n}{appendix.Alph2}% 83
-\BOOKMARK [1][-]{section.Alph2.2}{Controles de la aplicaci\363n}{appendix.Alph2}% 84
-\BOOKMARK [2][-]{subsection.Alph2.2.1}{Controles del men\372}{section.Alph2.2}% 85
-\BOOKMARK [2][-]{subsection.Alph2.2.2}{Controles de combate}{section.Alph2.2}% 86
-\BOOKMARK [2][-]{subsection.Alph2.2.3}{Controles avanzados}{section.Alph2.2}% 87
-\BOOKMARK [1][-]{section.Alph2.3}{Uso de las diferentes escenas}{appendix.Alph2}% 88
-\BOOKMARK [2][-]{subsection.Alph2.3.1}{Uso del men\372}{section.Alph2.3}% 89
-\BOOKMARK [2][-]{subsection.Alph2.3.2}{Combate}{section.Alph2.3}% 90
-\BOOKMARK [2][-]{subsection.Alph2.3.3}{Consola}{section.Alph2.3}% 91
-\BOOKMARK [0][-]{figure.Alph2.7}{Bibliograf\355a}{}% 92
+\BOOKMARK [1][-]{section.3.1}{Utilidad o fitness}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.2}{Aprendizaje}{chapter.3}% 10
+\BOOKMARK [0][-]{chapter.4}{An\341lisis de requisitos}{}% 11
+\BOOKMARK [1][-]{section.4.1}{Identificaci\363n de los requisitos del sistema}{chapter.4}% 12
+\BOOKMARK [2][-]{subsection.4.1.1}{Actores}{section.4.1}% 13
+\BOOKMARK [2][-]{subsection.4.1.2}{Casos de uso}{section.4.1}% 14
+\BOOKMARK [2][-]{subsection.4.1.3}{Especificaci\363n de requisitos}{section.4.1}% 15
+\BOOKMARK [0][-]{chapter.5}{Gesti\363n del proyecto}{}% 16
+\BOOKMARK [1][-]{section.5.1}{Gesti\363n de riesgos}{chapter.5}% 17
+\BOOKMARK [2][-]{subsection.5.1.1}{Especificaci\363n de riesgos}{section.5.1}% 18
+\BOOKMARK [2][-]{subsection.5.1.2}{Control de riesgos}{section.5.1}% 19
+\BOOKMARK [1][-]{section.5.2}{Gesti\363n de la configuraci\363n}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.2.1}{Herramientas}{section.5.2}% 21
+\BOOKMARK [2][-]{subsection.5.2.2}{Descripci\363n del soporte de las herramientas al proceso}{section.5.2}% 22
+\BOOKMARK [2][-]{subsection.5.2.3}{Nomenclatura}{section.5.2}% 23
+\BOOKMARK [1][-]{section.5.3}{Metodolog\355a de desarrollo}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.4}{Planificaci\363n temporal}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.4.1}{Planificaci\363n del videojuego}{section.5.4}% 26
+\BOOKMARK [2][-]{subsection.5.4.2}{Planificaci\363n del agente}{section.5.4}% 27
+\BOOKMARK [2][-]{subsection.5.4.3}{Planificaci\363n de la obtenci\363n de datos}{section.5.4}% 28
+\BOOKMARK [2][-]{subsection.5.4.4}{Planificaci\363n de la documentaci\363n, reuniones y finalizaci\363n}{section.5.4}% 29
+\BOOKMARK [1][-]{section.5.5}{An\341lisis de costes}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.6}{Plan de Gesti\363n de las Comunicaciones}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.6.1}{Gesti\363n de interesados}{section.5.6}% 32
+\BOOKMARK [2][-]{subsection.5.6.2}{Planificaci\363n de la informaci\363n y comunicaciones}{section.5.6}% 33
+\BOOKMARK [2][-]{subsection.5.6.3}{Reuniones}{section.5.6}% 34
+\BOOKMARK [0][-]{chapter.6}{Arquitectura y herramientas}{}% 35
+\BOOKMARK [1][-]{section.6.1}{Arquitectura del sistema}{chapter.6}% 36
+\BOOKMARK [2][-]{subsection.6.1.1}{Subsistemas propios del motor}{section.6.1}% 37
+\BOOKMARK [1][-]{section.6.2}{Herramientas de dise\361o}{chapter.6}% 38
+\BOOKMARK [2][-]{subsection.6.2.1}{Herramientas software}{section.6.2}% 39
+\BOOKMARK [2][-]{subsection.6.2.2}{Patrones de dise\361o}{section.6.2}% 40
+\BOOKMARK [1][-]{section.6.3}{Herramientas de desarrollo}{chapter.6}% 41
+\BOOKMARK [2][-]{subsection.6.3.1}{Realizaci\363n de la documentaci\363n}{section.6.3}% 42
+\BOOKMARK [2][-]{subsection.6.3.2}{Desarrollo}{section.6.3}% 43
+\BOOKMARK [2][-]{subsection.6.3.3}{Tecnolog\355as}{section.6.3}% 44
+\BOOKMARK [2][-]{subsection.6.3.4}{Librer\355as}{section.6.3}% 45
+\BOOKMARK [0][-]{chapter.7}{Dise\361o e implementaci\363n}{}% 46
+\BOOKMARK [1][-]{section.7.1}{Diagramas de clases}{chapter.7}% 47
+\BOOKMARK [2][-]{subsection.7.1.1}{Bus de mensajes}{section.7.1}% 48
+\BOOKMARK [2][-]{subsection.7.1.2}{Aplicaci\363n general}{section.7.1}% 49
+\BOOKMARK [2][-]{subsection.7.1.3}{Subsistemas}{section.7.1}% 50
+\BOOKMARK [2][-]{subsection.7.1.4}{Otros \372tiles}{section.7.1}% 51
+\BOOKMARK [2][-]{subsection.7.1.5}{Escenas}{section.7.1}% 52
+\BOOKMARK [1][-]{section.7.2}{Diagramas de secuencia}{chapter.7}% 53
+\BOOKMARK [2][-]{subsection.7.2.1}{Aplicaci\363n general}{section.7.2}% 54
+\BOOKMARK [2][-]{subsection.7.2.2}{Escenas y agente}{section.7.2}% 55
+\BOOKMARK [1][-]{section.7.3}{Dise\361o de la interfaz gr\341fica}{chapter.7}% 56
+\BOOKMARK [2][-]{subsection.7.3.1}{Interfaz del men\372}{section.7.3}% 57
+\BOOKMARK [2][-]{subsection.7.3.2}{Interfaz del combate}{section.7.3}% 58
+\BOOKMARK [2][-]{subsection.7.3.3}{Interfaz de la consola}{section.7.3}% 59
+\BOOKMARK [0][-]{chapter.8}{Validaci\363n y pruebas}{}% 60
+\BOOKMARK [1][-]{section.8.1}{Pruebas unitarias}{chapter.8}% 61
+\BOOKMARK [2][-]{subsection.8.1.1}{Requisitos funcionales}{section.8.1}% 62
+\BOOKMARK [2][-]{subsection.8.1.2}{Requisitos no funcionales}{section.8.1}% 63
+\BOOKMARK [1][-]{section.8.2}{Pruebas de integraci\363n}{chapter.8}% 64
+\BOOKMARK [1][-]{section.8.3}{Validaci\363n del agente}{chapter.8}% 65
+\BOOKMARK [2][-]{subsection.8.3.1}{Entrenado contra personaje basado en reglas}{section.8.3}% 66
+\BOOKMARK [2][-]{subsection.8.3.2}{Entrenado contra \351l mismo}{section.8.3}% 67
+\BOOKMARK [1][-]{section.8.4}{Comparaci\363n y elecci\363n del agente final}{chapter.8}% 68
+\BOOKMARK [1][-]{section.8.5}{Observaciones}{chapter.8}% 69
+\BOOKMARK [0][-]{chapter.9}{Conclusiones y posibles ampliaciones}{}% 70
+\BOOKMARK [1][-]{section.9.1}{Reflexiones y lecciones aprendidas}{chapter.9}% 71
+\BOOKMARK [2][-]{subsection.9.1.1}{Gesti\363n del proyecto}{section.9.1}% 72
+\BOOKMARK [2][-]{subsection.9.1.2}{Importancia del dise\361o}{section.9.1}% 73
+\BOOKMARK [2][-]{subsection.9.1.3}{Posibilidades de la inteligencia artificial}{section.9.1}% 74
+\BOOKMARK [1][-]{section.9.2}{Posibles ampliaciones}{chapter.9}% 75
+\BOOKMARK [2][-]{subsection.9.2.1}{Mejoras de compatibilidad}{section.9.2}% 76
+\BOOKMARK [2][-]{subsection.9.2.2}{Ampliar proceso de pruebas}{section.9.2}% 77
+\BOOKMARK [2][-]{subsection.9.2.3}{Implementaci\363n de otras t\351cnicas para el agente}{section.9.2}% 78
+\BOOKMARK [2][-]{subsection.9.2.4}{Nuevas mec\341nicas para el videojuego}{section.9.2}% 79
+\BOOKMARK [0][-]{appendix.Alph1}{Manual t\351cnico}{}% 80
+\BOOKMARK [1][-]{section.Alph1.1}{Requisitos de instalaci\363n}{appendix.Alph1}% 81
+\BOOKMARK [1][-]{section.Alph1.2}{Instrucciones de instalaci\363n}{appendix.Alph1}% 82
+\BOOKMARK [1][-]{section.Alph1.3}{Ejecuci\363n de la aplicaci\363n}{appendix.Alph1}% 83
+\BOOKMARK [0][-]{appendix.Alph2}{Manual de usuario}{}% 84
+\BOOKMARK [1][-]{section.Alph2.1}{Instalaci\363n/Ejecuci\363n de la aplicaci\363n}{appendix.Alph2}% 85
+\BOOKMARK [1][-]{section.Alph2.2}{Controles de la aplicaci\363n}{appendix.Alph2}% 86
+\BOOKMARK [2][-]{subsection.Alph2.2.1}{Controles del men\372}{section.Alph2.2}% 87
+\BOOKMARK [2][-]{subsection.Alph2.2.2}{Controles de combate}{section.Alph2.2}% 88
+\BOOKMARK [2][-]{subsection.Alph2.2.3}{Controles avanzados}{section.Alph2.2}% 89
+\BOOKMARK [1][-]{section.Alph2.3}{Uso de las diferentes escenas}{appendix.Alph2}% 90
+\BOOKMARK [2][-]{subsection.Alph2.3.1}{Uso del men\372}{section.Alph2.3}% 91
+\BOOKMARK [2][-]{subsection.Alph2.3.2}{Combate}{section.Alph2.3}% 92
+\BOOKMARK [2][-]{subsection.Alph2.3.3}{Consola}{section.Alph2.3}% 93
+\BOOKMARK [0][-]{figure.Alph2.7}{Bibliograf\355a}{}% 94

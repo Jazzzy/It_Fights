@@ -15,6 +15,8 @@ El primer paso para hacer funcionar el algoritmo es considerar como discretizar 
 	\item \textbf{Si se está mirando al enemigo}: Indica si se está mirando en la dirección del enemigo para poder atacarlo.
 \end{itemize}
 
+\section{Utilidad o \textit{fitness}}
+
 Una vez discretizados los estados se puede proceder a definir como el agente los irá explorando, así como la manera de asociar una recompensa a la mejor acción para cada estado. Para ello se necesita una función de utilidad o \textit{fitness} que se define teniendo en cuenta:
 
 \begin{itemize}
@@ -26,9 +28,92 @@ Una vez discretizados los estados se puede proceder a definir como el agente los
 
 \bigskip
 
-Por otra parte, las acciones discretas que puede realizar el jugador son sencillas: Atacar, defenderse, moverse en cuatro direcciones (arriba, abajo, izquierda o derecha) o quedarse quieto.
+En concreto, el valor de \textit{fitness} de cada estado se calculará siguiendo el algoritmo \ref{algoritmo:fitness}. En el mismo se puede observar como se comienza con un valor inicial y luego se irán sumando o restando según si las variables utilizadas se consideran directamente o inversamente proporcionales al valor de \textit{fitness} deseado.
 
 \bigskip
+
+Es importante considerar los valores de los \textbf{\textit{BONUS}} y \textbf{\textit{MULTIPLICADORES}} que se usan para calcular las variables ya que al cambiarlos se le dará más o menos importancia a la variable que modifican.
+
+\bigskip
+
+El cuadro \ref{algoritmo:valores} contiene los valores utilizados en la versión final del proyecto que han sido obtenidos para intentar maximizar la agresividad del jugador.
+
+\bigskip
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Parámetro} & \textbf{Valor}\\
+			
+			\hline
+			INITIAL\_FITNESS\_VALUE& 1000\\
+			
+			\hline
+			MY\_HEALTH\_MULTIPLIER& 100\\
+			
+			\hline
+			ENEMY\_HEALTH\_MULTIPLIER& 100\\
+			
+			\hline
+			DISTANCE\_MULTIPLIER& 3\\
+			
+			\hline
+			LOOKING\_BONUS& 200\\
+			
+			\hline
+			WALL\_BONUS& 50\\
+			
+			\hline
+		\end{tabular}
+		\caption{Valores utilizados en la función de \textit{fitness}}
+		\label{algoritmo:valores}
+	\end{center}
+\end{table}
+
+
+\begin{algorithm}
+	
+	\SetKwData{Fitness}{fitness}
+	
+	\SetKwData{PlayerHealth}{playerHealth}
+	\SetKwData{EnemyHealth}{enemyHealth}
+	\SetKwData{Distance}{distance}
+	\SetKwData{LookingAtEnemy}{lookingAtEnemy}
+	\SetKwData{NoWallsNear}{noWallsNear}
+	
+	\SetKwFunction{GetRandomAction}{getRandomAction}
+	\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+	\Input{\PlayerHealth, \EnemyHealth, \Distance, \LookingAtEnemy, \NoWallsNear}
+	\Output{\Fitness}
+		
+		
+		\Fitness$\leftarrow$ INITIAL\_FITNESS\_VALUE\;
+		\Fitness$\leftarrow$ \Fitness$+ ($\PlayerHealth$*$ MY\_HEALTH\_MULTIPLIER$)$\;
+		\Fitness$\leftarrow$ \Fitness$- ($\EnemyHealth$*$ ENEMY\_HEALTH\_MULTIPLIER$)$\;
+		\Fitness$\leftarrow$ \Fitness$- ($\Distance$*$ DISTANCE\_MULTIPLIER$)$\;
+		
+		\If{\LookingAtEnemy}{
+			\Fitness$\leftarrow$ \Fitness$+$ LOOKING\_BONUS\;
+		}
+	
+		\If{\NoWallsNear}{
+			\Fitness$\leftarrow$ \Fitness$+$ WALL\_BONUS\;
+		}
+
+	\caption{Algoritmo de cálculo de \textit{fitness}}
+	\label{algoritmo:fitness}
+\end{algorithm}
+
+\bigskip
+
+
+\bigskip
+
+Por otra parte, las acciones discretas que puede realizar el jugador son sencillas: Atacar, defenderse, moverse en cuatro direcciones (arriba, abajo, izquierda o derecha) o quedarse quieto.
+
+
+\section{Aprendizaje}
 
 Ahora que se cuenta con una función de utilidad, estados discretos y acciones discretas se procede a definir como el agente aprende y escoge entre las diferentes opciones en el \textbf{algoritmo} \ref{algoritmo}.
 
@@ -41,6 +126,20 @@ En el mismo se muestra como en cada iteración del bucle que ejecuta el agente p
 
 
 \textbf{$\epsilon$} representa una cantidad entre 0 y 1 que indica que porcentaje de las veces que se elige sobre un estado conocido se decide explorar un estado aleatorio en lugar de  elegir uno de los visitados. Se han utilizado valores cercanos a $0.30$ durante el entrenamiento y se han disminuido a valores ligeramente menores a $0.1$ al finalizar el mismo con la intención de comprobar sus habilidades.
+
+\bigskip
+
+El algoritmo se ejecutará una vez por cada ciclo de actualización del agente, o lo que es lo mismo, del personaje que controla. De esta forma, cada vez que se hace la llamada al \textit{update} del agente se realiza un ciclo del algoritmo \ref{algoritmo}. Para comprender la estructura de los objetos que representan el capítulo \ref{cap:diseno} puede ser de ayuda, especialmente la sección \ref{cap:diseno:agente}.
+
+\bigskip
+
+En la aplicación se permite que el agente compita contra el mismo, de forma que controla a los dos personajes a la vez. A ojos del agente es irrelevante cual o cuantos personajes tiene que considerar, simplemente recibe estados, un fitness asociado e intenta elegir la acción correcta.
+
+\bigskip
+
+Esta aproximación permite realizar un entrenamiento el doble de rápido tal y como se muestra en la sección \ref{cap:pruebas:mismo}. Sin embargo, a cambio de esto se pierde la posibilidad de enfrentar a dos agentes que tengan entrenamiento diferente. Esto no ha sido una prioridad ya que se busca un entrenamiento orientado a jugadores reales y a la representación de su comportamiento que compone el personaje basado en reglas.
+
+
 
 
 \begin{algorithm}
