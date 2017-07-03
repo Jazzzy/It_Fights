@@ -810,11 +810,11 @@ Las etapas anteriores referidas a las pruebas unitarias y a las pruebas de integ
 
 \bigskip
 
-Por razones temporales y por que se saldría del alcance de este proyecto, no es posible realizar pruebas con una cantidad suficiente de pruebas en las que se pruebe, registre y analice el comportamiento del agente contra una cantidad suficiente de jugadores humanos.
+Por razones temporales y por que se saldría del alcance de este proyecto, no es posible realizar un proceso con una cantidad suficiente de pruebas en las que se examine, registre y analice el comportamiento del agente contra una cantidad suficiente de jugadores humanos.
 
 \bigskip
 
-Para hacer esto posible se debería disponer de grupos relativamente numerosos sin experiencia en el juego y compuestos por jugadores de distintos niveles de experiencia en videojuegos de este estilo. Lo cual es difícil de conseguir y gestionar, además de que supondría un consumo de tiempo importante.
+Para hacer esto posible se debería disponer de grupos relativamente numerosos sin experiencia en el juego y compuestos por jugadores de distintos niveles de experiencia en videojuegos de este estilo. Esto es difícil de conseguir y gestionar, además de que supondría un consumo de tiempo importante.
 
 \bigskip
 
@@ -827,6 +827,11 @@ En este sentido, se realizarán 100 simulaciones en las que se enfrentarán agen
 \bigskip
 
 Los siguientes apartados contendrán los datos referentes al comportamiento del agente entrenado de diferentes formas:
+
+\begin{itemize}
+	\item Entrenado contra el personaje basado en reglas.
+	\item Entrenado contra otra instancia de él mismo.
+\end{itemize}
 
 \subsection{Entrenado contra personaje basado en reglas}
 \label{agente1}
@@ -920,7 +925,7 @@ En lo que corresponde a la tabla \ref{rend:el:victorias}, vemos que el agente no
 
 \section{Comparación y elección del agente final}
 
-En comparación, el que llamaremos \textbf{agente 1} explicado en la sección \ref{agente1} es significativamente mejor que el \textbf{agente 2} referenciado en la sección \ref{agente2} al competir contra un personaje basado en reglas. Una de las razones más importantes que lleva a esto es que el agente 2, al realizar cada uno de los grupos de 100 combates para obtener las estadísticas, está peleando or primera vez contra el personaje pasado en reglas, por lo que no está tan especializado en las situaciones que se dan.
+En comparación, el que llamaremos \textbf{agente 1} explicado en la sección \ref{agente1} es significativamente mejor que el \textbf{agente 2} referenciado en la sección \ref{agente2} al competir contra un personaje basado en reglas. Una de las razones más importantes que lleva a esto es que el agente 2, al realizar cada uno de los grupos de 100 combates para obtener las estadísticas, está peleando por primera vez contra el personaje pasado en reglas, por lo que no está tan especializado en las situaciones que se dan.
 
 \bigskip
 

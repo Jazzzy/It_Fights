@@ -72,7 +72,7 @@
 \contentsline {section}{\numberline {7.3}Validaci\IeC {\'o}n del agente}{136}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Entrenado contra personaje basado en reglas}{137}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}Entrenado contra \IeC {\'e}l mismo}{138}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Comparaci\IeC {\'o}n y elecci\IeC {\'o}n del agente final}{138}{section.7.4}
+\contentsline {section}{\numberline {7.4}Comparaci\IeC {\'o}n y elecci\IeC {\'o}n del agente final}{139}{section.7.4}
 \contentsline {chapter}{\numberline {8}Conclusiones y posibles ampliaciones}{141}{chapter.8}
 \contentsline {section}{\numberline {8.1}Reflexiones y lecciones aprendidas}{141}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Gesti\IeC {\'o}n del proyecto}{141}{subsection.8.1.1}
