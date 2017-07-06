@@ -13,7 +13,7 @@
 
 #include "Behaviour.hpp"
 
-#define EPSILON (0.30f)  // 0.30 for learning
+#define EPSILON (0.0f)  // 0.30 for learning
 
 class ReinforcementLearningBehaviour_1 : public Behaviour {
  public:
