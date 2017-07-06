@@ -1,54 +1,53 @@
 \select@language {spanish}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \IeC {\'A}ngulos posibles}}{2}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces \IeC {\'A}ngulos posibles}}{4}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Escena de combate}}{7}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Captura del prototipo en la zona de combate}}{9}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama de bloques}}{11}{figure.2.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Escena de combate}}{7}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Captura del prototipo en la zona de combate}}{9}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de bloques}}{11}{figure.3.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de casos de uso}}{22}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de casos de uso}}{22}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Estructura de Descomposici\IeC {\'o}n del Trabajo o EDT}}{69}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Cronograma general del proyecto}}{70}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Cronograma de la parte del videojuego}}{71}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Cronograma de la parte del agente}}{72}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Cronograma de la parte de obtenci\IeC {\'o}n de datos}}{73}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Cronograma de la parte de documentaci\IeC {\'o}n, reuniones y finalizaci\IeC {\'o}n}}{74}{figure.4.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Estructura de Descomposici\IeC {\'o}n del Trabajo o EDT}}{69}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Cronograma general del proyecto}}{70}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Cronograma de la parte del videojuego}}{71}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Cronograma de la parte del agente}}{72}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Cronograma de la parte de obtenci\IeC {\'o}n de datos}}{73}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Cronograma de la parte de documentaci\IeC {\'o}n, reuniones y finalizaci\IeC {\'o}n}}{74}{figure.5.6}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Arquitectura con subsistemas interconectados directamente}}{84}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura con subsistemas interconectados mediante bus de mensajes}}{85}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Arquitectura con Bus Node}}{86}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Arquitectura final}}{86}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Patr\IeC {\'o}n \textit {Strategy}}}{90}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Patr\IeC {\'o}n \textit {Singleton}}}{91}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Patr\IeC {\'o}n \textit {Decorator}}}{92}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Patr\IeC {\'o}n Publica-Subscribe o \textit {PubSub}}}{92}{figure.5.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Arquitectura con subsistemas interconectados directamente}}{84}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Arquitectura con subsistemas interconectados mediante bus de mensajes}}{85}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Arquitectura con Bus Node}}{86}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Arquitectura final}}{86}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Patr\IeC {\'o}n \textit {Strategy}}}{90}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Patr\IeC {\'o}n \textit {Singleton}}}{91}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Patr\IeC {\'o}n \textit {Decorator}}}{92}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Patr\IeC {\'o}n Publica-Subscribe o \textit {PubSub}}}{92}{figure.6.8}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de clases del bus de mensajes}}{99}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de clases de la l\IeC {\'o}gica del juego}}{100}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de clases del subsistema de consola}}{101}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de clases del subsistema de entrada}}{102}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diagrama de clases del subsistema de f\IeC {\'\i }sicas}}{103}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Diagrama de clases del subsistema de renderizado}}{105}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Diagrama de clases del subsistema de sonido}}{107}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Diagrama de clases del paquete de recursos}}{107}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Diagrama de clases del paquete de \IeC {\'u}tiles}}{108}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Diagrama de clases de la escena del men\IeC {\'u}}}{109}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Diagrama de clases de la escena de juego}}{110}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Diagrama de clases del comportamiento del agente}}{114}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Diagrama de secuencia general de la aplicaci\IeC {\'o}n}}{116}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Diagrama de secuencia gen\IeC {\'e}rico de una escena}}{118}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Diagrama de secuencia de la consola}}{119}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Diagrama de secuencia de la escena del men\IeC {\'u}}}{121}{figure.6.16}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Diagrama de secuencia de la escena del \textit {gameplay}}}{123}{figure.6.17}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Diagrama de secuencia del agente}}{124}{figure.6.18}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces \textit {Mockup} de la interfaz del men\IeC {\'u}}}{126}{figure.6.19}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces \textit {Mockup} de la interfaz del combate}}{127}{figure.6.20}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces \textit {Mockup} de la interfaz de la consola}}{128}{figure.6.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Diagrama de clases del bus de mensajes}}{99}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Diagrama de clases de la l\IeC {\'o}gica del juego}}{100}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Diagrama de clases del subsistema de consola}}{101}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Diagrama de clases del subsistema de entrada}}{102}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Diagrama de clases del subsistema de f\IeC {\'\i }sicas}}{103}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Diagrama de clases del subsistema de renderizado}}{105}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Diagrama de clases del subsistema de sonido}}{107}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Diagrama de clases del paquete de recursos}}{107}{figure.7.8}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Diagrama de clases del paquete de \IeC {\'u}tiles}}{108}{figure.7.9}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Diagrama de clases de la escena del men\IeC {\'u}}}{109}{figure.7.10}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Diagrama de clases de la escena de juego}}{110}{figure.7.11}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Diagrama de clases del comportamiento del agente}}{114}{figure.7.12}
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Diagrama de secuencia general de la aplicaci\IeC {\'o}n}}{116}{figure.7.13}
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Diagrama de secuencia gen\IeC {\'e}rico de una escena}}{118}{figure.7.14}
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Diagrama de secuencia de la consola}}{119}{figure.7.15}
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Diagrama de secuencia de la escena del men\IeC {\'u}}}{121}{figure.7.16}
-\contentsline {figure}{\numberline {7.17}{\ignorespaces Diagrama de secuencia de la escena del \textit {gameplay}}}{123}{figure.7.17}
-\contentsline {figure}{\numberline {7.18}{\ignorespaces Diagrama de secuencia del agente}}{124}{figure.7.18}
-\contentsline {figure}{\numberline {7.19}{\ignorespaces \textit {Mockup} de la interfaz del men\IeC {\'u}}}{126}{figure.7.19}
-\contentsline {figure}{\numberline {7.20}{\ignorespaces \textit {Mockup} de la interfaz del combate}}{127}{figure.7.20}
-\contentsline {figure}{\numberline {7.21}{\ignorespaces \textit {Mockup} de la interfaz de la consola}}{128}{figure.7.21}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Porcentaje de victorias contra el personaje basado en reglas}}{145}{figure.8.1}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Estados visitados durante el entrenamiento}}{146}{figure.8.2}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Porcentaje de victorias contra el personaje basado en reglas}}{145}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Estados visitados durante el entrenamiento}}{146}{figure.7.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -4,7 +4,7 @@ En este capítulo se documenta el diseño e implementación que se ha realizado 
 
 \bigskip
 
-Se empezará por la documentación asociada a los paquetes relacionados con el motor del videojuego en sí mismo para luego seguir con el subsistema de la lógica de la aplicación que contendrá la implementación del agente. Luego se muestran los diagramas de interacción que relacionan las clases antes definidas con los casos de uso en los que participan. Finalmente se mostrará como se llegó al diseño de la interfaz gráfica de la aplicación. Además, se ha hecho uso de un \textbf{código de colores} que permite una comprensión más rápida de cada uno de los diagramas:
+Se empezará por la documentación asociada a los paquetes relacionados con el motor del videojuego en sí mismo para luego seguir con el subsistema de la lógica de la aplicación que contendrá la implementación del agente. Luego se muestran los diagramas de interacción que relacionan las clases antes definidas con los casos de uso en los que participan. Finalmente se mostrará cómo se llegó al diseño de la interfaz gráfica de la aplicación. Además, se ha hecho uso de un \textbf{código de colores} que permite una comprensión más rápida de cada uno de los diagramas:
 
 \begin{itemize}
 	\item \textbf{Verde}: Identifica las clases protagonistas o principales de cada diagrama.
@@ -25,7 +25,7 @@ Para facilitar la comprensión de la estructura de esta sección la misma está 
 	\item Finalmente se mostrarán los diagramas de cada una de las escenas.
 \end{enumerate}
 
-En los apartados que siguen se añadirá una breve explicación asociada a cada diagrama para favorecer su comprensión.  Además, en aras de mantener la simplicidad de los diagramas, se han omitido los constructores que no aportan información sobre la clase, es decir, si una clase no requiere argumentos o requiere los mismos que una superclase no se mostrará su constructor. En situaciones donde sea relevante como que requiera argumentos inesperados o el constructor sea privado se especificará como tal.
+En los apartados que siguen se añadirá una breve explicación asociada a cada diagrama para favorecer su comprensión.  Además, en aras de mantener la simplicidad de los diagramas, se han omitido los constructores que no aportan información sobre la clase, es decir, si una clase no requiere argumentos o requiere los mismos que una superclase no se mostrará su constructor. En situaciones donde sea relevante, como que requiera argumentos inesperados o el constructor sea privado, se especificará como tal.
 
 \subsection{Bus de mensajes}
 
@@ -84,7 +84,7 @@ Vemos además la jerarquía de \textit{ConsoleLine} e \textit{InputLine}. Se enc
 	\label{class:input}
 \end{figure}
 
-La figura \ref{class:input} muestra las clases referentes al subsistema de entrada. En dicho diagrama se puede observar como su definición es muy sencilla ya que solamente tendrá que iterar sobre todos los eventos de entrada que ocurren y enviarlos al bus de mensajes.
+La figura \ref{class:input} muestra las clases referentes al subsistema de entrada. En dicho diagrama se puede observar cómo su definición es muy sencilla ya que solamente tendrá que iterar sobre todos los eventos de entrada que ocurren y enviarlos al bus de mensajes.
 
 \bigskip
 
@@ -216,7 +216,7 @@ La escena del menú, mostrada en la figura \ref{class:menu}, es la escena más s
 	\label{class:gameplay}
 \end{figure}
 
-Esta escena (figura \ref{class:gameplay}) es la dedicada a jugar realmente al videojuego, la misma contiene el combate entre los dos personajes. La clase dedicada a la escena es \textbf{\textit{NeoPurple}}\footnote{nombre en clave escogido por la apariencia del suelo de la escena para identificarla fácilmente en caso de que se requirieran más escenas con \textit{gameplay}} y se encarga de contener a todos los \textit{gameobjects} necesarios y a gestionar la victoria de uno de los personajes con la función \textbf{\textit{win}}. Los \textit{gameobjects} contenidos en la escena son:
+Esta escena (figura \ref{class:gameplay}) es la dedicada a jugar realmente al videojuego, la misma contiene el combate entre los dos personajes. La clase dedicada a la escena es \textbf{\textit{NeoPurple}}\footnote{Nombre en clave escogido por la apariencia del suelo de la escena para identificarla fácilmente en caso de que se requirieran más escenas con \textit{gameplay}} y se encarga de contener a todos los \textit{gameobjects} necesarios y a gestionar la victoria de uno de los personajes con la función \textbf{\textit{win}}. Los \textit{gameobjects} contenidos en la escena son:
 
 \begin{itemize}
 	\item \textbf{\textit{Ground}}: Encargado de representar el suelo de la escena, es el encargado tanto de pintar el suelo como de proporcionar al sistema de colisiones un \textit{collider} que impida que los personajes se salgan de la escena mediante el uso de ese \textit{BoxCollider}.
@@ -244,7 +244,7 @@ La clase \textbf{\textit{Observer}} es el componente encargado de representar lo
 
 \bigskip
 
-Pasando ahora a la jerarquía de clases de \textbf{\textit{Behaviour}} se ve como la clase principal es la encargada de representar la estrategia genérica del patrón \textit{Strategy}\ref{pat:strategy} ya que el enemigo siempre tendrá una pero podrá cambiar entre ellas en diferentes ejecuciones. Esta clase \textit{Behaviour} tiene acceso a la clase \textbf{\textit{Actions}} que encapsula las acciones posibles a realizar y las ejecuta con \textbf{\textit{execute}} sobre la referencia al \textit{controller} que contiene. Algo importante es el hecho de que \textit{Behaviour} contiene un \textit{thread} independiente que correrá todos los cálculos referentes a la inteligencia artificial del juego, separando de forma efectiva la complejidad del juego con la del agente y favoreciendo el rendimiento.
+Pasando ahora a la jerarquía de clases de \textbf{\textit{Behaviour}} se ve cómo la clase principal es la encargada de representar la estrategia genérica del patrón \textit{Strategy}\ref{pat:strategy} ya que el enemigo siempre tendrá una pero podrá cambiar entre ellas en diferentes ejecuciones. Esta clase \textit{Behaviour} tiene acceso a la clase \textbf{\textit{Actions}} que encapsula las acciones posibles a realizar y las ejecuta con \textbf{\textit{execute}} sobre la referencia al \textit{controller} que contiene. Algo importante es el hecho de que \textit{Behaviour} contiene un \textit{thread} independiente que correrá todos los cálculos referentes a la inteligencia artificial del juego, separando de forma efectiva la complejidad del juego con la del agente y favoreciendo el rendimiento.
 
 \bigskip
 
@@ -256,7 +256,7 @@ Pasando ahora a la jerarquía de clases de \textbf{\textit{Behaviour}} se ve com
 
 \bigskip
 
-Para representar la información referente a los estados visitados se guarda el estado actual (\textbf{\textit{currentState}}) y el último (\textbf{\textit{lastState}}), además de la ultima acción escogida (\textbf{\textit{lastAction}}). Con estos datos, al principio de cada iteración del \textbf{\textit{update}}, se guardará en el \textit{StateActionContainer} la mejora en el \textit{fitness} asociada a una acción para un determinado estado. Luego se obtendrá el estado actual y si este no ha sido visitado se escogerá una acción aleatoria, si por el contrario este ha sido visitado, se escogerá entre las posibles acciones teniendo en cuenta el \textit{fitness} esperado para cada una, habiendo una posibilidad de que aleatoriamente se escoja una acción con poco \textit{fitness} para solucionar el conocido problema de exploración contra explotación\footnote{problema común en entornos de inteligencia artificial en el cual un agente debe balancear escoger siempre la opción que parece la mejor en este momento con explorar las otras posibles opciones en busca de otra que pueda ser superior.} en inteligencia artificial.
+Para representar la información referente a los estados visitados se guarda el estado actual (\textbf{\textit{currentState}}) y el último (\textbf{\textit{lastState}}), además de la ultima acción escogida (\textbf{\textit{lastAction}}). Con estos datos, al principio de cada iteración del \textbf{\textit{update}}, se guardará en el \textit{StateActionContainer} la mejora en el \textit{fitness} asociada a una acción para un determinado estado. Luego se obtendrá el estado actual y si este no ha sido visitado se escogerá una acción aleatoria, si por el contrario este ha sido visitado, se escogerá entre las posibles acciones teniendo en cuenta el \textit{fitness} esperado para cada una, habiendo una posibilidad de que aleatoriamente se escoja una acción con poco \textit{fitness} para solucionar el conocido problema de exploración contra explotación\footnote{Problema común en entornos de inteligencia artificial en el cual un agente debe balancear escoger siempre la opción que parece la mejor en este momento con explorar las otras posibles opciones en busca de otra que pueda ser superior.} en inteligencia artificial.
 
 \bigskip
 
@@ -279,7 +279,7 @@ Por último, \textbf{\textit{StateActionContainer}} será un \textit{Singleton} 
 
 \section{Diagramas de secuencia}
 
-Esta sección estará dedicada a explicar la secuencia de operaciones que se realiza en casos comunes e importantes de partes de la aplicación. Se ha optado por mostrar partes clave de la aplicación en lugar de dedicar un diagrama de secuencia a cada caso de uso ya que si se hiciera de este modo se repetiría mucha información entre los mismos, además de dar lugar a diagramas de secuencia de tamaños excesivos. Otra nota importante es que no se suelen utilizar diagramas de secuencia en este tipo de arquitecturas y en especial en videojuegos ya que su naturaleza lleva a realizar acciones durante muchas diferentes del \textit{gameloop}\footnote{bucle principal de un videojuego en el que se actualizan todas sus partes, se puede ver un ejemplo en la figura \ref{sec:general}} haciendo que representar un caso de uso diera lugar a diagramas de secuencia con decenas de instancias y cientos de mensajes entre ellas.
+Esta sección estará dedicada a explicar la secuencia de operaciones que se realiza en casos comunes e importantes de partes de la aplicación. Se ha optado por mostrar partes clave de la aplicación en lugar de dedicar un diagrama de secuencia a cada caso de uso ya que si se hiciera de este modo se repetiría mucha información entre los mismos, además de dar lugar a diagramas de secuencia de tamaños excesivos. Otra nota importante es que no se suelen utilizar diagramas de secuencia en este tipo de arquitecturas y en especial en videojuegos ya que su naturaleza lleva a realizar acciones durante muchas diferentes del \textit{gameloop}\footnote{Bucle principal de un videojuego en el que se actualizan todas sus partes, se puede ver un ejemplo en la figura \ref{sec:general}} haciendo que representar un caso de uso diera lugar a diagramas de secuencia con decenas de instancias y cientos de mensajes entre ellas.
 
 \bigskip
 
@@ -299,7 +299,7 @@ La figura \ref{sec:general} muestra la creación y destrucción de los subsistem
 
 \bigskip
 
-El bucle contiene las actualizaciones de todas las partes de la aplicación en el mismo orden en el que se han creado aunque este podría variar. Esto podría dar lugar a pensar que el hecho de realizar el bucle en este orden de problemas en el sentido de que si un subsistema quiere modificar otro que ya ha sido actualizado, dicha modificación tiene que esperar a la siguiente iteración. De forma efectiva esto no es un problema dado que al realizar el intercambio de mensajes al final es el bus de mensajes el encargado de hacer que se ejecuten todas las funciones relacionadas con los mensajes existentes. Como mucho es posible que en algunas situaciones la ejecución de una funcionalidad se retrase una iteración pero dado que cada fotograma (y por lo tanto, cada iteración) se muestra cada unos 16 milisegundos\footnote{contando con una frecuencia de actualización común de 60 fotogramas por segundo, que se ha probado como constante en esta aplicación en equipos relativamente actuales} no es posible que el usuario sea consciente.
+El bucle contiene las actualizaciones de todas las partes de la aplicación en el mismo orden en el que se han creado aunque este podría variar. Esto podría dar lugar a pensar que el hecho de realizar el bucle en este orden de problemas en el sentido de que si un subsistema quiere modificar otro que ya ha sido actualizado, dicha modificación tiene que esperar a la siguiente iteración. De forma efectiva esto no es un problema dado que al realizar el intercambio de mensajes al final es el bus de mensajes el encargado de hacer que se ejecuten todas las funciones relacionadas con los mensajes existentes. Como mucho es posible que en algunas situaciones la ejecución de una funcionalidad se retrase una iteración pero dado que cada fotograma (y por lo tanto, cada iteración) se muestra cada unos 16 milisegundos\footnote{Contando con una frecuencia de actualización común de 60 fotogramas por segundo, que se ha probado como constante en esta aplicación en equipos relativamente actuales} no es posible que el usuario sea consciente.
 
 \bigskip
 
@@ -313,7 +313,7 @@ Este diagrama se relaciona estrechamente con los casos de uso CU-1 (iniciar apli
 	\label{sec:scene}
 \end{figure}
 
-El diagrama de secuencia de la figura \ref{sec:scene} nos muestra como el objeto \textit{gameState} puede crear y destruir una escena para cambiar entre las mismas, lo que se relaciona estrechamente con el CU-3 (seleccionar y ejecutar opción). Además se muestra como es el \textit{gameState} el encargado de actualizar la escena pero será el subsistema de \textit{rendering} con su clase \textit{Window} el encargado de hacer que se dibuje la escena y todos sus \textit{gameobjects}.
+El diagrama de secuencia de la figura \ref{sec:scene} nos muestra cómo el objeto \textit{gameState} puede crear y destruir una escena para cambiar entre las mismas, lo que se relaciona estrechamente con el CU-3 (seleccionar y ejecutar opción). Además se muestra cómo es el \textit{gameState} el encargado de actualizar la escena pero será el subsistema de \textit{rendering} con su clase \textit{Window} el encargado de hacer que se dibuje la escena y todos sus \textit{gameobjects}.
 
 
 \subsubsection*{Consola}
@@ -322,11 +322,11 @@ Relacionado estrechamente con el caso de uso CU-9 (Visualizar resultados de comb
 
 \bigskip
 
-En orden temporal, se muestra como el usuario puede introducir caracteres por teclado para crear un comando en la consola para luego ejecutarlo y que el mismo se envíe al bus de mensajes. Luego se observa como la clase \textit{Window}, al tener acceso a la consola, es capaz de comprobar si está abierta y dibujarla por pantalla junto con todas las lineas de texto que esta contiene.
+En orden temporal, se muestra cómo el usuario puede introducir caracteres por teclado para crear un comando en la consola para luego ejecutarlo y que el mismo se envíe al bus de mensajes. Luego se observa cómo la clase \textit{Window}, al tener acceso a la consola, es capaz de comprobar si está abierta y dibujarla por pantalla junto con todas las lineas de texto que esta contiene.
 
 \bigskip
 
-Finalmente se muestra como el usuario puede alternar entre visualizar o no la consola al pulsar una determinada tecla interpretada por el sistema de \textit{input}.
+Finalmente se muestra cómo el usuario puede alternar entre visualizar o no la consola al pulsar una determinada tecla interpretada por el sistema de \textit{input}.
 
 \begin{landscape}
 \begin{figure}
@@ -342,7 +342,7 @@ Finalmente se muestra como el usuario puede alternar entre visualizar o no la co
 
 \subsubsection*{Escena del menú}
 
-En el diagrama de secuencia de la escena del menú de la figura \ref{sec:menu} se ve como el usuario es capaz de seleccionar entre las opciones del menú para luego ejecutar la seleccionada y cambiar de escena.
+En el diagrama de secuencia de la escena del menú de la figura \ref{sec:menu} se ve cómo el usuario es capaz de seleccionar entre las opciones del menú para luego ejecutar la seleccionada y cambiar de escena.
 
 \bigskip
 
@@ -363,7 +363,7 @@ La figura \ref{sec:gameplay} contiene el diagrama de secuencia que indica la int
 
 \bigskip
 
-En el diagrama se muestra como el jugador realiza todas las acciones disponibles para el durante un combate en el siguiente orden temporal:
+En el diagrama se muestra cómo el jugador realiza todas las acciones disponibles para el durante un combate en el siguiente orden temporal:
 
 \begin{enumerate}
 	\item El jugador mueve el \textit{joystick} del mando y el mismo se traduce en su personaje moviéndose por la escena.
@@ -416,13 +416,13 @@ Otro aspecto muy relacionado con la usabilidad es el uso de un indicador sonoro 
 
 \subsection{Interfaz del menú}
 
-En el \textit{mockup}\footnote{modelo de diseño de una interfaz que permite realizar cambios a la misma sin necesidad de implementarla y con el fin de evaluar a grandes rasgos su usabilidad y aspecto} del menú mostrado en la figura \ref{inter:menu} se vé como se ha echo hincapié en la simplicidad del mismo. El título se muestra utilizando un tamaño de fuente superior y las opciones se alinean por la izquierda teniendo en cuenta que pueden tener una longitud distinta.
+En el \textit{mockup}\footnote{Modelo de diseño de una interfaz que permite realizar cambios a la misma sin necesidad de implementarla y con el fin de evaluar a grandes rasgos su usabilidad y aspecto} del menú mostrado en la figura \ref{inter:menu} se vé cómo se ha echo hincapié en la simplicidad del mismo. El título se muestra utilizando un tamaño de fuente superior y las opciones se alinean por la izquierda teniendo en cuenta que pueden tener una longitud distinta.
 
 \bigskip
 
 La opción seleccionada se muestra en negrita y subrayada para no dar lugar a dudas a la hora de distinguirla de las otras. Tanto el cambio entre opciones como la ejecución de una de ellas tienen un sonido asociado lo suficientemente diferente como para ser inconfundibles entre ellos.
 
-\bigskip A la hora de colocar el título y las opciones se ha utilizado la conocida como regla de los tercios\footnote{regla, generalmente asociada a la fotografía, que sugiere que alinear vertical y horizontalmente los elementos de una fotografía con las líneas imaginarias que separa la imagen en tercios las hace más interesantes, naturas y cómodas a la vista}
+\bigskip A la hora de colocar el título y las opciones se ha utilizado la conocida como regla de los tercios\footnote{Regla, generalmente asociada a la fotografía, que sugiere que alinear vertical y horizontalmente los elementos de una fotografía con las líneas imaginarias que separa la imagen en tercios las hace más interesantes, naturas y cómodas a la vista}
 
 \begin{figure}
 	\centerline{\includegraphics[width=12cm]{otros/graphicalInterface/menu.png}}
@@ -458,7 +458,7 @@ Pese a que no se muestre en la figura, cuando se detiene el combate porque uno d
 
 \subsection{Interfaz de la consola}
 
-Finalmente, la figura \ref{inter:console} muestra como se vería la consola sobre la aplicación. Recordemos que la misma se puede abrir y cerrar en cualquier escena por lo que tiene un fondo coloreado pero que cierta transparencia que permita ver fácilmente lo que está ocurriendo.
+Finalmente, la figura \ref{inter:console} muestra cómo se vería la consola sobre la aplicación. Recordemos que la misma se puede abrir y cerrar en cualquier escena por lo que tiene un fondo coloreado pero que cierta transparencia que permita ver fácilmente lo que está ocurriendo.
 
 \bigskip
 

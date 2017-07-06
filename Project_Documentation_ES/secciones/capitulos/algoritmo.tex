@@ -55,7 +55,7 @@ Algo parecido sucede con los ataques. Al intentar acelerar el tiempo y realizar 
 
 \bigskip
 
-En aras de permitir una visualización más comprensible de los problemas se pone a disposición un vídeo en \textit{YouTube}\footnote{disponible en: \url{https://youtu.be/PY4H8dk8zcU}} en el que se muestra concretamente el problema de la valla. Es cierto que en este caso sí se está mostrando la aplicación y no se está eliminando la visualización para aumentar el rendimiento, sin embargo se ha comprobado que los problemas son los mismos incluso sin visualización. Además el tiempo solo está escalado 20 veces, lo que se esperaría que fuera soportable para el motor pero no es así. Como comparación, en el producto final se escala unas 600 veces sin problema alguno.
+En aras de permitir una visualización más comprensible de los problemas se pone a disposición un vídeo en \textit{YouTube}\footnote{Disponible en: \url{https://youtu.be/PY4H8dk8zcU}} en el que se muestra concretamente el problema de la valla. Es cierto que en este caso sí se está mostrando la aplicación y no se está eliminando la visualización para aumentar el rendimiento, sin embargo se ha comprobado que los problemas son los mismos incluso sin visualización. Además el tiempo solo está escalado 20 veces, lo que se esperaría que fuera soportable para el motor pero no es así. Como comparación, en el producto final se escala unas 600 veces sin problema alguno.
 
 \section{Segunda aplicación}
 
@@ -79,11 +79,11 @@ La escena representa el contexto de combate, en el que tendremos dos personajes.
 
 \section{Algoritmo}
 
-El algoritmo implementado recuerda ligeramente a una versión muy simplificada de \textit{Q-Learning}\footnote{explicación simple de \textit{Q-Learning} en:  \url{http://mnemstudio.org/path-finding-q-learning-tutorial.htm}}. Dada la acción correctiva mostrada en el apartado \ref{AC} se ha optado por una aproximación específica para el problema actual en lugar de realizar implementaciones desde cero de técnicas de aprendizaje por refuerzo. Las mismas requerirían una cantidad de tiempo y recursos del que no se disponía en el proyecto, sin embargo, en el apartado de conclusiones y posibles ampliaciones (\ref{cap:conclusiones}) se especifican las técnicas que sería posible agregar sin demasiado esfuerzo adicional.
+El algoritmo implementado recuerda ligeramente a una versión muy simplificada de \textit{Q-Learning}\footnote{Explicación simple de \textit{Q-Learning} en:  \url{http://mnemstudio.org/path-finding-q-learning-tutorial.htm}}. Dada la acción correctiva mostrada en el apartado \ref{AC} se ha optado por una aproximación específica para el problema actual en lugar de realizar implementaciones desde cero de técnicas de aprendizaje por refuerzo. Las mismas requerirían una cantidad de tiempo y recursos del que no se disponía en el proyecto, sin embargo, en el apartado de conclusiones y posibles ampliaciones (\ref{cap:conclusiones}) se especifican las técnicas que sería posible agregar sin demasiado esfuerzo adicional.
 
 \bigskip
 
-El primer paso para hacer funcionar el algoritmo es considerar como discretizar los estados. Existen técnicas relativamente complejas dedicadas a ello como los \textit{mapas auto-organizados}\footnote{tipo de red neuronal artificial entrenado para representar de forma discreta un espacio de entrada de estados continuos}. Se ha optado por una discretización manual en la cual los estados continuos del combate generan una estructura que tiene en cuenta los siguientes datos:
+{Tipo de red neuronal artificial entrenado para representar de forma discreta un espacio de entrada de estados continuos}. Se ha optado por una discretización manual en la cual los estados continuos del combate generan una estructura que tiene en cuenta los siguientes datos:
 
 \begin{itemize}
 	\item \textbf{Vida de los personajes} (6 valores): desde 0 (vacía) hasta 5 (completa).
@@ -105,7 +105,7 @@ Aunque se ha observado que muchos de ellos son extremadamente infrecuentes pese 
 
 \subsection{Utilidad o \textit{fitness}}
 
-Una vez discretizados los estados se puede proceder a definir como el agente los irá explorando, así como la manera de asociar una recompensa a la mejor acción para cada estado. Para ello se necesita una función de utilidad o \textit{fitness} que se define teniendo en cuenta:
+Una vez discretizados los estados se puede proceder a definir cómo el agente los irá explorando, además de la manera de asociar una recompensa a la mejor acción para cada estado. Para ello se necesita una función de utilidad o \textit{fitness} que se define teniendo en cuenta:
 
 \begin{itemize}
 	\item \textbf{Distancia al enemigo}: Se recompensa al personaje cuando se acerca al enemigo para favorecer un comportamiento agresivo.
@@ -116,7 +116,7 @@ Una vez discretizados los estados se puede proceder a definir como el agente los
 
 \bigskip
 
-En concreto, el valor de \textit{fitness} de cada estado se calculará siguiendo el algoritmo \ref{algoritmo:fitness}. En el mismo se puede observar como se comienza con un valor inicial y luego se irán sumando o restando según si las variables utilizadas se consideran directamente o inversamente proporcionales al valor de \textit{fitness} deseado.
+En concreto, el valor de \textit{fitness} de cada estado se calculará siguiendo el algoritmo \ref{algoritmo:fitness}. En el mismo se puede observar cómo se comienza con un valor inicial y luego se irán sumando o restando según si las variables utilizadas se consideran directamente o inversamente proporcionales al valor de \textit{fitness} deseado.
 
 \bigskip
 
@@ -207,12 +207,12 @@ Por otra parte, las acciones discretas que puede realizar el jugador son sencill
 
 \subsection{Aprendizaje}
 
-Ahora que se cuenta con una función de utilidad, estados discretos y acciones discretas se procede a definir como el agente aprende y escoge entre las diferentes opciones en el \textbf{algoritmo} \ref{algoritmo}.
+Ahora que se cuenta con una función de utilidad, estados discretos y acciones discretas se procede a definir cómo el agente aprende y escoge entre las diferentes opciones en el \textbf{algoritmo} \ref{algoritmo}.
 
 \bigskip
 
 
-En el mismo se muestra como en cada iteración del bucle que ejecuta el agente primero se guardará la información referente al estado anterior, la acción elegida y la mejora en \textit{fitness} asociada. Después de esto se escogerá o bien una acción aleatoria si no se conoce el estado o una de entre las posibles que se ha observado con una probabilidad proporcional a su \textit{fitness}.
+En el mismo se muestra cómo en cada iteración del bucle que ejecuta el agente primero se guardará la información referente al estado anterior, la acción elegida y la mejora en \textit{fitness} asociada. Después de esto se escogerá o bien una acción aleatoria si no se conoce el estado o una de entre las posibles que se ha observado con una probabilidad proporcional a su \textit{fitness}.
 
 \bigskip
 
@@ -349,7 +349,7 @@ El entrenamiento del agente se puede realizar de varios modos, obteniendo difere
 	\item \textbf{Hacer combatir al agente contra otro personaje controlado por él mismo}: Obteniendo una variabilidad en los combates que le permite al agente familiarizarse con situaciones poco comunes. Además se evita que se aprenda un comportamiento óptimo para un tipo de enemigo que no rinda lo suficiente contra otro, algo deseable si se pretende afrontar la variabilidad en comportamiento de un jugador humano. 
 \end{itemize}
 
-Se mostrará en el apartado de pruebas (sección \ref{sec:valicacion}) como se comportan cada uno de los agentes entrenados de estas dos formas únicamente. Para la obtención del agente mostrado en el producto final se ha seguido una combinación entre ambas estrategias, combatiendo primero contra el agente basado en reglas y luego contra él mismo.
+Se muestra en el apartado de pruebas (sección \ref{sec:valicacion}) cómo se comportan cada uno de los agentes entrenados de estas dos formas únicamente. Para la obtención del agente mostrado en el producto final se ha seguido una combinación entre ambas estrategias, combatiendo primero contra el agente basado en reglas y luego contra él mismo.
 
 \bigskip
 
