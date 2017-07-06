@@ -1,14 +1,19 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Prefacio}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Organizaci\IeC {\'o}n del documento}{3}{section.1.2}
-\contentsline {chapter}{\numberline {2}Introducci\IeC {\'o}n}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Videojuego y Agente}{6}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Definici\IeC {\'o}n del videojuego}{7}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Prototipo de Unity}{9}{section.2.2}
-\contentsline {chapter}{\numberline {3}Algoritmo}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Utilidad o \textit {fitness}}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}Aprendizaje}{16}{section.3.2}
+\contentsline {section}{\numberline {1.1}Objetivos}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Organizaci\IeC {\'o}n del documento}{2}{section.1.2}
+\contentsline {chapter}{\numberline {2}Introducci\IeC {\'o}n}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Videojuego}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Agente}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Conexi\IeC {\'o}n entre ambos}{5}{section.2.3}
+\contentsline {chapter}{\numberline {3}Videojuego basado en agentes}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Prototipo de Unity}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Segunda aplicaci\IeC {\'o}n}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Algoritmo}{11}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Utilidad o \textit {fitness}}{12}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Aprendizaje}{14}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Agente basado en reglas}{15}{section.3.4}
+\contentsline {section}{\numberline {3.5}Tipos de entrenamiento}{17}{section.3.5}
 \contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de requisitos}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Identificaci\IeC {\'o}n de los requisitos del sistema}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Actores}{20}{subsection.4.1.1}
@@ -73,8 +78,8 @@
 \contentsline {subsection}{\numberline {8.1.2}Requisitos no funcionales}{137}{subsection.8.1.2}
 \contentsline {section}{\numberline {8.2}Pruebas de integraci\IeC {\'o}n}{140}{section.8.2}
 \contentsline {section}{\numberline {8.3}Validaci\IeC {\'o}n del agente}{142}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Entrenado contra personaje basado en reglas}{143}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Entrenado contra \IeC {\'e}l mismo}{144}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.1}Entrenado contra personaje basado en reglas (Agente 1)}{143}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Entrenado contra \IeC {\'e}l mismo (Agente 2)}{144}{subsection.8.3.2}
 \contentsline {section}{\numberline {8.4}Comparaci\IeC {\'o}n y elecci\IeC {\'o}n del agente final}{145}{section.8.4}
 \contentsline {section}{\numberline {8.5}Observaciones}{146}{section.8.5}
 \contentsline {chapter}{\numberline {9}Conclusiones y posibles ampliaciones}{149}{chapter.9}

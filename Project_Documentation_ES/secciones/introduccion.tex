@@ -1,57 +1,12 @@
 \chapter{Introducción}
 
-En un contexto académico existe un campo en expansión dedicado a investigar sobre inteligencia artificial en juegos humanos. Dentro de la industria de los videojuegos existen puestos tales como \textit{programador de IA} que trabajan en desarrollar un comportamiento adecuado para personajes u otros aspectos de sus productos. Además existen también grupos que se auto-identifican como \textit{expertos en IA de videojuegos}.
+En este apartado es donde introducirán los conceptos necesarios para comprender tanto el videojuego como el agente presentes en la aplicación final. Además se relacionarán ambos mundos entre si para explicar la conexión entre los mismos.
+
+\section{Videojuego}
+
+Se dedicará esta sección a hablar del videojuego. Esto permitirá contar con una base sobre la que luego poder explicar los detalles más específicos de la aplicación en los demás capítulos de este documento.
 
 \bigskip
-
-Todos estos grupos tienen su propio campo con eventos y recursos separados:
-
-\begin{itemize}
-	\item La parte \textbf{académica} cuenta con las conferencias \textit{AIIDE}\footnote{\url{https://aaai.org/Conferences/AIIDE/aiide.php}} y \textit{CIG}\footnote{\url{http://www.cig2017.com/}}.
-	\item La \textbf{industria} dedica eventos como la \textit{Game AI Conference}\footnote{\url{http://gameaiconf.com/}} y el \textit{GDC AI Summit}\footnote{\url{http://www.gdconf.com/conference/ai.html}} a enseñar sobre estos temas. Cuentan con una web dedicada unicamente a expandir el conocimiento existente llamada \textit{AIGameDev}\footnote{\url{http://aigamedev.com/}}.
-\end{itemize}
-
-\bigskip
-
-Sin embargo, es sorprendente la ínfima colaboración existente entre las dos partes, de hecho, algunos componentes de ambas partes afirman que existe ignorancia y cierta desconfianza sobre el trabajo de la otra. Pese a que existan algunas excepciones a la regla esto no significa que no se esté desaprovechando un campo de trabajo que podría ser de utilidad a ambas partes\cite{blog:emerging}.
-
-\bigskip
-
-Pese a que existen trenes de pensamiento que afirman lo beneficioso que podría ser una colaboración\cite{cio}, hay una serie de razones por las cuales no se aúnan esfuerzos ni se intenta comprender a la otra parte, algunas de las cuales son:
-
-\begin{itemize}
-	\item \textbf{Se considera el éxito de forma distinta}: El contexto académico más puro premia las publicaciones y citas, no da importancia a convertir el trabajo realizado o prototipo en un producto listo para un mercado como el de los videojuegos. La industria se preocupa de realizar un producto que genere dinero y no tanto de las estrategias utilizadas para ello. Intentar algo que puede no funcionar se considera un riesgo innecesario.
-	\item \textbf{Desconfianza mutua}: Una pequeña pero ruidosa parte de ambos mundos desconfía de las capacidades de los otros. En un caso porque se considera la falta de conocimientos aplicados y en el otro porque se piensa que la otra parte no tiene experiencia creando un producto final para el público.
-	\item \textbf{La parte académica tiene dificultades para entrar}: Hay múltiples razones que hacen que investigadores decidan no colaborar con la industria, algunas de las cuales pueden ser:
-		\begin{itemize}
-			\item No están familiarizados con el contexto de desarrollo de un videojuego.
-			\item No existen productos abiertos sobre los que empezar a trabajar a causa de intentar proteger la propiedad intelectual.
-			\item Se prioriza un tipo de juegos equivocado. Generalmente los videojuegos que permiten implementar IA no tienen requisitos complejos con respecto a la misma.
-		\end{itemize}
-	\item \textbf{Los problemas son diferentes}: Muchos desarrolladores consideran los problemas académicos muy abstractos mientras que los investigadores ven los problemas de la industria como muy específicos o poco complejos.
-\end{itemize}
-
-\bigskip
-
-Ejemplos como el producto que nos atañe pueden, de forma indirecta, mostrar los beneficios de la unión de ambos mundos. Se debe considerar que el trabajador no tiene experiencia aplicada en ninguno de los dos mundos, industria o investigación, dada su condición de estudiante. Sin embargo, si alguien con más interés que conocimientos puede hacer funcionar una pequeña demostración en relativamente poco tiempo no hay razón para pensar que unir esfuerzos a una mayor escala no sería beneficioso.
-
-\section{Videojuego y Agente}
-
-En este apartado es donde se explica el tipo de videojuego a implementar. Además, se deberá relacionar dicho videojuego con las técnicas aplicadas.
-
-\bigskip
-
-La materialización de uno de los riesgos del proyecto descrito en el apartado \ref{AC} ha tenido un impacto relevante sobre la complejidad y completitud del agente. La primera aproximación al trabajo implicaba utilizar una demostración de la aplicación del videojuego realizada en un motor conocido pero surgió la necesidad de implementar la aplicación desde cero.
-
-\bigskip
-
-Esto se relaciona con los problemas mencionados en la sección anterior. Y es que no existe una suficiente variedad de herramientas para trabajar con técnicas de inteligencia artificial en videojuegos, solo un grupo pequeño de competiciones y videojuegos ya sobre-explotados.
-
-\bigskip
-
-Como solución al problema se ha implementado una aplicación sin variar las mecánicas previamente definidas. Se pasa ahora a explicar el funcionamiento del tipo de videojuego que se ha hecho para los lectores no familiarizados.
-
-\subsection{Definición del videojuego}
 
 En su definición más general, la aplicación se define como un videojuego de lucha uno contra uno \textit{Top-Down} en dos dimensiones. Esto quiere decir lo siguiente:
 
@@ -67,58 +22,36 @@ En su definición más general, la aplicación se define como un videojuego de l
 	\item \textbf{En dos dimensiones}: Pues el contenido del videojuego son imágenes planas dibujadas para representar los diferentes estados de los personajes, en ningún momento se utiliza ningún modelo entres dimensiones.
 \end{itemize}
 
-\bigskip
+\section{Agente}
 
-En lo referente a las \textbf{mecánicas} presentes en el combate se ha optado por un subconjunto de acciones reducido pero con cierta profundidad. Un personaje puede moverse libremente por la zona de combate que se limita por cuatro paredes (habitación rectangular). Además podrá atacar en la zona justo enfrente de él y defenderse de ataques que vienen desde cualquier dirección. Se explican las interacciones entre mecánicas en las siguientes líneas:
-
-\begin{itemize}
-	\item \textbf{Movimiento}: El hecho de moverse libremente en una área limitada hace que se genere naturalmente la necesidad de evitar situaciones en las que no se pueda escapar del contrincante. De forma similar al \textit{control del ring} en boxeo, es necesario tener hacia donde moverse si se requiere por lo que se añade la complejidad de evitar quedar atrapado entre los muros y el enemigo. Además la única forma de cambiar el ángulo hacia el que se está mirando es moverse hacia esa dirección.
-	\item \textbf{Ataque}: Al poder atacar simplemente en la zona directamente enfrente del personaje se hace relevante la dirección hacia la que el mismo está mirando. Pese a que pueda parecer baladí esto hace que se beneficie una actitud agresiva al tener que moverte hacia la dirección del enemigo justo antes de atacar para estar mirando en su dirección.
-	\item \textbf{Defensa}: Existe la posibilidad de ejecutar un movimiento defensivo que protege del ataque. Es la maniobra que representa un alto riesgo pero una alta recompensa ya que si se consigue defenderse de un ataque se proporciona la posibilidad de realizar un ataque propio sin consecuencias. Por otro lado, si la defensa no recibe ataques se entra en un periodo de descanso o \textit{cooldown} en el que el personaje es vulnerable.
-\end{itemize}
+Agente se define como algo capaz de percibir el entorno mediante \textbf{sensores} y actuar sobre el mismo en consecuencia mediante \textbf{actuadores}\cite{modern}. En este sentido, en presente proyecto tanto los sensores como los actuadores formarán parte del software, es decir, no se materializan en ningún objeto físico.
 
 \bigskip
 
-La interacción entre movimiento, defensa y ataque crea situaciones en las que no está determinada la mejor estrategia claramente. Un estilo agresivo es castigado por un estilo defensivo, el estilo defensivo pierde ante un jugador pasivo que simplemente espera a que se entre en la fase vulnerable de la defensa y a su vez el jugador pasivo perderá ante uno agresivo. La clásica fórmula de \textit{piedra-papel-tijeras} aplicada de un contexto continuo ha probado ser efectiva en diseño de videojuegos desde el nacimiento de la industria.
+Se entiende \textbf{\textit{percept}} o \textbf{percepto} como las entradas percibidas por en agente en un instante determinado. En general, la elección de una acción solo puede depender de las percepciones observadas hasta la fecha y no de entradas o estados que no hayan sido observados.
 
 \bigskip
 
-Al no favorecer ningún estilo de juego concreto se abren posibilidades sobre que comportamiento es el idóneo para un posible agente complejo. En el siguiente apartado se comenta el algoritmo utilizado para aprender y jugar al videojuego.
-
-\section{Prototipo de Unity}
-
-Dado que el prototipo inicial realizado en Unity ha tenido un impacto significativo en el proyecto, tal y como se muestra en la sección \ref{AC}, se dedica este subapartado a mostrar los problemas que ha generado el elegir esta tecnología como primera opción.
+EL comportamiento se define en la \textbf{\textit{función del agente}} que es la encargada de generar una acción para el estado o secuencia de estados presentados. La implementación más sencilla, y suficientemente capaz en algunos casos, es la creación manual de una tabla que considere una serie de estados para los cuales tiene definida una acción.
 
 \bigskip
 
-En las figuras \ref{unity:combate} y \ref{unity:limite} podemos observar dos capturas del prototipo. En ambos casos se observan las vallas pensadas para limitar el área de combate. Las mismas cuentan con atributos que hacen que generen colisiones, es decir, que los personajes no puedan atravesarlas en ningún caso.
+Mientras que la función del agente es una representación externa, el programa que la implementa internamente se conoce como \textbf{\textit{programa del agente}}. A este programa nos referiremos con frecuencia simplemente como \textbf{agente}.
 
 \bigskip
 
-Sin embargo, al escalar el tiempo por valores relativamente pequeños, este tipo de funcionalidades dejan de funcionar ya que el motor tarda demasiado en componer cada uno de los fotogramas, haciendo que en muchas ocasiones en un fotograma se calcule que el personaje está en un lado de la valla y en el siguiente esté en el otro sin haber entrado en contacto con la misma.
+El entorno que se presenta al agente en este proyecto será de índole \textbf{competitiva} ya que su intención será maximizar su medida de \textbf{rendimiento} lo que implicará de forma efectiva minimizar la de su contrincante.
+
+\section{Conexión entre ambos}
+
+Muy comúnmente se necesitan implementar comportamientos complejos en el entorno de un videojuego. Sin embargo la aproximación utilizada en prácticamente todos los casos es determinar un árbol de comportamiento que no implica aprendizaje. Esto aporta la capacidad de modificar a un personaje fácilmente por parte de los diseñadores, pudiendo estar seguros de que las acciones tomadas siempre serán las planeadas por ellos. 
 
 \bigskip
 
-Este tipo de fallos son inaceptables ya que rompen el funcionamiento de las mecánicas de juego al realizar las simulaciones, haciendo que un posible agente no pudiera aprender de forma eficaz y eficiente.
+En busca de una experiencia que presente un desafío pero sin hacerlo injusto para el jugador, esta ha probado ser la mejor elección. Sin embargo, se está desaprovechando la utilización de este tipo de aplicaciones para ayudar a avanzar al campo de la inteligencia artificial. Además, podría dar lugar a una serie de videojuegos con mecánicas muy interesantes donde elementos del entorno sean capaces de aprender de los jugadores.
 
 \bigskip
 
-Algo parecido sucede con los ataques. Al intentar acelerar el tiempo y realizar un ataque ocurre con cierta frecuencia que el motor se salta los fotogramas en los que realmente se está comprobando si se hace daño al enemigo, inutilizando esta mecánica también.
-
-\bigskip
-
-En aras de permitir una visualización más comprensible de los problemas se pone a disposición un vídeo en \textit{YouTube}\footnote{disponible en: \url{https://youtu.be/PY4H8dk8zcU}} en el que se muestra concretamente el problema de la valla. Es cierto que en este caso sí se está mostrando la aplicación y no se está eliminando la visualización para aumentar el rendimiento, sin embargo se ha comprobado que los problemas son los mismos incluso sin visualización. Además el tiempo solo está escalado 20 veces, lo que se esperaría que fuera soportable para el motor pero no es así. Como comparación, en el producto final se escala unas 600 veces sin problema alguno.
-
-\begin{figure}
-	\centerline{\includegraphics[width=15cm]{otros/otrasCapturas/valla1.png}}
-	\caption{Captura del prototipo en la zona de combate}
-	\label{unity:combate}
-\end{figure}
-
-\begin{figure}
-	\centerline{\includegraphics[width=15cm]{otros/otrasCapturas/valla2.png}}
-	\caption{Captura del prototipo en el límite del mapa}
-	\label{unity:limite}
-\end{figure}
+Pese a que sí existen videojuegos que aportan la posibilidad de agregar un agente que los controle, con mucha frecuencia se están presentando entornos demasiado simples o que no se benefician de usar técnicas de IA complejas. En este proyecto se aborda la creación de un videojuego que balancea entre la simplicidad y complejidad necesarias para que un agente pueda aprender sobre él sin ser capaz de determinar una estrategia óptima en todos los casos, todo esto mientras se muestra un entorno interesante y competitivo a un jugador humano.
 
 

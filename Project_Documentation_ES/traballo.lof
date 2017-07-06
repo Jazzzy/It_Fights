@@ -1,10 +1,11 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces \IeC {\'A}ngulos posibles}}{7}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Captura del prototipo en la zona de combate}}{10}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Captura del prototipo en el l\IeC {\'\i }mite del mapa}}{11}{figure.2.3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \IeC {\'A}ngulos posibles}}{4}{figure.2.1}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Escena de combate}}{7}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Captura del prototipo en la zona de combate}}{9}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de bloques}}{11}{figure.3.3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de casos de uso}}{22}{figure.4.1}
 \addvspace {10\p@ }
@@ -46,7 +47,7 @@
 \contentsline {figure}{\numberline {7.20}{\ignorespaces \textit {Mockup} de la interfaz del combate}}{127}{figure.7.20}
 \contentsline {figure}{\numberline {7.21}{\ignorespaces \textit {Mockup} de la interfaz de la consola}}{128}{figure.7.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Porcentaje de victorias durante el entrenamiento}}{145}{figure.8.1}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Porcentaje de victorias contra el personaje basado en reglas}}{145}{figure.8.1}
 \contentsline {figure}{\numberline {8.2}{\ignorespaces Estados visitados durante el entrenamiento}}{146}{figure.8.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

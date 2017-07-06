@@ -1,57 +1,35 @@
 \chapter{Prefacio}
-\hyphenation{In-te-re-se}
 
-Los juegos de lógica o estrategia han sido utilizados como {\it benchmark} en el campo de la inteligencia artificial desde sus inicios. Pese a que principalmente se han utilizado juegos de mesa o de cartas dadas las facilidades a la hora de representar su modelo, con el avance de la tecnología y la llegada de los videojuegos en ordenador se consideró la posibilidad de que los mismos podrían ser una nueva herramienta con la que experimentar y explorar diferentes técnicas e implementaciones de IA. En la actualidad prácticamente todos los videojuegos que incorporan elementos que simulan comportamiento humano lo hacen con lógica determinista y patrones definidos, sin incorporar ningún tipo de simulación de pensamiento complejo. Algunas de las razones causantes de este fenómeno son:
-
-\begin{itemize}
-{\item La diferencia en la dificultad de implementación entre patrones simples y un agente complejo.} 
-{\item El hecho de que un agente puede llegar a ser demasiado efectivo a la hora de competir contra un humano.}
-{\item Limitaciones en la capacidad de computación restante cuando el sistema está ejecutando un videojuego ya que suelen ser aplicaciones significativamente pesadas y complejas.}  
-\end{itemize}
-
-
-Sin embargo, estos problemas son solventables y debemos tener en cuenta los beneficios que se pueden obtener al trabajar con videojuegos reales. En la actualidad, somos capaces de simular grandes mundos con millones de entidades y jugadores reales. En muchas ocasiones los entornos presentados son capaces de representar simulaciones muy precisas de como se comporta el mundo real. Esto puede darse en varios sentidos, un buen ejemplo son los videojuegos basados en físicas que permiten observar como objetos e individuos interactúan entre ellos siguiendo leyes de la física que se ajustan con mucha precisión a las reales. En otros casos se pueden simular verdaderas comunidades de gente real en videojuegos del genero MMO\footnote{Massively Multiplayer Online: Videojuegos que reunen a cantidades enormes de jugadores en el mismo mundo y conectados en línea.} por lo que se puede obtener de los mismos datos de comportamientos reales sin necesidad de lidiar con las dificultades de obtenerlos del mundo real.
+El proyecto que nos atañe en este documento se enfoca en la creación de un videojuego con necesidades de comportamiento complejo por parte de un enemigo. Para lograr esto, los principales aspectos a abordar son la creación de la aplicación que permita realizar competiciones, su capacidad para permitir entrenar al agente y el agente en sí mismo que represente un competidor no solo apto pero también justo.
 
 \bigskip
 
-Por estas razones se podría considerar que un videojuego está mucho mas cerca de ser capaz de modelar el mundo real que un juego de mesa, lo que lo hace un banco de trabajo idóneo para investigar y experimentar con Inteligencia Artificial. Técnicas como redes neuronales, computación evolutiva o lógica difusa pueden funcionar en situaciones en tiempo real, continuas y complejas que presentan tanto nuestra realidad como los videojuegos.
-
-\bigskip
-
-Por esto se pretende investigar y experimentar sobre cuales de estas técnicas pueden ser de utilidad en este tipo de situaciones.Con este fin se implementará un agente que compita con un jugador real en un pequeño videojuego en el que ambos se moverán libremente en un espacio de posiciones continuo. Además realizarán una serie de acciones ofensivas y defensivas con el objetivo de derrotar a su oponente.
-
-\bigskip
-
-Con este fin, se pretende realizar una implementación de un juego que permita al agente tener acceso a los estados en los que se encuentran él y su competidor así como las acciones que puede realizar en un determinado momento. Todo esto con la finalidad de averiguar cuales de las posibles técnicas de IA pueden ser usadas para lograr un competidor no solo apto pero también justo. Además, esto nos permitirá realizar un entrenamiento en el que el propio agente podrá competir con él mismo para aprender los fundamentos del juego además de competir contra jugadores humanos. Esto nos brinda la posibilidad de determinar como reacciona ante estos y si es capaz de adaptarse a los posiblemente distintos estilos de juego contra los que se tendrá que enfrentar.
+Se ha realizado una etapa de entrenamiento en la que el agente compite contra él mismo y otras implementaciones del enemigo con el fin de aprender los fundamentos del juego y tener el rendimiento suficiente para ganar frecuentemente a un jugador humano.
 
 \section{Objetivos}
 
-El objetivo global es implementar un agente que sea capaz de competir contra un jugador simulando un comportamiento humano para lo cual se realizará una pequeña demostración de un videojuego y la implementación del agente con las técnicas que resulten ser más eficaces a la hora de lograr el mencionado objetivo.
-
-\bigskip
-
-Los sub-objetivos a abarcar son los siguientes:
+El objetivo global es implementar un videojuego que contenga a un agente capaz de controlar a uno de los personajes simulando un comportamiento competitivo. Más concretamente los sub-objetivos a abarcar son los siguientes:
 
 \begin{enumerate}
 	
-	{\item {\bf Implementar la demostración del videojuego:}
+	{\item {\bf Implementar el videojuego:}
 		Se necesita una plataforma que permita tanto a un jugador humano como al agente interactuar con el entorno del videojuego siguiendo ambos las reglas que este mismo define.
 	}
 
-	{\item {\bf Crear la librería que implemente nuestro agente con las técnicas escogidas:}
-		Se requiere realizar una implementación del agente utilizando las técnicas de inteligencia artificial que hayamos escogido para simular un comportamiento aparentemente humano.
+	{\item {\bf Implementar el agente con las técnicas escogidas:}
+		Se requiere realizar la implementación del agente para simular un comportamiento competitivo.
 	}
 
 	{\item {\bf Realizar el entrenamiento del agente:}
-		Una vez realizada la implementación del agente se necesitará ejecutar un proceso de entrenamiento para que este adquiera la información necesaria para comportarse adecuadamente en el entorno competitivo que el juego presenta.
+		Se necesitará ejecutar un proceso de entrenamiento para que este adquiera la información necesaria para comportarse adecuadamente en el entorno competitivo del juego.
 	}
 
 	{\item {\bf Obtener datos sobre las capacidades del agente:}
 		Se deberán obtener datos sobre el comportamiento del agente en el entorno del juego al competir con otras posibles implementaciones del mismo que no incluyan el uso de técnicas de inteligencia artificial.
 	}
 
-	{\item {\bf Analizar los resultados obtenidos}
-		Se realizará una recopilación de la información obtenida durante las etapas de diseño, implementación y obtención de datos se realizará un análisis que resuma lo que ha logrado el agente centrándose en aspectos como el desafío que es capaz de presentar, si es capaz de simular a un humano y la posibilidad de usar implementaciones similares en videojuegos en un futuro.
+	{\item {\bf Analizar los resultados obtenidos:}
+		Se recopilará la información obtenida durante las etapas del proyecto y se realizará un análisis que resuma lo que ha logrado el agente.
 	}
 	
 \end{enumerate}
@@ -61,13 +39,14 @@ Los sub-objetivos a abarcar son los siguientes:
 La finalidad de este documento es presentar cómo se han resuelto los objetivos definidos para el proyecto. Para ello se explicarán las diferentes partes que forman el producto final así como las tareas que han sido realizadas a lo largo del proyecto y que han dado lugar al mismo tal y como se presenta.
 
 \begin{itemize}
-	\item En el \textbf{\textit{capítulo 2}} se introduce el contexto referente a videojuegos e inteligencia artificial. Además se explica en términos generales tanto las bases del videojuego implementado como las del algoritmo del agente.
-	\item El \textbf{\textit{capítulo 3}} contiene tanto el análisis de requisitos del proyecto como las diferentes partes que definen el alcance del mismo.
-	\item El \textbf{\textit{capítulo 4}} documenta las etapas de gestión del proyecto que contienen: gestión de riesgos, gestión de la configuración, metodología empleada, planificación temporal, análisis de costes y plan de comunicaciones.
-	\item En el \textbf{\textit{capítulo 5}} se introducen las partes de la aplicación especificando su arquitectura así como las herramientas utilizadas para su creación.
-	\item Es en el \textbf{\textit{capítulo 6}} donde se puede ver la documentación asociada al diseño de implementación del producto final con los diagramas asociados.
-	\item El \textbf{\textit{capítulo 7}} contiene las pruebas que verifican y validan el sistema en todos los sentidos.
-	\item En el \textbf{\textit{capítulo 8}} se recogen las conclusiones obtenidas una vez finalizado el proyecto así como las posibles ampliaciones futuras que serían de utilidad.
+	\item En el \textbf{\textit{capítulo 2}} se introduce el contexto referente a videojuegos e inteligencia artificial. Se buscan presentar una serie de conceptos generales que permitan comprender fácilmente los capítulos posteriores.
+	\item El \textbf{\textit{capítulo 3}} introduce al videojuego y a las implementaciones realizadas, así como el algoritmo utilizado, la otra implementación del agente y las técnicas de entrenamiento.
+	\item El \textbf{\textit{capítulo 4}} contiene tanto el análisis de requisitos del proyecto como las diferentes partes que definen el alcance del mismo.
+	\item El \textbf{\textit{capítulo 5}} documenta las etapas de gestión del proyecto que contienen: gestión de riesgos, gestión de la configuración, metodología empleada, planificación temporal, análisis de costes y plan de comunicaciones.
+	\item En el \textbf{\textit{capítulo 6}} se introducen las partes de la aplicación especificando su arquitectura así como las herramientas utilizadas para su creación.
+	\item Es en el \textbf{\textit{capítulo 7}} donde se puede ver la documentación asociada al diseño de implementación del producto final con los diagramas asociados.
+	\item El \textbf{\textit{capítulo 8}} contiene las pruebas que verifican y validan el sistema.
+	\item En el \textbf{\textit{capítulo 9}} se recogen las conclusiones obtenidas una vez finalizado el proyecto así como las posibles ampliaciones futuras que serían de utilidad.
 	\item Finalmente, se agregan dos \textbf{\textit{apéndices}} que contienen el manual técnico y manual de usuario.
 \end{itemize}
 

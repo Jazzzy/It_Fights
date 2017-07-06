@@ -805,7 +805,7 @@ Las pruebas de integración seguirán un estándar de nombrado con la forma \tex
 \end{center}
 
 \section{Validación del agente}
-
+\label{sec:valicacion}
 Las etapas anteriores referidas a las pruebas unitarias y a las pruebas de integración demuestran el correcto funcionamiento de la aplicación y del agente integrado en la misma. Esta sección se dedica a validar al agente en referencia al objetivo general del proyecto, es decir, a ser capaces de competir simulando un comportamiento eficaz y realista.
 
 \bigskip
@@ -829,11 +829,11 @@ En este sentido, se realizarán 100 simulaciones en las que se enfrentarán agen
 Los siguientes apartados contendrán los datos referentes al comportamiento del agente entrenado de diferentes formas:
 
 \begin{itemize}
-	\item Entrenado contra el personaje basado en reglas.
-	\item Entrenado contra otra instancia de él mismo.
+	\item \textbf{Agente 1}: Entrenado contra el personaje basado en reglas.
+	\item \textbf{Agente 2}: Entrenado contra otra instancia de él mismo.
 \end{itemize}
 
-\subsection{Entrenado contra personaje basado en reglas}
+\subsection{Entrenado contra personaje basado en reglas (Agente 1)}
 \label{agente1}
 \begin{table}
 	\begin{center}
@@ -867,17 +867,17 @@ Los siguientes apartados contendrán los datos referentes al comportamiento del 
 	\end{center}
 \end{table}
 
-Como se puede observar en la tabla \ref{rend:reglas:victorias}, el agente entrenado contra el personaje basado en reglas en aproximadamente unos 1000 combates en capaz de competir con el rendimiento suficiente como para empatar. Llegados ya a 5000 combates simulados, el agente aprende como pelear de forma muy efectiva contra el personaje basado en reglas.
+Como se puede observar en la tabla \ref{rend:reglas:victorias}, el agente entrenado contra el personaje basado en reglas en aproximadamente unos 1000 combates es capaz de competir con el rendimiento suficiente como para empatar. Llegados ya a 5000 combates simulados, el agente aprende cómo pelear de forma muy efectiva contra el personaje basado en reglas.
 
 \bigskip
 
-De forma interesante, al continuar con el entrenamiento su comportamiento se vuelve ligeramente peor, parece que una vez se exploran demasiado algunos estados se priorizan acciones que pueden no ser las idóneas.
+De forma interesante, al continuar con el entrenamiento su comportamiento se vuelve ligeramente peor, una posible explicación es que una vez se exploran demasiado algunos estados se priorizan acciones que pueden no ser las idóneas.
 
 \bigskip
 
 En lo que corresponde a la tabla de estados visitados (\ref{rend:reglas:estados}) se observa que existe un límite en lo que se refiere a los estados que presenta el personaje basado en reglas. Este límite está cercano a los 50000 estados como se ha comprobado con entrenamiento posterior. Esto se debe a que al comportarse según unas reglas definidas con poca aleatoriedad, las situaciones a las que da lugar también son limitadas. Se estima que la combinación total de estados es de \textbf{194400} teniendo en cuenta todas las combinaciones de variables de los estados discretos.
 
-\subsection{Entrenado contra él mismo}
+\subsection{Entrenado contra él mismo (Agente 2)}
 \label{agente2}
 \label{cap:pruebas:mismo}
 
@@ -928,7 +928,7 @@ En lo que corresponde a la tabla \ref{rend:el:victorias}, vemos que el agente no
 
 \begin{figure}
 	\centerline{\includegraphics[width=15cm]{otros/otrasCapturas/grafico_victorias.png}}
-	\caption{Porcentaje de victorias durante el entrenamiento}
+	\caption{Porcentaje de victorias contra el personaje basado en reglas}
 	\label{graf:victorias}
 \end{figure}
 
@@ -942,7 +942,7 @@ En comparación, el que llamaremos \textbf{agente 1} explicado en la sección \r
 
 \bigskip
 
-Por otra parte, como se puede ver en el gráfico de la figura \ref{graf:estados}, hay que tener en cuenta que el agente 2 es significativamente superior en lo que a exploración del espacio de estados se refiere. Esto genera un comportamiento mucho más completo contra jugadores humanos ya que las situaciones que los mismos crean pueden llegar a ser extremadamente raras para el agente 1. Ah haber visitado más estados se responde de forma más efectiva a oponentes con patrones poco frecuentes.
+Por otra parte, como se puede ver en el gráfico de la figura \ref{graf:estados}, hay que tener en cuenta que el agente 2 es significativamente superior en lo que a exploración del espacio de estados se refiere. Esto genera un comportamiento mucho más completo contra jugadores humanos ya que las situaciones que los mismos crean pueden llegar a ser extremadamente raras para el agente 1. Al haber visitado más estados se responde de forma más efectiva a oponentes con patrones poco frecuentes.
 
 \bigskip
 
