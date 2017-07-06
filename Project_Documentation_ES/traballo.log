@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  6 JUL 2017 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  6 JUL 2017 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5396,7 +5396,7 @@ File: otros/capturasPlanificacion/general.PNG Graphic file (type png)
 <use otros/capturasPlanificacion/general.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/general.PNG used on input 
 line 758.
-(pdftex.def)             Requested size: 540.60236pt x 106.50453pt.
+(pdftex.def)             Requested size: 483.69684pt x 95.29468pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 763.
 Package babel Info: Redefining spanish shorthand >>
@@ -5416,7 +5416,7 @@ File: otros/capturasPlanificacion/videojuego.PNG Graphic file (type png)
 <use otros/capturasPlanificacion/videojuego.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/videojuego.PNG used on inp
 ut line 766.
-(pdftex.def)             Requested size: 540.60236pt x 360.78781pt.
+(pdftex.def)             Requested size: 483.69684pt x 322.80525pt.
 LaTeX Info: Redefining \. on input line 784.
 LaTeX Info: Redefining \% on input line 784.
 Package babel Info: Redefining spanish shorthand <<
@@ -5493,33 +5493,33 @@ File: otros/capturasPlanificacion/agente.PNG Graphic file (type png)
 <use otros/capturasPlanificacion/agente.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/agente.PNG used on input l
 ine 789.
-(pdftex.def)             Requested size: 540.60236pt x 282.38846pt.
-LaTeX Info: Redefining \. on input line 802.
-LaTeX Info: Redefining \% on input line 802.
+(pdftex.def)             Requested size: 483.69684pt x 252.6631pt.
+LaTeX Info: Redefining \. on input line 804.
+LaTeX Info: Redefining \% on input line 804.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 802.
+(babel)             in language  on input line 804.
  [72 <./otros/capturasPlanificacion/agente.PNG>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 810.
@@ -5541,7 +5541,7 @@ File: otros/capturasPlanificacion/obtencion_de_datos.PNG Graphic file (type png
  <use otros/capturasPlanificacion/obtencion_de_datos.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/obtencion_de_datos.PNG use
 d on input line 813.
-(pdftex.def)             Requested size: 540.60236pt x 87.19568pt.
+(pdftex.def)             Requested size: 483.69684pt x 78.01633pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 826.
 Package babel Info: Redefining spanish shorthand >>
@@ -5563,7 +5563,7 @@ e (type png)
 <use otros/capturasPlanificacion/documentacion_reuniones_final.PNG>
 Package pdftex.def Info: otros/capturasPlanificacion/documentacion_reuniones_fi
 nal.PNG used on input line 829.
-(pdftex.def)             Requested size: 540.60236pt x 202.55203pt.
+(pdftex.def)             Requested size: 483.69684pt x 181.23389pt.
 LaTeX Info: Redefining \. on input line 839.
 LaTeX Info: Redefining \% on input line 839.
 Package babel Info: Redefining spanish shorthand <<
@@ -5603,62 +5603,59 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 850.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 850.
-
-Underfull \vbox (badness 1558) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 853.
-LaTeX Info: Redefining \% on input line 853.
+LaTeX Info: Redefining \. on input line 856.
+LaTeX Info: Redefining \% on input line 856.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 853.
+(babel)             in language  on input line 856.
  [74 <./otros/capturasPlanificacion/documentacion_reuniones_final.PNG>]
-LaTeX Info: Redefining \. on input line 895.
-LaTeX Info: Redefining \% on input line 895.
+LaTeX Info: Redefining \. on input line 899.
+LaTeX Info: Redefining \% on input line 899.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 895.
+(babel)             in language  on input line 899.
  [75]
 LaTeX Font Info:    Font shape `U/eurosym/b/n' in size <12> not available
 (Font)              Font shape `U/eurosym/bx/n' tried instead on input line 921
@@ -10001,7 +9998,7 @@ t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-dist
 fonts/type1/public/eurosym/feybr10.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/public/eurosym/feymr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on traballo.pdf (182 pages, 5984168 bytes).
+Output written on traballo.pdf (182 pages, 5984281 bytes).
 PDF statistics:
  2147 PDF objects out of 2487 (max. 8388607)
  1817 compressed objects within 19 object streams
