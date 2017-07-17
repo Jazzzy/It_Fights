@@ -6,27 +6,53 @@
 
 \documentclass{beamer}
 \usepackage{beamerthemeshadow}
+\usepackage{pgfpages}
 \usepackage[galician]{babel}
-% \usepackage[spanish]{babel}
+%\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
 
+\setbeameroption{show notes on second screen}
+
 \begin{document}
-\title{Título do Traballo de Fin de Grao}
+\title{Intelixencia Artificial aplicada a Videoxogos Top-Down en tempo real}
 \subtitle{Grao en Enxeñaría Informática \\
 Universidade de Santiago de Compostela}  
-\author{Autor: Nome do Autor}
-\institute{Director: Nome do Director}
-\date{\today} 
+\author{Autor: Rubén Osorio López}
+\institute{Titor: Manuel Mucientes Molina\\Cotitor: Pablo Rodrígez Mier}
+\date{21 de xullo de 2017} 
 
 \begin{frame}
 \titlepage
+\note{asdasda}
 \end{frame}
 
 \begin{frame}
-\frametitle{Taboa de contidos}\tableofcontents
+\frametitle{Táboa de contidos}\tableofcontents
+\note{sdasdasd}
 \end{frame} 
 
+
+
+\section{Introdución} 
+
+\begin{frame}
+asdasdasd
+\note{NOTA}
+\end{frame}
+
+\subsection{Obxectivos}
+
+\begin{frame}
+asdasd
+\note{NOTA}
+\end{frame}
+
+
+
+
+
+% ========================= EXEMPLOS =========================  %
 \section{Sección 1} 
 \subsection{Ejemplo de subsección}
 \begin{frame}
@@ -134,7 +160,7 @@ Febrero & 20 & 20:00 \\ \hline
 \begin{frame}
 \frametitle{Incluir figuras}
 \begin{figure}
-\includegraphics[scale=0.3]{figuras/logo_usc.eps} 
+\includegraphics[scale=0.3]{../figuras/logo_usc.eps} 
 \caption{Logo de la USC}
 \end{figure}
 \end{frame}
@@ -154,9 +180,9 @@ Febrero & 20 & 20:00 \\ \hline
 \end{column}
 \begin{column}{4cm}
 \begin{overprint}
-\includegraphics<2>[scale=0.05]{figuras/logo_usc.eps}
-\includegraphics<4>[scale=0.10]{figuras/logo_usc.eps}
-\includegraphics<6>[scale=0.15]{figuras/logo_usc.eps}
+\includegraphics<2>[scale=0.05]{../figuras/logo_usc.eps}
+\includegraphics<4>[scale=0.10]{../figuras/logo_usc.eps}
+\includegraphics<6>[scale=0.15]{../figuras/logo_usc.eps}
 \end{overprint}
 \end{column}
 \end{columns}
@@ -166,7 +192,7 @@ Febrero & 20 & 20:00 \\ \hline
 \begin{frame}[plain]
 \frametitle{Pantalla plana con sólo una figura}
 \begin{figure}
-\includegraphics[scale=0.3]{figuras/figura01.eps} 
+\includegraphics[scale=0.3]{../figuras/figura01.eps} 
 \caption{Una figura grande}
 \end{figure}
 \end{frame}

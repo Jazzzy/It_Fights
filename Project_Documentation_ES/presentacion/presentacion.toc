@@ -1,0 +1,16 @@
+\select@language {galician}
+\beamer@sectionintoc {1}{Introduci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Obxectivos}{4}{0}{1}
+\beamer@sectionintoc {2}{Secci\IeC {\'o}n 1}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Ejemplo de subsecci\IeC {\'o}n}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Ejemplo de lista}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Otro ejemplo de lista}{11}{0}{2}
+\beamer@sectionintoc {3}{Secci\IeC {\'o}n 2}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Tablas}{12}{0}{3}
+\beamer@sectionintoc {4}{Secci\IeC {\'o}n 3}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{Bloques}{16}{0}{4}
+\beamer@sectionintoc {5}{Secci\IeC {\'o}n 4}{17}{0}{5}
+\beamer@subsectionintoc {5}{1}{Pantalla dividida}{17}{0}{5}
+\beamer@subsectionintoc {5}{2}{Figuras}{18}{0}{5}
+\beamer@subsectionintoc {5}{3}{Listas con figuras y pausas}{19}{0}{5}
+\beamer@subsectionintoc {5}{4}{Cuando se necesita m\IeC {\'a}s espacio}{25}{0}{5}
