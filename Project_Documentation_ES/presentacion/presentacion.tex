@@ -11,6 +11,7 @@
 %\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
+\usepackage[spanish,linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
 
 \setbeameroption{show notes on second screen}
 
@@ -143,6 +144,75 @@ Implementación de un motor desde cero en C++
 \note{
 	HERE
 }
+\end{frame}
+
+\subsection{Algoritmo}
+\begin{frame}
+\frametitle{Algoritmo}
+\begin{center}
+	\scalebox{0.55}{
+		\begin{minipage}{1.2\linewidth}
+			\begin{algorithm}[H]
+				\SetKwData{Action}{action}
+				\SetKwData{LastAction}{selectedAction}
+				\SetKwData{LastState}{lastState}
+				\SetKwData{CurrentState}{currentState}
+				\SetKwData{DeltaFitness}{deltaFitness}
+				\SetKwData{StateActionData}{stateActionData}
+				\SetKwData{RandomAction}{randomAction}
+				\SetKwData{AllActions}{allPosibleActions}
+				
+				\SetKwFunction{GetRandomAction}{getRandomAction}
+				\SetKwFunction{GetCurrentState}{getCurrentState}
+				\SetKwFunction{RandomBet}{randomBetween}
+				\SetKwFunction{CalculateFitness}{calculateFitness}
+				\SetKwFunction{UpdateWith}{updateWith}
+				\SetKwFunction{Insert}{insert}
+				\SetKwFunction{Pick}{bestWeightedAction}
+				
+				\While{agent is running}{
+					\LastState$\leftarrow$ \CurrentState\;
+					\CurrentState$\leftarrow$ \GetCurrentState{}\;
+					
+					\DeltaFitness$\leftarrow$ \CalculateFitness{\CurrentState}$-$\CalculateFitness{\LastState}\;
+					
+					%Actualizamos el conocimiento del agente
+					\uIf{\LastState$\in$ \StateActionData}{
+						\StateActionData$.$\UpdateWith{\LastState,\LastAction,\DeltaFitness}\;
+					}
+					\Else{
+						\StateActionData$.$\Insert{\LastState,\LastAction,\DeltaFitness}\;
+					}
+					
+					
+					%Seleccionamos la acción a escoger
+					\uIf{\CurrentState$\in$ \StateActionData}{
+						
+						\uIf{\RandomBet{$0$,$1$}$<\epsilon$}{
+							\LastAction$\leftarrow$ \RandomAction $\in$ \AllActions\;
+						}
+						\Else{
+							\LastAction$\leftarrow$ \Action $\in$ \AllActions  $|$ \Pick{\StateActionData,\CurrentState} $=$ \Action  \;
+						}
+						
+					}
+					\Else{
+						\LastAction$\leftarrow$ \RandomAction $\in$ \AllActions\;
+					}
+					
+					
+				}
+				\label{algoritmo}
+			\end{algorithm}
+		\end{minipage}%
+	}
+\end{center}
+
+
+\note{
+	HERE
+}
+
 \end{frame}
 
 
