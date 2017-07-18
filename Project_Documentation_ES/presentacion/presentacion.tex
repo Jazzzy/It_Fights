@@ -24,12 +24,12 @@ Universidade de Santiago de Compostela}
 
 \begin{frame}
 \titlepage
-\note{asdasda}
+\note{Esto é a defensa da memoria do traballo de fin de grado nombrado \textbf{Intelixencia Artificial aplicada a Videoxogos Top-Down en tempo real}, eu son o autor, Rubén Osorio López, e os tutores son Manuel Mucientes Molina e Pablo Rodrígez Mier}
 \end{frame}
 
 \begin{frame}
 \frametitle{Táboa de contidos}\tableofcontents
-\note{sdasdasd}
+\note{Durante esta presentación seguiremos unha estructura similar á memoria, centrándonos máis en alguns aspectos concretos do proxecto que expliquen en que consistiu o traballo realizado.}
 \end{frame} 
 
 
@@ -37,19 +37,90 @@ Universidade de Santiago de Compostela}
 \section{Introdución} 
 
 \begin{frame}
-asdasdasd
-\note{NOTA}
+\frametitle{Introdución} 
+
+
+	\begin{itemize}
+		\item Proxecto que aborda a creación dun \textbf{videoxogo} con necesidades de \textbf{comportamento complexo} por parte do inimigo.
+	\end{itemize} 
+
+\begin{block}{Videoxogo}
+	\textbf{Loita 1 contra 1}, \textbf{Top-Down} en \textbf{dúas dimensións}
+\end{block}
+
+\begin{block}{Axente}
+Capaz de percibir e actuar sobre o \textbf{entorno competitivo} do videoxogo mediante \textbf{sensores} e \textbf{actuadores}
+\end{block}
+\note{
+	
+	De forma xeral, búscase a creación dun videoxogo que requira un inimigo con comportamento complexo. O axente que representará o inimigo necesita ser un competidor capaz, para o que se realizou unha etapa de entrenamento na que optivo a información que necesitaba.\\
+	
+	\textbf{Loita 1 contra 1} significa que soamente dous perxonaxes competirán entre eles contando ambos coas mesmas capacidades, accións posibles e atributos. \textbf{Top-Down} refírese ó plano picado utilizado para visualizar o combate. Por outra parte que sea en \textbf{dúas dimensións} implica que todo o contido do videoxogo son imaxen planas debuxadas unha a unha, sen que existan modelos en tres dimensións.\\
+	
+	\textbf{Un axente} é aquilo capaz de percibir o entorno mediante \textbf{sensores} e actuar sobre o mesmo en consecuencia mediante \textbf{actuadores}, ambos son proporcionados pola súa interface co videoxogo. Ademáis atoparase nun entorno competitivo o que implica que buscará maximizar o seu \textbf{rendemento} mentres se minimiza o do contrincante.
+	
+
+
+}
 \end{frame}
+
+
+
 
 \subsection{Obxectivos}
-
 \begin{frame}
-asdasd
-\note{NOTA}
+\frametitle{Obxectivos} 
+\begin{itemize}
+	\pause
+	\item Implementación do videoxogo \pause
+	\item Implementación do axente \pause
+	\item Realizar o entrenamento do axente \pause
+	\item Obter datos sobre as capacidades do axente \pause
+	\item Analizar os resultados obtidos \pause
+\end{itemize}
+\note{
+	\begin{itemize}
+		\item Implementación do videoxogo: Xa que necesitaremos unha plataforma que nos permita que o axente e o xogador interactúen seguindo unha serie de regras comúns para competir entre eles.
+		\item Implementación do axente: Necesitarase implementar o axente capaz de desenvolverse correctamente durante a competición.
+		\item Realizar o entrenamento do axente: O axente necesitará obter a información necesaria para logo comportarse adecuadamente gracias ó aprendido durante a etapa de entrenamento.
+		\item Obter datos sobre as capacidades do axente: Obteránse datos sobre o rendemento do axente contra outras implementacións máis sinxelas.
+		\item Analizar os resultados obtidos: Coa información obtida durante todo o proxecto, e especialmente na etapa anterior, realizarase un análise que describa o que conseguiu o axente.
+\end{itemize}
+}
 \end{frame}
 
 
+\section{Videoxogo basado en axentes}
 
+\subsection{Mecánicas}
+\begin{frame}
+\frametitle{Mecánicas}
+
+\begin{block}{Movemento}
+Movemento libre nunha habitación rectangular.
+\end{block}
+
+\begin{block}{Ataque}
+Permítese atacar a zona que se atopa cada donde o perxonaxe está mirando.
+\end{block}
+
+\begin{block}{Defensa}
+Posibilidade de defenderse dun ataque permitindo atacar se a defensa ten éxito
+\end{block}
+
+\note{
+
+
+	 
+\textbf{Movemento} libre nunha habitación rectangular que suma a complexidade de evitar situacións nas que non se poida escapar do contrincante por estar ó lado dunha parede ou unha esquina. Ademáis a única maneira de mirar cara unha dirección é mirar cara ela.\\
+\textbf{Como} solo se permite atacar a zona directamente enfrente do personaxe é importante ter en conta cada donde se está mirando. Esto favorece unha actitude agresiva pois hai que moverse na dirección do enemigo antes de atacalo.\\
+\textbf{Pódese} realizar unha maniobra defensiva de alto risco e alta recompensa que permite evitar un ataque. Se se evita con éxito poderase realizar un ataque propio pero se non serase vulnerable durante uns instantes.\\
+\textbf{Esto fai que non exista unha estratexia idónea} pois un estilo agresivo perde contra un defensivo que á sua vez perde contra xogadores que busquen a contra do movemento defensivo, este último ademáis perde contra o xogador agresivo. Esta fórmula de \textbf{pedra, papel, tixeiras} demostrou ser ampliamente utilizada en diseño de videoxogos.\\
+
+
+
+}
+\end{frame}
 
 
 % ========================= EXEMPLOS =========================  %
