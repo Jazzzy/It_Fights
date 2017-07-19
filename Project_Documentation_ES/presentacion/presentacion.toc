@@ -15,3 +15,9 @@
 \beamer@subsectionintoc {4}{2}{Planificaci\IeC {\'o}n temporal}{20}{0}{4}
 \beamer@sectionintoc {5}{Arquitectura}{21}{0}{5}
 \beamer@subsectionintoc {5}{1}{Arquitectura do sistema}{21}{0}{5}
+\beamer@sectionintoc {6}{Validaci\IeC {\'o}n e probas}{24}{0}{6}
+\beamer@subsectionintoc {6}{1}{Aplicaci\IeC {\'o}n}{24}{0}{6}
+\beamer@subsectionintoc {6}{2}{Validaci\IeC {\'o}n do Axente}{25}{0}{6}
+\beamer@sectionintoc {7}{Conclusi\IeC {\'o}ns}{28}{0}{7}
+\beamer@subsectionintoc {7}{1}{Conclusi\IeC {\'o}ns e lecci\IeC {\'o}ns aprendidas}{28}{0}{7}
+\beamer@subsectionintoc {7}{2}{Posibles ampliaci\IeC {\'o}ns}{29}{0}{7}

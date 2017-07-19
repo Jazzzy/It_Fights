@@ -145,7 +145,7 @@ Implementación de un motor desde cero en C++
 \end{figure}
 
 \note{
-	HERE
+	
 }
 \end{frame}
 
@@ -214,7 +214,7 @@ Implementación de un motor desde cero en C++
 
 
 \note{
-	HERE
+	
 }
 
 \end{frame}
@@ -301,7 +301,7 @@ Implementación de un motor desde cero en C++
 
 
 \note{
-	HERE
+	
 }
 
 \end{frame}
@@ -318,7 +318,9 @@ Implementación de un motor desde cero en C++
 \begin{block}{Contra él mesmo}
 	Buscando unha exploración mais extensa de estados que o axente baseado en regras non pode aportar.
 \end{block}
+\note{
 
+}
 \end{frame}
 
 
@@ -337,6 +339,10 @@ Implementación de un motor desde cero en C++
 	\label{casos_de_uso}
 	%\vspace*{-1.7cm}
 \end{figure}
+
+\note{
+
+}
 \end{frame}
 
 \subsection{Requisitos}
@@ -383,7 +389,9 @@ Implementación de un motor desde cero en C++
 	\end{column}
 \end{columns}
 
+\note{
 
+}
 \end{frame}
 
 \section{Xestión do proxecto}
@@ -420,6 +428,7 @@ Implementación de un motor desde cero en C++
 
 \begin{center}
 \begin{tikzpicture}
+	% squere, cloud
 	\pie[sum=auto, after number={d}, cloud, radius = 2]{37/Videoxogo, 16/Axente, 3/Obtención de datos}
 \end{tikzpicture}
 \end{center}
@@ -432,22 +441,132 @@ Implementación de un motor desde cero en C++
 \section{Arquitectura}
 \subsection{Arquitectura do sistema}
 \begin{frame}
-\frametitle{Arquitectura do sistema}
+\frametitle{Subsistemas conectados}
 
-%quizas explicar o cambio entre arquitextuas, de esto a esto a esto.
+\begin{figure}
+	\includegraphics[width=10cm]{../otros/UML/png/arquitectura_mala.png}
+	\label{dia:arquitectura_mala}
+\end{figure}
+\note{
 
+}
+\end{frame}
+\begin{frame}
+\frametitle{Bus de mensaxes}
+\begin{figure}
+	\includegraphics[width=10cm]{../otros/UML/png/actual_arquitecture.png}
+	\label{dia:actual_arquitecture}
+\end{figure}
+\note{
+
+}
+\end{frame}
+\begin{frame}
+\frametitle{Arquitectura final}
 \begin{figure}
 	\includegraphics[width=10cm]{../otros/UML/png/final_arq.png}
 	\label{dia:arquitectura_final}
 \end{figure}
+\note{
+
+}
+\end{frame}
+
+
+
+% \section{Deseño}
+% \subsection{Clases do bus de mensaxes}
+
+\section{Validación e probas}
+\subsection{Aplicación}
+\begin{frame}
+\frametitle{Validación e probas da aplicación}
+\begin{block}{Probas unitarias}
+	Unha ou mais probas por cada requisito tanto funcional como non funcional superadas na sua totalidade.
+\end{block}
+
+\begin{block}{Probas de integración}
+	Comproban a integración entre subsistemas e do o axente ca aplicación.
+\end{block}
+\note{
+
+}
+\end{frame}
+\subsection{Validación do Axente}
+\begin{frame}
+\frametitle{Comparativa de vitorias}
+
+\begin{figure}[h]
+	\centerline{\includegraphics[width=11cm]{../otros/otrasCapturas/grafico_victorias.png}}
+	\label{graf:victorias}
+\end{figure}
+\note{
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Comparativa de estados visitados}
+\begin{figure}[h]
+	\centerline{\includegraphics[width=11cm]{../otros/otrasCapturas/grafico_estados.png}}
+	\label{graf:estados}
+\end{figure}
+
+\note{
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Axente escollido}
+Combinación de ámbolos dous métodos de adestramento.
+
+\begin{block}{Contra o axente baseado en regras}
+	Favorece un aprendizaxe moi rápido nas primeiras simulacións.
+\end{block}
+
+\begin{block}{Contra él mesmo}
+	Aporta unha exploración de estados superior.
+\end{block}
+\note{
+
+}
+\end{frame}
+
+
+\section{Conclusións}
+
+\subsection{Conclusións e leccións aprendidas}
+\begin{frame}
+\frametitle{Conclusións e leccións aprendidas}
+\begin{block}{Logros do proxecto}
+\begin{itemize}
+	\item O comportamento, aspecto e rendemento da aplicación cumpriu as expectativas.
+	\item O axente é capaz de competir contra outras implementacións e contra xogadores humanos.
+\end{itemize}
+\end{block}
+
+\begin{block}{Leccións aprendidas}
+	\begin{itemize}
+		\item Importancia de ter en conta os posibles riscos do proxecto o antes posible.
+		\item Utilidade de un deseño flexible previo á implementación.
+		\item Calidade dos resultados de implementacións sinxelas de Intelixencia Artificial.
+	\end{itemize}
+\end{block}
 
 \end{frame}
 
-\section{Diseño}
-\subsection{}
+\subsection{Posibles ampliacións}
+\begin{frame}
+\frametitle{Posibles ampliacións}
+\begin{itemize}
+	\item Melloras de compatibilidade.
+	\item Ampliación do proceso de probas con xogadores humanos.
+	\item Implementación de máis técnicas para o axente.
+	\item Novas mecánicas para o videoxogo.
+\end{itemize}
 
-
-
+\end{frame}
 
 
 % ========================= EXEMPLOS =========================  %
