@@ -1,0 +1,442 @@
+%%% CiTIUS beamer (Theme) [Orange]
+%
+% This beamer theme is based in the Frankfurt theme by Till Tantau.
+%
+% Copyright 2017 by Jorge Suárez de Lis
+% Copyright 2013 by Diego R. Martinez
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+
+
+\mode<presentation>
+
+% \def\beamer@vida@titlepagelogocitius{}
+% \DeclareOptionBeamer{titlepagelogocitius}{\def\beamer@vida@titlepagelogocitius{#1}}
+% \def\beamer@vida@titlepagelogousc{}
+% \DeclareOptionBeamer{titlepagelogousc}{\def\beamer@vida@titlepagelogousc{#1}}
+% \def\beamer@vida@titlepagelogovida{}
+% \DeclareOptionBeamer{titlepagelogousc}{\def\beamer@vida@titlepagelogovida{#1}}
+
+\def\beamer@vida@guestlogoone{}
+\DeclareOptionBeamer{guestlogoone}{\def\beamer@vida@guestlogoone{#1}}
+\def\beamer@vida@guestlogotwo{}
+\DeclareOptionBeamer{guestlogotwo}{\def\beamer@vida@guestlogotwo{#1}}
+\def\beamer@vida@guestlogothree{}
+\DeclareOptionBeamer{guestlogothree}{\def\beamer@vida@guestlogothree{#1}}
+\def\beamer@vida@guestoffset{0cm}
+\DeclareOptionBeamer{guestoffset}{\def\beamer@vida@guestoffset{#1}}
+
+\def\beamer@morte@thewatermark{}
+\DeclareOptionBeamer{watermark}{\def\beamer@morte@thewatermark{#1}}
+
+\def\beamer@morte@watermarkheight{100px}
+\DeclareOptionBeamer{watermarkheight}{\def\beamer@morte@watermarkheight{#1}}
+
+\def\beamer@morte@subsection{}
+\DeclareOptionBeamer{showsubsection}{\def\beamer@morte@subsection{#1}}
+
+\def\beamer@morte@marxes{2em}
+\DeclareOptionBeamer{marxes}{\def\beamer@morte@marxes{#1}}
+
+\ProcessOptionsBeamer
+
+% Enable/disable the watermark.
+\def\watermarkon{\def\beamer@morte@watermark{\beamer@morte@thewatermark}}
+\def\watermarkoff{\def\beamer@morte@watermark{}}
+% Initially disable the watermark.
+\watermarkoff
+
+% Enable/disable the subsection bar.
+\def\showsubsectionson{\def\beamer@morte@showsubsection{\rule{0pt}{0pt}}}
+\def\showsubsectionsoff{\def\beamer@morte@showsubsection{}}
+% Initially disable the subsection bar.
+\showsubsectionsoff
+
+% Enable/disable the numberpage.
+\def\shownumberpageon{\def\beamer@morte@numberpage{\rule{0pt}{0pt}}}
+\def\shownumberpageoff{\def\beamer@morte@numberpage{}}
+% Initially enable the numberpage.
+\def\beamer@morte@numberpage{\rule{0pt}{0pt}}
+
+
+\mode<presentation>
+
+%%% Fonts
+\setbeamerfont{title}{size=\Huge}
+\setbeamerfont{subtitle}{size=\large, series=\bfseries}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{size=\footnotesize}
+\setbeamerfont{title author}{size=\large}
+\setbeamerfont{title institute}{size=\footnotesize}
+\setbeamerfont{title date}{size=\small}
+\setbeamerfont{foot line}{size=\normalsize, series=\bfseries, family=\sffamily}
+\setbeamerfont{foot line small}{size=\tiny}
+\setbeamerfont{web page}{size=\scriptsize, family=\sffamily}
+
+%%% Images CiTIUS 
+% \pgfdeclareimage[height=.07\paperheight]{logo_usc}{CiTIUS_figs/logo_USC} % 4:3
+% \pgfdeclareimage[height=.07\paperheight]{logo_campus_vida}{CiTIUS_figs/logo_CampusVida} % 4:3
+% \pgfdeclareimage[height=.07\paperheight]{logo_citius}{CiTIUS_figs/logo_CiTIUS_horizontal} % 4:3
+% \pgfdeclareimage[height=.11\paperheight]{logos_feder}{CiTIUS_figs/logos_FEDER_2014-2020} % 4:3
+\pgfdeclareimage[height=.09\paperheight]{logo_usc}{CiTIUS_figs/logo_USC} % 16:9
+\pgfdeclareimage[height=.09\paperheight]{logo_campus_vida}{CiTIUS_figs/logo_CampusVida} % 16:9
+\pgfdeclareimage[height=.09\paperheight]{logo_citius}{CiTIUS_figs/logo_CiTIUS_horizontal} % 16:9
+\pgfdeclareimage[height=.14\paperheight]{logos_feder}{CiTIUS_figs/logos_FEDER_2014-2020} % 16:9
+\pgfdeclareimage[height=.038\paperheight]{logo_citius_mini}{CiTIUS_figs/logo_CiTIUS_mini}
+\pgfdeclareimage[height=.65\paperheight]{arbore_citius_at_titlepage}{CiTIUS_figs/arbore_vida}
+
+%%% Colors
+\xdefinecolor{azul citius}{rgb}{0.03529412, 0.29411765, 0.49803922}
+\xdefinecolor{gris citius}{gray}{0.35}
+\xdefinecolor{gris citius claro}{gray}{0.80}
+\xdefinecolor{gris citius oscuro}{gray}{0.20}
+\xdefinecolor{gris citius titlepage oscuro}{gray}{0.9}
+\xdefinecolor{gris citius titlepage claro}{gray}{0.9}
+\xdefinecolor{verde citius}{rgb}{0,0.6,.1}
+\xdefinecolor{laranxa citius}{rgb}{ 1.0000000, 0.4, 0.2}
+\xdefinecolor{rojo citius}{rgb}{0.85,0,0}
+
+%%% Structural color
+\usecolortheme[rgb={1.0000000, 0.4, 0.2}]{structure}
+
+%%% Color palettes
+% - Impar: laranxas
+% - Par: grises
+\setbeamercolor*{palette primary}%   % laranxa/gris
+    {use=structure,fg=structure.fg, bg=white}             
+\setbeamercolor*{palette secondary}% % blanco/gris
+    {use=structure,fg=white,bg=gris citius}             
+\setbeamercolor*{palette tertiary}%  % laranxa/negro
+    {fg=structure, bg=black}                      
+\setbeamercolor*{palette quaternary}%% gris oscuro/gris claro
+    {use=structure,fg=gris citius oscuro, bg=gris citius claro}  
+\setbeamercolor*{palette quinary}%   % blanco/laranxa
+    {fg=white,bg=laranxa citius}                            
+\setbeamercolor*{palette sextary}%   % gris claro/gris oscuro
+    {use=structure,fg=gris citius claro,bg=gris citius oscuro}   
+
+%%% Colors theme
+\setbeamercolor{example text}{fg=verde citius}
+\setbeamercolor{alerted text}{fg=rojo citius}
+
+\setbeamercolor{block title}{parent=palette secondary}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!85!black}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!85!black}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+
+
+%%% Colors
+\setbeamercolor*{linea citius}{parent=palette quinary}
+\setbeamercolor*{titulo citius}{parent=palette primary,bg=} 
+\setbeamercolor*{subtitle}{parent=palette quaternary}
+\setbeamercolor*{author citius}{parent=palette quaternary}
+\setbeamercolor{frametitle}{parent=palette quaternary}
+\setbeamercolor{framesubtitle}{parent=palette sextary, bg=}
+\setbeamercolor{subsection in head/foot}{parent=palette secondary}
+\setbeamercolor{pages in head/foot}{parent=palette quaternary}
+\setbeamercolor{section in head/foot}{parent=palette secondary}
+\setbeamercolor*{linebottom}{parent=palette sextary}
+
+\setbeamertemplate{blocks}[rounded=false,shadow=false]
+
+
+%%% Listas
+\defbeamertemplate{itemize item}{tri}%
+  {\hbox{{\bfseries\large\usebeamercolor[fg]{palette sextary}\rule[.25ex]{.75ex}{.75ex}}}}
+\defbeamertemplate{itemize subitem}{tri}%
+  {\small\hbox{{\bfseries\large\usebeamercolor[fg]{palette sextary}$\triangleright$}}}
+\defbeamertemplate{itemize subsubitem}{tri}%
+  {\footnotesize\hbox{{\bfseries\large\usebeamercolor[fg]{palette sextary}\footnotesize-}}}
+\setbeamertemplate{items}[tri]
+
+\defbeamertemplate{section in toc}{mysquare}
+{\leavevmode\leftskip=1.75ex%
+  \llap{%
+    \usebeamerfont*{section number projected}%
+    \usebeamercolor[bg]{section in toc}%
+    \vrule width7.25ex height1.5ex depth1.4ex%
+    \hskip-19.25ex%
+    \hbox to19.25ex{%
+       \usebeamercolor[bg]{section number projected}\rule[-.75ex]{19.25ex}{3ex}\hskip-19.25ex%
+       \hfil\usebeamercolor[fg]{section number projected}\inserttocsectionnumber\ }}%
+  \kern1.25ex\inserttocsection\par}
+
+\setbeamertemplate{section in toc}[mysquare]
+\setbeamerfont{section number projected}{size=\normalsize}%
+\setbeamercolor{section in toc}{parent=palette quaternary, bg=}
+\setbeamercolor{section number projected}{parent=palette quaternary, fg=orange}
+
+
+%%% Lengths
+\newlength{\beamer@morte@linebottom}
+\setlength{\beamer@morte@linebottom}{.0065\paperheight}
+
+
+\beamer@compresstrue
+
+\setbeamersize{text margin left=\beamer@morte@marxes,text margin right=\beamer@morte@marxes}
+
+% Sin simbolos de navegación
+\setbeamertemplate{navigation symbols}{}
+
+
+%%% Gradientes
+\AtBeginDocument{
+  {
+    \usebeamerfont*{headline}
+    \colorlet{global.bg}{bg}
+    \usebeamercolor{section in head/foot}
+    \usebeamercolor{frametitle}
+
+    \ifx\beamer@morte@showsubsection\@empty%
+      \pgfdeclareverticalshading{beamer@barshade}{\the\paperwidth}{%
+        color(0pt)=(global.bg);%
+        color(0pt)=(section in head/foot.bg);%
+        color(10pt)=(section in head/foot.bg)%
+      }%
+    \else%
+      \pgfdeclareverticalshading{beamer@barshade}{\the\paperwidth}{%
+        color(0pt)=(global.bg);%
+        color(0pt)=(section in head/foot.bg);%
+        color(18pt)=(section in head/foot.bg)%
+      }%
+    \fi%
+    \pgfdeclareverticalshading{beamer@aboveframetitlesubsectionoff}{\the\paperwidth}{%
+      color(0pt)=(normal text.bg);%
+      color(3.5pt)=(normal text.bg);%
+      color(5pt)=(section in head/foot.bg)%
+    }
+    \pgfdeclareverticalshading{beamer@aboveframetitle}{\the\paperwidth}{%
+      color(0pt)=(frametitle.bg);%
+      color(3.5pt)=(frametitle.bg);%
+      color(5pt)=(section in head/foot.bg)%
+    }
+    \pgfdeclareverticalshading{beamer@belowframetitle}{\the\paperwidth}{%
+      color(0ex)=(global.bg);%
+      color(1ex)=(frametitle.bg)%
+    }
+    \pgfdeclareverticalshading{beamer@smoothshade}{\the\paperwidth}{%
+        color(0pt)=(white);%
+        color(8pt)=(structure.fg!20!white);%
+        color(12pt)=(structure.fg!30!white);%
+        color(20pt)=(structure.fg!30!white)%
+    }%
+   \pgfdeclareverticalshading{beamer@titlebackground}{\the\paperwidth}{%
+        color(0cm)=(gris citius titlepage claro); 
+        color(.92\paperheight)=(gris citius titlepage oscuro)%
+    }%
+  }
+}
+
+
+%%% TITLE PAGE
+\defbeamertemplate*{title page}{vida}[1][]
+{
+\vbox{}
+%
+% Title ZONE
+%
+{\parskip0pt%
+ \hbox{\hskip-\Gm@lmargin\hbox{\vbox{%
+  \@tempdima=\textwidth\textwidth=\paperwidth\hsize=\textwidth\def\\{,}\vbox{}\vskip-0.05\paperheight%
+  \pgfuseshading{beamer@titlebackground}%
+% Background: CITIUS tree
+  \hspace*{-.4\paperwidth}%
+  {\pgfuseimage{arbore_citius_at_titlepage}}%
+% Background: Decorative lines
+  \vskip-\baselineskip%
+  \begin{beamercolorbox}[ignorebg,wd=\paperwidth,vmode]{}
+    \vspace*{-1pt}%
+    \hbox{%
+      \begin{beamercolorbox}[wd=\paperwidth,ht=2pt,dp=0pt]{linea citius}%
+      \end{beamercolorbox}%
+    }%
+  \end{beamercolorbox}%
+%
+  }}%
+  \hskip-\Gm@rmargin%
+}}\hfil%
+\vskip-.05\paperheight
+\vskip-.92\paperheight%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=.52\paperheight,center,#1]{titulo citius}
+     \usebeamerfont{title}%
+     \begin{flushleft}\hspace*{.03\paperwidth}
+     \begin{minipage}{.975\textwidth}%
+       \raggedright\inserttitle\par%
+       \ifx\insertsubtitle\@empty%
+       \else%
+         \vskip1ex%
+         {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+       \fi%
+     \end{minipage}\end{flushleft}%
+%      \vspace{.075\paperheight}%
+   \end{beamercolorbox}%
+%
+% Author ZONE
+%
+\begin{beamercolorbox}[wd=\paperwidth,ht=.42\paperheight,left,rounded=true]{none}
+  \hspace*{1pt}%
+  \begin{beamercolorbox}[wd=.685\paperwidth,left,rounded=true]{none}
+    \raggedleft%
+    \begin{minipage}[b]{.64\paperwidth}\raggedright%
+      {\color{laranxa citius!85!black}%
+      {\usebeamerfont{title author}\insertauthor}}\par\vspace{1ex}%
+      {\color{gris citius oscuro}\usebeamerfont{title institute}\insertinstitute}\par\vspace{2ex}%
+      {\color{gris citius oscuro}\usebeamerfont{title date}\insertdate}
+    \end{minipage}
+  \end{beamercolorbox}%
+  \vspace*{.06\paperheight}\hspace*{.210\paperwidth}%
+  \raisebox{-.02\paperheight}{\hspace*{-1ex}\usebeamerfont{web page}\color{laranxa citius}citius.usc.es}%
+  \vspace*{-.02\paperheight}%
+\end{beamercolorbox}\vspace*{.02\paperheight}
+\par%
+%
+% Logo ZONE
+%
+\begin{beamercolorbox}[wd=\paperwidth,ht=3pt,dp=0pt]{empty}%
+  \def\separeimages{\hspace*{.0325\paperwidth}}%
+  \hspace*{.01\paperwidth}
+  \pgfuseimage{logo_usc}%
+  \separeimages%
+  \pgfuseimage{logo_campus_vida}%
+  \hspace*{\beamer@vida@guestoffset}%
+  \ifx\beamer@vida@guestlogoone\@empty%
+  \else%
+    \separeimages\includegraphics[height=0.075\paperheight]{\beamer@vida@guestlogoone}%
+  \fi%
+  \ifx\beamer@vida@guestlogotwo\@empty%
+  \else%
+    \separeimages\includegraphics[height=0.075\paperheight]{\beamer@vida@guestlogotwo}%
+  \fi%
+  \ifx\beamer@vida@guestlogothree\@empty%
+  \else%
+    \separeimages\includegraphics[height=0.075\paperheight]{\beamer@vida@guestlogothree}%
+  \fi%  
+  \hfill%
+  \pgfuseimage{logo_citius}\hspace*{.01\paperwidth}
+\end{beamercolorbox}\vskip0pt%
+\vspace{-\paperheight}%
+\vskip-1pt%
+\vskip\paperheight%
+}
+
+
+
+%%% FOOTER
+\defbeamertemplate*{footline}{morte theme}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=0ex,dp=0ex,sep=2pt,left]{}%
+%    Empty: aquí vai o logo (simétrico coa numeración de páxina)
+  \end{beamercolorbox}%
+  \ifx\beamer@morte@numberpage\@empty%
+  \begin{beamercolorbox}[wd=.705\paperwidth,ht=0ex,dp=0ex,sep=2pt,right]{}%
+   \centering\usebeamerfont{foot line small}\usebeamercolor[bg]{pages in head/foot}\insertshortdate%
+  \end{beamercolorbox}%
+  \else%
+  \begin{beamercolorbox}[wd=.705\paperwidth,ht=0ex,dp=0ex,sep=2pt,right]{}%
+   \centering\usebeamerfont{foot line small}\usebeamercolor[bg]{pages in head/foot}\insertshortdate%
+  \end{beamercolorbox}%
+% Numeración de páxinas
+  \begin{beamercolorbox}[wd=.095\paperwidth,ht=0ex,dp=0ex,sep=2pt,right]{pages in head/foot}%
+     \usebeamerfont{foot line} \hfill \insertframenumber{}\raisebox{-2pt}{/\usebeamerfont{foot line small}\bfseries\inserttotalframenumber}\hspace*{1pt}% ON
+  \end{beamercolorbox}%
+  \fi%
+  } %
+}
+
+
+%%% HEAD
+\defbeamertemplate*{headline}{morte theme}
+{%
+  \vskip-1pt%
+  \pgfuseshading{beamer@barshade}%
+  \ifx\beamer@morte@showsubsection\@empty%
+    \vskip-12pt% OFF
+  \else%
+    \vskip-20pt% ON
+  \fi%
+  \hbox{
+  \begin{beamercolorbox}[ignorebg,wd=.95\paperwidth,ht=.03\paperheight,dp=8pt]{section in head/foot}
+    \insertnavigation{.95\paperwidth}
+  \end{beamercolorbox}%
+  }%  
+  \ifx\beamer@morte@showsubsection\@empty%
+   \vskip-6pt% OFF
+   \pgfuseshading{beamer@aboveframetitlesubsectionoff}%
+   \vskip-1.5pt% OFF
+  \else%
+   \vskip0pt% ON
+   \pgfuseshading{beamer@aboveframetitlesubsectionoff}%
+   \vskip-1.5pt% ON
+  \fi%
+}
+
+
+%%% FRAMETITLE
+\defbeamertemplate*{frametitle}{morte theme}
+{%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by\beamer@leftmargin%
+  \advance\@tempdima by\beamer@rightmargin%
+  \nointerlineskip\vskip-0pt%
+  \ifx\beamer@morte@showsubsection\@empty\else\vskip-0pt\fi% @ON
+  \usebeamerfont{headline}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.5ex,dp=0ex,vmode]{empty}
+    \pgfuseshading{beamer@aboveframetitle}%
+  \end{beamercolorbox}%
+  \vskip-2pt%
+  \nointerlineskip%
+  \begin{beamercolorbox}[wd=\the\@tempdima,leftskip=.3cm,rightskip=.3cm plus1fil]{frametitle}%
+    \vskip-6pt%
+    \usebeamerfont*{frametitle}%
+    \insertframetitle%
+    \ifx\insertframesubtitle\@empty
+      {\usebeamerfont*{framesubtitle}\rule[-.95em]{0pt}{2.0em}}
+    \else  
+      {\usebeamerfont*{framesubtitle}\rule[-.95em]{0pt}{2.0em}%
+      \hspace*{1em}%
+      \raisebox{0pt}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}}
+    \fi%
+    \strut\par%
+    \vskip-2pt%
+    \nointerlineskip%
+  \end{beamercolorbox}
+  \nointerlineskip%
+  \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\beamer@morte@linebottom,dp=0pt]{linea citius}%
+    \end{beamercolorbox}%
+  }%
+  \vskip-10ex%
+  \hfill%
+}
+
+%%% SIDEBAR LEFT == LOGO
+\defbeamertemplate*{sidebar left}{morte theme}
+{
+ \vfill%
+ \hskip0.1cm\insertlogo
+ \vskip3pt%
+}
+
+
+%%% SIDEBAR RIGHT == WATERMARK
+\defbeamertemplate*{sidebar right}{morte theme}
+{
+  \vfill%
+  \if\beamer@morte@watermark\@empty\else%
+  \llap{\includegraphics[height=\beamer@morte@watermarkheight]{\beamer@morte@watermark}\hspace*{2pt}}%
+  \fi
+}
+
+
+
+\mode <all>

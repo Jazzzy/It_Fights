@@ -1,0 +1,175 @@
+%%% CiTIUS beamer (Theme definitions) [Orange]
+% 
+% Copyright 2017 by Jorge Suárez de Lis
+% Copyright 2013 by Diego R. Martinez
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+
+
+%%% Language, enconding and fonts
+
+%%% Fonts
+\usepackage{mathpazo}           % Serif: URW Palladio (~ Palatino)
+\usepackage[scaled=.8]{berasans}% Sans serif: Berasans
+\usepackage{courier}            % Courier
+
+%%% Style: roman vs. sans serif
+% \renewcommand\familydefault{\rmdefault} % SERIF
+\renewcommand\familydefault{\sfdefault} % SANS SERIF
+
+
+%%% CITIUS theme settings
+\usetheme[% 
+%%% OPTIONS: ==================================
+%%%
+%%% Guest logos: logos 'invitados'
+%           guestlogoone=PATH_TO/logoun,     % primeiro logo
+%           guestlogotwo=PATH_TO/logodous,   % segundo logo
+%           guestlogothree=PATH_TO/logotres, % terceiro logo
+%           guestoffset=0cm,  % desplazamento liña 'invitados' ('+'=esquerda,'-'=dereita)
+% Por exemplo:
+%           guestlogoone=./figs/logo_invitado,
+%%%
+%%% Margins 
+          marxes=2em,  % tamaño das marxes da área de texto
+%%%
+%%% Watermark
+          watermark=CiTIUS_figs/arbore_vida, % Watermark used in every page.
+          watermarkheight=225px,             % Height of the watermark.
+%%%
+%%% ===========================================
+]{CiTIUS}
+
+
+%%% CITIUS theme switch
+\watermarkon % ENABLE watermark
+% \watermarkoff % DISABLE watermark (DEFAULT)
+%
+% \showsubsectionson % ENABLE showsubsection 
+% \showsubsectionsoff % DISABLE showsubsection (DEFAULT)
+%
+% \shownumberpageon % ENABLE shownumber (DEFAULT) 
+% \shownumberpageoff % DISABLE shownumber
+
+
+%%% CITIUS theme logo
+\logo{~%
+  \pgfuseimage{logo_citius_mini}% BASICO
+%   ~~~\includegraphics[height=.038\paperheight]{logo_opcional}%
+}
+
+\setbeamercovered{transparent}
+
+%%% COMMANDS
+\newcounter{framenumbervorappendix}
+\newcommand{\beginbackup}{
+  \setcounter{framenumbervorappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+  \addtocounter{framenumbervorappendix}{-\value{framenumber}}
+  \addtocounter{framenumber}{\value{framenumbervorappendix}} 
+}
+
+\newcommand{\titleslides}{%
+  \beginbackup%
+  \begin{frame}[plain]%
+    \titlepage%
+  \end{frame}%
+  \backupend%
+}
+
+\newcommand{\tocslides}{%
+  \beginbackup%
+  {%
+    \shownumberpageoff% DISABLE page numbering
+    \begin{frame}<beamer>{\cabeceiraTOC}%
+      \tableofcontents%
+    \end{frame}%
+  }%
+  \backupend%
+}
+
+\newenvironment{finishslides}[1]{%
+  \section*{}
+  \beginbackup%
+    \shownumberpageoff% DISABLE page numbering
+    \begin{frame}[plain]%
+      \bigskip
+      \bigskip
+      \bigskip
+      \bigskip
+      \bigskip
+      \bigbox{#1}%
+      \centering\par
+}{%
+      \bigskip
+      \bigskip
+      \bigskip
+      \bigskip
+      \bigskip
+      \bigskip
+      \centering\par
+      \hbox to \hsize{\hfil{
+	\pgfuseimage{logos_feder}
+      }\hfil}
+      \begin{center}
+	{\fontsize{8}{8}\selectfont Cofinanciado pola Unión Europea\\Fondo Europeo de Desenvolvemento Rexional ``Unha maneira de facer Europa``}
+      \end{center}
+    \end{frame}%
+  \backupend%
+}
+
+\AtBeginSection[]
+{
+  \beginbackup%
+  {%
+    \shownumberpageoff% DISABLE page numbering
+    \begin{frame}<beamer>{\cabeceiraTOC}
+      \tableofcontents[currentsection]%,currentsubsection]
+    \end{frame}
+  }%
+  \backupend%
+}
+
+%%% CORES
+\setbeamercolor{orange citius}{fg=white, bg=laranxa citius}
+\setbeamercolor{gray citius}{fg=white, bg=gris citius}
+\setbeamercolor{grayscale citius}{fg=gris citius oscuro, bg=gris citius claro}
+\setbeamercolor{blue citius}{fg=white, bg=azul citius}
+
+%%% COMANDOS
+\usepackage{xspace}
+\newcommand{\citius}{CiTIUS\xspace}
+\newcommand{\CITIUS}{Centro Singular de Investigación en Tecnoloxías da Información\xspace}
+\renewcommand{\emph}[1]{\textbf{\color{azul citius}#1}\xspace}
+
+\newlength{\anchopalabro}
+\newlength{\altopalabro}
+
+\newcommand{\citiushead}[1]{%
+  \settowidth{\anchopalabro}{\ \ \ #1\ \ }%
+  \settoheight{\altopalabro}{Tg}%
+  \par\vspace{1em}%
+  {\color{gris citius}\rule[-.5ex]{.75\textwidth}{1pt}}\hspace*{-.77\textwidth}%
+  \begin{beamercolorbox}[wd=\anchopalabro,ht=1.8ex,dp=.5ex]{gray citius}%
+  \hspace*{.02\textwidth}#1%
+  \end{beamercolorbox}\par%
+}
+
+\newcommand{\citiustail}{\par\vspace*{-.25ex}%
+  \hspace*{.075\textwidth}{\color{gris citius}%
+  \rule[1.5ex]{.95\textwidth}{1pt}\rule[1.5ex]{1pt}{1.5ex}}%
+  \hspace*{-.45\textwidth}\par}
+  
+\newenvironment{caixa}[1]{\citiushead{#1}}{\citiustail}
+
+\newcommand{\bigbox}[1]{%
+  \begin{center}\begin{minipage}{.75\textwidth}%
+    \begin{beamercolorbox}[sep=1em, rounded=false, center]{orange citius}%
+      \Huge #1\vspace*{-1ex}%
+    \end{beamercolorbox}%
+  \end{minipage}\end{center}%
+}

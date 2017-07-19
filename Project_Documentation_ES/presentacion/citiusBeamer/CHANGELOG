@@ -1,0 +1,12 @@
+v3.0 (2017-03-03):
+- Corrección de cores de laranxa sobre gris que non se ven (axuda a daltónicos)
+- Plantilla de exemplo con moitos máis exemplos
+- Adaptación á Axuda FEDER 2014-2020
+
+v2.1:
+- ERROS
+  + liña 345 @ beamerthemeCiTIUS.sty: correxida a opción "right" na beamercolorbox
+
+v2.0:
+- Primeira versión laranxa/gris da plantilla beamer do CiTIUS
+

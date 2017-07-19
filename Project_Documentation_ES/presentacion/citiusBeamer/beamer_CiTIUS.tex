@@ -1,0 +1,221 @@
+%%% CiTIUS beamer (Template) [Orange]
+% 
+% Copyright 2017 by Jorge Suárez de Lis
+% Copyright 2013 by Diego R. Martinez
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+
+
+% To use 4:3 instead of 16:9
+% 1. Delete "aspectratio=169" from the documentclass options below
+% 2. In beamerthemeCiTIUS.sty, uncomment the three lines labeled "% 4:3"
+%    and comment the three lines labeled "% 16:9"
+
+\documentclass[11pt,aspectratio=169]{beamer}
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Definicións do paquete
+\input{citius_beamer_defs}
+
+\title{Título da presentación}
+\subtitle{Subtítulo da presentación}
+\author{Autor(es) da presentación}
+\institute{\CITIUS\\ Universidade de Santiago de Compostela}
+\date%
+  [Título do evento (aparece nos frames)]%
+  {Título do evento}
+
+\def\cabeceiraTOC{Cabeceira da tabla de contidos}
+
+  
+
+\begin{document}
+
+\titleslides
+
+\tocslides
+
+%%% Start of demonstration frames.
+%%% You can delete from here to the line containing END-DEMO.
+%%% Inicio dos frames de mostra.
+%%% Podes borrar ata a liña que contén END-DEMO.
+
+\section{Exemplos básicos}
+\subsection*{}
+
+\begin{frame}{Frame vacío}{}
+\end{frame}
+
+
+\begin{frame}{Frame con texto}
+\framesubtitle{Subtítulo do frame con texto}
+ Going to catch the red dot today going to catch the red dot today eat owner's
+ food yet poop in litter box, scratch the walls hide at bottom of staircase to
+ trip human. Lies down lick butt and make a weird face.\\
+ \textit{Texto en cursiva}\\*
+ \emph{Texto en negriña}\\*
+ \alert{Texto en vermello}
+\end{frame}
+
+
+\begin{frame}{Frame con caixas}
+\framesubtitle{As caixas de \texttt{beamer}}
+
+ \begin{block}{Título do block}
+   Corpo do block
+ \end{block}
+ \begin{alertblock}{Título do alertblock}
+   Corpo do alertblock
+ \end{alertblock}
+ \begin{exampleblock}{Título do exampleblock}
+   Corpo do exampleblock
+ \end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}{Frame con caixas}
+\framesubtitle{As caixas de \texttt{beamer} (pero sen títulos)}
+
+ \begin{block}{}
+   Corpo do block (sen título)
+ \end{block}
+ \begin{alertblock}{}
+   Corpo do alertblock (sen título)
+ \end{alertblock}
+ \begin{exampleblock}{}
+   Corpo do exampleblock (sen título)
+ \end{exampleblock}
+
+\end{frame}
+
+\section{Máis funcionalidades}
+
+\subsection*{Listas}
+
+\begin{frame}{Entornos básicos \LaTeX}
+\framesubtitle{Un exemplo de \texttt{itemize} con gatos}
+
+\begin{itemize}
+ \item litter box
+    \begin{itemize}
+    \item owner's face
+      \begin{itemize}
+      \item kitty poochy tuxedo
+      \item throwup on your pillow
+      \item ball of string
+      \end{itemize}
+    \item loves cheeseburgers
+    \item world domination
+    \end{itemize}
+ \item chase laser
+ \item catch mouse
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Entornos básicos \LaTeX}
+\framesubtitle{Un exemplo de \texttt{description} con gatos}
+
+\begin{description}
+ \item[good plan] throwup on your pillow
+ \item[better plan] chase laser
+ \item[best plan] world domination
+\end{description}
+
+\end{frame}
+
+\subsection*{beamercolorbox}
+
+\begin{frame}{Entornos básicos \texttt{beamer}}
+\framesubtitle{Un exemplo de \texttt{beamercolorbox}}
+
+\setbeamercolor{blue citius}{fg=white, bg=azul citius}
+\setbeamercolor{green citius}{fg=white, bg=verde citius}
+\setbeamercolor{orange citius}{fg=white, bg=laranxa citius}
+\setbeamercolor{gray citius}{fg=black, bg=gris citius claro}
+\setbeamercolor{darkgray citius}{fg=white, bg=gris citius oscuro}
+
+\begin{beamercolorbox}[sep=1ex]{blue citius}
+  white \& azul (USC)
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[sep=1ex]{green citius}
+  white \& verde (Campus Vida)
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[sep=1ex]{orange citius}
+  white \& orange (CiTIUS)
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[sep=1ex]{gray citius}
+  black \& gray
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[sep=1ex]{darkgray citius}
+  white \& darkgray
+\end{beamercolorbox}
+
+\end{frame}
+
+
+\subsection*{beamercolorbox}
+
+\begin{frame}{Entornos básicos \texttt{beamer}}
+\framesubtitle{Un exemplo de \texttt{columns}}
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+    Texto de exemplo.\\
+    \begin{itemize}
+      \item Meowwww
+      \item Run in circles
+      \item Crouch, shake butt
+    \end{itemize}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{beamercolorbox}[sep=1ex]{gray citius}
+      Purr while eating peer out window, chatter at birds, lure them to mouth
+      for sit in window and stare ooo, a bird!
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=1ex]{orange citius}
+      \textit{being a cat...}
+    \end{beamercolorbox}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\section{Aínda máis funcionalidades}
+
+\subsection*{Caixas}
+
+\begin{frame}{Entornos propios desta plantilla}
+\framesubtitle{Un exemplo de \texttt{caixa}}
+ \begin{caixa}{Título da caixa}
+  Contido da caixa.\\
+  Poden ser varias \textit{liñas}.
+ \end{caixa}
+\end{frame}
+
+\subsection*{Bigbox}
+
+\begin{frame}{Entornos propios desta plantilla}
+\framesubtitle{Un exemplo de \texttt{bigbox}}
+ \bigbox{Algo destacado moi en grande!}
+\end{frame}
+
+
+%%% END-DEMO
+
+\begin{finishslides}{Mensaxe final}
+  Texto adxunto á mensaxe final
+\end{finishslides}
+
+\end{document}
