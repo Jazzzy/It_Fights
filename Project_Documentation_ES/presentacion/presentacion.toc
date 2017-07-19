@@ -1,23 +1,23 @@
 \select@language {galician}
 \beamer@sectionintoc {1}{Introduci\IeC {\'o}n}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Obxectivos}{4}{0}{1}
-\beamer@sectionintoc {2}{Videoxogo baseado en axentes}{11}{0}{2}
-\beamer@subsectionintoc {2}{1}{Mec\IeC {\'a}nicas}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{Prototipo de Unity}{12}{0}{2}
-\beamer@subsectionintoc {2}{3}{Segunda aplicaci\IeC {\'o}n}{13}{0}{2}
-\beamer@subsectionintoc {2}{4}{Algoritmo}{14}{0}{2}
-\beamer@subsectionintoc {2}{5}{Tipos de adestramento}{16}{0}{2}
-\beamer@sectionintoc {3}{An\IeC {\'a}lise de requisitos}{17}{0}{3}
-\beamer@subsectionintoc {3}{1}{Casos de uso}{17}{0}{3}
-\beamer@subsectionintoc {3}{2}{Requisitos}{18}{0}{3}
-\beamer@sectionintoc {4}{Xesti\IeC {\'o}n do proxecto}{19}{0}{4}
-\beamer@subsectionintoc {4}{1}{Metodolox\IeC {\'\i }a}{19}{0}{4}
-\beamer@subsectionintoc {4}{2}{Planificaci\IeC {\'o}n temporal}{20}{0}{4}
-\beamer@sectionintoc {5}{Arquitectura}{21}{0}{5}
-\beamer@subsectionintoc {5}{1}{Arquitectura do sistema}{21}{0}{5}
-\beamer@sectionintoc {6}{Validaci\IeC {\'o}n e probas}{24}{0}{6}
-\beamer@subsectionintoc {6}{1}{Aplicaci\IeC {\'o}n}{24}{0}{6}
-\beamer@subsectionintoc {6}{2}{Validaci\IeC {\'o}n do Axente}{25}{0}{6}
-\beamer@sectionintoc {7}{Conclusi\IeC {\'o}ns}{28}{0}{7}
-\beamer@subsectionintoc {7}{1}{Conclusi\IeC {\'o}ns e lecci\IeC {\'o}ns aprendidas}{28}{0}{7}
-\beamer@subsectionintoc {7}{2}{Posibles ampliaci\IeC {\'o}ns}{29}{0}{7}
+\beamer@sectionintoc {2}{Videoxogo baseado en axentes}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Mec\IeC {\'a}nicas}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Prototipo de Unity}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Segunda aplicaci\IeC {\'o}n}{12}{0}{2}
+\beamer@subsectionintoc {2}{4}{Algoritmo}{13}{0}{2}
+\beamer@subsectionintoc {2}{5}{Tipos de adestramento}{15}{0}{2}
+\beamer@sectionintoc {3}{An\IeC {\'a}lise de requisitos}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Casos de uso}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Requisitos}{17}{0}{3}
+\beamer@sectionintoc {4}{Xesti\IeC {\'o}n do proxecto}{18}{0}{4}
+\beamer@subsectionintoc {4}{1}{Metodolox\IeC {\'\i }a}{18}{0}{4}
+\beamer@subsectionintoc {4}{2}{Planificaci\IeC {\'o}n temporal}{19}{0}{4}
+\beamer@sectionintoc {5}{Arquitectura}{20}{0}{5}
+\beamer@subsectionintoc {5}{1}{Arquitectura do sistema}{20}{0}{5}
+\beamer@sectionintoc {6}{Validaci\IeC {\'o}n e probas}{23}{0}{6}
+\beamer@subsectionintoc {6}{1}{Aplicaci\IeC {\'o}n}{23}{0}{6}
+\beamer@subsectionintoc {6}{2}{Validaci\IeC {\'o}n do Axente}{24}{0}{6}
+\beamer@sectionintoc {7}{Conclusi\IeC {\'o}ns}{27}{0}{7}
+\beamer@subsectionintoc {7}{1}{Conclusi\IeC {\'o}ns e lecci\IeC {\'o}ns aprendidas}{27}{0}{7}
+\beamer@subsectionintoc {7}{2}{Posibles ampliaci\IeC {\'o}ns}{28}{0}{7}
