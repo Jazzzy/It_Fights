@@ -15,9 +15,10 @@
 \beamer@subsectionintoc {4}{2}{Planificaci\IeC {\'o}n temporal}{19}{0}{4}
 \beamer@sectionintoc {5}{Arquitectura}{20}{0}{5}
 \beamer@subsectionintoc {5}{1}{Arquitectura do sistema}{20}{0}{5}
-\beamer@sectionintoc {6}{Validaci\IeC {\'o}n e probas}{23}{0}{6}
-\beamer@subsectionintoc {6}{1}{Aplicaci\IeC {\'o}n}{23}{0}{6}
-\beamer@subsectionintoc {6}{2}{Validaci\IeC {\'o}n do Axente}{24}{0}{6}
-\beamer@sectionintoc {7}{Conclusi\IeC {\'o}ns}{27}{0}{7}
-\beamer@subsectionintoc {7}{1}{Conclusi\IeC {\'o}ns e lecci\IeC {\'o}ns aprendidas}{27}{0}{7}
-\beamer@subsectionintoc {7}{2}{Posibles ampliaci\IeC {\'o}ns}{28}{0}{7}
+\beamer@sectionintoc {6}{Dese\IeC {\~n}o}{23}{0}{6}
+\beamer@sectionintoc {7}{Validaci\IeC {\'o}n e probas}{24}{0}{7}
+\beamer@subsectionintoc {7}{1}{Aplicaci\IeC {\'o}n}{24}{0}{7}
+\beamer@subsectionintoc {7}{2}{Validaci\IeC {\'o}n do Axente}{25}{0}{7}
+\beamer@sectionintoc {8}{Conclusi\IeC {\'o}ns}{28}{0}{8}
+\beamer@subsectionintoc {8}{1}{Conclusi\IeC {\'o}ns e lecci\IeC {\'o}ns aprendidas}{28}{0}{8}
+\beamer@subsectionintoc {8}{2}{Posibles ampliaci\IeC {\'o}ns}{29}{0}{8}
