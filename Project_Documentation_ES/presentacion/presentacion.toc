@@ -1,21 +1,17 @@
 \select@language {galician}
 \beamer@sectionintoc {1}{Introduci\IeC {\'o}n}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Obxectivos}{4}{0}{1}
-\beamer@sectionintoc {2}{Videoxogo basado en axentes}{11}{0}{2}
+\beamer@sectionintoc {2}{Videoxogo baseado en axentes}{11}{0}{2}
 \beamer@subsectionintoc {2}{1}{Mec\IeC {\'a}nicas}{11}{0}{2}
 \beamer@subsectionintoc {2}{2}{Prototipo de Unity}{12}{0}{2}
 \beamer@subsectionintoc {2}{3}{Segunda aplicaci\IeC {\'o}n}{13}{0}{2}
 \beamer@subsectionintoc {2}{4}{Algoritmo}{14}{0}{2}
-\beamer@sectionintoc {3}{Secci\IeC {\'o}n 1}{15}{0}{3}
-\beamer@subsectionintoc {3}{1}{Ejemplo de subsecci\IeC {\'o}n}{15}{0}{3}
-\beamer@subsectionintoc {3}{2}{Ejemplo de lista}{16}{0}{3}
-\beamer@subsectionintoc {3}{3}{Otro ejemplo de lista}{21}{0}{3}
-\beamer@sectionintoc {4}{Secci\IeC {\'o}n 2}{22}{0}{4}
-\beamer@subsectionintoc {4}{1}{Tablas}{22}{0}{4}
-\beamer@sectionintoc {5}{Secci\IeC {\'o}n 3}{26}{0}{5}
-\beamer@subsectionintoc {5}{1}{Bloques}{26}{0}{5}
-\beamer@sectionintoc {6}{Secci\IeC {\'o}n 4}{27}{0}{6}
-\beamer@subsectionintoc {6}{1}{Pantalla dividida}{27}{0}{6}
-\beamer@subsectionintoc {6}{2}{Figuras}{28}{0}{6}
-\beamer@subsectionintoc {6}{3}{Listas con figuras y pausas}{29}{0}{6}
-\beamer@subsectionintoc {6}{4}{Cuando se necesita m\IeC {\'a}s espacio}{35}{0}{6}
+\beamer@subsectionintoc {2}{5}{Tipos de adestramento}{16}{0}{2}
+\beamer@sectionintoc {3}{An\IeC {\'a}lise de requisitos}{17}{0}{3}
+\beamer@subsectionintoc {3}{1}{Casos de uso}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{Requisitos}{18}{0}{3}
+\beamer@sectionintoc {4}{Xesti\IeC {\'o}n do proxecto}{19}{0}{4}
+\beamer@subsectionintoc {4}{1}{Metodolox\IeC {\'\i }a}{19}{0}{4}
+\beamer@subsectionintoc {4}{2}{Planificaci\IeC {\'o}n temporal}{20}{0}{4}
+\beamer@sectionintoc {5}{Arquitectura}{21}{0}{5}
+\beamer@subsectionintoc {5}{1}{Arquitectura do sistema}{21}{0}{5}

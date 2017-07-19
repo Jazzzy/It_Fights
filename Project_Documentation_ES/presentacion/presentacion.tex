@@ -6,13 +6,16 @@
 
 \documentclass{beamer}
 \usepackage{beamerthemeshadow}
+\usepackage{verbatim}
 \usepackage{pgfpages}
 \usepackage[galician]{babel}
 %\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
-\usepackage[spanish,linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\usepackage[spanish,linesnumbered,lined,boxed,commentsnumbered,noend]{algorithm2e}
+\usepackage{pgf-pie}
 
+\setcounter{tocdepth}{1}% Allow only \chapter in ToC
 \setbeameroption{show notes on second screen}
 
 \begin{document}
@@ -75,7 +78,7 @@ Capaz de percibir e actuar sobre o \textbf{entorno competitivo} do videoxogo med
 	\pause
 	\item Implementación do videoxogo \pause
 	\item Implementación do axente \pause
-	\item Realizar o entrenamento do axente \pause
+	\item Realizar o adestramento do axente \pause
 	\item Obter datos sobre as capacidades do axente \pause
 	\item Analizar os resultados obtidos \pause
 \end{itemize}
@@ -91,7 +94,7 @@ Capaz de percibir e actuar sobre o \textbf{entorno competitivo} do videoxogo med
 \end{frame}
 
 
-\section{Videoxogo basado en axentes}
+\section{Videoxogo baseado en axentes}
 
 \subsection{Mecánicas}
 \begin{frame}
@@ -102,7 +105,7 @@ Movemento libre nunha habitación rectangular.
 \end{block}
 
 \begin{block}{Ataque}
-Permítese atacar a zona que se atopa cada donde o perxonaxe está mirando.
+Permítese atacar a zona que se atopa cada onde o personaxe está mirando.
 \end{block}
 
 \begin{block}{Defensa}
@@ -113,7 +116,7 @@ Posibilidade de defenderse dun ataque permitindo atacar se a defensa ten éxito
 \textbf{Movemento} libre nunha habitación rectangular que suma a complexidade de evitar situacións nas que non se poida escapar do contrincante por estar ó lado dunha parede ou unha esquina. Ademáis a única maneira de mirar cara unha dirección é mirar cara ela.\\
 \textbf{Como} solo se permite atacar a zona directamente enfrente do personaxe é importante ter en conta cada donde se está mirando. Esto favorece unha actitude agresiva pois hai que moverse na dirección do enemigo antes de atacalo.\\
 \textbf{Pódese} realizar unha maniobra defensiva de alto risco e alta recompensa que permite evitar un ataque. Se se evita con éxito poderase realizar un ataque propio pero se non serase vulnerable durante uns instantes.\\
-\textbf{Esto fai que non exista unha estratexia idónea} pois un estilo agresivo perde contra un defensivo que á sua vez perde contra xogadores que busquen a contra do movemento defensivo, este último ademáis perde contra o xogador agresivo. Esta fórmula de \textbf{pedra, papel, tixeiras} demostrou ser ampliamente utilizada en diseño de videoxogos.\\
+\textbf{Esto fai que non exista unha estratexia idónea} pois un estilo agresivo perde contra un defensivo que á sua vez perde contra xogadores que busquen a contra do movemento defensivo, este último ademáis perde contra o xogador agresivo. Esta fórmula de \textbf{pedra, papel, tesoiras} demostrou ser ampliamente utilizada en diseño de videoxogos.\\
 }
 \end{frame}
 
@@ -121,13 +124,13 @@ Posibilidade de defenderse dun ataque permitindo atacar se a defensa ten éxito
 \subsection{Prototipo de Unity}
 \begin{frame}
 \frametitle{Prototipo de Unity}
-Primera implementación realizada con \textbf{Unity3D}, estándar de facto para videoxogos de este tamaño.
+Primeira implementación realizada con \textbf{Unity3D}, estándar de facto para videoxogos de este tamaño.
 	\vspace{0.5cm}
 \begin{alertblock}{Problemas de simulación}
 	Imposibilidade de escalar o tempo sen romper o funcionamento do videoxogo.
 \end{alertblock}
 \note{
-\textbf{Enseñar vídeo}
+\textbf{Ensinar vídeo}
 }
 \end{frame}
 
@@ -147,6 +150,7 @@ Implementación de un motor desde cero en C++
 \end{frame}
 
 \subsection{Algoritmo}
+\setlength{\algomargin}{0.11cm}
 \begin{frame}
 \frametitle{Algoritmo}
 \begin{center}
@@ -215,8 +219,239 @@ Implementación de un motor desde cero en C++
 
 \end{frame}
 
+\begin{frame}
+\frametitle{\textit{Fitness}}
+
+
+\begin{columns}
+	\begin{column}{5cm}
+\begin{center}
+	\scalebox{0.5}{
+		\begin{minipage}{1.6\linewidth}
+			\begin{algorithm}[H]
+					\SetKwData{Fitness}{fitness}
+				
+				\SetKwData{PlayerHealth}{playerHealth}
+				\SetKwData{EnemyHealth}{enemyHealth}
+				\SetKwData{Distance}{distance}
+				\SetKwData{LookingAtEnemy}{lookingAtEnemy}
+				\SetKwData{NoWallsNear}{noWallsNear}
+				
+				\SetKwFunction{GetRandomAction}{getRandomAction}
+				\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+				\Input{\PlayerHealth, \EnemyHealth, \Distance, \LookingAtEnemy, \NoWallsNear}
+				\Output{\Fitness}
+				
+				
+				\Fitness$\leftarrow$ INITIAL\_FITNESS\_VALUE\;
+				\Fitness$\leftarrow$ \Fitness$+ ($\PlayerHealth$*$ MY\_HEALTH\_MULTIPLIER$)$\;
+				\Fitness$\leftarrow$ \Fitness$- ($\EnemyHealth$*$ ENEMY\_HEALTH\_MULTIPLIER$)$\;
+				\Fitness$\leftarrow$ \Fitness$- ($\Distance$*$ DISTANCE\_MULTIPLIER$)$\;
+				
+				\If{\LookingAtEnemy}{
+					\Fitness$\leftarrow$ \Fitness$+$ LOOKING\_BONUS\;
+				}
+				
+				\If{\NoWallsNear}{
+					\Fitness$\leftarrow$ \Fitness$+$ WALL\_BONUS\;
+				}
+				\label{algoritmo:fitness}
+			\end{algorithm}
+		\end{minipage}%
+	}
+\end{center}
+	\end{column}
+	\begin{column}{5cm}
+		\scalebox{0.6}{
+		\begin{minipage}{1.6\linewidth}
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Parámetro} & \textbf{Valor}\\
+			
+			\hline
+			INITIAL\_FITNESS\_VALUE& 1000\\
+			
+			\hline
+			MY\_HEALTH\_MULTIPLIER& 100\\
+			
+			\hline
+			ENEMY\_HEALTH\_MULTIPLIER& 100\\
+			
+			\hline
+			DISTANCE\_MULTIPLIER& 3\\
+			
+			\hline
+			LOOKING\_BONUS& 200\\
+			
+			\hline
+			WALL\_BONUS& 50\\
+			
+			\hline
+		\end{tabular}
+		\label{algoritmo:valores}
+	\end{center}
+\end{table}
+\end{minipage}	
+}
+	\end{column}
+
+\end{columns}
+
+
+\note{
+	HERE
+}
+
+\end{frame}
+
+
+\subsection{Tipos de adestramento}
+\begin{frame}
+\frametitle{Tipos de adestramento} 
+
+\begin{block}{Contra axente baseado en regras} % NEVER!!!!
+	Pretende simular un aprendizaxe contra xogadores reais.
+\end{block}
+
+\begin{block}{Contra él mesmo}
+	Buscando unha exploración mais extensa de estados que o axente baseado en regras non pode aportar.
+\end{block}
+
+\end{frame}
+
+
+
+\section{Análise de requisitos}
+
+\subsection{Casos de uso}
+\begin{frame}
+\frametitle{Casos de uso}
+\begin{figure}[h]
+	\vspace*{-0.8cm}
+	%\hspace*{0.5cm}
+	\centerline{\includegraphics[width=8.5cm]{../diagramas/casosDeUsoCropped.png}}
+	%\vspace*{-1.1cm}
+	\caption{Diagrama de casos de uso}
+	\label{casos_de_uso}
+	%\vspace*{-1.7cm}
+\end{figure}
+\end{frame}
+
+\subsection{Requisitos}
+\begin{frame}
+\frametitle{Requisitos}
+
+
+\begin{columns}
+	\begin{column}{5cm}
+		
+		
+		\scalebox{0.75}{
+		\begin{minipage}{2.0\linewidth}
+		\begin{itemize}
+			\item \textbf{RF-1/2/3}: Funcionalidades do menú
+			\item \textbf{RF-4/15}: Consola con comandos/resultados
+			\item \textbf{RF-5}: Saír da aplicación
+			\item \textbf{RF-6}: Entrar na escena de combate
+			\item \textbf{RF-7/8/9}: Moverse/Atacar/Defender
+			\item \textbf{RF-10}: Gañar/Perder partida
+			\item \textbf{RF-11}: Esgotar o tempo de combate
+			\item \textbf{RF-12}: Volver ó menú
+			\item \textbf{RF-13}: Visualizar combate entre axentes
+			\item \textbf{RF-14}: Simular múltiples combates
+		\end{itemize}
+		\end{minipage}%
+		}
+	\end{column}
+	\begin{column}{5cm}
+			\scalebox{0.75}{
+			\begin{minipage}{1.5\linewidth}
+		\begin{itemize}
+			\item \textbf{RNF-1}: Rendemento da aplicación
+			\item \textbf{RNF-2}: \textbf{Velocidade das simulacións}
+			\item \textbf{RNF-3}: Extensibilidade do motor
+			\item \textbf{RNF-4}: Facilidade para depurar
+			\item \textbf{RNF-5}: Aplicación autocontida
+			\item \textbf{RNF-6}: Extensibilidade de escenas
+			\item \textbf{RNF-7}: Documentación
+			\item \textbf{RNF-8}: Usabilidade da interface
+		\end{itemize}
+	\end{minipage}%
+}
+	\end{column}
+\end{columns}
+
+
+\end{frame}
+
+\section{Xestión do proxecto}
+
+\subsection{Metodoloxía}
+\begin{frame}
+\frametitle{Metodoloxía}
+
+\begin{block}{Contexto do proxecto}
+\begin{itemize}
+	\item Traballador único
+	\item Duración relativamente corta
+	\item Necesidade de avanzar rapidamente nas etapas iniciais
+\end{itemize}
+\end{block}
+
+\begin{block}{Programación Extrema}
+	\begin{itemize}
+		\item Flexibilidade ante cambios
+		\item Evitase utilizar demasiado tempo en tarefas de xestión
+		\item Rápida iteración
+		\item Reunións entre \textit{sprints}
+	\end{itemize}
+\end{block}
+
+\note{
+
+}
+\end{frame}
+
+\subsection{Planificación temporal}
+\begin{frame}
+\frametitle{Planificación temporal}
+
+\begin{center}
+\begin{tikzpicture}
+	\pie[sum=auto, after number={d}, cloud, radius = 2]{37/Videoxogo, 16/Axente, 3/Obtención de datos}
+\end{tikzpicture}
+\end{center}
+
+\note{
+
+}
+\end{frame}
+
+\section{Arquitectura}
+\subsection{Arquitectura do sistema}
+\begin{frame}
+\frametitle{Arquitectura do sistema}
+
+%quizas explicar o cambio entre arquitextuas, de esto a esto a esto.
+
+\begin{figure}
+	\includegraphics[width=10cm]{../otros/UML/png/final_arq.png}
+	\label{dia:arquitectura_final}
+\end{figure}
+
+\end{frame}
+
+\section{Diseño}
+\subsection{}
+
+
+
+
 
 % ========================= EXEMPLOS =========================  %
+\begin{comment}
 \section{Sección 1} 
 \subsection{Ejemplo de subsección}
 \begin{frame}
@@ -360,6 +595,7 @@ Febrero & 20 & 20:00 \\ \hline
 \caption{Una figura grande}
 \end{figure}
 \end{frame}
+\end{comment}
 
 \end{document}
 

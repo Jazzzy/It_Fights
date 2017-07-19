@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  18 JUL 2017 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  19 JUL 2017 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -671,6 +671,12 @@ emeshadow.sty
 emesplit.sty))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/themes/font/beamerfontthem
 estructurebold.sty))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks43
+\verbatim@line=\toks44
+\verbatim@in@stream=\read2
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
 Package: pgfpages 2011/01/05 ver 0.02
 
@@ -709,7 +715,7 @@ File: babel.def 2017/05/19 3.10 Babel common definitions
 \U@D=\dimen192
 LaTeX Info: Redefining \textlatin on input line 1648.
 )
-\gl@quottoks=\toks43
+\gl@quottoks=\toks45
 \gl@quotdepth=\count164
 Package babel Info: Making . an active character on input line 533.
 Package babel Info: Making " an active character on input line 564.
@@ -718,8 +724,8 @@ Package babel Info: Making > an active character on input line 657.
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks44
-\inpenc@posthook=\toks45
+\inpenc@prehook=\toks46
+\inpenc@posthook=\toks47
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -1092,26 +1098,111 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count168
 \algocf@algoframe=\box60
 \algocf@algobox=\box61
+) (./pgf-pie.sty
+Package: pgf-pie 2011/10/02 v0.2 Some LaTeX macros for pie chart by using PGF/T
+ikz package.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box62
 )
-\pgfpages@box@1=\box62
-\pgfpages@box@2=\box63
- (./presentacion.aux)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen199
+\pgf@nodesepend=\dimen256
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
+\pgffor@stack=\toks48
+\pgffor@toks=\toks49
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count169
+\pgfplotmarksize=\dimen259
+)
+\tikz@lastx=\dimen260
+\tikz@lasty=\dimen261
+\tikz@lastxsaved=\dimen262
+\tikz@lastysaved=\dimen263
+\tikzleveldistance=\dimen264
+\tikzsiblingdistance=\dimen265
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count170
+\tikznumberofchildren=\count171
+\tikznumberofcurrentchild=\count172
+\tikz@fig@count=\count173
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count174
+\pgfmatrixcurrentcolumn=\count175
+\pgf@matrix@numberofcolumns=\count176
+)
+\tikz@expandcount=\count177
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+\pgfpie@angleEnd=\skip78
+\c@pgfpie@explodeLength=\count178
+\c@pgfpie@colorLength=\count179
+\c@pgfpie@sliceLength=\count180
+)
+\pgfpages@box@1=\box67
+\pgfpages@box@2=\box68
+
+(./presentacion.aux)
 \openout1 = `presentacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1149,17 +1240,17 @@ LaTeX Font Info:    ... okay on input line 18.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count169
-\scratchdimen=\dimen199
-\scratchbox=\box64
-\nofMPsegments=\count170
-\nofMParguments=\count171
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count172
-\MPscratchDim=\dimen256
-\MPnumerator=\count173
-\makeMPintoPDFobject=\count174
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count181
+\scratchdimen=\dimen266
+\scratchbox=\box69
+\nofMPsegments=\count182
+\nofMParguments=\count183
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count184
+\MPscratchDim=\dimen267
+\MPnumerator=\count185
+\makeMPintoPDFobject=\count186
+\everyMPtoPDFconversion=\toks51
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1178,8 +1269,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box65
-Package hyperref Info: Link coloring OFF on input line 18.
+\AtBeginShipoutBox=\box70
+Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1187,68 +1278,68 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count175
+\c@section@level=\count187
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./presentacion.out) (./presentacion.out)
 \@outlinefile=\write5
 \openout5 = `presentacion.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 18.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 18.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 18.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 18.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 18.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 18.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 18.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 18.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 18.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 18.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 18.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 18.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-8.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 2
+1.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-18.
+21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 18.
+ut line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1274,20 +1365,20 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 18.
+LaTeX Info: Redefining \includegraphics on input line 21.
 
 (./presentacion.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 22.
+(hyperref)                setting the option has no effect on input line 25.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <4> not available
-(Font)              size <5> substituted on input line 29.
+(Font)              size <5> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 29.
+(Font)              size <5> substituted on input line 32.
 
 
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
@@ -1295,10 +1386,6 @@ Overfull \hbox (25.43002pt too wide) has occurred while \output is active
  []
 
 (./presentacion.toc)
-Overfull \vbox (79.65111pt too high) detected at line 34
- []
-
-
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1310,13 +1397,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation1})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.34 \end{frame}
+l.37 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.1}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.34 \end{frame}
+l.37 \end{frame}
                 
 
 ]
@@ -1331,13 +1418,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation2})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.66 \end{frame}
+l.69 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.2}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.66 \end{frame}
+l.69 \end{frame}
                 
 
 ]
@@ -1352,24 +1439,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation3})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.3}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 91.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 94.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 91.
+LaTeX Font Info:    No file OMScmss.fd. on input line 94.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 91.
+(Font)              for symbol `textbullet' on input line 94.
 
 
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
@@ -1383,13 +1470,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation4})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.4}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 
 
 ]
@@ -1404,13 +1491,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation5})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.5}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 
 
 ]
@@ -1425,13 +1512,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation6})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.6}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 
 
 ]
@@ -1446,13 +1533,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation7})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.7}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 
 
 ]
@@ -1467,13 +1554,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation8})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.8}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 
 
 ]
@@ -1488,13 +1575,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation9})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{page.9}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.91 \end{frame}
+l.94 \end{frame}
                 
 
 ]
@@ -1509,13 +1596,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation10}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.118 \end{frame}
+l.121 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.10}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.118 \end{frame}
+l.121 \end{frame}
                  
 
 ]
@@ -1530,22 +1617,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation11}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.132 \end{frame}
+l.135 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.11}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.132 \end{frame}
+l.135 \end{frame}
                  
 
 ]
-<../otros/otrasCapturas/block.png, id=627, 523.9575pt x 483.8075pt>
+<../otros/otrasCapturas/block.png, id=504, 523.9575pt x 483.8075pt>
 File: ../otros/otrasCapturas/block.png Graphic file (type png)
 
 <use ../otros/otrasCapturas/block.png>
-Package pdftex.def Info: ../otros/otrasCapturas/block.png used on input line 14
-7.
+Package pdftex.def Info: ../otros/otrasCapturas/block.png used on input line 15
+0.
 (pdftex.def)             Requested size: 157.18846pt x 145.14337pt.
 
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
@@ -1559,28 +1646,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation12}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.147 \end{frame}
+l.150 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.12}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.147 \end{frame}
+l.150 \end{frame}
                  
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 216.
+LaTeX Font Info:    Try loading font information for U+msa on input line 220.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 216.
+LaTeX Font Info:    Try loading font information for U+msb on input line 220.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 216.
+line 220.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1597,13 +1684,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation13}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.216 \end{frame}
+l.220 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.13}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.216 \end{frame}
+l.220 \end{frame}
                  
 
  <../otros/otrasCapturas/block.png>]
@@ -1618,13 +1705,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation14}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.225 \end{frame}
+l.307 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.14}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.225 \end{frame}
+l.307 \end{frame}
                  
 
 ]
@@ -1639,16 +1726,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation15}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.237 \end{frame}
+l.322 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.15}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.237 \end{frame}
+l.322 \end{frame}
                  
 
 ]
+<../diagramas/casosDeUsoCropped.png, id=681, 755.82375pt x 679.03688pt>
+File: ../diagramas/casosDeUsoCropped.png Graphic file (type png)
+
+<use ../diagramas/casosDeUsoCropped.png>
+Package pdftex.def Info: ../diagramas/casosDeUsoCropped.png used on input line 
+340.
+(pdftex.def)             Requested size: 241.84842pt x 217.27551pt.
+
+Overfull \vbox (54.95143pt too high) detected at line 340
+ []
+
+
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1660,16 +1759,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation16}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.340 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.16}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.340 \end{frame}
                  
 
 ]
+Overfull \hbox (73.86938pt too wide) in paragraph at lines 387--387
+[][]  
+ []
+
+
+Overfull \hbox (20.52046pt too wide) in paragraph at lines 387--387
+[][]  
+ []
+
+
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1681,16 +1790,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation17}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.387 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.17}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.387 \end{frame}
                  
 
-]
+ <../diagramas/casosDeUsoCropped.png>]
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1702,16 +1811,40 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation18}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.415 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.18}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.415 \end{frame}
                  
 
 ]
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1723,16 +1856,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation19}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.430 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.19}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.247 \end{frame}
+l.430 \end{frame}
                  
 
 ]
+<../otros/UML/png/final_arq.png, id=845, 1007.765pt x 574.145pt>
+File: ../otros/UML/png/final_arq.png Graphic file (type png)
+
+<use ../otros/UML/png/final_arq.png>
+Package pdftex.def Info: ../otros/UML/png/final_arq.png used on input line 442.
+
+(pdftex.def)             Requested size: 284.52756pt x 162.0999pt.
+
 Overfull \hbox (25.43002pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1744,409 +1885,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation20}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.258 \end{frame}
+l.442 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.20}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.258 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[22
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation21}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.270 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.21}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.270 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[23
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation22}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.279 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.22}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.279 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[24
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation23}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.279 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.23}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.279 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[25
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation24}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.279 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.24}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.279 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[26
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation25}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.298 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.25}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.298 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[27
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation26}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.321 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.26}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.321 \end{frame}
-                 
-
-]
-Package epstopdf Info: Source file: <../figuras/logo_usc.eps>
-(epstopdf)                    date: 2010-11-26 16:38:18
-(epstopdf)                    size: 91607 bytes
-(epstopdf)             Output file: <../figuras/logo_usc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 18:32:16
-(epstopdf)                    size: 22200 bytes
-(epstopdf)             Command: <repstopdf --outfile=../figuras/logo_usc-eps-co
-nverted-to.pdf ../figuras/logo_usc.eps>
-(epstopdf)             \includegraphics on input line 330.
-Package epstopdf Info: Output file is already uptodate.
-
-<../figuras/logo_usc-eps-converted-to.pdf, id=1230, 589.20125pt x 382.42876pt>
-File: ../figuras/logo_usc-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ../figuras/logo_usc-eps-converted-to.pdf>
-Package pdftex.def Info: ../figuras/logo_usc-eps-converted-to.pdf used on input
- line 330.
-(pdftex.def)             Requested size: 176.76173pt x 114.7295pt.
-
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[28
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation27}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.330 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.27}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.330 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[29
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation28}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.28}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 
-
- <../figuras/logo_usc-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <../figuras/logo_usc.eps>
-(epstopdf)                    date: 2010-11-26 16:38:18
-(epstopdf)                    size: 91607 bytes
-(epstopdf)             Output file: <../figuras/logo_usc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 18:32:16
-(epstopdf)                    size: 22200 bytes
-(epstopdf)             Command: <repstopdf --outfile=../figuras/logo_usc-eps-co
-nverted-to.pdf ../figuras/logo_usc.eps>
-(epstopdf)             \includegraphics on input line 353.
-Package epstopdf Info: Output file is already uptodate.
-File: ../figuras/logo_usc-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ../figuras/logo_usc-eps-converted-to.pdf>
-Package pdftex.def Info: ../figuras/logo_usc-eps-converted-to.pdf used on input
- line 353.
-(pdftex.def)             Requested size: 29.46178pt x 19.12254pt.
-
-Overfull \hbox (29.46178pt too wide) in paragraph at lines 353--353
-[][][]  
- []
-
-
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[30
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation29}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.29}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[31
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation30}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.30}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 
-
-]
-Package epstopdf Info: Source file: <../figuras/logo_usc.eps>
-(epstopdf)                    date: 2010-11-26 16:38:18
-(epstopdf)                    size: 91607 bytes
-(epstopdf)             Output file: <../figuras/logo_usc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 18:32:16
-(epstopdf)                    size: 22200 bytes
-(epstopdf)             Command: <repstopdf --outfile=../figuras/logo_usc-eps-co
-nverted-to.pdf ../figuras/logo_usc.eps>
-(epstopdf)             \includegraphics on input line 353.
-Package epstopdf Info: Output file is already uptodate.
-File: ../figuras/logo_usc-eps-converted-to.pdf Graphic file (type pdf)
- <use ../figuras/logo_usc-eps-converted-to.pdf>
-Package pdftex.def Info: ../figuras/logo_usc-eps-converted-to.pdf used on input
- line 353.
-(pdftex.def)             Requested size: 58.92357pt x 38.2451pt.
-
-Overfull \hbox (58.92357pt too wide) in paragraph at lines 353--353
-[][][]  
- []
-
-
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[32
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation31}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.31}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 
-
-]
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[33
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation32}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.32}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 
-
-]
-Package epstopdf Info: Source file: <../figuras/logo_usc.eps>
-(epstopdf)                    date: 2010-11-26 16:38:18
-(epstopdf)                    size: 91607 bytes
-(epstopdf)             Output file: <../figuras/logo_usc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 18:32:16
-(epstopdf)                    size: 22200 bytes
-(epstopdf)             Command: <repstopdf --outfile=../figuras/logo_usc-eps-co
-nverted-to.pdf ../figuras/logo_usc.eps>
-(epstopdf)             \includegraphics on input line 353.
-Package epstopdf Info: Output file is already uptodate.
-File: ../figuras/logo_usc-eps-converted-to.pdf Graphic file (type pdf)
- <use ../figuras/logo_usc-eps-converted-to.pdf>
-Package pdftex.def Info: ../figuras/logo_usc-eps-converted-to.pdf used on input
- line 353.
-(pdftex.def)             Requested size: 88.37637pt x 57.36183pt.
-
-Overfull \hbox (88.37637pt too wide) in paragraph at lines 353--353
-[][][]  
- []
-
-
-Overfull \hbox (25.43002pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[34
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation33}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.33}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.353 \end{frame}
-                 
-
-]
-Package epstopdf Info: Source file: <../figuras/figura01.eps>
-(epstopdf)                    date: 2010-11-26 18:35:19
-(epstopdf)                    size: 209408 bytes
-(epstopdf)             Output file: <../figuras/figura01-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 18:32:17
-(epstopdf)                    size: 26808 bytes
-(epstopdf)             Command: <repstopdf --outfile=../figuras/figura01-eps-co
-nverted-to.pdf ../figuras/figura01.eps>
-(epstopdf)             \includegraphics on input line 362.
-Package epstopdf Info: Output file is already uptodate.
-
-<../figuras/figura01-eps-converted-to.pdf, id=1523, 1060.96375pt x 513.92pt>
-File: ../figuras/figura01-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ../figuras/figura01-eps-converted-to.pdf>
-Package pdftex.def Info: ../figuras/figura01-eps-converted-to.pdf used on input
- line 362.
-(pdftex.def)             Requested size: 318.29158pt x 154.17719pt.
-
-Overfull \hbox (11.00171pt too wide) in paragraph at lines 362--362
- [] 
- []
-
-[35
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation34}
-) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.362 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.34}) has been already used, duplicate ignored
-
-\pgfpages@shipoutshipoutbox ...physicalpagesizes }
-                                                  \endgroup 
-l.362 \end{frame}
+l.442 \end{frame}
                  
 
 ]
@@ -2159,31 +1904,30 @@ l.362 \end{frame}
 \tf@snm=\write8
 \openout8 = `presentacion.snm'.
 
- [36
+ [22
 
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation35}
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation21}
 ) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.364 \end{document}
+l.594 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
- (name{page.35}) has been already used, duplicate ignored
+ (name{page.21}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.364 \end{document}
+l.594 \end{document}
                     
 
- <../figuras/figura01-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
-
-(./presentacion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
+ <../otros/UML/png/final_arq.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 594.
+ (./presentacion.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: 0C43BC2619E03CB418C1888DCBD7E34D;1237.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2198,13 +1942,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19849 strings out of 492995
- 373468 string characters out of 6132704
- 525313 words of memory out of 5000000
- 22848 multiletter control sequences out of 15000+600000
- 12995 words of font info for 47 fonts, out of 8000000 for 9000
+ 22971 strings out of 492995
+ 445794 string characters out of 6132704
+ 592775 words of memory out of 5000000
+ 25935 multiletter control sequences out of 15000+600000
+ 13710 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,22n,63p,808b,3803s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,22n,63p,808b,6333s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmss10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
@@ -2213,12 +1957,13 @@ m/cmss12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 mss9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 sbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ssi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb>
-Output written on presentacion.pdf (35 pages, 275984 bytes).
+Output written on presentacion.pdf (21 pages, 288533 bytes).
 PDF statistics:
- 1613 PDF objects out of 1728 (max. 8388607)
- 1458 compressed objects within 15 object streams
- 92 named destinations out of 1000 (max. 500000)
- 278 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 940 PDF objects out of 1000 (max. 8388607)
+ 833 compressed objects within 9 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
