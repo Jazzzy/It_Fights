@@ -89,7 +89,7 @@ Capaz de percibir e actuar sobre o \textbf{entorno competitivo} do videoxogo med
 \end{itemize}
 \note{
 \begin{footnotesize}
-	Os objetivos to proyecto son os siguientes:
+	Os objetivos do proyecto foron os siguientes: (\textbf{\textit{CLICK}})
 	\begin{itemize}
 		\item Implementación do videoxogo: Xa que necesitaremos unha \textbf{plataforma que nos permita que o axente e o xogador interactúen} seguindo unha serie de regras comunes para competir entre eles.
 		\item Necesitarase ademáis \textbf{implementar o axente capaz} de desenvolverse correctamente durante a competición.
@@ -141,8 +141,8 @@ Primeira implementación realizada con \textbf{Unity3D}, estándar de facto para
 	Imposibilidade de escalar o tempo sen romper o funcionamento do videoxogo.
 \end{alertblock}
 \note{
-	Para a primeira implementación destas mecánicas realizouse un prototipo inicial o antes posible no coñecido motor \textbf{Unity3D}, que é considerado \textbf{estándar de facto} para proxectos fora de grandes estudios.\\
-	Gracias a estratexia realizada para mitigar o \textbf{riesgo 9} fíxose que este se materializara nunha etapa inicial do proyecto evitando unha situación imposible de gestionar posteriormente.\\
+	Para a primeira implementación destas mecánicas realizouse un prototipo inicial no coñecido motor \textbf{Unity3D}, que é considerado \textbf{estándar de facto} para proxectos fora de grandes estudios.\\
+	Gracias a estratexia realizada para mitigar un \textbf{riesgo que se mostrará en apartados posteriores} fíxose que este se materializara nunha etapa inicial do proyecto evitando unha situación imposible de gestionar posteriormente.\\
 	\textbf{Ensinar vídeo}: Veremos ahora un vídeo que mostra algúns destes problemas.\\
 	\textbf{Descubriuse} que facer pasar o tempo máis rápido dentro fo videoxogo, pese a estár soportado polo motor, rompe o funcionamento de moitos elementos necesarios como as caixas de colisións que impiden que un personaxe se saia do mapa ou a funcionalidade que xestiona os ataques do personaxe. Nestas circunstancias é imposible realizar un entrenamento acelerado válido para o axente polo que a aplicación non sería útil.
 }
@@ -230,12 +230,12 @@ Implementación de un motor desde cero en C++
 
 
 \note{
-	Pasarase ahora a explicar a grandes rasgos o funcionamento do algoritmo do axente. O mesmo é similar a unha implementación moi sencilla de \textit{Q-Learning}.\\
+	Pasarase ahora a explicar a grandes rasgos o funcionamento do algoritmo. O mesmo é similar a unha implementación simplificada de \textit{Q-Learning}.\\
 	Hasta a línea 8 da figura o que se fai e \textbf{obter o estado actual do combate} e calcular a \textbf{diferencia de utilidade} ou \textit{fitness} entre este e o anterior. Logo actualizarase a base de conocimiento do axente introducindo esta diferencia de fitness asociada a acción tomada para o último estado.\\
 	\bigskip
 	\textbf{A partir da liña 9} e hasta o final escollerase que acción se vai a levar a cabo cunha probabilidade proporcional ó fitnes que se espera de cada unha delas. Se o estado non se coñece escollerase unha acción aleatoria.\\
 	\bigskip
-	Ademáis, ainda que o estado se visitara, se un \textbf{valor aleatorio é menor} que certo \textbf{\textit{epsilon}} escollerase unha acción aleatoria de todas formas, facendo así que ainda que se coñeza ben o estado actual se permita explorar algunha das accións consideradas non optimas con máis frecuencia.
+	Ademáis, ainda que o estado se visitara, se un \textbf{valor aleatorio é menor} que certo \textbf{\textit{epsilon}} escollerase unha acción aleatoria de todas formas, facendo así que ainda que se coñeza ben o estado actual se permita explorar algunha das accións consideradas non optimas con máis frec.
 }
 
 \end{frame}
@@ -322,9 +322,9 @@ Implementación de un motor desde cero en C++
 
 
 \note{
-	Para obter o \textbf{fitness} simplemente se considerarán os valores de certas variables que representan o estado do combate. A saude do personaxe aumenta de forma \textbf{directamente proporcional} ó fitness mentres que a saude do inimigo e a distancia o fan de forma \textbf{inversamente proporcional}.\\
+	Para obter o \textbf{fitness} simplemente se considerarán os valores de certas variables que representan o estado do combate. O fitness aumenta de forma \textbf{directamente proporcional} á saude do personaxe e de forma \textbf{inversamente proporcional} á saude do inimigo e a distancia ó mismo.\\
 	\bigskip
-	Ademáis proporcionaránse \textbf{dous bonus} por estár \textbf{mirando cara o enemigo} e por \textbf{evitar posicionarse ó lado dos muros} da escena.\\
+	Ademáis proporcionaránse \textbf{dous bonus} por estár \textbf{mirando cara o contrincante} e por \textbf{evitar posicionarse ó lado dos muros} da escena.\\
 	\bigskip
 	Os valores usados para modificar o peso de cada unha das variables que se ven no cadro foron obtidos grazas a \textbf{coñecemento experto sobre o contexto do combate}. Céntranse en buscar un \textbf{comportamento agresivo e eficaz} por parte do personaxe que dea lugar a \textbf{pelexas dinámicas e entretenidas} para un xogador real.
 }
@@ -420,7 +420,7 @@ Implementación de un motor desde cero en C++
 	\bigskip
 	O primeiro grupo de requisitos funcionales relacionarase con moverse e seleccionar opcióis do menú e o siguiente cas funcionalidades da consola. Desde o requisito 5 hasta o 12 defínense funcionalidades relacionadas co combate e finalmente os dous últimos céntranse específicamente nos combates entre axentes.\\
 	\bigskip
-	Dentro do conxunto de requisitos non funcionales vense algunhos relacionados co \textbf{rendimiento da aplicación, a documentación ou usabilidade}. Destácase o \textbf{requisito non funcional 2} xa que é o que define formalmente a necesidade de poder simular peleas entre axentes de forma acelerada, o cual, como se viu anteriormente, tuvo un peso importante no proyecto.
+	Dentro do conxunto de requisitos non funcionales vense algunhos relacionados co \textbf{rendimiento da aplicación, a documentación ou usabilidade}. Destácase o \textbf{requisito non funcional 2} xa que é o que define formalmente a necesidade de poder simular peleas entre axentes de forma acelerada, o cual, tuvo un peso importante no proyecto.
 }
 \end{frame}
 
@@ -486,7 +486,7 @@ Implementación de un motor desde cero en C++
 \end{center}
 
 \note{
-	A planificación temporal final dividese tal e como se mostra nesta figura, pero os grupos de tareas que se levaron a cabo durante todo o proyecto como \textbf{documentación e reunións non están presentes}.\\
+	A planificación temporal final dividese tal e como se mostra nesta figura, pero os grupos de tareas que se levaron a cabo durante todo o proyecto como \textbf{documentación e reunións non están presentes} na misma.\\
 	\bigskip
 	Vemos como o desarrollo do prototipo en Unity e da aplicación final teñen un peso muy importante na planificación con 37 días, o que deixóu unhos 16 días de traballo para a creación e entrenamiento do axente. Finalmente dedicáronse 3 días a obter datos sobre o rendimiento do mismo.
 }
@@ -556,7 +556,6 @@ O que resulta nun custo final de \textbf{4672.14 \euro}
 
 
 \section{Deseño}
-% Agregar  o diagrama de clases do "GAME simplificado"
 \begin{frame}
 \frametitle{Diagrama de clases xeral}
 \begin{figure}
@@ -568,7 +567,9 @@ O que resulta nun custo final de \textbf{4672.14 \euro}
 \note{
 	No que respecta a diseño e implementación, para non entrar demasiado en materia, mostrase solamente o diagrama que representa a \textbf{clase principal de cada subsistema} e a clase \textit{\textbf{xogo}} que os contén e itera sobre eles.\\
 	\bigskip
-	Ademáis podese ver como se conta ca clase \textit{\textbf{scene}}, que representa calquera \textbf{escena} na que pode estár o videoxogo como un menú ou o combate. Esta clase contará cunha serie de \textit{\textbf{GameObjects}} que poderán ser calquera \textbf{entidade dinámica} no contexto do videoxogo como un personaje, unha barra de vída ou unha opción do menú. Esto permite muita \textbf{flexibilidade á hora de implementar} cada unha de estas entidades.
+	Ademáis podese ver como se conta ca clase \textit{\textbf{scene}}, que representa calquera \textbf{escena} na que pode estár o videoxogo como un menú ou o combate. Esta clase contará cunha serie de \textit{\textbf{GameObjects}} que poderán ser calquera \textbf{entidade dinámica} no contexto do videoxogo como un personaje, unha barra de vída ou unha opción do menú. Esto permite muita \textbf{flexibilidade á hora de implementar} cada unha de estas entidades.\\
+	\bigskip
+	\textbf{Patróns}: Decorator, Pub-Sub, Singleton e Strategy.
 }
 \end{frame}
 
@@ -603,7 +604,7 @@ O que resulta nun custo final de \textbf{4672.14 \euro}
 	\bigskip
 	Dado que para calcular o porcentaxe de victorias se realizaron \textbf{100 combates contra o personaxe basado en reglas}, obsérvase como o axente que entrenou contra él representado pola línea azul é significativamente mellor que o outro.\\
 	\bigskip
-	Tamén é interesante como o axente \textbf{2 gaña con moi poucas simulacións} debido a que está \textbf{aprendendo o doble de rápido} xa que os dous personajes están aprendendo á vez e combinando a información aprendida.\\
+	Tamén é interesante como o axente \textbf{2 gaña con moi poucas simulacións} debido a que está \textbf{entrenando o doble de rápido} xa que os dous personajes están aprendendo á vez e combinando a información obtida.\\
 	\bigskip
 	Finalmente hay que destacar como unha vez que se superan uns \textbf{10.000} combates se sufre de \textbf{\textit{overfitting} ou sobreaxuste}. Neste caso, pese a que o fitness dos estados siga aumentando co entrenamento, o mismo non ten por que estár \textbf{relacionado linealmente coa probabilidade de obter unha victoria}.
 \end{footnotesize}
@@ -636,7 +637,7 @@ Combinación de ámbolos dous métodos de adestramento.
 	Aporta unha exploración de estados superior.
 \end{block}
 \note{
-	Finalmente o axente escollido intenta \textbf{combinar o mellor dos dóus métodos de entrenamento}, empezando a aprender contra o axente basado en reglas para \textbf{aprender rápidamente a gañar partidas} e seguindo con combates contra él mismo para ter \textbf{acceso a unha grán cantidade de estados}.\\
+	Finalmente o axente escollido intenta \textbf{combinar o mellor dos dóus métodos de entrenamento}, empezando a pelexar contra o axente basado en reglas para \textbf{aprender rápidamente a gañar partidas} e seguindo con combates contra él mismo para ter \textbf{acceso a unha grán cantidade de estados}.\\
 	\bigskip
 	Ahora mostrarase o comportamiento do axente en tempo real nun \textbf{combate contra un xogador humano}, que seréi eu. E despois describiranse dous comportamentos interesantes que aprendeu na etapa de entrenamento \textbf{ca axuda dun vídeo}.
 }
@@ -702,154 +703,6 @@ Como posibles ampliacións \textbf{a mais sinxela} e util seguramente sería mel
 \titlepage
 \note{Esto é todo pola miña parte, póñome a disposición do tribunal para intentar responder ás preguntas que poidan ter sobre o proyecto}
 \end{frame}
-
-
-% ========================= EXEMPLOS =========================  %
-\begin{comment}
-\section{Sección 1} 
-\subsection{Ejemplo de subsección}
-\begin{frame}
-\frametitle{Título} 
-Cada pantalla tiene su título.
-\end{frame}
-
-\subsection{Ejemplo de lista}
-
-\begin{frame}
-\frametitle{Lista no numerada}
-\begin{itemize}
-\item una  
-\item dos 
-\item tres 
-\item cuatro
-\end{itemize} 
-\end{frame}
-
-\begin{frame}
-\frametitle{Lista con pausa}
-\begin{itemize}
-\item número uno \pause 
-\item número dos \pause 
-\item número tres \pause 
-\item número cuatro
-\end{itemize} 
-\end{frame}
-
-\subsection{Otro ejemplo de lista}
-\begin{frame}
-\frametitle{Lista numerada}
-\begin{enumerate}
-\item una  
-\item dos 
-\item tres 
-\item cuatro
-\end{enumerate}
-\end{frame}
-
-\section{Sección 2} 
-\subsection{Tablas}
-
-\begin{frame}
-\frametitle{Tablas}
-\begin{tabular}{|c|l|r|} \hline
-\textbf{Centrado} & \textbf{Izquierda} & \textbf{Derecha} \\ \hline
-AAAA  & 1000 & aaaa \\ \hline
-BB    & 20   & bb \\ \hline
-\end{tabular}
-\end{frame}
-
-\begin{frame}
-\frametitle{Tabla con pausa}
-\begin{tabular}{c c c}
-A & B & C \\ \pause 
-1 & 2 & 3 \\  \pause 
-A & B & C \\ 
-\end{tabular} 
-\end{frame}
-
-\section{Sección 3}
-\subsection{Bloques}
-
-\begin{frame}
-\frametitle{Bloques}
-
-\begin{block}{Bloque normal}
-Texto del bloque normal
-\end{block}
-
-\begin{exampleblock}{Bloque de ejemplo}
-Texto del bloque ejemplo
-\end{exampleblock}
-
-\begin{alertblock}{Bloque de alerta}
-Texto del bloque alerta
-\end{alertblock}
-\end{frame}
-
-\section{Sección 4}
-\subsection{Pantalla dividida}
-
-\begin{frame}
-\frametitle{Pantalla dividida}
-\begin{columns}
-\begin{column}{5cm}
-\begin{itemize}
-\item una lista
-\item de puntos 
-\item mas una tabla 
-\end{itemize}
-\end{column}
-\begin{column}{5cm}
-\begin{tabular}{|c|c|c|} \hline
-\textbf{Mes} & \textbf{Día} & \textbf{Hora} \\ \hline
-Enero   & 10 & 15:30 \\ \hline
-Febrero & 20 & 20:00 \\ \hline
-\end{tabular}
-\end{column}
-\end{columns}
-\end{frame}
-
-\subsection{Figuras} 
-\begin{frame}
-\frametitle{Incluir figuras}
-\begin{figure}
-\includegraphics[scale=0.3]{../figuras/logo_usc.eps} 
-\caption{Logo de la USC}
-\end{figure}
-\end{frame}
-
-\subsection{Listas con figuras y pausas} 
-
-\begin{frame}
-\frametitle{Listas con figuras y pausas}
-\begin{columns}
-\begin{column}{4cm}
-\begin{itemize}
-\item<1-> Una
-\item<3-> Dos
-\item<5-> Tres
-\end{itemize}
-\vspace{3cm} 
-\end{column}
-\begin{column}{4cm}
-\begin{overprint}
-\includegraphics<2>[scale=0.05]{../figuras/logo_usc.eps}
-\includegraphics<4>[scale=0.10]{../figuras/logo_usc.eps}
-\includegraphics<6>[scale=0.15]{../figuras/logo_usc.eps}
-\end{overprint}
-\end{column}
-\end{columns}
-\end{frame}
-
-\subsection{Cuando se necesita más espacio} 
-\begin{frame}[plain]
-\frametitle{Pantalla plana con sólo una figura}
-\begin{figure}
-\includegraphics[scale=0.3]{../figuras/figura01.eps} 
-\caption{Una figura grande}
-\end{figure}
-\end{frame}
-\end{comment}
 
 \end{document}
 

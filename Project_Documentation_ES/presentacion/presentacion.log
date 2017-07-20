@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  20 JUL 2017 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  20 JUL 2017 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1434,10 +1434,13 @@ l.102 \end{frame}
                  
 
 ]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 102.
+
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 102
 .
 LaTeX Font Info:    No file OMScmss.fd. on input line 102.
-
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
@@ -1612,16 +1615,7 @@ ame{page.12}) has been already used, duplicate ignored
 l.241 \end{frame}
                  
 
- <../otros/otrasCapturas/block.png>]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 241.
-
-
-Overfull \vbox (9.64006pt too high) detected at line 241
- []
-
-[14
+ <../otros/otrasCapturas/block.png>] [14
 
 pdfTeX warning (ext4): destination with the same identifier (name{Navigation13}
 ) has been already used, duplicate ignored
@@ -1873,10 +1867,10 @@ File: ./diagramaDeClases_gamelogic_simple.png Graphic file (type png)
 
 <use ./diagramaDeClases_gamelogic_simple.png>
 Package pdftex.def Info: ./diagramaDeClases_gamelogic_simple.png used on input 
-line 573.
+line 574.
 (pdftex.def)             Requested size: 341.43306pt x 204.91643pt.
 
-Overfull \hbox (22.35016pt too wide) in paragraph at lines 573--573
+Overfull \hbox (22.35016pt too wide) in paragraph at lines 574--574
  |  [][][][] 
  []
 
@@ -1887,13 +1881,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation24}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.573 \end{frame}
+l.574 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.24}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.573 \end{frame}
+l.574 \end{frame}
                  
 
  <../otros/UML/png/final_arq.png>] [26
@@ -1903,13 +1897,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation25}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.591 \end{frame}
+l.592 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.25}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.591 \end{frame}
+l.592 \end{frame}
                  
 
  <./diagramaDeClases_gamelogic_simple.png>]
@@ -1917,7 +1911,7 @@ l.591 \end{frame}
 File: ./graficos/vitorias.png Graphic file (type png)
 
 <use ./graficos/vitorias.png>
-Package pdftex.def Info: ./graficos/vitorias.png used on input line 611.
+Package pdftex.def Info: ./graficos/vitorias.png used on input line 612.
 (pdftex.def)             Requested size: 312.9803pt x 157.40431pt.
  [27
 
@@ -1926,20 +1920,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation26}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.611 \end{frame}
+l.612 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.26}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.611 \end{frame}
+l.612 \end{frame}
                  
 
 ] <./graficos/estados.png, id=943, 853.1875pt x 416.55624pt>
 File: ./graficos/estados.png Graphic file (type png)
 
 <use ./graficos/estados.png>
-Package pdftex.def Info: ./graficos/estados.png used on input line 625.
+Package pdftex.def Info: ./graficos/estados.png used on input line 626.
 (pdftex.def)             Requested size: 312.9803pt x 152.80768pt.
  [28
 
@@ -1948,13 +1942,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation27}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.625 \end{frame}
+l.626 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.27}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.625 \end{frame}
+l.626 \end{frame}
                  
 
  <./graficos/vitorias.png (PNG copy)>] [29
@@ -1964,13 +1958,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation28}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.643 \end{frame}
+l.644 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.28}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.643 \end{frame}
+l.644 \end{frame}
                  
 
  <./graficos/estados.png (PNG copy)>] [30
@@ -1980,13 +1974,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation29}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.678 \end{frame}
+l.679 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.29}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.678 \end{frame}
+l.679 \end{frame}
                  
 
 ] [31
@@ -1996,13 +1990,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation30}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.698 \end{frame}
+l.699 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.30}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.698 \end{frame}
+l.699 \end{frame}
                  
 
 ] [32
@@ -2012,13 +2006,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation31}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.704 \end{frame}
+l.705 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.31}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.704 \end{frame}
+l.705 \end{frame}
                  
 
 ]
@@ -2038,21 +2032,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation32}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.854 \end{document}
+l.707 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{page.32}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.854 \end{document}
+l.707 \end{document}
                     
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 854.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 854.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 707.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 707.
  (./presentacion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 854.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 854.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 707.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 707.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2090,7 +2084,7 @@ y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on presentacion.pdf (32 pages, 597441 bytes).
+Output written on presentacion.pdf (32 pages, 597922 bytes).
 PDF statistics:
  1177 PDF objects out of 1200 (max. 8388607)
  1029 compressed objects within 11 object streams
