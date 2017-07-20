@@ -14,6 +14,8 @@
 %\usepackage[latin1]{inputenc}
 \usepackage[spanish,linesnumbered,lined,boxed,commentsnumbered,noend]{algorithm2e}
 \usepackage{pgf-pie}
+\usepackage{eurosym}
+
 
 \setcounter{tocdepth}{1}% Allow only \chapter in ToC
 \setbeameroption{show notes on second screen}
@@ -35,7 +37,7 @@ Universidade de Santiago de Compostela}
 
 \begin{frame}
 \frametitle{Táboa de contidos}\tableofcontents
-\note{Durante esta presentación seguiremos unha estructura similar á memoria, centrándonos máis en alguns aspectos concretos do proxecto que expliquen en que consistiu o traballo realizado.}
+\note{Durante esta presentación seguiremos unha estructura similar á memoria, centrándonos máis en algunhos aspectos concretos do proyecto que expliquen en que consistiu o traballo realizado.}
 \end{frame} 
 
 
@@ -59,12 +61,13 @@ Capaz de percibir e actuar sobre o \textbf{entorno competitivo} do videoxogo med
 \end{block}
 \note{
 	
-	De forma xeral, búscase a creación dun videoxogo que requira un inimigo con comportamento complexo. O axente que representará o inimigo necesita ser un competidor capaz, para o que se realizou unha etapa de entrenamento na que optivo a información que necesitaba.\\
-	
-	\textbf{Loita 1 contra 1} significa que soamente dous perxonaxes competirán entre eles contando ambos coas mesmas capacidades, accións posibles e atributos. \textbf{Top-Down} refírese ó plano picado utilizado para visualizar o combate. Por outra parte que sea en \textbf{dúas dimensións} implica que todo o contido do videoxogo son imaxen planas debuxadas unha a unha, sen que existan modelos en tres dimensións.\\
-	
-	\textbf{Un axente} é aquilo capaz de percibir o entorno mediante \textbf{sensores} e actuar sobre o mesmo en consecuencia mediante \textbf{actuadores}, ambos son proporcionados pola súa interface co videoxogo. Ademáis atoparase nun entorno competitivo o que implica que buscará maximizar o seu \textbf{rendemento} mentres se minimiza o do contrincante.
-	
+	\begin{footnotesize}
+	De forma general, búscase a creación dun videoxogo que requira un enemigo con comportamento complexo. O axente que representará o enemigo necesita ser un competidor capaz, para o que se realizou unha etapa de entrenamiento na que obtivo a información que necesitaba.\\
+	\bigskip
+	Para definir o videojuego, \textbf{Loita 1 contra 1} significa que solamente dous perxonajes competirán entre eles contando ambos cas mismas capacidades, accióis posibles e atributos. \textbf{Top-Down} refierese ó plano picado utilizado para visualizar o combate. Por outra parte que sea en \textbf{dúas dimensióis} implica que todo o contido do videoxogo son imagenes planas dibujadas unha a unha, sin que existan modelos en tres dimensiois.\\
+	\bigskip
+	\textbf{Un axente} é aquilo capaz de percibir o entorno mediante \textbf{sensores} e actuar sobre o mismo en consecuencia mediante \textbf{actuadores}, ambos son proporcionados pola súa interface co videoxogo. Ademáis atoparase nun entorno competitivo o que implica que buscará maximizar o seu \textbf{rendimiento} mentres se minimiza o do contrincante.
+	\end{footnotesize}
 
 
 }
@@ -85,13 +88,16 @@ Capaz de percibir e actuar sobre o \textbf{entorno competitivo} do videoxogo med
 	\item Analizar os resultados obtidos
 \end{itemize}
 \note{
+\begin{footnotesize}
+	Os objetivos to proyecto son os siguientes:
 	\begin{itemize}
-		\item Implementación do videoxogo: Xa que necesitaremos unha plataforma que nos permita que o axente e o xogador interactúen seguindo unha serie de regras comúns para competir entre eles.
-		\item Implementación do axente: Necesitarase implementar o axente capaz de desenvolverse correctamente durante a competición.
-		\item Realizar o entrenamento do axente: O axente necesitará obter a información necesaria para logo comportarse adecuadamente gracias ó aprendido durante a etapa de entrenamento.
-		\item Obter datos sobre as capacidades do axente: Obteránse datos sobre o rendemento do axente contra outras implementacións máis sinxelas.
-		\item Analizar os resultados obtidos: Coa información obtida durante todo o proxecto, e especialmente na etapa anterior, realizarase un análise que describa o que conseguiu o axente.
+		\item Implementación do videoxogo: Xa que necesitaremos unha plataforma que nos permita que o axente e o xogador interactúen seguindo unha serie de regras comunes para competir entre eles.
+		\item Necesitarase ademáis implementar o axente capaz de desenvolverse correctamente durante a competición.
+		\item O axente necesitará obtener a información necesaria para logo comportarse adecuadamente gracias ó aprendido durante a etapa de entrenamiento.
+		\item Obteránse datos sobre o rendemento do axente contra outras implementacióis máis sencillas.
+		\item Ca información obtenida durante todo o proyecto, e especialmente na etapa anterior, realizarase un análisis que describa o comportamiento do axente e o que se conseguiu.
 \end{itemize}
+\end{footnotesize}
 }
 \end{frame}
 
@@ -115,10 +121,13 @@ Posibilidade de defenderse dun ataque permitindo atacar se a defensa ten éxito
 \end{block}
 
 \note{
-\textbf{Movemento} libre nunha habitación rectangular que suma a complexidade de evitar situacións nas que non se poida escapar do contrincante por estar ó lado dunha parede ou unha esquina. Ademáis a única maneira de mirar cara unha dirección é mirar cara ela.\\
-\textbf{Como} solo se permite atacar a zona directamente enfrente do personaxe é importante ter en conta cada donde se está mirando. Esto favorece unha actitude agresiva pois hai que moverse na dirección do enemigo antes de atacalo.\\
-\textbf{Pódese} realizar unha maniobra defensiva de alto risco e alta recompensa que permite evitar un ataque. Se se evita con éxito poderase realizar un ataque propio pero se non serase vulnerable durante uns instantes.\\
-\textbf{Esto fai que non exista unha estratexia idónea} pois un estilo agresivo perde contra un defensivo que á sua vez perde contra xogadores que busquen a contra do movemento defensivo, este último ademáis perde contra o xogador agresivo. Esta fórmula de \textbf{pedra, papel, tesoiras} demostrou ser ampliamente utilizada en diseño de videoxogos.\\
+\begin{footnotesize}
+	Para explicar ahora o funcionamiento do videoxogo, empezarase polas mecánicas principales que o compoñen:
+\textbf{O Movimiento} é libre nunha habitación rectangular o que suma a complexidade de evitar situacióis nas que non se poida escapar do contrincante por estar ó lado dunha parede ou unha esquina. Ademáis a única maneira de mirar cara unha dirección é moverse cara ela.\\
+\textbf{Como} solo se permite atacar a zona directamente enfrente do personaje é importante ter en cuenta cada donde se está mirando. Esto favorece unha actitude agresiva pois hai que moverse na dirección do enemigo antes de atacalo.\\
+\textbf{Pódese} realizar unha maniobra defensiva de alto riesgo e alta recompensa que permite evitar un ataque. Se se evita con éxito poderase realizar un ataque propio pero se non serase vulnerable durante uns instantes.\\
+\textbf{Os tres estilos principales} que permiten estas mecánicas serán agresivo, defensivo ou contraataque. Nunha situación similar a un \textit{pedra, papel, tixeiras} cada un deles gaña e perde contra ún dos outros dous eliminando así a posibilidade de adoptar un comportamento único que sexa óptimo en todos os casos.\\
+\end{footnotesize}
 }
 \end{frame}
 
@@ -132,7 +141,10 @@ Primeira implementación realizada con \textbf{Unity3D}, estándar de facto para
 	Imposibilidade de escalar o tempo sen romper o funcionamento do videoxogo.
 \end{alertblock}
 \note{
-\textbf{Ensinar vídeo}
+	Para a primeira implementación destas mecánicas realizouse un prototipo inicial o antes posible no coñecido motor \textbf{Unity3D}, que é considerado estándar de facto para proxectos fora de grandes estudios.\\
+	Gracias a estratexia realizada para mitigar o \textbf{riesgo 9} fíxose que este se materializara nunha etapa inicial do proyecto evitando unha situación imposible de gestionar posteriormente.\\
+	\textbf{Ensinar vídeo}: Veremos ahora un vídeo que mostra algúns destes problemas.\\
+	\textbf{Descubriuse} que facer pasar o tempo máis rápido dentro fo videoxogo, pese a estár soportado polo motor, rompe o funcionamento de moitos elementos necesarios como as caixas de colisións que impiden que un personaxe se saia do mapa ou a funcionalidade que xestiona os ataques do personaxe. Nestas circunstancias é imposible realizar un entrenamento acelerado válido para o axente polo que a aplicación non sería útil.
 }
 \end{frame}
 
@@ -147,7 +159,9 @@ Implementación de un motor desde cero en C++
 \end{figure}
 
 \note{
-	
+	A situación anterior fixo que surxira a necesidade de implementar a aplicación dende cero, para o cal se escolleu a lengiaje C++ cunha serie de librerías a baixo nivel.\\
+	\textbf{Na figura mostrada} podese ver como a aplicación completa estará composta por un motor que se encargará de todas as funcionalidades genéricas.\\
+	Ademáis contarase cunha escena de combate con dous personajes, un dos cuales está controlado polo programa do axente, ainda que poderían ser ámbos.
 }
 \end{frame}
 
@@ -216,7 +230,12 @@ Implementación de un motor desde cero en C++
 
 
 \note{
-	
+	Pasarase ahora a explicar a grandes rasgos o funcionamento do algoritmo do axente. O mesmo é similar a unha implementación moi sencilla de \textit{Q-Learning}.\\
+	Hasta a línea 8 da figura o que se fai e obter o estado actual do combate e calcular a diferencia de utilidade ou \textit{fitness} entre este e o anterior. Logo actualizarase a base de conocimiento do axente introducindo esta diferencia de fitness asociada a acción tomada para o último estado.\\
+	\bigskip
+	\textbf{A partir da liña 9} e hasta o final escollerase que acción se vai a levar a cabo cunha probabilidade proporcional ó fitnes que se espera de cada unha delas. Se o estado non se coñece escollerase unha acción aleatoria.\\
+	\bigskip
+	Ademáis, ainda que o estado se visitara, se un valor aleatorio é menor que certo \textbf{epsilon} escollerase unha acción aleatoria de todas formas, facendo así que ainda que se coñeza ben o estado actual se permita explorar algunha das accións consideradas non optimas con máis frecuencia.
 }
 
 \end{frame}
@@ -303,7 +322,11 @@ Implementación de un motor desde cero en C++
 
 
 \note{
-	
+	Para obter o \textbf{fitness} simplemente se considerarán os valores de certas variables que representan o estado do combate. A saude do personaxe aumenta de forma \textbf{directamente proporcional} ó fitness mentres que a saude do inimigo e a distancia o fan de forma \textbf{inversamente proporcional}.\\
+	\bigskip
+	Ademáis proporcionaránse dous bonus por estár mirando cara o enemigo e por evitar posicionarse ó lado dos muros da escena.\\
+	\bigskip
+	Os valores usados para modificar o peso de cada unha das variables que se ven no cadro foron obtidos grazas a coñecemento experto sobre o combate. Céntranse en buscar un comportamento agresivo e eficaz por parte do personaxe que dea lugar a pelexas dinámicas e entretenidas para un xogador real.
 }
 
 \end{frame}
@@ -321,7 +344,7 @@ Implementación de un motor desde cero en C++
 	Buscando unha exploración mais extensa de estados que o axente baseado en regras non pode aportar.
 \end{block}
 \note{
-
+	O algoritmo usarase de dúas formas para entrenar ó axente, ben facendoo pelear contra outro axente basado en regras simulando a un xogador real de forma moi sinxela. Ou ben facendoo pelear contra él mismo buscando a exploración estados mui inusuales cuando se combate contra o axente basado en reglas.
 }
 \end{frame}
 
@@ -339,7 +362,12 @@ Implementación de un motor desde cero en C++
 \end{figure}
 
 \note{
-
+	Entrando ahora dentro do bloque de analisis de requisitos, empezouse por identificar os diferentes casos de uso existentes no proxecto.\\
+	\bigskip
+	Empezando pola parte izquierda vemos en azul e rojo os casos de uso de abrir e cerrar a aplicación. En tonos \textbf{verdes} temos os casos de uso relacionados con seleccionar unha opción do menú e entrar na escena de combate apropiada, esta pode involucrar unha pelexa entre \textbf{dous axentes}, un \textbf{xogador real e un axente} ou \textbf{dous xogadores reales}.\\
+	\bigskip
+	Finalmente vemos en amarillo o caso de uso de visualizar os resultados acumulados dos combates o cual será necesario para ver o rendimiento do axente de forma sencilla especialmente cuando realiza combates sen que estes se mostren por pantalla.
+	
 }
 \end{frame}
 
@@ -388,11 +416,35 @@ Implementación de un motor desde cero en C++
 \end{columns}
 
 \note{
-
+	Dos anteriores casos de uso surxen unha serie de requisitos:\\
+	\bigskip
+	O primeiro grupo de requisitos funcionales relacionarase con moverse e seleccionar opcióis do menú e o siguiente cas funcionalidades da consola. Desde o requisito 5 hasta o 12 defínense funcionalidades relacionadas co combate e finalmente os dous últimos céntranse específicamente nos combates entre axentes.\\
+	\bigskip
+	Dentro do conxunto de requisitos non funcionales vense algunhos relacionados co rendimiento da aplicación, a documentación ou usabilidade. Destácase o \textbf{requisito non funcional 2} xa que é o que define formalmente a necesidade de poder simular peleas entre axentes de forma acelerada, o cual, como se viu anteriormente, tuvo un peso importante no proyecto.
 }
 \end{frame}
 
 \section{Xestión do proxecto}
+
+\subsection{Xestión de riscos}
+\begin{frame}
+\frametitle{Xestión de riscos}
+
+\begin{block}{Identificación de riscos}
+	Identificáronse e especificáronse un total de \textbf{10} riscos, destacándose o \textbf{RSK-1} (retraso na planificación), \textbf{RSK-2} (cambio de requisitos) e \textbf{RSK-9} (dificultade para realizar simulacións).
+\end{block}
+
+\begin{alertblock}{Acción correctiva AC-1}
+	Xestionou a materialización do \textbf{RSK-9} e implicou implementar dende cero a aplicación do videoxogo sen facer uso dos motores dispoñibles.
+\end{alertblock}
+
+\note{
+	Chegando á gestión de riesgos, identificáronse un total de 10, dos cuales destácanse pola súa probabilidade é impacto o \textbf{1} relacionado con retrasos na planificación, o \textbf{2} relacionado con cambios nos requisitos e o {9} relacionado con non poder realizar simulacións de combates.\\
+	\bigskip
+	A única acción correctiva que e levou a cabo é a asociada ó prototipo de Unity e á implementación da aplicación desde cero como xa se mencionou anteriormente.
+}
+\end{frame}
+
 
 \subsection{Metodoloxía}
 \begin{frame}
@@ -416,7 +468,9 @@ Implementación de un motor desde cero en C++
 \end{block}
 
 \note{
-
+	A elección de metodología tuvo muito que ver cas circunstancias do proyecto. Neste caso non era necesario dedicar muitos recursos a coordinar ós traballadores xa que solo había un, a duración do proyecto foi relativamente corta comparada con outros dentro da industria dos videoxogos e necesítábase avanzar rápidamente para rematar a aplicación o antes posible é poder dedicar tempo ó axente.\\
+	\bigskip
+	Dentro das metodologías ágiles escolleuse \textbf{Programación Extrema} pola súa flexibilidade ante os cambios que probablemente ocurrirían. Ademáis non se dedica un tempo excesivo a tareas de gestión que ralenticen o desenvolvemento do proyecto. E os Sprints realizados entre as distintas reunións permiten que os tutores axuden a detectar problemas en ventás de tempo muy pequenas.
 }
 \end{frame}
 
@@ -432,7 +486,32 @@ Implementación de un motor desde cero en C++
 \end{center}
 
 \note{
+	A planificación temporal final dividese tal e como se mostra nesta figura, pero os grupos de tareas que se levaron a cabo durante todo o proyecto como documentación e reunións non están presentes.\\
+	\bigskip
+	Vemos como o desarrollo do prototipo en Unity e da aplicación final teñen un peso muy importante na planificación con 37 días, o que deixóu unhos 16 días de traballo para a creación e entrenamiento do axente. Finalmente dedicáronse 3 días a obter datos sobre o rendimiento do mismo.
+}
+\end{frame}
 
+\subsection{Xestión de custos}
+\begin{frame}
+\frametitle{Xestión de custos}
+
+\begin{block}{Custos a incluír}
+	\begin{itemize}
+		\item Soldo do traballador: 3952.50 \euro
+		\item Amortización do equipo de traballo: 194.90 \euro
+		\item Impresión da memoria + CD: 100 \euro
+		\item 10\% de custos indirectos: 424.74 \euro
+	\end{itemize}
+\end{block}
+
+\bigskip
+
+O que resulta nun custo final de \textbf{4672.14 \euro}
+
+
+\note{
+	De forma breve, mostrase aquí que elementos contribuiron a aumentar o coste do proyecto dando lugar a  un importe final de \textbf{4672.14 \euro}. Débese destacar que todas as ferramentas usadas eran ou ben libres ou versións de proba polo que non implicaban un coste monetario.
 }
 \end{frame}
 
@@ -446,7 +525,7 @@ Implementación de un motor desde cero en C++
 	\label{dia:arquitectura_mala}
 \end{figure}
 \note{
-
+ 	A arquitectura da aplicación componse por unha serie de subsistemas que necesitan conectarse unhos cos outros con moita frecuencia. Na figura vemos como unha aproximación simple na que todos teñen referencias a todos pode levar a muitos problemas orixinados por ter que cambiar calquera cousa en algún deles.
 }
 \end{frame}
 \begin{frame}
@@ -456,7 +535,9 @@ Implementación de un motor desde cero en C++
 	\label{dia:actual_arquitecture}
 \end{figure}
 \note{
-
+	A solución diseñada foi crear un bus de mensajes. Nesta arquitectura todos os subsistemas son un nodo dese bus, podendo comunicarse con calquera dos outros subsistemas ou con todos á vez mediante o envío de mensajes, evitando referencias innecesarias. Nesta arquitectura cada subsistema elige como gestionar os mensajes que recibe.\\
+	\bigskip
+	A arquitectura terá un aspecto similar á siguiente:
 }
 \end{frame}
 \begin{frame}
@@ -466,7 +547,9 @@ Implementación de un motor desde cero en C++
 	\label{dia:arquitectura_final}
 \end{figure}
 \note{
-
+	Aquí vemos os diferentes subsistemas existentes así como unha dependencia do bus de mensajes ca co subsistema da consola. Esto permite que en tempo de ejecución se poida visualizar en calquera momento calquera mensaje relevante na ventá da propia aplicación ademáis de introducir mensajes co contido que se queira dentro do bus de mensajes.\\
+	\bigskip
+	Esto resultóu extremadamente útil xa que facilitóu moito o proceso de debug e axudou a unha iteración muy rápida. 
 }
 \end{frame}
 
@@ -483,7 +566,9 @@ Implementación de un motor desde cero en C++
 	\label{dia:clases}
 \end{figure}
 \note{
-	
+	No que respecta a diseño e implementación, para non entrar demasiado en materia, mostrase solamente o diagrama que representa a clase principal de cada subsistema e a clase \textit{xogo} que os contén e itera sobre eles.\\
+	\bigskip
+	Ademáis podese ver como se conta ca clase \textit{scene}, que representa calquera escena na que pode estár o videoxogo como un menú ou o combate. Esta clase contará cunha serie de \textit{GameObjects} que poderán ser calquera entidade dinámica no contexto do videoxogo como un personaje, unha barra de vída ou unha opción do menú. Esto permite muita flexibilidade á hora de implementar cada unha de estas entidades.
 }
 \end{frame}
 
@@ -499,7 +584,9 @@ Implementación de un motor desde cero en C++
 	Comproban a integración entre subsistemas e do o axente ca aplicación.
 \end{block}
 \note{
-
+	Chegando xa ó apartado de validación e probas, realizáronse unha serie de probas unitarias para os múltiples requisitos funcionales ou non do proxecto.\\
+	\bigskip
+	Ademáis levaronse a cabo probas de integración para comprobar o funcionamento dos subsistemas conectados e do axente dentro da aplicación.
 }
 \end{frame}
 \subsection{Validación do Axente}
@@ -511,7 +598,15 @@ Implementación de un motor desde cero en C++
 	\label{graf:victorias}
 \end{figure}
 \note{
-
+	\begin{footnotesize}
+	En relación á \textbf{validación do axente} realizase nesta figura un análisis que compara o rendemento do \textbf{axente 1} entrenado únicamente contra o personaxe basado en reglas contra o \textbf{axente 2} entrenado únicamente contra él mesmo.\\
+	\bigskip
+	Dado que para calcular o porcentaxe de victorias se realizaron 100 combates contra o personaxe basado en reglas, obsérvase como o axente que entrenou contra él representado pola línea azul é significativamente mellor que o outro.\\
+	\bigskip
+	Tamén é interesante como o axente 2 gaña con moi poucas simulacións debido a que está aprendendo o doble de rápido xa que os dous personajes están aprendendo á vez e combinando a información aprendida.\\
+	\bigskip
+	Finalmente hay que destacar como unha vez que se superan uns 10.000 combates se sufre de \textit{overfitting} ou sobreaxuste. Neste caso, pese a que o fitness dos estados siga aumentando co entrenamento, o mismo non ten por que estár relacionado linealmente coa probabilidade de obter unha victoria.
+\end{footnotesize}
 }
 \end{frame}
 
@@ -523,7 +618,9 @@ Implementación de un motor desde cero en C++
 \end{figure}
 
 \note{
-
+	Mui brevemente, nesta gráfica vemos como o axente que entrena contra él mesmo sí realiza unha exploración de estados moito máis extensa e dunha forma moito máis rápida polo que é menos probable que ó combatir contra un xogador real se atope en situaciois nas que non sepa como responder.\\
+	\bigskip
+	A partir de unhas 20.000 iteracióis o aumento de estados visitados non compensa o tempo necesario para seguir entrenando.
 }
 \end{frame}
 
@@ -539,7 +636,9 @@ Combinación de ámbolos dous métodos de adestramento.
 	Aporta unha exploración de estados superior.
 \end{block}
 \note{
-
+	Finalmente o axente escollido intenta combinar o mellor dos dóus métodos de entrenamento, empezando a aprender contra o axente basado en reglas para aprender rápidamente a gañar partidas e seguindo con combates contra él mismo para ter acceso a unha grán cantidade de estados.\\
+	\bigskip
+	Ahora mostrarase o comportamiento do axente en tempo real nun \textbf{combate contra un xogador humano}, que seréi eu. E despois describiranse dous comportamentos interesantes que aprendeu na etapa de entrenamento \textbf{ca axuda dun vídeo}.
 }
 \end{frame}
 
@@ -564,6 +663,18 @@ Combinación de ámbolos dous métodos de adestramento.
 	\end{itemize}
 \end{block}
 
+\note{
+	\begin{footnotesize}
+	A modo de conclusión, considérase que a aplicación cumpliu as espectativas xa que o seu rendemento é mellor do esperado. Ademáis o axente resultou ser muy capaz incluso contra xogadores relativamente experimentados neste tipo de videoxogos e este en concreto.\\
+	\bigskip
+	Algunhas das leccióis importantes que se aprenderon temos:\\
+	\textbf{A importancia de dedicar} un momento a considerar que pode sair mal en calquera proxecto para lidiar cos problemas antes de que sean demasiado importantes.\\
+	\textbf{As facilidades} que proporciona seguir un diseño flexible e definido en vez de empezar a implementar directamente por considerar que non hay o tempo suficiente.\\
+	\textbf{E que as técnicas intelixencia artificial}, incluso con implementacións tan sencillas como esta, son realmente capaces e os seus límites están máis alá do que nun primeiro momento se podería pensar.
+	
+		\end{footnotesize}
+}
+
 \end{frame}
 
 \subsection{Posibles ampliacións}
@@ -575,7 +686,22 @@ Combinación de ámbolos dous métodos de adestramento.
 	\item Implementación de máis técnicas para o axente.
 	\item Novas mecánicas para o videoxogo.
 \end{itemize}
+\note{
+\begin{footnotesize}
+Como posibles ampliacións:\\
+\textbf{A mais sinxela} e util seguramente sería mellorar a compatibilidade da aplicación portándoa a outros sistemas operativos como Linux ou Windows. Xa que todo o código é C++ e as librerías están dispoñibles para eses sistemas non debería dar moitos problemas. Como muito pode ser que se necesite un instalador en sistemas Windows.\\
+\textbf{Poderíase tamén ampliar o proceso de probas} compoñendo grupos de xogadores humanos que compitan contra diferentes versións do axente e cubran un cuestionario sobre o rendemento do mesmo, como simula a un humano ou a dificultade que presenta.\\
+\textbf{Finalmente poderíanse implementar técnicas máis complexas} de intelixencia artificial, empezando por \textit{Q-Learning} xa que non requeriría demasiados cambios. Sería interesante utilizar \textit{Mapas Autoorganizados}, unhas redes neuronales utilizadas para para discretizas os estados de forma automática e non de forma manual.\\
+\textbf{SI as novas técnicas resultan ser demasiado efectivas}, pode ser que se necesiten máis mecánicas que aumenten a complejidad do videoxogo tales como ataques con rango, máis opcións de movemento ou novas accións defensivas.
+\end{footnotesize}
 
+}
+\end{frame}
+
+
+\begin{frame}
+\titlepage
+\note{Esto é todo pola miña parte, póñome a disposición do tribunal para intentar responder ás preguntas que poidan ter sobre o proyecto}
 \end{frame}
 
 
