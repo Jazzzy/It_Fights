@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  20 JUL 2017 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.29)  20 JUL 2017 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1612,7 +1612,16 @@ ame{page.12}) has been already used, duplicate ignored
 l.241 \end{frame}
                  
 
- <../otros/otrasCapturas/block.png>] [14
+ <../otros/otrasCapturas/block.png>]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 241.
+
+
+Overfull \vbox (9.64006pt too high) detected at line 241
+ []
+
+[14
 
 pdfTeX warning (ext4): destination with the same identifier (name{Navigation13}
 ) has been already used, duplicate ignored
@@ -1987,13 +1996,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation30}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.699 \end{frame}
+l.698 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.30}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.699 \end{frame}
+l.698 \end{frame}
                  
 
 ] [32
@@ -2003,13 +2012,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation31}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.705 \end{frame}
+l.704 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.31}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.705 \end{frame}
+l.704 \end{frame}
                  
 
 ]
@@ -2029,21 +2038,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation32}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.855 \end{document}
+l.854 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{page.32}) has been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.855 \end{document}
+l.854 \end{document}
                     
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 855.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 855.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 854.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 854.
  (./presentacion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 855.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 855.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 854.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 854.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2060,10 +2069,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 23121 strings out of 492995
- 447579 string characters out of 6132704
- 592344 words of memory out of 5000000
- 26035 multiletter control sequences out of 15000+600000
+ 23123 strings out of 492995
+ 447612 string characters out of 6132704
+ 592820 words of memory out of 5000000
+ 26037 multiletter control sequences out of 15000+600000
  14967 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,22n,63p,808b,6450s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2081,7 +2090,7 @@ y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on presentacion.pdf (32 pages, 596302 bytes).
+Output written on presentacion.pdf (32 pages, 597441 bytes).
 PDF statistics:
  1177 PDF objects out of 1200 (max. 8388607)
  1029 compressed objects within 11 object streams
