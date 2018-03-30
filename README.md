@@ -21,7 +21,7 @@ All the **assets** (animated sprites, music, etc) and the **algorithm** have bee
 
 ## Unity Prototype
 
-[Unity prototype problems](https://youtu.be/VuZjGZKStFs)
+[![Unity prototype problems](https://img.youtube.com/vi/VuZjGZKStFs/0.jpg)](https://www.youtube.com/watch?v=VuZjGZKStFs)
 
 As we can see in the video above, the first prototype of the project was made in Unity. It includes all the main mechanics that the final game has as far as movement and attacking. It also has a custom made CRT simulation camera that I made on another project.
 
@@ -30,7 +30,7 @@ Since the AI agent needed to train agains a virtual opponent the plan was to use
 
 ## C++ game & engine
 
-[3 In-Game Figths](https://youtu.be/zzWvv-4mWuk)
+[![3 In-Game Figths](https://img.youtube.com/vi/zzWvv-4mWuk/0.jpg)](https://www.youtube.com/watch?v=zzWvv-4mWuk)
 
 Here we see a video in which out trained agent fights with a rule based enemy. We can observe how we learned to chase him very effectively. It is even able to wait out the *parry* mechanic used in the last fight, attacking when the enemy is vulnerable again.
 
